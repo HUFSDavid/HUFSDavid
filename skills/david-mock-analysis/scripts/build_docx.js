@@ -2,9 +2,11 @@
 /*
  * David 모의고사 지문분석 Word 생성기
  *
- * 사용법: node build_docx.js analysis.json 출력폴더 [logo.png] [--student]
+ * 사용법: node build_docx.js analysis.json 출력폴더 [logo.png] [--student] [--review-files]
  *   - 기본: 수업용 분석 자료(교사용) .docx 한 파일만 만든다.
  *   - --student: 해석·어휘 뜻 등을 비운 학생용 필기 노트도 함께 만든다.
+ *   - review.key_points의 예시 문항은 분석 자료 안, 각 포인트 바로 아래에 정답과 함께 들어간다.
+ *   - --review-files: (요청할 때만) 예시 문항을 모아 Review Test 문제지·답지 파일도 따로 만든다.
  *   - analysis.json 구조는 references/json-schema.md 참고.
  *   - 'docx' npm 패키지가 필요하다 (npm i docx).
  */
@@ -28,9 +30,10 @@ function loadDocx() {
 
 const args = process.argv.slice(2);
 const withStudent = args.includes("--student");
+const withReviewFiles = args.includes("--review-files");
 const [inPath, outDir = ".", logoPath] = args.filter((a) => !a.startsWith("--"));
 if (!inPath) {
-  console.error("사용법: node build_docx.js analysis.json 출력폴더 [logo.png] [--student]");
+  console.error("사용법: node build_docx.js analysis.json 출력폴더 [logo.png] [--student] [--review-files]");
   process.exit(1);
 }
 const data = JSON.parse(fs.readFileSync(inPath, "utf8"));
@@ -58,15 +61,16 @@ function run(text, o = {}) {
   });
 }
 
-// **굵게**, ==형광==, [[정답색]] 간단 마크업 지원
+// **굵게**, ==형광==, [[정답색]], __밑줄__ 간단 마크업 지원
 function rich(text, o = {}) {
   const out = [];
-  const re = /(\*\*[^*]+\*\*|==[^=]+==|\[\[[^\]]+\]\])/g;
+  const re = /(\*\*[^*]+\*\*|==[^=]+==|\[\[[^\]]+\]\]|__(?=\S)[^_]+?(?<=\S)__)/g;
   String(text ?? "").split(re).forEach((part) => {
     if (!part) return;
     if (part.startsWith("**")) out.push(run(part.slice(2, -2), { ...o, bold: true }));
     else if (part.startsWith("==")) out.push(run(part.slice(2, -2), { ...o, shade: C.hl }));
     else if (part.startsWith("[[")) out.push(run(part.slice(2, -2), { ...o, bold: true, color: C.ans }));
+    else if (part.startsWith("__")) out.push(run(part.slice(2, -2), { ...o, underline: {} }));
     else out.push(run(part, o));
   });
   return out;
@@ -304,6 +308,30 @@ function naesinBlock(ps, forTeacher) {
   return out;
 }
 
+// 분석 자료 안의 Review Test 포인트: 짚을 것 → 정리 → 이렇게 내면 된다(예시 문항+정답)
+function reviewPointBlock(ps) {
+  const kp = ps.review?.key_points;
+  if (!kp?.length) return [];
+  const out = [sectionTitle("REVIEW", "Review Test 포인트 — 시험에 낼 핵심")];
+  kp.forEach((k, i) => {
+    out.push(p([
+      run(` POINT ${i + 1} `, { size: 17, bold: true, color: C.white, shade: C.ans }),
+      run(`  ${k.title}`, { size: 22, bold: true }),
+      run(k.sent ? `   [${join(k.sent)}번 문장]` : "", { size: 16, color: C.gray }),
+    ], { before: 240, after: 60, keepNext: true }));
+    if (k.why) out.push(txt(`왜 중요? ${k.why}`, { size: 17, color: C.gray, after: 60, keepNext: true }));
+    if (k.notes?.length) {
+      out.push(noteBox("정리", k.notes.map((n) => txt(n, { size: 18, after: 40 }))));
+      out.push(spacer(60));
+    }
+    if (k.questions?.length) {
+      out.push(txt("▶ 이렇게 내면 된다", { size: 19, bold: true, before: 60, after: 0, keepNext: true }));
+      k.questions.forEach((q, j) => out.push(...questionBlock(j + 1, q, true)));
+    }
+  });
+  return out;
+}
+
 function grammarPlusBlock(ps) {
   if (!ps.grammar_plus?.length) return [];
   const out = [sectionTitle("Grammar✚", "함께 정리할 문법")];
@@ -345,6 +373,7 @@ function buildDoc(forTeacher) {
     children.push(...solvingBlock(ps, forTeacher));
     children.push(...naesinBlock(ps, forTeacher));
     if (forTeacher) {
+      children.push(...reviewPointBlock(ps));
       children.push(...grammarPlusBlock(ps));
       children.push(...fullTranslation(ps));
     }
@@ -364,6 +393,82 @@ function buildDoc(forTeacher) {
   });
 }
 
+// ---------- Review Test (문제지·답지) ----------
+function reviewQuestions() {
+  const qs = [];
+  passages.forEach((ps) => [
+    ...(ps.review?.key_points ?? []).flatMap((k) => (k.questions ?? []).map((q) => ({ point: k.title, ...q }))),
+    ...(ps.review?.questions ?? []),
+  ].forEach((q) => qs.push({ ps, q })));
+  return qs;
+}
+
+function questionBlock(no, q, withAnswer) {
+  const out = [];
+  out.push(p([
+    run(`${no}. `, { size: 21, bold: true }),
+    ...rich(q.stem, { size: 20, bold: true }),
+    ...(q.type ? [run(`  [${q.type}]`, { size: 15, color: C.gray })] : []),
+  ], { before: 200, after: 80, keepNext: true }));
+  if (q.text) {
+    out.push(noteBox(null, String(q.text).split(/\n/).map((l) => txt(l, { size: 19, line: 340, after: 40 })), { fill: C.white, bar: C.line2 }));
+    out.push(spacer(60));
+  }
+  if (q.boxes?.length) {
+    out.push(noteBox("<보기>", q.boxes.map((b) => txt(b, { size: 18, after: 30 })), { fill: C.white, bar: C.line2 }));
+    out.push(spacer(60));
+  }
+  (q.choices ?? []).forEach((c, i) => out.push(p(rich(`${circled(i + 1)} ${c}`, { size: 19 }), { after: 30, indent: { left: 200 } })));
+  if (!q.choices?.length && !withAnswer) out.push(...blankLine(q.lines ?? 2));
+  if (withAnswer) {
+    const ans = (typeof q.answer === "number" ? `${circled(q.answer)} ${q.choices?.[q.answer - 1] ?? ""}` : String(q.answer ?? "")).replace(/__/g, "");
+    out.push(txt(`정답  [[${ans}]]`, { size: 19, before: 60, after: 40 }));
+    if (q.explanation) out.push(noteBox(null, String(q.explanation).split(/\n/).map((l) => txt(l, { size: 17, after: 30 }))));
+  }
+  return out;
+}
+
+function buildReviewDoc(withAnswer) {
+  const qs = reviewQuestions();
+  const children = [];
+  children.push(p([run("REVIEW TEST", { size: 18, bold: true, color: C.gray })], { after: 40 }));
+  children.push(p([
+    run(meta.title ? `${meta.title} Review Test` : "Review Test", { size: 36, bold: true }),
+    run(`   ${withAnswer ? "ANSWER KEY" : "문제지"}`, { size: 22, bold: true, color: C.white, shade: withAnswer ? C.ans : C.ink }),
+  ], { after: 80 }));
+  const range = passages.filter((ps) => ps.review?.questions?.length).map((ps) => `${ps.number}번`).join(", ");
+  children.push(txt(`범위 ${range}   ·   ${qs.length}문항`, { size: 19, color: C.gray, after: 160 }));
+  if (withAnswer) {
+    children.push(table(["번호", "정답", "포인트"], qs.map(({ q }, i) => [String(i + 1),
+      typeof q.answer === "number" ? circled(q.answer) : String(q.answer).slice(0, 40), q.point ?? q.type ?? ""]), [900, 4200, CONTENT_W - 5100]));
+  } else {
+    children.push(table(["이름", "날짜", "점수", "확인"], [["", "", ` / ${qs.length}`, ""]], [3000, 2400, 2000, CONTENT_W - 7400]));
+  }
+  let cur = null;
+  qs.forEach(({ ps, q }, i) => {
+    if (ps !== cur) {
+      cur = ps;
+      children.push(p([
+        run(` ${ps.number}번 `, { size: 19, bold: true, color: C.white, shade: C.ink }),
+        run(`  ${ps.type ?? ""}  ${ps.title_ko ?? ""}`, { size: 19, bold: true }),
+      ], { before: 320, after: 60, keepNext: true, border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: C.line2, space: 4 } } }));
+    }
+    children.push(...questionBlock(i + 1, q, withAnswer));
+  });
+  const label = withAnswer ? "Review Test 답지" : "Review Test";
+  return new Document({
+    creator: "David",
+    title: `${meta.title ?? "지문분석"} ${label}`,
+    styles: { default: { document: { run: { font: FONT, size: 20 } } } },
+    sections: [{
+      properties: { page: { size: { width: PAGE.W, height: PAGE.H }, margin: { top: PAGE.T, bottom: PAGE.B, left: PAGE.L, right: PAGE.R, header: 600, footer: 500 } } },
+      headers: { default: makeHeader(`${meta.short ?? meta.title ?? "지문분석"} · ${label}`) },
+      footers: { default: makeFooter() },
+      children,
+    }],
+  });
+}
+
 (async () => {
   fs.mkdirSync(outDir, { recursive: true });
   const base = meta.filename ?? "지문분석";
@@ -371,5 +476,12 @@ function buildDoc(forTeacher) {
     const file = path.join(outDir, forTeacher ? `${base}.docx` : `${base}_학생용.docx`);
     fs.writeFileSync(file, await Packer.toBuffer(buildDoc(forTeacher)));
     console.log("저장:", file);
+  }
+  if (withReviewFiles && reviewQuestions().length) {
+    for (const withAnswer of [false, true]) {
+      const file = path.join(outDir, `${base}_ReviewTest${withAnswer ? "_답지" : ""}.docx`);
+      fs.writeFileSync(file, await Packer.toBuffer(buildReviewDoc(withAnswer)));
+      console.log("저장:", file);
+    }
   }
 })();

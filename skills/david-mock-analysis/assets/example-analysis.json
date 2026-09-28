@@ -586,7 +586,146 @@
             "She is proud of her son."
           ]
         }
-      ]
+      ],
+      "review": {
+        "key_points": [
+          {
+            "title": "as의 쓰임 5가지",
+            "sent": [
+              2
+            ],
+            "why": "문장 첫머리 As는 전치사(~로서)인지 접속사인지 구별하는 문제로 단골 출제된다.",
+            "notes": [
+              "① 전치사 ~로서(자격) + 명사: **As a former student**, I am proud ... (본문)",
+              "② 접속사 ~할 때(시간): As she walked into the classroom, she heard a voice.",
+              "③ 접속사 ~ 때문에(이유): As it was raining, we stayed indoors.",
+              "④ 접속사 ~하는 대로(방식): Do as your teacher tells you.",
+              "⑤ 접속사 ~함에 따라(비례): As time went by, he grew more confident.",
+              "구별법: as 뒤에 **명사(구)만** → 전치사 / **S+V** → 접속사(문맥으로 때·이유·방식·비례 판단)"
+            ],
+            "questions": [
+              {
+                "type": "쓰임 구별",
+                "stem": "다음 문장의 밑줄 친 __as__와 쓰임이 같은 것은?",
+                "text": "__As__ a former student, I am extremely proud that the school has become one of the best schools in the local community.",
+                "choices": [
+                  "__As__ it was raining, we stayed indoors.",
+                  "She was respected __as__ a leader of the team.",
+                  "__As__ he walked into the room, everyone stood up.",
+                  "Do __as__ your teacher tells you.",
+                  "__As__ time went by, he grew more confident."
+                ],
+                "answer": 2,
+                "explanation": "본문 as는 명사 a former student 앞의 전치사(~로서). ②도 a leader 앞 전치사. ① 이유 ③ 시간 ④ 방식 ⑤ 비례 접속사."
+              }
+            ]
+          },
+          {
+            "title": "have + O + p.p. (목적격보어 형태)",
+            "sent": [
+              4
+            ],
+            "why": "scheduled ↔ scheduling은 서술형 어법 고치기로 내기 가장 좋은 자리다.",
+            "notes": [
+              "have + O + 동사원형: O가 ~하게 하다 (O가 행위자) — I had him fix my car.",
+              "have + O + p.p.: O가 ~되게 하다 / ~된 상태로 있다 (O가 대상) — I have a trip **scheduled**. (본문)",
+              "have + O + -ing: O가 계속 ~하게 두다 — He had us waiting for an hour.",
+              "판단법: O와 보어 사이에 be동사를 넣어 본다 → a trip is scheduled (수동) → p.p."
+            ],
+            "questions": [
+              {
+                "type": "어법 고치기(서술형)",
+                "stem": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+                "text": "I will not be able to give a speech because I have a very important overseas business trip scheduling during that time.",
+                "answer": "scheduling → scheduled",
+                "explanation": "출장(a trip)은 '예정되는' 대상이므로 목적격보어는 과거분사."
+              },
+              {
+                "type": "어법",
+                "stem": "다음 중 어법상 옳은 문장은?",
+                "choices": [
+                  "I had my car wash yesterday.",
+                  "She had her son cleaned his room.",
+                  "He has a meeting scheduled for Monday.",
+                  "We had the roof repair last week.",
+                  "They had the kids waited outside."
+                ],
+                "answer": 3,
+                "explanation": "① wash→washed ② cleaned→clean ④ repair→repaired ⑤ waited→wait/waiting"
+              }
+            ]
+          },
+          {
+            "title": "decline 다의어 + 거절 표현",
+            "sent": [
+              5
+            ],
+            "why": "decline은 '거절하다/감소하다' 두 뜻이 모두 수능 빈출이라 문맥상 의미 문제로 내기 좋다.",
+            "notes": [
+              "v. 거절하다 = refuse, reject, turn down ↔ accept (본문)",
+              "v. 감소하다, 쇠퇴하다 = decrease, drop, fall ↔ increase",
+              "n. 감소, 하락: a sharp decline in sales",
+              "정중한 거절 표현: I would have loved to ~, but ... / I'm afraid I can't ~ / I must decline ~"
+            ],
+            "questions": [
+              {
+                "type": "어휘(문맥상 의미)",
+                "stem": "밑줄 친 __decline__과 같은 의미로 쓰인 것은?",
+                "text": "I would have loved to speak to the graduating students, but I must __decline__ your invitation to this meaningful celebration.",
+                "choices": [
+                  "The number of students has begun to __decline__.",
+                  "Her health __declined__ rapidly last winter.",
+                  "He politely __declined__ the job offer.",
+                  "Sales showed a sharp __decline__ this year.",
+                  "The birth rate continues to __decline__."
+                ],
+                "answer": 3,
+                "explanation": "본문은 '거절하다'. ③만 같은 뜻. ①②⑤ 감소·쇠퇴하다(동사), ④ 감소(명사)."
+              },
+              {
+                "type": "바꿔쓰기(서술형)",
+                "stem": "본문의 decline과 뜻이 같은 두 단어의 구동사를 쓰시오.",
+                "answer": "turn down",
+                "explanation": "refuse, reject도 뜻은 같지만 조건(두 단어 구동사)에 맞는 것은 turn down."
+              }
+            ]
+          },
+          {
+            "title": "글의 목적 → 요약문 · 영어 서술",
+            "sent": [
+              4,
+              5
+            ],
+            "why": "목적 유형 지문은 내신에서 요약문 완성이나 '글의 목적을 영어로 쓰기'로 바꿔 낸다.",
+            "notes": [
+              "목적 근거: 4번 However ~ not be able to give a speech / 5번 must decline your invitation",
+              "핵심 표현: feel honored(영광스럽다), decline the invitation(초청을 거절하다), overseas business trip(해외 출장)"
+            ],
+            "questions": [
+              {
+                "type": "요약문 완성",
+                "stem": "다음 글의 내용을 요약할 때, 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+                "text": "Jane, a former student, feels (A) ________ to be invited to speak at the graduation ceremony, but she has to (B) ________ the invitation because of a business trip abroad.",
+                "choices": [
+                  "honored — accept",
+                  "honored — decline",
+                  "disappointed — decline",
+                  "disappointed — accept",
+                  "worried — postpone"
+                ],
+                "answer": 2,
+                "explanation": "3번 문장 felt honored, 5번 문장 must decline your invitation."
+              },
+              {
+                "type": "조건 영작(서술형)",
+                "stem": "이 글의 목적을 영어 한 문장으로 쓰시오. (invitation, because of를 반드시 사용할 것)",
+                "answer": "The writer declines the invitation to give a graduation speech because of an overseas business trip.",
+                "explanation": "decline 대신 turn down / refuse도 인정. because of 뒤에는 명사(구)."
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }

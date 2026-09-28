@@ -74,6 +74,26 @@
           {"sent": [4], "point": "가주어-진주어 not to be excluded", "how": "to부정사 부정어 위치를 어법 선지로"}
         ]
       },
+      "review": {
+        "key_points": [
+          {
+            "title": "as의 쓰임 5가지",
+            "sent": [2],
+            "why": "전치사·접속사 as는 쓰임 구별 문제로 자주 나온다",
+            "notes": ["① 전치사 ~로서(자격): As a former student, ...", "② 접속사 ~할 때: As she walked in, ...", "..."],
+            "questions": [
+              {
+                "type": "쓰임 구별",
+                "stem": "다음 문장의 밑줄 친 __as__와 쓰임이 같은 것은?",
+                "text": "__As__ a former student, I am extremely proud that ...",
+                "choices": ["__As__ she grew older, she became wiser.", "He works __as__ a nurse.", "..."],
+                "answer": 2,
+                "explanation": "본문 as는 자격(~로서)의 전치사. ②도 a nurse 앞 전치사."
+              }
+            ]
+          }
+        ]
+      },
       "grammar_plus": [
         {"title": "결과 부사절 so ~ that / such ~ that", "body": ["so+형/부+(that)+완전한 절", "such+(a/an)+형+명+(that)+완전한 절"], "examples": ["It was so cold that we stayed inside."]}
       ],
@@ -89,3 +109,4 @@
 - `sentences[].tags`: `주제문`, `빈칸 추론`, `문장 삽입`, `서술형 대비`, `어법`, `어휘` 중 해당하는 것만.
 - `naesin.likely_types`에 쓸 수 있는 값: 목적, 심경·분위기, 주장, 함축의미, 요지, 주제, 제목, 도표, 일치·불일치, 어법, 어휘, 빈칸, 무관한 문장, 순서, 문장 삽입, 요약, 지칭, 연결어, 서술형
 - `question.answer`: 1~5 숫자. 문제가 없는 지문(외부 지문 등)이면 `question`·`solving`을 빼도 된다.
+- `review.key_points[].questions[]`: `stem`(발문), `text`(제시문, 선택), `boxes`(<보기>, 선택), `choices`(객관식이면), `answer`(객관식은 1~5 숫자, 서술형은 문자열), `explanation`, `type`. 분석 자료의 해당 포인트 바로 아래에 정답과 함께 나간다. `__밑줄__` 표시를 쓸 수 있다.
