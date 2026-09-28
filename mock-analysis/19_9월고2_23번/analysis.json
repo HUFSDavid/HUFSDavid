@@ -1,0 +1,386 @@
+{
+  "meta": {
+    "title": "2019 9월 고2 학평 지문분석",
+    "short": "19_9월고2 23번",
+    "source": "2019년 9월 고2 전국연합학력평가",
+    "grade": "고2",
+    "filename": "19_9월고2_23번_지문분석"
+  },
+  "passages": [
+    {
+      "number": "23",
+      "type": "주제",
+      "title_en": "When Patents Block the Road They Were Meant to Pave",
+      "title_ko": "혁신을 막아서는 특허",
+      "topic_en": "Patent law, originally meant to encourage the sharing of ideas, is now abused to protect monopolies and hinders innovation.",
+      "topic_ko": "원래 아이디어 공유를 장려하려던 특허법이 이제는 독점을 지키는 데 남용되어 혁신을 방해하고 있다.",
+      "summary": "특허의 본래 취지는 발명을 공유하게 하는 것이었지만, 오늘날 특허는 독점을 지키고 경쟁자를 막는 수단이 되어 혁신을 방해한다. 1차 대전 전 항공기 업계, 오늘날 스마트폰·생명공학 업계가 그 예로, 신규 진입자들은 '특허 덤불'을 헤치고 나아가야 한다.",
+      "flow": [
+        {"range": "1~2", "stage": "도입", "text": "특허의 본래 목적 = 발명의 공유 장려, 어느 정도의 지식재산권법은 필요"},
+        {"range": "3~5", "stage": "전개", "text": "But 전환: 지나쳐서 독점 방어·경쟁 억제 수단이 됨 → 혁신을 방해 (주제문)"},
+        {"range": "6~9", "stage": "결론", "text": "사례: 진입 장벽·소송, 1차 대전 전 항공기 업계, 오늘날 스마트폰·생명공학, 신규 진입자의 '특허 덤불'"}
+      ],
+      "original": "The original idea of a patent, remember, was not to reward inventors with monopoly profits, but to encourage them to share their inventions. A certain amount of intellectual property law is plainly necessary to achieve this. But it has gone too far. Most patents are now as much about defending monopoly and discouraging rivals as about sharing ideas. And that disrupts innovation. Many firms use patents as barriers to entry, suing upstart innovators who trespass on their intellectual property even on the way to some other goal. In the years before World War I, aircraft makers tied each other up in patent lawsuits and slowed down innovation until the US government stepped in. Much the same has happened with smartphones and biotechnology today. New entrants have to fight their way through “patent thickets” if they are to build on existing technologies to make new ones.",
+      "sentences": [
+        {
+          "no": 1,
+          "en": "The original idea of a patent, remember, was not to reward inventors with monopoly profits, but to encourage them to share their inventions.",
+          "chunked": "The original idea of a patent, / remember, / was not to reward inventors / with monopoly profits, / but to encourage them / to share their inventions.",
+          "structure": "The original idea [of a patent](S), (remember,) was(V) not <to reward inventors with monopoly profits>(C1), but <to encourage them to share their inventions>(C2)",
+          "literal": "특허의 원래 발상은 / 기억하라 / 발명가들에게 보상하는 것이 아니었다 / 독점 이익으로 / 그들을 장려하는 것이었다 / 그들의 발명품을 공유하도록",
+          "ko": "기억하라, 특허의 원래 취지는 발명가들에게 독점 이익으로 보상하는 것이 아니라 그들이 자신의 발명품을 공유하도록 장려하는 것이었다.",
+          "tags": ["어법", "서술형 대비"],
+          "points": [
+            {"label": "①", "title": "not A but B", "text": "'A가 아니라 B'. A·B 자리에 같은 형태(to reward / to encourage)가 온다(병렬). → = to encourage them to share ~, not to reward ~"},
+            {"label": "②", "title": "보어 자리 to부정사", "text": "be동사 뒤 to부정사 = '~하는 것'(명사적 용법, 주격 보어)."},
+            {"label": "③", "title": "encourage + O + to V", "text": "'O가 ~하도록 장려하다'. 목적격 보어로 to부정사를 쓴다(sharing ×, share ×)."},
+            {"label": "④", "title": "reward A with B", "text": "'A에게 B로 보상하다'. 삽입된 remember는 독자에게 거는 말(명령문)이라 문장 구조와 무관하다."}
+          ]
+        },
+        {
+          "no": 2,
+          "en": "A certain amount of intellectual property law is plainly necessary to achieve this.",
+          "chunked": "A certain amount of intellectual property law / is plainly necessary / to achieve this.",
+          "structure": "A certain amount [of intellectual property law](S) is(V) plainly necessary(C) [to achieve this]",
+          "literal": "어느 정도의 지식재산권법은 / 분명히 필요하다 / 이것을 달성하기 위해",
+          "ko": "이것을 달성하기 위해서는 어느 정도의 지식재산권법이 분명히 필요하다.",
+          "tags": ["어법"],
+          "points": [
+            {"label": "①", "title": "a certain amount of + 불가산명사", "text": "주어의 핵심은 amount(단수) → 동사 is. of 뒤 명사에 수를 맞추지 않는다."},
+            {"label": "②", "title": "부사적 용법 to부정사(목적)", "text": "to achieve = '~하기 위해'. → = in order to achieve this"},
+            {"label": "③", "title": "지시어 this", "text": "this = 1번 문장의 '발명가들이 발명을 공유하도록 장려하는 것'. 지칭 문제 후보."}
+          ]
+        },
+        {
+          "no": 3,
+          "en": "But it has gone too far.",
+          "chunked": "But / it has gone too far.",
+          "literal": "그러나 / 그것은 너무 멀리 가 버렸다",
+          "ko": "그러나 그것은 도를 넘어섰다.",
+          "tags": ["주제문", "문장 삽입"],
+          "points": [
+            {"label": "①", "title": "역접 But = 글의 전환점", "text": "앞(특허의 필요성)과 반대로 필자의 비판이 시작된다. 주제문은 But 뒤에 온다."},
+            {"label": "②", "title": "go too far / 현재완료", "text": "go too far = '도를 넘다, 지나치다'. has gone은 과거에 시작해 지금까지 이어진 결과(결과·계속)."}
+          ]
+        },
+        {
+          "no": 4,
+          "en": "Most patents are now as much about defending monopoly and discouraging rivals as about sharing ideas.",
+          "chunked": "Most patents are now / as much about defending monopoly / and discouraging rivals / as about sharing ideas.",
+          "structure": "Most patents(S) are(V) now as much [about defending monopoly and discouraging rivals](C) as [about sharing ideas]",
+          "literal": "대부분의 특허는 이제 ~이다 / 독점을 방어하는 것에 관한 만큼 / 그리고 경쟁자를 막는 것에 / 아이디어를 공유하는 것에 관한 것만큼",
+          "ko": "이제 대부분의 특허는 아이디어 공유만큼이나 독점을 방어하고 경쟁자를 좌절시키는 것에 관한 것이다.",
+          "tags": ["주제문", "어법", "서술형 대비", "빈칸 추론"],
+          "points": [
+            {"label": "①", "title": "as much A as B (원급 비교)", "text": "'B만큼이나 A이기도 하다'. A·B 자리 모두 about + 동명사로 형태를 맞춘다."},
+            {"label": "②", "title": "전치사 + 동명사 병렬", "text": "about 뒤 defending과 discouraging이 and로 병렬 → 둘 다 -ing (discourage ×)."},
+            {"label": "③", "title": "discourage 의미", "text": "여기서는 '(경쟁자를) 좌절시키다, 막다'. encourage(1번 문장)와 대비된다 → 어휘 문제 후보."}
+          ]
+        },
+        {
+          "no": 5,
+          "en": "And that disrupts innovation.",
+          "chunked": "And / that disrupts innovation.",
+          "literal": "그리고 / 그것은 혁신을 방해한다",
+          "ko": "그리고 그것은 혁신을 방해한다.",
+          "tags": ["주제문", "빈칸 추론", "어휘"],
+          "points": [
+            {"label": "①", "title": "지시어 that", "text": "that = 4번 문장 전체(특허가 독점 방어·경쟁 억제 수단이 된 것). 단수 취급 → disrupts."},
+            {"label": "②", "title": "disrupt", "text": "'방해하다, 지장을 주다'. 정답 선지의 hinders와 같은 뜻 → 재진술 포인트."}
+          ]
+        },
+        {
+          "no": 6,
+          "en": "Many firms use patents as barriers to entry, suing upstart innovators who trespass on their intellectual property even on the way to some other goal.",
+          "chunked": "Many firms use patents / as barriers to entry, / suing upstart innovators / who trespass on their intellectual property / even on the way / to some other goal.",
+          "structure": "Many firms(S) use(V) patents(O) [as barriers to entry], [suing upstart innovators <who trespass on their intellectual property even on the way to some other goal>]",
+          "literal": "많은 기업들은 특허를 사용한다 / 진입 장벽으로 / 그리고 신생 혁신가들을 고소한다 / 자신들의 지식재산을 침해하는 / 심지어 도중에 / 어떤 다른 목표로 가는",
+          "ko": "많은 기업은 특허를 진입 장벽으로 사용하여, 어떤 다른 목표로 가는 도중에 자신들의 지식재산을 침해하기만 해도 신생 혁신가들을 고소한다.",
+          "tags": ["어법", "서술형 대비"],
+          "points": [
+            {"label": "①", "title": "use A as B", "text": "'A를 B로 사용하다'. as = 전치사(~로서)."},
+            {"label": "②", "title": "분사구문 suing ~", "text": "주절의 주어 Many firms가 고소하는 주체(능동) → 현재분사 suing. → = and they sue upstart innovators ~ (연속동작)"},
+            {"label": "③", "title": "주격 관계대명사 who + 수 일치", "text": "선행사 upstart innovators(복수) → trespass(trespasses ×)."},
+            {"label": "④", "title": "trespass on", "text": "'~을 침해하다'. 자동사라 전치사 on이 필요하다. on the way to = '~로 가는 도중에'."}
+          ]
+        },
+        {
+          "no": 7,
+          "en": "In the years before World War I, aircraft makers tied each other up in patent lawsuits and slowed down innovation until the US government stepped in.",
+          "chunked": "In the years before World War I, / aircraft makers tied each other up / in patent lawsuits / and slowed down innovation / until the US government stepped in.",
+          "structure": "[In the years before World War I], aircraft makers(S) tied(V1) each other(O1) up [in patent lawsuits] and slowed down(V2) innovation(O2) <until the US government stepped in>",
+          "literal": "1차 세계대전 이전 몇 년 동안 / 항공기 제조업체들은 서로를 묶어 놓았다 / 특허 소송으로 / 그리고 혁신을 늦추었다 / 미국 정부가 개입할 때까지",
+          "ko": "1차 세계대전 이전 몇 년 동안, 항공기 제조업체들은 특허 소송으로 서로의 발목을 잡았고, 미국 정부가 개입할 때까지 혁신을 늦추었다.",
+          "tags": ["서술형 대비"],
+          "points": [
+            {"label": "①", "title": "구동사 tie up / slow down", "text": "tie A up = 'A를 꼼짝 못하게 하다'. 목적어가 대명사면 tie them up 순서(tie up them ×). slow down = '늦추다'."},
+            {"label": "②", "title": "동사 병렬", "text": "tied ~ and slowed ~ : 주어 하나에 과거동사 두 개가 and로 병렬."},
+            {"label": "③", "title": "step in", "text": "'개입하다, 끼어들다'(= intervene). until절은 시간 부사절."}
+          ]
+        },
+        {
+          "no": 8,
+          "en": "Much the same has happened with smartphones and biotechnology today.",
+          "chunked": "Much the same has happened / with smartphones and biotechnology / today.",
+          "literal": "거의 같은 일이 일어났다 / 스마트폰과 생명공학에서 / 오늘날",
+          "ko": "오늘날 스마트폰과 생명공학에서도 거의 같은 일이 일어났다.",
+          "tags": ["문장 삽입"],
+          "points": [
+            {"label": "①", "title": "much the same = 거의 같은 것", "text": "much가 the same을 강조('거의'). 7번 사례를 받는 연결 단서 → 순서·문장 삽입 문제 단서."},
+            {"label": "②", "title": "happen = 자동사", "text": "수동태로 쓸 수 없다(has been happened ×)."}
+          ]
+        },
+        {
+          "no": 9,
+          "en": "New entrants have to fight their way through “patent thickets” if they are to build on existing technologies to make new ones.",
+          "chunked": "New entrants have to fight their way / through “patent thickets” / if they are to build on existing technologies / to make new ones.",
+          "structure": "New entrants(S) have to fight(V) their way(O) [through “patent thickets”] <if they(S') are to build on(V') existing technologies(O') [to make new ones]>",
+          "literal": "신규 진입자들은 싸우며 나아가야 한다 / '특허 덤불'을 헤치고 / 그들이 기존 기술을 토대로 하려면 / 새로운 기술을 만들기 위해",
+          "ko": "신규 진입자들은 새로운 기술을 만들기 위해 기존 기술을 토대로 삼으려면 '특허 덤불'을 헤치고 싸워 나가야 한다.",
+          "tags": ["어법", "서술형 대비"],
+          "points": [
+            {"label": "①", "title": "be to 용법(의도)", "text": "if절 속 be to V = '~하려면'(의도). → = if they intend to build on ~"},
+            {"label": "②", "title": "fight one's way through", "text": "'~을 헤치고 싸워 나아가다'(way 구문). make one's way(나아가다)와 같은 틀."},
+            {"label": "③", "title": "대명사 ones / build on", "text": "ones = technologies(복수 명사 반복 회피). build on = '~을 기반으로 하다'."}
+          ]
+        }
+      ],
+      "vocab": [
+        {"word": "patent", "pos": "n", "meaning": "특허(권)", "syn": ["exclusive right", "license"], "ant": ["—"], "deriv": ["patent v. 특허를 얻다", "patentable a. 특허를 받을 수 있는"], "root": "—"},
+        {"word": "original", "pos": "a", "meaning": "원래의, 본래의; 독창적인", "syn": ["initial", "primary", "first"], "ant": ["later", "derivative"], "deriv": ["origin n. 기원", "originally ad. 원래", "originality n. 독창성"], "root": "origin(시작) + al(형용사)"},
+        {"word": "reward", "pos": "v", "meaning": "보상하다", "syn": ["compensate", "recompense"], "ant": ["punish", "penalize"], "deriv": ["reward n. 보상", "rewarding a. 보람 있는"], "root": "—"},
+        {"word": "inventor", "pos": "n", "meaning": "발명가", "syn": ["creator", "originator"], "ant": ["imitator"], "deriv": ["invent v. 발명하다", "invention n. 발명(품)", "inventive a. 창의적인"], "root": "in(안으로) + vent(오다) → 떠올라 들어온 것을 찾아낸 사람"},
+        {"word": "monopoly", "pos": "n", "meaning": "독점(권)", "syn": ["exclusive control", "domination"], "ant": ["competition"], "deriv": ["monopolize v. 독점하다", "monopolistic a. 독점적인"], "root": "mono(하나) + poly(팔다) → 혼자 파는 것"},
+        {"word": "profit", "pos": "n", "meaning": "이익, 수익", "syn": ["gain", "earnings", "return"], "ant": ["loss"], "deriv": ["profitable a. 수익성 있는", "profitability n. 수익성"], "root": "—"},
+        {"word": "encourage", "pos": "v", "meaning": "장려하다, 격려하다", "syn": ["promote", "motivate", "foster"], "ant": ["discourage", "deter"], "deriv": ["encouragement n. 격려", "encouraging a. 고무적인"], "root": "en(~하게 하다) + courage(용기)"},
+        {"word": "intellectual property", "pos": "n", "meaning": "지식재산(권)", "syn": ["IP", "copyright/patent rights"], "ant": ["—"], "deriv": ["intellect n. 지성", "intellectual a. 지적인"], "root": "—"},
+        {"word": "plainly", "pos": "ad", "meaning": "분명히, 명백히", "syn": ["clearly", "obviously", "evidently"], "ant": ["doubtfully"], "deriv": ["plain a. 분명한; 평범한"], "root": "—"},
+        {"word": "defend", "pos": "v", "meaning": "방어하다, 지키다", "syn": ["protect", "guard", "shield"], "ant": ["attack", "abandon"], "deriv": ["defense n. 방어", "defensive a. 방어적인"], "root": "de(떨어져) + fend(치다) → 쳐서 물리치다"},
+        {"word": "discourage", "pos": "v", "meaning": "좌절시키다, 막다, 단념시키다", "syn": ["deter", "dissuade", "hinder"], "ant": ["encourage"], "deriv": ["discouragement n. 낙담", "discouraging a. 낙담시키는"], "root": "dis(반대) + courage(용기) → 용기를 빼앗다"},
+        {"word": "rival", "pos": "n", "meaning": "경쟁자", "syn": ["competitor", "opponent"], "ant": ["ally", "partner"], "deriv": ["rivalry n. 경쟁"], "root": "—"},
+        {"word": "disrupt", "pos": "v", "meaning": "방해하다, 지장을 주다", "syn": ["hinder", "interrupt", "disturb"], "ant": ["promote", "facilitate"], "deriv": ["disruption n. 방해, 붕괴", "disruptive a. 파괴적인"], "root": "dis(떨어져) + rupt(깨다) → 깨뜨려 흩뜨리다"},
+        {"word": "innovation", "pos": "n", "meaning": "혁신", "syn": ["advance", "breakthrough", "novelty"], "ant": ["stagnation"], "deriv": ["innovate v. 혁신하다", "innovative a. 혁신적인", "innovator n. 혁신가"], "root": "in(안에) + nov(새로운) → 새롭게 만듦"},
+        {"word": "barrier", "pos": "n", "meaning": "장벽, 장애물", "syn": ["obstacle", "hurdle", "barricade"], "ant": ["access", "opening"], "deriv": ["bar v. 막다"], "root": "—"},
+        {"word": "entry", "pos": "n", "meaning": "(시장) 진입, 참가", "syn": ["access", "admission"], "ant": ["exit", "withdrawal"], "deriv": ["enter v. 들어가다", "entrant n. 신규 진입자"], "root": "—"},
+        {"word": "sue", "pos": "v", "meaning": "고소하다, 소송을 제기하다", "syn": ["take legal action against", "prosecute"], "ant": ["—"], "deriv": ["suit n. 소송", "lawsuit n. 소송"], "root": "—"},
+        {"word": "upstart", "pos": "a", "meaning": "신생의, 갓 출현한", "syn": ["new", "emerging", "fledgling"], "ant": ["established"], "deriv": ["upstart n. 신출내기"], "root": "up(위로) + start(출발)"},
+        {"word": "trespass", "pos": "v", "meaning": "(on) 침해하다, 무단 침입하다", "syn": ["infringe", "encroach", "intrude"], "ant": ["respect"], "deriv": ["trespasser n. 무단 침입자", "trespass n. 침해"], "root": "tres(=trans, 넘어) + pass(지나가다) → 경계를 넘어가다"},
+        {"word": "lawsuit", "pos": "n", "meaning": "소송", "syn": ["suit", "legal action", "litigation"], "ant": ["settlement"], "deriv": ["—"], "root": "law(법) + suit(소송)"},
+        {"word": "entrant", "pos": "n", "meaning": "신규 진입자, 참가자", "syn": ["newcomer", "participant"], "ant": ["incumbent"], "deriv": ["enter v. 들어가다", "entry n. 진입", "entrance n. 입구"], "root": "enter(들어가다) + ant(사람)"},
+        {"word": "thicket", "pos": "n", "meaning": "덤불, 복잡하게 얽힌 것", "syn": ["tangle", "maze", "jungle"], "ant": ["—"], "deriv": ["thick a. 빽빽한"], "root": "thick(빽빽한) + et"},
+        {"word": "existing", "pos": "a", "meaning": "기존의, 현존하는", "syn": ["current", "present", "established"], "ant": ["new", "future"], "deriv": ["exist v. 존재하다", "existence n. 존재"], "root": "—"}
+      ],
+      "idioms": [
+        {"phrase": "not A but B", "meaning": "A가 아니라 B", "note": "= B, not A / B rather than A"},
+        {"phrase": "go too far", "meaning": "도를 넘다, 지나치다", "note": "But it has gone too far."},
+        {"phrase": "as much A as B", "meaning": "B만큼이나 A인", "note": "as much about defending ~ as about sharing ideas"},
+        {"phrase": "barriers to entry", "meaning": "진입 장벽", "note": "to는 전치사 → barriers to entering (enter ×)"},
+        {"phrase": "trespass on", "meaning": "~을 침해하다", "note": "= infringe on, encroach on"},
+        {"phrase": "tie A up", "meaning": "A를 꼼짝 못하게 하다, 발목을 잡다", "note": "tied each other up in lawsuits"},
+        {"phrase": "step in", "meaning": "개입하다", "note": "= intervene"},
+        {"phrase": "fight one's way through", "meaning": "~을 헤치고 나아가다", "note": "make one's way와 같은 way 구문"},
+        {"phrase": "build on", "meaning": "~을 기반으로 삼다", "note": "build on existing technologies"}
+      ],
+      "question": {
+        "stem": "다음 글의 주제로 가장 적절한 것은?",
+        "note": "*trespass 침해하다",
+        "choices": [
+          "side effects of anti-monopoly laws",
+          "ways to protect intellectual property",
+          "requirements for applying for a patent",
+          "patent law abuse that hinders innovation",
+          "resources needed for technological innovation"
+        ],
+        "answer": 4
+      },
+      "solving": {
+        "strategy": [
+          "1번 문장에서 소재(patent)와 '본래 취지 = 공유 장려'를 잡는다.",
+          "3번 문장 But it has gone too far.에서 글이 비판으로 꺾인다 → 이 뒤가 주제문.",
+          "4~5번: 특허 = 독점 방어·경쟁 억제 수단 → 혁신 방해(disrupts innovation). 한 줄 요약: '특허 남용이 혁신을 막는다'.",
+          "6~9번은 사례(진입 장벽, 항공기, 스마트폰·생명공학)이므로 요약을 확인만 하고 넘어간다.",
+          "선지에서 '소재(patent) + 관점(부정적: 혁신 방해)'이 모두 있는 것을 고른다."
+        ],
+        "evidence": [
+          {"sent": [3, 4, 5], "text": "특허가 도를 넘어 독점 방어·경쟁자 억제 수단이 되었고, 그것이 혁신을 방해한다"},
+          {"sent": [6, 7, 9], "text": "진입 장벽·특허 소송·특허 덤불 → 혁신이 늦춰진 사례"}
+        ],
+        "explanation": "글은 특허의 본래 취지(공유 장려)를 먼저 제시한 뒤 But으로 전환해, 오늘날 특허가 독점을 지키고 경쟁자를 막는 데 쓰이며 혁신을 방해한다고 비판한다. 5번 disrupts innovation이 선지의 hinders innovation으로, 4·6번의 독점 방어·소송이 patent law abuse로 재진술되었다. 따라서 정답은 ④ '혁신을 방해하는 특허법 남용'이다.",
+        "wrong": [
+          {"no": 1, "choice": "side effects of anti-monopoly laws", "why": "monopoly가 본문에 나와 끌리지만, 글이 비판하는 것은 독점을 '지켜 주는' 특허법의 부작용이지 독점 '금지법'의 부작용이 아니다. 방향이 정반대."},
+          {"no": 2, "choice": "ways to protect intellectual property", "why": "intellectual property가 두 번 나와 끌린다. 그러나 필자는 지식재산 보호가 '지나치다'고 비판하며, 보호 방법은 전혀 다루지 않는다."},
+          {"no": 3, "choice": "requirements for applying for a patent", "why": "특허 신청 요건(서류·절차)은 본문에 없다. patent 소재만 겹치는 선지. (학생 체크 선지 — 소재 단어만 보고 고른 전형적인 실수)"},
+          {"no": 5, "choice": "resources needed for technological innovation", "why": "innovation이 반복되어 끌리는 매력적 오답. 그러나 본문은 혁신에 필요한 자원이 아니라 혁신을 '가로막는' 요인(특허 남용)을 말한다."}
+        ],
+        "trap": "본문 반복 단어(monopoly, intellectual property, innovation, patent)를 그대로 쓴 선지가 모두 오답이다. 소재만 보고 고르지 말고 필자의 관점(부정적: 남용 → 방해)까지 들어 있는지 확인한다. 이미지 속 체크된 ③은 오답이며, 정답은 ④."
+      },
+      "naesin": {
+        "likely_types": ["주제", "제목", "요지", "어법", "어휘", "빈칸", "문장 삽입", "지칭", "서술형", "요약"],
+        "points": [
+          {"sent": [1], "point": "not A but B 병렬(to reward / to encourage), encourage + O + to V", "how": "encourage them sharing ×, but encouraging × 어법 · 서술형 배열 영작"},
+          {"sent": [2], "point": "a certain amount of + 불가산명사 → 단수 동사 is / 지시어 this", "how": "is↔are 수 일치, this가 가리키는 내용 우리말로 쓰기(지칭 서술형)"},
+          {"sent": [3], "point": "But 전환점 = 주제문 시작", "how": "주어진 문장 삽입(But it has gone too far.) 위치 찾기"},
+          {"sent": [4], "point": "as much A as B, about + 동명사 병렬(defending / discouraging)", "how": "discourage↔discouraging 어법, discouraging↔encouraging 어휘, 원급 비교 배열 영작"},
+          {"sent": [5], "point": "disrupts(방해하다) 핵심 어휘 · 지시어 that", "how": "disrupts↔promotes 어휘 문제, 빈칸(혁신을 ____한다) 변형"},
+          {"sent": [6], "point": "분사구문 suing(능동), 주격 관계대명사 who + 복수 동사 trespass, barriers to entry", "how": "suing↔sued, trespass↔trespasses 어법, barriers↔gateways 어휘"},
+          {"sent": [7], "point": "tie ~ up, slowed down 병렬 · until 시간 부사절", "how": "slowed↔slowing 병렬 어법, slowed↔sped up 어휘"},
+          {"sent": [8], "point": "much the same(앞 사례를 받는 연결 단서), happen 자동사", "how": "순서 배열 단서, has happened↔has been happened 어법"},
+          {"sent": [9], "point": "be to 용법(의도), fight one's way through, ones", "how": "be to 의미 묻기, ones 지칭, 조건 영작"},
+          {"sent": [3, 4, 5], "point": "주제문 묶음", "how": "주제·제목·요지 서술형, 요약문 완성(특허 → 독점 방어 → 혁신 방해)"}
+        ]
+      },
+      "review": {
+        "key_points": [
+          {
+            "title": "병렬 구조 3종 (not A but B / as much A as B / 동사 병렬)",
+            "sent": [1, 4, 7],
+            "why": "이 지문 어법 문제는 거의 병렬에서 나온다. 형태 맞추기만 알면 세 문장을 다 막을 수 있다.",
+            "notes": [
+              "① not A but B: A·B는 같은 형태 — not to reward ~ but to encourage ~ (1번)",
+              "② as much A as B: 원급 비교의 A·B도 같은 형태 — as much about defending ~ as about sharing ~ (4번)",
+              "③ 전치사 뒤 병렬: about defending ~ and discouraging ~ → 둘 다 동명사 (4번)",
+              "④ 동사 병렬: aircraft makers tied ~ and slowed ~ → 둘 다 과거동사 (7번)",
+              "※ 확인법: 접속사(and, but, as) 바로 앞뒤에서 '짝'을 찾고 형태를 비교한다."
+            ],
+            "questions": [
+              {
+                "type": "어법 판단",
+                "stem": "다음 (A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+                "text": "The original idea of a patent was not to reward inventors with monopoly profits, but (A) [to encourage / encouraging] them to share their inventions. Most patents are now as much about defending monopoly and (B) [discourage / discouraging] rivals as about sharing ideas. Aircraft makers tied each other up in patent lawsuits and (C) [slowed / slowing] down innovation.",
+                "choices": [
+                  "to encourage – discourage – slowed",
+                  "to encourage – discouraging – slowed",
+                  "to encourage – discouraging – slowing",
+                  "encouraging – discouraging – slowed",
+                  "encouraging – discourage – slowing"
+                ],
+                "answer": 2,
+                "explanation": "(A) not to reward와 병렬 → to encourage. (B) about 뒤 defending과 병렬 → discouraging. (C) 과거동사 tied와 병렬 → slowed."
+              },
+              {
+                "type": "틀린 곳 고치기",
+                "stem": "다음 문장에서 어법상 틀린 곳을 찾아 바르게 고쳐 쓰시오.",
+                "text": "The original idea of a patent was not to reward inventors, but to encourage them sharing their inventions.",
+                "answer": "sharing → to share",
+                "explanation": "encourage + O + to V(목적격 보어 to부정사)."
+              }
+            ]
+          },
+          {
+            "title": "분사구문 suing + 주격 관계대명사 수 일치",
+            "sent": [6],
+            "why": "한 문장 안에 분사(능동/수동)와 관계사 수 일치가 함께 있어 어법 선지로 가장 많이 쓰인다.",
+            "notes": [
+              "① 분사구문: 주절 주어(Many firms)가 '고소하는' 주체 → 능동 suing. = and they sue ~",
+              "② 수동이 되려면 주어가 '고소당하는' 대상이어야 한다: Sued by rivals, the startup closed down.",
+              "③ 주격 관계대명사 who 뒤 동사는 선행사에 수 일치: upstart innovators(복수) who trespass",
+              "④ trespass는 자동사 → trespass on + 목적어 (trespass their property ×)"
+            ],
+            "questions": [
+              {
+                "type": "어법 판단",
+                "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?",
+                "text": "Many firms ①__use__ patents as barriers to entry, ②__sued__ upstart innovators who ③__trespass__ ④__on__ their intellectual property even on the way to some other goal ⑤__that__ they pursue.",
+                "choices": ["use", "sued", "trespass", "on", "that"],
+                "answer": 2,
+                "explanation": "Many firms가 고소하는 주체이므로 능동 분사구문 suing이 맞다. ⑤ that은 goal을 꾸미는 목적격 관계대명사로 적절(새로 만든 예문 부분)."
+              }
+            ]
+          },
+          {
+            "title": "encourage ↔ discourage / disrupt 어휘",
+            "sent": [1, 4, 5],
+            "why": "글의 논리(공유 장려 → 경쟁 억제 → 혁신 방해)가 이 세 단어에 걸려 있어 반의어 어휘 문제로 바꾸기 좋다.",
+            "notes": [
+              "encourage 장려하다 ↔ discourage 좌절시키다, 막다 (dis-: 반대)",
+              "disrupt 방해하다 = hinder, interrupt, disturb ↔ promote, facilitate",
+              "barrier 장벽 = obstacle, hurdle / entrant 신규 진입자 ↔ incumbent 기존 사업자",
+              "trespass on 침해하다 = infringe on, encroach on"
+            ],
+            "questions": [
+              {
+                "type": "어휘",
+                "stem": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+                "text": "The original idea of a patent was to ①__encourage__ inventors to share their inventions. But it has gone too far. Most patents are now about defending monopoly and ②__discouraging__ rivals. And that ③__promotes__ innovation. Many firms use patents as ④__barriers__ to entry, and new entrants have to fight their way through “patent ⑤__thickets__.”",
+                "choices": ["encourage", "discouraging", "promotes", "barriers", "thickets"],
+                "answer": 3,
+                "explanation": "독점 방어·경쟁 억제는 혁신을 '방해'한다 → promotes를 disrupts(hinders)로 바꿔야 한다."
+              }
+            ]
+          },
+          {
+            "title": "주제 → 영어 요약문 완성",
+            "sent": [1, 3, 4, 5],
+            "why": "주제 유형 지문은 내신에서 요약문 완성·주제 영작 서술형으로 바뀐다.",
+            "notes": [
+              "주제(영): patent law abuse that hinders innovation",
+              "요지(한): 공유를 장려하려던 특허가 독점 방어 수단으로 남용되어 혁신을 방해한다.",
+              "제목 예: Patents: From Sharing Ideas to Blocking Them / When Protection Becomes Obstruction",
+              "재진술: disrupt = hinder = slow down / defend monopoly = protect exclusive rights"
+            ],
+            "questions": [
+              {
+                "type": "요약문 완성",
+                "stem": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+                "text": "Although patents were originally meant to encourage inventors to (A)______ their ideas, they are now often used to protect monopolies, which ends up (B)______ innovation.",
+                "choices": [
+                  "share – hindering",
+                  "share – accelerating",
+                  "hide – hindering",
+                  "sell – supporting",
+                  "hide – accelerating"
+                ],
+                "answer": 1,
+                "explanation": "1번 문장: share their inventions → (A) share. 5번 문장: disrupts innovation → (B) hindering."
+              },
+              {
+                "type": "주제 서술형",
+                "stem": "윗글의 주제를 <조건>에 맞게 영어로 쓰시오. <조건> patent, innovation을 포함할 것 / 8단어 이내의 명사구로 쓸 것",
+                "answer": "patent law abuse that hinders innovation (또는 the misuse of patents disrupting innovation)",
+                "explanation": "소재(patent) + 관점(남용 → 혁신 방해)이 모두 들어가야 한다."
+              }
+            ]
+          }
+        ]
+      },
+      "grammar_plus": [
+        {
+          "title": "병렬 구조(Parallelism)",
+          "body": [
+            "not A but B / not only A but also B / either A or B / both A and B → A·B는 같은 품사·형태",
+            "as + 원급 + as 비교의 두 대상도 같은 형태로",
+            "전치사 뒤 and 병렬 → 모두 동명사(명사)"
+          ],
+          "examples": [
+            "The goal was not to punish them but to teach them.",
+            "She is interested in reading novels and writing poems.",
+            "He enjoys cooking as much as eating."
+          ]
+        },
+        {
+          "title": "be to 용법",
+          "body": [
+            "예정(~할 예정이다) / 의무(~해야 한다) / 가능(~할 수 있다) / 운명(~할 운명이다) / 의도(if절에서 ~하려면)",
+            "if절 속 be to = 의도: if they are to build on existing technologies"
+          ],
+          "examples": [
+            "The meeting is to be held tomorrow. (예정)",
+            "You are to finish it by noon. (의무)",
+            "If you are to succeed, you must work hard. (의도)"
+          ]
+        },
+        {
+          "title": "분사구문 능동/수동",
+          "body": [
+            "주절 주어가 행위자 → 현재분사(-ing)",
+            "주절 주어가 행위를 받음 → 과거분사(p.p.)"
+          ],
+          "examples": [
+            "Many firms use patents, suing upstart innovators. (firms가 고소함)",
+            "Sued by a big firm, the startup had to close. (startup이 고소당함)"
+          ]
+        }
+      ]
+    }
+  ]
+}
