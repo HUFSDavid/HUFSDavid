@@ -2,8 +2,9 @@
 /*
  * David 모의고사 지문분석 Word 생성기
  *
- * 사용법: node build_docx.js analysis.json 출력폴더 [logo.png]
- *   - 교사용·학생용 .docx 두 파일을 만든다.
+ * 사용법: node build_docx.js analysis.json 출력폴더 [logo.png] [--student]
+ *   - 기본: 수업용 분석 자료(교사용) .docx 한 파일만 만든다.
+ *   - --student: 해석·어휘 뜻 등을 비운 학생용 필기 노트도 함께 만든다.
  *   - analysis.json 구조는 references/json-schema.md 참고.
  *   - 'docx' npm 패키지가 필요하다 (npm i docx).
  */
@@ -25,9 +26,11 @@ function loadDocx() {
   }
 }
 
-const [, , inPath, outDir = ".", logoPath] = process.argv;
+const args = process.argv.slice(2);
+const withStudent = args.includes("--student");
+const [inPath, outDir = ".", logoPath] = args.filter((a) => !a.startsWith("--"));
 if (!inPath) {
-  console.error("사용법: node build_docx.js analysis.json 출력폴더 [logo.png]");
+  console.error("사용법: node build_docx.js analysis.json 출력폴더 [logo.png] [--student]");
   process.exit(1);
 }
 const data = JSON.parse(fs.readFileSync(inPath, "utf8"));
@@ -298,23 +301,6 @@ function naesinBlock(ps, forTeacher) {
       nx.points.map((x) => [join(x.sent), x.point, forTeacher ? x.how ?? "" : ""]), [900, 4200, CONTENT_W - 5100]));
     out.push(spacer(100));
   }
-  if (nx.grammar_checks?.length) {
-    out.push(txt("어법 CHECK — 알맞은 것을 고르시오.", { bold: true, size: 20, after: 80 }));
-    nx.grammar_checks.forEach((g) => {
-      out.push(p([run(`${g.sent}  `, { bold: true, size: 19 }), run(`▌ ${g.label}`, { size: 16, color: C.gray })], { after: 20, keepNext: true }));
-      out.push(txt(g.text, { size: 19, line: 340, after: forTeacher ? 20 : 80 }));
-      if (forTeacher) out.push(txt(`→ [[${g.answer}]]${g.why ? `  (${g.why})` : ""}`, { size: 17, after: 80 }));
-    });
-  }
-  if (nx.writing?.length) {
-    out.push(txt("서술형 대비", { bold: true, size: 20, before: 120, after: 80 }));
-    nx.writing.forEach((w, i) => {
-      out.push(txt(`${i + 1}. [${w.type}] ${w.prompt}`, { size: 19, after: 40 }));
-      if (w.given) out.push(txt(w.given, { size: 17, color: C.gray, after: 40 }));
-      if (forTeacher) out.push(txt(`→ [[${w.answer}]]`, { size: 18, after: 100 }));
-      else out.push(...blankLine(2));
-    });
-  }
   return out;
 }
 
@@ -381,8 +367,8 @@ function buildDoc(forTeacher) {
 (async () => {
   fs.mkdirSync(outDir, { recursive: true });
   const base = meta.filename ?? "지문분석";
-  for (const forTeacher of [true, false]) {
-    const file = path.join(outDir, `${base}_${forTeacher ? "교사용" : "학생용"}.docx`);
+  for (const forTeacher of withStudent ? [true, false] : [true]) {
+    const file = path.join(outDir, forTeacher ? `${base}.docx` : `${base}_학생용.docx`);
     fs.writeFileSync(file, await Packer.toBuffer(buildDoc(forTeacher)));
     console.log("저장:", file);
   }

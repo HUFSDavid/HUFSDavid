@@ -1,6 +1,6 @@
 # analysis.json 구조
 
-`scripts/build_docx.js`가 읽는 입력 형식이다. 지문 여러 개를 `passages` 배열에 넣으면 한 책자(교사용·학생용 각 1파일)로 묶인다.
+`scripts/build_docx.js`가 읽는 입력 형식이다. 지문 여러 개를 `passages` 배열에 넣으면 한 책자(수업용 분석 자료 1파일)로 묶인다.
 필드가 없으면 그 칸은 건너뛴다. 문자열 안에서 `**굵게**`, `==형광==`, `[[정답색]]` 표시를 쓸 수 있다.
 
 ```json
@@ -72,12 +72,6 @@
         "likely_types": ["빈칸", "어법", "서술형", "문장 삽입", "주제"],
         "points": [
           {"sent": [4], "point": "가주어-진주어 not to be excluded", "how": "to부정사 부정어 위치를 어법 선지로"}
-        ],
-        "grammar_checks": [
-          {"sent": 3, "label": "so vs. such", "text": "For many, this is (so / such) stressful (that / what) it even has a name.", "answer": "so / that", "why": "so+형용사+(that) 완전한 절"}
-        ],
-        "writing": [
-          {"type": "배열 영작", "prompt": "우리의 뇌가 현대 세계에 적응되지 않은 것의 또 다른 예", "given": "(adapted / our brain / not / being / to / of / the modern world)", "answer": "another example of our brain not being adapted to the modern world"}
         ]
       },
       "grammar_plus": [
@@ -90,8 +84,8 @@
 ```
 
 ## 필드별 메모
-- `sentences[].chunked`: 끊어읽기는 `/`로 의미 단위를 나눈다. 학생용에도 그대로 나간다.
-- `sentences[].structure`: 교사용에만 나가는 S/V/O/C 표시. 필요한 문장만 쓴다(쉬운 문장은 생략).
+- `sentences[].chunked`: 끊어읽기는 `/`로 의미 단위를 나눈다. 학생용 노트(--student)에도 그대로 나간다.
+- `sentences[].structure`: 분석 자료에만 나가는 S/V/O/C 표시. 필요한 문장만 쓴다(쉬운 문장은 생략).
 - `sentences[].tags`: `주제문`, `빈칸 추론`, `문장 삽입`, `서술형 대비`, `어법`, `어휘` 중 해당하는 것만.
 - `naesin.likely_types`에 쓸 수 있는 값: 목적, 심경·분위기, 주장, 함축의미, 요지, 주제, 제목, 도표, 일치·불일치, 어법, 어휘, 빈칸, 무관한 문장, 순서, 문장 삽입, 요약, 지칭, 연결어, 서술형
 - `question.answer`: 1~5 숫자. 문제가 없는 지문(외부 지문 등)이면 `question`·`solving`을 빼도 된다.

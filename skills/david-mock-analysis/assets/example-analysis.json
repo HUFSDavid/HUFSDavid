@@ -16,9 +16,21 @@
       "topic_ko": "글쓴이는 해외 출장 때문에 모교 졸업식 연설 초청을 정중히 거절한다.",
       "summary": "모교 졸업생인 Jane은 졸업식 연설을 부탁받아 영광스러워하지만, 같은 기간 중요한 해외 출장이 잡혀 있어 초청을 거절하고 졸업식이 뜻깊게 치러지기를 바란다.",
       "flow": [
-        {"range": "1~2", "stage": "인사", "text": "제60회 졸업식 축하 + 졸업생으로서 모교가 지역 최고 학교가 된 것에 대한 자부심"},
-        {"range": "3~4", "stage": "본론", "text": "연설 초청에 대한 감사 → However: 해외 출장 때문에 연설할 수 없음"},
-        {"range": "5~6", "stage": "마무리", "text": "초청을 거절할 수밖에 없다는 확인 + 기억에 남는 졸업식 기원"}
+        {
+          "range": "1~2",
+          "stage": "인사",
+          "text": "제60회 졸업식 축하 + 졸업생으로서 모교가 지역 최고 학교가 된 것에 대한 자부심"
+        },
+        {
+          "range": "3~4",
+          "stage": "본론",
+          "text": "연설 초청에 대한 감사 → However: 해외 출장 때문에 연설할 수 없음"
+        },
+        {
+          "range": "5~6",
+          "stage": "마무리",
+          "text": "초청을 거절할 수밖에 없다는 확인 + 기억에 남는 졸업식 기원"
+        }
       ],
       "original": "Dear Mr. Steve Carter,\nCongratulations on the 60th graduation ceremony of Yuoralis High School. As a former student, I am extremely proud that the school has become one of the best schools in the local community. I felt honored when I received your kind invitation to deliver a speech at the ceremony. However, I am deeply sorry to say that I will not be able to give a speech because I have a very important overseas business trip scheduled during that time. I would have loved to speak to the graduating students, but I must decline your invitation to this meaningful celebration. I wish you a memorable graduation ceremony.\nSincerely,\nJane Whittmore",
       "sentences": [
@@ -29,7 +41,11 @@
           "literal": "축하합니다 / 제60회 졸업식을 / Yuoralis 고등학교의",
           "ko": "Yuoralis 고등학교의 제60회 졸업식을 축하드립니다.",
           "points": [
-            {"label": "①", "title": "Congratulations on + 명사", "text": "축하 인사에서는 항상 복수형 Congratulations를 쓰고, 축하 대상은 전치사 on으로 잇는다. (for, to ✕)"}
+            {
+              "label": "①",
+              "title": "Congratulations on + 명사",
+              "text": "축하 인사에서는 항상 복수형 Congratulations를 쓰고, 축하 대상은 전치사 on으로 잇는다. (for, to ✕)"
+            }
           ]
         },
         {
@@ -39,11 +55,25 @@
           "structure": "[As a former student] I(S) am(V) extremely proud(C) <that the school(S') has become(V') one of the best schools(C')>",
           "literal": "졸업생으로서 / 나는 매우 자랑스럽다 / 학교가 ~이 되었다는 것이 / 최고의 학교들 중 하나가 / 지역 사회에서",
           "ko": "졸업생으로서, 저는 모교가 지역 사회에서 손꼽히는 훌륭한 학교가 된 것이 무척 자랑스럽습니다.",
-          "tags": ["어법"],
+          "tags": [
+            "어법"
+          ],
           "points": [
-            {"label": "①", "title": "전치사 as", "text": "as + 명사 = '~로서'(자격). 접속사 as(~할 때, ~때문에)와 구별한다."},
-            {"label": "②", "title": "proud that + 완전한 절", "text": "감정 형용사 뒤 that절은 감정의 이유를 나타낸다. 명사(구)가 오면 proud of를 쓴다. → = proud of the school having become ~"},
-            {"label": "③", "title": "one of the + 최상급 + 복수명사", "text": "'가장 ~한 것들 중 하나'. 뒤 명사는 반드시 복수(schools)."}
+            {
+              "label": "①",
+              "title": "전치사 as",
+              "text": "as + 명사 = '~로서'(자격). 접속사 as(~할 때, ~때문에)와 구별한다."
+            },
+            {
+              "label": "②",
+              "title": "proud that + 완전한 절",
+              "text": "감정 형용사 뒤 that절은 감정의 이유를 나타낸다. 명사(구)가 오면 proud of를 쓴다. → = proud of the school having become ~"
+            },
+            {
+              "label": "③",
+              "title": "one of the + 최상급 + 복수명사",
+              "text": "'가장 ~한 것들 중 하나'. 뒤 명사는 반드시 복수(schools)."
+            }
           ]
         },
         {
@@ -53,10 +83,20 @@
           "structure": "I(S) felt(V) honored(C) <when I received your kind invitation [to deliver a speech]>",
           "literal": "나는 영광스럽게 느꼈다 / 당신의 친절한 초청을 받았을 때 / 연설을 해 달라는 / 그 행사에서",
           "ko": "그 졸업식에서 연설을 해 달라는 친절한 초청을 받았을 때 저는 영광이라고 느꼈습니다.",
-          "tags": ["서술형 대비"],
+          "tags": [
+            "서술형 대비"
+          ],
           "points": [
-            {"label": "①", "title": "feel + 형용사(과거분사) 보어", "text": "감각동사 feel 뒤에는 부사가 아닌 형용사 보어. 주어가 영광을 '받는' 입장이므로 과거분사 honored."},
-            {"label": "②", "title": "형용사적 to부정사", "text": "to deliver a speech가 invitation을 뒤에서 꾸민다. invitation to V = '~하라는 초대'."}
+            {
+              "label": "①",
+              "title": "feel + 형용사(과거분사) 보어",
+              "text": "감각동사 feel 뒤에는 부사가 아닌 형용사 보어. 주어가 영광을 '받는' 입장이므로 과거분사 honored."
+            },
+            {
+              "label": "②",
+              "title": "형용사적 to부정사",
+              "text": "to deliver a speech가 invitation을 뒤에서 꾸민다. invitation to V = '~하라는 초대'."
+            }
           ]
         },
         {
@@ -66,11 +106,27 @@
           "structure": "However, I(S) am(V) deeply sorry(C) [to say <that I will not be able to give a speech <because I have a trip(O) scheduled(OC) ~>>]",
           "literal": "그러나 / 말씀드리게 되어 매우 죄송하다 / 연설을 할 수 없을 것이라고 / 매우 중요한 해외 출장이 있기 때문에 / 그 기간에 예정된",
           "ko": "하지만 그 기간에 매우 중요한 해외 출장이 잡혀 있어 연설을 할 수 없다는 말씀을 드리게 되어 정말 죄송합니다.",
-          "tags": ["주제문", "어법", "서술형 대비"],
+          "tags": [
+            "주제문",
+            "어법",
+            "서술형 대비"
+          ],
           "points": [
-            {"label": "①", "title": "However = 글의 목적 신호", "text": "앞의 감사·칭찬은 배경. 목적 유형은 However 뒤 문장이 곧 정답 근거다."},
-            {"label": "②", "title": "감정 형용사 + to부정사(원인)", "text": "sorry to say = '말하게 되어 유감이다'. 부사적 용법 중 감정의 원인."},
-            {"label": "③", "title": "have + O + p.p.", "text": "출장(trip)은 '예정되는' 대상이므로 과거분사 scheduled가 목적격보어. scheduling ✕"}
+            {
+              "label": "①",
+              "title": "However = 글의 목적 신호",
+              "text": "앞의 감사·칭찬은 배경. 목적 유형은 However 뒤 문장이 곧 정답 근거다."
+            },
+            {
+              "label": "②",
+              "title": "감정 형용사 + to부정사(원인)",
+              "text": "sorry to say = '말하게 되어 유감이다'. 부사적 용법 중 감정의 원인."
+            },
+            {
+              "label": "③",
+              "title": "have + O + p.p.",
+              "text": "출장(trip)은 '예정되는' 대상이므로 과거분사 scheduled가 목적격보어. scheduling ✕"
+            }
           ]
         },
         {
@@ -80,11 +136,26 @@
           "structure": "I(S) would have loved(V) [to speak ~](O), but I(S) must decline(V) your invitation(O) [to this meaningful celebration]",
           "literal": "나는 정말 하고 싶었을 것이다 / 졸업하는 학생들에게 연설하는 것을 / 그러나 초청을 거절해야 한다 / 이 의미 있는 축하 행사로의",
           "ko": "졸업생들 앞에서 꼭 연설하고 싶었지만, 이 뜻깊은 행사에 대한 초청을 거절할 수밖에 없습니다.",
-          "tags": ["주제문", "어휘"],
+          "tags": [
+            "주제문",
+            "어휘"
+          ],
           "points": [
-            {"label": "①", "title": "would have p.p.", "text": "가정법 과거완료의 귀결절 형태. 실제로는 하지 못하는 일에 대한 아쉬움을 정중하게 표현한다."},
-            {"label": "②", "title": "graduating (현재분사)", "text": "학생들이 '졸업하는' 주체이므로 능동의 현재분사. graduated students는 '이미 졸업한 학생들'."},
-            {"label": "③", "title": "조동사 + 동사원형", "text": "must 뒤에는 동사원형 decline. to decline ✕"}
+            {
+              "label": "①",
+              "title": "would have p.p.",
+              "text": "가정법 과거완료의 귀결절 형태. 실제로는 하지 못하는 일에 대한 아쉬움을 정중하게 표현한다."
+            },
+            {
+              "label": "②",
+              "title": "graduating (현재분사)",
+              "text": "학생들이 '졸업하는' 주체이므로 능동의 현재분사. graduated students는 '이미 졸업한 학생들'."
+            },
+            {
+              "label": "③",
+              "title": "조동사 + 동사원형",
+              "text": "must 뒤에는 동사원형 decline. to decline ✕"
+            }
           ]
         },
         {
@@ -95,35 +166,299 @@
           "literal": "나는 당신에게 기원한다 / 기억에 남을 졸업식을",
           "ko": "기억에 남는 졸업식이 되기를 바랍니다.",
           "points": [
-            {"label": "①", "title": "wish + IO + DO (4형식)", "text": "wish가 '~에게 …을 빌다'의 뜻일 때 4형식. I wish you luck / a happy birthday와 같은 구조."}
+            {
+              "label": "①",
+              "title": "wish + IO + DO (4형식)",
+              "text": "wish가 '~에게 …을 빌다'의 뜻일 때 4형식. I wish you luck / a happy birthday와 같은 구조."
+            }
           ]
         }
       ],
       "vocab": [
-        {"word": "graduation", "pos": "n", "meaning": "졸업; 졸업식", "syn": ["commencement"], "ant": ["—"], "deriv": ["graduate v. 졸업하다 / n. 졸업생", "graduated a. 졸업한; 눈금이 매겨진"], "root": "grad(걸음, 단계) + -uate → 한 단계를 마치다"},
-        {"word": "ceremony", "pos": "n", "meaning": "의식, 식", "syn": ["ritual", "service", "event"], "ant": ["—"], "deriv": ["ceremonial a. 의식의", "ceremonious a. 격식을 차린"], "root": "—"},
-        {"word": "former", "pos": "a", "meaning": "이전의, 과거의", "syn": ["previous", "past", "ex-"], "ant": ["current", "present", "latter"], "deriv": ["formerly adv. 이전에"], "root": "fore(앞) + -mer(비교) → 더 앞선"},
-        {"word": "extremely", "pos": "adv", "meaning": "극도로, 대단히", "syn": ["highly", "exceedingly", "tremendously"], "ant": ["slightly", "barely"], "deriv": ["extreme a. 극단적인 / n. 극단", "extremity n. 말단; 극단"], "root": "ex(밖) + -treme(최상급) → 가장 바깥쪽의"},
-        {"word": "community", "pos": "n", "meaning": "지역 사회, 공동체", "syn": ["neighborhood", "society"], "ant": ["—"], "deriv": ["communal a. 공동의", "commune n. 공동체"], "root": "com(함께) + mun(의무, 나눔) → 함께 나누는 집단"},
-        {"word": "honored", "pos": "a", "meaning": "영광으로 여기는", "syn": ["privileged", "flattered"], "ant": ["insulted", "humiliated"], "deriv": ["honor n. 명예 / v. 영예를 주다", "honorable a. 존경할 만한", "honorary a. 명예의"], "root": "—"},
-        {"word": "invitation", "pos": "n", "meaning": "초대, 초청", "syn": ["request", "call"], "ant": ["rejection"], "deriv": ["invite v. 초대하다", "inviting a. 매력적인, 솔깃한"], "root": "—"},
-        {"word": "deliver", "pos": "v", "meaning": "(연설 등을) 하다; 배달하다", "syn": ["give", "present", "make"], "ant": ["—"], "deriv": ["delivery n. 배달; 연설 방식"], "root": "de(완전히) + liver(자유롭게 하다) → 넘겨주다"},
-        {"word": "overseas", "pos": "a/adv", "meaning": "해외의; 해외로", "syn": ["abroad", "foreign", "international"], "ant": ["domestic", "local"], "deriv": ["—"], "root": "over(건너) + sea(바다) → 바다 건너"},
-        {"word": "schedule", "pos": "v", "meaning": "일정을 잡다, 예정하다", "syn": ["arrange", "plan", "book"], "ant": ["cancel"], "deriv": ["schedule n. 일정", "reschedule v. 일정을 변경하다"], "root": "—"},
-        {"word": "decline", "pos": "v", "meaning": "거절하다; 감소하다", "syn": ["refuse", "reject", "turn down"], "ant": ["accept", "increase"], "deriv": ["decline n. 감소, 하락", "declining a. 쇠퇴하는"], "root": "de(아래로) + clin(기울다) → 아래로 기울다 → 거절·감소"},
-        {"word": "meaningful", "pos": "a", "meaning": "의미 있는, 뜻깊은", "syn": ["significant", "worthwhile"], "ant": ["meaningless", "trivial"], "deriv": ["meaning n. 의미", "meaningfully adv. 의미 있게"], "root": "mean + -ing + -ful(가득한)"},
-        {"word": "celebration", "pos": "n", "meaning": "축하 행사, 기념", "syn": ["festivity", "ceremony"], "ant": ["mourning"], "deriv": ["celebrate v. 축하하다", "celebrated a. 유명한", "celebrity n. 유명인"], "root": "celebr(자주 찾는, 유명한) + -ation"},
-        {"word": "memorable", "pos": "a", "meaning": "기억할 만한, 인상적인", "syn": ["unforgettable", "notable"], "ant": ["forgettable", "ordinary"], "deriv": ["memory n. 기억", "memorize v. 암기하다", "memorial n. 기념비 / a. 기념의"], "root": "memor(기억하다) + -able(~할 만한)"}
+        {
+          "word": "graduation",
+          "pos": "n",
+          "meaning": "졸업; 졸업식",
+          "syn": [
+            "commencement"
+          ],
+          "ant": [
+            "—"
+          ],
+          "deriv": [
+            "graduate v. 졸업하다 / n. 졸업생",
+            "graduated a. 졸업한; 눈금이 매겨진"
+          ],
+          "root": "grad(걸음, 단계) + -uate → 한 단계를 마치다"
+        },
+        {
+          "word": "ceremony",
+          "pos": "n",
+          "meaning": "의식, 식",
+          "syn": [
+            "ritual",
+            "service",
+            "event"
+          ],
+          "ant": [
+            "—"
+          ],
+          "deriv": [
+            "ceremonial a. 의식의",
+            "ceremonious a. 격식을 차린"
+          ],
+          "root": "—"
+        },
+        {
+          "word": "former",
+          "pos": "a",
+          "meaning": "이전의, 과거의",
+          "syn": [
+            "previous",
+            "past",
+            "ex-"
+          ],
+          "ant": [
+            "current",
+            "present",
+            "latter"
+          ],
+          "deriv": [
+            "formerly adv. 이전에"
+          ],
+          "root": "fore(앞) + -mer(비교) → 더 앞선"
+        },
+        {
+          "word": "extremely",
+          "pos": "adv",
+          "meaning": "극도로, 대단히",
+          "syn": [
+            "highly",
+            "exceedingly",
+            "tremendously"
+          ],
+          "ant": [
+            "slightly",
+            "barely"
+          ],
+          "deriv": [
+            "extreme a. 극단적인 / n. 극단",
+            "extremity n. 말단; 극단"
+          ],
+          "root": "ex(밖) + -treme(최상급) → 가장 바깥쪽의"
+        },
+        {
+          "word": "community",
+          "pos": "n",
+          "meaning": "지역 사회, 공동체",
+          "syn": [
+            "neighborhood",
+            "society"
+          ],
+          "ant": [
+            "—"
+          ],
+          "deriv": [
+            "communal a. 공동의",
+            "commune n. 공동체"
+          ],
+          "root": "com(함께) + mun(의무, 나눔) → 함께 나누는 집단"
+        },
+        {
+          "word": "honored",
+          "pos": "a",
+          "meaning": "영광으로 여기는",
+          "syn": [
+            "privileged",
+            "flattered"
+          ],
+          "ant": [
+            "insulted",
+            "humiliated"
+          ],
+          "deriv": [
+            "honor n. 명예 / v. 영예를 주다",
+            "honorable a. 존경할 만한",
+            "honorary a. 명예의"
+          ],
+          "root": "—"
+        },
+        {
+          "word": "invitation",
+          "pos": "n",
+          "meaning": "초대, 초청",
+          "syn": [
+            "request",
+            "call"
+          ],
+          "ant": [
+            "rejection"
+          ],
+          "deriv": [
+            "invite v. 초대하다",
+            "inviting a. 매력적인, 솔깃한"
+          ],
+          "root": "—"
+        },
+        {
+          "word": "deliver",
+          "pos": "v",
+          "meaning": "(연설 등을) 하다; 배달하다",
+          "syn": [
+            "give",
+            "present",
+            "make"
+          ],
+          "ant": [
+            "—"
+          ],
+          "deriv": [
+            "delivery n. 배달; 연설 방식"
+          ],
+          "root": "de(완전히) + liver(자유롭게 하다) → 넘겨주다"
+        },
+        {
+          "word": "overseas",
+          "pos": "a/adv",
+          "meaning": "해외의; 해외로",
+          "syn": [
+            "abroad",
+            "foreign",
+            "international"
+          ],
+          "ant": [
+            "domestic",
+            "local"
+          ],
+          "deriv": [
+            "—"
+          ],
+          "root": "over(건너) + sea(바다) → 바다 건너"
+        },
+        {
+          "word": "schedule",
+          "pos": "v",
+          "meaning": "일정을 잡다, 예정하다",
+          "syn": [
+            "arrange",
+            "plan",
+            "book"
+          ],
+          "ant": [
+            "cancel"
+          ],
+          "deriv": [
+            "schedule n. 일정",
+            "reschedule v. 일정을 변경하다"
+          ],
+          "root": "—"
+        },
+        {
+          "word": "decline",
+          "pos": "v",
+          "meaning": "거절하다; 감소하다",
+          "syn": [
+            "refuse",
+            "reject",
+            "turn down"
+          ],
+          "ant": [
+            "accept",
+            "increase"
+          ],
+          "deriv": [
+            "decline n. 감소, 하락",
+            "declining a. 쇠퇴하는"
+          ],
+          "root": "de(아래로) + clin(기울다) → 아래로 기울다 → 거절·감소"
+        },
+        {
+          "word": "meaningful",
+          "pos": "a",
+          "meaning": "의미 있는, 뜻깊은",
+          "syn": [
+            "significant",
+            "worthwhile"
+          ],
+          "ant": [
+            "meaningless",
+            "trivial"
+          ],
+          "deriv": [
+            "meaning n. 의미",
+            "meaningfully adv. 의미 있게"
+          ],
+          "root": "mean + -ing + -ful(가득한)"
+        },
+        {
+          "word": "celebration",
+          "pos": "n",
+          "meaning": "축하 행사, 기념",
+          "syn": [
+            "festivity",
+            "ceremony"
+          ],
+          "ant": [
+            "mourning"
+          ],
+          "deriv": [
+            "celebrate v. 축하하다",
+            "celebrated a. 유명한",
+            "celebrity n. 유명인"
+          ],
+          "root": "celebr(자주 찾는, 유명한) + -ation"
+        },
+        {
+          "word": "memorable",
+          "pos": "a",
+          "meaning": "기억할 만한, 인상적인",
+          "syn": [
+            "unforgettable",
+            "notable"
+          ],
+          "ant": [
+            "forgettable",
+            "ordinary"
+          ],
+          "deriv": [
+            "memory n. 기억",
+            "memorize v. 암기하다",
+            "memorial n. 기념비 / a. 기념의"
+          ],
+          "root": "memor(기억하다) + -able(~할 만한)"
+        }
       ],
       "idioms": [
-        {"phrase": "congratulations on ~", "meaning": "~을 축하하다", "note": "Congratulations on your graduation!"},
-        {"phrase": "deliver[give] a speech", "meaning": "연설하다", "note": "= make a speech"},
-        {"phrase": "business trip", "meaning": "출장", "note": "go on a business trip"},
-        {"phrase": "would have loved to V", "meaning": "~하고 싶었지만 (못 한다)", "note": "정중한 거절 표현"}
+        {
+          "phrase": "congratulations on ~",
+          "meaning": "~을 축하하다",
+          "note": "Congratulations on your graduation!"
+        },
+        {
+          "phrase": "deliver[give] a speech",
+          "meaning": "연설하다",
+          "note": "= make a speech"
+        },
+        {
+          "phrase": "business trip",
+          "meaning": "출장",
+          "note": "go on a business trip"
+        },
+        {
+          "phrase": "would have loved to V",
+          "meaning": "~하고 싶었지만 (못 한다)",
+          "note": "정중한 거절 표현"
+        }
       ],
       "question": {
         "stem": "다음 글의 목적으로 가장 적절한 것은?",
-        "choices": ["졸업식 일정을 문의하려고", "졸업식 연설 초청을 거절하려고", "졸업식 자원 봉사를 지원하려고", "졸업식의 미흡했던 점을 지적하려고", "졸업식에서 공연할 팀을 추천하려고"],
+        "choices": [
+          "졸업식 일정을 문의하려고",
+          "졸업식 연설 초청을 거절하려고",
+          "졸업식 자원 봉사를 지원하려고",
+          "졸업식의 미흡했던 점을 지적하려고",
+          "졸업식에서 공연할 팀을 추천하려고"
+        ],
         "answer": 2
       },
       "solving": {
@@ -134,43 +469,123 @@
           "5번 문장 'I must decline your invitation'으로 거절임을 한 번 더 확인하고 ②를 고른다"
         ],
         "evidence": [
-          {"sent": [4], "text": "해외 출장 때문에 연설할 수 없다 (However 뒤 전환)"},
-          {"sent": [5], "text": "I must decline your invitation — 목적을 직접 밝힌 문장"}
+          {
+            "sent": [
+              4
+            ],
+            "text": "해외 출장 때문에 연설할 수 없다 (However 뒤 전환)"
+          },
+          {
+            "sent": [
+              5
+            ],
+            "text": "I must decline your invitation — 목적을 직접 밝힌 문장"
+          }
         ],
         "explanation": "앞부분에서 졸업식을 축하하고 초청에 감사하지만, However 이후 출장 때문에 연설을 할 수 없다고 밝히고 5번 문장에서 decline your invitation으로 거절 의사를 분명히 한다. 따라서 글의 목적은 ② 졸업식 연설 초청을 거절하려고.",
         "wrong": [
-          {"no": 1, "choice": "졸업식 일정을 문의하려고", "why": "during that time으로 일정이 언급되지만 이미 알고 있는 일정이다. 묻는 표현(I'd like to know ~)이 없다."},
-          {"no": 3, "choice": "졸업식 자원 봉사를 지원하려고", "why": "졸업식에 참여하는 쪽이 아니라 참여를 거절하는 글이므로 방향이 반대."},
-          {"no": 4, "choice": "졸업식의 미흡했던 점을 지적하려고", "why": "졸업식은 아직 열리지 않았고, 글 전체가 칭찬과 감사의 어조다."},
-          {"no": 5, "choice": "졸업식에서 공연할 팀을 추천하려고", "why": "대체 연사·공연을 추천하는 내용이 없다. 소재(졸업식)만 같은 선지."}
+          {
+            "no": 1,
+            "choice": "졸업식 일정을 문의하려고",
+            "why": "during that time으로 일정이 언급되지만 이미 알고 있는 일정이다. 묻는 표현(I'd like to know ~)이 없다."
+          },
+          {
+            "no": 3,
+            "choice": "졸업식 자원 봉사를 지원하려고",
+            "why": "졸업식에 참여하는 쪽이 아니라 참여를 거절하는 글이므로 방향이 반대."
+          },
+          {
+            "no": 4,
+            "choice": "졸업식의 미흡했던 점을 지적하려고",
+            "why": "졸업식은 아직 열리지 않았고, 글 전체가 칭찬과 감사의 어조다."
+          },
+          {
+            "no": 5,
+            "choice": "졸업식에서 공연할 팀을 추천하려고",
+            "why": "대체 연사·공연을 추천하는 내용이 없다. 소재(졸업식)만 같은 선지."
+          }
         ],
         "trap": "1~3번 문장의 칭찬·감사에 끌려 '축하하려고'류 선지를 찾으면 안 된다. 편지글 목적은 However/Unfortunately 뒤에서 결정된다."
       },
       "naesin": {
-        "likely_types": ["목적", "어법", "어휘", "서술형", "일치·불일치"],
+        "likely_types": [
+          "목적",
+          "어법",
+          "어휘",
+          "서술형",
+          "일치·불일치"
+        ],
         "points": [
-          {"sent": [2], "point": "proud that + 완전한 절 / one of the best schools", "how": "that↔of, schools↔school 어법 선택"},
-          {"sent": [3], "point": "felt honored / invitation to deliver", "how": "honored↔honoring, deliver↔to deliver 어법"},
-          {"sent": [4], "point": "have a trip scheduled (have+O+p.p.)", "how": "scheduling↔scheduled 어법, 서술형 어법 고치기"},
-          {"sent": [5], "point": "decline (거절하다)", "how": "어휘 문제: accept로 바꿔 틀린 낱말 찾기 / 유의어 turn down 쓰기"},
-          {"sent": [4, 5], "point": "목적 근거 문장", "how": "서술형: 글의 목적을 우리말 20자 내외로 쓰기"}
-        ],
-        "grammar_checks": [
-          {"sent": 1, "label": "Congratulation vs. Congratulations", "text": "(Congratulation / Congratulations) on the 60th graduation ceremony of Yuoralis High School.", "answer": "Congratulations", "why": "축하 인사는 복수형"},
-          {"sent": 2, "label": "of vs. that", "text": "I am extremely proud (of / that) the school has become one of the best (school / schools) in the local community.", "answer": "that / schools", "why": "뒤에 완전한 절 / one of the+복수명사"},
-          {"sent": 3, "label": "과거분사 vs. 현재분사 / 동사원형 vs. to부정사", "text": "I felt (honoring / honored) when I received your kind invitation (deliver / to deliver) a speech at the ceremony.", "answer": "honored / to deliver", "why": "영광을 받는 주체 / 명사 수식 to부정사"},
-          {"sent": 4, "label": "what vs. that / 현재분사 vs. 과거분사", "text": "I am deeply sorry to say (what / that) I will not be able to give a speech because I have a very important overseas business trip (scheduling / scheduled) during that time.", "answer": "that / scheduled", "why": "완전한 절 / 출장은 예정'되는' 것"},
-          {"sent": 5, "label": "현재분사 vs. 과거분사 / 동사원형 vs. to부정사", "text": "I would have loved to speak to the (graduating / graduated) students, but I must (decline / to decline) your invitation.", "answer": "graduating / decline", "why": "졸업하는(능동) 학생들 / 조동사+동사원형"}
-        ],
-        "writing": [
-          {"type": "배열 영작", "prompt": "그 기간에 매우 중요한 해외 출장이 예정되어 있기 때문에", "given": "(scheduled / because / I / a very important overseas business trip / have / during that time)", "answer": "because I have a very important overseas business trip scheduled during that time"},
-          {"type": "어법 고치기", "prompt": "다음 문장에서 어법상 틀린 곳을 찾아 고치시오: I felt honoring when I received your kind invitation deliver a speech.", "answer": "honoring → honored, deliver → to deliver"},
-          {"type": "조건 영작", "prompt": "글의 목적을 한 문장으로 쓰시오. (decline, invitation 사용, 8단어 이상)", "answer": "(예) The writer wants to decline the invitation to give a graduation speech."}
+          {
+            "sent": [
+              1
+            ],
+            "point": "Congratulations on + 명사 (복수형·전치사 on)",
+            "how": "Congratulation 단수형, for/to 전치사를 어법 선지로"
+          },
+          {
+            "sent": [
+              2
+            ],
+            "point": "proud that + 완전한 절 / one of the + 최상급 + 복수명사",
+            "how": "that↔of, schools↔school 어법"
+          },
+          {
+            "sent": [
+              3
+            ],
+            "point": "felt honored (감정 과거분사 보어) / invitation to deliver (형용사적 to부정사)",
+            "how": "honored↔honoring, deliver↔to deliver 어법"
+          },
+          {
+            "sent": [
+              4
+            ],
+            "point": "say that + 완전한 절 / have a trip scheduled (have+O+p.p.)",
+            "how": "what↔that, scheduling↔scheduled 어법 · 서술형 배열 영작 후보"
+          },
+          {
+            "sent": [
+              5
+            ],
+            "point": "graduating (능동 현재분사) / must decline (조동사+원형) / decline 어휘",
+            "how": "graduated↔graduating 어법, decline↔accept 어휘 문제"
+          },
+          {
+            "sent": [
+              4,
+              5
+            ],
+            "point": "글의 목적 근거 문장",
+            "how": "서술형: 글의 목적을 우리말·영어로 쓰기, 요약문 완성 후보"
+          }
         ]
       },
       "grammar_plus": [
-        {"title": "have + 목적어 + 목적격보어", "body": ["have + O + 동사원형: O가 ~하게 하다 (능동) — I had him fix my car.", "have + O + p.p.: O가 ~되게 하다 / O를 ~된 상태로 가지다 (수동) — I have a trip scheduled.", "have + O + -ing: O가 계속 ~하게 두다 — He had us waiting for an hour."], "examples": ["I had my hair cut yesterday.", "She has a meeting scheduled for Monday."]},
-        {"title": "감정 형용사 뒤의 연결", "body": ["be proud / glad / sorry + that절 (완전한 절)", "be proud of / sorry for + 명사(구)", "be glad / sorry + to부정사 (감정의 원인)"], "examples": ["I'm sorry to hear that.", "She is proud of her son."]}
+        {
+          "title": "have + 목적어 + 목적격보어",
+          "body": [
+            "have + O + 동사원형: O가 ~하게 하다 (능동) — I had him fix my car.",
+            "have + O + p.p.: O가 ~되게 하다 / O를 ~된 상태로 가지다 (수동) — I have a trip scheduled.",
+            "have + O + -ing: O가 계속 ~하게 두다 — He had us waiting for an hour."
+          ],
+          "examples": [
+            "I had my hair cut yesterday.",
+            "She has a meeting scheduled for Monday."
+          ]
+        },
+        {
+          "title": "감정 형용사 뒤의 연결",
+          "body": [
+            "be proud / glad / sorry + that절 (완전한 절)",
+            "be proud of / sorry for + 명사(구)",
+            "be glad / sorry + to부정사 (감정의 원인)"
+          ],
+          "examples": [
+            "I'm sorry to hear that.",
+            "She is proud of her son."
+          ]
+        }
       ]
     }
   ]
