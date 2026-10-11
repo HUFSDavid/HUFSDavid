@@ -168,7 +168,7 @@ check: [["[Q1] What should we do when we do something wrong?", "We should apolog
   ["[Q6] Why didn’t Sunmin apologize to her sister?", "Because she thought it was not important. (원본 답)"],
   ["[Q7] When do people get hurt more easily?", "They get hurt more easily when the hurt comes from a family member or a friend. (원본 답)"],
   ["[Talk] Have you ever hurt people’s feelings without intending to?", "Yes, I have. I lied to my friend, and it disappointed her. (원본 예시 답)"],
-  ["[Talk] Is it easy for you to apologize to your family members?", "No, it isn’t. I know I sometimes hurt their feelings, but I don’t apologize. (원본 예시 답 · 원본 didn’t → 시제 맞춰 don’t)"]],
+  ["[Talk] Is it easy for you to apologize to your family members?", "No, it isn’t. I know I sometimes hurt their feelings, but I didn’t apologize. (원본 예시 답)"]],
 tf: [["Everyone makes mistakes because we are human.","T","Because we are human, we all make mistakes [바꿔 말하기]"],
   ["According to the writer, it is easy to get along with everyone all the time.","F","It is not easy to get along with everyone all the time [반대 · 부정어 빼기]"],
   ["We sometimes hurt others’ feelings even when we don’t mean to.","T","without intending to = without meaning to [바꿔 말하기]"],
@@ -210,7 +210,7 @@ memo: ["표시 보충: 코랄 위첨자 ①②③ = 구문 해설 번호(내용�
   "▶목표어법 2개: 관계부사 how(문단 2 how Mike had acted · 문단 6 how Sunmin had treated her) / the + 비교급, the + 비교급(문단 3 The more sincere your apology is, the better it will be received) — Grammar✚ 박스: 문단 2 · 3 · 4(가정법 과거) · 6(관계부사 종류·과거완료) · 10(사역동사)",
   "표기 정리: 원본 곧은 따옴표(people's · \"Sorry, June!\" · 'We're sisters') → 곡선 따옴표(’ “ ” ‘ ’)로 통일 · 문단 4 생각 인용이 ' 로 열고 ’ 로 닫힌 것 → ‘ ’ 짝 맞춤 · 원본 PDF의 아이콘 글자(U+F0FC ‘Pick’ 체크)·기출 NBSP(U+00A0)는 자료에 쓰지 않음 · U+2011 등 특수 하이픈은 이 단원 원본에 없음",
   "해석 오탈자 정리: 문단 5 ‘당신이 해야 할 한 전부는’ → ‘당신이 해야 할 전부는’ · 문단 2 ‘생각하는 듯 했다’ → ‘생각하는 듯했다’(띄어쓰기) — 나머지 해석은 원본 그대로",
-  "원본 확인: 내용정리 WORKBOOK 2 구문 UP ‘Thy seem’ 오타 · READING CHECK 95번 ‘“I’m sorry ”can’ 띄어쓰기 · T/F 56번 ‘each others’’ 오타 · 기출 본문 변형(We’re sister · bumped up · hit · considerate · required · her attitude 등)은 출제 포인트만 참고 · [Talk] 예시 답 ‘I know I sometimes hurt their feelings, but I didn’t apologize.’는 시제를 맞춰 don’t로 고쳐 실음",
+  "원본 확인: 내용정리 WORKBOOK 2 구문 UP ‘Thy seem’ 오타 · READING CHECK 95번 ‘“I’m sorry ”can’ 띄어쓰기 · T/F 56번 ‘each others’’ 오타 · 기출 본문 변형(We’re sister · bumped up · hit · considerate · required · her attitude 등)은 출제 포인트만 참고",
   "CHECK 1~7은 내용정리 Q1~Q7 원문 문항과 원본 답 · 8~9번은 [Talk] 원문 문항과 원본 예시 답",
   "T/F 함정 유형: 원인 바꾸기(넘어진 이유) · 순서 뒤집기(사진 → 화남 · 사과 → 삭제) · 반대 의미(nothing serious · more than just words) · 단어 바꾸기(sincere ↔ casual · quick ↔ slow) · 부사 바꾸기(accidentally ↔ on purpose · hurrying ↔ slowly) · 소유 바꾸기(Hojun’s tray ↔ Kate’s tray) · 행위자 바꾸기(빌린 사람) · 부정어 빼기(not the first time · not easy) · 비교 대상 바꾸기(가족·친구 ↔ 낯선 사람) · 단정어(always) · 범위 넘기기(사진 게시 시간 · 잃어버린 장소 · 점심 메뉴 · 책을 빌린 이유)",
   "2023 기출 빈출: 가주어 It(같은 용법) · without intending to(영작) · get along with / intending to(빈칸) · it 지칭(넘어진 일 · 사진 · 부딪힌 일) · even(very ✗) · because of · how = the way(the way how ✗) · nothing serious · seemed to think · Saying ~ is · The more sincere ~ the better ~ will be received · casual(빈칸) · would ~ apologized · bumped into(bumped up ✗) · at once 배열 · All you need to do is · laugh it off · had treated / hadn’t apologized · ignore(빈칸) · hurt 명사 · let it go(let go it ✗) · 문장 삽입(Remember, however ~) · 흐름상 관계없는 문장 · apologize(요약 빈칸) · 답할 수 없는 질문"]
