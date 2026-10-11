@@ -1,0 +1,2334 @@
+{
+ "items": [
+  {
+   "no": 1,
+   "en": "wonder",
+   "ko": "경탄, *궁금하다, 궁금해하다"
+  },
+  {
+   "no": 2,
+   "en": "back",
+   "ko": ""
+  },
+  {
+   "no": 3,
+   "en": "part",
+   "ko": "부분"
+  },
+  {
+   "no": 4,
+   "en": "space station",
+   "ko": "우주 정거장"
+  },
+  {
+   "no": 5,
+   "en": "sunrise",
+   "ko": "일출, 해돋이"
+  },
+  {
+   "no": 6,
+   "en": "possible",
+   "ko": "가능한"
+  },
+  {
+   "no": 7,
+   "en": "several",
+   "ko": "몇몇의, 여러"
+  },
+  {
+   "no": 8,
+   "en": "space",
+   "ko": "*우주, 공간"
+  },
+  {
+   "no": 9,
+   "en": "around",
+   "ko": "~주위를 돌아, 이리저리, 여기저기"
+  },
+  {
+   "no": 10,
+   "en": "minute",
+   "ko": "*(시간 단위의) 분, 잠깐, 잠시, 순간"
+  },
+  {
+   "no": 11,
+   "en": "amazing",
+   "ko": "놀라운, 멋진, 대단한"
+  },
+  {
+   "no": 12,
+   "en": "grow",
+   "ko": "(식물을) 기르다, 재배하다, 자라다, 성장하다"
+  },
+  {
+   "no": 13,
+   "en": "vegetable",
+   "ko": "채소, 야채"
+  },
+  {
+   "no": 14,
+   "en": "pretty",
+   "ko": "꽤, 아주, 매우, 예쁜, 귀여운"
+  },
+  {
+   "no": 15,
+   "en": "fresh",
+   "ko": "신선한, 갓 딴[만든]"
+  },
+  {
+   "no": 16,
+   "en": "gravity",
+   "ko": "중력"
+  },
+  {
+   "no": 17,
+   "en": "root",
+   "ko": "(식물의) 뿌리"
+  },
+  {
+   "no": 18,
+   "en": "send",
+   "ko": "보내다"
+  },
+  {
+   "no": 19,
+   "en": "astronaut",
+   "ko": "우주 비행사"
+  },
+  {
+   "no": 20,
+   "en": "colorful",
+   "ko": "다채로운, 화려한"
+  },
+  {
+   "no": 21,
+   "en": "universe",
+   "ko": "우주, 세계"
+  },
+  {
+   "no": 22,
+   "en": "wish",
+   "ko": ""
+  },
+  {
+   "no": 23,
+   "en": "own",
+   "ko": "*~ 자신의, 소유하다"
+  },
+  {
+   "no": 24,
+   "en": "actually",
+   "ko": "사실은, 실제[정말]로"
+  },
+  {
+   "no": 25,
+   "en": "national",
+   "ko": "국가의, 국립의"
+  },
+  {
+   "no": 26,
+   "en": "youth",
+   "ko": "청춘, 젊음, 어린 시절, *청년, 젊은이"
+  },
+  {
+   "no": 27,
+   "en": "VR(virtual reality)",
+   "ko": "가상 현실"
+  },
+  {
+   "no": 28,
+   "en": "documentary",
+   "ko": "다큐멘터리, 기록물"
+  },
+  {
+   "no": 29,
+   "en": "life",
+   "ko": "삶, 인생, 생명, *생활"
+  },
+  {
+   "no": 30,
+   "en": "seem",
+   "ko": "~인 것 같다, ~처럼 보이다"
+  },
+  {
+   "no": 31,
+   "en": "float",
+   "ko": "(물 위나 공중에) 떠다니다[떠오르다], 뜨다"
+  },
+  {
+   "no": 32,
+   "en": "uncomfortable",
+   "ko": "불편한"
+  },
+  {
+   "no": 33,
+   "en": "tough",
+   "ko": "거친, *힘든, 어려운"
+  },
+  {
+   "no": 34,
+   "en": "inch",
+   "ko": "(길이의 단위) 인치; 2.54 센티미터"
+  },
+  {
+   "no": 35,
+   "en": "way",
+   "ko": "길, *방법, 방식"
+  },
+  {
+   "no": 36,
+   "en": "top",
+   "ko": "맨 위의, 꼭대기의, 맨 위, 꼭대기, 정상"
+  },
+  {
+   "no": 37,
+   "en": "real",
+   "ko": "진짜의, 실제의"
+  },
+  {
+   "no": 38,
+   "en": "item",
+   "ko": "*물품, 물건, 항목"
+  },
+  {
+   "no": 39,
+   "en": "somewhere",
+   "ko": "어딘가에[서]"
+  },
+  {
+   "no": 40,
+   "en": "entirely",
+   "ko": "완전히, 전적으로"
+  },
+  {
+   "no": 41,
+   "en": "impossible",
+   "ko": "불가능한"
+  },
+  {
+   "no": 42,
+   "en": "fly",
+   "ko": "날다, 비행하다"
+  },
+  {
+   "no": 43,
+   "en": "company",
+   "ko": "회사"
+  },
+  {
+   "no": 44,
+   "en": "apply",
+   "ko": "신청[지원]하다, *적용하다, 응용하다"
+  },
+  {
+   "no": 45,
+   "en": "physics",
+   "ko": "물리학"
+  },
+  {
+   "no": 46,
+   "en": "create",
+   "ko": "창조하다, 만들다"
+  },
+  {
+   "no": 47,
+   "en": "wormhole",
+   "ko": "벌레 먹은 구멍[자리], (우주의) 웜홀"
+  },
+  {
+   "no": 48,
+   "en": "fact",
+   "ko": "(특히 입증할 수 있는) 사실"
+  },
+  {
+   "no": 49,
+   "en": "theory",
+   "ko": "이론, 학설"
+  },
+  {
+   "no": 50,
+   "en": "science",
+   "ko": "과학"
+  },
+  {
+   "no": 51,
+   "en": "fan",
+   "ko": "팬, 열렬한 지지자"
+  },
+  {
+   "no": 52,
+   "en": "travel",
+   "ko": "여행, 이동, 여행하다, 이동하다"
+  },
+  {
+   "no": 53,
+   "en": "light",
+   "ko": "*빛, 불, 전등, 조명"
+  },
+  {
+   "no": 54,
+   "en": "speed",
+   "ko": "속도"
+  },
+  {
+   "no": 55,
+   "en": "planet",
+   "ko": "행성"
+  },
+  {
+   "no": 56,
+   "en": "blink",
+   "ko": "눈을 깜박이다, *깜박임, 가물거림"
+  },
+  {
+   "no": 57,
+   "en": "vast",
+   "ko": "거대한, 광대한, 광활한, 엄청나게 큰"
+  },
+  {
+   "no": 58,
+   "en": "passenger",
+   "ko": "승객, 탑승객"
+  },
+  {
+   "no": 59,
+   "en": "spaceship",
+   "ko": "우주선"
+  },
+  {
+   "no": 60,
+   "en": "head",
+   "ko": ""
+  },
+  {
+   "no": 61,
+   "en": "different",
+   "ko": "*다른, 여러 가지의"
+  },
+  {
+   "no": 62,
+   "en": "one-half",
+   "ko": "반, 이분의 일"
+  },
+  {
+   "no": 63,
+   "en": "quickly",
+   "ko": "빨리, 빠르게"
+  },
+  {
+   "no": 64,
+   "en": "expect",
+   "ko": "예상하다, 기대하다"
+  },
+  {
+   "no": 65,
+   "en": "through",
+   "ko": "~을 통과하여, ~을 두루"
+  },
+  {
+   "no": 66,
+   "en": "answer",
+   "ko": "*대답하다, 대답, *해답"
+  },
+  {
+   "no": 67,
+   "en": "question",
+   "ko": "질문, 문제"
+  },
+  {
+   "no": 68,
+   "en": "second",
+   "ko": "(시간 단위의) 초, *순간, 잠깐, 두 번째의"
+  },
+  {
+   "no": 69,
+   "en": "imagine",
+   "ko": "상상하다"
+  },
+  {
+   "no": 70,
+   "en": "worm",
+   "ko": "벌레"
+  },
+  {
+   "no": 71,
+   "en": "detect",
+   "ko": "감지하다, 찾아내다, 발견하다"
+  },
+  {
+   "no": 72,
+   "en": "bottom",
+   "ko": "밑바닥, 맨 아랫부분"
+  },
+  {
+   "no": 73,
+   "en": "surface",
+   "ko": "표면"
+  },
+  {
+   "no": 74,
+   "en": "outer",
+   "ko": "외부의, 바깥의"
+  },
+  {
+   "no": 75,
+   "en": "layer",
+   "ko": "(하나의 표면이나 여러 표면 사이를 덮고 있는) 층[막/겹]"
+  },
+  {
+   "no": 76,
+   "en": "choose",
+   "ko": "선택하다, 고르다"
+  },
+  {
+   "no": 77,
+   "en": "shortcut",
+   "ko": "지름길"
+  },
+  {
+   "no": 78,
+   "en": "such",
+   "ko": "그러한"
+  },
+  {
+   "no": 79,
+   "en": "researcher",
+   "ko": "연구자, 조사자"
+  },
+  {
+   "no": 80,
+   "en": "connect",
+   "ko": "잇다, 연결하다"
+  },
+  {
+   "no": 81,
+   "en": "space-time",
+   "ko": "시공(時空); 4차원의 세계"
+  },
+  {
+   "no": 82,
+   "en": "bend",
+   "ko": "굽히다, 숙이다, *휘게 하다, 구부리다"
+  },
+  {
+   "no": 83,
+   "en": "suddenly",
+   "ko": "갑자기"
+  },
+  {
+   "no": 84,
+   "en": "close",
+   "ko": "*가까운, 닫다"
+  },
+  {
+   "no": 85,
+   "en": "understand",
+   "ko": "이해하다"
+  },
+  {
+   "no": 86,
+   "en": "sheet",
+   "ko": "시트(침대에 깔거나 덮는 얇은 천), *(종이) 한 장"
+  },
+  {
+   "no": 87,
+   "en": "dot",
+   "ko": "(작고 동그란) 점"
+  },
+  {
+   "no": 88,
+   "en": "flat",
+   "ko": "평평하게 펼쳐진[펴진], 평평한, 납작한"
+  },
+  {
+   "no": 89,
+   "en": "fold",
+   "ko": "접다"
+  },
+  {
+   "no": 90,
+   "en": "punch",
+   "ko": ""
+  },
+  {
+   "no": 91,
+   "en": "hole",
+   "ko": "*구멍, 구덩이"
+  },
+  {
+   "no": 92,
+   "en": "instantly",
+   "ko": "즉시, 곧바로"
+  },
+  {
+   "no": 93,
+   "en": "contain",
+   "ko": "포함하다, (안에) ~이 들어 있다"
+  },
+  {
+   "no": 94,
+   "en": "throat",
+   "ko": "목, *목구멍, 인후"
+  },
+  {
+   "no": 95,
+   "en": "exist",
+   "ko": "존재하다"
+  },
+  {
+   "no": 96,
+   "en": "billion",
+   "ko": "10억"
+  },
+  {
+   "no": 97,
+   "en": "light-year",
+   "ko": "광년(빛이 1년에 나아가는 거리)"
+  },
+  {
+   "no": 98,
+   "en": "early",
+   "ko": "이른, 초기의"
+  },
+  {
+   "no": 99,
+   "en": "celebrate",
+   "ko": "*축하하다, 기념하다"
+  },
+  {
+   "no": 100,
+   "en": "find",
+   "ko": "찾다, 발견하다"
+  },
+  {
+   "no": 101,
+   "en": "consider",
+   "ko": "*사려하다, 고려하다, 여기다, 생각하다"
+  },
+  {
+   "no": 102,
+   "en": "unstable",
+   "ko": "불안정한"
+  },
+  {
+   "no": 103,
+   "en": "crush",
+   "ko": "으스러뜨리다, 박살내다, 부수다"
+  },
+  {
+   "no": 104,
+   "en": "break",
+   "ko": "깨다, 부수다"
+  },
+  {
+   "no": 105,
+   "en": "piece",
+   "ko": "한 부분, *(깨어진) 조각"
+  },
+  {
+   "no": 106,
+   "en": "hopeless",
+   "ko": "가망 없는, 절망적인"
+  },
+  {
+   "no": 107,
+   "en": "simply",
+   "ko": "간단히, 명료하게, *단지, 다만"
+  },
+  {
+   "no": 108,
+   "en": "debate",
+   "ko": "논쟁, 논의, 토론"
+  },
+  {
+   "no": 109,
+   "en": "ongoing",
+   "ko": "계속 진행 중인"
+  },
+  {
+   "no": 110,
+   "en": "persistent",
+   "ko": "지속적인, 끊임없는, 끈기 있는, 끈질긴"
+  },
+  {
+   "no": 111,
+   "en": "exploration",
+   "ko": "탐험, 탐사, 탐구"
+  },
+  {
+   "no": 112,
+   "en": "research",
+   "ko": "*조사, 연구, 조사하다, 연구하다"
+  },
+  {
+   "no": 113,
+   "en": "eventually",
+   "ko": "결국"
+  },
+  {
+   "no": 114,
+   "en": "achieve",
+   "ko": "달성하다, 성취하다"
+  },
+  {
+   "no": 115,
+   "en": "print out",
+   "ko": "(프린터로) 출력하다"
+  },
+  {
+   "no": 116,
+   "en": "with one’s own eyes",
+   "ko": "~ 자신의 눈으로 직접"
+  },
+  {
+   "no": 117,
+   "en": "float around",
+   "ko": "떠다니다"
+  },
+  {
+   "no": 118,
+   "en": "apply A to B",
+   "ko": "A를 B에 적용하다"
+  },
+  {
+   "no": 119,
+   "en": "get to",
+   "ko": "~에 도착하다, 닿다"
+  },
+  {
+   "no": 120,
+   "en": "in the blink of an eye",
+   "ko": "눈 깜박할 사이에"
+  },
+  {
+   "no": 121,
+   "en": "in order to (동사원형)",
+   "ko": "~하기 위해서"
+  },
+  {
+   "no": 122,
+   "en": "for a second",
+   "ko": "잠시 동안"
+  },
+  {
+   "no": 123,
+   "en": "from A to B",
+   "ko": "A부터 B로[까지]"
+  },
+  {
+   "no": 124,
+   "en": "either A or B",
+   "ko": "A나 B 둘 중 하나"
+  },
+  {
+   "no": 125,
+   "en": "according to",
+   "ko": "~에 따르면[의하면]"
+  },
+  {
+   "no": 126,
+   "en": "figure out",
+   "ko": "~을 알아내다, 생각해 내다"
+  },
+  {
+   "no": 127,
+   "en": "far away from",
+   "ko": "~에서 멀리 떨어져"
+  },
+  {
+   "no": 128,
+   "en": "a sheet of",
+   "ko": "~한 장"
+  },
+  {
+   "no": 129,
+   "en": "match up",
+   "ko": "맞추다"
+  },
+  {
+   "no": 130,
+   "en": "billions of",
+   "ko": "수십억의"
+  },
+  {
+   "no": 131,
+   "en": "be broken into pieces",
+   "ko": "산산조각이 나다"
+  },
+  {
+   "no": 132,
+   "en": "look back",
+   "ko": "되돌아보다"
+  },
+  {
+   "no": 133,
+   "en": "at first",
+   "ko": "처음에, 먼저"
+  }
+ ],
+ "poslist": [
+  [
+   "wonder n. 경탄 v. *궁금하다, 궁금해하다"
+  ],
+  [
+   "back n. 뒤쪽, 뒷부분 a. 뒤쪽의 adv. *(이전의 장소·상태 등으로)"
+  ],
+  [
+   "part n. 부분"
+  ],
+  [
+   "space station n. 우주 정거장"
+  ],
+  [
+   "sunrise n. 일출, 해돋이"
+  ],
+  [
+   "possible a. 가능한"
+  ],
+  [
+   "several a. 몇몇의, 여러"
+  ],
+  [
+   "space n. 우주, 공간"
+  ],
+  [
+   "around prep. ~주위를 돌아 adv. 이리저리, 여기저기"
+  ],
+  [
+   "minute n. *(시간 단위의) 분, 잠깐,"
+  ],
+  [
+   "amazing a. 놀라운, 멋진, 대단한"
+  ],
+  [
+   "grow v. (식물을) 기르다, 재배하다,"
+  ],
+  [
+   "vegetable n. 채소, 야채"
+  ],
+  [
+   "pretty adv. 꽤, 아주, 매우 a. 예쁜, 귀여운"
+  ],
+  [
+   "fresh a. 신선한, 갓 딴[만든]"
+  ],
+  [
+   "gravity n. 중력"
+  ],
+  [
+   "root n. (식물의) 뿌리"
+  ],
+  [
+   "send v. 보내다",
+   "(send – sent – sent)"
+  ],
+  [
+   "astronaut n. 우주 비행사"
+  ],
+  [
+   "colorful a. 다채로운, 화려한"
+  ],
+  [
+   "universe n. (the universe) 우주, 세계"
+  ],
+  [
+   "wish v. *~라면 좋겠다고 생각 n. 바람, 소망"
+  ],
+  [
+   "own a. *~ 자신의 v. 소유하다"
+  ],
+  [
+   "actually adv. 사실은, 실제[정말]로"
+  ],
+  [
+   "national a. 국가의, 국립의"
+  ],
+  [
+   "youth n. 청춘, 젊음, 어린 시절,"
+  ],
+  [
+   "VR(virtual reality) n. 가상현실"
+  ],
+  [
+   "documentary n. 다큐멘터리, 기록물"
+  ],
+  [
+   "life n. 삶, 인생, 생명, *생활"
+  ],
+  [
+   "seem v. ~인 것 같다, ~처럼 보"
+  ],
+  [
+   "float v. (물 위나 공중에) 떠다니다"
+  ],
+  [
+   "uncomfortable a. 불편한"
+  ],
+  [
+   "tough a. 거친, *힘든, 어려운"
+  ],
+  [
+   "inch n. (길이의 단위) 인치; 2.54"
+  ],
+  [
+   "way n. 길, *방법, 방식"
+  ],
+  [
+   "top a. 맨 위의, 꼭대기의 n. 맨 위, 꼭대기, 정상"
+  ],
+  [
+   "real a. 진짜의, 실제의"
+  ],
+  [
+   "item n. *물품, 물건, 항목"
+  ],
+  [
+   "somewhere adv. 어딘가에[서]"
+  ],
+  [
+   "entirely adv. 완전히, 전적으로"
+  ],
+  [
+   "impossible a. 불가능한"
+  ],
+  [
+   "fly v. 날다, 비행하다",
+   "(fly – flew[flied] – flown[flied])"
+  ],
+  [
+   "company n. 회사"
+  ],
+  [
+   "apply v. 신청[지원]하다, *적용하다,"
+  ],
+  [
+   "physics n. 물리학"
+  ],
+  [
+   "create v. 창조하다, 만들다"
+  ],
+  [
+   "wormhole n. 벌레 먹은 구멍[자리],",
+   "(우주의) 웜홀"
+  ],
+  [
+   "fact n. (특히 입증할 수 있는) 사실"
+  ],
+  [
+   "theory n. 이론, 학설"
+  ],
+  [
+   "science n. 과학"
+  ],
+  [
+   "fan n. 팬, 열렬한 지지자"
+  ],
+  [
+   "travel n. 여행, 이동 v. 여행하다, 이동하다"
+  ],
+  [
+   "light n. *빛, 불, 전등, 조명"
+  ],
+  [
+   "speed n. 속도"
+  ],
+  [
+   "planet n. 행성"
+  ],
+  [
+   "blink v. 눈을 깜박이다 n. *깜박임, 가물거림"
+  ],
+  [
+   "vast a. 거대한, 광대한, 광활한,"
+  ],
+  [
+   "passenger n. 승객, 탑승객"
+  ],
+  [
+   "spaceship n. 우주선"
+  ],
+  [
+   "head n. 머리, 고개, (단체∙조직의) v. *(특정 방향으로) 가다,"
+  ],
+  [
+   "different a. *다른, 여러 가지의"
+  ],
+  [
+   "one-half n. 반, 이분의 일"
+  ],
+  [
+   "quickly adv. 빨리, 빠르게"
+  ],
+  [
+   "expect v. 예상하다, 기대하다"
+  ],
+  [
+   "through prep. ~을 통과하여, ~을 두루"
+  ],
+  [
+   "answer v. *대답하다 n. 대답, *해답"
+  ],
+  [
+   "question n. 질문, 문제"
+  ],
+  [
+   "second n. (시간 단위의) 초,"
+  ],
+  [
+   "imagine v. 상상하다"
+  ],
+  [
+   "worm n. 벌레"
+  ],
+  [
+   "detect v. 감지하다, 찾아내다,"
+  ],
+  [
+   "bottom n. 밑바닥, 맨 아랫부분"
+  ],
+  [
+   "surface n. 표면"
+  ],
+  [
+   "outer a. 외부의, 바깥의"
+  ],
+  [
+   "layer n. (하나의 표면이나 여러 표면 사"
+  ],
+  [
+   "choose v. 선택하다, 고르다",
+   "(choose – chose – chosen)"
+  ],
+  [
+   "shortcut n. 지름길"
+  ],
+  [
+   "such a. 그러한"
+  ],
+  [
+   "researcher n. 연구자, 조사자"
+  ],
+  [
+   "connect v. 잇다, 연결하다"
+  ],
+  [
+   "space-time n. 시공(時空); 4차원의 세계"
+  ],
+  [
+   "bend v. 굽히다, 숙이다,",
+   "(bend - bent - bent)"
+  ],
+  [
+   "suddenly adv. 갑자기"
+  ],
+  [
+   "close a. *가까운 v. 닫다"
+  ],
+  [
+   "understand v. 이해하다",
+   "(understand – understood – understood)"
+  ],
+  [
+   "sheet n. 시트(침대에 깔거나 덮는"
+  ],
+  [
+   "dot n. (작고 동그란) 점"
+  ],
+  [
+   "flat a. 평평하게 펼쳐진[펴진],"
+  ],
+  [
+   "fold v. 접다"
+  ],
+  [
+   "punch v. 주먹으로 치다[때리다], n. (구멍을 뚫는 데 쓰는) 펀치,"
+  ],
+  [
+   "hole n. *구멍, 구덩이"
+  ],
+  [
+   "instantly adv. 즉시, 곧바로"
+  ],
+  [
+   "contain v. 포함하다,",
+   "(안에) ~이 들어 있다"
+  ],
+  [
+   "throat n. 목, *목구멍, 인후"
+  ],
+  [
+   "exist v. 존재하다"
+  ],
+  [
+   "billion n. 10억"
+  ],
+  [
+   "light-year n. 광년(빛이 1년에 나아"
+  ],
+  [
+   "early a. 이른, 초기의"
+  ],
+  [
+   "celebrate v. *축하하다, 기념하다"
+  ],
+  [
+   "find v. 찾다, 발견하다",
+   "(find – found – found)"
+  ],
+  [
+   "consider v. *사려하다, 고려하다,"
+  ],
+  [
+   "unstable a. 불안정한"
+  ],
+  [
+   "crush v. 으스러뜨리다, 박살내다,"
+  ],
+  [
+   "break v. 깨다, 부수다",
+   "(break - broke - broken)"
+  ],
+  [
+   "piece n. 한 부분, *(깨어진) 조각"
+  ],
+  [
+   "hopeless a. 가망 없는, 절망적인"
+  ],
+  [
+   "simply adv. 간단히, 명료하게,"
+  ],
+  [
+   "debate n. 논쟁, 논의, 토론"
+  ],
+  [
+   "ongoing a. 계속 진행 중인"
+  ],
+  [
+   "persistent a. 지속적인, 끊임없는,"
+  ],
+  [
+   "exploration n. 탐험, 탐사, 탐구"
+  ],
+  [
+   "research n. *조사, 연구 v. 조사하다, 연구하다"
+  ],
+  [
+   "eventually adv. 결국"
+  ],
+  [
+   "achieve v. 달성하다, 성취하다"
+  ],
+  [
+   "print out",
+   "(프린터로) 출력하다"
+  ],
+  [
+   "with one’s own eyes"
+  ],
+  [
+   "float around"
+  ],
+  [
+   "apply A to B"
+  ],
+  [
+   "get to"
+  ],
+  [
+   "in the blink of an eye"
+  ],
+  [
+   "in order to (동사원형)"
+  ],
+  [
+   "for a second"
+  ],
+  [
+   "from A to B"
+  ],
+  [
+   "either A or B"
+  ],
+  [
+   "according to"
+  ],
+  [
+   "figure out"
+  ],
+  [
+   "far away from"
+  ],
+  [
+   "a sheet of"
+  ],
+  [
+   "match up"
+  ],
+  [
+   "billions of"
+  ],
+  [
+   "be broken into pieces"
+  ],
+  [
+   "look back"
+  ],
+  [
+   "at first"
+  ]
+ ],
+ "ex": {
+  "wonder": [
+   "I wonder how George is getting along.",
+   "나는 George가 어떻게 지내는지 궁금해."
+  ],
+  "back": [
+   "What time did you get back last night?",
+   "어젯밤에 몇 시에 돌아왔어요?"
+  ],
+  "part": [
+   "The entire book is good, but the best part is the ending.",
+   "그 책 전체가 다 좋지만 가장 좋은 부분은 결말이다."
+  ],
+  "space station": [
+   "Space shuttles carry people between the Earth and a space station.",
+   "우주 왕복선은 지구와 우주 정거장 사이에 사람들을 실어 나른다."
+  ],
+  "sunrise": [
+   "We watched the beautiful sunrise from the beach.",
+   "우리는 해변에서 아름다운 일출을 보았다."
+  ],
+  "possible": [
+   "Travel to other planets may soon be possible.",
+   "다른 행성으로 여행하는 것이 곧 가능할 수도 있다."
+  ],
+  "several": [
+   "It took several days for the package to arrive.",
+   "소포가 도착하는 데 며칠이 걸렸다."
+  ],
+  "space": [
+   "The earth looked so beautiful from space.",
+   "우주에서 본 지구는 매우 아름다워 보였다.예문 The physical universe is finite in space and time. 물리적 우주는 공간과 시간이 유한하다."
+  ],
+  "around": [
+   "The moon goes around the Earth.",
+   "달은 지구 주위를 돈다.예문 I went into the shopping mall and spent two hours just walking around. 나는 쇼핑몰에 들어가서 그냥 이리저리 걸어 다니면서 두 시간을 보냈어."
+  ],
+  "minute": [
+   "The city center is only fifteen minutes from my house.",
+   "도심은 우리 집에서 15분밖에 안 걸린다."
+  ],
+  "amazing": [
+   "Henry has an amazing ability to learn new languages. Henry",
+   "는 새로운 언어를 배우는 놀라운 능력을 가지고 있다."
+  ],
+  "grow": [
+   "My mom used to grow roses.",
+   "엄마는 장미를 키우시곤 했다.예문 Redwood trees can grow to 300 feet. 삼나무는 300피트까지 자라기도 한다."
+  ],
+  "vegetable": [
+   "Most fruits and vegetables are rich in vitamin C and many minerals.",
+   "대부분의 과일과 야채는 비타민 C와 미네랄이 풍부합니다."
+  ],
+  "pretty": [
+   "The party was pretty fun. I really enjoyed myself tonight.",
+   "파티는 아주 재미있었어. 오늘 밤은 정말 즐거웠어.예문 In spring the village looks very pretty. 봄이 되면 마을은 매우 아름다워 보인다."
+  ],
+  "fresh": [
+   "The bread was fresh from the oven and very delicious.",
+   "그 빵은 오븐에서 막 꺼내서 아주 맛있었다."
+  ],
+  "gravity": [
+   "Physicists define weight as the force of gravity acting on an object.",
+   "물리학자들은 무게를 물체에 작용하는 중력의 힘으로 정의한다."
+  ],
+  "root": [
+   "Olive trees have deep roots.",
+   "올리브 나무는 뿌리가 깊다."
+  ],
+  "send": [
+   "Satellites receive signals in space and send them back to Earth.",
+   "인공위성은 우주에서 신호를 받아 지구로 보낸다."
+  ],
+  "astronaut": [
+   "Neil Armstrong was the first astronaut to walk on the moon. Neil Armstrong",
+   "은 달 위를 걸었던 최초의 우주 비행사였다."
+  ],
+  "colorful": [
+   "Sarah’s garden was full of colorful and fascinating flowers. Sarah",
+   "의 정원은 다채롭고 매혹적인 꽃들로 가득했다."
+  ],
+  "universe": [
+   "How many stars are there in the universe?",
+   "우주에는 얼마나 많은 별들이 있을까?"
+  ],
+  "wish": [
+   "I wish I didn’t have to go to school today.",
+   "오늘 학교에 안 가도 된다면 좋을 텐데."
+  ],
+  "own": [
+   "I want to have my own room.",
+   "나는 나만의 방을 갖고 싶어."
+  ],
+  "actually": [
+   "Actually, I don’t want to go out tonight.",
+   "사실, 오늘 밤에는 외출하고 싶은 생각이 없다.예문 It's unclear what actually happened to Tom that night. 그날 밤 Tom에게 실제로 무슨 일이 일어났는지는 확실하지 않다."
+  ],
+  "documentary": [
+   "We watched a documentary on the early history of jazz.",
+   "우리는 재즈의 초기 역사에 관한 다큐멘터리를 보았다."
+  ],
+  "life": [
+   "Life in New York is exciting.",
+   "뉴욕 생활은 흥미진진하다."
+  ],
+  "seem": [
+   "You seem happy at your new school.",
+   "너는 새 학교에서 행복해 보여."
+  ],
+  "float": [
+   "I felt relaxed as I watched clouds float in the sky.",
+   "하늘에 구름이 떠 있는 것을 보면서 나는 마음이 편안해졌다."
+  ],
+  "uncomfortable": [
+   "I couldn't sleep because the bed was so uncomfortable.",
+   "침대가 너무 불편해서 나는 잠을 잘 수 없었다."
+  ],
+  "tough": [
+   "Many homeless people are facing a tough winter.",
+   "많은 노숙자들이 힘든 겨울을 맞고 있다."
+  ],
+  "way": [
+   "What are some ways that you deal with stress?",
+   "당신이 스트레스를 다루는 방법에는 어떤 것들이 있나요?"
+  ],
+  "top": [
+   "Judy got top grades for her essay. Judy",
+   "는 에세이에서 최고 점수를 받았다.예문 My name was at the very top of the list. 내 이름이 명단 맨 위에 있었다."
+  ],
+  "real": [
+   "The kids believe Santa Claus is a real person.",
+   "아이들은 산타클로스가 실제 인물이라고 믿는다."
+  ],
+  "item": [
+   "An umbrella is a must-have item for the rainy season.",
+   "우산은 장마철에 꼭 필요한 물품입니다."
+  ],
+  "somewhere": [
+   "There must be a restaurant somewhere near here.",
+   "이 근처 어딘가에 식당이 분명히 있을 거야."
+  ],
+  "entirely": [
+   "I entirely agree with you.",
+   "난 전적으로 네 말에 동의해."
+  ],
+  "impossible": [
+   "It's impossible to predict the future.",
+   "미래를 예측하는 것은 불가능하다."
+  ],
+  "fly": [
+   "A bird flew in through the open window.",
+   "열린 창문을 통해 새 한 마리가 날아 들어왔다."
+  ],
+  "company": [
+   "Jerry works for a software company. Jerry",
+   "는 소프트웨어 회사에서 일한다."
+  ],
+  "apply": [
+   "Students apply what they learned in school to their everyday lives.",
+   "학생들은 학교에서 배운 것을 일상생활에 적용한다."
+  ],
+  "physics": [
+   "Newton's discoveries revolutionized physics.",
+   "뉴턴의 발견은 물리학에 혁명을 일으켰다."
+  ],
+  "create": [
+   "King Sejong created Hangul for his people to learn letters easily.",
+   "세종대왕은 백성들이 쉽게 글자를 배우도록 한글을 만들었다."
+  ],
+  "wormhole": [
+   "Jerry picked up a tomato with a big wormhole in it. Jerry",
+   "는 커다란 벌레 먹은 구멍이 있는 토마토를 하나 집어 들었다.예문 A wormhole is known to act as a shortcut connecting two parts of the universe. 웜홀은 우주의 두 부분을 연결하는 지름길 역할을 하는 것으로 알려져 있다."
+  ],
+  "fact": [
+   "It is a fact that water is essential for our life.",
+   "물이 우리의 삶에 필수적이라는 것은 사실이다."
+  ],
+  "theory": [
+   "According to Einstein's theory of relativity, nothing can travel faster than light.",
+   "아인슈타인의 상대성 이론에 따르면 빛보다 빨리 이동할 수 있는 것은 없다."
+  ],
+  "science": [
+   "Space travel is one of the wonders of modern science.",
+   "우주여행은 현대 과학의 경이로운 것들 중 하나이다."
+  ],
+  "fan": [
+   "I am a big fan of the soccer team Barcelona.",
+   "나는 축구팀 Barcelona의 열렬한 팬이다."
+  ],
+  "travel": [
+   "Hawaii is a popular choice for winter vacation travel.",
+   "하와이는 겨울 휴가 여행지로 인기 있는 선택지이다.예문 We plan to travel across Europe. 우리는 유럽 횡단 여행을 할 계획이다."
+  ],
+  "light": [
+   "Light travels faster than sound.",
+   "빛은 소리보다 빨리 이동한다."
+  ],
+  "speed": [
+   "The train was running at full speed.",
+   "기차는 전속력으로 달리고 있었다."
+  ],
+  "planet": [
+   "Venus is the hottest planet in the solar system.",
+   "금성은 태양계에서 가장 뜨거운 행성이다."
+  ],
+  "blink": [
+   "The eye's blink rate tends to slow down when a person concentrates on something.",
+   "사람이 무언가에 집중할 때 눈의 깜빡임 속도는 느려지는 경향이 있다."
+  ],
+  "vast": [
+   "Vast areas of the Amazon rainforest have been destroyed.",
+   "아마존 열대 우림의 광대한 지역이 파괴되어왔다."
+  ],
+  "passenger": [
+   "The bus stopped and all the passengers got off.",
+   "버스가 멈추고 모든 승객들이 내렸다."
+  ],
+  "spaceship": [
+   "NASA successfully sent a spaceship to Mars.",
+   "미국 항공 우주국은 화성에 성공적으로 우주선을 보냈다."
+  ],
+  "head": [
+   "Sally turned around and headed home. Sally",
+   "는 돌아서서 집으로 향했다."
+  ],
+  "different": [
+   "Wendy's family moved to a different city last year. Wendy",
+   "의 가족은 작년에 다른 도시로 이사를 갔다."
+  ],
+  "one-half": [
+   "Pour one-half of the milk into the flour.",
+   "우유 반을 밀가루에 부으세요."
+  ],
+  "quickly": [
+   "Ben walked quickly towards his car. Ben",
+   "은 자신의 차로 빨리 걸어갔다."
+  ],
+  "expect": [
+   "It was a very tough match, so I didn’t expect to win.",
+   "매우 힘든 경기였기 때문에 제가 이길 것이라고 예상하지 못했어요."
+  ],
+  "through": [
+   "We rode our mountain bikes through the woods.",
+   "우리는 숲속을 산악자전거를 타고 다녔다."
+  ],
+  "answer": [
+   "During the interview, I tried to answer all the questions as honestly as I could.",
+   "인터뷰 동안, 나는 가능한 한 모든 질문에 정직하게 대답하려고 노력했다.예문 There is no simple answer to the question of animal rights. 동물의 권리에 대한 문제의 간단한 해답은 없다."
+  ],
+  "question": [
+   "The essay question on the test was easy.",
+   "그 시험의 논술 문제는 쉬웠다."
+  ],
+  "second": [
+   "I’ll be back in a second.",
+   "잠시 후에 돌아올게요."
+  ],
+  "imagine": [
+   "The teacher asked us to imagine a world without poverty or war.",
+   "선생님은 우리에게 가난이나 전쟁이 없는 세상을 상상해보라고 하셨다."
+  ],
+  "worm": [
+   "A large worm wriggled in the earth.",
+   "커다란 벌레가 땅속에서 꿈틀거렸다."
+  ],
+  "detect": [
+   "Dogs can smell so well that they can detect drugs, bombs, and even cancer.",
+   "개는 냄새를 너무 잘 맡아서 마약, 폭탄, 심지어 암까지도 탐지할 수 있다."
+  ],
+  "bottom": [
+   "The pool was so deep that I could not touch the bottom.",
+   "수영장이 너무 깊어서 바닥에 닿을 수가 없었다."
+  ],
+  "surface": [
+   "The moon's surface is covered with rocks and dust.",
+   "달의 표면은 바위와 먼지로 덮여 있다."
+  ],
+  "outer": [
+   "Ice had formed around the outer edge of the pond.",
+   "연못의 바깥 가장자리에 얼음이 얼었다."
+  ],
+  "layer": [
+   "Ducks have a thick layer of fat to keep themselves warm.",
+   "오리는 몸을 따뜻하게 하기 위해 두꺼운 지방층을 가지고 있다."
+  ],
+  "choose": [
+   "There are lots of restaurants to choose from in this neighborhood.",
+   "이 근처에는 선택할 수 있는 레스토랑이 많다."
+  ],
+  "shortcut": [
+   "We saved time by taking a shortcut.",
+   "우리는 지름길로 가서 시간을 절약했다."
+  ],
+  "such": [
+   "I didn’t know how to deal with such a difficult situation.",
+   "나는 그런 어려운 상황에 어떻게 대처해야 할지 몰랐다."
+  ],
+  "researcher": [
+   "Some researchers have found links between stress and heart disease.",
+   "몇몇 연구원들은 스트레스와 심장병 사이의 연관성을 발견했다."
+  ],
+  "connect": [
+   "Can you connect the printer to your computer?",
+   "프린터를 네 컴퓨터에 연결할 수 있니?"
+  ],
+  "bend": [
+   "Jack bent the bow and shot an arrow from it. Jack",
+   "은 활을 구부린 뒤 그 활로 화살을 쏘았다."
+  ],
+  "suddenly": [
+   "The train suddenly stopped.",
+   "열차가 갑자기 멈췄다."
+  ],
+  "close": [
+   "Susan sat on a chair close to the window. Susan",
+   "은 창문에서 가까운 데 있는 의자에 앉았다."
+  ],
+  "understand": [
+   "The teacher spoke slowly and clearly so that everyone could understand.",
+   "선생님은 모두가 이해할 수 있도록 천천히 또렷하게 말했다."
+  ],
+  "sheet": [
+   "I was given a sheet of paper with a list of names and numbers on it.",
+   "나는 이름과 숫자들의 목록이 있는 종이 한 장을 받았다."
+  ],
+  "dot": [
+   "The dots on the map represent cities.",
+   "지도 위의 점들은 도시를 나타낸다."
+  ],
+  "flat": [
+   "The captain laid the map flat on the table.",
+   "선장은 지도를 탁자 위에 평평하게 펼쳐 놓았다."
+  ],
+  "fold": [
+   "Fold the paper along the dotted line.",
+   "점선을 따라서 종이를 접으시오."
+  ],
+  "punch": [
+   "My new belt is too big. I'll have to punch an extra hole in it.",
+   "새로 산 내 허리띠는 너무 커. 거기에 구멍을 하나 더 뚫어야겠어."
+  ],
+  "hole": [
+   "My pants got a hole in it.",
+   "내 바지에 구멍이 났어."
+  ],
+  "instantly": [
+   "Drinking a cup of warm milk can help your mood improve instantly.",
+   "따뜻한 우유를 한잔 마시는 것은 곧바로 당신의 기분이 좋아지도록 도울 수 있습니다."
+  ],
+  "contain": [
+   "What does this box contain?",
+   "이 상자에는 무엇이 들어 있나요?"
+  ],
+  "throat": [
+   "A fish bone got stuck in my throat.",
+   "생선 가시가 내 목구멍에 걸렸다."
+  ],
+  "exist": [
+   "Does life exist on Mars?",
+   "화성에는 생명체가 존재하는가?"
+  ],
+  "light-year": [
+   "The nearest star to earth is about 4 light-years away.",
+   "지구에서 가장 가까운 별은 약 4광년 떨어져 있다."
+  ],
+  "early": [
+   "Kevin learned to play guitar at the early age of five. Kevin",
+   "은 다섯 살이라는 이른 나이에 기타 연주하는 법을 배웠다."
+  ],
+  "celebrate": [
+   "My family gathered to celebrate the 90th birthday of my grandpa.",
+   "우리 가족은 할아버지의 90번째 생일을 축하하기 위해 모였다."
+  ],
+  "find": [
+   "Researchers are hoping to find a cure for the disease.",
+   "연구원들은 그 질병의 치료법을 찾기를 바라고 있다."
+  ],
+  "consider": [
+   "When texting someone, you need to consider the place and time.",
+   "누군가에게 문자메시지를 보낼 때, 당신은 장소와 시간을 고려해야 합니다."
+  ],
+  "unstable": [
+   "The plane kept shaking because of unstable airstream.",
+   "기류가 불안정해서 비행기가 계속 흔들렸다."
+  ],
+  "crush": [
+   "My bicycle was crushed under the truck's tires.",
+   "내 자전거는 트럭의 바퀴에 깔려 으스러졌다."
+  ],
+  "break": [
+   "The thieves broke a window.",
+   "도둑들이 창문을 깼다."
+  ],
+  "piece": [
+   "There were tiny pieces of glass all over the road.",
+   "길 여기저기에 작은 유리 조각들이 있었다."
+  ],
+  "hopeless": [
+   "Tim felt confused and hopeless after losing his job. Tim",
+   "은 실직한 후 혼란스럽고 절망감을 느꼈다."
+  ],
+  "simply": [
+   "Anyone can give a talk. It’s simply a matter of confidence.",
+   "누구나 연설을 할 수 있다. 그것은 단지 자신감의 문제이다."
+  ],
+  "debate": [
+   "Animal testing has long been the subject of heated debate.",
+   "동물 실험은 오랫동안 열띤 논쟁의 대상이 되어 왔다."
+  ],
+  "ongoing": [
+   "There is an ongoing investigation into the cause of the plane crash.",
+   "비행기 추락 원인에 대한 조사가 계속 진행 중이다."
+  ],
+  "persistent": [
+   "Steve’s big success was a result of his persistent efforts. Steve",
+   "의 큰 성공은 그의 끊임없는 노력의 결과였다."
+  ],
+  "exploration": [
+   "Ocean exploration is very difficult and expensive.",
+   "해양 탐사는 매우 어렵고 비용이 많이 든다."
+  ],
+  "research": [
+   "I will conduct research on the causes of Alzheimer's disease.",
+   "나는 알츠하이머병의 원인에 대해 연구를 할 것이다."
+  ],
+  "eventually": [
+   "After a long search, the police eventually found the missing child in the woods.",
+   "오랜 수색 끝에 경찰은 결국 실종된 아이를 숲 속에서 발견했다."
+  ],
+  "achieve": [
+   "The reason I always achieve good results is because I work hard.",
+   "내가 항상 좋은 결과를 성취하는 이유는 열심히 일하기 때문이다. Phrases in Use"
+  ],
+  "print": [
+   "How many copies of the report should I print out?",
+   "보고서를 몇 부 인쇄해야 할까요?"
+  ],
+  "with": [
+   "I bought a new bag online and I was disappointed when I saw it with my own eyes.",
+   "나는 온라인으로 새 가방을 샀는데 내 눈으로 직접 보고나서 실망했어."
+  ],
+  "get": [
+   "It takes about half an hour to get to the airport.",
+   "공항까지 가는 데는 약 반 시간이 걸린다."
+  ],
+  "in": [
+   "An white object passed by me in the blink of an eye.",
+   "눈 깜짝할 사이에 하얀 물체가 내 옆을 지나갔다."
+  ],
+  "for": [
+   "May I use your phone for a second?",
+   "전화 좀 잠시 써도 될까요?"
+  ],
+  "from": [
+   "I just booked a ticket from Seoul to Busan.",
+   "나는 방금 서울에서 부산으로 가는 표를 예약했다."
+  ],
+  "either": [
+   "For lunch, you can have either an egg-salad sandwich or spaghetti.",
+   "점심으로 여러분은 계란샐러드 샌드위치나 스파게티를 드실 수 있습니다."
+  ],
+  "according": [
+   "According to the weather forecast, it will rain tomorrow.",
+   "일기 예보에 따르면 내일은 비가 올 거래."
+  ],
+  "figure": [
+   "I've finally figured out a way to manage my time better.",
+   "나는 마침내 시간을 더 잘 관리할 수 있는 방법을 알아냈다."
+  ],
+  "far": [
+   "As Julie lives far away from home, she misses her family and often feels lonely. Julie",
+   "는 집에서 멀리 떨어져 살기 때문에 가족을 그리워하고 종종 외로움을 느낀다."
+  ],
+  "match": [
+   "Can you match up the puzzle pieces to the correct space?",
+   "퍼즐 조각들을 알맞은 공간에 맞출 수 있니?"
+  ],
+  "billions": [
+   "Glaciers have existed on our planet for billions of years.",
+   "빙하는 지구에 수 십 억년 동안 존재해 왔다."
+  ],
+  "be": [
+   "The flower vase was broken into pieces after it was hit by a ball.",
+   "꽃병은 공에 맞은 뒤 산산조각이 났다."
+  ],
+  "look": [
+   "When I look back on my childhood, I become very emotional.",
+   "어린 시절을 되돌아볼 때 나는 매우 감상적이게 된다."
+  ],
+  "at": [
+   "I didn't like the book at first but it grew on me.",
+   "나는 처음에 그 책이 마음에 들지 않았지만 점점 좋아졌다."
+  ]
+ },
+ "ee": {
+  "wonder 궁금하다, 궁금해하다": {
+   "defs": [
+    [
+     "to think about something with curiosity",
+     "호기심을 가지고 어떤 것에 대해 생각하다"
+    ]
+   ],
+   "syn": "marvel",
+   "opp": ""
+  },
+  "space station 우주 정거장": {
+   "defs": [
+    [
+     "a large spacecraft that stays above the Earth and is a base for people travelling in space or for scientific tests",
+     "지구 위에 머물며 우주여행을 하는 사람들 또는 과학 테스트를 위한 기지인 대형 우주선"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "sunrise 일출, 해돋이": {
+   "defs": [
+    [
+     "the appearance of the sky when the sun comes up",
+     "해가 떠오를 때의 하늘의 모습"
+    ]
+   ],
+   "syn": "",
+   "opp": "sunset"
+  },
+  "possible 가능한": {
+   "defs": [
+    [
+     "able to be done or achieved",
+     "달성 또는 실현될 수 있는"
+    ]
+   ],
+   "syn": "",
+   "opp": "impossible"
+  },
+  "space 우주, 공간": {
+   "defs": [
+    [
+     "the region beyond the Earth's atmosphere in which there are stars and planets",
+     "지구 대기권 밖의 별과 행성들이 있는 영역"
+    ],
+    [
+     "the whole area in which all things exist and move",
+     "모든 것이 존재하고 움직이는 전체 지역"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "gravity 중력": {
+   "defs": [
+    [
+     "the force that causes something to fall to the Earth or to be attracted to another planet",
+     "어떤 것이 지구로 떨어지거나 다른 행성에 끌리게 하는 힘"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "root (식물의) 뿌리": {
+   "defs": [
+    [
+     "the part of a plant or tree that grows under the ground and gets water from the soil",
+     "땅 밑에서 자라며 흙에서 물을 얻는 식물이나 나무의 부분"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "astronaut 우주 비행사": {
+   "defs": [
+    [
+     "someone who travels into space and works in a spacecraft",
+     "우주를 여행하며 우주선에서 일하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "universe (the universe) 우주, 세계": {
+   "defs": [
+    [
+     "all of space and everything in it including stars, planets, galaxies, etc.",
+     "별, 행성, 은하 등을 포함하는 우주 공간 전체와 그 안에 있는 모든 것"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "wish ~라면 좋겠다고 생각하다, ~이기를 바라다": {
+   "defs": [
+    [
+     "to want something to be true or to happen",
+     "어떤 것이 사실이기를 또는 일어나기를 원하다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "documentary 다큐멘터리, 기록물": {
+   "defs": [
+    [
+     "a movie or television program that tells the facts about actual people and events",
+     "실제 사람과 사건에 대한 사실을 알려 주는 영화나 텔레비전 프로그램"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "float (물 위나 공중에) 떠다니다[떠오르다], 뜨다": {
+   "defs": [
+    [
+     "to be carried along by moving water or air",
+     "움직이는 물이나 공기에 의해 떠다니다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "tough 힘든, 어려운": {
+   "defs": [
+    [
+     "having or causing problems or difficulties",
+     "문제나 어려움을 가지고 있거나 야기하는"
+    ]
+   ],
+   "syn": "difficult, hard",
+   "opp": "easy"
+  },
+  "way 방법, 방식": {
+   "defs": [
+    [
+     "a method or system that can be used to do or achieve something",
+     "뭔가를 하거나 달성하는 데 쓸 수 있는 방법이나 체계"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "real 진짜의, 실제의": {
+   "defs": [
+    [
+     "actually existing or happening; not imaginary",
+     "실제로 존재하거나 일어나는; 상상이 아닌"
+    ]
+   ],
+   "syn": "actual, true",
+   "opp": ""
+  },
+  "entirely 완전히, 전적으로": {
+   "defs": [
+    [
+     "not just partly",
+     "일부만이 아닌"
+    ]
+   ],
+   "syn": "completely",
+   "opp": ""
+  },
+  "impossible 불가능한": {
+   "defs": [
+    [
+     "unable to be done or to happen; not possible",
+     "실행할 수 없거나 일어날 수 없는; 가능하지 않은"
+    ]
+   ],
+   "syn": "",
+   "opp": "possible"
+  },
+  "company 회사": {
+   "defs": [
+    [
+     "an organization that makes money by producing or selling goods or services",
+     "제품이나 서비스를 생산하거나 판매하여 돈을 버는 조직"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "apply 적용하다, 응용하다": {
+   "defs": [
+    [
+     "to use an idea, method, law, etc. in a particular situation",
+     "아이디어, 방법, 법규 등을 특정 상황에 사용하다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "physics 물리학": {
+   "defs": [
+    [
+     "a science that deals with matter and energy and the effect that they have on each other",
+     "물질과 에너지 그리고 그들이 서로에게 미치는 영향을 다루는 과학"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "create 창조하다, 만들다": {
+   "defs": [
+    [
+     "to make something new, or invent something",
+     "새로운 것을 만들거나 어떤 것을 발명하다"
+    ]
+   ],
+   "syn": "invent",
+   "opp": ""
+  },
+  "wormhole 벌레 먹은 구멍[자리], (우주의) 웜홀": {
+   "defs": [
+    [
+     "a hole made by a worm, sometimes found in furniture, fruit, or the ground",
+     "때로는 가구, 과일, 또는 땅에서 발견되는, 벌레가 만든 구멍"
+    ],
+    [
+     "a tunnel in space that is believed to connect different parts of the universe",
+     "우주의 여러 부분을 연결하는 것으로 여겨지는 우주의 터널"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "fact (특히 입증할 수 있는) 사실": {
+   "defs": [
+    [
+     "something that truly exists or happens",
+     "실제로 있는 것이나 일어나고 있는 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "fiction"
+  },
+  "theory 이론, 학설": {
+   "defs": [
+    [
+     "an idea or set of ideas that is intended to explain facts or events",
+     "사실이나 사건을 설명하기 위한 개념 또는 개념 체계"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "science 과학": {
+   "defs": [
+    [
+     "knowledge about or study of the natural world based on facts learned through experiments and observation",
+     "실험과 관찰을 통해 배운 사실에 기초한 자연계에 대한 지식이나 학문"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "travel 여행, 이동": {
+   "defs": [
+    [
+     "",
+     "여행하다, 이동하다 SYN go, move"
+    ],
+    [
+     "the act or activity of traveling",
+     "여행하는 행위나 활동"
+    ],
+    [
+     "to go from one place to another, especially over a long distance; to go a particular distance or at a particular speed",
+     "한 장소에서 다른 장소로, 특히 먼 거리를 가다; 특정한 거리나 특정한 속도로 가다"
+    ]
+   ],
+   "syn": "journey",
+   "opp": ""
+  },
+  "speed 속도": {
+   "defs": [
+    [
+     "the rate at which someone or something moves or travels",
+     "사람이나 사물이 움직이거나 이동하는 속도"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "planet 행성": {
+   "defs": [
+    [
+     "a very large round object in space that moves around the Sun or another star",
+     "태양이나 다른 별 주위를 도는 우주에 있는 매우 큰 둥근 물체"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "blink 깜박임": {
+   "defs": [
+    [
+     "the act of closing and opening your eyes quickly",
+     "눈을 빨리 감고 뜨는 행위"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "vast 거대한, 광대한, 광활한, 엄청나게 큰": {
+   "defs": [
+    [
+     "SYN huge, enormous",
+     ""
+    ],
+    [
+     "very large in size, amount, or extent",
+     "크기, 양, 범위가 대단히 큰"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "passenger 승객, 탑승객": {
+   "defs": [
+    [
+     "a person who is travelling in a bus, train, ship, airplane, etc. but is not driving it or working on it",
+     "버스, 기차, 배, 비행기 등을 타고 여행하지만 그것을 몰거나 그것에서 일하지는 않는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "spaceship 우주선": {
+   "defs": [
+    [
+     "a vehicle that is used for travel in outer space",
+     "우주 공간을 여행하는 데 쓰는 탈것"
+    ]
+   ],
+   "syn": "spacecraft",
+   "opp": ""
+  },
+  "head (특정 방향으로) 가다, 향하다": {
+   "defs": [
+    [
+     "to go in a particular direction or toward a particular place",
+     "특정한 방향으로 또는 특정한 곳으로 가다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "expect 예상하다, 기대하다": {
+   "defs": [
+    [
+     "to think that something will probably or certainly happen",
+     "어떤 일이 아마도 또는 확실히 일어날 것이라고 생각하다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "imagine 상상하다": {
+   "defs": [
+    [
+     "to form a picture or idea in your mind of something that is not real or present",
+     "실제가 아니거나 존재하지 않는 것을 마음속으로 그리거나 생각해 보다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "detect 감지하다, 찾아내다, 발견하다": {
+   "defs": [
+    [
+     "SYN find, notice, uncover",
+     ""
+    ],
+    [
+     "to discover or notice something that is hidden or hard to see, hear, taste, etc.",
+     "숨겨져 있는 것 또는 보거나 듣거나 맛보기 등이 힘든 어떤 것을 발견하거나 알아채다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "bottom 밑바닥, 맨 아랫부분": {
+   "defs": [
+    [
+     "the lowest part, point, or level of something",
+     "어떤 것의 가장 낮은 부분·지점·층"
+    ]
+   ],
+   "syn": "",
+   "opp": "top"
+  },
+  "surface 표면": {
+   "defs": [
+    [
+     "an outside part or layer of something",
+     "어떤 것의 바깥 부분이나 층"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "outer 외부의, 바깥의": {
+   "defs": [
+    [
+     "located on or toward the outside of something",
+     "어떤 것의 바깥쪽에 있는 또는 바깥쪽을 향해 있는"
+    ]
+   ],
+   "syn": "",
+   "opp": "inner"
+  },
+  "layer (하나의 표면이나 여러 표면 사이를 덮고 있는) 층[막/겹]": {
+   "defs": [
+    [
+     "an amount or piece of a material or substance that covers a surface or that is between two other things",
+     "표면을 덮거나 다른 두 가지 사이에 있는 물질이나 물질의 양이나 조각"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "shortcut 지름길": {
+   "defs": [
+    [
+     "a shorter, quicker, or easier way to get to a place",
+     "어떤 곳까지 가는 더 짧거나, 더 빠르거나, 더 쉬운 길"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "researcher 연구자, 조사자": {
+   "defs": [
+    [
+     "someone who studies a subject in detail in order to discover new facts or test new ideas",
+     "새로운 사실을 발견하거나 새로운 아이디어들을 시험하기 위해 어떤 주제를 자세히 연구하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "connect 잇다, 연결하다": {
+   "defs": [
+    [
+     "to join two or more things together",
+     "둘 이상의 것을 연결하다"
+    ]
+   ],
+   "syn": "join",
+   "opp": ""
+  },
+  "bend 휘게 하다, 구부리다": {
+   "defs": [
+    [
+     "to use force to cause something to become curved",
+     "어떤 것이 구부러지도록 힘을 쓰다"
+    ]
+   ],
+   "syn": "",
+   "opp": "straighten"
+  },
+  "dot (작고 동그란) 점": {
+   "defs": [
+    [
+     "a small round mark",
+     "작고 동그란 표시"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "flat 평평하게 펼쳐진[펴진], 평평한, 납작한": {
+   "defs": [
+    [
+     "SYN smooth, even",
+     ""
+    ],
+    [
+     "stretched out or lying on a surface; having a smooth, level, or even surface",
+     "표면 위에 펼쳐진 또는 놓여 있는; 표면이 반반하거나 평평하거나 고른"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "fold 접다": {
+   "defs": [
+    [
+     "to bend one part of something over or against another part",
+     "어떤 것의 한 부분을 꺾어서 다른 부분과 겹치게 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "unfold, open"
+  },
+  "punch (펀치로) 구멍을 뚫다": {
+   "defs": [
+    [
+     "to make a hole in something with a special piece of equipment",
+     "특별한 장비로 어떤 것에 구멍을 만들다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "instantly 즉시, 곧바로": {
+   "defs": [
+    [
+     "without delay",
+     "지체 없이"
+    ]
+   ],
+   "syn": "immediately",
+   "opp": ""
+  },
+  "contain 포함하다, (안에) ~이 들어 있다": {
+   "defs": [
+    [
+     "SYN have, include, hold",
+     ""
+    ],
+    [
+     "to have or include something",
+     "어떤 것을 가지고 있거나 포함하고 있다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "throat 목구멍, 인후": {
+   "defs": [
+    [
+     "the space inside the neck down which food and air can go",
+     "음식과 공기가 내려가는 목 안의 공간"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "exist 존재하다": {
+   "defs": [
+    [
+     "to be real; to be present in a place or situation",
+     "실재하다; 어떤 장소나 상황에서 존재하다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "light-year 광년(빛이 1년에 나아가는 거리)": {
+   "defs": [
+    [
+     "the distance that light travels in one year",
+     "빛이 1년 동안 가는 거리"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "celebrate 축하하다": {
+   "defs": [
+    [
+     "to do something special or enjoyable for an important event, occasion, holiday, etc.",
+     "중요한 일, 행사, 축일 등을 위해 특별하거나 즐거운 일을 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "consider 사려하다, 고려하다": {
+   "defs": [
+    [
+     "to think about something carefully, especially in order to make a decision",
+     "특히 결정을 하기 위해 어떤 것에 대해 신중히 생각하다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "unstable 불안정한": {
+   "defs": [
+    [
+     "likely to change suddenly and become worse, especially because of the forces affecting it",
+     "특히 그것에 영향을 미치는 힘 때문에 갑자기 변해서 더 나빠질 가능성이 있는"
+    ]
+   ],
+   "syn": "",
+   "opp": "stable"
+  },
+  "crush 으스러뜨리다, 박살내다, 부수다": {
+   "defs": [
+    [
+     "to press or squeeze something so hard that it breaks or loses its shape",
+     "어떤 것을 세게 누르거나 압착해서 부수거나 원래 모양을 잃게 만들다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "debate 논쟁, 논의, 토론": {
+   "defs": [
+    [
+     "discussion between people in which they express different opinions about something",
+     "어떤 것에 대해 서로 다른 의견을 표현하는 사람들 사이의 논의"
+    ]
+   ],
+   "syn": "discussion",
+   "opp": ""
+  },
+  "ongoing 계속 진행 중인": {
+   "defs": [
+    [
+     "continuing without reaching an end",
+     "끝나지 않고 계속되는"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "persistent 지속적인, 끊임없는, 끈기 있는, 끈질긴": {
+   "defs": [
+    [
+     "SYN endless, continuous, constant",
+     ""
+    ],
+    [
+     "continuing to do something or to try to do something even though it is difficult; not stopping or going away",
+     "어떤 일이 힘들어도 그 일을 계속하거나 계속하려고 노력하는; 중단되거나 사라지지 않는"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "exploration 탐험, 탐사, 탐구": {
+   "defs": [
+    [
+     "the act of traveling through a place in order to find out about it or look for something in it",
+     "어떤 장소에 대해 알아내거나 그 안에서 무엇인가를 찾기 위해 그 곳을 여행하는 행위"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "research 조사, 연구": {
+   "defs": [
+    [
+     "careful study that is done to find and report new knowledge about something",
+     "어떤 것에 대한 새로운 지식을 찾아서 보고하기 위해 하는 세심한 연구"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "eventually 결국": {
+   "defs": [
+    [
+     "after a long time; in the end",
+     "오랜 시간 후; 마침내"
+    ]
+   ],
+   "syn": "finally",
+   "opp": ""
+  },
+  "achieve 달성하다, 성취하다": {
+   "defs": [
+    [
+     "to succeed in reaching a particular goal, especially by making an effort for a long time",
+     "특히 오랜 시간 노력하여 특정한 목표를 달성하는 데 성공하다"
+    ]
+   ],
+   "syn": "accomplish",
+   "opp": ""
+  },
+  "print out (프린터로) 출력하다": {
+   "defs": [
+    [
+     "to produce a copy of something using a machine attached to a computer",
+     "컴퓨터에 부착된 기계를 사용하여 어떤 것의 복사본을 생산하다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "get to ~에 도착하다, 닿다": {
+   "defs": [
+    [
+     "to arrive at or reach a place or point",
+     "어떤 장소나 지점에 도착하거나 도달하다"
+    ]
+   ],
+   "syn": "arrive at, reach",
+   "opp": ""
+  },
+  "in the blink of an eye 눈 깜박할 사이에": {
+   "defs": [
+    [
+     "very quickly; in a short time",
+     "아주 빨리; 단시간에"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "figure out ~을 알아내다, 생각해 내다": {
+   "defs": [
+    [
+     "SYN work out, find out",
+     ""
+    ],
+    [
+     "to understand or solve something",
+     "어떤 것을 이해하거나 해결하다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "match up 맞추다": {
+   "defs": [
+    [
+     "to put two people or things together that are related to",
+     "관련된 두 사람 또는 사물을 한곳에 모으다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "look back 되돌아보다": {
+   "defs": [
+    [
+     "to think about something in the past",
+     "전에 있었던 일을 생각하다"
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  },
+  "light 빛": {
+   "defs": [
+    [
+     "1. n.",
+     "빛2. n. 불, 전등, 조명3. a. (색∙색조가) 밝은, 연한SYN pale OPP dark, deep4. a. 가벼운 OPP heavy5. v. 불을 붙이다, 환하게 하다1. The morning light shone in through the window. 아침 햇살이 창문을 통해 비쳐 들어왔다.2. Suddenly all the lights in the house went out. 갑자기 집 안의 불이 전부 나갔다.3. Ben has light skin. Ben은 밝은 피부를 가지고 있다.4. My new camera is light and easy to carry. 나의 새 카메라는 가볍고 들고 다니기에 편하다.5. At the camp, I learned how to light a fire without a match. 캠프에서 나는 성냥불 없이 불을 붙이는 법을 배웠다."
+    ]
+   ],
+   "syn": "",
+   "opp": ""
+  }
+ },
+ "pages": [
+  4,
+  7,
+  11,
+  17,
+  23,
+  28
+ ]
+}
