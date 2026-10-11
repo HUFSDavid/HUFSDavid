@@ -1,0 +1,459 @@
+import json, os
+HERE = os.path.dirname(os.path.abspath(__file__))
+A = "’"
+def q(s): return s.replace("'", A)
+
+# 비상김 8과 Wonders of Space Travel — Listen & Talk 1·2 + Communication (Wrap Up 제외)
+# 원문 오탈자 수정: Get Ready 1 'eat ramyeon is space' → 'in space'
+dialogues = [
+ {"id": "D1", "label": "Listen & Talk 1 · Get Ready", "lines": [
+  ["A", "Is it {possible to eat} ramyeon in space?", "우주에서 라면을 먹는 게 가능하니?"],
+  ["B", "Yes, I've {read an article} about {special ramyeon} for astronauts.", "응, 우주 비행사들을 위한 특별한 라면에 대한 기사를 읽은 적이 있어."]],
+  "notes": [
+  "Is it possible to + 동사원형? : 어떤 일이 실제로 {가능한지} 묻는 말 — it은 가주어, to eat ~이 진주어",
+  "현재완료(경험) : I’ve read ~ ‘~을 {읽은 적이 있다}’ — read의 과거분사는 철자가 같은 read",
+  "전치사 about / for : an article {about} ~ ‘~에 관한 기사’ / ramyeon {for} astronauts ‘우주 비행사들을 위한 라면’"]},
+ {"id": "D2", "label": "Listen & Talk 1 · A. Listen and Number 1", "lines": [
+  ["M", "Welcome back to Earth, Irene. What was your {favorite part} about {being} in the space station?", "지구로 돌아오신 것을 환영합니다, Irene 씨. 우주 정거장에서 보낸 시간 중 가장 좋았던 부분은 무엇이었나요?"],
+  ["W", "I could see a beautiful sunrise {16 times a day}. It was great.", "저는 하루에 16번씩 아름다운 일출을 볼 수 있었어요. 그것은 굉장했죠."],
+  ["M", "{Is it possible to} see the sunrise {several times} a day in space?", "우주에서는 하루에 여러 번 일출을 보는 것이 가능한가요?"],
+  ["W", "Yes, it's possible {because} we {moved around} Earth {every 90 minutes} in the station.", "네, 왜냐하면 우주 정거장이 지구 주위를 90분마다 돌았기 때문에 그게 가능해요."],
+  ["M", "Wow, {that's amazing}!", "와, 놀랍네요!"]],
+  "notes": [
+  "동명사 being : 전치사 about 뒤 {동명사} 자리 — ‘우주 정거장에 있었던 것’",
+  "횟수 + a day : ‘하루에 ~번’ — 이때 a는 {per}(~마다)의 뜻",
+  "Is it possible to ~? : 어떤 일이 실제로 {가능한지} 묻기 — 뒤에 동사원형(see)",
+  "접속사 because + 주어 + 동사 : ‘~하기 {때문에}’ — 가능한 이유를 덧붙임 (because of + 명사와 구별)",
+  "every + 숫자 + 복수명사 : ‘~{마다}’ — every 90 minutes ‘90분마다’"]},
+ {"id": "D3", "label": "Listen & Talk 1 · A. Listen and Number 2", "lines": [
+  ["M", "Irene, what was {the best food} you ate in the space station?", "Irene 씨, 우주 정거장에서 드셨던 것 중 최고의 음식은 무엇이었나요?"],
+  ["W", "Hmm... . We {grew some vegetables} and {ate them} every day. They were pretty {fresh and tasty}!", "음.... 우리는 채소를 좀 길러서 매일 그걸 먹었어요. 아주 신선하고 맛있었어요!"],
+  ["M", "Wow, {is it possible to} grow vegetables in the space station?", "와, 우주 정거장에서 채소를 기르는 것이 가능한가요?"],
+  ["W", "Yes. {Since} there's {no gravity} in space, we {had to} grow them in {special bags}. The bags {helped the roots to grow}.", "네. 우주에는 중력이 없기 때문에 채소를 특수한 봉지 안에 길러야 했어요. 그 봉지는 뿌리가 자라는 데 도움을 주었어요."],
+  ["M", "{How interesting}!", "정말 흥미롭네요!"]],
+  "notes": [
+  "목적격 관계대명사 생략 : the best food (that) you ate ‘당신이 먹은 {최고의} 음식’ — that/which 생략",
+  "병렬구조 : We {grew} ~ and {ate} ~ — 과거동사 두 개를 and로 연결 / them = some vegetables",
+  "Is it possible to ~? : 실현 {가능성}을 묻는 말 — 문장 중간이라 소문자 is",
+  "접속사 Since : ‘~하기 때문에’(이유) = {Because} · As (‘~ 이후로’의 since와 구별)",
+  "there’s + 셀 수 없는 명사 : there’s = there {is} — gravity는 불가산명사라 단수 취급",
+  "had to + 동사원형 : have to의 {과거형} ‘~해야 했다’",
+  "help + 목적어 + to부정사[동사원형] : ‘~가 …하도록 돕다’ — to grow 대신 {grow}도 가능",
+  "How + 형용사 (+ 주어 + 동사)! : how {감탄문} — 주어·동사(it is)는 흔히 생략"]},
+ {"id": "D4", "label": "Listen & Talk 1 · B. Listen and Write", "lines": [
+  ["M", "{Have you heard that} NASA is going to {send a 3D printer} into space?", "너 나사(NASA)가 우주에 3D 프린터를 보낼 거라는 얘기 들어 봤니?"],
+  ["W", "They're going to send a 3D printer into space? Why?", "나사가 우주에 3D 프린터를 보낸다고? 왜?"],
+  ["M", "I've heard that the 3D printer {will be used to} {print out food} for astronauts.", "3D 프린터가 우주 비행사들을 위한 음식을 출력하는 데 쓰일 거라고 들었어."],
+  ["W", "{Is it possible to} print out food {using} a 3D printer?", "3D 프린터를 이용해서 음식을 출력하는 게 가능해?"],
+  ["M", "Yes, it's possible. It can print out a fresh pizza {in less than} five minutes.", "응, 가능해. 그건 5분도 안 돼서 신선한 피자를 출력할 수 있어."],
+  ["W", "Really? {I wonder} {what it would taste like}.", "정말? 그게 맛이 어떨지 궁금하다."]],
+  "notes": [
+  "Have you heard that ~? : 현재완료로 상대의 {경험}을 묻는 말 — that은 heard의 목적어절을 이끄는 접속사(생략 가능)",
+  "will be used to + 동사원형 : 조동사 + 수동태 ‘~하는 데 {사용될} 것이다’ (be used to -ing ‘~에 익숙하다’와 구별)",
+  "Is it possible to ~? : 실제로 {가능한지} 묻기 / using ~ ‘~을 이용하여’",
+  "in less than + 시간 : ‘~도 {안 되어}’, ~ 이내에",
+  "간접의문문 : wonder의 목적어 — {의문사 + 주어 + 동사} 어순 / what ~ like ‘~은 어떤지’(= how)"]},
+ {"id": "D5", "label": "Listen & Talk 1 · C. Match and Talk (Sample)", "lines": [
+  ["A", "{Is it possible to} {lie down to sleep} in space?", "우주에서 누워서 자는 게 가능하니?"],
+  ["B", "Yes, astronauts {attach} their sleeping bag {to a wall}.", "응, 우주 비행사들은 침낭을 벽에 붙여."],
+  ["A", "{Sounds interesting}. Life in space is so {different from} that on Earth.", "재미있게 들린다. 우주에서의 생활은 지구에서의 생활과 아주 다르구나."]],
+  "notes": [
+  "Is it possible to ~? : 실제 {가능 여부}를 묻는 말 / lie down to sleep ‘자려고 눕다’(to sleep: {목적})",
+  "attach A to B : ‘A를 B에 {붙이다}’",
+  "(It) Sounds + 형용사 : 주어 It이 생략된 형태 — sound 뒤에는 {형용사} 보어",
+  "that = {life} : 앞 명사의 반복을 피하는 대명사 / be different from ~ ‘~와 다르다’"]},
+ {"id": "D6", "label": "Listen & Talk 2 · Get Ready", "lines": [
+  ["A", "Wish upon the shining star. Then {your dreams will come true}!", "반짝이는 별에 소원을 빌어 봐. 그러면 너희들의 꿈이 이루어질 거야!"],
+  ["B", "{I wish I could} go to {the same high school as} my friends.", "나는 내 친구들이랑 같은 고등학교에 가면 좋겠어."]],
+  "notes": [
+  "명령문. Then ~ : ‘~해라. {그러면} …할 것이다’ (= 명령문, and ~) / wish upon ~ ‘~에 소원을 빌다’",
+  "come true : ‘(꿈이) {이루어지다}’ — come + 형용사 ‘~이 되다’",
+  "I wish I could ~ : 현재 이루기 어려운 {소망} 말하기 ‘~할 수 있으면 좋겠다’ (I wish + 주어 + 과거형)",
+  "the same A as B : ‘B와 {같은} A’"]},
+ {"id": "D7", "label": "Listen & Talk 2 · A. Listen and Choose 1", "lines": [
+  ["M", "Look at these {colorful pictures} of the universe.", "우주의 이 화려한 사진들 좀 봐."],
+  ["W", "Oh, they're beautiful. {I wish I could} see Earth from space {with my own eyes}.", "오, 아름다워. 난 내 눈으로 우주에서 지구를 보면 좋겠어."],
+  ["M", "Actually, you can {do that} at the {National Youth Space Center}.", "사실, 국립 청소년 우주 센터에서 그것을 할 수 있어."],
+  ["W", "Really?", "정말?"],
+  ["M", "Yeah, you can use the {VR glasses}. {I heard that} you {feel like} you are actually in space!", "응, VR(가상 현실) 안경을 써 볼 수 있거든. 네가 진짜 우주에 있는 것처럼 느낄 거라고 들었어!"]],
+  "notes": [
+  "I wish I could ~ : 이루어지기 어려운 {소망} 표현하기 ‘~할 수 있으면 좋겠다’",
+  "with one’s own eyes : ‘{직접} 자기 눈으로’",
+  "do that : 앞 내용의 반복을 피하는 말 — that = 우주에서 지구를 {보는 것}",
+  "I heard that ~ : 들어서 {알게 된} 정보 전하기 (that은 접속사, 생략 가능)",
+  "feel like + 주어 + 동사 : ‘~인 것처럼 {느끼다}’ (feel like -ing ‘~하고 싶다’와 구별)"]},
+ {"id": "D8", "label": "Listen & Talk 2 · A. Listen and Choose 2", "lines": [
+  ["W", "What are you watching?", "너 뭐 보고 있니?"],
+  ["M", "It's a {documentary} about {life in space}. {Everything seems} so different.", "우주에서의 생활에 대한 다큐멘터리야. 모든 게 너무 달라 보여."],
+  ["W", "Yes, {it's because} there's {no gravity} in space.", "맞아, 그건 우주에 중력이 없기 때문이야."],
+  ["M", "Right. {I wish I could} {float around} like an astronaut!", "그래. 난 우주 비행사처럼 떠다닐 수 있으면 좋겠어!"],
+  ["W", "Really? {I don't}. It {looks uncomfortable}.", "정말? 난 아니야. 불편해 보여."]],
+  "notes": [
+  "Everything + 단수동사 : Everything은 {단수} 취급(seems) / seem + 형용사 ‘~인 것 같다’",
+  "it’s because + 주어 + 동사 : ‘그것은 ~하기 {때문이다}’ — 앞에서 말한 현상의 이유",
+  "I wish I could ~ : 소망 표현하기 — 현실에서 어려운 일(우주 비행사처럼 {떠다니기})을 바람",
+  "I don’t. : I don’t (wish I could float around). — 앞 문장 반복을 줄인 말로 {반대} 의견",
+  "look + {형용사} : ‘~해 보이다’ (looks uncomfortably ✗)"]},
+ {"id": "D9", "label": "Listen & Talk 2 · B. Listen and Write", "lines": [
+  ["W", "Look at this man, Jake. He lived in space {for one year}.", "이 남자 좀 봐, Jake. 그는 1년 동안 우주에 살았어."],
+  ["M", "It {must have been tough} for him.", "그는 분명히 힘들었을 거야."],
+  ["W", "Right, but {you know what's interesting}? He {grew 2 inches} {while in space}.", "맞아, 하지만 재미있는 게 뭔지 알아? 그가 우주에 있는 동안 키가 2인치가 컸어."],
+  ["M", "Really? {How is that possible}?", "정말? 그게 어떻게 가능하지?"],
+  ["W", "{I'm not sure}, but maybe {it's because} there's no gravity in space.", "잘 모르겠어, 하지만 아마 우주에 중력이 없기 때문이 아닐까."],
+  ["M", "That's so cool. {I wish I could} live in space. {That way}, I could {become taller}.", "그거 정말 멋지다. 내가 우주에서 살면 좋겠어. 그러면 나도 키가 커질 수 있을 텐데."],
+  ["W", "{I'm sure} there are {other ways to become taller} than going to space.", "우주에 가는 것 말고 키가 커지는 다른 방법들이 분명히 있을 거야."]],
+  "notes": [
+  "for + 기간 : ‘~ {동안}’ — for one year ‘1년 동안’",
+  "must have + 과거분사 : 과거 일에 대한 강한 {추측} ‘~했음이 틀림없다’",
+  "while in space : 접속사 while 뒤 {he was} 생략 — 주절과 주어가 같고 be동사일 때",
+  "How is that possible? : 믿기 어려운 일이 {어떻게} 가능한지 묻는 말 — that = 우주에서 키가 2인치 큰 일",
+  "I wish I could ~ : 현재 사실과 반대되는 {소망} — 가정법 과거(could + 동사원형)",
+  "That way : ‘그렇게 하면’ — 앞 문장(우주에서 사는 것)을 {가리킴}",
+  "there are + 복수명사 : 주어가 복수(other ways)라서 be동사는 {are}",
+  "to부정사의 형용사적 용법 : to become이 other ways를 {뒤에서} 꾸밈 ‘키가 커지는 다른 방법’"]},
+ {"id": "D10", "label": "Listen & Talk 2 · C. Talk and Play (Sample)", "lines": [
+  ["A", "{I wish I could} have {a pet robot}.", "난 애완 로봇을 가질 수 있으면 좋겠어."],
+  ["B", "{Me, too}. {I'm sure} that's {every teenager's wish}.", "나도 그래. 그건 분명히 모든 십 대들의 소망일 거야."]],
+  "notes": [
+  "I wish I could ~ : 이루어지기 어려운 {소망} 말하기",
+  "Me, too. : 상대의 말에 {동의}하기 ‘나도 그래.’ (부정문 뒤에는 Me, neither.)",
+  "I’m sure (that) ~ : ‘분명히 ~일 거야’ — {확신} 표현, that 생략",
+  "every + {단수명사} : every teenager’s wish ‘모든 십 대의 소망’ / that = 애완 로봇을 갖는 것"]},
+ {"id": "D11", "label": "Communication · Movie Talk Show", "lines": [
+  ["W", "Hello, everyone, welcome to All about Movies! Today, we're going to talk about {the top three things} from movies {that we wish were real}.", "안녕하세요, 여러분, ‘영화에 대한 모든 것’에 오신 것을 환영합니다! 오늘, 우리는 영화에서 우리가 실제였으면 하고 바라는 것들을 3위까지 이야기해 볼 예정입니다."],
+  ["M", "Let's start with number three, {the flying skateboard} from Back to the Future.", "3위인 <백 투 더 퓨처>에 나오는 나는 스케이트보드로 시작해 보죠."],
+  ["W", "It's a cool item. {I wish I could} have a flying skateboard.", "멋진 물건이죠. 전 나는 스케이트보드를 가질 수 있으면 좋겠어요."],
+  ["M", "Actually, {I read somewhere that} this is {not entirely impossible}.", "사실, 제가 어디선가 읽었는데 이게 완전히 불가능한 건 아니래요."],
+  ["W", "Really? {Is it actually possible to} fly on a skateboard?", "정말요? 스케이트보드를 타고 나는 게 실제로 가능해요?"],
+  ["M", "Yes. Some companies {have applied physics} {to create} flying skateboards.", "네. 몇몇 회사에서 나는 스케이트보드를 만들기 위해 물리학을 적용했어요."]],
+  "notes": [
+  "주격 관계대명사 that : 선행사 the top three things가 복수라서 동사도 {were} / we wish는 관계절 안에 끼어든 주어 + 동사",
+  "동격의 콤마 : number three = {the flying skateboard} ~ (콤마 뒤에서 같은 대상을 다시 설명)",
+  "I wish I could ~ : 갖기 어려운 것을 바라는 {소망} 표현",
+  "I read somewhere that ~ : 어디선가 {읽은} 정보 전하기 — that은 read의 목적어절 접속사(생략 가능)",
+  "not entirely : ‘{완전히} ~한 것은 아닌’(부분부정) — not entirely impossible = 어느 정도 가능함",
+  "Is it actually possible to ~? : actually로 ‘{실제로}’ 가능한지 강조 — it 가주어, to fly ~ 진주어",
+  "to부정사의 부사적 용법(목적) : to create ‘~을 {만들기 위해}’ / have applied 현재완료"]},
+ {"id": "D12", "label": "Communication · STEP B. Role-Play (e.g.)", "lines": [
+  ["A", "{I wish I could} have {the robotic taxi} from the movie Total Recall.", "전 <토탈 리콜>이라는 영화에 나오는 로봇 택시를 가지면 좋겠어요."],
+  ["B", "Actually, I read somewhere that this is {not entirely impossible}.", "사실, 제가 어디선가 읽었는데 이게 완전히 불가능한 건 아니래요."],
+  ["A", "Really? {Is it actually possible to} go anywhere {without a human driver}?", "정말이요? 인간 운전사 없이 어디로든 가는 게 실제로 가능해요?"],
+  ["B", "Yes. Some companies {have used} AI and self-driving car technology {to create} a {driverless taxi}.", "네. 몇몇 회사에서 운전사 없는 택시를 만들기 위해 AI와 자율 주행차 기술을 이용했어요."]],
+  "notes": [
+  "I wish I could ~ : 영화 속 물건을 갖고 싶은 {소망} 표현",
+  "not entirely impossible : 부분부정 ‘완전히 불가능한 것은 {아닌}’ — this = the robotic taxi",
+  "Is it actually possible to ~? : ‘~하는 것이 {실제로} 가능하니?’ / without ~ ‘~ 없이’",
+  "현재완료 + to부정사(목적) : have used ~ to create ‘~을 만들기 위해 {이용해 왔다}’",
+  "driverless : driver + -less ‘~이 {없는}’ = without a driver"]},
+]
+
+expressions = [
+ ["가능 여부 묻기", "Is it {possible} to + 동사원형 ~?", "~하는 것이 가능하니?"],
+ ["가능 여부 묻기", "Is it {actually} possible to ~?", "~하는 것이 실제로 가능하니?"],
+ ["가능 여부 묻기", "Can I {actually} ~? / Am I {able to} ~?", "내가 실제로 ~할 수 있니? / 내가 ~할 수 있니?"],
+ ["가능 여부 묻기", "Is there a {possibility} that ~?", "~할 가능성이 있니?"],
+ ["가능 여부 묻기", "How is that {possible}?", "그게 어떻게 가능하지?"],
+ ["가능하다고 답하기", "Yes, it's possible. / This is not entirely {impossible}.", "응, 가능해. / 이건 완전히 불가능한 건 아니야."],
+ ["소망 표현하기", "I {wish} I could + 동사원형 ~.", "~할 수 있으면 좋겠어."],
+ ["소망 표현하기", "I want[{hope}] to ~. / I'd {like} to ~.", "나는 ~하기를 바란다. / 나는 ~하고 싶다."],
+ ["소망 표현하기", "I am looking {forward} to ~.", "나는 ~하기를 고대한다."],
+ ["소망 표현하기", "It would be {better} if I ~.", "만약 ~라면 좋을 텐데."],
+ ["동의하기", "{Me, too}. I'm {sure} that's every teenager's wish.", "나도 그래. 그건 분명히 모든 십 대들의 소망일 거야."],
+ ["들은 정보 전하기", "Have you {heard} that ~? / I read {somewhere} that ~.", "~라는 얘기 들어 봤니? / 어디선가 ~라고 읽었어."],
+ ["궁금증 표현하기", "I {wonder} what it would taste like.", "그게 맛이 어떨지 궁금하다."],
+]
+
+stage3 = [
+ ["D2", "Is it possible to see the sunrise several times a day in space?", "우주에서는 하루에 여러 번 일출을 보는 것이 가능한가요?"],
+ ["D2", "Yes, it's possible because we moved around Earth every 90 minutes in the station.", "네, 왜냐하면 우주 정거장이 지구 주위를 90분마다 돌았기 때문에 그게 가능해요."],
+ ["D3", "Since there's no gravity in space, we had to grow them in special bags.", "우주에는 중력이 없기 때문에 채소를 특수한 봉지 안에 길러야 했어요."],
+ ["D3", "The bags helped the roots to grow.", "그 봉지는 뿌리가 자라는 데 도움을 주었어요."],
+ ["D4", "I've heard that the 3D printer will be used to print out food for astronauts.", "3D 프린터가 우주 비행사들을 위한 음식을 출력하는 데 쓰일 거라고 들었어."],
+ ["D4", "I wonder what it would taste like.", "그게 맛이 어떨지 궁금하다."],
+ ["D7", "I wish I could see Earth from space with my own eyes.", "난 내 눈으로 우주에서 지구를 보면 좋겠어."],
+ ["D9", "It must have been tough for him.", "그는 분명히 힘들었을 거야."],
+ ["D9", "I'm sure there are other ways to become taller than going to space.", "우주에 가는 것 말고 키가 커지는 다른 방법들이 분명히 있을 거야."],
+ ["D11", "Actually, I read somewhere that this is not entirely impossible.", "사실, 제가 어디선가 읽었는데 이게 완전히 불가능한 건 아니래요."],
+ ["D11", "Some companies have applied physics to create flying skateboards.", "몇몇 회사에서 나는 스케이트보드를 만들기 위해 물리학을 적용했어요."],
+]
+
+stage4 = ["D3", "D4", "D8", "D9", "D11"]
+
+T, F = "T", "F"
+stage5 = [
+ # D1 (7)
+ ["D1", "Person B has never read anything about eating ramyeon in space.", F, "B 1: I've read an article about ~", "반대 의미(경험 유무)"],
+ ["D1", "Person A wants to know whether people can eat ramyeon in space.", T, "A 1: Is it possible to eat ramyeon in space?", "표현 의도"],
+ ["D1", "According to B, astronauts eat the same ramyeon that people eat on Earth.", F, "B 1: special ramyeon for astronauts", "반대 의미(special)"],
+ ["D1", "B learned about space ramyeon from a TV program.", F, "B 1: I've read an article (기사)", "속성 바꾸기(정보 출처)"],
+ ["D1", "Some ramyeon has been made especially for people who travel in space.", T, "B 1: special ramyeon for astronauts", "바꿔 말하기"],
+ ["D1", "It is A who has read an article about space ramyeon.", F, "B 1 (기사를 읽은 사람은 B)", "화자 바꾸기"],
+ ["D1", "B answers A's question positively and gives the source of the information.", T, "A 1 질문 → B 1 Yes, I've read an article ~", "두 대사 종합"],
+ # D2 (8)
+ ["D2", "Irene has just come back to Earth from the space station.", T, "M 1: Welcome back to Earth ~ being in the space station", "바꿔 말하기"],
+ ["D2", "Irene saw the sunset sixteen times a day.", F, "W 1: a beautiful sunrise 16 times a day", "반대 의미(sunrise ↔ sunset)"],
+ ["D2", "The man asks Irene what she liked most about her stay in the station.", T, "M 1: What was your favorite part ~?", "바꿔 말하기"],
+ ["D2", "The station went around Earth once every 60 minutes.", F, "W 2: every 90 minutes", "숫자 바꾸기"],
+ ["D2", "Irene says it is impossible to watch several sunrises a day in space.", F, "W 2: Yes, it's possible", "반대 의미"],
+ ["D2", "Irene could see many sunrises in a day because the station circled Earth so quickly.", T, "W 1 16 times a day + W 2 because ~ every 90 minutes", "두 대사 종합(원인·결과)"],
+ ["D2", "It is the man who explains why many sunrises can be seen in a day.", F, "W 2 (이유를 설명하는 사람은 Irene)", "화자 바꾸기"],
+ ["D2", "The man is surprised by Irene's answer.", T, "M 3: Wow, that's amazing!", "추론(감정)"],
+ # D3 (8)
+ ["D3", "The vegetables Irene ate in the station were brought from Earth.", F, "W 1: We grew some vegetables", "범위 넘기기"],
+ ["D3", "Irene ate the vegetables she grew only once a week.", F, "W 1: ate them every day", "숫자·빈도 바꾸기 + 단정어(only)"],
+ ["D3", "Irene describes the vegetables as fresh and delicious.", T, "W 1: pretty fresh and tasty", "바꿔 말하기(tasty → delicious)"],
+ ["D3", "Because there is gravity in space, the vegetables were grown in special bags.", F, "W 2: Since there's no gravity in space", "반대 의미"],
+ ["D3", "The special bags made it easier for the roots of the vegetables to develop.", T, "W 2: The bags helped the roots to grow.", "바꿔 말하기"],
+ ["D3", "The man wants to know if growing vegetables in the station can be done.", T, "M 2: is it possible to grow vegetables ~?", "표현 의도"],
+ ["D3", "It was the man who grew vegetables in the space station.", F, "W 1·W 2 (채소를 기른 사람은 Irene)", "화자 바꾸기"],
+ ["D3", "Irene's best food in the station was something she grew herself.", T, "M 1 the best food you ate → W 1 We grew some vegetables and ate them", "두 대사 종합"],
+ # D4 (8)
+ ["D4", "NASA has already sent a 3D printer into space.", F, "M 1: NASA is going to send", "시제 바꾸기(예정 ↔ 완료)"],
+ ["D4", "The woman is surprised at NASA's plan and asks the reason for it.", T, "W 1: They're going to send ~? Why?", "표현 의도"],
+ ["D4", "The 3D printer will be used to make food for astronauts.", T, "M 2: will be used to print out food for astronauts", "바꿔 말하기"],
+ ["D4", "It takes more than five minutes for the printer to make a fresh pizza.", F, "M 3: in less than five minutes", "숫자 바꾸기(less ↔ more)"],
+ ["D4", "The woman has already tasted pizza made by a 3D printer.", F, "W 3: I wonder what it would taste like.", "추론(경험 없음)"],
+ ["D4", "It is the woman who first tells the news about NASA's plan.", F, "M 1 (소식을 먼저 꺼낸 사람은 남자)", "화자 바꾸기"],
+ ["D4", "The man says that printing out food with a 3D printer can be done.", T, "M 3: Yes, it's possible.", "바꿔 말하기"],
+ ["D4", "The woman is curious about the taste of the pizza the printer makes.", T, "M 3 a fresh pizza → W 3 what it would taste like (it = the pizza)", "지칭 + 두 대사 종합"],
+ # D5 (7)
+ ["D5", "B says astronauts cannot lie down when they sleep.", F, "B 1: Yes, astronauts attach ~", "반대 의미"],
+ ["D5", "Astronauts fix their sleeping bags to a wall in space.", T, "B 1: attach their sleeping bag to a wall", "바꿔 말하기(attach → fix)"],
+ ["D5", "Astronauts sleep in beds just like people on Earth.", F, "B 1: sleeping bag to a wall", "범위 넘기기"],
+ ["D5", "A thinks life in space is very similar to life on Earth.", F, "A 2: so different from that on Earth", "반대 의미"],
+ ["D5", "After hearing how astronauts sleep, A finds life in space quite different from life on Earth.", T, "B 1 설명 → A 2 Sounds interesting. ~ so different", "두 대사 종합"],
+ ["D5", "It is B who asks whether sleeping lying down is possible in space.", F, "A 1 (질문한 사람은 A)", "화자 바꾸기"],
+ ["D5", "In A's last line, 'that' refers to life.", T, "A 2: Life in space ~ that on Earth (that = life)", "지칭"],
+ # D6 (6)
+ ["D6", "A tells people to make a wish upon a shining star.", T, "A 1: Wish upon the shining star.", "바꿔 말하기"],
+ ["D6", "According to A, dreams will come true after people wish upon the star.", T, "A 1: ~ Then your dreams will come true!", "순서·절차"],
+ ["D6", "B is sure to go to the same high school as B's friends.", F, "B 1: I wish I could ~ (바람일 뿐)", "표현 의도(소망 ↔ 확정)"],
+ ["D6", "B wants to go to a different high school from B's friends.", F, "B 1: the same high school as my friends", "반대 의미"],
+ ["D6", "B already goes to the same high school as B's friends.", F, "B 1: I wish I could go to ~ (아직 고등학생이 아님)", "시제 바꾸기"],
+ ["D6", "B's wish has to do with B's friends and school.", T, "B 1: the same high school as my friends", "바꿔 말하기"],
+ # D7 (8)
+ ["D7", "The man and the woman are looking at pictures of space.", T, "M 1: these colorful pictures of the universe", "바꿔 말하기(universe → space)"],
+ ["D7", "The woman has seen Earth from space with her own eyes.", F, "W 1: I wish I could see ~ (아직 못 봄)", "표현 의도"],
+ ["D7", "The man tells the woman where she can experience seeing Earth from space.", T, "W 1 see Earth from space → M 2 you can do that at ~", "지칭(do that) + 두 대사 종합"],
+ ["D7", "At the center, visitors actually travel into space.", F, "M 3: you feel like you are actually in space (느낌일 뿐)", "범위 넘기기"],
+ ["D7", "The man has used the VR glasses at the center himself.", F, "M 3: I heard that ~ (들었을 뿐)", "범위 넘기기(heard ↔ used)"],
+ ["D7", "It is the man who wishes to see Earth from space.", F, "W 1 (소망을 말한 사람은 여자)", "화자 바꾸기"],
+ ["D7", "With VR glasses, people can feel as if they were really in space.", T, "M 3: you feel like you are actually in space", "바꿔 말하기"],
+ ["D7", "The woman's wish comes after she looks at the pictures of the universe.", T, "M 1 사진 → W 1 they're beautiful. I wish ~", "순서·절차"],
+ # D8 (7)
+ ["D8", "The boy is watching a movie about astronauts.", F, "M 1: a documentary about life in space", "속성 바꾸기(movie ↔ documentary)"],
+ ["D8", "According to the girl, things seem different in space because it has no gravity.", T, "M 1 Everything seems so different → W 2 it's because there's no gravity", "두 대사 종합 + 지칭(it's)"],
+ ["D8", "The girl also wants to float around like an astronaut.", F, "W 3: Really? I don't.", "반대 의미"],
+ ["D8", "The boy hopes to move freely in the air like an astronaut.", T, "M 2: I wish I could float around like an astronaut!", "바꿔 말하기"],
+ ["D8", "The girl thinks floating in space would be comfortable.", F, "W 3: It looks uncomfortable.", "반대 의미"],
+ ["D8", "The boy is asked about what he is watching.", T, "W 1: What are you watching?", "바꿔 말하기(능동 → 수동)"],
+ ["D8", "The boy says there is too much gravity in space.", F, "W 2: there's no gravity (말한 사람도 소녀)", "반대 의미 + 화자 바꾸기"],
+ # D9 (8)
+ ["D9", "The man in the picture is named Jake.", F, "W 1: Look at this man, Jake. (Jake = 대화 상대인 소년)", "지칭"],
+ ["D9", "The astronaut became 2 inches taller during his stay in space.", T, "W 2: He grew 2 inches while in space.", "바꿔 말하기"],
+ ["D9", "The boy guesses that life in space was easy for the man.", F, "M 1: It must have been tough for him.", "반대 의미"],
+ ["D9", "The girl knows exactly why the man grew taller.", F, "W 3: I'm not sure, but maybe ~", "단정어(exactly)"],
+ ["D9", "The girl thinks the lack of gravity may be the reason for the man's growth.", T, "W 3: maybe it's because there's no gravity", "바꿔 말하기"],
+ ["D9", "The boy wants to live in space so that he can grow taller.", T, "M 3: I wish I could live in space. That way, I could become taller.", "두 문장 종합(That way)"],
+ ["D9", "The girl agrees that going to space is the only way to become taller.", F, "W 4: other ways to become taller than going to space", "단정어(only) + 반대 의미"],
+ ["D9", "The boy is surprised and asks how the man's growth could happen.", T, "M 2: Really? How is that possible?", "표현 의도"],
+ # D10 (7)
+ ["D10", "A already has a pet robot.", F, "A 1: I wish I could have ~ (바람일 뿐)", "표현 의도"],
+ ["D10", "B also wants to have a pet robot.", T, "B 1: Me, too.", "지칭(Me, too)"],
+ ["D10", "B thinks only a few teenagers want a pet robot.", F, "B 1: every teenager's wish", "단정어(only a few ↔ every)"],
+ ["D10", "B disagrees with A's wish.", F, "B 1: Me, too.", "반대 의미"],
+ ["D10", "B believes having a pet robot is something all teenagers wish for.", T, "A 1 pet robot → B 1 that's every teenager's wish (that = 애완 로봇을 갖는 것)", "지칭 + 두 대사 종합"],
+ ["D10", "It is B who first talks about a pet robot.", F, "A 1 (먼저 말한 사람은 A)", "화자 바꾸기"],
+ ["D10", "A's wish is to own a robot as a pet.", T, "A 1: I wish I could have a pet robot.", "바꿔 말하기"],
+ # D11 (8)
+ ["D11", "The show is about the top five movie items people wish were real.", F, "W 1: the top three things", "숫자 바꾸기"],
+ ["D11", "The flying skateboard is ranked first on the list.", F, "M 1: number three, the flying skateboard", "순서 뒤집기"],
+ ["D11", "The woman would like to own a flying skateboard.", T, "W 2: I wish I could have a flying skateboard.", "바꿔 말하기"],
+ ["D11", "The man says a flying skateboard is completely impossible.", F, "M 2: not entirely impossible", "반대 의미(부분부정)"],
+ ["D11", "The man has seen a real flying skateboard in person.", F, "M 2: I read somewhere that ~ (읽었을 뿐)", "범위 넘기기"],
+ ["D11", "Physics has been used by some companies to make flying skateboards.", T, "M 3: Some companies have applied physics to create ~", "바꿔 말하기(능동 → 수동)"],
+ ["D11", "The flying skateboard appears in the movie Back to the Future.", T, "M 1: the flying skateboard from Back to the Future", "바꿔 말하기"],
+ ["D11", "According to the man, flying on a skateboard may be possible to some degree.", T, "M 2 not entirely impossible + M 3 Yes. (this = 나는 스케이트보드)", "지칭 + 두 대사 종합"],
+ # D12 (7)
+ ["D12", "A already owns a robotic taxi.", F, "A 1: I wish I could have ~ (바람일 뿐)", "표현 의도"],
+ ["D12", "The robotic taxi A wants is from the movie Iron Man.", F, "A 1: from the movie Total Recall", "속성 바꾸기(영화 제목)"],
+ ["D12", "B thinks a robotic taxi might actually be possible.", T, "B 1: this is not entirely impossible", "부분부정 바꿔 말하기"],
+ ["D12", "The robotic taxi can take people anywhere, but a human driver must be inside.", F, "A 2: without a human driver / B 2: a driverless taxi", "반대 의미"],
+ ["D12", "Some companies have made a taxi that runs without a driver by using AI.", T, "B 2: have used AI ~ to create a driverless taxi", "바꿔 말하기"],
+ ["D12", "It is A who explains how companies created a driverless taxi.", F, "B 2 (설명하는 사람은 B)", "화자 바꾸기"],
+ ["D12", "A is surprised to hear that the robotic taxi may not be just a movie idea.", T, "B 1 not entirely impossible → A 2 Really? Is it actually possible ~?", "추론(감정) + 두 대사 종합"],
+]
+
+stage5b = [
+ {"d": "D1", "kind": "false", "q": "대화의 내용과 일치하지 않는 것을 모두 고르시오.", "opts": [
+  ["A wants to know if eating ramyeon in space is possible.", True, "A 1"],
+  ["B learned about space ramyeon by watching the news.", False, "B 1: read an article"],
+  ["There is ramyeon made especially for astronauts.", True, "B 1"],
+  ["B says ramyeon cannot be eaten in space.", False, "B 1: Yes"],
+  ["B answers A's question positively.", True, "B 1"]]},
+ {"d": "D2", "kind": "cannot", "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.", "opts": [
+  ["How long did Irene stay in the space station?", False, "체류 기간 언급 없음"],
+  ["How often did the station go around Earth?", True, "every 90 minutes"],
+  ["Who else was with Irene in the station?", False, "함께 있던 사람 언급 없음"],
+  ["What was Irene's favorite part of being in the station?", True, "a beautiful sunrise 16 times a day"],
+  ["At what time did the first sunrise of the day appear?", False, "시각 언급 없음"]]},
+ {"d": "D3", "kind": "count", "q": "대화의 내용과 일치하는 것의 개수는?", "opts": [
+  ["Irene grew vegetables in the space station.", True, "W 1"],
+  ["The vegetables tasted bad because they were grown in bags.", False, "W 1: fresh and tasty"],
+  ["The astronauts ate the vegetables every day.", True, "W 1"],
+  ["There is enough gravity in space to grow plants normally.", False, "W 2: no gravity"],
+  ["Special bags were needed for growing the vegetables.", True, "W 2: had to grow them in special bags"]]},
+ {"d": "D4", "kind": "can", "q": "대화를 읽고 대답할 수 있는 질문을 모두 고르시오.", "opts": [
+  ["When will NASA send the 3D printer into space?", False, "시기 언급 없음"],
+  ["What will the 3D printer be used for in space?", True, "to print out food for astronauts"],
+  ["How much does the 3D printer cost?", False, "가격 언급 없음"],
+  ["What does the printed pizza taste like?", False, "W 3: 궁금해할 뿐"],
+  ["How long does it take to print out a fresh pizza?", True, "less than five minutes"]]},
+ {"d": "D5", "kind": "true", "q": "대화의 내용과 일치하는 것을 모두 고르시오.", "opts": [
+  ["Astronauts attach their sleeping bags to a wall to sleep.", True, "B 1"],
+  ["Astronauts sleep sitting in their seats.", False, "B 1: sleeping bag to a wall"],
+  ["A thinks life in space is just like life on Earth.", False, "A 2: so different"],
+  ["A finds the way astronauts sleep interesting.", True, "A 2: Sounds interesting."],
+  ["B has slept in a sleeping bag in space.", False, "언급 없음"]]},
+ {"d": "D6", "kind": "false", "q": "다음 두 사람의 말과 일치하지 않는 것을 모두 고르시오.", "opts": [
+  ["A tells people to wish upon a shining star.", True, "A 1"],
+  ["A says dreams will come true after making a wish.", True, "A 1: Then ~"],
+  ["B is already a high school student.", False, "B 1: I wish I could go to ~ high school"],
+  ["B hopes to go to the same high school as B's friends.", True, "B 1"],
+  ["B's wish is related to B's friends.", True, "B 1"]]},
+ {"d": "D7", "kind": "cannot", "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.", "opts": [
+  ["Where can the woman experience seeing Earth from space?", True, "at the National Youth Space Center"],
+  ["How much does it cost to use the VR glasses?", False, "가격 언급 없음"],
+  ["What do people use at the center to feel like they are in space?", True, "the VR glasses"],
+  ["Who took the colorful pictures of the universe?", False, "촬영자 언급 없음"],
+  ["When will the woman visit the center?", False, "방문 시기 언급 없음"]]},
+ {"d": "D8", "kind": "count", "q": "대화의 내용과 일치하는 것의 개수는?", "opts": [
+  ["The boy is watching a documentary about life in space.", True, "M 1"],
+  ["The girl wants to float around like an astronaut, too.", False, "W 3: I don't."],
+  ["Everything in space seems the same as on Earth.", False, "M 1: so different"],
+  ["The girl explains why life in space looks different.", True, "W 2"],
+  ["The boy thinks floating around looks uncomfortable.", False, "W 3 (불편해 보인다고 한 사람은 소녀)"]]},
+ {"d": "D9", "kind": "can", "q": "대화를 읽고 대답할 수 있는 질문을 모두 고르시오.", "opts": [
+  ["How long did the man live in space?", True, "for one year"],
+  ["When did the man return to Earth?", False, "귀환 시기 언급 없음"],
+  ["How much did the man grow in space?", True, "2 inches"],
+  ["Why does the boy want to live in space?", True, "That way, I could become taller."],
+  ["Is the girl certain about why the man grew taller?", True, "I'm not sure, but maybe ~"]]},
+ {"d": "D10", "kind": "true", "q": "대화의 내용과 일치하는 것을 모두 고르시오.", "opts": [
+  ["A has a pet robot at home.", False, "A 1: I wish I could have ~"],
+  ["A wishes to have a pet robot.", True, "A 1"],
+  ["B agrees with A's wish.", True, "B 1: Me, too."],
+  ["B thinks a pet robot is the wish of only a few teenagers.", False, "B 1: every teenager's wish"],
+  ["B is sure that all teenagers wish for a pet robot.", True, "B 1: I'm sure ~"]]},
+ {"d": "D11", "kind": "false", "q": "대화의 내용과 일치하지 않는 것을 모두 고르시오.", "opts": [
+  ["The show talks about the top ten things from movies.", False, "W 1: the top three things"],
+  ["The flying skateboard is from Back to the Future.", True, "M 1"],
+  ["The woman wishes she could have a flying skateboard.", True, "W 2"],
+  ["Some companies have used physics to make flying skateboards.", True, "M 3"],
+  ["The man thinks a flying skateboard is entirely impossible.", False, "M 2: not entirely impossible"]]},
+ {"d": "D12", "kind": "count", "q": "대화의 내용과 일치하는 것의 개수는?", "opts": [
+  ["A wishes to have the robotic taxi from Total Recall.", True, "A 1"],
+  ["B read somewhere that a robotic taxi is not entirely impossible.", True, "B 1"],
+  ["A asks if going anywhere without a human driver is possible.", True, "A 2"],
+  ["Some companies have used AI to create a driverless taxi.", True, "B 2"],
+  ["B has ridden in a driverless taxi.", False, "언급 없음(읽었을 뿐)"]]},
+]
+
+stage6 = [
+ {"d": "D1", "ans": "Who wrote the article about ramyeon for astronauts?", "trap": "범위 넘기기(글쓴이)", "why": "B가 기사를 읽었다는 것은 나오지만 그 기사를 누가 썼는지는 언급되지 않음",
+  "ok": [["What does A want to know?", "Whether it is possible to eat ramyeon in space.", "A 1"],
+         ["Where did B get the information about space ramyeon?", "From an article.", "B 1"],
+         ["Who is the special ramyeon made for?", "Astronauts.", "B 1"],
+         ["Can people eat ramyeon in space, according to B?", "Yes, they can.", "A 1 + B 1"]]},
+ {"d": "D2", "ans": "Why did Irene go to the space station?", "trap": "이유↔결과 바꾸기", "why": "정거장에서 좋았던 점과 일출 횟수의 이유는 나오지만 Irene이 정거장에 간 이유는 언급되지 않음",
+  "ok": [["Where has Irene just come back from?", "From the space station.", "M 1"],
+         ["How many times a day could Irene see a sunrise?", "16 times.", "W 1"],
+         ["Why could Irene see so many sunrises in a day?", "Because the station moved around Earth every 90 minutes.", "W 1 + W 2"],
+         ["How does the man feel about Irene's answer?", "He is amazed.", "M 3"]]},
+ {"d": "D3", "ans": "What kinds of vegetables did Irene grow in the station?", "trap": "범위 넘기기(종류)", "why": "채소를 길렀다는 것은 나오지만 어떤 종류의 채소인지는 언급되지 않음",
+  "ok": [["What was the best food Irene ate in the station?", "The vegetables they grew.", "M 1 + W 1"],
+         ["How often did Irene eat the vegetables?", "Every day.", "W 1"],
+         ["Why did the vegetables have to be grown in special bags?", "Because there's no gravity in space.", "W 2"],
+         ["What did the bags help?", "They helped the roots to grow.", "W 2"]]},
+ {"d": "D4", "ans": "When will NASA send the 3D printer into space?", "trap": "속성 바꾸기(목적 → 시기)", "why": "3D 프린터를 보내는 목적은 나오지만 언제 보내는지는 언급되지 않음",
+  "ok": [["What is NASA going to send into space?", "A 3D printer.", "M 1"],
+         ["What will the 3D printer be used for?", "To print out food for astronauts.", "M 2"],
+         ["How long does it take the printer to make a fresh pizza?", "Less than five minutes.", "M 3"],
+         ["What is the woman curious about?", "What the printed pizza would taste like.", "M 3 + W 3"]]},
+ {"d": "D5", "ans": "How many hours do astronauts usually sleep in space?", "trap": "속성 바꾸기(방법 → 시간)", "why": "우주에서 자는 방법은 나오지만 몇 시간 자는지는 언급되지 않음",
+  "ok": [["What does A ask about?", "Whether it is possible to lie down to sleep in space.", "A 1"],
+         ["Where do astronauts attach their sleeping bags?", "To a wall.", "B 1"],
+         ["How does A find B's answer?", "Interesting.", "A 2"],
+         ["What does 'that' in A's last line refer to?", "Life.", "A 2"]]},
+ {"d": "D6", "ans": "What does A wish for?", "trap": "화자 바꾸기(B → A)", "why": "A는 소원을 빌라고 권할 뿐이고, 소망을 말한 사람은 B뿐 — A 자신의 소원은 언급되지 않음",
+  "ok": [["What does A tell people to wish upon?", "The shining star.", "A 1"],
+         ["What will happen after people make a wish, according to A?", "Their dreams will come true.", "A 1"],
+         ["What does B hope for?", "To go to the same high school as B's friends.", "B 1"],
+         ["Who does B want to go to high school with?", "B's friends.", "B 1"]]},
+ {"d": "D7", "ans": "When did the man visit the National Youth Space Center?", "trap": "시제 바꾸기(들은 정보 → 지난 방문)", "why": "남자는 센터에 대해 들은 것(I heard)만 말하고, 직접 방문했는지·언제 갔는지는 언급되지 않음",
+  "ok": [["What are the man and the woman looking at?", "Colorful pictures of the universe.", "M 1"],
+         ["What does the woman wish she could do?", "See Earth from space with her own eyes.", "W 1"],
+         ["Where can the woman 'do that'?", "At the National Youth Space Center.", "W 1 + M 2"],
+         ["What can visitors use to feel like they are in space?", "The VR glasses.", "M 3"]]},
+ {"d": "D8", "ans": "How long has the boy been watching the documentary?", "trap": "속성 바꾸기(내용 → 시간)", "why": "다큐멘터리의 내용은 나오지만 얼마나 오래 보고 있는지는 언급되지 않음",
+  "ok": [["What is the boy watching?", "A documentary about life in space.", "M 1"],
+         ["Why does everything in space seem different?", "Because there's no gravity in space.", "M 1 + W 2"],
+         ["What does the boy wish he could do?", "Float around like an astronaut.", "M 2"],
+         ["Why doesn't the girl want to float around?", "Because it looks uncomfortable.", "W 3"]]},
+ {"d": "D9", "ans": "How tall was the man before he went to space?", "trap": "속성 바꾸기(자란 길이 → 원래 키)", "why": "우주에서 2인치 컸다는 것은 나오지만 원래 키는 언급되지 않음",
+  "ok": [["How long did the man stay in space?", "For one year.", "W 1"],
+         ["What happened to the man's height while he was in space?", "He grew 2 inches.", "W 2"],
+         ["Why does the boy wish he could live in space?", "Because he could become taller that way.", "M 3"],
+         ["What does the girl think about ways to become taller?", "There are other ways than going to space.", "W 4"]]},
+ {"d": "D10", "ans": "Why does B want to have a pet robot?", "trap": "이유↔결과 바꾸기", "why": "B도 애완 로봇을 원한다(Me, too)는 것은 나오지만 그 이유는 언급되지 않음",
+  "ok": [["What does A wish to have?", "A pet robot.", "A 1"],
+         ["Does B agree with A?", "Yes, B does.", "B 1"],
+         ["What does 'that' refer to in B's line?", "Having a pet robot.", "A 1 + B 1"],
+         ["Whose wish does B think it is?", "Every teenager's.", "B 1"]]},
+ {"d": "D11", "ans": "What is number one on the list of things from movies?", "trap": "범위 넘기기(순위)", "why": "3위(나는 스케이트보드)는 나오지만 1위가 무엇인지는 언급되지 않음",
+  "ok": [["What is the name of the show?", "All about Movies.", "W 1"],
+         ["Which movie is the flying skateboard from?", "Back to the Future.", "M 1"],
+         ["What does the man say about the flying skateboard?", "It is not entirely impossible.", "W 2 + M 2"],
+         ["How have some companies created flying skateboards?", "By applying physics.", "M 3"]]},
+ {"d": "D12", "ans": "What does B wish to have from a movie?", "trap": "화자 바꾸기(A → B)", "why": "A가 갖고 싶은 것(로봇 택시)은 나오지만 B가 영화 속에서 갖고 싶은 것은 언급되지 않음",
+  "ok": [["Which movie is the robotic taxi from?", "Total Recall.", "A 1"],
+         ["How did B learn about the robotic taxi?", "B read about it somewhere.", "B 1"],
+         ["What does A want to know?", "Whether it is possible to go anywhere without a human driver.", "A 2"],
+         ["What have some companies used to create a driverless taxi?", "AI and self-driving car technology.", "B 2"]]},
+]
+
+def fix(o):
+    if isinstance(o, str): return q(o)
+    if isinstance(o, list): return [fix(x) for x in o]
+    if isinstance(o, dict): return {k: fix(v) for k, v in o.items()}
+    return o
+
+out = fix({"dialogues": dialogues, "expressions": expressions, "stage3": stage3, "stage4": stage4,
+           "stage5": stage5, "stage5b": stage5b, "stage6": stage6})
+json.dump(out, open(os.path.join(HERE, "bs8_dlg.json"), "w"), ensure_ascii=False, indent=1)
+
+anchors = fix({
+ "D1-1": "Is it possible to eat", "D1-2": "I've read", "D1-3": "for astronauts",
+ "D2-1": "about being", "D2-2": "16 times a day", "D2-3": "Is it possible to", "D2-4": "because", "D2-5": "every 90 minutes",
+ "D3-1": "the best food you ate", "D3-2": "ate them", "D3-3": "is it possible to", "D3-4": "Since", "D3-5": "there's",
+ "D3-6": "had to", "D3-7": "helped the roots to grow", "D3-8": "How interesting",
+ "D4-1": "Have you heard that", "D4-2": "will be used to", "D4-3": "Is it possible to", "D4-4": "less than five minutes",
+ "D4-5": "what it would taste like",
+ "D5-1": "lie down to sleep", "D5-2": "to a wall", "D5-3": "Sounds interesting", "D5-4": "that on Earth",
+ "D6-1": "Then", "D6-2": "come true", "D6-3": "I wish I could", "D6-4": "as my friends",
+ "D7-1": "I wish I could", "D7-2": "with my own eyes", "D7-3": "do that", "D7-4": "I heard that", "D7-5": "feel like",
+ "D8-1": "Everything seems", "D8-2": "it's because", "D8-3": "I wish I could", "D8-4": "I don't", "D8-5": "looks uncomfortable",
+ "D9-1": "for one year", "D9-2": "must have been", "D9-3": "while in space", "D9-4": "How is that possible?",
+ "D9-5": "I wish I could", "D9-6": "That way", "D9-7": "there are", "D9-8": "ways to become",
+ "D10-1": "I wish I could", "D10-2": "Me, too", "D10-3": "I'm sure", "D10-4": "every teenager's wish",
+ "D11-1": "that we wish were real", "D11-2": "number three", "D11-3": "I wish I could", "D11-4": "somewhere that",
+ "D11-5": "not entirely impossible", "D11-6": "Is it actually possible to", "D11-7": "to create",
+ "D12-1": "I wish I could", "D12-2": "not entirely impossible", "D12-3": "without a human driver", "D12-4": "to create",
+ "D12-5": "driverless taxi",
+})
+cfg = {"dlg": "bs8/bs8_dlg.json", "lesson": "8", "outDir": "out/비상김/8과/01. 대화", "term": "2026 · 2학기 기말고사 대비",
+ "schools": "동백중 3학년", "schoolsShort": "동백중 3학년", "book": "중3 비상(김진완) Lesson 8  Wonders of Space Travel",
+ "pubShort": "비상김", "lessonTitle": "Wonders of Space Travel", "s6answers": [2, 5, 4, 1, 3, 1, 4, 2, 5, 3, 2, 5], "anchors": anchors}
+json.dump(cfg, open(os.path.join(HERE, "bs8_dcfg.json"), "w"), ensure_ascii=False)
+print(len(stage5), {d["id"]: sum(1 for x in stage5 if x[0] == d["id"]) for d in dialogues})
+print("T ratio", sum(1 for x in stage5 if x[2] == T) / len(stage5))

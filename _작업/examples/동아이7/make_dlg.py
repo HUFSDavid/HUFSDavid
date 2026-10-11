@@ -1,0 +1,317 @@
+import json
+A = "’"
+def q(s): return s.replace("'", A).replace("-58℃", "−58℃").replace("-26℃", "−26℃")
+
+dialogues = [
+ {"id": "D1", "label": "Listen and Speak 1 A", "lines": [
+  ["B", "We're almost at the top of the mountain.", "우리는 산 정상에 거의 다 왔어."],
+  ["G", "{I wonder how high} this mountain is.", "나는 이 산이 얼마나 높은지 궁금해."],
+  ["B", "It's {about 2,000m high}.", "이 산은 높이가 약 2,000미터야."],
+  ["G", "Wow! This is a really high mountain.", "와! 이 산은 정말 높은 산이구나."],
+  ["B", "Yes, it is. Let's {keep going}.", "응, 맞아. 계속 올라가자."]],
+  "notes": [
+  "I wonder ~ : 궁금함 표현하기 — ‘나는 ~이 궁금하다’, 뒤에 의문사가 이끄는 절이 {의문사+주어+동사} 어순으로 옴 (how high / this mountain / is)",
+  "keep going : keep + {-ing} ‘계속 ~하다’"]},
+ {"id": "D2", "label": "Listen and Speak 1 B", "lines": [
+  ["B", "Look at the baby penguins on TV. They're so cute.", "텔레비전에 나온 아기 펭귄들을 봐. 아주 귀여워."],
+  ["G", "Yes, but they {look very cold} out there.", "응, 하지만 그들은 저곳에서 매우 추워 보여."],
+  ["B", "Yeah, the South Pole is {the coldest place} on Earth.", "그래, 남극은 지구상에서 가장 추운 곳이잖아."],
+  ["G", "{I wonder how cold} it is there.", "나는 그곳이 얼마나 추운지 궁금해."],
+  ["B", "The average temperature is about -58℃ in July and -26℃ in December.", "평균 기온이 7월에는 약 섭씨 영하 58도이고, 12월에는 약 섭씨 영하 26도야."],
+  ["G", "Oh, then, July is {colder than} December there. Interesting!", "오, 그러면 그곳은 12월보다 7월이 더 춥구나. 흥미롭다!"],
+  ["B", "Yes. {Although} it's very cold there, it doesn't {snow much}.", "응. 비록 그곳은 매우 춥지만 눈은 많이 내리지 않아."],
+  ["G", "That's interesting, too!", "그것도 흥미롭다!"]],
+  "notes": [
+  "look + 형용사(cold) : ‘~처럼 보이다’ — look 뒤에는 {형용사} (coldly ✗)",
+  "I wonder ~ : 궁금함 표현하기 — how cold(의문사) + it(주어) + {is}(동사) 어순 (how cold is it ✗)",
+  "비교급(colder) + than : ‘~보다 더 …한’ — 7월(-58℃)이 12월(-26℃)보다 더 {추움}",
+  "Although + S V : ‘비록 ~일지라도’ — 양보의 부사절 접속사, {Though / Even though}로 바꿔 쓸 수 있음"]},
+ {"id": "D3", "label": "Listen and Speak 1 C (e.g.)", "lines": [
+  ["A", "We're finally here.", "우리는 마침내 여기에 왔어."],
+  ["B", "Yes, I'm so excited. Let's {look around}.", "그래, 나는 매우 신이 나. 우리 둘러보자."],
+  ["A", "{I wonder where} the bus stop is.", "나는 버스 정류장이 어디에 있는지 궁금해."],
+  ["B", "It's {in front of} the police station.", "그곳은 경찰서 앞에 있어."],
+  ["A", "{You're right}. Let's go.", "네 말이 맞네. 가자."]],
+  "notes": [
+  "look around : ‘{둘러보다}’ — Let's + 동사원형 ‘~하자’",
+  "I wonder + 의문사 + 주어 + 동사 : 궁금함 표현하기 — ‘의문사+주어+동사’는 {간접의문문}, 의문사가 없을 때는 if/whether + 주어 + 동사",
+  "in front of : ‘~ {앞에}’ (↔ behind ‘~ 뒤에’)",
+  "You're right : 상대의 말이 {맞다}고 동의하는 말"]},
+ {"id": "D4", "label": "Listen and Speak 2 A", "lines": [
+  ["B", "The weather is so nice outside.", "바깥 날씨가 아주 좋아."],
+  ["G", "Yeah. {How about going} on a picnic this afternoon?", "그래. 오늘 오후에 소풍 가는 게 어때?"],
+  ["B", "Good idea. Can you {check the weather}?", "좋은 생각이야. 날씨를 확인해 줄래?"],
+  ["G", "Oh, no! {The weather forecast says} it'll be rainy in the afternoon.", "오, 이런! 일기 예보에서 오후에 비가 올 거래."],
+  ["B", "Let's go {another time}, then.", "그러면 다음에 가자."]],
+  "notes": [
+  "How about + -ing? : ‘~하는 게 어때?’ — 상대방에게 {제안}할 때 쓰는 표현 = Why don't you + 동사원형? / go on a picnic ‘소풍 가다’",
+  "The weather forecast says ~ : 보고하기 — ‘일기 예보에 따르면 ~’, 일기 예보에서 보거나 들은 내용을 상대방에게 {전달}"]},
+ {"id": "D5", "label": "Listen and Speak 2 B", "lines": [
+  ["B", "Sumin, what {are you going to do} on Sunday?", "수민아, 너는 일요일에 무엇을 할 거니?"],
+  ["G", "I'm going to go hiking. Do you want to join me?", "나는 등산을 갈 거야. 나와 함께 가겠니?"],
+  ["B", "I'd love to. Where do you want to go?", "그러고 싶어. 넌 어디로 가고 싶니?"],
+  ["G", "{I'm thinking of going} to Namsan.", "나는 남산에 가려고 생각 중이야."],
+  ["B", "Oh, the scenery there is so beautiful this time of year.", "오, 매년 이맘때 그곳 경치는 아주 아름답지."],
+  ["G", "Right. {I heard that} it's {covered with} red autumn leaves now.", "맞아. 지금 빨간 단풍잎으로 덮여 있다고 들었어."],
+  ["B", "Great. {How long does} the shortest hiking course {take}?", "좋아. 가장 짧은 등산 코스는 얼마나 걸리니?"],
+  ["G", "{The Internet says} it takes about two hours.", "인터넷 정보에 따르면 약 두 시간 정도 걸린대."],
+  ["B", "Okay, see you on Sunday!", "알겠어, 일요일에 봐!"]],
+  "notes": [
+  "What are you going to do? : 앞으로의 {계획}을 묻는 표현 — 대답은 I'm going to ~",
+  "I'm thinking of ~ : ‘나는 ~할 생각이다’ — of는 전치사이므로 뒤에 명사나 {동명사}(going)",
+  "I heard that ~ / The Internet says ~ : 보고하기 — ‘~라고 들었다’ / ‘인터넷에서 말하길 ~’, 어딘가에서 듣거나 본 내용을 상대에게 {전달}",
+  "be covered with : ‘~으로 {덮여 있다}’"]},
+ {"id": "D6", "label": "Listen and Speak 2 C (e.g.)", "lines": [
+  ["A", "What are you doing?", "너는 무엇을 하고 있니?"],
+  ["B", "I'm reading the newspaper.", "나는 신문을 읽고 있어."],
+  ["A", "{Is there anything interesting}?", "재미있는 내용이 있니?"],
+  ["B", "{This article says} scientists {have discovered} a new planet.", "이 기사에 따르면 과학자들이 새로운 행성을 발견했대."]],
+  "notes": [
+  "What are you doing? : 지금 하고 있는 일을 묻는 {현재진행형} — I'm reading ~으로 답함",
+  "anything interesting : -thing으로 끝나는 대명사는 형용사가 {뒤}에서 수식",
+  "This article says (that) ~ : 보고하기 — 전달자 + says (that) ~, that은 생략 가능 / say 외에 {tell / hear}도 사용",
+  "have discovered : have + p.p.의 {현재완료} — ‘발견했다’(결과)"]},
+ {"id": "D7", "label": "Real Life Talk", "lines": [
+  ["Suji", "Check out this picture!", "이 사진을 봐!"],
+  ["Tony", "Wow! The camels are walking {in a line} in the desert.", "와! 낙타들이 사막에서 한 줄로 걸어가고 있네."],
+  ["Suji", "Yeah. The desert looks {very hot and dry}.", "응. 사막은 매우 덥고 건조해 보여."],
+  ["Tony", "{I wonder how long} camels can go without water in the desert.", "나는 낙타들이 사막에서 물 없이 얼마나 오래 지낼 수 있는지 궁금해."],
+  ["Suji", "Let's {find out} on the Internet.", "인터넷에서 찾아보자."],
+  ["Tony", "Okay. {The Internet says} they can go about two weeks {without water}.", "그래. 인터넷 정보에 따르면 낙타는 물 없이 2주 정도 지낼 수 있대."],
+  ["Suji", "Wow, that's amazing! Camels are really interesting animals.", "와, 굉장하다! 낙타는 정말 흥미로운 동물이구나."],
+  ["Tony", "I want to travel with them in the desert someday.", "나는 언젠가 사막에서 그들과 함께 여행하고 싶어."]],
+  "notes": [
+  "in a line : ‘{한 줄로}’",
+  "look + 형용사 : ‘~처럼 보이다’ — 형용사 보어 hot과 dry가 {병렬구조}를 이룸",
+  "I wonder ~ : 궁금함 표현하기 — how long(의문사) + camels(주어) + {can go}(동사) 어순",
+  "The Internet says (that) ~ : 보고하기 — ‘인터넷에서 말하길 ~’, 인터넷에서 본 내용을 상대에게 {전달}"]},
+ {"id": "D8", "label": "Your Turn Step 2 (e.g.)", "lines": [
+  ["A", "What is {the longest river} in the world?", "세상에서 가장 긴 강이 무엇이니?"],
+  ["B", "I think it's the Amazon River.", "난 아마존강이라고 생각해."],
+  ["A", "{I wonder how long it is}.", "나는 그 강이 얼마나 긴지 궁금해."],
+  ["B", "{The Internet says} the Amazon River is about 7,000km long.", "인터넷 정보에 따르면 아마존강은 길이가 약 7,000킬로미터래."],
+  ["A", "That's amazing!", "놀랍구나!"]],
+  "notes": [
+  "the longest river : the + {최상급}(-est) ‘가장 긴’",
+  "I wonder how long it is : 간접의문문 how long + it + is — it = {the Amazon River}",
+  "The Internet says ~ : 보고하기 — says 뒤 접속사 {that}이 생략됨",
+  "about 7,000km long : 수치 + long ‘{길이}가 ~인’"]},
+]
+
+expressions = [
+ ["궁금함 표현하기", "I {wonder} + 의문사 + 주어 + 동사.", "나는 ~이 궁금해."],
+ ["궁금함 표현하기", "I wonder {if / whether} + 주어 + 동사.", "나는 ~인지 궁금해. (의문사가 없을 때)"],
+ ["궁금함 표현하기", "I am {curious} about ~.", "나는 ~이 궁금해."],
+ ["궁금함 표현하기", "I want / would like to {know} ~. / I'd be (very) interested to know ~.", "나는 ~을 알고 싶어. / ~을 아는 데 흥미가 있어."],
+ ["궁금함 표현하기", "Can you {explain} ~ to me? / Can someone tell me about ~?", "~을 나에게 설명해 줄 수 있니? / 누가 ~에 대해 말해 줄 수 있니?"],
+ ["보고하기", "The Internet / This article / The weather forecast {says} (that) ~.", "인터넷 / 이 기사 / 일기 예보에 따르면 ~래."],
+ ["보고하기", "I {heard} that ~. / I've heard that ~.", "나는 ~라고 들었어."],
+ ["보고하기", "Someone / People {told} me that ~.", "누군가 나에게 ~라고 말해 줬어."],
+ ["제안하기", "{How about} + -ing? = Why don't you + 동사원형?", "~하는 게 어때?"],
+ ["계획 말하기", "What are you {going to} do? — I'm thinking of + -ing.", "너는 무엇을 할 거니? — 나는 ~할 생각이야."],
+]
+
+stage3 = [
+ ["D1", "I wonder how high this mountain is.", "나는 이 산이 얼마나 높은지 궁금해."],
+ ["D2", "Although it's very cold there, it doesn't snow much.", "비록 그곳은 매우 춥지만 눈은 많이 내리지 않아."],
+ ["D4", "The weather forecast says it'll be rainy in the afternoon.", "일기 예보에서 오후에 비가 올 거래."],
+ ["D5", "I heard that it's covered with red autumn leaves now.", "지금 빨간 단풍잎으로 덮여 있다고 들었어."],
+ ["D5", "How long does the shortest hiking course take?", "가장 짧은 등산 코스는 얼마나 걸리니?"],
+ ["D6", "This article says scientists have discovered a new planet.", "이 기사에 따르면 과학자들이 새로운 행성을 발견했대."],
+ ["D7", "I wonder how long camels can go without water in the desert.", "나는 낙타들이 사막에서 물 없이 얼마나 오래 지낼 수 있는지 궁금해."],
+ ["D7", "The Internet says they can go about two weeks without water.", "인터넷 정보에 따르면 낙타는 물 없이 2주 정도 지낼 수 있대."],
+]
+
+stage4 = ["D1", "D2", "D4", "D5", "D7"]
+
+T, F = "T", "F"
+stage5 = [
+ # D1 (8)
+ ["D1", "The boy and the girl have already reached the top of the mountain.", F, "B 1: We're almost at the top (아직 정상에 도착 전)", "almost(거의) 함정"],
+ ["D1", "The boy says they are close to the top of the mountain.", T, "B 1: We're almost at the top of the mountain.", "바꿔 말하기"],
+ ["D1", "The girl wants to know how high the mountain is.", T, "G 1: I wonder how high this mountain is.", "표현 의도(I wonder = want to know)"],
+ ["D1", "The boy says the mountain is about 200m high.", F, "B 2: about 2,000m high", "숫자 바꾸기"],
+ ["D1", "The girl thinks the mountain is not very high.", F, "G 2: This is a really high mountain.", "정도 바꾸기"],
+ ["D1", "The boy suggests that they stop climbing and go back down.", F, "B 3: Let's keep going.", "반대 의미"],
+ ["D1", "The boy is the one who tells the height of the mountain.", T, "G 1 질문 → B 2 It's about 2,000m high.", "화자 확인"],
+ ["D1", "The boy agrees that the mountain is really high.", T, "G 2 a really high mountain → B 3 Yes, it is.", "표현 의도"],
+ # D2 (8)
+ ["D2", "The boy and the girl are watching baby penguins on TV.", T, "B 1: Look at the baby penguins on TV.", "바꿔 말하기"],
+ ["D2", "The girl says the baby penguins look very warm.", F, "G 1: they look very cold", "반대 의미"],
+ ["D2", "According to the boy, the South Pole is the coldest place on Earth.", T, "B 2: the South Pole is the coldest place on Earth", "화자 확인"],
+ ["D2", "The average temperature at the South Pole is about -26℃ in July.", F, "B 3: -58℃ in July, -26℃ in December", "7월 ↔ 12월 바꾸기"],
+ ["D2", "At the South Pole, it is colder in December than in July.", F, "G 3: July is colder than December there.", "비교 대상 뒤집기"],
+ ["D2", "Because it is very cold at the South Pole, it snows a lot there.", F, "B 4: Although it's very cold there, it doesn't snow much.", "Although(양보) → Because(원인) 바꾸기"],
+ ["D2", "The boy is the one who tells the girl the average temperature.", T, "B 3: The average temperature is about ~", "화자 확인"],
+ ["D2", "The girl thinks it is interesting that it doesn't snow much there.", T, "B 4 → G 4: That's interesting, too!", "지칭(That)"],
+ # D3 (7)
+ ["D3", "A and B have just arrived at the place.", T, "A 1: We're finally here.", "바꿔 말하기"],
+ ["D3", "B doesn't feel excited about being there.", F, "B 1: I'm so excited.", "반대 의미"],
+ ["D3", "B suggests that they look around the place.", T, "B 1: Let's look around.", "바꿔 말하기"],
+ ["D3", "A wants to know where the police station is.", F, "A 2: where the bus stop is (경찰서는 위치 설명의 기준)", "대상 바꾸기"],
+ ["D3", "The bus stop is behind the police station.", F, "B 2: in front of the police station", "위치 반대(in front of ↔ behind)"],
+ ["D3", "It is B who wonders where the bus stop is.", F, "A 2: I wonder where the bus stop is. (궁금해한 사람은 A)", "화자 바꾸기"],
+ ["D3", "A agrees with what B says about the bus stop.", T, "B 2 → A 3: You're right.", "표현 의도"],
+ # D4 (8)
+ ["D4", "The boy thinks the weather outside is very nice.", T, "B 1: The weather is so nice outside.", "바꿔 말하기"],
+ ["D4", "The girl suggests going on a picnic this afternoon.", T, "G 1: How about going on a picnic this afternoon?", "표현 의도(제안)"],
+ ["D4", "The boy suggests going on a picnic, and the girl checks the weather.", F, "소풍 제안은 소녀(G 1) — 날씨 확인은 소녀가 맞음", "부분만 맞음(화자 바꾸기)"],
+ ["D4", "The boy asks the girl to check the weather.", T, "B 2: Can you check the weather?", "표현 의도(요청)"],
+ ["D4", "The weather forecast says it will be sunny in the afternoon.", F, "G 2: it'll be rainy in the afternoon", "반대 의미"],
+ ["D4", "According to the weather forecast, it will rain this morning.", F, "G 2: in the afternoon", "시간 바꾸기"],
+ ["D4", "They decide to go on a picnic even though it will rain.", F, "B 3: Let's go another time, then.", "결정 뒤집기"],
+ ["D4", "They are going to put off the picnic.", T, "B 3: Let's go another time, then. (put off = 미루다)", "바꿔 말하기"],
+ # D5 (8)
+ ["D5", "Sumin is going to go hiking on Saturday.", F, "B 1 on Sunday → G 1 I'm going to go hiking.", "요일 바꾸기"],
+ ["D5", "Sumin asks the boy to go hiking with her.", T, "G 1: Do you want to join me?", "표현 의도(제안)"],
+ ["D5", "Sumin is thinking of going to Namsan.", T, "G 2: I'm thinking of going to Namsan.", "그대로"],
+ ["D5", "Sumin heard that Namsan is covered with yellow autumn leaves now.", F, "G 3: red autumn leaves", "세부 정보 바꾸기(색)"],
+ ["D5", "It is the boy who heard that Namsan is covered with red leaves.", F, "G 3: I heard that ~ (들은 사람은 수민)", "화자 바꾸기"],
+ ["D5", "According to the Internet, the shortest hiking course takes about two hours.", T, "G 4: The Internet says it takes about two hours.", "출처 확인"],
+ ["D5", "The longest hiking course at Namsan takes about two hours.", F, "B 4: the shortest hiking course", "최상급 바꾸기(shortest ↔ longest)"],
+ ["D5", "The boy says the scenery at Namsan is beautiful at this time of year.", T, "B 3: the scenery there is so beautiful this time of year", "바꿔 말하기"],
+ # D6 (6)
+ ["D6", "B is reading a magazine.", F, "B 1: I'm reading the newspaper.", "세부 정보 바꾸기"],
+ ["D6", "A asks B if there is anything interesting.", T, "A 2: Is there anything interesting?", "간접의문문으로 바꾸기"],
+ ["D6", "B tells A what an article says.", T, "B 2: This article says ~", "보고하기"],
+ ["D6", "According to the article, scientists are planning to look for a new planet.", F, "B 2: have discovered (이미 발견함)", "시제·의미 바꾸기"],
+ ["D6", "The article says scientists have found a new planet.", T, "B 2: have discovered a new planet (discover = find)", "바꿔 말하기"],
+ ["D6", "It is A who is reading the newspaper.", F, "B 1: I'm reading the newspaper.", "화자 바꾸기"],
+ # D7 (8)
+ ["D7", "Suji shows Tony a picture of camels in the desert.", T, "Suji 1: Check out this picture! → Tony 1: The camels ~ in the desert", "두 대사 종합"],
+ ["D7", "Suji thinks the desert looks very hot and wet.", F, "Suji 2: very hot and dry", "부분만 맞음(hot은 맞고 wet은 틀림)"],
+ ["D7", "Suji wonders how long camels can go without water.", F, "Tony 2: I wonder how long ~ (궁금해한 사람은 Tony)", "화자 바꾸기"],
+ ["D7", "Suji suggests finding out the information on the Internet.", T, "Suji 3: Let's find out on the Internet.", "표현 의도(제안)"],
+ ["D7", "According to the Internet, camels can go about two months without water.", F, "Tony 3: about two weeks", "숫자·단위 바꾸기"],
+ ["D7", "Suji thinks camels are really interesting animals.", T, "Suji 4: Camels are really interesting animals.", "그대로"],
+ ["D7", "Tony wants to travel with camels in the desert someday.", T, "Tony 4: I want to travel with them in the desert someday.", "지칭(them = camels)"],
+ ["D7", "Tony has traveled with camels in the desert before.", F, "Tony 4: I want to travel ~ someday (앞으로의 바람)", "시제 바꾸기"],
+ # D8 (7)
+ ["D8", "A asks B what the longest river in the world is.", T, "A 1: What is the longest river in the world?", "간접의문문으로 바꾸기"],
+ ["D8", "B thinks the longest river in the world is the Nile River.", F, "B 1: I think it's the Amazon River.", "고유명사 바꾸기"],
+ ["D8", "A wonders how long the Amazon River is.", T, "A 2: I wonder how long it is. (it = the Amazon River)", "지칭"],
+ ["D8", "According to the Internet, the Amazon River is about 700km long.", F, "B 2: about 7,000km long", "숫자 바꾸기"],
+ ["D8", "B found the information about the river's length in a book.", F, "B 2: The Internet says ~", "출처 바꾸기"],
+ ["D8", "B is the one who gives the length of the Amazon River.", T, "B 2: The Internet says the Amazon River is about 7,000km long.", "화자 확인"],
+ ["D8", "A thinks the length of the Amazon River is amazing.", T, "B 2 → A 3: That's amazing!", "지칭(That)"],
+]
+
+stage5b = [
+ {"d": "D1", "kind": "cannot", "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.", "opts": [
+  ["Where are the boy and the girl now?", True, "산 정상 거의 다 온 곳"],
+  ["What is the name of the mountain?", False, "산 이름 언급 없음"],
+  ["How high is the mountain?", True, "약 2,000m"],
+  ["How long will it take to reach the top?", False, "정상까지 걸리는 시간 언급 없음"],
+  ["What does the boy suggest?", True, "계속 올라가자(keep going)"]]},
+ {"d": "D2", "kind": "false", "q": "대화의 내용과 일치하지 않는 것을 모두 고르시오.", "opts": [
+  ["The average temperature in December is about -58℃.", False, "12월은 -26℃, -58℃는 7월"],
+  ["The boy thinks the baby penguins are cute.", True, "They're so cute."],
+  ["July is colder than December at the South Pole.", True, "G 3"],
+  ["It snows a lot at the South Pole because it's so cold.", False, "Although ~ it doesn't snow much"],
+  ["The girl thinks the penguins look very cold.", True, "they look very cold"]]},
+ {"d": "D3", "kind": "cannot", "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.", "opts": [
+  ["Why did A and B come to this place?", False, "온 이유 언급 없음"],
+  ["What is A looking for?", True, "버스 정류장"],
+  ["How does B feel?", True, "매우 신이 남(so excited)"],
+  ["Where is the bus stop?", True, "경찰서 앞"],
+  ["Where is the police station?", False, "경찰서는 기준일 뿐 위치 언급 없음"]]},
+ {"d": "D4", "kind": "can", "q": "대화를 읽고 대답할 수 있는 질문을 모두 고르시오.", "opts": [
+  ["Where are they going to have a picnic?", False, "소풍 장소 언급 없음"],
+  ["What does the girl suggest doing?", True, "오늘 오후 소풍 가기"],
+  ["On what day will they go on a picnic instead?", False, "another time — 구체적인 날 없음"],
+  ["What will the weather be like in the afternoon?", True, "비가 올 것(rainy)"],
+  ["Who checks the weather forecast?", True, "소녀"]]},
+ {"d": "D5", "kind": "cannot", "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.", "opts": [
+  ["What is Sumin going to do on Sunday?", True, "등산"],
+  ["Where is Sumin thinking of going?", True, "남산"],
+  ["Who else is going to go hiking with them?", False, "다른 사람 언급 없음"],
+  ["How long does the shortest hiking course take?", True, "약 두 시간"],
+  ["Who told Sumin about the red autumn leaves?", False, "I heard that ~ — 누구에게 들었는지 없음"]]},
+ {"d": "D6", "kind": "true", "q": "대화의 내용과 일치하는 것을 모두 고르시오.", "opts": [
+  ["B is reading the newspaper.", True, "I'm reading the newspaper."],
+  ["A is reading an article about a new planet.", False, "기사를 읽는 사람은 B"],
+  ["B wants to become a scientist.", False, "언급 없음"],
+  ["Scientists have discovered a new planet.", True, "This article says ~"],
+  ["A asks B if there is anything interesting.", True, "Is there anything interesting?"]]},
+ {"d": "D7", "kind": "cannot", "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.", "opts": [
+  ["What are the camels doing in the picture?", True, "한 줄로 걷는 중"],
+  ["How much water can camels drink at one time?", False, "한 번에 마시는 물의 양 언급 없음"],
+  ["How long can camels go without water?", True, "약 2주"],
+  ["What does Tony want to do someday?", True, "사막에서 낙타와 여행"],
+  ["Where did Suji take the picture?", False, "사진을 찍은 곳·사람 언급 없음"]]},
+ {"d": "D8", "kind": "cannot", "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.", "opts": [
+  ["What does B think the longest river in the world is?", True, "아마존강"],
+  ["Which countries does the Amazon River flow through?", False, "언급 없음"],
+  ["What is the second longest river in the world?", False, "언급 없음"],
+  ["How long is the Amazon River?", True, "약 7,000km"],
+  ["Has A ever been to the Amazon River?", False, "경험 언급 없음"]]},
+]
+
+stage6 = [
+ {"d": "D1", "ans": "How long have they been climbing the mountain?", "trap": "범위 넘기기(시간)", "why": "정상에 거의 다 왔다는 것과 산의 높이는 나오지만 얼마나 오래 올랐는지는 언급되지 않음",
+  "ok": [["Where are the boy and the girl now?", "They are almost at the top of the mountain.", "B 1"],
+         ["What is the girl curious about?", "How high the mountain is.", "G 1"],
+         ["How high is the mountain?", "It's about 2,000m high.", "B 2"],
+         ["What does the boy want to do?", "He wants to keep going.", "B 3"]]},
+ {"d": "D2", "ans": "How many penguins live at the South Pole?", "trap": "범위 넘기기(수량)", "why": "TV 속 아기 펭귄은 나오지만 남극에 사는 펭귄의 수는 언급되지 않음",
+  "ok": [["What are they watching on TV?", "Baby penguins.", "B 1"],
+         ["What is the average temperature at the South Pole in July?", "It's about -58℃.", "B 3"],
+         ["Which month is colder at the South Pole, July or December?", "July is colder.", "G 3"],
+         ["Does it snow much at the South Pole?", "No, it doesn't.", "B 4"]]},
+ {"d": "D3", "ans": "How long does it take to get to the police station?", "trap": "범위 넘기기(시간)", "why": "버스 정류장이 경찰서 앞에 있다는 것만 나오고 경찰서까지 걸리는 시간은 언급되지 않음",
+  "ok": [["How does B feel?", "B is so excited.", "B 1"],
+         ["What does B suggest doing?", "Looking around.", "B 1"],
+         ["What does A wonder?", "Where the bus stop is.", "A 2"],
+         ["Where is the bus stop?", "It's in front of the police station.", "B 2"]]},
+ {"d": "D4", "ans": "Where are they going to have a picnic?", "trap": "세부 정보 꾸미기(장소)", "why": "오후에 소풍을 가자는 제안은 나오지만 소풍 장소는 언급되지 않음",
+  "ok": [["What does the girl suggest?", "Going on a picnic this afternoon.", "G 1"],
+         ["What does the boy ask the girl to do?", "To check the weather.", "B 2"],
+         ["What does the weather forecast say?", "It'll be rainy in the afternoon.", "G 2"],
+         ["What do they decide to do?", "To go on a picnic another time.", "B 3"]]},
+ {"d": "D5", "ans": "What time will Sumin and the boy meet on Sunday?", "trap": "세부 정보 꾸미기(시각)", "why": "일요일에 만나기로 했지만 몇 시에 만날지는 언급되지 않음",
+  "ok": [["What is Sumin going to do on Sunday?", "She is going to go hiking.", "G 1"],
+         ["Where is Sumin thinking of going?", "To Namsan.", "G 2"],
+         ["What is Namsan covered with now?", "Red autumn leaves.", "G 3"],
+         ["How long does the shortest hiking course take?", "About two hours.", "G 4"]]},
+ {"d": "D6", "ans": "What is the name of the new planet?", "trap": "범위 넘기기(이름)", "why": "과학자들이 새로운 행성을 발견했다는 것만 나오고 행성의 이름은 언급되지 않음",
+  "ok": [["What is B doing?", "B is reading the newspaper.", "B 1"],
+         ["What does A ask B?", "If there is anything interesting.", "A 2"],
+         ["Who has discovered a new planet?", "Scientists.", "B 2"],
+         ["What does the article say?", "Scientists have discovered a new planet.", "B 2"]]},
+ {"d": "D7", "ans": "How far can camels walk in a day?", "trap": "비슷한 질문(how long ↔ how far)", "why": "물 없이 지낼 수 있는 기간(약 2주)은 나오지만 하루에 걸을 수 있는 거리는 언급되지 않음",
+  "ok": [["How are the camels walking in the picture?", "In a line.", "Tony 1"],
+         ["How does the desert look?", "Very hot and dry.", "Suji 2"],
+         ["Where do they find out about camels?", "On the Internet.", "Suji 3 + Tony 3"],
+         ["What does Tony want to do someday?", "He wants to travel with camels in the desert.", "Tony 4"]]},
+ {"d": "D8", "ans": "How wide is the Amazon River?", "trap": "비슷한 질문(long ↔ wide)", "why": "아마존강의 길이(약 7,000km)는 나오지만 강의 폭은 언급되지 않음",
+  "ok": [["What does A ask B first?", "What the longest river in the world is.", "A 1"],
+         ["What does B think the longest river is?", "The Amazon River.", "B 1"],
+         ["How long is the Amazon River?", "It's about 7,000km long.", "B 2"],
+         ["How does A feel about the information?", "A thinks it's amazing.", "A 3"]]},
+]
+
+def fix(o):
+    if isinstance(o, str): return q(o)
+    if isinstance(o, list): return [fix(x) for x in o]
+    if isinstance(o, dict): return {k: fix(v) for k, v in o.items()}
+    return o
+
+out = fix({"dialogues": dialogues, "expressions": expressions, "stage3": stage3, "stage4": stage4,
+           "stage5": stage5, "stage5b": stage5b, "stage6": stage6})
+json.dump(out, open("dl7_dlg.json", "w"), ensure_ascii=False, indent=1)
+
+anchors = {
+ "D1-1": "I wonder", "D1-2": "keep going",
+ "D2-1": "they look", "D2-2": "I wonder", "D2-3": "colder than", "D2-4": "Although",
+ "D3-1": "look around", "D3-2": "I wonder", "D3-3": "in front of", "D3-4": "You’re right",
+ "D4-1": "How about going", "D4-2": "The weather forecast says",
+ "D5-1": "what are you going to do", "D5-2": "I’m thinking of", "D5-3": ["I heard that", "The Internet says"], "D5-4": "covered with",
+ "D6-1": "What are you doing", "D6-2": "anything interesting", "D6-3": "This article says", "D6-4": "have discovered",
+ "D7-1": "in a line", "D7-2": "looks", "D7-3": "I wonder", "D7-4": "The Internet says",
+ "D8-1": "the longest river", "D8-2": "I wonder", "D8-3": "The Internet says", "D8-4": "7,000km long",
+}
+cfg = {"dlg": "dl7_dlg.json", "lesson": "7", "outDir": "out/동아이/7과/01. 대화", "term": "2026 · 2학기 기말고사 대비",
+ "schools": "대덕중 · 언동중 3학년", "schoolsShort": "대덕·언동중 3학년", "book": "중3 동아(이병민) Lesson 7  Feel the Wonder",
+ "pubShort": "동아이", "lessonTitle": "Feel the Wonder", "s6answers": [4, 2, 5, 1, 3, 5, 2, 4], "anchors": anchors}
+json.dump(cfg, open("dl7_dcfg.json", "w"), ensure_ascii=False)
+print(len(stage5), {d["id"]: sum(1 for x in stage5 if x[0] == d["id"]) for d in dialogues})

@@ -1,0 +1,348 @@
+{
+"O": "speed",
+"wonder": [
+"curiosity",
+"curious",
+"문법"
+],
+"space station": [
+"above",
+"below",
+"핵심반대"
+],
+"sunrise": [
+"up",
+"down",
+"핵심반대"
+],
+"possible": [
+"able",
+"unable",
+"핵심반대"
+],
+"space": [
+"beyond",
+"within",
+"핵심반대"
+],
+"gravity": [
+"fall",
+"falling",
+"문법"
+],
+"root": [
+"under",
+"above",
+"핵심반대"
+],
+"astronaut": [
+"travels",
+"travel",
+"문법"
+],
+"universe": [
+"including",
+"concluding",
+"유사철자"
+],
+"wish": [
+"want",
+"went",
+"문법"
+],
+"documentary": [
+"facts",
+"fats",
+"유사철자"
+],
+"float": [
+"carried",
+"carrying",
+"문법"
+],
+"tough": [
+"causing",
+"cause",
+"문법"
+],
+"way": [
+"used",
+"use",
+"문법"
+],
+"real": [
+"existing",
+"exiting",
+"유사철자"
+],
+"entirely": [
+"partly",
+"party",
+"유사철자"
+],
+"impossible": [
+"unable",
+"able",
+"핵심반대"
+],
+"company": [
+"producing",
+"reducing",
+"유사철자"
+],
+"apply": [
+"particular",
+"general",
+"핵심반대"
+],
+"physics": [
+"deals",
+"dealt",
+"문법"
+],
+"create": [
+"make",
+"made",
+"문법"
+],
+"wormhole": [
+"hole",
+"whole",
+"유사철자"
+],
+"fact": [
+"truly",
+"falsely",
+"핵심반대"
+],
+"theory": [
+"explain",
+"explaining",
+"문법"
+],
+"science": [
+"learned",
+"learning",
+"문법"
+],
+"travel": [
+"act",
+"art",
+"유사철자"
+],
+"planet": [
+"large",
+"small",
+"핵심반대"
+],
+"blink": [
+"quickly",
+"slowly",
+"핵심반대"
+],
+"vast": [
+"very",
+"vary",
+"유사철자"
+],
+"passenger": [
+"driving",
+"driven",
+"문법"
+],
+"spaceship": [
+"outer",
+"inner",
+"핵심반대"
+],
+"head": [
+"go",
+"goes",
+"문법"
+],
+"expect": [
+"probably",
+"probable",
+"문법"
+],
+"imagine": [
+"real",
+"read",
+"유사철자"
+],
+"detect": [
+"hidden",
+"hiding",
+"문법"
+],
+"bottom": [
+"lowest",
+"highest",
+"핵심반대"
+],
+"surface": [
+"outside",
+"inside",
+"핵심반대"
+],
+"outer": [
+"located",
+"locate",
+"문법"
+],
+"layer": [
+"material",
+"maternal",
+"유사철자"
+],
+"shortcut": [
+"get",
+"got",
+"문법"
+],
+"researcher": [
+"studies",
+"studios",
+"유사철자"
+],
+"connect": [
+"together",
+"apart",
+"핵심반대"
+],
+"bend": [
+"curved",
+"carved",
+"유사철자"
+],
+"dot": [
+"round",
+"sound",
+"유사철자"
+],
+"flat": [
+"stretched",
+"stretching",
+"문법"
+],
+"fold": [
+"bend",
+"band",
+"유사철자"
+],
+"punch": [
+"make",
+"fill",
+"핵심반대"
+],
+"instantly": [
+"delay",
+"decay",
+"유사철자"
+],
+"contain": [
+"include",
+"exclude",
+"핵심반대"
+],
+"throat": [
+"neck",
+"deck",
+"유사철자"
+],
+"exist": [
+"present",
+"absent",
+"핵심반대"
+],
+"light-year": [
+"distance",
+"distant",
+"문법"
+],
+"celebrate": [
+"special",
+"spacial",
+"유사철자"
+],
+"consider": [
+"decision",
+"decide",
+"문법"
+],
+"unstable": [
+"likely",
+"unlikely",
+"핵심반대"
+],
+"crush": [
+"breaks",
+"brakes",
+"유사철자"
+],
+"debate": [
+"different",
+"same",
+"핵심반대"
+],
+"ongoing": [
+"reaching",
+"teaching",
+"유사철자"
+],
+"persistent": [
+"stopping",
+"stopped",
+"문법"
+],
+"exploration": [
+"find",
+"fine",
+"유사철자"
+],
+"research": [
+"study",
+"steady",
+"유사철자"
+],
+"eventually": [
+"long",
+"short",
+"핵심반대"
+],
+"achieve": [
+"succeed",
+"success",
+"문법"
+],
+"print out": [
+"machine",
+"marine",
+"유사철자"
+],
+"get to": [
+"arrive",
+"arrival",
+"문법"
+],
+"in the blink of an eye": [
+"short",
+"long",
+"핵심반대"
+],
+"figure out": [
+"understand",
+"understood",
+"문법"
+],
+"match up": [
+"related",
+"relating",
+"문법"
+],
+"look back": [
+"past",
+"future",
+"핵심반대"
+]
+}
