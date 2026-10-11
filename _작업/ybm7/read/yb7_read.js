@@ -196,7 +196,7 @@ tf: [["Everyone makes mistakes because we are human.","T","Because we are human,
   ["Small mistakes and no apology can become big emotional wounds.","T","add up to big emotional wounds [add up to = become]"],
   ["The writer says that one mistake always breaks a beautiful relationship.","F","don’t let one mistake break a beautiful relationship [단정어 always · 화자 의도]"],
   ["The writer advises readers to apologize now if they want to apologize to someone.","T","Do you want to apologize to someone? Try to do it now. [두 문장 결합]"]],
-tfOrder: [],
+tfOrder: [9, 24, 19, 11, 10, 12, 15, 21, 3, 6, 26, 8, 13, 23, 2, 5, 17, 1, 20, 25, 16, 18, 4, 0, 14, 22, 7],
 multi: [
  { kind: "true", q: "다음 중 본문(When June tripped ~ laugh it off)의 내용과 일치하는 것을 모두 고르시오.", opts: [["Mike apologized to June without laughing.", false, "Mike said, with a laugh, “Sorry, June!” [반대]"], ["June tripped over a backpack and fell.", true, "When June tripped over a backpack and fell"], ["Some food fell on Hojun’s jacket.", true, "Some food on Hojun’s tray fell on his jacket"], ["Kate apologized to Hojun at once.", false, "Kate didn’t apologize [반대]"], ["A quick apology shows that you take responsibility for your action.", true, "A quick apology shows that you ~ take responsibility for your action"]] },
  { kind: "cannot", q: "다음 글(본문 전체)을 읽고 대답할 수 없는 질문을 모두 고르시오.", opts: [["Why did June feel even more hurt?", true, "because of Mike’s casual apology"], ["How long did the picture stay on the SNS?", false, "사진이 올라가 있던 시간은 언급 없음 [숫자 넘기기]"], ["What fell on Hojun’s jacket?", true, "Some food on Hojun’s tray"], ["Where did Sunmin lose her sister’s book?", false, "잃어버린 장소는 언급 없음 [범위 넘기기]"], ["When do people get hurt more easily?", true, "when the hurt comes from a family member or a friend"]] },
