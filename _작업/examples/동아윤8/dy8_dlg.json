@@ -1,0 +1,1254 @@
+{
+ "dialogues": [
+  {
+   "id": "D1",
+   "label": "Listen and Talk A-1",
+   "lines": [
+    [
+     "G",
+     "Minho, look at these two paintings of cats here. Aren't they great?",
+     "민호야, 여기 고양이 그림 두 점을 봐. 멋지지 않니?"
+    ],
+    [
+     "B",
+     "Yes, they are.",
+     "응. 멋지다."
+    ],
+    [
+     "G",
+     "They both are good, but I like the one on the left more. {How about you}?",
+     "둘 다 좋긴 하지만 나는 왼쪽 그림이 더 좋아. 너는 어때?"
+    ],
+    [
+     "B",
+     "{I prefer} the one on the right. {It seems to me that} the cat in it is cuter. I also like the bird in it.",
+     "나는 오른쪽 그림이 더 좋아. 나는 그 그림 속 고양이가 더 귀여운 것 같아. 그림 속 새도 마음에 들어."
+    ]
+   ],
+   "notes": [
+    "Aren't they great? : be동사로 시작하는 {부정의문문} — 멋지다는 데 동의하므로 Yes로 답함",
+    "the one on the left : one = 앞에 나온 {painting}을 대신하는 부정대명사",
+    "I prefer ~ : ‘~을 더 좋아한다’ — 선호를 말하는 표현, I like ~ {more/better}와 같은 뜻",
+    "It seems to me that ~ : ‘내가 보기엔 ~인 것 같아’ — 자신의 {의견}을 부드럽게 말할 때"
+   ]
+  },
+  {
+   "id": "D2",
+   "label": "Listen and Talk A-2",
+   "lines": [
+    [
+     "G",
+     "We can have Bibimbap or Galbitang. {Which do you prefer}?",
+     "비빔밥이나 갈비탕을 먹을 수 있네. 너는 어느 것이 더 좋으니?"
+    ],
+    [
+     "B",
+     "{I prefer} Bibimbap. {It seems to me that} it's the healthier choice.",
+     "나는 비빔밥이 더 좋아. 건강에 더 좋은 선택인 것 같아."
+    ],
+    [
+     "G",
+     "{I think so, too}. I also like Bibimbap more.",
+     "나도 그렇게 생각해. 나도 비빔밥을 더 좋아해."
+    ],
+    [
+     "B",
+     "Let's order, then. I'm very hungry.",
+     "그럼, 주문하자. 너무 배가 고파."
+    ]
+   ],
+   "notes": [
+    "Which do you prefer? : 둘 중 어느 쪽을 더 좋아하는지 묻는 말 — 선택지를 붙이면 Which do you prefer, {A or B}?",
+    "the healthier choice : 둘 중 하나를 가리킬 때 {비교급} 앞에 the — healthy → healthier",
+    "I think so, too. : 상대 의견에 {동의}하는 말 = I agree (with you).",
+    "I also like Bibimbap more : like ~ more = {prefer} / also = ‘나도 역시’"
+   ]
+  },
+  {
+   "id": "D3",
+   "label": "Listen and Talk A-3",
+   "lines": [
+    [
+     "G",
+     "Look at these two old plates, Steve. Aren't they beautiful?",
+     "이 오래된 두 접시 좀 봐, Steve. 아름답지 않니?"
+    ],
+    [
+     "B",
+     "Yes. {Which one do you prefer}, the green plate or the white plate?",
+     "그렇네. 너는 초록색 접시와 흰색 접시 중에서 어느 것이 더 마음에 들어?"
+    ],
+    [
+     "G",
+     "Well, it's hard to choose, but I {like the green one better}. How about you?",
+     "글쎄, 선택하기 어렵지만, 나는 초록색 접시가 더 마음에 들어. 너는 어때?"
+    ],
+    [
+     "B",
+     "{Me, too}. {It seems to me that} the green plate is more unique.",
+     "나도 그래. 초록색 접시가 더 독특한 것 같아."
+    ]
+   ],
+   "notes": [
+    "Which one do you prefer, A or B? : one = {plate} — 정해진 두 접시 중 선호를 묻는 말",
+    "it's hard to choose : 가주어 it + 진주어 {to choose} — 목표어법(to부정사의 의미상 주어)으로 늘리면 it's hard for me to choose",
+    "the green one : one = plate를 받는 {부정대명사} / like A better = prefer A",
+    "Me, too. : 앞사람과 {같은} 선택이라는 뜻 → Steve도 초록색 접시",
+    "It seems to me that ~ : 의견 표현 + unique의 비교급은 {more} unique"
+   ]
+  },
+  {
+   "id": "D4",
+   "label": "Listen and Talk A-4",
+   "lines": [
+    [
+     "G",
+     "Junsu, you said you're going to buy a gift for your sister. How about the bags here?",
+     "준수야, 네가 여동생에게 줄 선물을 살 거라고 했잖아. 여기 있는 가방들 어때?"
+    ],
+    [
+     "B",
+     "They look nice.",
+     "좋아 보인다."
+    ],
+    [
+     "G",
+     "{Which one do you prefer}, the one with flowers or the one with animals?",
+     "너는 꽃무늬 있는 것과 동물 무늬 있는 것 중에 어느 것이 더 좋아?"
+    ],
+    [
+     "B",
+     "{I prefer} the one with flowers. {It seems to me that} my sister will like it more.",
+     "나는 꽃무늬 있는 것이 더 좋아. 여동생이 그것을 더 좋아할 것 같아."
+    ]
+   ],
+   "notes": [
+    "you said you're going to buy : said의 목적어 명사절을 이끄는 {접속사}가 생략됨",
+    "look + 형용사(nice) : ‘~해 보이다’ — 감각동사 뒤에는 {형용사} (nicely ✗)",
+    "the one with flowers : with = ‘~이 있는’ — 전치사구가 {one}을 뒤에서 수식",
+    "It seems to me that ~ : 의견 표현 — 뒤의 it은 {꽃무늬 가방}(the one with flowers)"
+   ]
+  },
+  {
+   "id": "D5",
+   "label": "Look and Talk (e.g.)",
+   "lines": [
+    [
+     "A",
+     "{Which food do you prefer}, Tteokbokki or Gimbap?",
+     "너는 떡볶이와 김밥 중 어떤 음식을 더 좋아하니?"
+    ],
+    [
+     "B",
+     "{I prefer} Tteokbokki. {It seems to me that} it's more delicious. How about you?",
+     "나는 떡볶이를 더 좋아해. 그게 더 맛있는 것 같아. 너는 어때?"
+    ],
+    [
+     "A",
+     "I prefer Tteokbokki, too. / I prefer Gimbap. It seems to me that it's healthier.",
+     "나도 떡볶이를 더 좋아해. / 나는 김밥을 더 좋아해. 그게 건강에 더 좋은 것 같아."
+    ]
+   ],
+   "notes": [
+    "Which food do you prefer, A or B? : Which + {명사} — 정해진 두 음식 중 선호를 묻는 말",
+    "more delicious : 3음절 이상 형용사의 {비교급} = more + 원급",
+    "How about you? : 상대방의 {선호}를 되묻는 말",
+    "I prefer Tteokbokki, too. : 같은 선호를 말할 때 끝에 붙는 {부사}(‘~도’) — 다르면 I prefer + 다른 음식",
+    "healthier : healthy의 비교급 — y를 {i}로 바꾸고 -er"
+   ]
+  },
+  {
+   "id": "D6",
+   "label": "In Conversation",
+   "lines": [
+    [
+     "G",
+     "There are two exhibitions we can go to. {Which one do you want to see more}, Eric?",
+     "우리가 갈 수 있는 전시회가 두 개 있어. 어느 전시회를 더 보고 싶니, Eric?"
+    ],
+    [
+     "B",
+     "{I prefer} the Korean mask exhibition. Is that OK, Somi?",
+     "나는 한국 탈 전시회가 더 좋아. 괜찮아, 소미야?"
+    ],
+    [
+     "G",
+     "Of course. And {it seems to me that} the mask exhibition will be much more interesting.",
+     "그럼. 그리고 탈 전시회가 훨씬 더 흥미로울 것 같아."
+    ],
+    [
+     "B",
+     "Do you think so?",
+     "그렇게 생각해?"
+    ],
+    [
+     "G",
+     "Yes. Look at this poster. There isn't just an exhibition. There's also a mask dance show at 4:00 and 6:00.",
+     "응. 이 포스터를 봐. 전시회만 있는 게 아니야. 4시와 6시에 탈춤 공연도 있어."
+    ],
+    [
+     "B",
+     "Great! I've never seen a mask dance show before.",
+     "잘됐다! 난 전에 탈춤 공연을 본 적이 없거든."
+    ],
+    [
+     "G",
+     "Well, I've seen a show before. {I'm sure} you'll like it.",
+     "음, 난 전에 본 적이 있어. 네가 분명히 좋아할 거야."
+    ],
+    [
+     "B",
+     "So where is the show?",
+     "그래서 공연은 어디에서 해?"
+    ],
+    [
+     "G",
+     "It's in Dasom Hall, next to the exhibition room.",
+     "전시실 옆에 있는 다솜 홀에서 해."
+    ],
+    [
+     "B",
+     "It's 4:30 now, so let's watch the 6 o'clock show.",
+     "지금이 4시 30분이니까 6시 공연을 보자."
+    ],
+    [
+     "G",
+     "OK. Let's go see the exhibition first.",
+     "좋아. 먼저 전시를 보러 가자."
+    ]
+   ],
+   "notes": [
+    "two exhibitions we can go to : 목적격 관계대명사 {that/which} 생략 — 끝의 to를 빼면 ✗",
+    "Which one do you want to see more : one = {exhibition} — 둘 중 더 보고 싶은 것을 묻는 선호 표현",
+    "much more interesting : much = 비교급 {강조}(‘훨씬’) — very로 바꾸면 ✗",
+    "I've never seen ~ before : 현재완료 {경험} — Eric은 처음, Somi는 본 적 있음",
+    "I'm sure ~ : 강한 {확신} = I'm certain (that) ~ / I bet ~"
+   ]
+  },
+  {
+   "id": "D7",
+   "label": "Choose and Talk (e.g.)",
+   "lines": [
+    [
+     "A",
+     "{I prefer} science. {It seems to me that} it's more fun to learn. I also prefer it {because} I want to be a great inventor like Edison.",
+     "나는 과학을 더 좋아해. 배우기에 더 재미있는 것 같아. 나는 Edison 같은 훌륭한 발명가가 되고 싶기 때문에 과학을 더 좋아하기도 해."
+    ]
+   ],
+   "notes": [
+    "I prefer science : 비교 대상을 함께 말하면 prefer A {to} B (than ✗)",
+    "it's more fun to learn : it = {science} — to learn은 형용사 fun을 꾸미는 to부정사",
+    "because + 주어 + 동사 : 이유를 나타내는 {접속사} — 명사(구)만 오면 because of",
+    "like Edison : 동사가 아니라 ‘~{같은}’이라는 뜻의 전치사"
+   ]
+  },
+  {
+   "id": "D8",
+   "label": "Talk and Play (e.g.)",
+   "lines": [
+    [
+     "A",
+     "{Which do you prefer}, Ramyeon or spaghetti?",
+     "너는 라면과 스파게티 중 어느 것을 더 좋아하니?"
+    ],
+    [
+     "B",
+     "{I prefer} Ramyeon. {It seems to me that} it's more delicious. {How about you}?",
+     "나는 라면을 더 좋아해. 더 맛있는 것 같아. 너는 어때?"
+    ],
+    [
+     "A",
+     "I prefer Ramyeon, too. / I prefer spaghetti. It seems to me that it's healthier.",
+     "나도 라면을 더 좋아해. / 나는 스파게티를 더 좋아해. 건강에 더 좋은 것 같아."
+    ]
+   ],
+   "notes": [
+    "Which do you prefer, A or B? : A와 B 중 {선호}를 묻는 말",
+    "It seems to me that ~ : ‘~인 것 같아’ — I think ~보다 {부드러운} 의견 표현",
+    "How about you? : 같은 질문을 상대에게 {되묻는} 말 = What about you?",
+    "it's healthier : 두 번째 응답의 it = {spaghetti}"
+   ]
+  }
+ ],
+ "expressions": [
+  [
+   "선호 묻기",
+   "{Which} ~ do you prefer, A or B?",
+   "A와 B 중 어느 ~을 더 좋아하니?"
+  ],
+  [
+   "선호 묻기",
+   "Which do you {like better}, A or B?",
+   "A와 B 중 어느 것을 더 좋아하니?"
+  ],
+  [
+   "선호 묻기",
+   "Do you like A {better than} B?",
+   "B보다 A를 더 좋아하니?"
+  ],
+  [
+   "선호 말하기",
+   "I {prefer} A (to B).",
+   "나는 (B보다) A를 더 좋아해."
+  ],
+  [
+   "선호 말하기",
+   "I like A {more / better}. / I’d prefer ~.",
+   "나는 A가 더 좋아. / 나는 ~이 더 좋아."
+  ],
+  [
+   "의견 말하기",
+   "{It seems to me that} ~.",
+   "내가 보기엔 ~인 것 같아."
+  ],
+  [
+   "의견 말하기",
+   "I think (that) ~. / In my {opinion}, ~. / It {appears} to me that ~.",
+   "내 생각에 ~ / ~인 것 같다"
+  ],
+  [
+   "의견 묻기·동의",
+   "{How about you}? / Do you think so? / I think so, {too}.",
+   "너는 어때? / 그렇게 생각해? / 나도 그렇게 생각해."
+  ],
+  [
+   "확신 말하기",
+   "I’m {sure} (that) ~.",
+   "분명히 ~할 거야."
+  ]
+ ],
+ "stage3": [
+  [
+   "D1",
+   "They both are good, but I like the one on the left more.",
+   "둘 다 좋긴 하지만 나는 왼쪽 그림이 더 좋아."
+  ],
+  [
+   "D2",
+   "It seems to me that it's the healthier choice.",
+   "건강에 더 좋은 선택인 것 같아."
+  ],
+  [
+   "D3",
+   "Which one do you prefer, the green plate or the white plate?",
+   "너는 초록색 접시와 흰색 접시 중에서 어느 것이 더 마음에 들어?"
+  ],
+  [
+   "D3",
+   "Well, it's hard to choose, but I like the green one better.",
+   "글쎄, 선택하기 어렵지만, 나는 초록색 접시가 더 마음에 들어."
+  ],
+  [
+   "D4",
+   "It seems to me that my sister will like it more.",
+   "여동생이 그것을 더 좋아할 것 같아."
+  ],
+  [
+   "D6",
+   "There are two exhibitions we can go to.",
+   "우리가 갈 수 있는 전시회가 두 개 있어."
+  ],
+  [
+   "D6",
+   "And it seems to me that the mask exhibition will be much more interesting.",
+   "그리고 탈 전시회가 훨씬 더 흥미로울 것 같아."
+  ],
+  [
+   "D7",
+   "I also prefer it because I want to be a great inventor like Edison.",
+   "나는 Edison 같은 훌륭한 발명가가 되고 싶기 때문에 과학을 더 좋아하기도 해."
+  ]
+ ],
+ "stage4": [
+  "D1",
+  "D2",
+  "D3",
+  "D4",
+  "D6"
+ ],
+ "stage5": [
+  [
+   "D1",
+   "The girl and Minho are looking at two pictures of cats.",
+   "T",
+   "G 1: two paintings of cats (paintings → pictures)",
+   "바꿔 말하기"
+  ],
+  [
+   "D1",
+   "The girl likes the painting on the right better.",
+   "F",
+   "G 2: the one on the left more (왼쪽)",
+   "화자 바꾸기"
+  ],
+  [
+   "D1",
+   "Minho thinks the cat in the left painting is cuter.",
+   "F",
+   "B 2: the cat in it(= 오른쪽 그림) is cuter",
+   "지칭"
+  ],
+  [
+   "D1",
+   "In the painting Minho prefers, he likes not only the cat but also the bird.",
+   "T",
+   "B 2: the cat in it is cuter + I also like the bird in it",
+   "두 문장 종합"
+  ],
+  [
+   "D1",
+   "The girl thinks only one of the two paintings is good.",
+   "F",
+   "G 2: They both are good",
+   "단정어"
+  ],
+  [
+   "D1",
+   "The girl and Minho choose the same painting.",
+   "F",
+   "G 2 왼쪽 ↔ B 2 오른쪽",
+   "추론(두 대사 종합)"
+  ],
+  [
+   "D1",
+   "Minho agrees that the two paintings are great.",
+   "T",
+   "G 1 Aren’t they great? → B 1 Yes, they are.",
+   "표현 의도"
+  ],
+  [
+   "D1",
+   "The girl asks for Minho’s opinion after telling him her own choice.",
+   "T",
+   "G 2: I like the one on the left more. How about you?",
+   "순서"
+  ],
+  [
+   "D2",
+   "The girl gives the boy two food options.",
+   "T",
+   "G 1: Bibimbap or Galbitang",
+   "바꿔 말하기"
+  ],
+  [
+   "D2",
+   "The boy thinks Galbitang is better for his health.",
+   "F",
+   "B 1: Bibimbap → the healthier choice",
+   "반대 의미"
+  ],
+  [
+   "D2",
+   "The girl disagrees with the boy’s opinion about Bibimbap.",
+   "F",
+   "G 2: I think so, too. (동의)",
+   "표현 의도"
+  ],
+  [
+   "D2",
+   "Both speakers like Bibimbap more than Galbitang.",
+   "T",
+   "B 1 I prefer Bibimbap + G 2 I also like Bibimbap more",
+   "두 대사 종합"
+  ],
+  [
+   "D2",
+   "The boy wants to order soon because he is hungry.",
+   "T",
+   "B 2: Let’s order, then. I’m very hungry.",
+   "추론"
+  ],
+  [
+   "D2",
+   "The girl is the one who suggests ordering the food.",
+   "F",
+   "B 2: Let’s order (소년이 제안)",
+   "행위자 바꾸기"
+  ],
+  [
+   "D2",
+   "The boy has already eaten Bibimbap today.",
+   "F",
+   "언급 없음",
+   "범위 넘기기"
+  ],
+  [
+   "D3",
+   "Steve wants to know which of the two plates the girl likes more.",
+   "T",
+   "B 1: Which one do you prefer, ~?",
+   "바꿔 말하기"
+  ],
+  [
+   "D3",
+   "The girl finds it easy to pick one of the plates.",
+   "F",
+   "G 2: it’s hard to choose",
+   "반대 의미"
+  ],
+  [
+   "D3",
+   "Steve likes the white plate better than the green one.",
+   "F",
+   "B 2: Me, too. = 나도 초록 접시",
+   "지칭·표현 의도"
+  ],
+  [
+   "D3",
+   "Both Steve and the girl prefer the green plate.",
+   "T",
+   "G 2 I like the green one better + B 2 Me, too.",
+   "두 대사 종합"
+  ],
+  [
+   "D3",
+   "According to Steve, the white plate is more unique than the green one.",
+   "F",
+   "B 2: the green plate is more unique",
+   "반대 의미"
+  ],
+  [
+   "D3",
+   "The girl tells her choice before Steve tells his.",
+   "T",
+   "G 2 (초록 선택) → B 2 Me, too.",
+   "순서"
+  ],
+  [
+   "D3",
+   "The plates they are looking at are new ones.",
+   "F",
+   "G 1: two old plates",
+   "반대 의미"
+  ],
+  [
+   "D4",
+   "Junsu is looking for a present for his sister.",
+   "T",
+   "G 1: buy a gift for your sister (gift → present)",
+   "바꿔 말하기"
+  ],
+  [
+   "D4",
+   "The girl is going to buy a bag for her sister.",
+   "F",
+   "선물을 사는 사람은 준수(your sister)",
+   "행위자 바꾸기"
+  ],
+  [
+   "D4",
+   "Junsu likes the way the bags look.",
+   "T",
+   "B 1: They look nice.",
+   "바꿔 말하기"
+  ],
+  [
+   "D4",
+   "Junsu chooses the bag with animals on it.",
+   "F",
+   "B 2: the one with flowers",
+   "바꿔치기"
+  ],
+  [
+   "D4",
+   "Junsu chooses the bag because he likes flowers himself.",
+   "F",
+   "B 2: 이유 = 여동생이 더 좋아할 것 같아서",
+   "추론(이유)"
+  ],
+  [
+   "D4",
+   "Junsu thinks his sister will like the flower bag more than the animal bag.",
+   "T",
+   "G 2 선택지 + B 2 my sister will like it more (it = 꽃무늬)",
+   "지칭·두 대사 종합"
+  ],
+  [
+   "D4",
+   "The girl had told Junsu about buying a gift before.",
+   "F",
+   "G 1: you said ~ (말한 사람은 준수)",
+   "행위자 바꾸기"
+  ],
+  [
+   "D4",
+   "Junsu has already bought a bag for his sister.",
+   "F",
+   "지금 가방을 고르는 중",
+   "단정어(already)"
+  ],
+  [
+   "D5",
+   "A asks B to pick one of two foods.",
+   "T",
+   "A 1: Which food do you prefer, Tteokbokki or Gimbap?",
+   "바꿔 말하기"
+  ],
+  [
+   "D5",
+   "B prefers Gimbap because it is more delicious.",
+   "F",
+   "B 1: I prefer Tteokbokki",
+   "바꿔치기"
+  ],
+  [
+   "D5",
+   "B thinks Tteokbokki tastes better than Gimbap.",
+   "T",
+   "A 1 두 음식 비교 + B 1 Tteokbokki ~ more delicious",
+   "두 대사 종합"
+  ],
+  [
+   "D5",
+   "B asks about A’s preference after giving an opinion.",
+   "T",
+   "B 1: It seems to me ~. How about you?",
+   "순서·표현 의도"
+  ],
+  [
+   "D5",
+   "In one possible answer, A thinks Gimbap is the healthier food.",
+   "T",
+   "A 2: I prefer Gimbap. It seems to me that it’s healthier.",
+   "바꿔 말하기"
+  ],
+  [
+   "D5",
+   "A must agree with B and choose Tteokbokki.",
+   "F",
+   "A 2: 두 가지 응답(같은 선호 / 다른 선호)",
+   "단정어"
+  ],
+  [
+   "D5",
+   "B says that Gimbap is more delicious but less healthy.",
+   "F",
+   "B는 김밥에 대해 말하지 않음",
+   "범위 넘기기"
+  ],
+  [
+   "D6",
+   "Somi wants to know Eric’s choice between two exhibitions.",
+   "T",
+   "G 1: Which one do you want to see more, Eric?",
+   "바꿔 말하기"
+  ],
+  [
+   "D6",
+   "Somi doesn’t want to go to the Korean mask exhibition.",
+   "F",
+   "G 2: Of course. ~ much more interesting",
+   "반대 의미·표현 의도"
+  ],
+  [
+   "D6",
+   "The mask dance show is held only once a day.",
+   "F",
+   "G 3: at 4:00 and 6:00 (두 번)",
+   "숫자·단정어"
+  ],
+  [
+   "D6",
+   "Eric has watched a mask dance show before.",
+   "F",
+   "B 3: I’ve never seen ~ (본 적 있는 사람은 Somi)",
+   "화자 바꾸기"
+  ],
+  [
+   "D6",
+   "Somi has seen a mask dance show, so she is sure Eric will enjoy it.",
+   "T",
+   "G 4: I’ve seen a show before. I’m sure you’ll like it.",
+   "추론"
+  ],
+  [
+   "D6",
+   "The show takes place in the exhibition room.",
+   "F",
+   "G 5: in Dasom Hall, next to the exhibition room",
+   "범위·장소"
+  ],
+  [
+   "D6",
+   "Because the earlier show has already started, they will watch the later one.",
+   "T",
+   "G 3 4:00·6:00 + B 5 It’s 4:30 now ~ 6 o’clock show",
+   "두 대사 종합"
+  ],
+  [
+   "D6",
+   "They will watch the mask dance show before they see the exhibition.",
+   "F",
+   "G 6: Let’s go see the exhibition first.",
+   "순서 뒤집기"
+  ],
+  [
+   "D7",
+   "The speaker thinks learning science is more enjoyable.",
+   "T",
+   "it’s more fun to learn (fun → enjoyable)",
+   "바꿔 말하기"
+  ],
+  [
+   "D7",
+   "The speaker gives only one reason for preferring science.",
+   "F",
+   "재미있음 + 발명가가 되고 싶음 = 2가지",
+   "수량·단정어(두 문장 종합)"
+  ],
+  [
+   "D7",
+   "The speaker hopes to become an inventor such as Edison.",
+   "T",
+   "I want to be a great inventor like Edison",
+   "바꿔 말하기"
+  ],
+  [
+   "D7",
+   "The speaker says that Edison liked science when he was young.",
+   "F",
+   "언급 없음",
+   "범위 넘기기"
+  ],
+  [
+   "D7",
+   "The speaker thinks science is harder to learn than other subjects.",
+   "F",
+   "more fun to learn",
+   "반대 의미"
+  ],
+  [
+   "D7",
+   "The speaker’s dream for the future is one reason for liking science.",
+   "T",
+   "I also prefer it because I want to be ~",
+   "추론·이유"
+  ],
+  [
+   "D8",
+   "A asks which of two foods B likes more.",
+   "T",
+   "A 1: Which do you prefer, Ramyeon or spaghetti?",
+   "바꿔 말하기"
+  ],
+  [
+   "D8",
+   "B thinks spaghetti is more delicious than Ramyeon.",
+   "F",
+   "B 1: Ramyeon ~ more delicious",
+   "반대 의미"
+  ],
+  [
+   "D8",
+   "B wants to know A’s preference, too.",
+   "T",
+   "B 1: How about you?",
+   "표현 의도"
+  ],
+  [
+   "D8",
+   "In both possible answers, A prefers spaghetti.",
+   "F",
+   "A 2: 첫 응답은 I prefer Ramyeon, too.",
+   "단정어"
+  ],
+  [
+   "D8",
+   "If A prefers spaghetti, A thinks it is better for health.",
+   "T",
+   "A 2: I prefer spaghetti. ~ it’s healthier.",
+   "바꿔 말하기·조건"
+  ],
+  [
+   "D8",
+   "B says Ramyeon is healthier than spaghetti.",
+   "F",
+   "healthier는 A의 (스파게티) 의견, B는 맛만 말함",
+   "화자 바꾸기(두 대사 종합)"
+  ]
+ ],
+ "stage5b": [
+  {
+   "d": "D1",
+   "kind": "cannot",
+   "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.",
+   "opts": [
+    [
+     "Which painting does Minho like more?",
+     true,
+     "오른쪽 그림"
+    ],
+    [
+     "Who painted the two cat paintings?",
+     false,
+     "화가 언급 없음"
+    ],
+    [
+     "Why does Minho prefer the painting on the right?",
+     true,
+     "고양이가 더 귀여워서(+새)"
+    ],
+    [
+     "How many birds are there in the painting on the left?",
+     false,
+     "새는 오른쪽 그림에만 언급, 왼쪽 그림 정보 없음"
+    ],
+    [
+     "Does the girl think both paintings are good?",
+     true,
+     "They both are good"
+    ]
+   ]
+  },
+  {
+   "d": "D2",
+   "kind": "true",
+   "q": "대화의 내용과 일치하는 것을 모두 고르시오.",
+   "opts": [
+    [
+     "The boy thinks Bibimbap is better for health.",
+     true,
+     "the healthier choice"
+    ],
+    [
+     "The girl prefers Galbitang to Bibimbap.",
+     false,
+     "소녀도 비빔밥"
+    ],
+    [
+     "The boy wants to order because he is very hungry.",
+     true,
+     "Let’s order ~ I’m very hungry"
+    ],
+    [
+     "The girl suggests ordering first.",
+     false,
+     "주문 제안은 소년"
+    ],
+    [
+     "The girl agrees with the boy’s opinion.",
+     true,
+     "I think so, too."
+    ]
+   ]
+  },
+  {
+   "d": "D3",
+   "kind": "false",
+   "q": "대화의 내용과 일치하지 않는 것을 모두 고르시오.",
+   "opts": [
+    [
+     "The girl and Steve are looking at two new plates.",
+     false,
+     "old plates"
+    ],
+    [
+     "The girl says it is easy to choose a plate.",
+     false,
+     "hard to choose"
+    ],
+    [
+     "Steve prefers the green plate, like the girl.",
+     true,
+     "Me, too."
+    ],
+    [
+     "Steve thinks the white plate looks more unique.",
+     false,
+     "초록 접시가 더 독특"
+    ],
+    [
+     "The girl asks Steve which plate he likes more.",
+     true,
+     "How about you?"
+    ]
+   ]
+  },
+  {
+   "d": "D4",
+   "kind": "can",
+   "q": "대화를 읽고 대답할 수 있는 질문을 모두 고르시오.",
+   "opts": [
+    [
+     "Who is Junsu going to buy a gift for?",
+     true,
+     "his sister"
+    ],
+    [
+     "How much is the bag with flowers?",
+     false,
+     "가격 언급 없음"
+    ],
+    [
+     "Which bag does Junsu prefer?",
+     true,
+     "the one with flowers"
+    ],
+    [
+     "What does Junsu’s sister usually like to do?",
+     false,
+     "여동생의 취미 언급 없음"
+    ],
+    [
+     "How old is Junsu’s sister?",
+     false,
+     "나이 언급 없음"
+    ]
+   ]
+  },
+  {
+   "d": "D5",
+   "kind": "count",
+   "q": "대화의 내용과 일치하는 것의 개수는?",
+   "opts": [
+    [
+     "A asks B to choose between Tteokbokki and Gimbap.",
+     true,
+     "A 1"
+    ],
+    [
+     "B thinks Tteokbokki is more delicious.",
+     true,
+     "B 1"
+    ],
+    [
+     "B says Gimbap is unhealthy.",
+     false,
+     "B는 김밥 건강 언급 없음"
+    ],
+    [
+     "In one possible answer, A thinks Gimbap is healthier.",
+     true,
+     "A 2"
+    ],
+    [
+     "A and B always prefer the same food.",
+     false,
+     "다른 선호 응답도 있음"
+    ]
+   ]
+  },
+  {
+   "d": "D6",
+   "kind": "cannot",
+   "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.",
+   "opts": [
+    [
+     "What time is it now?",
+     true,
+     "4:30"
+    ],
+    [
+     "How much is a ticket for the mask dance show?",
+     false,
+     "가격 언급 없음"
+    ],
+    [
+     "Where is Dasom Hall?",
+     true,
+     "next to the exhibition room"
+    ],
+    [
+     "How long does the mask dance show last?",
+     false,
+     "공연 시간(길이) 언급 없음"
+    ],
+    [
+     "When did Somi see a mask dance show?",
+     false,
+     "본 적 있다는 것만, 언제인지는 없음"
+    ]
+   ]
+  },
+  {
+   "d": "D7",
+   "kind": "true",
+   "q": "대화의 내용과 일치하는 것을 모두 고르시오.",
+   "opts": [
+    [
+     "The speaker thinks science is boring to learn.",
+     false,
+     "more fun to learn"
+    ],
+    [
+     "The speaker wants to meet Edison.",
+     false,
+     "Edison 같은 발명가가 되고 싶다는 것뿐"
+    ],
+    [
+     "The speaker gives two reasons for liking science.",
+     true,
+     "재미 + 발명가의 꿈"
+    ],
+    [
+     "The speaker thinks science is the most difficult subject.",
+     false,
+     "언급 없음(오히려 재미있다고 함)"
+    ],
+    [
+     "The speaker dreams of becoming an inventor.",
+     true,
+     "I want to be a great inventor"
+    ]
+   ]
+  },
+  {
+   "d": "D8",
+   "kind": "false",
+   "q": "대화의 내용과 일치하지 않는 것을 모두 고르시오.",
+   "opts": [
+    [
+     "A asks B to choose between Ramyeon and spaghetti.",
+     true,
+     "A 1"
+    ],
+    [
+     "B prefers spaghetti because it is healthier.",
+     false,
+     "B는 라면(맛)"
+    ],
+    [
+     "B thinks spaghetti is healthier.",
+     false,
+     "healthier는 A의 의견"
+    ],
+    [
+     "B asks about A’s preference.",
+     true,
+     "How about you?"
+    ],
+    [
+     "A cannot prefer the same food as B.",
+     false,
+     "I prefer Ramyeon, too. 가능"
+    ]
+   ]
+  }
+ ],
+ "stage6": [
+  {
+   "d": "D1",
+   "ans": "Who painted the picture on the right?",
+   "trap": "범위 넘기기",
+   "why": "그림 두 점과 그 속 고양이·새는 나오지만 누가 그렸는지는 언급되지 않음",
+   "ok": [
+    [
+     "Which painting does the girl like better?",
+     "The one on the left.",
+     "G 2"
+    ],
+    [
+     "Why does Minho choose a different painting from the girl?",
+     "Because he thinks the cat in the right one is cuter (and he likes the bird in it).",
+     "G 2 + B 2"
+    ],
+    [
+     "Besides the cat, what does Minho like in the painting he prefers?",
+     "The bird in it.",
+     "B 2"
+    ],
+    [
+     "Does Minho agree that the two paintings are great?",
+     "Yes, he does.",
+     "G 1 + B 1"
+    ]
+   ]
+  },
+  {
+   "d": "D2",
+   "ans": "What did the girl eat for lunch yesterday?",
+   "trap": "시제 바꾸기",
+   "why": "지금 무엇을 먹을지(비빔밥)는 나오지만 전에 먹은 음식은 언급되지 않음",
+   "ok": [
+    [
+     "What two kinds of food can they have?",
+     "Bibimbap and Galbitang.",
+     "G 1"
+    ],
+    [
+     "Why does the boy choose Bibimbap?",
+     "Because he thinks it’s the healthier choice.",
+     "B 1"
+    ],
+    [
+     "Does the girl agree with the boy’s choice?",
+     "Yes. She also likes Bibimbap more.",
+     "B 1 + G 2"
+    ],
+    [
+     "Why does the boy want to order right away?",
+     "Because he is very hungry.",
+     "B 2"
+    ]
+   ]
+  },
+  {
+   "d": "D3",
+   "ans": "Why does the girl like the green plate better?",
+   "trap": "이유↔결과 바꾸기",
+   "why": "소녀가 초록 접시를 고른 결과만 나오고, ‘더 독특하다’는 이유는 Steve의 의견임",
+   "ok": [
+    [
+     "What are the speakers looking at?",
+     "Two old plates.",
+     "G 1"
+    ],
+    [
+     "Which plate does Steve like better?",
+     "The green plate.",
+     "G 2 + B 2"
+    ],
+    [
+     "How does the girl feel about choosing one of the plates?",
+     "She finds it hard (difficult).",
+     "G 2"
+    ],
+    [
+     "What does Steve think is special about the green plate?",
+     "He thinks it is more unique.",
+     "B 2"
+    ]
+   ]
+  },
+  {
+   "d": "D4",
+   "ans": "How much does the bag with flowers cost?",
+   "trap": "속성 바꾸기",
+   "why": "가방 종류(꽃무늬·동물 무늬)는 나오지만 가격은 언급되지 않음",
+   "ok": [
+    [
+     "Who is Junsu going to give a present to?",
+     "His sister.",
+     "G 1"
+    ],
+    [
+     "What does Junsu think of the bags?",
+     "He thinks they look nice.",
+     "B 1"
+    ],
+    [
+     "What two kinds of bags does the girl show Junsu?",
+     "One with flowers and one with animals.",
+     "G 2"
+    ],
+    [
+     "Why does Junsu choose the bag with flowers?",
+     "Because he thinks his sister will like it more.",
+     "G 2 + B 2"
+    ]
+   ]
+  },
+  {
+   "d": "D5",
+   "ans": "Which food does B think is healthier?",
+   "trap": "화자 바꾸기",
+   "why": "‘김밥이 건강에 더 좋다’는 A의 (가능한) 대답이고, B는 맛(more delicious)에 대해서만 말함",
+   "ok": [
+    [
+     "What two foods does A ask B about?",
+     "Tteokbokki and Gimbap.",
+     "A 1"
+    ],
+    [
+     "Why does B like Tteokbokki more?",
+     "B thinks it’s more delicious.",
+     "B 1"
+    ],
+    [
+     "What does B want to know after giving an opinion?",
+     "Which food A prefers.",
+     "B 1"
+    ],
+    [
+     "If A prefers Gimbap, what reason does A give?",
+     "A thinks it’s healthier.",
+     "A 2"
+    ]
+   ]
+  },
+  {
+   "d": "D6",
+   "ans": "What other exhibition can they go to besides the mask exhibition?",
+   "trap": "범위 넘기기",
+   "why": "갈 수 있는 전시회가 두 개라는 것만 나오고, 탈 전시회 말고 다른 하나가 무엇인지는 언급되지 않음",
+   "ok": [
+    [
+     "Which exhibition does Eric want to see more?",
+     "The Korean mask exhibition.",
+     "B 1"
+    ],
+    [
+     "How many times a day is the mask dance show held?",
+     "Twice (at 4:00 and 6:00).",
+     "G 3"
+    ],
+    [
+     "Who has more experience with mask dance shows, Somi or Eric?",
+     "Somi. (She has seen one, but Eric never has.)",
+     "B 3 + G 4"
+    ],
+    [
+     "Why do they decide to watch the later show?",
+     "Because it’s already 4:30, so the 4:00 show has started.",
+     "G 3 + B 5"
+    ]
+   ]
+  },
+  {
+   "d": "D7",
+   "ans": "Why does the speaker want to be an inventor?",
+   "trap": "이유↔결과 바꾸기",
+   "why": "발명가가 되고 싶다는 것은 과학을 좋아하는 이유로 나오지만, 발명가가 되고 싶은 이유는 언급되지 않음",
+   "ok": [
+    [
+     "Which subject does the speaker like more?",
+     "Science.",
+     "A 1"
+    ],
+    [
+     "What does the speaker think about learning science?",
+     "It’s more fun to learn.",
+     "A 1"
+    ],
+    [
+     "Who does the speaker want to be like?",
+     "Edison.",
+     "A 1"
+    ],
+    [
+     "What does the speaker want to be in the future?",
+     "A great inventor.",
+     "A 1"
+    ]
+   ]
+  },
+  {
+   "d": "D8",
+   "ans": "How often does B eat Ramyeon?",
+   "trap": "속성 바꾸기",
+   "why": "라면을 더 좋아하고 더 맛있다고 생각한다는 것만 나오고 얼마나 자주 먹는지는 언급되지 않음",
+   "ok": [
+    [
+     "What two foods does A compare?",
+     "Ramyeon and spaghetti.",
+     "A 1"
+    ],
+    [
+     "What is B’s reason for preferring Ramyeon?",
+     "B thinks it’s more delicious.",
+     "B 1"
+    ],
+    [
+     "What does B ask A after giving an opinion?",
+     "B asks which food A prefers.",
+     "B 1"
+    ],
+    [
+     "Why might A choose spaghetti?",
+     "Because A thinks it’s healthier.",
+     "A 2"
+    ]
+   ]
+  }
+ ]
+}
