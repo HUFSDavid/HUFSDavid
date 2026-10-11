@@ -1,0 +1,1538 @@
+[
+ {
+  "no": 1,
+  "en": "weather forecast",
+  "ko": "일기예보",
+  "pos": "n. 일기예보",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The weather forecast calls for rain.",
+   "일기예보에선 비가 예상된다."
+  ]
+ },
+ {
+  "no": 2,
+  "en": "invention",
+  "ko": "발명품, 발명",
+  "pos": "n. 발명품, 발명",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a useful new device or process",
+     "유용한 새로운 장치나 공정"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "발명품, 발명"
+  },
+  "ex": [
+   "Fax machines were a wonderful invention at the time.",
+   "그 당시에는 팩스기가 기막힌 발명품이었다."
+  ]
+ },
+ {
+  "no": 3,
+  "en": "refrigerator",
+  "ko": "냉장고",
+  "pos": "n. 냉장고",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a device that is used to keep things such as food and drinks cold",
+     "식품과 음료 같은 어떤 것을 차게 유지하는 데 쓰는 장치"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "냉장고"
+  },
+  "ex": [
+   "We need a refrigerator in the office.",
+   "우리는 사무실에 냉장고가 필요하다."
+  ]
+ },
+ {
+  "no": 4,
+  "en": "sense",
+  "ko": "*감지하다, 감각",
+  "pos": "v. *감지하다, n. 감각",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to know about something through a natural ability or feeling, without being told",
+     "듣지 않아도 자연적 능력이나 감정을 통해 어떤 것에 대해 알다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "감지하다"
+  },
+  "ex": [
+   "Sensing danger, they started to run.",
+   "위험을 감지하고 그들은 뛰기 시작했다."
+  ]
+ },
+ {
+  "no": 5,
+  "en": "suggest",
+  "ko": "제안하다",
+  "pos": "v. 제안하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to offer an idea or a plan for someone to consider",
+     "누군가가 고려하도록 아이디어나 계획을 제공하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "제안하다"
+  },
+  "ex": [
+   "My dad suggested we go to a local shelter on New Year's Day.",
+   "아빠는 새해에 지역 쉼터에 갈 것을 제안하셨다."
+  ]
+ },
+ {
+  "no": 6,
+  "en": "destination",
+  "ko": "목적지",
+  "pos": "n. 목적지",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the place where someone or something is going",
+     "누군가나 어떤 것이 가려는 장소"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "목적지"
+  },
+  "ex": [
+   "The area is being promoted as a tourist destination.",
+   "그 지역은 관광 목적지로 홍보되고 있다."
+  ]
+ },
+ {
+  "no": 7,
+  "en": "set",
+  "ko": "조정하다, 맞춰 놓다",
+  "pos": "v. 조정하다, 맞춰 놓다",
+  "extra": "(set – set – set)",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 8,
+  "en": "above",
+  "ko": "~보다 위에",
+  "pos": "prep. ~보다 위에",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "We were flying above the clouds.",
+   "우리는 구름 위를 날고 있었다."
+  ]
+ },
+ {
+  "no": 9,
+  "en": "location",
+  "ko": "위치, 장소",
+  "pos": "n. 위치, 장소",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 10,
+  "en": "awesome",
+  "ko": "굉장한",
+  "pos": "a. 굉장한",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 11,
+  "en": "advanced",
+  "ko": "선진의, 진보한",
+  "pos": "a. 선진의, 진보한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "based on the most recent methods or ideas",
+     "가장 최신의 방법이나 생각에 근거한"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "선진의, 진보한"
+  },
+  "ex": [
+   "Korea will be an advanced country in ten years.",
+   "한국은 10년 후에 선진국이 될 것이다."
+  ]
+ },
+ {
+  "no": 12,
+  "en": "technology",
+  "ko": "기술",
+  "pos": "n. 기술",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a machine, piece of equipment, method, etc., that is created by technology",
+     "과학 기술에 의해 개발된 기계, 장비, 방법 따위"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "과학 기술"
+  },
+  "ex": [
+   "Romans had very advanced technology in producing concrete.",
+   "로마인들은 콘크리트를 만드는 데 매우 진보적인 기술을 갖고 있었다."
+  ]
+ },
+ {
+  "no": 13,
+  "en": "function",
+  "ko": "기능",
+  "pos": "n. 기능",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the special purpose or activity for which a thing exists or is used",
+     "어떤 것이 존재하거나 사용되는 특별한 목적, 역할"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "기능"
+  },
+  "ex": [
+   "He is looking for a mobile phone with a recording function.",
+   "그는 녹음 기능을 가진 휴대 전화를 찾고 있다."
+  ]
+ },
+ {
+  "no": 14,
+  "en": "accident",
+  "ko": "사고",
+  "pos": "n. 사고",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a crash involving a car, train, airplane, or other vehicle",
+     "차, 기차, 비행기나 다른 탈 것에 의한 사고"
+    ]
+   ],
+   "syn": "crash",
+   "opp": "",
+   "ko_head": "사고"
+  },
+  "ex": [
+   "His careless driving caused the accident.",
+   "그의 부주의한 운전은 그 사고를 야기했다."
+  ]
+ },
+ {
+  "no": 15,
+  "en": "control",
+  "ko": "제어하다, 통제하다",
+  "pos": "v. 제어하다, 통제하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to direct the behavior of a person or animal",
+     "사람이나 동물의 행동을 지시하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "제어하다, 통제하다"
+  },
+  "ex": [
+   "Traffic lights control the movement of cars at intersections.",
+   "신호등은 교차로에서 차의 이동을 통제한다."
+  ]
+ },
+ {
+  "no": 16,
+  "en": "brain",
+  "ko": "뇌",
+  "pos": "n. 뇌",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "When you laugh, your brain works better.",
+   "당신이 웃을 때 당신의 뇌는 더 잘 활동한다."
+  ]
+ },
+ {
+  "no": 17,
+  "en": "thought",
+  "ko": "생각",
+  "pos": "n. 생각",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "A good teacher encourages independence of thought.",
+   "좋은 교사는 독립적인 사고를 장려한다."
+  ]
+ },
+ {
+  "no": 18,
+  "en": "electronic",
+  "ko": "전자의",
+  "pos": "a. 전자의",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "This dictionary is available in electronic form.",
+   "이 사전은 전자 형태로 나온다."
+  ]
+ },
+ {
+  "no": 19,
+  "en": "signal",
+  "ko": "신호",
+  "pos": "n. 신호",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The siren was a signal for everyone to leave the building.",
+   "그 사이렌은 모든 사람들에게 그 건물을 떠나라는 신호였다."
+  ]
+ },
+ {
+  "no": 20,
+  "en": "travel",
+  "ko": "여행하다, *이동하다",
+  "pos": "v. 여행하다, *이동하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to move from one place to another",
+     "한 장소에서 다른 장소로 이동하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "이동하다"
+  },
+  "ex": [
+   "Sound travels at high speed in air.",
+   "소리는 공기 중에서 빠른 속도로 이동한다."
+  ]
+ },
+ {
+  "no": 21,
+  "en": "label",
+  "ko": "표, 딱지, 라벨",
+  "pos": "n. 표, 딱지, 라벨",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Put this label on the side.",
+   "옆에다 이 라벨을 붙여 주세요."
+  ]
+ },
+ {
+  "no": 22,
+  "en": "outer space",
+  "ko": "(지구의) 대기권 밖",
+  "pos": "n. (지구의) 대기권 밖",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Astronauts have to spend a lot of time in outer space.",
+   "우주비행사들은 우주 공간에서 많은 시간을 보내야만 한다."
+  ]
+ },
+ {
+  "no": 23,
+  "en": "farming",
+  "ko": "농업, 농작",
+  "pos": "n. 농업, 농작",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "This land is unfit for farming.",
+   "이 토지는 농사에 적합하지 않다."
+  ]
+ },
+ {
+  "no": 24,
+  "en": "resource",
+  "ko": "자원",
+  "pos": "n. 자원",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Land is a natural resource.",
+   "땅은 천연자원이다."
+  ]
+ },
+ {
+  "no": 25,
+  "en": "instead",
+  "ko": "대신에",
+  "pos": "adv. 대신에",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "If you can’t attend the meeting, I could go instead.",
+   "네가 회의에 참석할 수 없다면, 내가 대신 갈 수 있어."
+  ]
+ },
+ {
+  "no": 26,
+  "en": "lab",
+  "ko": "실험실",
+  "pos": "n. 실험실",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "We sent the thing to the lab for testing.",
+   "우리는 테스트를 위해 그 물건을 실험실에 보냈다."
+  ]
+ },
+ {
+  "no": 27,
+  "en": "cell",
+  "ko": "세포",
+  "pos": "n. 세포",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The cell split up many pieces.",
+   "세포는 여러 조각으로 분열되었다."
+  ]
+ },
+ {
+  "no": 28,
+  "en": "require",
+  "ko": "필요로 하다, 요구하다",
+  "pos": "v. 필요로 하다, 요구하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to need something",
+     "어떤 것을 필요로 하다"
+    ]
+   ],
+   "syn": "need",
+   "opp": "",
+   "ko_head": "필요로 하다, 요구하다"
+  },
+  "ex": [
+   "What style of house do you require?",
+   "어떤 스타일의 집을 필요로 하세요?"
+  ]
+ },
+ {
+  "no": 29,
+  "en": "nutrient",
+  "ko": "영양분",
+  "pos": "n. 영양분",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a substance that plants, animals, and people need to live and grow",
+     "동식물, 사람이 살아가고 성장하는 데 필요한 물질"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "영양분"
+  },
+  "ex": [
+   "Plants draw minerals and other nutrients from the soil.",
+   "식물은 무기물과 다른 영양분을 땅에서 얻는다."
+  ]
+ },
+ {
+  "no": 30,
+  "en": "almost",
+  "ko": "거의",
+  "pos": "adv. 거의",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Humans live in almost every part of the earth.",
+   "인간은 지구상의 거의 모든 지역에 산다."
+  ]
+ },
+ {
+  "no": 31,
+  "en": "cashier",
+  "ko": "계산원",
+  "pos": "n. 계산원",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "You can pay the cashier at the front.",
+   "프런트에 있는 계산원에게 지불하시면 됩니다."
+  ]
+ },
+ {
+  "no": 32,
+  "en": "sensor",
+  "ko": "감지기, 센서",
+  "pos": "n. 감지기, 센서",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The desk has a special sensor.",
+   "그 책상은 특별한 감지기가 있다."
+  ]
+ },
+ {
+  "no": 33,
+  "en": "anymore",
+  "ko": "이제는 (…않다)",
+  "pos": "adv. 이제는 (…않다)",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I really don't feel like working anymore.",
+   "나는 정말 더 이상 일하고 싶지 않아."
+  ]
+ },
+ {
+  "no": 34,
+  "en": "task",
+  "ko": "(부과된) 일, 과업",
+  "pos": "n. (부과된) 일, 과업",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a job for someone to do",
+     "어떤 사람이 해야 할 과업"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(부과된) 일, 과업"
+  },
+  "ex": [
+   "Losing weight can be a very difficult task.",
+   "체중 감량은 매우 어려운 일일 수 있다."
+  ]
+ },
+ {
+  "no": 35,
+  "en": "delivery",
+  "ko": "배달",
+  "pos": "n. 배달",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the act of taking something to a person or place",
+     "어떤 것을 어떤 사람이나 장소로 가져가는 행동"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "배달"
+  },
+  "ex": [
+   "This shop offers delivery service for customers.",
+   "이 가게는 고객을 위해 배달 서비스를 제공합니다."
+  ]
+ },
+ {
+  "no": 36,
+  "en": "factory",
+  "ko": "공장",
+  "pos": "n. 공장",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a building or group of buildings where products are made",
+     "제품을 만들어 내는 하나 또는 여럿의 건물"
+    ]
+   ],
+   "syn": "plant",
+   "opp": "",
+   "ko_head": "공장"
+  },
+  "ex": [
+   "The factory was built for the production of cars.",
+   "공장은 차를 생산하기 위해 지어졌다."
+  ]
+ },
+ {
+  "no": 37,
+  "en": "public",
+  "ko": "공공의, 일반 대중의의",
+  "pos": "a. 공공의, 일반 대중의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "available for people in general to use",
+     "일반인들이 사용 가능한"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "공공의, 일반 대중의"
+  },
+  "ex": [
+   "Public libraries are handy for finding information.",
+   "공공 도서관은 정보를 찾는 데 편리하다."
+  ]
+ },
+ {
+  "no": 38,
+  "en": "perform",
+  "ko": "수행하다",
+  "pos": "v. 수행하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to do an action or activity that usually requires training or skill",
+     "대개 훈련이나 기술이 필요한 행동이나 활동을 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "수행하다"
+  },
+  "ex": [
+   "She performs an important role in our organization.",
+   "그녀는 우리 단체에서 중요한 역할을 수행한다."
+  ]
+ },
+ {
+  "no": 39,
+  "en": "program",
+  "ko": "프로그래밍하다",
+  "pos": "v. 프로그래밍하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to give a computer a set of instructions to perform a particular action",
+     "특정 작업을 수행하도록 컴퓨터에 일련의 명령을 내리다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "프로그래밍하다"
+  },
+  "ex": [
+   "In this class, students will learn how to program.",
+   "이 수업에서 학생들은 프로그램을 짜는 법을 배울 것이다."
+  ]
+ },
+ {
+  "no": 40,
+  "en": "artificial",
+  "ko": "인공적인, 인조의",
+  "pos": "a. 인공적인, 인조의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not natural or real",
+     "자연적이거나 진짜가 아닌"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "인공적인, 인조의"
+  },
+  "ex": [
+   "She made artificial flowers from paper.",
+   "그녀는 종이로 조화를 만들었다."
+  ]
+ },
+ {
+  "no": 41,
+  "en": "intelligence",
+  "ko": "지능",
+  "pos": "n. 지능",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the ability to learn or understand things",
+     "사물에 대해 배우거나 이해하는 능력"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "지능"
+  },
+  "ex": [
+   "A dog has more intelligence than many other animals.",
+   "개는 다른 많은 동물들보다 지능이 더 높다."
+  ]
+ },
+ {
+  "no": 42,
+  "en": "perceive",
+  "ko": "인지하다, 지각하다",
+  "pos": "v. 인지하다, 지각하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to notice or become aware of something",
+     "어떤 것을 알아차리거나 의식하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "인지하다, 지각하다"
+  },
+  "ex": [
+   "People tend to perceive their environment through their own experiences.",
+   "사람들은 그들 자신의 경험을 통해 환경을 인식하는 경향이 있다."
+  ]
+ },
+ {
+  "no": 43,
+  "en": "environment",
+  "ko": "환경",
+  "pos": "n. 환경",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the conditions that surround someone or something",
+     "사람 또는 사물을 둘러싸는 상태"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "환경"
+  },
+  "ex": [
+   "Using too much detergent will pollute the environment.",
+   "너무 많은 세제를 사용하는 것은 환경을 오염시킬 것이다."
+  ]
+ },
+ {
+  "no": 44,
+  "en": "decision",
+  "ko": "결정",
+  "pos": "n. 결정",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a choice that you make about something after thinking about it",
+     "어떤 것에 대해 생각한 후에 하는 선택"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "결정"
+  },
+  "ex": [
+   "The decision was criticized by environmental groups.",
+   "그 결정은 환경 단체들한테 비판을 받았다."
+  ]
+ },
+ {
+  "no": 45,
+  "en": "recognize",
+  "ko": "알아보다, 인식하다",
+  "pos": "v. 알아보다, 인식하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to know and remember someone or something",
+     "누군가나 어떤 것을 알고 기억하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "알아보다, 인식하다"
+  },
+  "ex": [
+   "It's important to recognize your own faults.",
+   "자신의 잘못을 인지하는 것은 중요하다."
+  ]
+ },
+ {
+  "no": 46,
+  "en": "speech",
+  "ko": "연설, *(말하는) 말",
+  "pos": "n. 연설, *(말하는) 말",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "spoken language",
+     "일상 대화에서 쓰는 말"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(말하는) 말"
+  },
+  "ex": [
+   "His rapid speech was difficult to understand.",
+   "그의 빠른 말은 이해하기 어려웠다."
+  ]
+ },
+ {
+  "no": 47,
+  "en": "act",
+  "ko": "*행동하다, 행동",
+  "pos": "v. *행동하다 n. 행동",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to do something",
+     "어떤 일을 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "행동하다"
+  },
+  "ex": [
+   "The boy acted like a baby.",
+   "그 소년은 아기처럼 행동했다."
+  ]
+ },
+ {
+  "no": 48,
+  "en": "praise",
+  "ko": "칭찬",
+  "pos": "n. 칭찬",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "an expression of approval for someone or something",
+     "어떤 사람 또는 물건에 대한 좋은 견해의 표현"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "칭찬"
+  },
+  "ex": [
+   "He was indifferent to the praise.",
+   "그는 칭찬에 무심했다."
+  ]
+ },
+ {
+  "no": 49,
+  "en": "present",
+  "ko": "현재의, *현재, 선물",
+  "pos": "a. 현재의, n. *현재, 선물",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the time now",
+     "지금"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "현재"
+  },
+  "ex": [
+   "The future depends on what we do in the present.",
+   "미래는 현재에 우리가 무엇을 하는지에 달려있다."
+  ]
+ },
+ {
+  "no": 50,
+  "en": "anywhere",
+  "ko": "어디에서도",
+  "pos": "adv. 어디에서도",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "in, at, or to any place",
+     "어디서나, 어디에나, 어디로나"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "어디에서도"
+  },
+  "ex": [
+   "We looked for the puppy but couldn't find it anywhere.",
+   "우리는 강아지를 찾아 다녔지만 어디에서도 찾을 수 없었다."
+  ]
+ },
+ {
+  "no": 51,
+  "en": "road",
+  "ko": "도로, 길",
+  "pos": "n. 도로, 길",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a hard flat surface for vehicles, people, and animals to travel on",
+     "차량, 사람, 동물이 다닐 수 있게 되어 있는 단단하고 평평한 표면"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "길"
+  },
+  "ex": [
+   "Cars were driving along the road.",
+   "차들이 길을 따라 달리고 있었다."
+  ]
+ },
+ {
+  "no": 52,
+  "en": "disaster",
+  "ko": "재난, 재해",
+  "pos": "n. 재난, 재해",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "something that happens suddenly and causes much suffering or loss to many people",
+     "갑자기 발생해 많은 사람들에게 막대한 고통이나 손실을 입히는 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "재난, 재해"
+  },
+  "ex": [
+   "A flood is one type of natural disaster.",
+   "홍수는 자연 재해의 일종이다."
+  ]
+ },
+ {
+  "no": 53,
+  "en": "area",
+  "ko": "지역",
+  "pos": "n. 지역",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a part or section within a larger place",
+     "더 넓은 영역 안의 한 부분이나 구획"
+    ]
+   ],
+   "syn": "region",
+   "opp": "",
+   "ko_head": "지역"
+  },
+  "ex": [
+   "The farmers in this area are very busy at this time of year.",
+   "이 지역의 농부들은 일 년 중 이때 매우 바쁩니다."
+  ]
+ },
+ {
+  "no": 54,
+  "en": "throughout",
+  "ko": "~동안 쭉, 내내",
+  "pos": "prep. ~동안 쭉, 내내",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Throughout her life, she has suffered with the disease.",
+   "그녀의 일생동안, 그녀는 그 병으로 고통 받았다."
+  ]
+ },
+ {
+  "no": 55,
+  "en": "emotion",
+  "ko": "감정",
+  "pos": "n. 감정",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a strong feeling such as love, anger, joy, hate, or fear",
+     "사랑, 노여움, 기쁨, 미움, 두려움 같은 강한 느낌"
+    ]
+   ],
+   "syn": "feeling",
+   "opp": "",
+   "ko_head": "감정"
+  },
+  "ex": [
+   "Music is a tool to express man's emotion.",
+   "음악은 사람의 감정을 표현하는 도구다."
+  ]
+ },
+ {
+  "no": 56,
+  "en": "navigate",
+  "ko": "항해하다, *길을 찾다",
+  "pos": "v. 항해하다, *길을 찾다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to find the way to get to a place when you are traveling in a ship, airplane, car, etc.",
+     "배, 비행기, 차 등으로 가면서 목적지에 이르는 길을 찾다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "길을 찾다"
+  },
+  "ex": [
+   "How do you navigate your way through a forest?",
+   "당신은 숲 속에서 길을 어떻게 찾나요?"
+  ]
+ },
+ {
+  "no": 57,
+  "en": "relax",
+  "ko": "휴식을 취하다",
+  "pos": "v. 휴식을 취하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to spend time resting or doing something enjoyable",
+     "쉬거나 즐거운 것을 하면서 시간을 보내다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "휴식을 취하다"
+  },
+  "ex": [
+   "You’d better relax for a while.",
+   "너는 당분간 휴식을 취하는 게 좋겠어."
+  ]
+ },
+ {
+  "no": 58,
+  "en": "ride",
+  "ko": "타다, *타고 가기",
+  "pos": "v. 타다 n. *타고 가기",
+  "extra": "(ride – rode – ridden)",
+  "ee": {
+   "defs": [
+    [
+     "a usually short journey in or on a vehicle",
+     "운송 수단에 타고서 하는 대개 짧은 여행"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "타고 가기"
+  },
+  "ex": [
+   "Do you need a ride home?",
+   "집에 가는 데 태워 줄까?"
+  ]
+ },
+ {
+  "no": 59,
+  "en": "swarm",
+  "ko": "떼, 벌 떼",
+  "pos": "n. 떼, 벌 떼",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a very large number of insects moving together",
+     "집단적으로 이동하는 아주 많은 수의 곤충"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "떼, 벌 떼"
+  },
+  "ex": [
+   "A swarm of bees passed over the field like a cloud.",
+   "벌 떼가 구름처럼 들판을 지나갔다."
+  ]
+ },
+ {
+  "no": 60,
+  "en": "including",
+  "ko": "~을 포함하여",
+  "pos": "prep. ~을 포함하여",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I need to buy some items including house wares.",
+   "나는 가정용품을 포함하여 몇몇 물건을 살 필요가 있다."
+  ]
+ },
+ {
+  "no": 61,
+  "en": "building site",
+  "ko": "건설 현장",
+  "pos": "n. 건설 현장",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "They worked on a building site.",
+   "그들은 건설 현장에서 일했다."
+  ]
+ },
+ {
+  "no": 62,
+  "en": "solution",
+  "ko": "해결책, 해법",
+  "pos": "n. 해결책, 해법",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "something that is used or done to deal with and end a problem",
+     "문제를 처리하거나 결말짓기 위해 사용하는 어떤 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "해결책, 해법"
+  },
+  "ex": [
+   "Each student had a different solution to the problem.",
+   "각 학생들은 그 문제에 대해 다른 해결책을 내었다."
+  ]
+ },
+ {
+  "no": 63,
+  "en": "search-and-rescue",
+  "ko": "수색 구조",
+  "pos": "n. 수색 구조",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 64,
+  "en": "survivor",
+  "ko": "생존자",
+  "pos": "n. 생존자",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who continues to live after an accident, illness, war, etc.",
+     "사고, 질병, 전쟁 등이 있은 후에도 계속 살아 있는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "생존자"
+  },
+  "ex": [
+   "My father was the single survivor of the battle.",
+   "아버지는 그 전투의 유일한 생존자였다."
+  ]
+ },
+ {
+  "no": 65,
+  "en": "clear",
+  "ko": "*치우다, 분명한, 명쾌한",
+  "pos": "v. *치우다 a. 분명한, 명쾌한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to remove something entirely from an area or place",
+     "어떤 지역이나 장소에서 어떤 것을 다 치우다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "치우다"
+  },
+  "ex": [
+   "I cleared my desk of papers.",
+   "나는 책상에서 종이들을 치웠다."
+  ]
+ },
+ {
+  "no": 66,
+  "en": "route",
+  "ko": "길, 경로",
+  "pos": "n. 길, 경로",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a way to get from one place to another place",
+     "한 장소에서 다른 장소로 가는 길"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "길, 경로"
+  },
+  "ex": [
+   "The coastal path is a popular route for walkers.",
+   "그 해안 도로는 걷기를 좋아하는 사람들에게 인기 있는 길이다."
+  ]
+ },
+ {
+  "no": 67,
+  "en": "escape",
+  "ko": "탈출하다, 달아나다",
+  "pos": "v. 탈출하다, 달아나다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to get away from a place where you are being held or kept",
+     "잡혀 있거나 갇혀 있던 장소에서 달아나다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "탈출하다, 달아나다"
+  },
+  "ex": [
+   "Unfortunately, the pilot couldn't escape from the plane.",
+   "불행히도 조종사는 비행기에서 탈출할 수 없었다."
+  ]
+ },
+ {
+  "no": 68,
+  "en": "safety",
+  "ko": "안전, *안전한 곳",
+  "pos": "n. 안전, *안전한 곳",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a place that is free from harm or danger",
+     "해나 위험이 없는 곳"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "안전한 곳"
+  },
+  "ex": [
+   "The miners were all able to reach safety.",
+   "광부들은 모두 안전한 곳까지 다다를 수 있었다."
+  ]
+ },
+ {
+  "no": 69,
+  "en": "toward",
+  "ko": "~을 향하여",
+  "pos": "prep. ~을 향하여",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 70,
+  "en": "bright",
+  "ko": "밝은",
+  "pos": "a. 밝은",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "providing a reason for hope",
+     "희망을 가질 이유가 있는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(앞날이) 밝은, 희망적인"
+  },
+  "ex": [
+   "Prospects for the coming year look bright.",
+   "다가올 한 해의 전망은 밝아 보인다."
+  ]
+ },
+ {
+  "no": 71,
+  "en": "perfect",
+  "ko": "완벽한",
+  "pos": "a. 완벽한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having no mistakes or flaws",
+     "실수나 결함이 없는"
+    ]
+   ],
+   "syn": "",
+   "opp": "imperfect",
+   "ko_head": "완벽한"
+  },
+  "ex": [
+   "The weather was perfect.",
+   "날씨는 완벽했다."
+  ]
+ },
+ {
+  "no": 72,
+  "en": "expect",
+  "ko": "기대하다",
+  "pos": "v. 기대하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to think that something will probably or certainly happen",
+     "어떤 일이 아마도 또는 확실히 일어날 것이라고 생각하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "기대하다"
+  },
+  "ex": [
+   "I expected him to get a good grade.",
+   "나는 그가 좋은 성적을 받으리라 기대했다."
+  ]
+ },
+ {
+  "no": 73,
+  "en": "convenient",
+  "ko": "편리한",
+  "pos": "a. 편리한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "allowing you to do something easily or without trouble",
+     "어떤 일을 쉽거나 불편 없이 할 수 있게 해 주는"
+    ]
+   ],
+   "syn": "",
+   "opp": "inconvenient",
+   "ko_head": "편리한"
+  },
+  "ex": [
+   "Online shopping is both cheap and convenient.",
+   "온라인 쇼핑은 값도 싸고 편리하다."
+  ]
+ },
+ {
+  "no": 74,
+  "en": "threat",
+  "ko": "위험, 위협",
+  "pos": "n. 위험, 위협",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "someone or something that could cause trouble, harm, etc.",
+     "어려움, 해 따위를 일으킬 수 있는 사람이나 어떤 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "위협"
+  },
+  "ex": [
+   "It was a threat to world peace.",
+   "그것은 세계 평화에 대한 위협이었다."
+  ]
+ },
+ {
+  "no": 75,
+  "en": "possible",
+  "ko": "가능한",
+  "pos": "a. 가능한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "able to be done",
+     "행할 수 있는"
+    ]
+   ],
+   "syn": "",
+   "opp": "impossible",
+   "ko_head": "가능한"
+  },
+  "ex": [
+   "It’s not possible to see all the exhibitions in a day.",
+   "모든 전시회를 하루에 보는 것은 가능하지 않다."
+  ]
+ },
+ {
+  "no": 76,
+  "en": "ensure",
+  "ko": "반드시 …하게 하다",
+  "pos": "v. 반드시 …하게 하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to make something sure, certain, or safe",
+     "어떤 것을 확실하거나 안전하게 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "반드시 …하게 하다"
+  },
+  "ex": [
+   "Please ensure that all lights are switched off.",
+   "모든 불은 반드시 끄도록 하세요."
+  ]
+ },
+ {
+  "no": 77,
+  "en": "good",
+  "ko": "*좋은 일, 선, 좋은, 착한",
+  "pos": "n. *좋은 일, 선 a. 좋은, 착한",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The play is about the battle between good and evil.",
+   "연극은 선과 악 사이의 싸움에 관한 것이다. Phrases in Use"
+  ]
+ },
+ {
+  "no": 78,
+  "en": "in detail",
+  "ko": "상세하게",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 79,
+  "en": "turn A into B",
+  "ko": "A를 B로 바꾸다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 80,
+  "en": "go bad",
+  "ko": "상하다, 썩다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 81,
+  "en": "work on",
+  "ko": "~에 노력을 들이다, 착수하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 82,
+  "en": "such as",
+  "ko": "~와 같은",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 83,
+  "en": "come true",
+  "ko": "실현되다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 84,
+  "en": "pay for",
+  "ko": "대가를 지불하다, 돈을 내다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 85,
+  "en": "keep track of",
+  "ko": "…을 추적하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 86,
+  "en": "a variety of",
+  "ko": "다양한",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 87,
+  "en": "be able to",
+  "ko": "~할 수 있다 (+ 동사원형)",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 88,
+  "en": "deal with",
+  "ko": "(문제・과제 등을) 처리하다",
+  "pos": "",
+  "extra": "(문제・과제 등을) 처리하다",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 89,
+  "en": "as a group",
+  "ko": "집단적으로",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 90,
+  "en": "a threat to",
+  "ko": "~에 대한 위협",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ }
+]
