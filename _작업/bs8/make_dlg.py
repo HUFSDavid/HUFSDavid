@@ -13,7 +13,7 @@ dialogues = [
   "Is it possible to + 동사원형? : 어떤 일이 실제로 {가능한지} 묻는 말 — it은 가주어, to eat ~이 진주어",
   "현재완료(경험) : I’ve read ~ ‘~을 {읽은 적이 있다}’ — read의 과거분사는 철자가 같은 read",
   "전치사 about / for : an article {about} ~ ‘~에 관한 기사’ / ramyeon {for} astronauts ‘우주 비행사들을 위한 라면’"]},
- {"id": "D2", "label": "Listen & Talk 1 · A. Listen and Number (1)", "lines": [
+ {"id": "D2", "label": "Listen & Talk 1 · A. Listen and Number 1", "lines": [
   ["M", "Welcome back to Earth, Irene. What was your {favorite part} about {being} in the space station?", "지구로 돌아오신 것을 환영합니다, Irene 씨. 우주 정거장에서 보낸 시간 중 가장 좋았던 부분은 무엇이었나요?"],
   ["W", "I could see a beautiful sunrise {16 times a day}. It was great.", "저는 하루에 16번씩 아름다운 일출을 볼 수 있었어요. 그것은 굉장했죠."],
   ["M", "{Is it possible to} see the sunrise {several times} a day in space?", "우주에서는 하루에 여러 번 일출을 보는 것이 가능한가요?"],
@@ -25,7 +25,7 @@ dialogues = [
   "Is it possible to ~? : 어떤 일이 실제로 {가능한지} 묻기 — 뒤에 동사원형(see)",
   "접속사 because + 주어 + 동사 : ‘~하기 {때문에}’ — 가능한 이유를 덧붙임 (because of + 명사와 구별)",
   "every + 숫자 + 복수명사 : ‘~{마다}’ — every 90 minutes ‘90분마다’"]},
- {"id": "D3", "label": "Listen & Talk 1 · A. Listen and Number (2)", "lines": [
+ {"id": "D3", "label": "Listen & Talk 1 · A. Listen and Number 2", "lines": [
   ["M", "Irene, what was {the best food} you ate in the space station?", "Irene 씨, 우주 정거장에서 드셨던 것 중 최고의 음식은 무엇이었나요?"],
   ["W", "Hmm... . We {grew some vegetables} and {ate them} every day. They were pretty {fresh and tasty}!", "음.... 우리는 채소를 좀 길러서 매일 그걸 먹었어요. 아주 신선하고 맛있었어요!"],
   ["M", "Wow, {is it possible to} grow vegetables in the space station?", "와, 우주 정거장에서 채소를 기르는 것이 가능한가요?"],
@@ -70,7 +70,7 @@ dialogues = [
   "come true : ‘(꿈이) {이루어지다}’ — come + 형용사 ‘~이 되다’",
   "I wish I could ~ : 현재 이루기 어려운 {소망} 말하기 ‘~할 수 있으면 좋겠다’ (I wish + 주어 + 과거형)",
   "the same A as B : ‘B와 {같은} A’"]},
- {"id": "D7", "label": "Listen & Talk 2 · A. Listen and Choose (1)", "lines": [
+ {"id": "D7", "label": "Listen & Talk 2 · A. Listen and Choose 1", "lines": [
   ["M", "Look at these {colorful pictures} of the universe.", "우주의 이 화려한 사진들 좀 봐."],
   ["W", "Oh, they're beautiful. {I wish I could} see Earth from space {with my own eyes}.", "오, 아름다워. 난 내 눈으로 우주에서 지구를 보면 좋겠어."],
   ["M", "Actually, you can {do that} at the {National Youth Space Center}.", "사실, 국립 청소년 우주 센터에서 그것을 할 수 있어."],
@@ -82,7 +82,7 @@ dialogues = [
   "do that : 앞 내용의 반복을 피하는 말 — that = 우주에서 지구를 {보는 것}",
   "I heard that ~ : 들어서 {알게 된} 정보 전하기 (that은 접속사, 생략 가능)",
   "feel like + 주어 + 동사 : ‘~인 것처럼 {느끼다}’ (feel like -ing ‘~하고 싶다’와 구별)"]},
- {"id": "D8", "label": "Listen & Talk 2 · A. Listen and Choose (2)", "lines": [
+ {"id": "D8", "label": "Listen & Talk 2 · A. Listen and Choose 2", "lines": [
   ["W", "What are you watching?", "너 뭐 보고 있니?"],
   ["M", "It's a {documentary} about {life in space}. {Everything seems} so different.", "우주에서의 생활에 대한 다큐멘터리야. 모든 게 너무 달라 보여."],
   ["W", "Yes, {it's because} there's {no gravity} in space.", "맞아, 그건 우주에 중력이 없기 때문이야."],
@@ -134,7 +134,7 @@ dialogues = [
   "not entirely : ‘{완전히} ~한 것은 아닌’(부분부정) — not entirely impossible = 어느 정도 가능함",
   "Is it actually possible to ~? : actually로 ‘{실제로}’ 가능한지 강조 — it 가주어, to fly ~ 진주어",
   "to부정사의 부사적 용법(목적) : to create ‘~을 {만들기 위해}’ / have applied 현재완료"]},
- {"id": "D12", "label": "Communication · STEP B. Role-Play", "lines": [
+ {"id": "D12", "label": "Communication · STEP B. Role-Play (e.g.)", "lines": [
   ["A", "{I wish I could} have {the robotic taxi} from the movie Total Recall.", "전 <토탈 리콜>이라는 영화에 나오는 로봇 택시를 가지면 좋겠어요."],
   ["B", "Actually, I read somewhere that this is {not entirely impossible}.", "사실, 제가 어디선가 읽었는데 이게 완전히 불가능한 건 아니래요."],
   ["A", "Really? {Is it actually possible to} go anywhere {without a human driver}?", "정말이요? 인간 운전사 없이 어디로든 가는 게 실제로 가능해요?"],
