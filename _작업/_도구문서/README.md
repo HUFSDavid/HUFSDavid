@@ -1,4 +1,4 @@
-# David 내신 세트 생성 도구 (v1.3.2 · 2026-10-11 YBM박7 · 기준 샘플: 동아윤 7과)
+# David 내신 세트 생성 도구 (v1.3.2 · 2026-10-11 YBM박8 · 기준 샘플: 동아윤 7과)
 
 새 채팅에서 이 폴더(`_도구.zip`)를 작업 공간에 풀어서 그대로 쓴다. 스킬(david-voca-5step / david-dialogue / david-grammar-bible / david-reading / david-cover)의 규칙이 우선이고, 이 폴더는 그 규칙을 구현한 생성기다.
 
@@ -19,9 +19,10 @@ LibreOffice로 PDF 렌더 → 표지 1쪽·로고·빈칸 확인.
 - `lib/dialogue.js` 대화 (학습지 교사/학생 + 6단계 문제/답지, 14파일)
 - `lib/reading.js` 본문 자료집 (학생용·교사용 2파일)
 - `david/` 문법 GRAMMAR BIBLE 키트 (david_base.js + 항목별 build_G-*.js / retest_G-*.js, 각 4파일)
-- `examples/동아윤7/` 실제 설정·데이터 예시 (새 세트는 이 형식을 복사해 내용만 바꿔 작성) · `examples/동아윤8/`, `examples/동아이7/`, `examples/동아이8/`, `examples/천재정7/`, `examples/천재정8/`, `examples/능률김7/`, `examples/비상김7/`, `examples/비상김8/`, `examples/YBM박7/`도 같은 형식 (`examples/능률김8/`은 능률김8과_결과.zip 안 _도구.zip에만 있음)
+- `examples/동아윤7/` 실제 설정·데이터 예시 (새 세트는 이 형식을 복사해 내용만 바꿔 작성) · `examples/동아윤8/`, `examples/동아이7/`, `examples/동아이8/`, `examples/천재정7/`, `examples/천재정8/`, `examples/능률김7/`, `examples/비상김7/`, `examples/비상김8/`, `examples/YBM박7/`, `examples/YBM박8/`도 같은 형식 (`examples/능률김8/`은 능률김8과_결과.zip 안 _도구.zip에만 있음)
 
 ## 변경 이력
+- (v1.3.2 그대로, 2026-10-11, YBM박8): lib·david_base.js 변경 없음. 단어 정리 `examples/YBM박8/fix_data.py`(YBM박7판에 parse_wt가 줄바꿈으로 놓친 번호 항목 추가·'*' 줄 쉼표 잇기·해석이 「·숫자로 시작해 영어 예문 끝에 붙은 조각 옮기기 추가). 새 문법 `build/retest/map_G-beworth`(문서 제목 'be worth -ing', 파일명 `L8_DAVID_G-beworth_beworth_*`, 빈칸 2개 문장 U+200B 처리 포함). 분사구문은 공통 스크립트를 COVER·PREFIX만 바꿔 재실행.
 - (v1.3.2 그대로, 2026-10-11, YBM박7): lib·david_base.js 변경 없음. 원본 추출 `examples/YBM박7/extract.py` 추가(세로 워터마크가 양쪽 여백에 있고 일부 글자가 NFD 자모 → NFC 후 x<16·x>폭-16의 한 글자 줄 제거, ①~⑳·숫자·영문 1~2글자는 유지). 단어 정리 `examples/YBM박7/fix_data.py`(비상김8판에 syn 칸 'OPP …' 분리·영문 3글자 미만 정의 조각 삭제 추가). 새 문법 `build/retest/map_G-관계부사how`, `build/retest/map_G-the비교급`(문서 제목 'the + 비교급, the + 비교급', 파일명 `L7_DAVID_G-the비교급_the비교급_*`, 빈칸 2개 문장 U+200B 처리 포함).
 - (v1.3.2 그대로, 2026-10-11, 비상김8): lib·david_base.js 변경 없음. 단어: `parse_wt.py`가 WORD TEST Word List에서 두 줄로 나뉜 품사·뜻을 잘라 25개가 잘림(back·wish·head·punch는 뜻 칸이 빔) → `examples/비상김8/fix_data.py`로 Word List 원문을 다시 붙이고 예문 해석 칸('예문 …'·'Phrases in Use')·영어 이름 위치·영영 'SYN' 조각을 한 번에 정리(새 세트도 build_data.py 다음에 돌려 볼 것, 원본은 *_data_raw.json). 가정법 과거는 공통 스크립트를 COVER·PREFIX만 바꿔 재실행. 새 문법 `build/retest/map_G-with분사`(문서 제목 'with + 명사 + 분사', 파일명 `L8_DAVID_G-with분사_with분사_*`, 빈칸 2개 문장 U+200B 처리 포함).
 - (v1.3.2, 2026-10-10, 비상김7): lib·david_base.js 변경 없음(아래 dlgLabel 복원 제외). 드라이브에서 찾은 최신 _도구.zip에 v1.3.1의 `dialogue.js` dlgLabel이 빠져 있어 다시 넣음(`subtitle: cfg.lessonTitle + "  ·  " + (cfg.dlgLabel || "Listen & Talk")`). 7과는 Listen & Talk가 있어 dlgLabel 미사용. 단어 데이터 정리: `build_data.py` 예문 해석 칸의 두 번째 예문('…예문 …')·'Phrases in Use' 삭제(back·last·discount·purchase·anchor·moment), `parse_wt.py` split_ko가 첫 한글에서 자르기 때문에 해석이 영어 이름으로 시작하는 예문(‘Julia는 …’)은 이름이 영어 예문 끝에 붙고 해석이 ‘는 …’으로 시작함 → 20개 고침(새 세트도 확인할 것), 두 줄로 나뉜 뜻(release·above)은 WORD TEST에서 직접 채움, 정의 앞 U+200B 제거. 접속사 as는 공통 스크립트를 COVER·PREFIX만 바꿔 재실행. 새 문법 `build/retest/map_G-수의일치`(빈칸 2개 문장 U+200B 처리 포함).
@@ -65,5 +66,5 @@ LibreOffice로 PDF 렌더 → 표지 1쪽·로고·빈칸 확인.
 | 비상김 7 | 동백 | 접속사 as(공통), 수의 일치 (완료) |
 | 비상김 8 | 동백 | 가정법 과거(공통·완료), with+명사+분사 (완료) |
 | YBM박 7 | 죽전 | 관계부사 how, the+비교급 (완료) |
-| YBM박 8 | 죽전 | 분사구문(공통·완료), be worth -ing |
+| YBM박 8 | 죽전 | 분사구문(공통·완료), be worth -ing (완료) |
 가정법 과거는 동아윤8·능률김7·비상김8 공통 → 처음 만들 때 공통으로 만들고 각 폴더에 복사.
