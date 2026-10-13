@@ -1,12 +1,12 @@
-# DAVID'S MAP — 비교급(-er than / more ~ than) 백지노트 (빈칸 도식 · 암기법은 넣지 않음)
+# DAVID'S MAP — 비교급(-er than / more ~ than) + 원급 비교(as ~ as) 백지노트 (빈칸 도식 · 암기법은 넣지 않음)
 from PIL import Image, ImageDraw, ImageFont
 import sys
 import os; FD = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fonts') + '/'
 def f(w, s): return ImageFont.truetype(FD + f'Pretendard-{w}.otf', s)
 INK, CORAL, BG, GREY = (17,17,17), (224,65,58), (245,247,251), (110,110,110)
-W, H = 1400, 1030
+W, H = 1400, 1116
 im = Image.new('RGB', (W, H), BG); d = ImageDraw.Draw(im)
-d.text((40, 28), '비교급 — ~보다 더 …한 / 더 …하게', font=f('Bold', 40), fill=INK)
+d.text((40, 28), '비교급 · 원급 비교 — ~보다 더 …한 / ~만큼 …한', font=f('Bold', 40), fill=INK)
 d.line((40, 88, W-40, 88), fill=CORAL, width=4)
 tl = [('주어 + 동사', 'I’m', (255,255,255), INK),
       ('형용사 · 부사의 비교급', '______', (255,235,233), CORAL),
@@ -31,7 +31,8 @@ rows = [('+ er', 'tall → ______  ·  small → ______  ·  fast → ______  ·
         ('more + 원급', '3음절 이상 · -ful · -ous · -ive · -ly 부사: delicious → ______ ______'),
         ('불규칙', 'good / well → ______  ·  bad → ______  ·  many / much → ______  ·  little → ______'),
         ('강조 (훨씬)', '______ · even · far · a lot + 비교급   (______ bigger ✗)'),
-        ('주의', 'more bigger ✗  ·  heavier than you ✗ → than ______(네 것)  ·  It will taste ______!')]
+        ('주의', 'more bigger ✗  ·  heavier than you ✗ → than ______(네 것)  ·  It will taste ______!'),
+        ('as ~ as (~만큼)', '______ + 원급 + as  ·  An olive isn’t as big as an egg. = An egg is ______ than an olive.')]
 for j, (k, v) in enumerate(rows):
     y = 330 + j*86
     d.rounded_rectangle((40, y, 290, y+70), 16, fill=(255,235,233), outline=CORAL, width=3)

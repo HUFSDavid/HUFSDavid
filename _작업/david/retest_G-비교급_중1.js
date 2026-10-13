@@ -8,13 +8,13 @@ const deep = (v) => typeof v === 'string' ? ZB(v) : Array.isArray(v) ? v.map(dee
 const D = new Proxy(D0, { get: (t, k) => (typeof t[k] === 'function' && !['render', 'P', 'T', 'image'].includes(k)) ? (...a) => t[k](...deep(a)) : t[k] });
 const COVER = JSON.parse(process.env.COVER || '{}');
 const TITLE = '비교급';
-const meta = { series: D.SERIES.G, code: 'G-비교급', title: TITLE, category: 'G. 비교  |  비교급 (-er than · more ~ than) · 재시험',
+const meta = { series: D.SERIES.G, code: 'G-비교급', title: TITLE, category: 'G. 비교  |  비교급 (-er than · more ~ than) · 원급 비교 (as ~ as) · 재시험',
   rightText: 'G  비교급 재시험 B', prefix: process.env.PREFIX || '', cover: COVER.title ? { ...COVER, subtitle: (COVER.subtitle || '') + '  ·  재시험 B' } : undefined,
   retest: { set: 'B', total: 10, pass: 8 } };
 const build = (m) => [
   ...D.drill(null, '', [
     { level: 'A', type: 'choice', free: true, instr: '괄호 안에서 알맞은 것을 고르시오.', items: [
-      { q: 'Takoyaki is (more soft / softer) than dumplings.', a: 'softer', why: '[P1] 1음절 → -er' },
+      { q: 'An olive is not as (bigger / big) as an egg.', a: 'big', why: '[P4] as ~ as 사이는 원급' },
       { q: 'My cold is (worse / badder) today than yesterday.', a: 'worse', why: '[P2] bad → worse' },
       { q: 'This bag is (very / even) bigger than yours.', a: 'even', why: '[P3] 비교급 강조 — very ✗' }] },
     { level: 'B', type: 'fill', free: true, instr: '우리말과 같은 뜻이 되도록 <보기>에서 알맞은 말을 골라 빈칸에 쓰시오. (한 번씩만 사용)', bogi: ['yours', 'more', 'hotter', 'better'], items: [

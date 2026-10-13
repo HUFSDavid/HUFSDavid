@@ -1,7 +1,7 @@
 const D0 = require('./david_base');
 const path = require('path');
 const fs = require('fs');
-// 중1 천재(이상기) 7과 Tasty World 목표 문법 — 비교급 (-er than / more ~ than) · 공통 문법
+// 중1 천재(이상기) 7과 Tasty World 목표 문법 — 비교급 (-er than / more ~ than) + 원급 비교 (as ~ as) · 공통 문법
 // 한 문장에 빈칸 ______ 이 두 개 이상이면 david_base의 __밑줄__ 서식으로 잘못 읽히므로
 // 밑줄 3개 이상 이어진 빈칸은 밑줄 사이에 U+200B를 넣어 둔다 (beworth · the비교급 · with분사 스크립트와 같은 처리).
 const ZB = (s) => s.replace(/_{3,}/g, (u) => u.split('').join('​'));
@@ -10,8 +10,8 @@ const deep = (v) => typeof v === 'string' ? ZB(v) : Array.isArray(v) ? v.map(dee
 const D = new Proxy(D0, { get: (t, k) => (typeof t[k] === 'function' && !['render', 'P', 'T', 'image'].includes(k)) ? (...a) => t[k](...deep(a)) : t[k] });
 const COVER = JSON.parse(process.env.COVER || '{}');
 const TITLE = '비교급';
-const meta = { series: D.SERIES.G, code: 'G-비교급', title: TITLE, category: 'G. 비교  |  비교급 (-er than · more ~ than · 불규칙 · 비교급 강조)',
-  rightText: 'G  비교급 (-er than · more ~ than)', prefix: process.env.PREFIX || '', cover: COVER.title ? COVER : undefined,
+const meta = { series: D.SERIES.G, code: 'G-비교급', title: TITLE, category: 'G. 비교  |  비교급 (-er than · more ~ than · 불규칙 · 비교급 강조) · 원급 비교 (as ~ as)',
+  rightText: 'G  비교급 (-er than · more ~ than) · as ~ as', prefix: process.env.PREFIX || '', cover: COVER.title ? COVER : undefined,
   question: 'I’m ~~bigger~~ than an olive. / Do you want a ~~more delicious~~ omelet? — 왜 big은 g를 하나 더 쓰고, delicious는 앞에 more를 붙일까?' };
 
 const build = (m) => [
@@ -29,14 +29,16 @@ const build = (m) => [
     '짧은 단어는 뒤에 {{-er}}: small → smaller / 단모음 + 단자음은 자음을 한 번 더: big → {{bigger}}',
     '긴 단어(3음절 이상 · -ous 등)는 앞에 {{more}}: delicious → more delicious / good은 불규칙: good → {{better}}'], m),
   ...D.step(5, '결론 🔑', [
-    'A + 동사 + 비교급 + {{than}} + B = A는 B보다 더 …하다 / 비교급을 ‘훨씬’ 강조할 때는 much · even · far · a lot (very ✗)'], m),
+    'A + 동사 + 비교급 + {{than}} + B = A는 B보다 더 …하다 / 비교급을 ‘훨씬’ 강조할 때는 much · even · far · a lot (very ✗)',
+    '정도가 같으면 {{as}} + 원급 + as(~만큼 …한), 못 미치면 not as ~ as: An olive is not as big as an egg. = An egg is bigger than an olive.'], m),
   ...D.infoBox('오늘의 핵심 3문장', [
     '① I’m {{bigger}} than an olive, but I’m {{smaller}} than an avocado. (본문)',
     '② Do you want a {{more delicious}} omelet? (본문 — deliciouser ✗)',
     '③ Just add cheese, vegetables, or meat. It will taste {{better}}! (본문 — gooder ✗)'], m),
   ...D.tip(['칠판에 올리브 · 달걀 · 아보카도를 크기 순서로 그리고 “달걀은 올리브보다?” “아보카도보다?”를 물어 bigger than / smaller than을 학생 입에서 먼저 나오게 한다.',
     '비교급 규칙은 표를 외우게 하기보다 단어를 소리 내어 읽고 ‘짧다 → -er / 길다 → more’로 먼저 나누게 하면 중1이 훨씬 빨리 익힌다.',
-    '같은 과 문법 감각동사(taste · look 등)와 본문 한 문장(It will taste better!)에서 만나므로 PERFECT CHECK와 WRITE에 감각동사가 섞인 문항을 1~2개 넣었다.'], m),
+    '같은 과 문법 감각동사(taste · look 등)와 본문 한 문장(It will taste better!)에서 만나므로 PERFECT CHECK와 WRITE에 감각동사가 섞인 문항을 1~2개 넣었다.',
+    '원급 비교(Point 4)는 교과서 목표 문법은 아니지만 워크북 · [08]에 30문항 넘게 나와 학교 시험에 섞일 수 있다 — 비교급을 다 익힌 뒤 ‘같다 / 못 미친다’ 두 가지로만 짧게 다룬다.'], m),
 
   // ---------------- Point 1 ----------------
   D.section('Point 1', '비교급 만들기 — 규칙 변화 (+er · +r · y→ier · 자음 반복 · more)', 'point'),
@@ -245,7 +247,7 @@ const build = (m) => [
   ...D.caution(['[08] 다수: ‘밑줄 친 부분의 쓰임이 어색한 것’ — very more comfortable ✗만 오답, much · even · a lot · still은 정답으로 낸다.',
     '[08] ‘어법상 옳은 것을 모두 고른 것’: more easier ✗ · than your ✗ · much expensive ✗ — 한 문항에 Point 3 함정이 세 개씩 섞인다.',
     'than me / than I (am)은 둘 다 정답으로 인정하는 학교가 많아 than 뒤 주격 · 목적격은 문항으로 내지 않았다.',
-    '[08]의 Nothing is more important than health(최상급 의미) · not so ~ than · the latter / latest 문항은 중1 범위를 넘어 쓰지 않았다.'], m),
+    '[08]의 Nothing is more important than health(최상급 의미) · the latter / latest 문항은 중1 범위를 넘어 쓰지 않았다. (not so ~ than ✗ 문항은 Point 4 원급 비교에서 다룬다.)'], m),
   ...D.drill(3, '비교급 강조 · 자주 틀리는 비교급', [
     { level: 'Basic ①', type: 'choice', instr: '괄호 안에서 알맞은 것을 고르시오.', items: [
       { q: 'Jenny is (much / very) lighter than her sisters.', a: 'much', why: '[08] — 비교급 강조' },
@@ -320,6 +322,102 @@ const build = (m) => [
       { q: 'Emma는 Sam보다 나이가 조금 더 많다. (a little, old)', a: 'Emma is a little older than Sam.', why: '워크북 Part 4 — a little + 비교급' }] },
   ], m),
 
+  // ---------------- Point 4 ----------------
+  D.section('Point 4', '원급 비교 as ~ as · not as ~ as · 비교급 문장과 바꿔 쓰기', 'point'),
+  ...D.table(['구성', '판단 기준 · 설명', '예'], [
+    ['as + 원급 + as', '‘~만큼 …한/하게’ — 두 대상의 정도가 같다', 'This omelet is **as delicious as** that one. / Tom’s car is **as big as** his friend’s. (워크북)'],
+    ['not as[so] + 원급 + as', '‘~만큼 …하지 않은’ — A가 B에 못 미친다', 'An olive is **not as big as** an egg. (본문 변형) / Buses **aren’t as fast as** cars. (워크북)'],
+    ['비교급 문장과 바꿔 쓰기', 'A is not as 원급 as B = B is 비교급 than A = A is 반대말 비교급 than B', 'An olive isn’t as big as an egg. = An egg is **bigger than** an olive. = An olive is **smaller than** an egg.'],
+    ['as와 as 사이 = 원급', '비교급 · than을 섞지 않는다', 'as taller as ✗ → **as tall as** / as tall than ✗ → **as tall as** / not so handsome than ✗ ([08])'],
+    ['형용사 / 부사 구분', 'be동사 · 감각동사 뒤 → 형용사 / 일반동사를 꾸밈 → 부사', 'Mina is **as fast as** Jun. / Mina cooks **as quickly as** her mom. (quick ✗) / It tastes **as good as** yours. (well ✗)']], [2300, 3300, 4038], m),
+  ...D.infoBox('원급 비교 3단계', [
+    '① 정도가 같나, 못 미치나: 같다 → {{as ~ as}} / 못 미친다 → {{not as ~ as}}',
+    '② 가운데는 원급 그대로: big → as {{big}} as (bigger ✗)',
+    '③ 비교급으로 바꿔 쓰기: An olive is not as big as an egg. = An egg is {{bigger}} than an olive.'], m),
+  ...D.trick('as 샌드위치', ['as 빵 두 장 사이에는 원급 재료만 넣는다: as tall as', '비교급 재료(taller)나 than 빵은 샌드위치에 들어가지 않는다', 'not을 붙이면 ‘~만큼 못하다’ → 상대방이 더 -er: A not as big as B = B bigger than A'], m),
+  ...D.examPoint([
+    { q: 'The weather isn’t as {{bad}} as yesterday. (bad / worse)', why: '워크북 Part 1 — as ~ as 사이는 원급' },
+    { q: 'Bill is not so handsome {{as}} my boyfriend. (than ✗)', why: '[08] — not so[as] ~ as' }], m),
+  ...D.caution(['[08] ‘어법상 올바른 문장’: Bill is not so handsome than my boyfriend. ✗ → as — 비교급 문항 속에 원급 비교 함정이 하나씩 섞인다.',
+    '[08] ‘의미가 같은 문장 짝’: Swimming is not as dangerous as boxing. ≠ Swimming is more dangerous than boxing. — not as ~ as를 비교급으로 바꿀 때는 주어를 바꾸거나(B is 비교급 than A) 반대말을 쓴다.',
+    '워크북 Part 5(바꿔 쓰기 19문항): A isn’t as 원급 as B → B is 비교급 than A — 서술형으로 가장 많이 나온다. well → better처럼 불규칙도 섞인다.',
+    '[08] 표 문항(Minseok · Pororo · Jinhee)은 표가 있어야 풀 수 있어 WRITE의 <보기> 수치 문항으로 바꿨다. as many / as much 고르기 · far → farther · nearly as big as는 정답이 갈려 넣지 않았다.',
+    '(참고) 셋 이상 중 ‘가장 …한’은 최상급 the + -est(the oldest · the most popular) — 워크북 Part 7에 나오지만 다음 단계에서 배운다.'], m),
+  ...D.drill(4, '원급 비교 as ~ as', [
+    { level: 'Basic ①', type: 'choice', instr: '괄호 안에서 알맞은 것을 고르시오.', items: [
+      { q: 'An olive is not as (big / bigger) as an egg.', a: 'big', why: '본문 변형 — as ~ as 사이는 원급' },
+      { q: 'This omelet is as (more delicious / delicious) as that one.', a: 'delicious', why: 'as + 원급 + as' },
+      { q: 'Are you as (older / old) as Dan?', a: 'old', why: '워크북 Part 1' },
+      { q: 'The weather isn’t as (bad / worse) as yesterday.', a: 'bad', why: '워크북 Part 1 — worse ✗' },
+      { q: 'These sofas are (as more comfortable as / more comfortable than) ours.', a: 'more comfortable than', why: '워크북 Part 1 — 비교급은 than과 함께' },
+      { q: 'Bill is not so handsome (than / as) my boyfriend.', a: 'as', why: '[08] — not so ~ as' },
+      { q: 'Tom’s car is (as big as / as bigger as) his friend’s.', a: 'as big as', why: '워크북 Part 1 변형' },
+      { q: 'Mina cooks as (quickly / quick) as her mom.', a: 'quickly', why: '일반동사 cooks를 꾸밈 → 부사' },
+      { q: 'My omelet tastes as (well / good) as yours.', a: 'good', why: '감각동사 taste + 형용사 (같은 과 문법)' },
+      { q: 'Buses aren’t as fast (as / than) cars.', a: 'as', why: '워크북 Part 5 — not as ~ as' }] },
+    { level: 'Basic ②', type: 'fill', instr: '괄호 안의 말을 알맞은 형태(원급 또는 비교급)로 바꾸어 빈칸에 쓰시오.', items: [
+      { q: 'An egg is not as [[big]] as an avocado. (big)', why: '본문 변형 — as ~ as 사이는 원급' },
+      { q: 'Is it as [[cold]] here as in Canada? (cold)', why: '워크북 Part 2' },
+      { q: 'Tests aren’t as [[difficult]] as exams. (difficult)', why: '워크북 Part 5' },
+      { q: 'Tests aren’t as difficult as exams. = Exams are [[more difficult]] than tests. (difficult)', why: '워크북 Part 5 — 바꿔 쓰기' },
+      { q: 'Peter doesn’t sing as well as Tom. = Tom sings [[better]] than Peter. (well)', why: '워크북 Part 5 — well → better' },
+      { q: 'Mina cooks as [[carefully]] as her mom. (careful)', why: '일반동사를 꾸밈 → 부사' },
+      { q: 'My omelet tastes as [[good]] as yours. (good)', why: '감각동사 + 형용사' },
+      { q: 'Cats aren’t as noisy as dogs. = Dogs are [[noisier]] than cats. (noisy)', why: '워크북 Part 5 — y → ier' },
+      { q: 'An olive isn’t as big as an egg. = An olive is [[smaller]] than an egg. (small)', why: '반대말 비교급으로 바꿔 쓰기' },
+      { q: 'Water isn’t as [[thick]] as oil. (thick)', why: '워크북 Part 5' }] },
+    { level: 'Intermediate', type: 'write', instr: '어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.', items: [
+      { q: 'An olive is not as bigger as an egg.', a: 'bigger → big', why: 'as ~ as 사이는 원급' },
+      { q: 'Bill is not so handsome than my boyfriend.', a: 'than → as', why: '[08] — not so ~ as' },
+      { q: 'This omelet is as delicious than that one.', a: 'than → as', why: 'as ~ as' },
+      { q: 'My brother is as taller as me.', a: 'taller → tall', why: '워크북 Part 1 변형' },
+      { q: 'These sofas are as more comfortable as ours.', a: 'as more comfortable as → more comfortable than (또는 as comfortable as)', why: '워크북 Part 1' },
+      { q: 'Mina cooks as quick as her mom.', a: 'quick → quickly', why: '일반동사를 꾸밈 → 부사' },
+      { q: 'The weather isn’t as worse as yesterday.', a: 'worse → bad', why: '워크북 Part 1' },
+      { q: 'This soup tastes as well as that one.', a: 'well → good', why: '감각동사 + 형용사' },
+      { q: 'Your hair isn’t as curly as me.', a: 'me → mine', why: '워크북 Part 5 — 비교 대상은 같은 종류(내 머리카락)' },
+      { q: 'Avocados are not as cheaper as eggs.', a: 'cheaper → cheap', why: 'as ~ as 사이는 원급' }] },
+    { level: 'Advanced · 모두 고르기', type: 'multi', free: true, instr: '해당하는 것을 모두 골라 기호를 쓰시오.', items: [
+      { q: '다음 중 어법상 옳은 문장을 모두 고르시오.', box: [
+        '(a) Are you as old as Dan?', '(b) An olive is not as big as an egg.', '(c) The weather isn’t as worse as yesterday.',
+        '(d) Mina cooks as quickly as her mom.', '(e) Bill is not so handsome than my boyfriend.'], a: '(a), (b), (d)', why: '(c) bad (e) as ([08] · 워크북 Part 1)' },
+      { q: '다음 문장과 의미가 같은 것을 모두 고르시오. — An olive is not as big as an egg.', box: [
+        '(a) An egg is bigger than an olive.', '(b) An olive is bigger than an egg.', '(c) An olive is smaller than an egg.',
+        '(d) An egg is as big as an olive.', '(e) An egg is smaller than an olive.'], a: '(a), (c)', why: 'B is 비교급 than A · A is 반대말 비교급 than B' },
+      { q: '다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 어색한 것을 모두 골라 기호를 쓰고 바르게 고치시오.', fix: true, label: '기호 / 고친 것', box: [
+        'I’m an egg. I’m not ⓐ __as big as__ an avocado, but I’m ⓑ __bigger than__ an olive. You can make an omelet ⓒ __as quick as__ a sandwich. My omelet tastes ⓓ __as good than__ a steak, and it is ⓔ __cheaper__ than a steak.'],
+        a: 'ⓒ → as quickly as, ⓓ → as good as', why: '본문 변형 — 일반동사를 꾸밈 → 부사 · as ~ as (than ✗)' },
+      { q: '빈칸에 as가 들어갈 수 있는 것을 모두 고르시오.', box: [
+        '(a) Cheetahs are faster ______ lions.', '(b) Are you as old ______ Dan?', '(c) Exams are more difficult ______ tests.',
+        '(d) The weather isn’t as bad ______ yesterday.', '(e) Tom’s car is as big ______ his friend’s.'], a: '(b), (d), (e)', why: '(a)(c) 비교급 + than' }] },
+    { level: 'Advanced · 객관식', type: 'mcq', free: true, instr: '알맞은 답을 고르시오.', items: [
+      { q: '다음 빈칸에 들어갈 말로 알맞은 것은? — An olive is not as ______ as an egg. (올리브는 달걀만큼 크지 않다.)', opts: [
+        'bigger', 'more big', 'than big', 'big', 'more bigger'], a: '④', why: 'as ~ as 사이는 원급' },
+      { q: '다음 중 어법상 올바른 문장은?', opts: [
+        'This omelet is as delicious than that one.', 'Are you as old as Dan?', 'The weather isn’t as worse as yesterday.',
+        'Bill is not so handsome than my boyfriend.', 'My brother is as taller as me.'], a: '②', why: '① as ③ bad ④ as ⑤ tall ([08] · 워크북 Part 1)' },
+      { q: '다음 중 짝지어진 두 문장의 의미가 같은 것은?', opts: [
+        'I’m as tall as my brother. = My brother is shorter than me.', 'An egg is bigger than an olive. = An olive is not as small as an egg.',
+        'Swimming is not as dangerous as boxing. = Swimming is more dangerous than boxing.', 'Tests aren’t as difficult as exams. = Tests are more difficult than exams.',
+        'Buses aren’t as fast as cars. = Cars are faster than buses.'], a: '⑤', why: '[08] 변형 — ① as tall as ② not as big as ③ Boxing is more dangerous ④ Exams are more difficult' },
+      { q: '다음 우리말을 영어로 바르게 옮긴 것은? — 미나는 그녀의 엄마만큼 빠르게 요리한다.', opts: [
+        'Mina cooks as quickly as her mom.', 'Mina cooks as quick as her mom.', 'Mina cooks as quicker as her mom.',
+        'Mina cooks as quickly than her mom.', 'Mina cooks more quickly as her mom.'], a: '①', why: '일반동사를 꾸밈 → 부사 원급 · as ~ as' },
+      { q: '(A)~(C)에 알맞은 말이 바르게 짝지어진 것은? — An olive is not as (A)(big / bigger) as an egg. / Are you as old (B)(than / as) Dan? / My omelet tastes as (C)(good / well) as yours.', opts: [
+        'bigger – as – good', 'big – than – good', 'big – as – good', 'big – as – well', 'bigger – than – well'], a: '③', why: '원급 · as ~ as · 감각동사 + 형용사' }] },
+    { level: '전환 · 영작', type: 'write', instr: '괄호 안의 지시대로 쓰시오.', items: [
+      { q: '올리브는 달걀만큼 크지 않다. (not, big, an egg)', a: 'An olive is not as big as an egg. (isn’t as[so] big as도 정답)', why: '본문 변형 — not as ~ as' },
+      { q: '이 오믈렛은 저것만큼 맛있다. (delicious, that one)', a: 'This omelet is as delicious as that one.', why: 'as + 원급 + as' },
+      { q: 'An olive is not as big as an egg. (An egg를 주어로 하여 같은 뜻의 비교급 문장으로)', a: 'An egg is bigger than an olive.', why: 'B is 비교급 than A' },
+      { q: 'An olive is not as big as an egg. (An olive를 주어로, small을 이용하여 같은 뜻의 비교급 문장으로)', a: 'An olive is smaller than an egg.', why: '반대말 비교급' },
+      { q: 'Peter doesn’t sing as well as Tom. (Tom을 주어로 하여 같은 뜻의 비교급 문장으로)', a: 'Tom sings better than Peter.', why: '워크북 Part 5 — well → better' },
+      { q: 'A chair isn’t as comfortable as a sofa. (A sofa를 주어로 하여 같은 뜻의 비교급 문장으로)', a: 'A sofa is more comfortable than a chair.', why: '워크북 Part 5' },
+      { q: 'Avocados aren’t as cheap as eggs. (Eggs를 주어로 하여 같은 뜻의 비교급 문장으로)', a: 'Eggs are cheaper than avocados.', why: '워크북 Part 5 변형' },
+      { q: 'I don’t work as hard as you. (You를 주어로 하여 같은 뜻의 비교급 문장으로)', a: 'You work harder than me. (than I do도 정답)', why: '워크북 Part 5 — 부사 hard → harder' },
+      { q: '나의 오믈렛은 너의 것만큼 맛이 좋다. (taste, good, yours)', a: 'My omelet tastes as good as yours.', why: '감각동사 + 형용사 · 소유대명사' },
+      { q: '미나는 그녀의 엄마만큼 조심스럽게 요리한다. (cook, careful)', a: 'Mina cooks as carefully as her mom.', why: '일반동사를 꾸밈 → 부사' }] },
+  ], m),
+
   // ---------------- PERFECT CHECK ----------------
   D.section('PERFECT CHECK', '상위권 함정 체크'),
   ...D.drill(null, '', [{ level: '함정', type: 'choice', instr: '실수하기 쉬운 문장들이에요. 괄호 안에서 알맞은 것을 고르시오.', items: [
@@ -327,9 +425,9 @@ const build = (m) => [
     { q: 'Do you want a (more delicious / deliciouser) omelet?', a: 'more delicious', why: '본문 — more + 원급' },
     { q: 'Just add cheese, vegetables, or meat. It will taste (better / gooder)!', a: 'better', why: '본문 — good → better (감각동사 taste + 형용사)' },
     { q: 'This candy tastes (more sweetly / sweeter) than that one.', a: 'sweeter', why: '[05] — 감각동사 taste 뒤는 형용사 비교급(같은 과 문법)' },
-    { q: 'Black pudding is (more bigger / bigger) than sundae.', a: 'bigger', why: '이중 비교 ✗' },
+    { q: 'I’m not as (bigger / big) as an avocado.', a: 'big', why: '본문 변형 — 원급 비교 as ~ as 사이는 원급' },
     { q: 'The chair is (much / very) more comfortable than that one.', a: 'much', why: '[08] — very ✗' },
-    { q: 'My bag is heavier than (you / yours).', a: 'yours', why: '비교 대상 = 네 가방' },
+    { q: 'This soup tastes as (well / good) as that one.', a: 'good', why: '원급 비교 + 감각동사 taste 뒤 형용사(같은 과 문법)' },
     { q: 'He had (little / less) money than his brother.', a: 'less', why: '[08] — little → less' },
     { q: 'I usually get up (earlier / earlyer) than my sister.', a: 'earlier', why: '[08] — y → ier' },
     { q: 'Superman is (more popular / popular) than Batman.', a: 'more popular', why: '[08] — than 앞은 비교급' }] }], m),
@@ -350,16 +448,25 @@ const build = (m) => [
   ...D.writeItem(6, 'Intermediate', '표를 보고 <보기>의 단어를 활용하여 문장을 완성하시오. (각 빈칸에 한 단어씩)', ['Steak $20 / Spaghetti $8 / Pizza $12    <보기> expensive, cheap',
     '(1) The steak is ____ ____ ____ the spaghetti.  (2) The pizza is ____ ____ ____ the steak.  (3) The spaghetti is ____ ____ the pizza.'],
     { a: '(1) more expensive than  (2) less expensive than  (3) cheaper than', why: '[05] 기출 — more + 원급 · less + 원급(덜 …한) · cheap → cheaper', blanks: ['(1)', '(2)', '(3)'] }, m),
-  ...D.writeItem(7, 'Advanced', '표를 보고 <조건>에 맞게 빈칸을 완성하시오.', ['Sales: Book A ★★ / Book B ★★★★ / Book C ★★★    Thickness: Book A 5 cm / Book B 3 cm / Book C 2 cm',
+  ...D.writeItem(7, 'Intermediate', '<보기>와 같이 같은 뜻의 비교급 문장으로 바꿔 쓰시오.', ['<보기> An olive is not as big as an egg. → An egg is bigger than an olive.',
+    '(1) Avocados aren’t as cheap as eggs.   (2) A chair isn’t as comfortable as a sofa.'],
+    { a: '(1) Eggs are cheaper than avocados.  (2) A sofa is more comfortable than a chair.', why: '워크북 Part 5 — A isn’t as 원급 as B → B is 비교급 than A', blanks: ['(1)', '(2)'] }, m),
+  ...D.writeItem(8, 'Advanced', '표를 보고 <조건>에 맞게 빈칸을 완성하시오.', ['Sales: Book A ★★ / Book B ★★★★ / Book C ★★★    Thickness: Book A 5 cm / Book B 3 cm / Book C 2 cm',
     '<조건> thin, thick, popular를 어법에 맞게 사용할 것 (중복 사용 가능)',
     '(1) Book A is ______________ Book B. (두께)  (2) Book C is ______________ Book B. (두께)  (3) Book B is ______________ the other books. (인기도)'],
     { a: '(1) thicker than  (2) thinner than  (3) more popular than', why: '[06] 기출 — thin → thinner(자음 반복) · popular → more popular', blanks: ['(1)', '(2)', '(3)'] }, m),
-  ...D.writeItem(8, 'Advanced', '우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.', ['호떡은 팬케이크처럼 보이지만, 그것은 팬케이크보다 훨씬 더 달콤하다.', '<조건> look like, sweet, much를 사용할 것 (필요시 형태 변화)'],
+  ...D.writeItem(9, 'Advanced', '우리말과 같은 뜻이 되도록 <조건>에 맞게 영작하시오.', ['호떡은 팬케이크처럼 보이지만, 그것은 팬케이크보다 훨씬 더 달콤하다.', '<조건> look like, sweet, much를 사용할 것 (필요시 형태 변화)'],
     { a: 'Hotteok looks like pancakes, but it is much sweeter than pancakes.', why: '교과서 Write & Present — look like + 명사(감각동사) · much + 비교급' }, m),
-  ...D.writeItem(9, 'Advanced', '어법상 틀린 부분 2개를 찾아 바르게 고치고, 그 이유를 쓰시오.', ['The chair is very more comfortable than that one. My computer is more expensive than you.'],
+  ...D.writeItem(10, 'Advanced', '어법상 틀린 부분 2개를 찾아 바르게 고치고, 그 이유를 쓰시오.', ['The chair is very more comfortable than that one. My computer is more expensive than you.'],
     { a: '① very → much (even · far · a lot)  ② you → yours', why: '① very는 비교급을 강조할 수 없다 ② 비교 대상은 같은 종류(내 컴퓨터 ↔ 네 컴퓨터)여야 하므로 소유대명사 yours ([08])', blanks: ['고친 것', '이유'] }, m),
-  ...D.writeItem(10, 'Advanced', '어법상 틀린 부분 2개를 찾아 바르게 고치고, 그 이유를 쓰시오.', ['Do you want a deliciouser omelet? Just add cheese, vegetables, or meat. It will taste gooder!'],
+  ...D.writeItem(11, 'Advanced', '어법상 틀린 부분 2개를 찾아 바르게 고치고, 그 이유를 쓰시오.', ['Do you want a deliciouser omelet? Just add cheese, vegetables, or meat. It will taste gooder!'],
     { a: '① deliciouser → more delicious  ② gooder → better', why: '① 3음절 -ous 형용사는 more + 원급 ② good의 비교급은 불규칙 better ([01] 본문 어법 · [06] 기출)', blanks: ['고친 것', '이유'] }, m),
+
+  ...D.writeItem(12, 'Advanced', '<보기>의 무게를 보고 괄호 안의 말과 as ~ as 또는 not as ~ as를 이용하여 문장을 완성하시오.', ['<보기> an egg – 60 g / a lemon – 60 g / an avocado – 200 g',
+    '(1) An egg is ______________ a lemon. (heavy)   (2) An egg is ______________ an avocado. (heavy)'],
+    { a: '(1) as heavy as  (2) not as heavy as (not so heavy as)', why: '[08] 표 문항 변형 — 같으면 as ~ as, 못 미치면 not as ~ as', blanks: ['(1)', '(2)'] }, m),
+  ...D.writeItem(13, 'Advanced', '어법상 틀린 부분 2개를 찾아 바르게 고치고, 그 이유를 쓰시오.', ['Bill is not so handsome than my boyfriend. My brother is as taller as me.'],
+    { a: '① than → as  ② taller → tall', why: '① not so[as] ~ as — than은 비교급과 함께 쓴다 ② as와 as 사이에는 원급을 쓴다 ([08] · 워크북 Part 1)', blanks: ['고친 것', '이유'] }, m),
 
   // ---------------- MAP ----------------
   D.pageBreak(), // MAP 이미지가 쪽 끝에서 잘리지 않도록 새 쪽에서 시작
@@ -372,9 +479,10 @@ const build = (m) => [
     ['3음절 이상 · -ful · -ous · -ive · -ly 부사 → more + 원급: more delicious', ''], ['불규칙: good/well → better · bad → worse · many/much → more · little → less', ''],
     ['강조 much · even · far · a lot + 비교급 (very ✗)', ''], ['이중 비교 ✗: more bigger → bigger', ''],
     ['than 뒤 비교 대상은 같은 종류: than yours (than you ✗)', ''],
+    ['as + 원급 + as (~만큼) / not as ~ as = B is 비교급 than A (as taller as ✗ · as tall than ✗)', ''],
     ['본문: I’m bigger than an olive / a more delicious omelet / It will taste better!', '']], [8838, 800], m),
   ...D.memo(['다음 시간 도입: 올리브 · 달걀 · 아보카도 그림을 보여 주고 학생이 직접 수수께끼 문장(I’m bigger than …, but I’m smaller than …)을 만들게 하기',
-    '약한 반: Point 1(규칙 변화)을 단어 카드 분류 활동으로 확실히 → Point 2는 good → better · bad → worse 두 개만 → Point 3은 very ✗ 하나만',
+    '약한 반: Point 1(규칙 변화)을 단어 카드 분류 활동으로 확실히 → Point 2는 good → better · bad → worse 두 개만 → Point 3은 very ✗ 하나만 → Point 4는 as + 원급 + as 하나만',
     '감각동사(같은 과 문법)와 섞인 It will taste better! · This candy tastes sweeter than that one. 문장을 다시 보며 ‘taste + 형용사 비교급’을 확인',
     '교과서 Write & Present: 소개하고 싶은 음식을 비슷한 음식과 비교하는 문장(It is ___er than ___.)을 한 문장씩 쓰고 짝과 서로 어법 점검'], m),
 ];
