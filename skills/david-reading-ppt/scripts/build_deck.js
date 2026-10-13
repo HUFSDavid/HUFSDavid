@@ -126,8 +126,8 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
   s.addText("오늘 수업은 이렇게 진행해요", { placeholder: "title" });
   const plan = [
     ["1", "채점하기", "정답 한눈에 보기로 채점 → 틀린 문제 표시", "약 5분"],
-    ["2", "풀이 공식 익히기", IN.planFormula || "풀이 3단계 · 신호어", "약 10분"],
-    ...PARTS.slice(0, 2).map((p, i) => [String(i + 3), `Exercise ${p[0].n}–${p[p.length - 1].n}`, i === 0 ? "Hook → 지문+보기 → 근거·이유 → 흐름 → 정답 → 어법 체크" : "같은 순서 + 마지막에 복습 미니테스트", `${i + 1}차시`]),
+    ["2", "풀이 공식 익히기", IN.planFormula || "풀이 3단계 · Signal", "약 10분"],
+    ...PARTS.slice(0, 2).map((p, i) => [String(i + 3), `Exercise ${p[0].n}–${p[p.length - 1].n}`, i === 0 ? "Hook → 단어 → 어법 워밍업 → 근거 지문 해설 → 흐름 정리" : "같은 순서 + 마지막에 복습 미니테스트", `${i + 1}차시`]),
   ];
   plan.forEach((p, i) => {
     const x = 0.6 + i * 3.1;
@@ -156,21 +156,20 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
   });
   s.addNotes(IN.steps.notes || "");
 
-  // ---------- 4. 신호어 ----------
+  // ---------- 4. Signal ----------
   s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
-  s.addText("이런 단어가 보이면 멈춰! 신호어 4종", { placeholder: "title" });
-  const sig = IN.signals.map((g, i) => [[I.exch, I.flag, I.search, I.quote][i], ...g]);
-  sig.forEach((g, i) => {
-    const x = 0.6 + (i % 2) * 6.15, y = 1.55 + Math.floor(i / 2) * 2.7;
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: 5.95, h: 2.45, rectRadius: 0.12, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 }, shadow: shadow() });
-    s.addShape(pres.shapes.OVAL, { x: x + 0.3, y: y + 0.3, w: 0.8, h: 0.8, fill: { color: C.accent1 }, line: { color: C.accent1 } });
-    s.addImage({ data: g[0], x: x + 0.5, y: y + 0.5, w: 0.4, h: 0.4 });
-    s.addText(g[1], { x: x + 1.3, y: y + 0.3, w: 2.5, h: 0.45, fontSize: 22, bold: true, color: C.text2, margin: 0, isTextBox: true });
-    chip(s, g[4], x + 4.4, y + 0.35, 1.25, C.background2, C.text2, 12);
-    s.addText(g[2], { x: x + 1.3, y: y + 0.8, w: 4.4, h: 0.4, fontSize: 14, italic: true, color: C.accent1, margin: 0, isTextBox: true });
-    s.addText(g[3], { x: x + 1.3, y: y + 1.3, w: 4.4, h: 0.95, fontSize: 15, color: C.text1, margin: 0, valign: "top", isTextBox: true });
+  s.addText("Signal: 이 단어가 보이면 멈춰!", { placeholder: "title" });
+  const SIG = IN.signals;
+  const sCols = 4, sRows = Math.ceil(SIG.length / sCols), sW = 2.9, sH = (5.5 - 0.2 * (sRows - 1)) / sRows;
+  SIG.forEach((g, i) => {
+    const x = 0.6 + (i % sCols) * (sW + 0.167), y = 1.4 + Math.floor(i / sCols) * (sH + 0.2);
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: sW, h: sH, rectRadius: 0.12, fill: { color: i % 2 ? C.background1 : C.background2 }, line: { color: C.background2, width: 1.5 } });
+    s.addText(g[0], { x: x + 0.2, y: y + 0.15, w: sW - 1.3, h: 0.45, fontSize: 20, bold: true, color: C.text2, margin: 0, isTextBox: true });
+    if (g[3]) s.addText(g[3], { x: x + sW - 1.15, y: y + 0.2, w: 1.0, h: 0.32, fontSize: 10, bold: true, color: C.text2, fill: { color: HEX.lt1 }, align: "center", valign: "middle", margin: 0, isTextBox: true });
+    s.addText(g[1], { x: x + 0.2, y: y + 0.65, w: sW - 0.4, h: 1.05, fontSize: 13, italic: true, bold: true, color: C.accent1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
+    s.addText(g[2], { x: x + 0.2, y: y + 1.72, w: sW - 0.4, h: sH - 1.82, fontSize: 13, color: C.text1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
   });
-  s.addNotes("【설명 스크립트】 \"글을 읽다가 이 네 종류 단어가 나오면 꼭 동그라미 치세요. 답이 바로 근처에 있어요.\"\n【오른쪽 위 칩】 오늘 문제 중 그 신호어가 결정적이었던 Exercise 번호예요. 해당 문제를 풀 때 \"아까 배운 반전 신호어 기억나?\" 하고 다시 연결해 주세요.");
+  s.addNotes(IN.signalNotes || "【설명 스크립트】 \"글을 읽다가 이 단어들이 나오면 꼭 동그라미! 답이 바로 근처에 있어요.\"\n【오른쪽 위 칩】 오늘 문제 중 그 signal이 결정적이었던 Exercise 번호예요. 해당 문제에서 \"아까 배운 signal 기억나?\" 하고 다시 연결해 주세요.");
 
   // ---------- 6. 함의 추론 ----------
   const IMP = IN.implication;
@@ -205,11 +204,10 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       const d = pres.addSlide({ masterName: "DARK", sectionTitle: sec });
       d.addText(`Part ${pi + 1}  ·  Exercise ${PARTS[pi][0].n}–${PARTS[pi][PARTS[pi].length - 1].n}`, { placeholder: "title" });
       d.addText(PARTS[pi].map((x) => x.topic || x.title).join(" · "), { placeholder: "body" });
-      d.addNotes(pi === 0 ? "【본론 시작】 \"이제 한 문제씩 해설할게요. 지문+보기를 보면서 내가 고른 답과 이유를 떠올려 보세요.\"" : "【다음 차시 시작】 지난 시간 풀이 3단계와 신호어 4종을 1분 동안 복습하고 시작하세요.");
+      d.addNotes(pi === 0 ? "【본론 시작】 \"이제 한 문제씩 해설할게요. 지문+보기를 보면서 내가 고른 답과 이유를 떠올려 보세요.\"" : "【다음 차시 시작】 지난 시간 풀이 3단계와 Signal을 1분 동안 복습하고 시작하세요.");
     }
     const kind = kindOf(e);
 
-    // --- Passage: 지문 전문
     const P = PS[e.n];
     const ansText = e.opts[e.ans - 1][0];
     // split "{B}" and "__u__" into runs
@@ -223,258 +221,183 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       });
       return out;
     };
-    const totalChars = P.s.reduce((a, x) => a + x[0].length, 0);
-    const passH = (sz) => 5.9 * (totalChars / 1000) * (sz / 24) ** 2;
-    const lineH = (sz) => (sz * 1.2 * 1.15) / 72;
-    const showOpts = !e.hideOptsOnProblem;
-    const extraTxt = (e.given || "") + (e.summary || "");
-    const optLines = (sz) => (showOpts ? e.opts.reduce((a, o) => a + Math.ceil((o[0].length + 3) / (11.6 * 72 / (sz * 0.52))), 0) : 0) + Math.ceil(extraTxt.length / (11.6 * 72 / (sz * 0.52))) + (extraTxt ? 1 : 0);
     // (A)/(B) blanks in summary sentences: color them
     const abRuns = (txt, base) => txt.split(/(\(A\)|\(B\))/).filter(Boolean).map((t) => ({ text: t, options: { ...base, ...(/^\([AB]\)$/.test(t) ? { bold: true, color: HEX.accent2 } : {}) } }));
 
-    // --- Hook: 지문 들어가기 전 생각 질문
+    // --- 1) Hook
     const hook = hookOf(e);
     if (hook) {
       s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
       s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: e.title }], { placeholder: "title" });
       chip(s, `${kind} · Hook`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 1.4, y: 1.9, w: 10.5, h: 3.6, rectRadius: 0.25, fill: { color: HEX.lt2 }, line: { color: HEX.lt2 } });
-      s.addShape(pres.shapes.OVAL, { x: 1.9, y: 2.35, w: 1.1, h: 1.1, fill: { color: C.accent1 }, line: { color: C.accent1 } });
-      s.addImage({ data: I.bulbLight, x: 2.17, y: 2.62, w: 0.56, h: 0.56 });
-      s.addText("생각해 볼까?", { x: 3.3, y: 2.4, w: 6, h: 0.5, fontSize: 18, bold: true, color: C.accent1, margin: 0, isTextBox: true });
-      s.addText(hook.replace(/^"|"$/g, "").replace(/" → .*$/, "").replace(/"/g, ""), { x: 3.3, y: 2.95, w: 8.2, h: 2.2, fontSize: 28, bold: true, color: C.text2, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
-      chip(s, "짝과 30초 이야기 → 2~3명 발표", 4.65, 5.85, 4.0, C.accent2, C.background1, 14);
-      s.addNotes(`【Hook 진행】 지문을 펴기 전에 이 질문으로 30초 동안 짝과 이야기 → 2~3명 발표. 정답을 고르지 말고 '오늘 글의 소재'에 관심을 갖게 하는 단계예요.\n【참고】 ${hook}`);
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 1.4, y: 2.0, w: 10.5, h: 3.6, rectRadius: 0.25, fill: { color: HEX.lt2 }, line: { color: HEX.lt2 } });
+      s.addShape(pres.shapes.OVAL, { x: 1.9, y: 2.45, w: 1.1, h: 1.1, fill: { color: C.accent1 }, line: { color: C.accent1 } });
+      s.addImage({ data: I.bulbLight, x: 2.17, y: 2.72, w: 0.56, h: 0.56 });
+      s.addText("생각해 볼까?", { x: 3.3, y: 2.5, w: 6, h: 0.5, fontSize: 18, bold: true, color: C.accent1, margin: 0, isTextBox: true });
+      s.addText(hook.replace(/^"|"$/g, "").replace(/" → .*$/, "").replace(/"/g, ""), { x: 3.3, y: 3.05, w: 8.2, h: 2.2, fontSize: 30, bold: true, color: C.text2, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
+      s.addNotes(`【Hook 진행】 지문을 펴기 전에 이 질문으로 가볍게 이야기 나누기 (정답을 고르는 단계가 아니라 오늘 글의 소재에 관심 갖기).\n【참고】 ${hook}`);
     }
 
-    // --- Problem slide: 지문 + 보기 (시험지처럼)
-    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
-    const prompt = e.prompt || (isImp(e) ? "밑줄 친 부분의 의미로 가장 적절한 것은?" : "다음 빈칸에 들어갈 말로 가장 적절한 것은?");
-    s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: prompt, options: { fontSize: 24 } }], { placeholder: "title" });
-    chip(s, kind, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-    // e.qFont lets you force a size if a long passage overflows in PowerPoint
-    let qs = e.qFont || 22;
-    while (!e.qFont && qs > 13 && passH(qs) + lineH(qs) * (optLines(qs) + 1) + 0.35 > (extraTxt ? 5.15 : 4.9)) qs -= 0.5;
-    const qr = [];
-    if (e.given) {
-      qr.push({ text: "[주어진 문장]  ", options: { fontSize: qs, bold: true, color: HEX.accent2 } });
-      qr.push({ text: e.given, options: { fontSize: qs, bold: true, color: HEX.dk2, breakLine: true } });
-      qr.push({ text: " ", options: { fontSize: 6, breakLine: true } });
-    }
-    P.s.forEach((x, i) => {
-      qr.push(...runs(x[0], { fontSize: qs, color: HEX.dk1 }, false));
-      if (i < P.s.length - 1) qr.push({ text: " ", options: { fontSize: qs } });
-    });
-    qr[qr.length - 1].options.breakLine = true;
-    if (P.foot) qr.push({ text: P.foot, options: { fontSize: 11, italic: true, color: HEX.accent4, align: "right", breakLine: true, paraSpaceBefore: 2 } });
-    if (e.summary) {
-      qr.push({ text: "↓  ", options: { fontSize: qs, bold: true, color: HEX.accent1, paraSpaceBefore: 8 } });
-      qr.push(...abRuns(e.summary, { fontSize: qs, color: HEX.dk2, bold: false }));
-      qr[qr.length - 1].options.breakLine = showOpts;
-    }
-    if (showOpts) e.opts.forEach((o, i) => {
-      qr.push({ text: `${NUM[i]}  ${o[0]}`, options: { fontSize: qs, color: HEX.dk2, paraSpaceBefore: i === 0 ? 10 : 2, breakLine: i < 4 } });
-    });
-    if (!showOpts) delete qr[qr.length - 1].options.breakLine;
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.35, w: 12.1, h: 5.55, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
-    s.addText(qr, { x: 0.85, y: 1.5, w: 11.6, h: 5.3, margin: 0, valign: "top", lineSpacingMultiple: 1.15, isTextBox: true });
-    s.addNotes(`【이 슬라이드 사용법】 숙제로 풀어 온 문제를 그대로 띄운 화면입니다. \"몇 번 골랐어?\" 손가락으로 표시하게 해서 답 분포를 확인하고, 정답은 아직 말하지 마세요. 많이 고른 오답이 있으면 정답·오답 슬라이드에서 그 선택지를 더 오래 설명하세요.\n【한 줄 요약】 ${e.find}`);
-
-    // --- 정답 근거 찾기 (형광)
-    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
-    s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "정답 근거 & 문법 포인트" }], { placeholder: "title" });
-    chip(s, `${kind} · 근거`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-    // layout zones: passage / 근거 이유 / 어휘
-    const hasV = !!(e.vocab && e.vocab.length);
-    const KW = e.keyWhy || {};
-    const whyList = P.s.map((x, i) => (x[2] && KW[i + 1] ? [i + 1, KW[i + 1]] : null)).filter(Boolean);
-    const whyH = whyList.length ? Math.min(1.45, 0.29 * whyList.length + 0.2) : 0;
-    const whyY = (hasV ? 5.8 : 6.6) - (whyList.length ? 0.1 + whyH : 0);
-    const passBoxH = whyY - 0.1 - 1.35;
-    const pSize = Math.min(21, Math.floor(24 * Math.sqrt((3.7 * (passBoxH - 0.25) / 4.95) * 1000 / (5.9 * totalChars))));
-    const pr = [];
-    const G = GR[e.n] || [];
-    const seenG = new Set();
-    P.s.forEach((x, i) => {
-      const base = { fontSize: pSize, color: HEX.dk1 };
-      if (x[2]) base.highlight = HEX.accent3;
-      pr.push({ text: `(${i + 1}) `, options: { fontSize: pSize - 3, bold: true, color: HEX.accent1 } });
-      runs(x[0], base, false).forEach((r) => {
-        if (r.options.bold || r.options.underline) { pr.push(r); return; }
-        // split plain runs by grammar phrases
-        let parts = [{ t: r.text, g: -1 }];
-        G.forEach((g, gi) => g[0].forEach((ph) => {
-          parts = parts.flatMap((pt) => {
-            if (pt.g !== -1 || !pt.t.includes(ph)) return [pt];
-            const k = pt.t.indexOf(ph);
-            return [{ t: pt.t.slice(0, k), g: -1 }, { t: ph, g: gi }, { t: pt.t.slice(k + ph.length), g: -1 }].filter((z) => z.t);
-          });
-        }));
-        parts.forEach((pt) => {
-          if (pt.g === -1) { pr.push({ text: pt.t, options: { ...r.options } }); return; }
-          pr.push({ text: pt.t, options: { ...r.options, bold: true, color: HEX.dk2, highlight: GH } });
-        });
-      });
-      if (i < P.s.length - 1) pr.push({ text: " ", options: { fontSize: pSize } });
-    });
+    // --- 2) 어휘 (클릭하면 뜻이 나타남)
     const VO = e.vocab || [];
-    // vocab words: green dotted underline in passage, meanings in a bottom box
-    VO.forEach(([w]) => {
-      const re = new RegExp("\\b" + w.replace(/[-.*+?^${}()|[\]\\]/g, "\\$&") + "\\b");
-      for (let k = 0; k < pr.length; k++) {
-        const m = pr[k].text.match(re);
-        if (!m || pr[k].vw) continue;
-        const o = pr[k].options, t = pr[k].text, end = m.index + w.length;
-        const wordColor = o.highlight === GH ? HEX.dk2 : HEX.accent1;
-        pr.splice(k, 1,
-          ...(m.index ? [{ text: t.slice(0, m.index), options: { ...o } }] : []),
-          { text: t.slice(m.index, end), options: { ...o, color: wordColor, underline: { style: "dotted", color: HEX.accent1 } }, vw: true },
-          ...(t.slice(end) ? [{ text: t.slice(end), options: { ...o } }] : []));
-        break;
-      }
-    });
-    pr.forEach((r) => delete r.vw);
-    const boxH = passBoxH;
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.35, w: 12.1, h: boxH, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
-    s.addText(pr, { x: 0.85, y: 1.5, w: 11.6, h: boxH - 0.25, margin: 0, valign: "top", lineSpacingMultiple: 1.2, fit: "shrink", isTextBox: true });
-    if (whyList.length) {
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: whyY, w: 12.1, h: whyH, rectRadius: 0.1, fill: { color: "FFF6D6" }, line: { color: HEX.accent3, width: 1.25 } });
-      const wr = [];
-      whyList.forEach(([n, why], wi) => {
-        wr.push({ text: `(${n}) `, options: { bold: true, color: HEX.accent2 } });
-        wr.push({ text: why, options: { color: HEX.dk2, breakLine: wi < whyList.length - 1 } });
-      });
-      s.addText(" 근거 이유 ", { x: 0.8, y: whyY + 0.08, w: 1.15, h: 0.3, fontSize: 12, bold: true, color: HEX.lt1, fill: { color: HEX.accent2 }, align: "center", valign: "middle", margin: 0, isTextBox: true });
-      s.addText(wr, { x: 2.1, y: whyY + 0.05, w: 10.45, h: whyH - 0.1, fontSize: 14, valign: "middle", margin: 0, lineSpacingMultiple: 1.05, fit: "shrink", isTextBox: true });
-    }
     if (VO.length) {
-      const vr = [{ text: " 어휘 ", options: { bold: true, color: HEX.lt1, highlight: HEX.accent1 } }, { text: "   ", options: {} }];
-      VO.forEach(([w, ko], vi) => {
-        vr.push({ text: w + " ", options: { bold: true, color: HEX.accent1 } });
-        vr.push({ text: ko + (vi < VO.length - 1 ? "   ·   " : ""), options: { color: HEX.dk1 } });
+      s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
+      s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "오늘의 단어: 뜻이 뭘까?" }], { placeholder: "title" });
+      chip(s, `${kind} · 어휘`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
+      const vCols = VO.length > 8 ? 3 : 2, vRows = Math.ceil(VO.length / vCols), vW = (12.1 - 0.2 * (vCols - 1)) / vCols, vH = Math.min(1.15, (5.4 - 0.15 * (vRows - 1)) / vRows);
+      VO.forEach(([w, ko], i) => {
+        const x = 0.6 + (i % vCols) * (vW + 0.2), y = 1.45 + Math.floor(i / vCols) * (vH + 0.15);
+        s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: vW, h: vH, rectRadius: 0.12, fill: { color: HEX.lt1 }, line: { color: HEX.lt2, width: 1.5 } });
+        s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: x + 0.2, y: y + vH / 2 - 0.25, w: 0.5, h: 0.5, fill: { color: C.accent1 }, color: C.background1, fontSize: 14, bold: true, align: "center", valign: "middle", margin: 0 });
+        s.addText(w, { x: x + 0.9, y, w: vW * 0.5, h: vH, fontSize: 22, bold: true, color: C.text2, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+        s.addText(ko, { x: x + 0.9 + vW * 0.5, y: y + 0.12, w: vW * 0.5 - 1.05, h: vH - 0.24, fontSize: 20, bold: true, color: C.accent2, fill: { color: "FFF1EC" }, align: "center", valign: "middle", margin: 0, fit: "shrink", isTextBox: true, objectName: `ANIM_v${i}` });
       });
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 5.8, w: 12.1, h: 0.8, rectRadius: 0.1, fill: { color: "EAF5EF" }, line: { color: "CFE6D9", width: 1 } });
-      s.addText(vr, { x: 0.8, y: 5.85, w: 11.7, h: 0.7, fontSize: 14, valign: "middle", margin: 0, lineSpacingMultiple: 1.1, fit: "shrink", isTextBox: true });
+      s.addNotes(`【진행】 단어를 하나씩 읽고 \"뜻이 뭘까?\" 물어본 뒤 클릭 → 뜻이 나타나요 (클릭 한 번에 하나씩).\n${VO.map(([w, ko], i) => `${i + 1}. ${w} = ${ko}`).join(" / ")}`);
     }
-    s.addText([
-      { text: "■ ", options: { color: HEX.accent3 } }, { text: "형광 = 정답 근거 (이유는 노란 박스)     ", options: {} },
-      { text: "■ ", options: { color: GH } }, { text: "파란 형광 = 문법·내신 포인트     ", options: {} },
-      ...(e.vocab && e.vocab.length ? [{ text: "초록 점선 단어 ", options: { color: HEX.accent1, bold: true } }, { text: "= 하단 어휘     ", options: {} }] : []),
-      { text: "(1) (2) (3) ", options: { color: HEX.accent1, bold: true } }, { text: "= 문장 번호", options: {} },
-    ], { x: 0.6, y: 6.65, w: 12.1, h: 0.3, fontSize: 11, color: C.accent4, margin: 0, isTextBox: true });
-    const keyNums = P.s.map((x, i) => (x[2] ? i + 1 : 0)).filter(Boolean).join(", ");
-    const trans = P.s.map((x, i) => `(${i + 1})${x[2] ? " ★" : ""} ${x[1]}`).join("\n");
-    s.addNotes(`【이 슬라이드 사용법】 문장 번호 순서대로 읽으며 해설하고, 형광 문장(${keyNums}번)에서 멈춰 \"여기가 정답 근거!\"라고 강조하세요. 파란 형광은 문법·내신 포인트예요. 아래 설명을 보고 짚어 주세요.\n\n【문법·내신 포인트 (파란 형광)】\n${G.map((g) => `• ${g[0].join(" … ")}\n   → ${g[1]}: ${g[2]}`).join("\n")}\n\n${e.notes}\n\n【문장별 해석 · 선생님 참고용 (★ = 정답 근거)】\n${trans}`);
 
-    // --- Slide A: 흐름 잡기
-    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
-    s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: e.title }], { placeholder: "title" });
-    chip(s, `${kind} · 흐름 잡기`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-    // left: blank sentence card
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.45, w: 5.7, h: 2.65, rectRadius: 0.12, fill: { color: C.background2 }, line: { color: C.background2 } });
-    s.addText(e.step1Label || (isImp(e) ? "STEP 1 · 밑줄 문장" : (e.type === "빈칸" ? "STEP 1 · 빈칸 문장 먼저" : "STEP 1 · 핵심 문장")), { x: 0.9, y: 1.6, w: 5.1, h: 0.35, fontSize: 13, bold: true, color: C.accent1, margin: 0, isTextBox: true });
-    const longB = e.blank.length > 110;
-    s.addText(e.blank, { x: 0.9, y: 2.0, w: 5.1, h: longB ? 0.95 : 0.85, fontSize: longB ? 13 : 16, bold: true, italic: true, color: C.text2, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
-    s.addText(e.blankKo, { x: 0.9, y: longB ? 2.97 : 2.85, w: 5.1, h: longB ? 0.5 : 0.55, fontSize: longB ? 11 : 14, color: C.text1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
-    s.addText([{ text: "찾을 것  ", options: { bold: true, color: C.accent2 } }, { text: e.find, options: { bold: true, color: C.text2 } }], { x: 0.9, y: 3.5, w: 5.1, h: 0.45, fontSize: 15, margin: 0, isTextBox: true });
-    // left: key clue card
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 4.3, w: 5.7, h: 2.55, rectRadius: 0.12, fill: { color: C.background1 }, line: { color: C.accent2, width: 1.5 } });
-    s.addImage({ data: I.key, x: 0.9, y: 4.48, w: 0.3, h: 0.3 });
-    s.addText("STEP 2 · 결정적 단서", { x: 1.3, y: 4.45, w: 4.5, h: 0.35, fontSize: 13, bold: true, color: C.accent2, margin: 0, isTextBox: true });
-    s.addText(e.clue, { x: 0.9, y: 4.9, w: 5.1, h: 1.1, fontSize: 14, italic: true, color: C.text2, margin: 0, valign: "top", isTextBox: true });
-    s.addText(e.clueKo, { x: 0.9, y: 6.0, w: 5.1, h: 0.75, fontSize: 13, color: C.accent4, margin: 0, valign: "top", isTextBox: true });
-    // right: flow
-    s.addText("글의 흐름", { x: 6.8, y: 1.45, w: 3, h: 0.35, fontSize: 13, bold: true, color: C.accent1, margin: 0, isTextBox: true });
-    const fy0 = 1.9, fh = 1.15, fg = 0.13;
-    s.addShape(pres.shapes.LINE, { x: 7.15, y: fy0 + 0.35, w: 0, h: (fh + fg) * 3, line: { color: C.background2, width: 3 } });
-    e.flow.forEach((f, i) => {
-      const y = fy0 + i * (fh + fg);
-      s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: 6.85, y: y + 0.05, w: 0.6, h: 0.6, fill: { color: i === e.flow.length - 1 ? C.accent2 : C.accent1 }, color: C.background1, fontSize: 18, bold: true, align: "center", valign: "middle", margin: 0 });
-      s.addText(f[0], { x: 7.7, y: y + 0.05, w: 4.9, h: 0.35, fontSize: 14, bold: true, color: C.accent1, margin: 0, isTextBox: true });
-      s.addText(f[1], { x: 7.7, y: y + 0.42, w: 5.0, h: fh - 0.42, fontSize: 14, color: C.text1, margin: 0, valign: "top", isTextBox: true });
-    });
-    s.addNotes(`【이 슬라이드 사용법】 근거 찾기를 마친 뒤 \"그래서 이 글은 한마디로 뭐야?\" 하고 정리할 때 띄우세요. 왼쪽 위(빈칸 문장) → 오른쪽(글의 흐름 1~4) → 왼쪽 아래(결정적 단서) 순서로 설명하면 됩니다. 정답은 다음 슬라이드에서 공개!\n\n${e.notes}`);
-
-    // --- Slide B: 정답 & 해설
-    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
-    s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "정답 & 해설" }], { placeholder: "title" });
-    chip(s, `${kind} · 정답`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.45, w: 4.1, h: 5.45, rectRadius: 0.15, fill: { color: C.text2 }, line: { color: C.text2 } });
-    s.addText("정답", { x: 0.95, y: 1.7, w: 3.4, h: 0.4, fontSize: 16, bold: true, color: C.accent3, margin: 0, isTextBox: true });
-    s.addText(NUM[e.ans - 1], { x: 0.95, y: 2.1, w: 3.4, h: 1.3, fontSize: 72, bold: true, color: C.background1, margin: 0, isTextBox: true });
-    const a = e.opts[e.ans - 1];
-    s.addText(a[0], { x: 0.95, y: 3.65, w: 3.45, h: 1.4, fontSize: 17, bold: true, italic: true, color: C.background1, margin: 0, valign: "top", isTextBox: true });
-    s.addText(a[1], { x: 0.95, y: 5.1, w: 3.45, h: 1.6, fontSize: 14, color: C.background2, margin: 0, valign: "top", isTextBox: true });
-    e.opts.forEach((o, i) => {
-      const y = 1.45 + i * 1.11, ok = i === e.ans - 1;
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 5.0, y, w: 7.7, h: 0.99, rectRadius: 0.1, fill: { color: ok ? C.accent6 : C.background1 }, line: { color: ok ? C.accent2 : C.background2, width: ok ? 2 : 1 } });
-      s.addText(NUM[i], { x: 5.2, y: y + 0.12, w: 0.45, h: 0.45, fontSize: 20, bold: true, color: ok ? C.accent2 : C.accent4, margin: 0, isTextBox: true });
-      s.addText(o[0], { x: 5.75, y: y + 0.08, w: 6.75, h: 0.45, fontSize: 15, bold: ok, color: C.text2, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
-      s.addText((ok ? "✔ " : o[2] === "적절" ? "○ " : "✘ ") + o[1], { x: 5.75, y: y + 0.52, w: 6.75, h: 0.4, fontSize: 13, color: ok ? C.accent2 : C.accent4, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
-    });
-    const wrong = e.opts.map((o, i) => `${NUM[i]} ${o[1]}`).join("\n");
-    s.addNotes(`【이 슬라이드 사용법】 \"몇 번 골랐어?\" 다시 확인 → 오답을 하나씩 \"이건 왜 아닐까?\" 물어보고 → 정답 확인.\n\n【선택지별 설명】\n${wrong}\n\n【마무리 멘트】 \"정답 ${NUM[e.ans - 1]}은 지문의 근거 문장을 다른 말로 바꾼 거예요. 답은 늘 지문 안에 있다!\"`);
-
-    // --- 내신 어법 체크 (문법 포인트 연계 문제, 답은 노트)
+    // --- 3) 내신 어법 체크 (워밍업: 지문 속 문장 미리보기, 클릭하면 정답)
     const GQe = (e.gq || []).slice(0, 4);
     if (GQe.length) {
       s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
-      s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "내신 어법 체크: 알맞은 것은?" }], { placeholder: "title" });
+      s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "어법 워밍업: 알맞은 것은?" }], { placeholder: "title" });
       chip(s, `${kind} · 어법`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-      const rh = Math.min(1.25, 5.3 / GQe.length - 0.15);
+      const rh = Math.min(1.35, 5.3 / GQe.length - 0.15);
       GQe.forEach((g, i) => {
         const y = 1.45 + i * (rh + 0.15);
         s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y, w: 12.1, h: rh, rectRadius: 0.1, fill: { color: i % 2 ? HEX.lt1 : "F2F8FB" }, line: { color: "D3E5EE", width: 1 } });
         s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: 0.85, y: y + rh / 2 - 0.3, w: 0.6, h: 0.6, fill: { color: C.accent1 }, color: C.background1, fontSize: 16, bold: true, align: "center", valign: "middle", margin: 0 });
         const qr = g.q.split(/(\[[^\]]+\])/).filter(Boolean).map((t) => (t.startsWith("[") ? { text: t, options: { bold: true, color: HEX.accent2 } } : { text: t, options: { color: HEX.dk1 } }));
-        s.addText(qr, { x: 1.7, y, w: 10.8, h: rh, fontSize: 19, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+        s.addText(qr, { x: 1.7, y, w: 8.0, h: rh, fontSize: 20, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+        s.addText([{ text: g.a, options: { bold: true, fontSize: 18, color: HEX.dk2, breakLine: true } }, { text: g.why || "", options: { fontSize: 12, color: HEX.dk1 } }],
+          { x: 9.85, y: y + 0.1, w: 2.7, h: rh - 0.2, fill: { color: GH }, align: "center", valign: "middle", margin: 0.04, fit: "shrink", isTextBox: true, objectName: `ANIM_g${i}` });
       });
-      s.addNotes(`【진행】 1분 동안 혼자 고르기 → 손가락(1 또는 2)으로 동시에 답 들기 → 정답과 이유 확인. 틀린 학생이 많으면 근거 슬라이드의 파란 형광으로 돌아가 다시 짚어 주세요.\n\n【정답 · 해설】\n${GQe.map((g, i) => `${i + 1}. ${g.a} — ${g.why || ""}`).join("\n")}`);
+      s.addNotes(`【진행】 지문을 읽기 전 워밍업! 오늘 글에 나오는 문장들이에요. 한 문제씩 \"1번 고른 사람? 2번?\" 손 들기 → 클릭하면 오른쪽에 정답이 나타나요. 문장 내용도 함께 해석해 주면 글의 내용을 미리 맛볼 수 있어요.\n\n【정답 · 해설】\n${GQe.map((g, i) => `${i + 1}. ${g.a} — ${g.why || ""}`).join("\n")}`);
     }
+
+    // --- 4) 정답 근거 지문 (해설 강의 메인 화면)
+    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
+    const prompt = e.prompt || (isImp(e) ? "밑줄 친 부분의 의미로 가장 적절한 것은?" : "다음 빈칸에 들어갈 말로 가장 적절한 것은?");
+    s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: prompt, options: { fontSize: 24 } }], { placeholder: "title" });
+    chip(s, kind, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
+    const G = GR[e.n] || [];
+    const KH = e.keyHL || [];            // 노란 형광: 정답 근거 (단어·구 단위)
+    const GPH = G.flatMap((g) => g[0]);  // 파란 형광: 문법 포인트
+    const showOpts = !e.hideOptsOnProblem;
+    const optLine = showOpts ? e.opts.map((o, i) => `${NUM[i]}\u00A0${o[0].replace(/\s*-{3,}\s*/g, "\u00A0–\u00A0").replace(/ /g, "\u00A0")}`).join("     ") : "";
+    const fixedTxt = (e.given || "") + (e.summary || "") + optLine;
+    const markRuns = (txt, base) => {
+      // char-level marks for key(yellow) / grammar(blue)
+      const mk = new Array(txt.length).fill(0);
+      const paint = (ph, bit) => { let k = txt.indexOf(ph); while (k !== -1) { for (let j = k; j < k + ph.length; j++) mk[j] |= bit; k = txt.indexOf(ph, k + ph.length); } };
+      KH.forEach((ph) => paint(ph, 1)); GPH.forEach((ph) => paint(ph, 2));
+      const out = []; let st = 0;
+      for (let j = 1; j <= txt.length; j++) {
+        if (j === txt.length || mk[j] !== mk[st]) {
+          const m = mk[st], o = { ...base };
+          if (m & 1) { o.highlight = HEX.accent3; o.bold = true; }
+          if (m === 2) { o.highlight = GH; o.bold = true; o.color = HEX.dk2; }
+          if (m === 3) { o.underline = { style: "sng", color: HEX.accent5 }; }
+          out.push({ text: txt.slice(st, j), options: o }); st = j;
+        }
+      }
+      return out;
+    };
+    const totalChars = P.s.reduce((a, x) => a + x[0].length, 0);
+    const cpl = (sz) => 12.05 * 72 / (sz * 0.47);
+    const linesAt = (sz) => Math.ceil((totalChars + P.s.length * 4) / cpl(sz)) + Math.ceil(fixedTxt.length / cpl(sz)) + (e.given ? 1 : 0) + (e.summary ? 1 : 0) + (showOpts ? 1 : 0);
+    let qs = e.qFont || 26;
+    while (!e.qFont && qs > 14 && linesAt(qs) * (qs * 1.18 * 1.17 / 72) + 0.25 > 5.45) qs -= 0.5;
+    const pr = [];
+    if (e.given) {
+      pr.push({ text: "[주어진 문장]  ", options: { fontSize: qs, bold: true, color: HEX.accent2 } });
+      pr.push({ text: e.given, options: { fontSize: qs, bold: true, color: HEX.dk2, breakLine: true } });
+    }
+    P.s.forEach((x, i) => {
+      pr.push({ text: `(${i + 1}) `, options: { fontSize: qs - 4, bold: true, color: HEX.accent1 } });
+      const sentBase = { fontSize: qs, color: HEX.dk1, ...(!KH.length && x[2] ? { highlight: HEX.accent3 } : {}) };
+      runs(x[0], sentBase, false).forEach((r) => {
+        if (r.options.underline || r.text.startsWith("____")) pr.push(KH.includes(r.text) ? { text: r.text, options: { ...r.options, highlight: HEX.accent3 } } : r);
+        else pr.push(...markRuns(r.text, r.options));
+      });
+      if (i < P.s.length - 1) pr.push({ text: " ", options: { fontSize: qs } });
+    });
+    if (e.summary || showOpts) pr[pr.length - 1].options.breakLine = true;
+    if (e.summary) {
+      pr.push({ text: "↓  ", options: { fontSize: qs, bold: true, color: HEX.accent1, paraSpaceBefore: 6 } });
+      pr.push(...abRuns(e.summary, { fontSize: qs, color: HEX.dk2 }));
+      if (showOpts) pr[pr.length - 1].options.breakLine = true;
+    }
+    if (showOpts) pr.push({ text: optLine, options: { fontSize: Math.max(13, qs - 4), color: HEX.accent4, paraSpaceBefore: 6 } });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: 1.3, w: 12.45, h: 5.65, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
+    s.addText(pr, { x: 0.65, y: 1.4, w: 12.05, h: 5.45, margin: 0, valign: "top", lineSpacingMultiple: 1.18, fit: "shrink", isTextBox: true });
+    const KW = e.keyWhy || {};
+    const trans = P.s.map((x, i) => `(${i + 1}) ${x[1]}`).join("\n");
+    const optsNote = e.opts.map((o, i) => `${NUM[i]} ${o[0]} — ${o[1]}${i === e.ans - 1 ? "  ★정답" : ""}`).join("\n");
+    s.addNotes([
+      `【정답】 ${NUM[e.ans - 1]} ${e.opts[e.ans - 1][0]}`,
+      e.solve ? `\n【풀이 플로우 — 정답을 모른다고 생각하고 이렇게 이끌어 가세요】\n${e.solve.map((t, i) => `${i + 1}) ${t}`).join("\n")}` : "",
+      Object.keys(KW).length ? `\n【노란 형광 = 정답 근거, 이유】\n${Object.entries(KW).map(([k, v]) => `(${k}) ${v}`).join("\n")}` : "",
+      `\n【선택지 해설】\n${optsNote}`,
+      G.length ? `\n【파란 형광 = 문법·내신 포인트】\n${G.map((g) => `• ${g[0].join(" … ")}\n   → ${g[1]}: ${g[2]}`).join("\n")}` : "",
+      e.notes ? `\n【수업 팁】\n${e.notes}` : "",
+      `\n【문장별 해석】\n${trans}`,
+    ].filter(Boolean).join("\n"));
+
+    // --- 5) 흐름 + 꼭 가져갈 것 (복습)
+    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
+    s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: e.title }], { placeholder: "title" });
+    chip(s, `${kind} · 흐름 정리`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
+    s.addText("글의 흐름", { x: 0.6, y: 1.35, w: 3, h: 0.4, fontSize: 15, bold: true, color: C.accent1, margin: 0, isTextBox: true });
+    const fy0 = 1.85, fh = 1.1, fg = 0.15;
+    s.addShape(pres.shapes.LINE, { x: 0.95, y: fy0 + 0.35, w: 0, h: (fh + fg) * (e.flow.length - 1), line: { color: C.background2, width: 3 } });
+    e.flow.forEach((f, i) => {
+      const y = fy0 + i * (fh + fg);
+      s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: 0.65, y: y + 0.05, w: 0.6, h: 0.6, fill: { color: i === e.flow.length - 1 ? C.accent2 : C.accent1 }, color: C.background1, fontSize: 18, bold: true, align: "center", valign: "middle", margin: 0 });
+      s.addText(f[0], { x: 1.5, y: y + 0.03, w: 5.6, h: 0.38, fontSize: 16, bold: true, color: C.accent1, margin: 0, isTextBox: true });
+      s.addText(f[1], { x: 1.5, y: y + 0.42, w: 5.8, h: fh - 0.42, fontSize: 16, color: C.text1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
+    });
+    const TK = e.takeaways || [];
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 7.6, y: 1.35, w: 5.1, h: 5.55, rectRadius: 0.15, fill: { color: HEX.lt2 }, line: { color: HEX.lt2 } });
+    s.addImage({ data: I.key, x: 7.9, y: 1.62, w: 0.36, h: 0.36 });
+    s.addText("꼭 가져갈 것", { x: 8.4, y: 1.55, w: 4, h: 0.5, fontSize: 19, bold: true, color: C.text2, margin: 0, isTextBox: true });
+    s.addText(TK.map((t, i) => ({ text: t, options: { bullet: { code: "2714" }, breakLine: i < TK.length - 1 } })), { x: 7.9, y: 2.2, w: 4.6, h: 4.5, fontSize: 17, color: C.text1, margin: 0, valign: "top", paraSpaceAfter: 12, fit: "shrink", isTextBox: true });
+    s.addNotes(`【복습 정리】 해설이 끝난 뒤 이 화면으로 1분 정리. \"이 글은 한마디로?\" → 학생이 흐름 4단계를 말하게 하고, 오른쪽 '꼭 가져갈 것'을 함께 읽어요.\n【한 줄 핵심】 ${e.key || ""}`);
   }
 
   pres.addSection({ title: "정리" });
-  // ---------- 복습 미니테스트 ----------
+  // ---------- 복습 미니테스트 (클릭하면 정답) ----------
   const R = D.review || {};
-  // 1) 어휘 스피드 퀴즈: 문제마다 첫 단어 (최대 12개) 또는 review.vocab
   const VQ = (R.vocab || EX.filter((e) => e.vocab && e.vocab.length).map((e) => e.vocab[0])).slice(0, 12);
   if (VQ.length) {
-    [false, true].forEach((reveal) => {
-      s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "정리" });
-      s.addText(reveal ? "어휘 스피드 퀴즈 — 정답" : "어휘 스피드 퀴즈", { placeholder: "title" });
-      chip(s, "복습 미니테스트", 10.6, 0.6, 2.1, C.accent2, C.background1, 12);
-      const cols = 3, rows = Math.ceil(VQ.length / cols), cw = 3.9, chh = Math.min(1.25, 5.3 / rows - 0.12);
-      VQ.forEach(([w, ko], i) => {
-        const x = 0.6 + (i % cols) * (cw + 0.2), y = 1.45 + Math.floor(i / cols) * (chh + 0.12);
-        s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: cw, h: chh, rectRadius: 0.12, fill: { color: reveal ? HEX.lt2 : HEX.lt1 }, line: { color: HEX.lt2, width: 1.5 } });
-        s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: x + 0.2, y: y + chh / 2 - 0.25, w: 0.5, h: 0.5, fill: { color: C.accent1 }, color: C.background1, fontSize: 14, bold: true, align: "center", valign: "middle", margin: 0 });
-        s.addText(reveal ? [{ text: w, options: { bold: true, color: HEX.dk2, breakLine: true } }, { text: ko, options: { color: HEX.accent2, bold: true } }] : [{ text: w, options: { bold: true, color: HEX.dk2 } }],
-          { x: x + 0.9, y, w: cw - 1.05, h: chh, fontSize: 20, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
-      });
-      s.addNotes(reveal ? `【정답 확인】 ${VQ.map(([w, ko], i) => `${i + 1}. ${w} = ${ko}`).join(" / ")}` : "【진행】 번호를 부르면 손 든 학생이 뜻을 말하기 (스피드 퀴즈). 또는 모둠별로 1분 동안 공책에 뜻을 써서 점수 경쟁. 다음 슬라이드에서 정답 공개.");
+    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "정리" });
+    s.addText("어휘 스피드 퀴즈", { placeholder: "title" });
+    chip(s, "복습 미니테스트", 10.6, 0.6, 2.1, C.accent2, C.background1, 12);
+    const cols = 3, rows = Math.ceil(VQ.length / cols), cw = 3.9, chh = Math.min(1.25, 5.3 / rows - 0.12);
+    VQ.forEach(([w, ko], i) => {
+      const x = 0.6 + (i % cols) * (cw + 0.2), y = 1.45 + Math.floor(i / cols) * (chh + 0.12);
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: cw, h: chh, rectRadius: 0.12, fill: { color: HEX.lt1 }, line: { color: HEX.lt2, width: 1.5 } });
+      s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: x + 0.15, y: y + chh / 2 - 0.22, w: 0.44, h: 0.44, fill: { color: C.accent1 }, color: C.background1, fontSize: 13, bold: true, align: "center", valign: "middle", margin: 0 });
+      s.addText(w, { x: x + 0.7, y, w: 1.75, h: chh, fontSize: 17, bold: true, color: C.text2, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+      s.addText(ko, { x: x + 2.5, y: y + 0.12, w: 1.3, h: chh - 0.24, fontSize: 15, bold: true, color: C.accent2, fill: { color: "FFF1EC" }, align: "center", valign: "middle", margin: 0, fit: "shrink", isTextBox: true, objectName: `ANIM_q${i}` });
     });
+    s.addNotes(`【진행】 번호를 부르면 손 든 학생이 뜻 말하기 → 클릭하면 뜻이 하나씩 나타나요.\n${VQ.map(([w, ko], i) => `${i + 1}. ${w} = ${ko}`).join(" / ")}`);
   }
-  // 2) 어법 골든벨: review.grammar = [{ q: "... [A / B] ...", a: "A", why: "..." }]
   const GQ = (R.grammar || []).slice(0, 6);
   if (GQ.length) {
-    [false, true].forEach((reveal) => {
-      s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "정리" });
-      s.addText(reveal ? "어법 골든벨 — 정답" : "어법 골든벨: 알맞은 것은?", { placeholder: "title" });
-      chip(s, "복습 미니테스트", 10.6, 0.6, 2.1, C.accent2, C.background1, 12);
-      const rh = Math.min(0.95, 5.4 / GQ.length - 0.1);
-      GQ.forEach((g, i) => {
-        const y = 1.4 + i * (rh + 0.1);
-        s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y, w: 12.1, h: rh, rectRadius: 0.1, fill: { color: i % 2 ? HEX.lt1 : "F7FAF9" }, line: { color: HEX.lt2, width: 1 } });
-        s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: 0.8, y: y + rh / 2 - 0.25, w: 0.5, h: 0.5, fill: { color: C.accent1 }, color: C.background1, fontSize: 14, bold: true, align: "center", valign: "middle", margin: 0 });
-        const qr = g.q.split(/(\[[^\]]+\])/).filter(Boolean).map((t) => {
-          if (!t.startsWith("[")) return { text: t, options: { color: HEX.dk1 } };
-          return reveal ? { text: g.a, options: { bold: true, color: HEX.dk2, highlight: GH } } : { text: t, options: { bold: true, color: HEX.accent2 } };
-        });
-        if (reveal && g.why) qr.push({ text: `   ← ${g.why}`, options: { fontSize: 13, color: HEX.accent4 } });
-        s.addText(qr, { x: 1.5, y, w: 11.0, h: rh, fontSize: 17, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
-      });
-      s.addNotes(reveal ? `【정답 해설】\n${GQ.map((g, i) => `${i + 1}. ${g.a} — ${g.why || ""}`).join("\n")}` : "【진행】 골든벨처럼 문제마다 화이트보드(또는 손가락 1·2)로 동시에 답 들기 → 틀린 문제는 근거 슬라이드의 파란 형광으로 돌아가 다시 확인. 다음 슬라이드에서 정답 공개.");
+    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "정리" });
+    s.addText("어법 골든벨: 알맞은 것은?", { placeholder: "title" });
+    chip(s, "복습 미니테스트", 10.6, 0.6, 2.1, C.accent2, C.background1, 12);
+    const rh = Math.min(0.95, 5.4 / GQ.length - 0.1);
+    GQ.forEach((g, i) => {
+      const y = 1.4 + i * (rh + 0.1);
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y, w: 12.1, h: rh, rectRadius: 0.1, fill: { color: i % 2 ? HEX.lt1 : "F7FAF9" }, line: { color: HEX.lt2, width: 1 } });
+      s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: 0.8, y: y + rh / 2 - 0.25, w: 0.5, h: 0.5, fill: { color: C.accent1 }, color: C.background1, fontSize: 14, bold: true, align: "center", valign: "middle", margin: 0 });
+      const qr = g.q.split(/(\[[^\]]+\])/).filter(Boolean).map((t) => (t.startsWith("[") ? { text: t, options: { bold: true, color: HEX.accent2 } } : { text: t, options: { color: HEX.dk1 } }));
+      s.addText(qr, { x: 1.5, y, w: 8.9, h: rh, fontSize: 17, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+      s.addText([{ text: g.a, options: { bold: true, fontSize: 16, color: HEX.dk2, breakLine: true } }, { text: g.why || "", options: { fontSize: 10, color: HEX.accent4 } }],
+        { x: 10.5, y: y + 0.07, w: 2.1, h: rh - 0.14, fill: { color: GH }, align: "center", valign: "middle", margin: 0.03, fit: "shrink", isTextBox: true, objectName: `ANIM_b${i}` });
     });
+    s.addNotes(`【진행】 골든벨처럼 동시에 답 들기 → 클릭하면 정답이 하나씩 나타나요.\n${GQ.map((g, i) => `${i + 1}. ${g.a} — ${g.why || ""}`).join("\n")}`);
   }
 
   // ---------- 마무리 ----------
@@ -488,5 +411,27 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
   s.addNotes(`【마무리 멘트】 \"오늘 ${EX.length}문제를 같은 방법으로 풀었어요. 다음 시간에도 ${IN.steps.items.map((it) => it[0]).join(" → ")}!\"\n【과제 안내】 ${M.homework}. 다음 시간 시작 5분 동안 확인하세요.`);
 
   await pres.writeFile({ fileName: OUT_PATH });
+  await addClickReveals(OUT_PATH);
   console.log("written", OUT_PATH);
 })();
+
+async function addClickReveals(file) {
+  let JSZip;
+  try { JSZip = require("jszip"); } catch (_) { JSZip = require(require.resolve("jszip", { paths: [require.resolve("pptxgenjs")] })); }
+  const zip = await JSZip.loadAsync(fs.readFileSync(file));
+  const names = Object.keys(zip.files).filter((n) => /^ppt\/slides\/slide\d+\.xml$/.test(n));
+  for (const n of names) {
+    let x = await zip.file(n).async("string");
+    const ids = [...x.matchAll(/<p:cNvPr id="(\d+)" name="ANIM_[^"]*"/g)].map((m) => m[1]);
+    if (!ids.length || x.includes("<p:timing>")) continue;
+    let c = 2;
+    const clicks = ids.map((id) => {
+      const a = ++c, b = ++c, d = ++c, f = ++c;
+      return `<p:par><p:cTn id="${a}" fill="hold"><p:stCondLst><p:cond delay="indefinite"/></p:stCondLst><p:childTnLst><p:par><p:cTn id="${b}" fill="hold"><p:stCondLst><p:cond delay="0"/></p:stCondLst><p:childTnLst><p:par><p:cTn id="${d}" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect"><p:stCondLst><p:cond delay="0"/></p:stCondLst><p:childTnLst><p:set><p:cBhvr><p:cTn id="${f}" dur="1" fill="hold"><p:stCondLst><p:cond delay="0"/></p:stCondLst></p:cTn><p:tgtEl><p:spTgt spid="${id}"/></p:tgtEl><p:attrNameLst><p:attrName>style.visibility</p:attrName></p:attrNameLst></p:cBhvr><p:to><p:strVal val="visible"/></p:to></p:set></p:childTnLst></p:cTn></p:par></p:childTnLst></p:cTn></p:par></p:childTnLst></p:cTn></p:par>`;
+    }).join("");
+    const timing = `<p:timing><p:tnLst><p:par><p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot"><p:childTnLst><p:seq concurrent="1" nextAc="seek"><p:cTn id="2" dur="indefinite" nodeType="mainSeq"><p:childTnLst>${clicks}</p:childTnLst></p:cTn><p:prevCondLst><p:cond evt="onPrev" delay="0"><p:tgtEl><p:sldTgt/></p:tgtEl></p:cond></p:prevCondLst><p:nextCondLst><p:cond evt="onNext" delay="0"><p:tgtEl><p:sldTgt/></p:tgtEl></p:cond></p:nextCondLst></p:seq></p:childTnLst></p:cTn></p:par></p:tnLst></p:timing>`;
+    x = x.includes("</p:clrMapOvr>") ? x.replace("</p:clrMapOvr>", "</p:clrMapOvr>" + timing) : x.replace("</p:cSld>", "</p:cSld>" + timing);
+    zip.file(n, x);
+  }
+  fs.writeFileSync(file, await zip.generateAsync({ type: "nodebuffer", compression: "DEFLATE" }));
+}

@@ -24,7 +24,7 @@
       "items": [["단계 이름", "설명\n→ 행동"], ["…", "…"], ["…", "…"]],
       "notes": "발표자 노트 대본"
     },
-    "signals": [                     // 신호어 4종 (순서 고정: 반전, 결론, 예시, 재진술 아이콘)
+    "signals": [   // 8종 권장: [이름, signal 단어들, 설명, 이번 세트 Ex 번호]                     // 신호어 4종 (순서 고정: 반전, 결론, 예시, 재진술 아이콘)
       ["반전", "However · But · …", "설명\n→ 결과", "Ex 10"]   // 마지막 = 이번 세트에서 그 신호어가 결정적인 문제 번호
     ],
     "traps": [                       // 오답 함정 4종 (라벨은 반드시 아래 4개 중에서)
@@ -92,6 +92,9 @@
       "given": "This reflection process enables …",          // 문장 삽입: 지문 위 [주어진 문장] 표시
       "hideOptsOnProblem": true,     // 삽입·어휘처럼 선택지가 지문 속 ①~⑤인 문제는 보기 목록 숨김
       "step1Label": "STEP 1 · 요약문 먼저",  // 흐름 슬라이드 첫 카드 이름
+      "keyHL": ["continue to preserve", "makes them who they are"],   // 노란 형광 = 정답 근거 (단어·구 단위, 지문에 있는 그대로). 없으면 true 문장 전체를 칠함
+      "solve": ["요약문 먼저: …", "첫 문장 continue to preserve → (A) maintain, ①④⑤ 탈락", "…", "결론: ③"],  // 풀이 플로우 4~5단계 (노트)
+      "takeaways": ["요약문은 본문 단어를 다른 말로", "regard A as B"],  // 흐름 슬라이드 '꼭 가져갈 것'
       "keyWhy": { "4": "continue the tradition → (A) maintain" },  // 정답 근거(true) 문장 번호 → 근거 이유 한 줄 (근거 슬라이드 노란 박스)
       "gq": [ { "q": "…a way of life that [go / goes] back…", "a": "goes", "why": "선행사 단수" } ],  // 내신 어법 체크 3문항 (지문 문장 기반, 문법 포인트와 연계)
       "hook": "몽골에 아직도 말 타는 유목민이 있을까?",  // 미션 슬라이드 하단 질문 (생략 시 notes의 【도입 질문】에서 자동 추출)

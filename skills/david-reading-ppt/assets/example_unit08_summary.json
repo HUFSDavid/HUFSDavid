@@ -10,7 +10,7 @@
   "author": "David"
  },
  "intro": {
-  "planFormula": "요약문 3단계 · 신호어",
+  "planFormula": "요약문 3단계 · Signal",
   "steps": {
    "title": "요약문 완성, 딱 3단계만 기억하자",
    "items": [
@@ -32,29 +32,54 @@
   "signals": [
    [
     "반전",
-    "However · While(~이지만) · But · Rather",
-    "앞 내용과 반대가 나온다\n→ 뒤가 진짜 주장",
-    "Ex 93, 99"
+    "However · But · Yet · Still · In contrast · On the other hand · Rather · While / Although(~이지만)",
+    "앞과 반대가 나온다 → 뒤가 진짜 주장",
+    "Ex 99, 102"
    ],
    [
-    "결론",
-    "Consequently · This result shows · Therefore",
-    "지금까지 내용을 정리한다\n→ 요약문의 원본",
-    "Ex 96, 97"
+    "결론·요약",
+    "Therefore · Thus · Consequently · As a result · In short · In conclusion · This is why",
+    "지금까지를 정리 → 요약문의 원본",
+    "Ex 96"
    ],
    [
     "예시",
-    "For example · In one experiment · For instance",
-    "실험·예시의 공통점 = 요약문",
+    "For example · For instance · Consider · In one experiment · such as · like",
+    "예시는 '공통점'만 잡는다",
     "Ex 94, 101"
    ],
    [
     "재진술",
-    "In other words · That is · —(대시)",
-    "같은 말을 다르게 한 번 더\n→ 정답 단어의 힌트",
-    "Ex 99, 100"
+    "In other words · That is (to say) · Put differently · — (대시) · namely",
+    "같은 말 한 번 더 → 정답 단어 힌트",
+    "Ex 100"
+   ],
+   [
+    "추가·나열",
+    "Also · Moreover · Furthermore · In addition · Besides · Similarly · Likewise",
+    "같은 방향의 근거를 더한다",
+    "Ex 92, 94"
+   ],
+   [
+    "원인·결과",
+    "because · since · so · lead to · result in · cause · This happens because",
+    "원인 ↔ 결과 관계가 핵심",
+    "Ex 94"
+   ],
+   [
+    "강조·주제",
+    "It is ~ that · The key is · What matters is · must · should · not only A but also B",
+    "필자가 힘주어 말하는 곳 = 주제",
+    "Ex 95"
+   ],
+   [
+    "대조·비교",
+    "whereas · while · Meanwhile · unlike · compared to · more ~ than",
+    "두 대상의 차이가 글의 핵심",
+    "Ex 97, 101"
    ]
   ],
+  "signalNotes": "【설명 스크립트】 \"글을 읽다가 이 signal이 보이면 꼭 동그라미! 답이 바로 근처에 있어요.\"\n【특히 오늘】 While(~이지만, Ex 99)과 However(Ex 102)는 반전 signal, 대시(—, Ex 100)는 재진술 signal이에요. 해당 문제에서 \"아까 본 signal 기억나?\"로 다시 연결해 주세요.\n【팁】 While은 '~하는 동안'(시간)과 '~이지만'(대조) 두 뜻이 있어요. 문장 앞에 오고 뒤에 반대 내용이 나오면 대조!",
   "traps": [
    [
     "반쪽 정답",
@@ -253,6 +278,25 @@
      "why": "regard A as B (A를 B로 여기다)"
     }
    ],
+   "keyHL": [
+    "continue to preserve",
+    "continue the tradition",
+    "still regard",
+    "makes them who they are"
+   ],
+   "solve": [
+    "요약문 먼저: 'Many Mongolians (A) their nomadic lifestyle because … essential to their cultural (B).' → (A) 유목 생활을 어떻게 한다? (B) 전통은 무엇에 필수적?",
+    "첫 문장에서 continue to preserve(계속 보존한다) 발견 → (A)는 '유지/보존' 방향. 선택지 중 maintain만 남기고 abandon·reform 탈락 (①④⑤ 제거).",
+    "근거 더 찾기: continue the tradition, still regard … → 계속 이어 간다는 말이 반복 = 주제. (A) maintain 확정.",
+    "(B): 마지막 문장 makes them who they are(그들을 그들답게 만드는) = '정체성'. diversity(다양성) 이야기는 없음 → ② 탈락.",
+    "결론: maintain – identity → ③. \"본문의 who they are가 요약문에선 identity로 바뀌었지?\""
+   ],
+   "takeaways": [
+    "요약문은 본문 단어를 '다른 말'로 바꾼다: continue to preserve → maintain",
+    "who they are = identity (정체성)",
+    "regard A as B: A를 B로 여기다",
+    "어휘: preserve · heritage · nomadic"
+   ],
    "summary": "Many Mongolians (A) their nomadic lifestyle because they believe their old traditions are essential to their cultural (B).",
    "blank": "Many Mongolians (A) their nomadic lifestyle because they believe their old traditions are essential to their cultural (B).",
    "blankKo": "많은 몽골인들은 자신들의 오랜 전통이 문화적 (B)에 필수적이라고 믿기 때문에 유목 생활 방식을 (A)한다.",
@@ -439,6 +483,28 @@
      "a": "think",
      "why": "사역동사 make + O + 동사원형"
     }
+   ],
+   "keyHL": [
+    "lose $30",
+    "keep $20",
+    "61.9%",
+    "42.9%",
+    "‘lose’ versus ‘keep’",
+    "came to different decisions",
+    "a negative outcome"
+   ],
+   "solve": [
+    "요약문 먼저: 사람들은 (A) 상황에서 가능한 (B)를 예상하게 하는 선택지를 고르지 않는다 → (B)는 '피하고 싶은 것'이 들어갈 자리.",
+    "실험 정리: A 그룹 '30달러를 잃는다' vs B 그룹 '20달러를 간직한다' → 칠판에 50−30=20, 결과는 같다!",
+    "결과: '잃는다'를 들은 A 그룹이 도박을 더 많이 택함(61.9% vs 42.9%) → 확정된 '손실'을 피하려고 도박을 함 → (B) loss. profit이 들어간 ②④ 탈락.",
+    "(A): 두 그룹 모두 '도박할까 말까' 결정을 내리는 상황 → decision-making. life-threatening(생명 위협)은 글에 없음 → ③ 탈락.",
+    "결론: decision-making – loss → ⑤."
+   ],
+   "takeaways": [
+    "틀 효과: 같은 결과도 '어떻게 표현하느냐'에 따라 선택이 달라진다",
+    "사람은 '손실'이라는 말을 싫어한다 (lose < keep)",
+    "Having heard ~: 완료 분사구문",
+    "make + O + 동사원형"
    ],
    "summary": "When people face a (A) situation, they are not likely to choose an option that makes them expect a possible (B).",
    "blank": "When people face a (A) situation, they are not likely to choose an option that makes them expect a possible (B).",
@@ -629,6 +695,24 @@
      "a": "barely notice",
      "why": "barely 자체가 부정어 → not과 함께 쓰지 않음"
     }
+   ],
+   "keyHL": [
+    "copy the behavior of those around us",
+    "transfer of behavior",
+    "through social networks"
+   ],
+   "solve": [
+    "요약문 먼저: 한 사람의 행동이 사회적 (B)을 통해 남의 욕구를 어떻게 (A)하는가?",
+    "예시(비만 친구 → 나도 비만, 건강한 친구 → 나도 건강)는 넘기고, 이유 문장을 찾자: we tend to copy the behavior of those around us.",
+    "따라 하게 '만든다' = 욕구를 일으킨다 → (A) triggers. reflects(반영하다)·approves(승인하다)는 '따라 하게 만든다'는 뜻이 아님 → ②④⑤ 탈락.",
+    "(B): 무엇을 통해? through social networks, friends → '사회적 접촉' contacts. structures(구조)는 글에 없음 → ③ 탈락.",
+    "결론: triggers – contacts → ①."
+   ],
+   "takeaways": [
+    "For example 뒤 예시는 '공통점'만 잡으면 된다",
+    "social contagion: 행동이 사람 사이로 번진다",
+    "주어 Many cases → 동사 happen (수일치)",
+    "barely = 거의 ~않다 (부정어)"
    ],
    "summary": "The social contagion theory illustrates how one person’s action (A) another’s desire to perform the same action through social (B).",
    "blank": "The social contagion theory illustrates how one person’s action (A) another’s desire to perform the same action through social (B).",
@@ -822,6 +906,24 @@
      "why": "It is ~ that 강조구문"
     }
    ],
+   "keyHL": [
+    "ask yourself a series of questions",
+    "not only essential in personal development but also critical to corporate success",
+    "promote a culture"
+   ],
+   "solve": [
+    "요약문 먼저: 우리의 (A) 노력이 개인 발전뿐 아니라 (B) 성취로 이어진다 → (B)는 '개인' 말고 다른 무엇.",
+    "(A): 스스로 질문을 던지며 강점·약점을 파악 = 의도적·의식적인 노력 → conscious. inventive·independent는 근거 없음 → ①②③ 탈락.",
+    "(B): not only personal development but also corporate success → 개인 + 회사(집단)의 성공 → collective.",
+    "④ conscious–collective vs ⑤ conscious–modest: modest(적당한)는 근거 없음 → ④.",
+    "결론: ④. \"not only A but also B에서 B가 바로 정답 힌트!\""
+   ],
+   "takeaways": [
+    "not only A but also B → B가 강조되는 내용",
+    "corporate success = collective achievement",
+    "It is ~ that 강조구문",
+    "enable O to V / 부사 clearly"
+   ],
    "summary": "Our (A) efforts to understand the strong points and weak points of a subject through the process of self-reflection can lead to (B) achievement as well as individual progress.",
    "blank": "Our (A) efforts to understand the strong points and weak points of a subject through the process of self-reflection can lead to (B) achievement as well as individual progress.",
    "blankKo": "자기 성찰 과정을 통해 대상의 강점과 약점을 이해하려는 우리의 (A) 노력은 개인의 발전뿐 아니라 (B) 성취로 이어질 수 있다.",
@@ -1011,6 +1113,24 @@
      "a": "easy",
      "why": "명사 prey를 꾸미는 형용사"
     }
+   ],
+   "keyHL": [
+    "interpreting the hidden messages",
+    "to warn others of the presence of danger",
+    "the ability to recognize"
+   ],
+   "solve": [
+    "요약문 먼저: 두 감각 체계의 기능은 다른 개체가 (B)하려고 방출하는 냄새를 (A)하는 것.",
+    "체계 ①은 냄새 '감지', 체계 ②는 냄새 '이해·해석' → interpreting the hidden messages → (A) interpreting. eliminating·distributing은 무관 → ①④⑤ 탈락.",
+    "(B): 동물들이 냄새를 방출하는 목적 = to warn others of the presence of danger(위험을 경고) → '신호를 보내다' signal.",
+    "③ defeat(물리치다)는 위험을 '알리는' 게 아니라 '이기는' 것 → 탈락.",
+    "결론: interpreting – signal → ②."
+   ],
+   "takeaways": [
+    "warn = 신호를 보내다(signal)로 바꿔 쓰기",
+    "the latter = 후자 (두 번째 체계)",
+    "consist of는 수동태 불가",
+    "make + O + 형용사 (easy prey)"
    ],
    "summary": "Survival of some animals can depend on two sensory systems, the functions of which involve (A) odors that other subjects release to (B) approaching danger to other members of the species.",
    "blank": "Survival of some animals can depend on two sensory systems, the functions of which involve (A) odors that other subjects release to (B) approaching danger to other members of the species.",
@@ -1204,6 +1324,25 @@
      "why": "서양인이 '알아차리는' 것 → 능동 현재분사"
     }
    ],
+   "keyHL": [
+    "cultural differences in their thinking styles",
+    "consider the entire context",
+    "independent and analytical",
+    "invaluable source of team strength"
+   ],
+   "solve": [
+    "요약문 먼저: 사람들은 문화적 배경에 따라 (A) 사고방식을 갖고, 문화적 다양성은 팀워크를 (B)할 수 있다.",
+    "(B) 먼저 쉽게: 마지막 문장 invaluable source of team strength(팀 역량의 귀중한 원천) → 좋게 만든다 = enhance. allocate·undermine 탈락 → ①③⑤ 제거.",
+    "(A): ② practical vs ④ preferred. 글은 문화 차이 때문에 '보는 방식이 다르다' → 각 문화가 더 선호하는(익숙한) 방식 → preferred. practical(실용적인) 근거 없음.",
+    "결론: preferred – enhance → ④.",
+    "팁: 두 칸 중 쉬운 칸부터 확정하면 선택지가 빨리 줄어든다!"
+   ],
+   "takeaways": [
+    "쉬운 칸(B)부터 확정 → 선택지 줄이기",
+    "attribute A to B: A를 B의 탓으로 보다",
+    "When asked ~ (수동 분사구문)",
+    "수능특강 03강 Ex 3과 같은 실험 (분석적 vs 총체적)"
+   ],
    "summary": "People tend to have a (A) way of thinking based on their cultural backgrounds, so having cultural diversity on a team can (B) teamwork.",
    "blank": "People tend to have a (A) way of thinking based on their cultural backgrounds, so having cultural diversity on a team can (B) teamwork.",
    "blankKo": "사람들은 문화적 배경에 따라 (A) 사고방식을 갖는 경향이 있으므로, 팀 안의 문화적 다양성은 팀워크를 (B)할 수 있다.",
@@ -1386,6 +1525,23 @@
      "why": "음료가 '맛보아진' 것 → 과거분사"
     }
    ],
+   "keyHL": [
+    "the maximum or minimum ratings occurred on the one presented first",
+    "The first beverage tasted was rated significantly higher"
+   ],
+   "solve": [
+    "요약문 먼저: (A) 위치에 제시된 항목은 (B) 평가를 받는다 → 어느 위치? 어떤 평가?",
+    "연구 ①: 최고 또는 최저 평가가 '처음' 제시된 것에서 → (A) initial(처음의). fixed·last·random·variable 탈락 → 정답 후보 ①.",
+    "(B) 확인: maximum or minimum = 양 끝 = extreme(극단적인). 연구 ② 처음 맛본 음료가 훨씬 높은 평가 → 역시 '처음'.",
+    "③ last: 본문 2번 문장에 last가 나오지만 결과는 first → 본문 단어에 속지 말 것.",
+    "결론: initial – extreme → ①."
+   ],
+   "takeaways": [
+    "maximum or minimum → extreme 으로 바꿔 말하기",
+    "본문에 나온 단어(last)라고 정답이 아니다",
+    "have + O + 동사원형 (사역)",
+    "whether절 주어 → 단수 동사"
+   ],
    "summary": "The items presented in the (A) position tend to get (B) ratings by people.",
    "blank": "The items presented in the (A) position tend to get (B) ratings by people.",
    "blankKo": "(A) 위치에 제시된 항목은 사람들에게 (B) 평가를 받는 경향이 있다.",
@@ -1556,6 +1712,23 @@
      "a": "keeping",
      "why": "involve + 동명사"
     }
+   ],
+   "keyHL": [
+    "While this mental power matters",
+    "the more complicated people thought their diet plan was, the sooner they were likely to drop it"
+   ],
+   "solve": [
+    "요약문 먼저: 다이어트 성공에는 과정의 (A)이 (B)보다 중요하다 → '무엇보다' 중요한지가 (B).",
+    "1번 문장: 사람들은 결단력·끈기·자기 절제(정신력)가 중요하다고 생각 → 2번 While this mental power matters(정신력도 중요하지만…) = 반전 signal!",
+    "(B): 덜 중요한 쪽 = mental power = willpower(의지력). necessity·expense 탈락 → ①③⑤ 제거.",
+    "(A): 복잡하다고 생각할수록 빨리 포기 → 반대로 '단순함'이 중요 → simplicity. consistency(일관성)는 근거 없음 → ④ 탈락.",
+    "결론: simplicity – willpower → ②."
+   ],
+   "takeaways": [
+    "While(~이지만) = 반전 signal: 뒤가 진짜 주장",
+    "determination·persistence·self-discipline = willpower",
+    "the 비교급, the 비교급",
+    "involve + -ing"
    ],
    "summary": "To succeed in diet, (A) of process for carrying it out is more important than (B).",
    "blank": "To succeed in diet, (A) of process for carrying it out is more important than (B).",
@@ -1732,6 +1905,24 @@
      "a": "ignoring",
      "why": "직원들이 '무시하는' 것 → 능동"
     }
+   ],
+   "keyHL": [
+    "trained incapacity",
+    "the inability to respond to new or unusual circumstances",
+    "little variety and repetitive tasks"
+   ],
+   "solve": [
+    "요약문 먼저: (A) 일을 하도록 훈련받으면, 새로운 상황에 대처할 수 (B) 된다.",
+    "(B): trained incapacity — the inability to respond to new … circumstances → 대처할 수 '없게' = unable. afraid·eager·prompt·willing 탈락 → ④만 남음.",
+    "(A) 확인: At the root of trained incapacity is a job with little variety and repetitive tasks → 단조로운 = monotonous.",
+    "② repetitive는 (A)만 보면 맞지만 (B) eager가 틀림 → 두 칸 모두 확인!",
+    "결론: monotonous – unable → ④."
+   ],
+   "takeaways": [
+    "대시(—) 뒤는 앞 단어의 설명 = 재진술 signal",
+    "little variety + repetitive = monotonous",
+    "부사구 도치: At the root of ~ is a job",
+    "risk + -ing"
    ],
    "summary": "When the workers of organizations are trained to do (A) jobs, they possibly end up being (B) to deal with new or changing situations.",
    "blank": "When the workers of organizations are trained to do (A) jobs, they possibly end up being (B) to deal with new or changing situations.",
@@ -1927,6 +2118,26 @@
      "why": "뒤가 완전한 절 → 보어절 접속사 that"
     }
    ],
+   "keyHL": [
+    "help another individual",
+    "indifferent to the suffering of the masses",
+    "far greater",
+    "the larger hunger problem",
+    "significantly reduced"
+   ],
+   "solve": [
+    "요약문 먼저: 사람들은 어려움에 처한 (A)을 더 돕지만, 기아에 대한 (B) 관점이 주어지면 무관심해진다.",
+    "1번 문장(주제문): 다른 '개인'은 돕는 사람들도 '대중'의 고통에는 무관심 → (A) an individual. the masses·a nation 탈락 → ③④⑤ 제거.",
+    "실험 결과: 개인 Rokia에 대한 기부가 통계 묘사보다 far greater → (A) 재확인.",
+    "(B): 마지막 문장 the larger hunger problem(더 큰 기아 문제)을 더하자 기부가 감소 → larger. simpler(더 단순한) 근거 없음 → ② 탈락.",
+    "결론: an individual – larger → ①."
+   ],
+   "takeaways": [
+    "주제문(1번)이 곧 요약문",
+    "한 명의 이야기 > 큰 숫자(통계)",
+    "비교급 강조 far / much / even",
+    "긴 주어 뒤 동사 찾기 (people … become)"
+   ],
    "summary": "An experiment shows that while people are more willing to help (A) in need, they become indifferent when given the (B) perspective of hunger.",
    "blank": "An experiment shows that while people are more willing to help (A) in need, they become indifferent when given the (B) perspective of hunger.",
    "blankKo": "한 실험은 사람들이 어려움에 처한 (A)을 돕는 데는 더 적극적이지만, 기아에 대한 (B) 관점이 주어지면 무관심해진다는 것을 보여 준다.",
@@ -2110,6 +2321,24 @@
      "why": "call O C의 수동태"
     }
    ],
+   "keyHL": [
+    "lose $30",
+    "keep $20",
+    "However",
+    "‘lose’ versus ‘keep’"
+   ],
+   "solve": [
+    "빈칸 문장: 두 그룹은 사실 ____로 이어지는 선택지를 받았다 → 두 선택지의 '결과'를 비교하자.",
+    "칠판 계산: 50 − 30 = 20 / 20 간직 = 20 → 둘 다 20달러가 남는다.",
+    "다음 문장 However: '그런데도 표현이 달라서 다른 결정' → 앞은 '결과는 같다'여야 자연스럽다.",
+    "① serious financial loss는 lose만 보고 고르는 함정, ③ 도박을 피함은 실제와 반대.",
+    "결론: an identical outcome → ②."
+   ],
+   "takeaways": [
+    "빈칸 뒤 However → 빈칸은 뒤 내용과 반대 방향",
+    "Ex 93과 같은 지문: 요약문 → 빈칸으로 변형",
+    "be called + 명사 (call O C 수동태)"
+   ],
    "blank": "…the two groups were given options that actually led to ________.",
    "blankKo": "두 그룹은 사실 ______로 이어지는 선택지를 받았다."
   },
@@ -2292,6 +2521,22 @@
      "why": "선행사 a culture(단수)"
     }
    ],
+   "keyHL": [
+    "ask yourself a series of questions to identify blind spots",
+    "It is not only essential"
+   ],
+   "solve": [
+    "주어진 문장: This reflection process(이 성찰 과정)가 문제를 분명히 보게 해 준다 → 앞에 '성찰 과정'의 구체적 내용이 와야 함.",
+    "① 뒤 문장: 맹점을 찾으려고 스스로 질문을 던진다 = 성찰 과정의 구체적 내용 → 주어진 문장은 이 '뒤'에 와야 한다.",
+    "② 뒤 문장: It is not only essential … → It이 가리킬 단수 명사가 바로 앞에 필요 = this reflection process.",
+    "주어진 문장을 ②에 넣고 읽기: 질문으로 맹점 찾기 → 이 성찰 과정이 문제를 보게 함 → 그것은 개인·기업에 중요. 흐름 완성!",
+    "결론: ②."
+   ],
+   "takeaways": [
+    "문장 삽입은 지시어(this, it)와 연결어를 따라간다",
+    "Ex 95와 같은 지문: 요약문 → 삽입으로 변형",
+    "block O from -ing"
+   ],
    "given": "This reflection process enables you to clearly see potential problems and ways to fix them.",
    "blank": "This reflection process enables you to clearly see potential problems and ways to fix them.",
    "blankKo": "이러한 성찰 과정은 잠재적인 문제들과 그것을 고칠 방법을 분명하게 보게 해 준다.",
@@ -2453,6 +2698,23 @@
      "a": "decreases",
      "why": "주어 the amount(단수)"
     }
+   ],
+   "keyHL": [
+    "little variety",
+    "⑤increases",
+    "also decreases"
+   ],
+   "solve": [
+    "글 전체 방향: 단조로운 반복 업무 → 훈련된 무능 (다양성이 '적은' 게 문제).",
+    "①~④ 하나씩 대입: 좋은 성과에 보상(①), 생각 없이 반응(②), 다른 문제 무시(③), 반복적인 업무(④) → 모두 흐름과 맞음.",
+    "⑤: as variety in work increases, … also decreases → '다양성이 늘수록 생각·시간이 줄어든다'? 앞 문장 little variety와 방향이 반대!",
+    "반의어로 바꿔 보기: increases → decreases → '다양성이 줄수록 생각·시간도 줄어든다' = 글의 주장과 일치.",
+    "결론: ⑤ (Ex 100 원문은 decreases)."
+   ],
+   "takeaways": [
+    "어휘 문제: 반의어로 바꿔 넣어 보기",
+    "as A ~, B ~: ~할수록 (비례)",
+    "Ex 100과 같은 지문: 요약문 → 어휘로 변형"
    ],
    "blank": "…as variety in work ⑤increases, the amount of thought and time needed to perform a job also decreases.",
    "blankKo": "업무의 다양성이 ⑤증가할수록, 일에 필요한 생각과 시간도 감소한다 (?)",
