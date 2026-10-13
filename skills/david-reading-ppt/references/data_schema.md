@@ -39,7 +39,7 @@
       "conclusion": "위신을 얻으면 영향력이 원래 분야를 넘어 확장된다"
     }
   },
-  // intro.signalMap (권장, 속독맵 기반): [{ unit: "UNIT 01", flow: "문제 – 원인 – 해결책", roles: [["문제제기", "However, the problem is …"], …], strategy: ["해결책 문장이 주제문", …], ex: "Ex 95" }] × 10 → 2개씩 5장
+  // intro.signalMap (권장, 속독맵 기반): [{ unit: "UNIT 01", name: "주제–예시"(타일 제목), key: ["must · It is important", "For example", "Likewise"](흐름 단계별 대표 signal, 짧게), flow: "문제 – 원인 – 해결책", roles: [["문제제기", "However, the problem is …"], …], strategy: ["해결책 문장이 주제문", …], ex: "Ex 95" }] × 10 → 한 장 타일 (roles·strategy는 노트로). ex의 숫자로 지문 흐름 슬라이드에 구조 태그가 붙는다
   // meta.objectives: [[목표, 부연], …] 3개 / intro.signalPages: [{ title, items: [[구조, 표현, 왜 중요한지, "Ex .."]], notes }]
   // pre: [{ label: "기출 해체", chip: 출처, prompt, passage, foot, summary, options, answer, notes }] / reviewTest: { head, sections: [{ title, instruction, items: [{ no, text, a, why }] }] }
   "review": {                      // 복습 미니테스트 (마지막). 없으면 어휘 퀴즈는 문제별 vocab 첫 단어로 자동, 어법 골든벨은 생략

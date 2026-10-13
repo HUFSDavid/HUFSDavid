@@ -46,6 +46,12 @@
   "signalMap": [
    {
     "unit": "UNIT 01",
+    "name": "주제–예시",
+    "key": [
+     "must · It is important",
+     "For example",
+     "Likewise · Similarly"
+    ],
     "flow": "주제문 – 예시1 – 예시2",
     "ex": "오늘: Ex 94, 96",
     "roles": [
@@ -71,6 +77,13 @@
    },
    {
     "unit": "UNIT 02",
+    "name": "도입–주제–결론",
+    "key": [
+     "Many people · According to",
+     "However · should",
+     "For example",
+     "Therefore · In short"
+    ],
     "flow": "도입 – 주제문 – 예시 – 결론",
     "ex": "오늘: Ex 96, 기출 해체",
     "roles": [
@@ -100,6 +113,11 @@
    },
    {
     "unit": "UNIT 03",
+    "name": "통념–반박",
+    "key": [
+     "Many people think · belief",
+     "However · But · Yet"
+    ],
     "flow": "통념 – 반박",
     "ex": "오늘: Ex 99, 기출 해체",
     "roles": [
@@ -121,6 +139,12 @@
    },
    {
     "unit": "UNIT 04",
+    "name": "설명–요약",
+    "key": [
+     "반복되는 주어 = 소재",
+     "같은 소재, 다른 측면",
+     "In short · In other words"
+    ],
     "flow": "설명1 – 설명2 – 요약",
     "ex": "오늘: Ex 92, 100",
     "roles": [
@@ -142,6 +166,12 @@
    },
    {
     "unit": "UNIT 05",
+    "name": "문제–해결",
+    "key": [
+     "tend to · Many + 명사",
+     "The problem is · 의문문",
+     "The best way · should"
+    ],
     "flow": "현상 – 문제 제기 – 해결책",
     "ex": "오늘: Ex 99, 100",
     "roles": [
@@ -167,6 +197,11 @@
    },
    {
     "unit": "UNIT 06",
+    "name": "원인–결과",
+    "key": [
+     "because · result from",
+     "As a result · lead to"
+    ],
     "flow": "원인 – 결과",
     "ex": "오늘: Ex 94, 100",
     "roles": [
@@ -188,6 +223,12 @@
    },
    {
     "unit": "UNIT 07",
+    "name": "연구·실험",
+    "key": [
+     "study · experiment",
+     "found · showed that",
+     "Therefore · In other words"
+    ],
     "flow": "연구 내용 – 연구 결과 – 결론",
     "ex": "오늘: Ex 93, 97, 98, 99, 101",
     "roles": [
@@ -213,6 +254,10 @@
    },
    {
     "unit": "UNIT 08",
+    "name": "비교·대조",
+    "key": [
+     "공통 Similarly · Likewise\n차이 In contrast · While · -er than"
+    ],
     "flow": "비교 / 대조",
     "ex": "오늘: Ex 97, 101",
     "roles": [
@@ -234,6 +279,11 @@
    },
    {
     "unit": "UNIT 09",
+    "name": "질문–답변",
+    "key": [
+     "What …? · Have you ever …?",
+     "The answer is · should"
+    ],
     "flow": "질문 – 답변",
     "ex": "오늘: Ex 95, 101",
     "roles": [
@@ -255,6 +305,12 @@
    },
    {
     "unit": "UNIT 10",
+    "name": "시간순 이야기",
+    "key": [
+     "ago · when · in 1990",
+     "after · until · later",
+     "Finally · Eventually"
+    ],
     "flow": "도입 – 전개 – 결말 (시간순)",
     "ex": "",
     "roles": [
