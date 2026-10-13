@@ -1,0 +1,1064 @@
+[
+ {
+  "no": 1,
+  "en": "be ready+to",
+  "ko": "부정사 ~할 준비가 되다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 2,
+  "en": "order",
+  "ko": "주문하다; 주문",
+  "pos": "v. 주문하다; n. 주문",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to ask for food, drinks, or goods",
+     "음식, 음료 또는 물건을 요청하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "주문하다; 주문"
+  },
+  "ex": [
+   "We ordered some drinks at the cafe.",
+   "우리는 카페에서 음료를 주문했다."
+  ]
+ },
+ {
+  "no": 3,
+  "en": "salad",
+  "ko": "샐러드",
+  "pos": "n. 샐러드",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 4,
+  "en": "curry",
+  "ko": "카레",
+  "pos": "n. 카레",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "My mom made curry and rice for dinner.",
+   "엄마는 저녁으로 카레와 밥을 만들었다."
+  ]
+ },
+ {
+  "no": 5,
+  "en": "beef",
+  "ko": "소고기",
+  "pos": "n. 소고기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the meat from a cow",
+     "소에서 나온 고기"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "소고기"
+  },
+  "ex": [
+   "He doesn’t eat beef.",
+   "그는 소고기를 먹지 않는다."
+  ]
+ },
+ {
+  "no": 6,
+  "en": "carrot",
+  "ko": "당근",
+  "pos": "n. 당근",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a long orange vegetable that grows under the ground",
+     "땅속에서 자라는 길고 주황색인 채소"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "당근"
+  },
+  "ex": [
+   "She put a carrot into the soup.",
+   "그녀는 수프에 당근을 넣었다."
+  ]
+ },
+ {
+  "no": 7,
+  "en": "something",
+  "ko": "무엇, 어떤 것",
+  "pos": "pron. 무엇, 어떤 것",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I want to eat something now.",
+   "나는 지금 무언가를 먹고 싶다."
+  ]
+ },
+ {
+  "no": 8,
+  "en": "drink",
+  "ko": "마시다",
+  "pos": "v. 마시다",
+  "extra": "(drink-drank-drunk)",
+  "ee": {
+   "defs": [
+    [
+     "to take a liquid into your mouth and swallow it",
+     "액체를 입에 넣고 삼키다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "마시다"
+  },
+  "ex": [
+   "Please drink this water.",
+   "이 물을 마시세요."
+  ]
+ },
+ {
+  "no": 9,
+  "en": "decide",
+  "ko": "결정하다",
+  "pos": "v. 결정하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to make a choice about something",
+     "어떤 것에 대해 선택을 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "결정하다"
+  },
+  "ex": [
+   "They decided to stay at home.",
+   "그들은 집에 머물기로 결정했다."
+  ]
+ },
+ {
+  "no": 10,
+  "en": "dish",
+  "ko": "요리",
+  "pos": "n. 요리",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "food prepared and cooked in a special way",
+     "특별한 방법으로 준비하고 요리한 음식"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "요리"
+  },
+  "ex": [
+   "This dish looks simple but tastes very good.",
+   "이 요리는 간단해 보이지만 맛이 아주 좋다."
+  ]
+ },
+ {
+  "no": 11,
+  "en": "various",
+  "ko": "다양한",
+  "pos": "a. 다양한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "of many different types",
+     "많은 다른 종류의"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "다양한"
+  },
+  "ex": [
+   "There are various colors in the picture.",
+   "그림에 다양한 색깔들이 있다."
+  ]
+ },
+ {
+  "no": 12,
+  "en": "vegetable",
+  "ko": "야채, 채소",
+  "pos": "n. 야채, 채소",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a plant that people eat, such as carrots or beans",
+     "사람들이 먹는 식물, 예를 들어 당근이나 콩 같은 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "야채, 채소"
+  },
+  "ex": [
+   "I bought fresh vegetables at the market this morning.",
+   "나는 오늘 아침 시장에서 신선한 채소를 샀다."
+  ]
+ },
+ {
+  "no": 13,
+  "en": "barbecue",
+  "ko": "바비큐",
+  "pos": "n. 바비큐",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 14,
+  "en": "spicy",
+  "ko": "매운",
+  "pos": "a. 매운",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having a strong, hot flavor or taste",
+     "강하고 매운 향 또는 맛을 가진"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "매운"
+  },
+  "ex": [
+   "This curry is too spicy for me.",
+   "이 카레는 나에게 너무 맵다."
+  ]
+ },
+ {
+  "no": 15,
+  "en": "try",
+  "ko": "먹어 보다; ~을 해보다, 시도하다",
+  "pos": "v. 먹어 보다; ~을 해보다, 시도하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to do or use something to find out if it works or is good",
+     "되는지 또는 좋은지 알아보기 위해 어떤 것을 하거나 사용하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "먹어 보다; ~을 해보다, 시도하다"
+  },
+  "ex": [
+   "Let’s try this new dessert after lunch.",
+   "점심 후에 이 새로운 디저트를 먹어 보자."
+  ]
+ },
+ {
+  "no": 16,
+  "en": "around the world",
+  "ko": "전 세계에",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "People around the world love music.",
+   "전 세계 사람들은 음악을 좋아한다."
+  ]
+ },
+ {
+  "no": 17,
+  "en": "shell",
+  "ko": "껍데기",
+  "pos": "n. 껍데기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the hard outside part of something, like an egg or nut",
+     "달걀이나 견과류 같은 것의 단단한 바깥 부분"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "껍데기"
+  },
+  "ex": [
+   "A crab has a hard shell.",
+   "게는 단단한 껍데기를 가지고 있다."
+  ]
+ },
+ {
+  "no": 18,
+  "en": "crab",
+  "ko": "게",
+  "pos": "n. 게",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a sea animal with a hard shell and ten legs",
+     "단단한 껍질과 열 개의 다리를 가진 바다 동물"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "게"
+  },
+  "ex": [
+   "We saw a small crab on the beach.",
+   "우리는 해변에서 작은 게를 보았다."
+  ]
+ },
+ {
+  "no": 19,
+  "en": "daisy",
+  "ko": "데이지 꽃",
+  "pos": "n. 데이지 꽃",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a small white flower with a yellow center",
+     "노란 가운데를 가진 작은 흰 꽃"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "데이지 꽃"
+  },
+  "ex": [
+   "A daisy is a small white flower.",
+   "데이지는 작은 흰색 꽃이다."
+  ]
+ },
+ {
+  "no": 20,
+  "en": "big",
+  "ko": "큰",
+  "pos": "a. 큰",
+  "extra": "(big-bigger-biggest)",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 21,
+  "en": "olive",
+  "ko": "올리브",
+  "pos": "n. 올리브",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a small green or black fruit used to make oil",
+     "기름을 만들 때 쓰이는 작고 초록색 또는 검은색의 열매"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "올리브"
+  },
+  "ex": [
+   "I put some olives on my salad.",
+   "나는 샐러드에 올리브를 조금 넣었다."
+  ]
+ },
+ {
+  "no": 22,
+  "en": "small",
+  "ko": "작은",
+  "pos": "a. 작은",
+  "extra": "(small-smaller-smallest)",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 23,
+  "en": "avocado",
+  "ko": "아보카도",
+  "pos": "n. 아보카도",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a green fruit with a large seed and soft inside",
+     "큰 씨와 부드러운 속을 가진 초록색 과일"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "아보카도"
+  },
+  "ex": [
+   "I like toast with avocado.",
+   "나는 아보카도가 든 토스트를 좋아한다."
+  ]
+ },
+ {
+  "no": 24,
+  "en": "answer",
+  "ko": "해답",
+  "pos": "n. 해답",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "something you say or write in reply to a question",
+     "질문에 대답으로 말하거나 쓰는 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "해답"
+  },
+  "ex": [
+   "He gave the wrong answer to the question.",
+   "그는 그 질문에 틀린 대답을 했다."
+  ]
+ },
+ {
+  "no": 25,
+  "en": "different",
+  "ko": "다른, 다양한",
+  "pos": "a. 다른, 다양한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not the same as another",
+     "다른 것과 같지 않은"
+    ]
+   ],
+   "syn": "",
+   "opp": "same",
+   "ko_head": "다른, 다양한"
+  },
+  "ex": [
+   "My two cats have different colors and habits.",
+   "내 두 마리 고양이는 색도 다르고 습관도 다르다."
+  ]
+ },
+ {
+  "no": 26,
+  "en": "favorite",
+  "ko": "가장 좋아하는",
+  "pos": "a. 가장 좋아하는",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "liked more than others",
+     "다른 것보다 더 좋아하는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "가장 좋아하는"
+  },
+  "ex": [
+   "My favorite subject at school is English.",
+   "내가 학교에서 가장 좋아하는 과목은 영어다."
+  ]
+ },
+ {
+  "no": 27,
+  "en": "popular",
+  "ko": "인기 있는",
+  "pos": "a. 인기 있는",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "enjoyed or used by many people",
+     "많은 사람들이 즐기거나 사용하는"
+    ]
+   ],
+   "syn": "",
+   "opp": "unpopular",
+   "ko_head": "인기 있는"
+  },
+  "ex": [
+   "That cafe is popular because its desserts are great.",
+   "그 카페는 디저트가 맛있어서 인기가 많다."
+  ]
+ },
+ {
+  "no": 28,
+  "en": "easily",
+  "ko": "쉽게, 수월하게",
+  "pos": "adv. 쉽게, 수월하게",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "You can learn this song easily in one day.",
+   "너는 이 노래를 하루 만에 쉽게 배울 수 있다."
+  ]
+ },
+ {
+  "no": 29,
+  "en": "beat",
+  "ko": "(달걀, 크림 등 을) 휘젓다",
+  "pos": "v. (달걀, 크림 등 을) 휘젓다",
+  "extra": "(beat-beat-beaten)",
+  "ee": {
+   "defs": [
+    [
+     "to mix food such as eggs or cream using a fork or whisk",
+     "포크나 거품기로 달걀이나 크림과 같은 음식을 섞다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(달걀, 크림 등 을) 휘젓다"
+  },
+  "ex": [
+   "Beat the eggs with a fork in a small bowl.",
+   "작은 그릇에 포크로 달걀을 휘저어라."
+  ]
+ },
+ {
+  "no": 30,
+  "en": "fry",
+  "ko": "(기름에) ~을 튀기다",
+  "pos": "v. (기름에) ~을 튀기다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to cook food in hot oil or fat",
+     "뜨거운 기름이나 지방에 음식을 요리하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(기름에) ~을 튀기다"
+  },
+  "ex": [
+   "She fried the fish in a pan with some oil.",
+   "그녀는 약간의 기름으로 팬에 생선을 튀겼다."
+  ]
+ },
+ {
+  "no": 31,
+  "en": "oil",
+  "ko": "기름",
+  "pos": "n. 기름",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He poured a little oil into the frying pan.",
+   "그는 프라이팬에 기름을 조금 부었다."
+  ]
+ },
+ {
+  "no": 32,
+  "en": "delicious",
+  "ko": "아주 맛있는 -most delicious)",
+  "pos": "a. 아주 맛있는 -most delicious)",
+  "extra": "(delicious-more delicious",
+  "ee": {
+   "defs": [
+    [
+     "having a very good taste",
+     "아주 좋은 맛을 가진"
+    ]
+   ],
+   "syn": "tasty, yummy",
+   "opp": "",
+   "ko_head": "아주 맛있는 -most delicious)"
+  },
+  "ex": [
+   "The cookies were warm, soft, and delicious.",
+   "그 쿠키들은 따뜻하고 부드러우며 아주 맛있었다."
+  ]
+ },
+ {
+  "no": 33,
+  "en": "cheese",
+  "ko": "치즈",
+  "pos": "n. 치즈",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She put cheese and ham between the bread.",
+   "그녀는 빵 사이에 치즈와 햄을 넣었다."
+  ]
+ },
+ {
+  "no": 34,
+  "en": "meat",
+  "ko": "고기",
+  "pos": "n. 고기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the flesh of an animal used as food",
+     "음식으로 먹는 동물의 살"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "고기"
+  },
+  "ex": [
+   "He bought fresh meat for the barbecue.",
+   "그는 바비큐를 위해 신선한 고기를 샀다."
+  ]
+ },
+ {
+  "no": 35,
+  "en": "taste",
+  "ko": "~한 맛이 나다",
+  "pos": "v. ~한 맛이 나다",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "This drink tastes sweet and a little sour.",
+   "이 음료는 달면서 약간 신맛이 난다."
+  ]
+ },
+ {
+  "no": 36,
+  "en": "interesting",
+  "ko": "재미있는, 흥미로운",
+  "pos": "a. 재미있는, 흥미로운",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "making you want to learn or know more",
+     "더 배우거나 알고 싶게 만드는"
+    ]
+   ],
+   "syn": "",
+   "opp": "boring",
+   "ko_head": "재미있는, 흥미로운"
+  },
+  "ex": [
+   "The book about sea animals is very interesting.",
+   "바다 동물에 관한 그 책은 매우 흥미롭다."
+  ]
+ },
+ {
+  "no": 37,
+  "en": "army",
+  "ko": "군대",
+  "pos": "n. 군대",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a large group of soldiers",
+     "많은 군인들의 집단"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "군대"
+  },
+  "ex": [
+   "His father works in the army and moves often.",
+   "그의 아버지는 군대에서 일하며 자주 이동한다."
+  ]
+ },
+ {
+  "no": 38,
+  "en": "stay",
+  "ko": "머무르다, 지내다",
+  "pos": "v. 머무르다, 지내다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to remain in a place for a period of time",
+     "일정한 기간 동안 한 장소에 머무르다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "머무르다, 지내다"
+  },
+  "ex": [
+   "We stayed at a small hotel near the beach.",
+   "우리는 해변 근처의 작은 호텔에 머물렀다."
+  ]
+ },
+ {
+  "no": 39,
+  "en": "near",
+  "ko": "~근처에",
+  "pos": "prep. ~근처에",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "There is a park near my school.",
+   "내 학교 근처에 공원이 있다."
+  ]
+ },
+ {
+  "no": 40,
+  "en": "town",
+  "ko": "마을, 소도시",
+  "pos": "n. 마을, 소도시",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Our town has a big market and a museum.",
+   "우리 마을에는 큰 시장과 박물관이 있다."
+  ]
+ },
+ {
+  "no": 41,
+  "en": "enjoy",
+  "ko": "즐기다",
+  "pos": "v. 즐기다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to take pleasure in something",
+     "어떤 일을 즐기다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "즐기다"
+  },
+  "ex": [
+   "They enjoy watching movies together on weekends.",
+   "그들은 주말마다 함께 영화를 보는 것을 즐긴다."
+  ]
+ },
+ {
+  "no": 42,
+  "en": "giant",
+  "ko": "거대한",
+  "pos": "a. 거대한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "very big",
+     "매우 큰"
+    ]
+   ],
+   "syn": "small, tiny",
+   "opp": "",
+   "ko_head": "거대한"
+  },
+  "ex": [
+   "We saw a giant cake at the food festival.",
+   "우리는 음식 축제에서 거대한 케이크를 보았다."
+  ]
+ },
+ {
+  "no": 43,
+  "en": "these days",
+  "ko": "요즘에는",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "These days, I go jogging in the morning.",
+   "요즘 나는 아침에 조깅을 한다."
+  ]
+ },
+ {
+  "no": 44,
+  "en": "festival",
+  "ko": "축제",
+  "pos": "n. 축제",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a special time when people celebrate something",
+     "사람들이 어떤 것을 축하하는 특별한 기간"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "축제"
+  },
+  "ex": [
+   "People danced and sang happily at the town festival.",
+   "사람들은 마을 축제에서 즐겁게 춤추고 노래했다."
+  ]
+ },
+ {
+  "no": 45,
+  "en": "every year",
+  "ko": "매년",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Our family goes skiing together every year.",
+   "우리 가족은 매년 함께 스키를 타러 간다."
+  ]
+ },
+ {
+  "no": 46,
+  "en": "own",
+  "ko": "자신의",
+  "pos": "a. 자신의",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He has his own laptop for studying.",
+   "그는 공부할 때 쓰는 자기 노트북이 있다."
+  ]
+ },
+ {
+  "no": 47,
+  "en": "recipe",
+  "ko": "조리법, 레시피",
+  "pos": "n. 조리법, 레시피",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a set of instructions for cooking a dish",
+     "요리를 만드는 지시 사항의 모음"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "조리법, 레시피"
+  },
+  "ex": [
+   "This recipe needs eggs, milk, and sugar.",
+   "이 조리법에는 달걀, 우유, 그리고 설탕이 필요하다."
+  ]
+ },
+ {
+  "no": 48,
+  "en": "Spanish",
+  "ko": "스페인의, 스페인식의; 스페인어",
+  "pos": "a. 스페인의, 스페인식의; n. 스페인어",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "We enjoyed Spanish food at a new restaurant.",
+   "우리는 새 식당에서 스페인 음식을 즐겼다."
+  ]
+ },
+ {
+  "no": 49,
+  "en": "mean",
+  "ko": "의미하다, 뜻하다",
+  "pos": "v. 의미하다, 뜻하다",
+  "extra": "(mean-meant-meant)",
+  "ee": {
+   "defs": [
+    [
+     "to have a particular meaning",
+     "특정한 의미를 가지다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "의미하다, 뜻하다"
+  },
+  "ex": [
+   "What does this word mean in Korean?",
+   "이 단어는 한국어로 무슨 뜻이니?"
+  ]
+ },
+ {
+  "no": 50,
+  "en": "potato",
+  "ko": "감자",
+  "pos": "n. 감자",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a round vegetable that grows under the ground",
+     "땅속에서 자라는 둥근 채소"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "감자"
+  },
+  "ex": [
+   "He cooked potatoes with onions and carrots.",
+   "그는 양파와 당근을 넣어 감자를 요리했다."
+  ]
+ },
+ {
+  "no": 51,
+  "en": "need",
+  "ko": "필요하다",
+  "pos": "v. 필요하다",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 52,
+  "en": "Malaysia",
+  "ko": "말레이시아",
+  "pos": "n. 말레이시아",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 53,
+  "en": "wrap",
+  "ko": "싸다, 포장하다",
+  "pos": "v. 싸다, 포장하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to cover something with paper or a cloth",
+     "어떤 것을 종이나 천으로 덮다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "싸다, 포장하다"
+  },
+  "ex": [
+   "Please wrap the sandwiches for our picnic.",
+   "소풍에 가져갈 샌드위치들을 싸 주세요."
+  ]
+ },
+ {
+  "no": 54,
+  "en": "chicken",
+  "ko": "닭, 닭고기",
+  "pos": "n. 닭, 닭고기",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "We ordered fried chicken for dinner.",
+   "우리는 저녁으로 프라이드치킨을 주문했다."
+  ]
+ },
+ {
+  "no": 55,
+  "en": "fried rice",
+  "ko": "볶음밥",
+  "pos": "n. 볶음밥",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "My mom made fried rice with shrimp and eggs.",
+   "엄마는 새우와 달걀을 넣어 볶음밥을 만들었다."
+  ]
+ },
+ {
+  "no": 56,
+  "en": "thin",
+  "ko": "얇은",
+  "pos": "a. 얇은",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not thick",
+     "두껍지 않은"
+    ]
+   ],
+   "syn": "",
+   "opp": "thick",
+   "ko_head": "얇은"
+  },
+  "ex": [
+   "Slice the cucumber into thin pieces.",
+   "오이를 얇게 썰어라."
+  ]
+ },
+ {
+  "no": 57,
+  "en": "special",
+  "ko": "특별한",
+  "pos": "a. 특별한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "different from usual or ordinary",
+     "보통이나 일반적인 것과 다른"
+    ]
+   ],
+   "syn": "",
+   "opp": "normal",
+   "ko_head": "특별한"
+  },
+  "ex": [
+   "I got a special gift from my best friend.",
+   "나는 가장 친한 친구에게서 특별한 선물을 받았다."
+  ]
+ },
+ {
+  "no": 58,
+  "en": "Indonesia",
+  "ko": "인도네시아",
+  "pos": "n. 인도네시아",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 59,
+  "en": "Singapore",
+  "ko": "싱가포르",
+  "pos": "n. 싱가포르",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 60,
+  "en": "feel",
+  "ko": "~하게 느끼다",
+  "pos": "v. ~하게 느끼다",
+  "extra": "(feel-felt-felt)",
+  "ee": {
+   "defs": [
+    [
+     "to have a particular emotion or physical sense",
+     "특정한 감정이나 신체적인 느낌을 가지다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~하게 느끼다"
+  },
+  "ex": [
+   "I feel excited before the school trip.",
+   "나는 학교 소풍을 앞두고 설렌다."
+  ]
+ },
+ {
+  "no": 61,
+  "en": "hungry",
+  "ko": "배고픈, 굶주린",
+  "pos": "a. 배고픈, 굶주린",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ }
+]
