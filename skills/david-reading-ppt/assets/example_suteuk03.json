@@ -1,0 +1,1676 @@
+{
+ "meta": {
+  "title": "수능특강 영어 03강",
+  "range": "Exercise 1–12",
+  "footer": "수능특강 영어 03강 · 빈칸 & 함의 추론",
+  "summary": "빈칸 추론 10문항 + 함의(밑줄) 추론 2문항",
+  "goal": "빈칸은 '찍는' 게 아니라 지문에서 '찾는' 것",
+  "closing": "빈칸의 답은 언제나 지문 안에 있다",
+  "homework": "틀린 문제의 '결정적 단서' 문장에 밑줄 긋고 해석해 오기",
+  "author": "David"
+ },
+ "intro": {
+  "planFormula": "빈칸 3단계 · 신호어 · 오답 함정 · 함의 추론",
+  "steps": {
+   "title": "빈칸 추론, 딱 3단계만 기억하자",
+   "items": [
+    [
+     "빈칸 문장부터 읽기",
+     "지문 처음부터 읽지 말고 빈칸 문장을 먼저!\n→ \"무엇을 찾아야 하지?\" 질문 만들기"
+    ],
+    [
+     "같은 말 찾기",
+     "빈칸 내용은 지문 어딘가에서 다른 표현으로 반복된다 (재진술)\n→ 반복 단어·예시·결론에 밑줄"
+    ],
+    [
+     "대입하고 함정 지우기",
+     "선택지를 빈칸에 넣어 읽어 보기\n→ 반대·언급 없음·소재 함정부터 X"
+    ]
+   ],
+   "notes": "【설명 스크립트】 \"빈칸 문제를 처음부터 끝까지 해석하고 나서 고르면 시간이 부족해요. 순서를 바꿔 볼게요.\n1단계, 빈칸 문장을 먼저 읽고 '내가 찾아야 할 것'을 정해요. 예: '자존감 낮은 사람의 특징'.\n2단계, 지문에서 그것과 같은 말을 찾아요. 글쓴이는 중요한 말을 반드시 반복해요.\n3단계, 선택지를 넣어 보고 틀린 것부터 지워요.\"\n【강조】 오늘 모든 문제를 이 3단계로 풀 거라고 예고하세요."
+  },
+  "signals": [
+   [
+    "반전",
+    "However · But · Yet · In contrast · Rather",
+    "앞 내용과 반대가 나온다\n→ 뒤가 진짜 주장",
+    "Ex 10"
+   ],
+   [
+    "결론",
+    "Therefore · As a result · This is why · Thus",
+    "지금까지 내용을 정리한다\n→ 빈칸 답의 원본",
+    "Ex 1, 9"
+   ],
+   [
+    "예시",
+    "For example · For instance · Consider",
+    "예시 앞 문장이 핵심\n→ 예시들의 공통점 = 답",
+    "Ex 4, 7"
+   ],
+   [
+    "재진술",
+    "In other words · Differently put · That is",
+    "같은 말을 다르게 한 번 더\n→ 정답과 거의 같은 표현",
+    "Ex 7, 9"
+   ]
+  ],
+  "traps": [
+   [
+    "반대",
+    "글의 내용과 정반대",
+    "Ex 8 ② 평등한 물 접근 ↔ 중앙 통제"
+   ],
+   [
+    "언급 없음",
+    "그럴듯하지만 글에 없는 내용",
+    "Ex 2 ③ 경제적 불평등"
+   ],
+   [
+    "소재 함정",
+    "글 속 단어·소재만 빌려온 것",
+    "Ex 7 ② 음악 = 심리 무기 (북소리)"
+   ],
+   [
+    "범위 오류",
+    "너무 넓거나 좁거나 엉뚱한 범위",
+    "Ex 3 ⑤ 사회적 태도·행동 전반"
+   ]
+  ],
+  "implication": {
+   "exRef": "Ex 6",
+   "quote": "a golfing hero can sell you a watch",
+   "literal": "\"골프 선수가 시계를 판다\" → 진짜 시계 이야기 아님",
+   "pairs": [
+    [
+     "골프 영웅",
+     "한 분야의 위신"
+    ],
+    [
+     "시계를 판다",
+     "다른 분야에도 영향력"
+    ]
+   ],
+   "conclusion": "위신을 얻으면 영향력이 원래 분야를 넘어 확장된다"
+  }
+ },
+ "exercises": [
+  {
+   "n": 1,
+   "type": "빈칸",
+   "title": "자존감 낮은 사람의 자기평가",
+   "blank": "There is evidence that low self-esteem people are ________.",
+   "blankKo": "자존감이 낮은 사람들은 ______하다는 증거가 있다.",
+   "find": "자존감 낮은 사람들의 '특징'을 찾자",
+   "flow": [
+    [
+     "주장 (빈칸)",
+     "자존감 낮은 사람들은 ~하다"
+    ],
+    [
+     "실험",
+     "Campbell & Fehr: 긍정 형용사 / 부정 형용사로 자기 평가하게 함"
+    ],
+    [
+     "결과",
+     "높은 자존감 → 긍정 O, 부정 X (일관됨)\n낮은 자존감 → 중간 점수, 들쭉날쭉 (일관성 X)"
+    ],
+    [
+     "결론",
+     "차이는 '평균'뿐 아니라 '일관성'에도 있다"
+    ]
+   ],
+   "clue": "…differ not only in the average positivity of their self-views, but also in the extent to which their self-views are evaluatively consistent…",
+   "clueKo": "평균적 긍정성뿐 아니라 자기관이 평가적으로 '일관된 정도'에서도 다르다",
+   "ans": 3,
+   "opts": [
+    [
+     "inherently sensitive to their own interpretations of situations",
+     "상황 해석에 민감 → 글에 없는 내용",
+     "언급 없음"
+    ],
+    [
+     "relatively stable despite changes in interpersonal dynamics",
+     "안정적 → 오히려 '들쭉날쭉'이 핵심",
+     "반대"
+    ],
+    [
+     "less evaluatively consistent in their self-descriptions",
+     "자기 묘사의 평가적 일관성이 낮다 = consistent의 재진술",
+     "정답"
+    ],
+    [
+     "consistently refined in response to evolving self-perceptions",
+     "'일관되게' 다듬어짐 → 일관성이 낮다는 글과 반대",
+     "반대"
+    ],
+    [
+     "solely dependent on validation from peers and significant others",
+     "또래·주변인 인정에 의존 → 글에 없음",
+     "언급 없음"
+    ]
+   ],
+   "notes": "【도입 질문】 \"자존감 낮은 사람은 자기 자신을 어떻게 평가할까? 그냥 '나쁘게' 평가할까?\" → 학생 대부분 '나쁘게'라고 답함.\n【반전 포인트】 이 글은 '나쁘게'가 아니라 '오락가락(일관성이 없다)'이 핵심이라고 말해 줍니다. Low self-esteem subjects did NOT strongly endorse the negative adjectives — 부정적인 걸 강하게 인정하지도 않았다는 것!\n【단서 연결】 마지막 문장 Therefore ~ evaluatively consistent 를 같이 밑줄 → 선택지 ③의 evaluatively consistent와 똑같은 단어. \"빈칸 답은 지문 안에 같은 말로 숨어 있다\"를 강조.\n【주의 어휘】 variance(분산) = 퍼져 있는 정도, intermediate = 중간의, endorse = 인정하다.",
+   "topic": "자존감",
+   "key": "자존감 낮음 = 자기평가가 오락가락",
+   "foot": "* variance: 분산   ** endorse: 인정하다",
+   "sentences": [
+    [
+     "There is evidence that low self-esteem people are {B}.",
+     "자존감이 낮은 사람들은 ______는 증거가 있다."
+    ],
+    [
+     "When Campbell and Fehr examined how subjects rated themselves on sets of adjectives that were either uniformly positive or uniformly negative, subjects with low self-esteem not only gave ratings that were (on average) less positive or more negative, but their ratings within each set exhibited more individual scatter or greater variance.",
+     "Campbell과 Fehr가 피실험자들이 한결같이 긍정적이거나 한결같이 부정적인 형용사 세트로 자신을 어떻게 평가하는지 조사했을 때, 자존감이 낮은 피실험자들은 (평균적으로) 덜 긍정적이거나 더 부정적인 평가를 했을 뿐 아니라, 각 세트 안에서의 평가도 더 흩어져 있었다, 즉 분산이 더 컸다.",
+     true
+    ],
+    [
+     "High self-esteem subjects strongly and consistently endorsed the positive adjectives and rejected the negative adjectives.",
+     "자존감이 높은 피실험자들은 긍정적 형용사는 강하고 일관되게 인정하고, 부정적 형용사는 거부했다."
+    ],
+    [
+     "Low self-esteem subjects did not, in contrast, strongly and consistently endorse the negative adjectives and reject the positive adjectives.",
+     "대조적으로, 자존감이 낮은 피실험자들은 부정적 형용사를 강하고 일관되게 인정하고 긍정적 형용사를 거부하지는 않았다."
+    ],
+    [
+     "Rather, they gave more intermediate ratings and more variable ratings to both types of adjectives.",
+     "오히려 그들은 두 종류의 형용사 모두에 더 중간적이고 더 가변적인(들쭉날쭉한) 평가를 했다.",
+     true
+    ],
+    [
+     "Therefore, it appears that low and high self-esteem individuals differ not only in the average positivity of their self-views, but also in the extent to which their self-views are evaluatively consistent with one another.",
+     "그러므로 자존감이 낮은 사람과 높은 사람은 자기관의 평균적 긍정성뿐 아니라, 자기관들이 서로 평가적으로 일관된 정도에서도 다른 것으로 보인다.",
+     true
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "how subjects rated themselves"
+     ],
+     "간접의문문 · 재귀대명사",
+     "의문사 how + 주어 + 동사 어순. 주어(subjects) = 목적어이므로 재귀대명사 themselves"
+    ],
+    [
+     [
+      "either uniformly positive or uniformly negative"
+     ],
+     "either A or B",
+     "상관접속사: A와 B는 같은 형태(부사+형용사)로 병렬"
+    ],
+    [
+     [
+      "not only in the average positivity of their self-views, but also in"
+     ],
+     "not only A but also B",
+     "A·B 모두 'in + 명사'로 병렬 → 어법·서술형 단골"
+    ],
+    [
+     [
+      "the extent to which their self-views are"
+     ],
+     "전치사 + 관계대명사",
+     "to which 뒤에는 완전한 절. (the extent to which ~ = ~하는 정도)"
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "type": "빈칸",
+   "title": "문해력과 삶의 질",
+   "blank": "…they are much more prevalent where ________.",
+   "blankKo": "'야만'은 ______한 곳에서 훨씬 더 흔하다.",
+   "find": "'야만'이 흔한 곳 = 어떤 사회?",
+   "flow": [
+    [
+     "주제",
+     "문해력(읽고 쓰는 능력)은 사회에 큰 힘과 가치를 준다"
+    ],
+    [
+     "근거",
+     "문해 행위가 없는 사회 → 지저분, 억압적, 잔혹함"
+    ],
+    [
+     "인용",
+     "Samuel Johnson: \"인쇄가 없는 곳의 대중은 야만적이다\""
+    ],
+    [
+     "결론",
+     "문해력과 삶의 질은 함께 간다 (go hand in hand)"
+    ]
+   ],
+   "clue": "Societies that do not practice literate behavior are often squalid, … brutal, and harsh.",
+   "clueKo": "문해 행위를 하지 않는 사회는 흔히 지저분하고 … 잔혹하고 가혹하다",
+   "ans": 4,
+   "opts": [
+    [
+     "literacy rates remain constant",
+     "문해율이 일정하다 → '변화' 이야기 아님",
+     "언급 없음"
+    ],
+    [
+     "moral values are disregarded",
+     "도덕이 무시된다 → 그럴듯하지만 주제는 '문해력'",
+     "소재 함정"
+    ],
+    [
+     "economic inequality prevails",
+     "경제적 불평등 → 글에 없음 (교재 오타: previals)",
+     "언급 없음"
+    ],
+    [
+     "literate behavior is absent",
+     "문해 행위가 없는 곳 = do not practice literate behavior",
+     "정답"
+    ],
+    [
+     "societal stability is fragile",
+     "사회 안정이 취약하다 → 글의 핵심어 아님",
+     "언급 없음"
+    ]
+   ],
+   "notes": "【도입 질문】 \"글을 못 읽는 사회는 어떤 모습일까?\"\n【풀이 핵심】 빈칸 문장 바로 앞의 '야만'(barbarity)은 Johnson 인용에서 왔음 → 인쇄(printing)가 없는 곳 = 문해력이 없는 곳.\n【재진술 보여주기】 3번째 문장 Societies that do not practice literate behavior ↔ 정답 ④ literate behavior is absent. 같은 표현이 '부정문 → absent'로 바뀐 것뿐!\n【교재 오타】 ③ previals는 prevails(만연하다)의 오타입니다. 학생에게 미리 알려 주세요.\n【어휘】 squalid 지저분한, repressive 억압적인, prevalent 널리 퍼진, go hand in hand 함께 가다.",
+   "topic": "문해력",
+   "key": "문해력 없는 곳에 야만이 많다",
+   "foot": "* squalid: 지저분한",
+   "sentences": [
+    [
+     "The power and value of being literate in a literate society are played out every day around the world.",
+     "문해 사회에서 글을 읽고 쓸 줄 아는 것의 힘과 가치는 전 세계에서 매일 드러나고 있다."
+    ],
+    [
+     "Many individuals, and in fact whole societies, make considerable sacrifices to become literate just as others take it for granted.",
+     "다른 이들이 그것을 당연하게 여기는 바로 그때에도, 많은 개인들, 그리고 실은 사회 전체가 문해력을 갖추기 위해 상당한 희생을 치른다."
+    ],
+    [
+     "Societies that do not practice literate behavior are often squalid, undernourished in mind and body, repressive of human rights and dignity, brutal, and harsh.",
+     "문해 행위를 실천하지 않는 사회는 흔히 지저분하고, 정신과 육체가 영양 결핍 상태이며, 인권과 존엄성을 억압하고, 잔인하며 가혹하다.",
+     true
+    ],
+    [
+     "Present-day examples are easy to list, but in fact this has always been the case.",
+     "오늘날의 예를 열거하기는 쉽지만, 사실 이것은 언제나 그래 왔다."
+    ],
+    [
+     "As Samuel Johnson observed more than two centuries ago, \"The mass of every people must be barbarous where there is no printing.\"",
+     "2세기도 더 전에 Samuel Johnson이 말했듯이, \"인쇄가 없는 곳에서는 모든 민족의 대중이 야만적일 수밖에 없다.\"",
+     true
+    ],
+    [
+     "We admit that various forms of \"barbarity\" can be found in all societies, but they are much more prevalent where {B}.",
+     "우리는 다양한 형태의 '야만'이 모든 사회에서 발견될 수 있음을 인정하지만, 그것들은 ______한 곳에서 훨씬 더 널리 퍼져 있다."
+    ],
+    [
+     "Literacy and quality of life go hand in hand.",
+     "문해력과 삶의 질은 함께 간다.",
+     true
+    ],
+    [
+     "With literacy comes the power of belonging to a privileged group and the freedom that derives from that power.",
+     "문해력과 함께 특권 집단에 속하는 힘과 그 힘에서 나오는 자유가 온다."
+    ],
+    [
+     "Frederick Douglass, who struggled as a slave to learn to read, said it best: \"Once you learn to read, you will be forever free.\"",
+     "노예로서 읽는 법을 배우려고 분투했던 Frederick Douglass는 이것을 가장 잘 표현했다. \"일단 읽는 법을 배우면, 당신은 영원히 자유로울 것이다.\""
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "The power and value of being literate in a literate society are"
+     ],
+     "주어-동사 수일치",
+     "주어 The power and value(복수) → are. 수식어 of ~ society에 속지 말 것"
+    ],
+    [
+     [
+      "Societies that do not practice literate behavior are"
+     ],
+     "주격 관계대명사 + 수일치",
+     "that절이 Societies를 수식, 본동사는 복수 are"
+    ],
+    [
+     [
+      "With literacy comes"
+     ],
+     "부사구 도치",
+     "부사구 With literacy + 동사 comes + 주어 the power … (주어가 길어서 도치)"
+    ],
+    [
+     [
+      ", who struggled as a slave"
+     ],
+     "계속적 용법 관계대명사",
+     "콤마 + who: Frederick Douglass에 대한 부연 설명 (that 불가)"
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "type": "빈칸",
+   "title": "문화와 주의(attention) 방식",
+   "blank": "Culturally shared views of the self have been suggested ________.",
+   "blankKo": "문화적으로 공유된 자아관은 ______라고 제안되어 왔다.",
+   "find": "문화적 자아관이 '무엇에' 영향을 주나?",
+   "flow": [
+    [
+     "서양",
+     "내적 속성(욕구·목표) 중시 → 주의가 한 대상에 집중 = 분석적(analytic)"
+    ],
+    [
+     "동양",
+     "사회적 관계 중시 → 대상 + 주변 맥락까지 넓게 = 총체적(holistic)"
+    ],
+    [
+     "실험",
+     "수중 장면 영상: 미국인은 중심 사물, 일본인은 맥락·관계를 기억"
+    ],
+    [
+     "결론",
+     "문화가 '무엇을 보는가(주의)'까지 바꾼다"
+    ]
+   ],
+   "clue": "…they may be expected to focus their attention… / …to attend more broadly to a focal object as well as to its surrounding context…",
+   "clueKo": "주의를 집중한다 / 대상과 주변 맥락에 더 넓게 주의를 기울인다",
+   "ans": 3,
+   "opts": [
+    [
+     "to distort cognitive interpretations of social interaction",
+     "사회적 상호작용 해석을 '왜곡' → 부정적 내용 없음",
+     "언급 없음"
+    ],
+    [
+     "to address social issues that persist through generations",
+     "세대에 걸친 사회 문제 → 무관",
+     "언급 없음"
+    ],
+    [
+     "to have profound influences on basic attention processes",
+     "기본적 주의 과정에 깊은 영향 = attention 반복",
+     "정답"
+    ],
+    [
+     "to exert minimal effects on advanced cognitive functions",
+     "'최소한의' 영향 → 큰 영향이라는 글과 반대",
+     "반대"
+    ],
+    [
+     "to prompt overall changes in social attitude and behavior",
+     "사회적 태도·행동 → 글은 '주의(보는 방식)' 이야기",
+     "범위 오류"
+    ]
+   ],
+   "notes": "【도입 질문】 \"어항 사진을 보고 '무엇을 봤어?'라고 물으면 너희는 뭐라고 할 것 같아? 물고기? 아니면 물풀·돌까지?\"\n【풀이 핵심】 지문에 attention / attend 가 계속 반복됨 → 반복되는 단어가 곧 주제! 정답 ③에 attention이 그대로 나옴.\n【오답 설명】 ⑤ '사회적 태도와 행동'은 그럴듯하지만 글은 '어디에 주의를 기울이나'만 다룸 → 범위를 벗어남.\n【어휘】 in lieu of ~대신에, attuned to ~에 맞춰진, borne out 입증된, vignette 짤막한 장면.\n※ 교재 본문 'ani mated'는 animated의 띄어쓰기 오류.",
+   "topic": "문화와 주의",
+   "key": "문화가 보는 방식(주의)을 바꾼다",
+   "foot": "* in lieu of: ~대신에   ** holistic: 총체적인   *** vignette: 짤막한 장면",
+   "sentences": [
+    [
+     "Culturally shared views of the self have been suggested {B}.",
+     "문화적으로 공유된 자아관은 ______라고 제시되어 왔다."
+    ],
+    [
+     "In Western cultures, individuals are encouraged to discover their internal attributes such as desires and personal goals, and therefore they may be expected to focus their attention on events that are relevant to such desires and goals.",
+     "서양 문화에서 개인은 욕구와 개인적 목표 같은 내적 속성을 발견하도록 장려되며, 따라서 그런 욕구와 목표에 관련된 사건에 주의를 집중할 것으로 예상될 수 있다.",
+     true
+    ],
+    [
+     "As a result, their attention may become focused.",
+     "그 결과, 그들의 주의는 (한 곳에) 집중될 수 있다."
+    ],
+    [
+     "This cognitive style, which is anchored in a focal object in lieu of its context, has been called analytic.",
+     "맥락 대신 초점 대상에 고정된 이러한 인지 방식은 '분석적'이라고 불려 왔다."
+    ],
+    [
+     "In contrast, in Eastern cultures individuals are more attuned to various aspects of ever-important social relations and, as a consequence, they may be expected to attend more broadly to a focal object as well as to its surrounding context, drawing inferences about the relationship between the object and its context.",
+     "대조적으로, 동양 문화에서 개인은 늘 중요한 사회적 관계의 다양한 측면에 더 맞춰져 있으며, 그 결과 초점 대상뿐 아니라 그 주변 맥락에도 더 넓게 주의를 기울여, 대상과 맥락 사이의 관계를 추론할 것으로 예상될 수 있다.",
+     true
+    ],
+    [
+     "This mode of cognition has been called holistic.",
+     "이러한 인지 방식은 '총체적'이라고 불려 왔다."
+    ],
+    [
+     "These predictions have been borne out.",
+     "이러한 예측은 입증되었다."
+    ],
+    [
+     "For example, when presented with an animated vignette of an underwater scene and subsequently asked to remember what they saw, European Americans were more likely to recall focal objects, whereas Japanese were more likely to refer to contextual information as well as relationships between the focal objects.",
+     "예를 들어, 수중 장면을 담은 짤막한 애니메이션을 보고 나서 본 것을 기억해 보라는 요청을 받았을 때, 유럽계 미국인은 초점 대상을 더 많이 회상한 반면, 일본인은 초점 대상들 사이의 관계뿐 아니라 맥락 정보도 더 많이 언급했다.",
+     true
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "have been suggested"
+     ],
+     "현재완료 수동태",
+     "suggest의 대상인 views → have been p.p. (be suggested to V: ~하는 것으로 제시되다)"
+    ],
+    [
+     [
+      "are encouraged to discover"
+     ],
+     "encourage O to V의 수동태",
+     "능동 encourage individuals to discover → 수동 be encouraged to V"
+    ],
+    [
+     [
+      ", which is anchored in a focal object in lieu of its context,",
+      "has been called analytic"
+     ],
+     "삽입절 · 수일치",
+     "주어 This cognitive style ↔ 동사 has been called (삽입된 which절 건너뛰기). call O C의 수동태"
+    ],
+    [
+     [
+      "drawing inferences"
+     ],
+     "분사구문",
+     "and they draw inferences의 의미 (동시동작·부대상황)"
+    ],
+    [
+     [
+      "when presented with"
+     ],
+     "접속사 + 분사구문",
+     "when (they were) presented with ~ → 접속사를 남긴 수동 분사구문"
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "type": "빈칸",
+   "title": "잠재 수요와 가격",
+   "blank": "That extra demand will be revealed ________.",
+   "blankKo": "그 추가 수요는 ______ 드러날 것이다.",
+   "find": "숨어 있던 수요가 '언제' 드러나나?",
+   "flow": [
+    [
+     "개념",
+     "사고 싶지만 안 사는 사람 = 잠재 수요 (시장에 안 보임)"
+    ],
+    [
+     "예시 ①",
+     "인공심장 100만 달러 → 생사가 걸린 경우에만 사용"
+    ],
+    [
+     "예시 ②",
+     "10만 달러 → 더 많은 사람 / 100달러 → 필요한 누구나"
+    ],
+    [
+     "예시 ③",
+     "10달러 + 15분 시술 → 아프지 않은 사람도 이식"
+    ]
+   ],
+   "clue": "If further development reduced the cost of artificial hearts to $100,000 each, more people would get them.",
+   "clueKo": "비용이 10만 달러로 줄면 더 많은 사람이 이식받을 것이다",
+   "ans": 1,
+   "opts": [
+    [
+     "if the price goes low enough",
+     "가격이 충분히 낮아지면 = 예시 전체의 공통점",
+     "정답"
+    ],
+    [
+     "once consumer incomes rise",
+     "소득 증가 → 예시는 '소득'이 아니라 '가격' 변화",
+     "소재 함정"
+    ],
+    [
+     "when society deems it necessary",
+     "사회가 필요하다고 여길 때 → 글에 없음",
+     "언급 없음"
+    ],
+    [
+     "when the rules are applied correctly",
+     "규칙이 올바르게 적용될 때 → 무관",
+     "언급 없음"
+    ],
+    [
+     "if an artificial organ becomes risk-free",
+     "위험이 없어지면 → 예시는 '안전'이 아니라 '비용'",
+     "소재 함정"
+    ]
+   ],
+   "notes": "【도입 질문】 \"아이폰이 10만 원이 되면 몇 대 살래?\" → 가격이 내려가면 '원래 안 사던 사람'도 산다.\n【풀이 핵심】 For example 이후는 전부 예시 → 예시의 공통점을 한 줄로 = 정답. 숫자가 $1 million → $100,000 → $100 → $10 으로 계속 '내려감'을 칠판에 화살표로 그려 주세요.\n【오답 설명】 ⑤ risk-free: 15분 시술 = 편리함이지 '위험 제로' 이야기 아님. 핵심 변수는 cost.\n【어휘】 latent 잠재하는, implant 이식하다, give out (기능이) 다하다.",
+   "topic": "잠재 수요",
+   "key": "가격이 내려가면 숨은 수요가 드러난다",
+   "foot": "* latent: 잠재하는",
+   "sentences": [
+    [
+     "When a patient chooses to buy he or she becomes a part of demand.",
+     "환자가 구매를 선택하면 그 사람은 수요의 일부가 된다."
+    ],
+    [
+     "Wanting to buy (drugs, plastic surgery, artificial hip, etc.) but not doing so leaves that potential patient invisible, part of latent demand that does not effectively participate in the market.",
+     "(약, 성형수술, 인공 고관절 등을) 사고 싶지만 사지 않으면 그 잠재적 환자는 보이지 않는 상태, 즉 시장에 실질적으로 참여하지 않는 잠재 수요의 일부로 남는다."
+    ],
+    [
+     "That extra demand will be revealed {B}.",
+     "그 추가 수요는 ______ 드러날 것이다."
+    ],
+    [
+     "For example, consider the development of an artificial heart.",
+     "예를 들어, 인공 심장의 개발을 생각해 보라."
+    ],
+    [
+     "If each heart costs $1 million, they would only be used in matters of life and death.",
+     "심장 하나에 100만 달러가 든다면, 그것은 생사가 걸린 문제에만 사용될 것이다.",
+     true
+    ],
+    [
+     "If further development reduced the cost of artificial hearts to $100,000 each, more people would get them.",
+     "추가 개발로 인공 심장의 비용이 개당 10만 달러로 줄어든다면, 더 많은 사람이 그것을 얻게 될 것이다.",
+     true
+    ],
+    [
+     "The artificial hearts would still be used only for people with serious illnesses, but they might be implanted long before a person's natural heart gave out.",
+     "인공 심장은 여전히 중병 환자에게만 사용되겠지만, 사람의 원래 심장이 기능을 다하기 훨씬 전에 이식될 수도 있을 것이다."
+    ],
+    [
+     "If the cost of making an artificial heart dropped to $100, one would be readily available to anyone who needed it.",
+     "인공 심장 제작 비용이 100달러로 떨어진다면, 필요한 누구나 쉽게 구할 수 있을 것이다.",
+     true
+    ],
+    [
+     "Consider what would happen if the cost of an artificial heart dropped to $10 and could be easily implanted during a 15-minute visit to the doctor.",
+     "인공 심장 비용이 10달러로 떨어지고 15분짜리 진료 중에 쉽게 이식될 수 있다면 어떤 일이 일어날지 생각해 보라."
+    ],
+    [
+     "Some people who had never been ill but were just worried might have new hearts implanted.",
+     "한 번도 아픈 적 없이 그저 걱정만 하던 사람들 중 일부는 새 심장을 이식받을지도 모른다."
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "Wanting to buy",
+      "leaves that potential patient invisible"
+     ],
+     "동명사 주어 · leave O C",
+     "동명사 주어는 단수 → leaves. 목적격 보어 자리에 형용사 invisible (부사 X)"
+    ],
+    [
+     [
+      "that does not effectively participate"
+     ],
+     "주격 관계대명사 수일치",
+     "선행사 latent demand(단수) → does"
+    ],
+    [
+     [
+      "If further development reduced",
+      "more people would get them"
+     ],
+     "가정법 과거",
+     "If + S + 과거동사, S + would + 동사원형: 현재 사실의 가정"
+    ],
+    [
+     [
+      "have new hearts implanted"
+     ],
+     "사역동사 have O p.p.",
+     "심장이 '이식되는' 것 → 목적격 보어 과거분사 implanted"
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "type": "빈칸",
+   "title": "역사가가 서사를 만드는 방법",
+   "blank": "These are just a few of the ways ________.",
+   "blankKo": "이것들은 ______하는 방식들 중 단지 몇 가지일 뿐이다.",
+   "find": "These(앞의 예시들)를 한 마디로 묶으면?",
+   "flow": [
+    [
+     "주제",
+     "역사가는 증거를 조직해 이해 가능한 '서사(이야기)'를 만든다"
+    ],
+    [
+     "방법 ①",
+     "연대순 배열 (시간 순서)"
+    ],
+    [
+     "방법 ②",
+     "특정한 관점·어조 입히기: 아이러니(부시), 낭만화(케네디 '카멜롯')"
+    ],
+    [
+     "방법 ③",
+     "같은 사건도 '발전' 또는 '쇠퇴'로 다르게 볼 수 있음"
+    ]
+   ],
+   "clue": "…they also organize the evidence in order to create an understandable (and, they hope, persuasive) narrative.",
+   "clueKo": "그들은 이해할 수 있는 (그리고 설득력 있는) 서사를 만들기 위해 증거를 조직한다",
+   "ans": 1,
+   "opts": [
+    [
+     "historians may make narrative sense of history",
+     "역사를 서사적으로 이해되게 만든다 = 첫 문장 재진술",
+     "정답"
+    ],
+    [
+     "historical research is driven and communicated",
+     "연구가 추진·전달되는 방식 → 너무 넓고 막연함",
+     "범위 오류"
+    ],
+    [
+     "historical approaches enrich and diversify knowledge",
+     "지식을 풍부하게 → 가치 평가, 글에 없음",
+     "언급 없음"
+    ],
+    [
+     "historical narratives can be used as an instructive resource",
+     "교훈적 자료로 사용 → 글에 없음",
+     "언급 없음"
+    ],
+    [
+     "historians use fiction to inspire empathy for past generations",
+     "허구 사용·공감 → romanticize ≠ fiction",
+     "소재 함정"
+    ]
+   ],
+   "notes": "【풀이 핵심】 빈칸이 '맨 끝'에 있고 These are just a few of the ways ~ 형태 → 앞에 나온 방법들을 '요약'하는 문장. 요약은 보통 첫 문장(주제문)과 같음!\n【활동】 학생에게 \"앞에서 역사가가 한 일 3가지를 찾아봐\" → 연대순 / 관점·어조 / 발전 vs 쇠퇴. 이 셋의 공통 목적 = understandable narrative.\n【오답 설명】 ⑤ 케네디를 '카멜롯'으로 낭만화한 것은 허구(fiction)를 쓴 것이 아니라 '비유로 색을 입힌 것'.\n【어휘】 plausible 그럴듯한, allude to 넌지시 암시하다, chronological 연대순의.",
+   "topic": "역사 서사",
+   "key": "역사가는 증거로 이해 가능한 서사를 만든다",
+   "foot": "* plausible: 그럴듯한   ** allude to: ~을 넌지시 암시하다",
+   "sentences": [
+    [
+     "Historians do more than select and interpret evidence: they also organize the evidence in order to create an understandable (and, they hope, persuasive) narrative.",
+     "역사가는 증거를 선별하고 해석하는 것 이상의 일을 한다. 그들은 또한 이해할 수 있는 (그리고 그들이 바라기로는 설득력 있는) 서사를 만들기 위해 증거를 조직한다.",
+     true
+    ],
+    [
+     "Chronological order is generally part of making history plausible, especially when the causes of change are central, although in practice much historical writing must go back and forth in time in order to pick up various threads of a complex story.",
+     "특히 변화의 원인이 핵심일 때 연대순은 일반적으로 역사를 그럴듯하게 만드는 요소의 일부이지만, 실제로 많은 역사 서술은 복잡한 이야기의 여러 가닥을 집어내기 위해 시간을 앞뒤로 오가야 한다."
+    ],
+    [
+     "Historians also make events understandable by casting them in a particular light or giving their narrative a particular tone.",
+     "역사가는 또한 사건을 특정한 관점에서 비추거나 서사에 특정한 어조를 부여함으로써 사건을 이해할 수 있게 만든다.",
+     true
+    ],
+    [
+     "For example, a historian might highlight historical ironies, such as the way President George W. Bush once criticized \"nation building,\" in which the U.S. rebuilds a country's economic and political structure when its government fails; but later, as a consequence of launching a war in Iraq, Bush had to attempt exactly that.",
+     "예를 들어, 역사가는 역사적 아이러니를 부각할 수 있다. George W. Bush 대통령은 한 나라의 정부가 무너졌을 때 미국이 그 나라의 경제·정치 구조를 재건하는 '국가 건설'을 한때 비판했지만, 나중에 이라크 전쟁을 일으킨 결과 바로 그 일을 시도해야 했던 것이 그 예이다."
+    ],
+    [
+     "Historians can also romanticize events, as did those who described John F. Kennedy's term as President as \"Camelot,\" alluding to a Broadway musical about the heroic King Arthur and the Knights of the Round Table.",
+     "역사가는 사건을 낭만화할 수도 있는데, 영웅적인 아서 왕과 원탁의 기사들에 관한 브로드웨이 뮤지컬을 암시하며 John F. Kennedy의 대통령 임기를 '카멜롯'이라고 묘사한 사람들이 그랬다."
+    ],
+    [
+     "Similarly, one historian may view a certain chain of events as improvement, while another may perceive it as a decline.",
+     "마찬가지로, 어떤 역사가는 일련의 사건을 발전으로 보는 반면, 다른 역사가는 그것을 쇠퇴로 인식할 수 있다."
+    ],
+    [
+     "These are just a few of the ways {B}.",
+     "이것들은 ______하는 방식들 중 단지 몇 가지일 뿐이다."
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "by casting them in a particular light or giving"
+     ],
+     "by -ing 병렬",
+     "by + casting / giving: or로 연결된 동명사 병렬"
+    ],
+    [
+     [
+      "in which the U.S. rebuilds"
+     ],
+     "전치사 + 관계대명사",
+     "in which = where, 뒤에 완전한 절 (선행사 nation building)"
+    ],
+    [
+     [
+      "as did those who described"
+     ],
+     "as + 대동사 + 주어 도치",
+     "as did those = as those (romanticized events) did"
+    ],
+    [
+     [
+      "view a certain chain of events as",
+      "perceive it as"
+     ],
+     "view / perceive A as B",
+     "A를 B로 여기다 (regard A as B 유형) — as 자리 어법 출제"
+    ]
+   ]
+  },
+  {
+   "n": 6,
+   "type": "함의",
+   "title": "위신(prestige)의 확장력",
+   "blank": "That's why a golfing hero can sell you a watch.",
+   "blankKo": "그래서 골프 영웅이 당신에게 시계를 팔 수 있는 것이다.",
+   "find": "골프(분야 A) → 시계(분야 B) = 무슨 뜻?",
+   "flow": [
+    [
+     "정의",
+     "위신(prestige) = 인간만 인식하는 지위, '배울 만한 사람'"
+    ],
+    [
+     "핵심",
+     "한 분야에서 위신을 얻으면 영향력이 그 분야에 한정되지 않음"
+    ],
+    [
+     "이유",
+     "성공한 사람에게 배우고, 연결되고 싶어서 (평판이 묻어나길 바람)"
+    ],
+    [
+     "밑줄",
+     "골프 선수(골프 분야) → 시계 광고(다른 분야)까지 영향"
+    ]
+   ],
+   "clue": "…if someone has prestige in one field, … their influence won't be limited to their field…",
+   "clueKo": "한 분야에서 위신을 가지면 … 그들의 영향력은 그 분야에 한정되지 않는다",
+   "ans": 4,
+   "opts": [
+    [
+     "Making big money to gain influence is at the heart of prestige.",
+     "돈을 많이 버는 것 → 글에 없음",
+     "언급 없음"
+    ],
+    [
+     "Prestige can open unexpected career paths after a main career ends.",
+     "은퇴 후 진로 → 글은 '영향력 확장'",
+     "소재 함정"
+    ],
+    [
+     "People may purchase things for instant gratification to earn prestige.",
+     "즉각적 만족을 위한 구매 → 글에 없음",
+     "언급 없음"
+    ],
+    [
+     "Influence often extends beyond its original field when one gains prestige.",
+     "위신을 얻으면 영향력이 원래 분야를 넘어 확장",
+     "정답"
+    ],
+    [
+     "Prestige is sometimes inherited rather than earned through skill or knowledge.",
+     "위신의 상속 → 글은 실력·성공으로 얻음",
+     "반대"
+    ]
+   ],
+   "notes": "【유형 전환】 \"이번엔 빈칸이 아니라 '밑줄 친 말의 의미' 문제야. 밑줄은 비유라서 그대로 해석하면 안 돼!\"\n【활동】 칠판에 [골프] → [시계] 화살표. \"골프 선수가 시계 전문가야? 아니지! 그런데 왜 시계를 팔 수 있어?\" → 한 분야의 위신이 다른 분야로 번진다.\n【단서】 their influence won't be limited to their field / Success in one area of life affords someone the status of general opinion leader.\n【교재 오타】 ④ expends는 extends(확장되다)의 오타입니다. PPT에는 고쳐서 넣었어요.\n【어휘】 dominance 지배, rub off on ~에게 옮아가다, afford 제공하다.",
+   "topic": "위신(함의)",
+   "key": "한 분야의 위신이 다른 분야로 번진다",
+   "foot": "",
+   "sentences": [
+    [
+     "Prestige is a particular form of status that only humans recognize.",
+     "위신은 인간만이 인식하는 특별한 형태의 지위이다."
+    ],
+    [
+     "Most animals observe the advantages of dominance, such as being the most powerful or aggressive individual, and these are also important for humans: fearsome warriors are celebrated universally.",
+     "대부분의 동물은 가장 힘세거나 공격적인 개체가 되는 것 같은 지배의 이점을 따르며, 이것은 인간에게도 중요하다. 무시무시한 전사는 어디서나 찬양받는다."
+    ],
+    [
+     "Prestige is almost the opposite.",
+     "위신은 거의 그 반대이다."
+    ],
+    [
+     "Prestigious individuals are ones worthy of learning from ─ they are experts, older people.",
+     "위신 있는 사람은 배울 가치가 있는 사람, 즉 전문가나 연장자이다."
+    ],
+    [
+     "And if someone has prestige in one field, they become high-status individuals and their influence won't be limited to their field; we are likely to copy all their decisions.",
+     "그리고 누군가 한 분야에서 위신을 가지면, 그들은 높은 지위의 사람이 되고 그들의 영향력은 그 분야에 한정되지 않는다. 우리는 그들의 모든 결정을 따라 할 가능성이 크다.",
+     true
+    ],
+    [
+     "Indeed, prestige may have evolved as a way to enhance the benefits of cultural transmission.",
+     "실제로 위신은 문화 전달의 이점을 높이는 방법으로 진화했을지도 모른다."
+    ],
+    [
+     "Success in one area of life affords someone the status of general opinion leader.",
+     "삶의 한 영역에서의 성공은 그 사람에게 전반적인 여론 주도자의 지위를 부여한다.",
+     true
+    ],
+    [
+     "We want to learn from successful individuals, or even simply be associated with them in some way, so that their reputation rubs off on us.",
+     "우리는 성공한 사람들에게서 배우거나, 그저 어떤 식으로든 그들과 연관되기를 원하는데, 그들의 명성이 우리에게 옮아오도록 하기 위해서이다."
+    ],
+    [
+     "__That's why a golfing hero can sell you a watch__.",
+     "그래서 골프 영웅이 당신에게 시계를 팔 수 있는 것이다."
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "that only humans recognize"
+     ],
+     "목적격 관계대명사",
+     "recognize의 목적어가 빠진 불완전한 절 → that/which"
+    ],
+    [
+     [
+      "ones worthy of learning from"
+     ],
+     "worthy of -ing · 전치사 잔류",
+     "ones = individuals. learn from them → learning from (전치사 from 남음)"
+    ],
+    [
+     [
+      "affords someone the status of general opinion leader"
+     ],
+     "4형식 afford IO DO",
+     "afford + 사람 + 사물: ~에게 …을 주다"
+    ],
+    [
+     [
+      "so that their reputation rubs off on us"
+     ],
+     "so that (목적)",
+     "so that + S + V: ~하도록. rub off on: ~에게 옮아가다"
+    ]
+   ]
+  },
+  {
+   "n": 7,
+   "type": "빈칸",
+   "title": "감정 vs 느낌",
+   "blank": "…human beings have some ability to cognitively assign … just ________.",
+   "blankKo": "인간은 바로 ______을 인지적으로 부여할(생각하고 결정할) 능력이 있다.",
+   "find": "우리가 '생각해서 결정'할 수 있는 것은?",
+   "flow": [
+    [
+     "정의",
+     "emotion = 무의식적 신경생물학 반응 / feeling = 그 감정에 붙이는 인지적 의미"
+    ],
+    [
+     "주장",
+     "인간은 감정의 '의미'를 스스로 생각하고 정할 수 있다"
+    ],
+    [
+     "예시",
+     "전쟁 북소리: 어느 편에 설지 정해 주진 않음"
+    ],
+    [
+     "예시",
+     "이미 고른 편으로 더 힘차게 행진하게 할 뿐 (에너지만 줌)"
+    ]
+   ],
+   "clue": "…feelings are the cognitive assignments we make to those emotions.",
+   "clueKo": "느낌은 우리가 그 감정들에 부여하는 인지적 의미(배정)이다",
+   "ans": 1,
+   "opts": [
+    [
+     "what a given emotion we experience might mean",
+     "우리가 경험하는 감정이 무엇을 의미할지 = feeling의 정의",
+     "정답"
+    ],
+    [
+     "why music was once used as a psychological weapon",
+     "음악 = 심리 무기 → 북소리 '소재'만 빌린 함정",
+     "소재 함정"
+    ],
+    [
+     "how unconscious reactions shape our instinctive behavior",
+     "무의식이 본능적 행동을 형성 → 글은 '인지적' 선택 강조",
+     "반대"
+    ],
+    [
+     "how rhythm affects neural development in the long term",
+     "리듬과 신경 발달 → 글에 없음",
+     "언급 없음"
+    ],
+    [
+     "what external signals can trigger emotion and memory",
+     "외부 신호가 감정·기억 유발 → 핵심 아님",
+     "소재 함정"
+    ]
+   ],
+   "notes": "【도입】 \"심장이 두근거릴 때, 그게 '설렘'인지 '불안'인지 누가 정해?\" → 몸은 반응만, 의미는 내가 붙인다 = emotion vs feeling.\n【풀이 핵심】 빈칸의 cognitively assign 은 앞 문장 feelings are the cognitive assignments ~ 와 같은 말 → 감정에 '의미'를 붙이는 것 = ①.\n【예시 해석】 북소리는 편을 골라 주지 않음(의미는 내가 정함) + 고른 쪽으로 힘만 줌(감정 에너지).\n【오답】 ②⑤는 '북소리/음악'이라는 소재만 같은 대표적 함정.\n【어휘】 neurobiological 신경생물학적, exemplar 전형적인 예, set off 일으키다.",
+   "topic": "감정과 느낌",
+   "key": "감정의 의미는 우리가 정한다",
+   "foot": "* exemplar: 전형적인 예   ** thy: (고어) 당신의",
+   "sentences": [
+    [
+     "Emotions can be used to refer to the unconscious, neurobiological response, while feelings are the cognitive assignments we make to those emotions.",
+     "감정(emotion)은 무의식적인 신경생물학적 반응을 가리키는 데 쓰일 수 있는 반면, 느낌(feeling)은 우리가 그 감정에 부여하는 인지적 의미이다.",
+     true
+    ],
+    [
+     "This is undoubtedly a much more complicated dynamic and there is a great degree of highly detailed information explaining the interworking of these two.",
+     "이것은 분명 훨씬 더 복잡한 역학 관계이며, 이 둘의 상호 작용을 설명하는 매우 상세한 정보가 아주 많다."
+    ],
+    [
+     "However, the most noteworthy application of the distinction between emotion and feeling is that human beings have some ability to cognitively assign, that is, to think about and make a decision about, just {B}.",
+     "그러나 감정과 느낌의 구분이 가장 주목할 만하게 적용되는 점은, 인간이 바로 ______을 인지적으로 부여할, 즉 그것에 대해 생각하고 결정할 어느 정도의 능력이 있다는 것이다."
+    ],
+    [
+     "This can be more easily grasped when thinking about a more concrete exemplar ─ ancient war drums.",
+     "이것은 더 구체적인 예인 고대의 전쟁 북을 생각해 보면 더 쉽게 이해할 수 있다."
+    ],
+    [
+     "Most would agree that hearing a beating war drum does not lead one to pick a side in a given conflict.",
+     "대부분은 울리는 전쟁 북소리를 듣는다고 해서 어떤 갈등에서 편을 고르게 되지는 않는다는 데 동의할 것이다.",
+     true
+    ],
+    [
+     "A beating war drum merely helps one march more energetically on whichever side was chosen to begin with.",
+     "울리는 전쟁 북은 처음에 선택한 쪽이 어느 쪽이든 그 편에서 더 힘차게 행진하도록 도울 뿐이다.",
+     true
+    ],
+    [
+     "The neurobiological experience set off by the auditory sensation of the drums causes one to \"feel\" more energy toward a given end and step more quickly.",
+     "북소리의 청각적 감각이 일으킨 신경생물학적 경험은 사람이 주어진 목적을 향해 더 많은 에너지를 '느끼고' 더 빨리 걷게 만든다."
+    ],
+    [
+     "Perhaps Shakespeare knew something of this when he wrote Timon's words, \"follow thy drum ...\".",
+     "아마 셰익스피어는 Timon의 대사 \"그대의 북을 따르라…\"를 쓸 때 이것에 대해 무언가 알고 있었을 것이다."
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "the cognitive assignments we make to those emotions"
+     ],
+     "목적격 관계대명사 생략",
+     "assignments (that) we make ~: make의 목적어가 빠진 절"
+    ],
+    [
+     [
+      "is that human beings have"
+     ],
+     "명사절 that (보어)",
+     "the most noteworthy application … is that ~: that절이 보어"
+    ],
+    [
+     [
+      "does not lead one to pick"
+     ],
+     "lead O to V",
+     "목적격 보어 자리에 to부정사 (lead/cause/allow O to V)"
+    ],
+    [
+     [
+      "whichever side was chosen"
+     ],
+     "복합관계형용사",
+     "whichever + 명사: 어느 쪽 ~이든"
+    ],
+    [
+     [
+      "set off by the auditory sensation",
+      "causes one to"
+     ],
+     "과거분사 수식 · cause O to V",
+     "experience (which was) set off by ~ / 주어 experience → 단수 causes"
+    ]
+   ]
+  },
+  {
+   "n": 8,
+   "type": "빈칸",
+   "title": "메소포타미아의 관개와 권력",
+   "blank": "This centralized control over water resources provided ________.",
+   "blankKo": "물 자원에 대한 이 중앙집권적 통제는 ______을 제공했다.",
+   "find": "물을 '중앙에서 통제'하면 무엇이 생기나?",
+   "flow": [
+    [
+     "주제",
+     "메소포타미아 농업의 열쇠 = 관개(irrigation)"
+    ],
+    [
+     "과정",
+     "운하·제방·저수지 건설 → 대규모 협력·조직 필요"
+    ],
+    [
+     "결과",
+     "복잡한 사회 구조 + 강력한 도시국가 등장"
+    ],
+    [
+     "핵심",
+     "사제·지도자가 노동력을 조직·지휘 → 중앙집권적 통제"
+    ]
+   ],
+   "clue": "…leading to the development of complex social structures and the rise of powerful city-states.",
+   "clueKo": "복잡한 사회 구조의 발달과 강력한 도시국가의 부상으로 이어졌다",
+   "ans": 4,
+   "opts": [
+    [
+     "a reduction in the need for organized labor groups",
+     "조직 노동의 필요 감소 → 오히려 대규모 노동 필요",
+     "반대"
+    ],
+    [
+     "a guarantee of equal access to water for everyone",
+     "모두에게 평등한 접근 → '중앙 통제'와 반대",
+     "반대"
+    ],
+    [
+     "a solution to eliminating social classes altogether",
+     "사회 계급 제거 → 오히려 계급 형성",
+     "반대"
+    ],
+    [
+     "a basis for political power and social hierarchy",
+     "정치 권력과 사회 위계의 기반",
+     "정답"
+    ],
+    [
+     "a rise in individual farming independence",
+     "개인 농업의 독립성 → 중앙 통제와 반대",
+     "반대"
+    ]
+   ],
+   "notes": "【풀이 핵심】 이 문제는 오답 4개가 전부 '반대'라서 초보자도 지우기 쉬운 문제. \"centralized control(중앙 통제) 하면 평등해질까, 위아래가 생길까?\"라고 물어보세요.\n【단서】 complex social structures, powerful city-states, temple priests or powerful leaders → power + hierarchy.\n【팁】 빈칸 앞 단어 centralized control 하나만 제대로 해석해도 정답이 나온다는 걸 강조.\n【어휘】 irrigation 관개, divert (물길을) 돌리다, dike 제방, reservoir 저수지, hierarchy 위계.",
+   "topic": "메소포타미아",
+   "key": "물 통제 → 정치 권력과 위계",
+   "foot": "* dike: 제방   ** reservoir: 저수지",
+   "sentences": [
+    [
+     "The key to unlocking the agricultural potential of Mesopotamia lay in irrigation.",
+     "메소포타미아의 농업 잠재력을 여는 열쇠는 관개에 있었다."
+    ],
+    [
+     "Early Mesopotamians, particularly the Sumerians, were pioneers in developing sophisticated irrigation techniques.",
+     "초기 메소포타미아인들, 특히 수메르인들은 정교한 관개 기술을 개발한 선구자였다."
+    ],
+    [
+     "They constructed canals, dikes, and reservoirs to control the flow of the rivers, diverting water to their fields during dry periods and protecting their settlements from floods.",
+     "그들은 강의 흐름을 통제하기 위해 운하, 제방, 저수지를 건설하여, 건기에는 물을 밭으로 돌리고 홍수로부터 정착지를 보호했다."
+    ],
+    [
+     "This monumental effort required cooperation and organization on a scale previously unseen, leading to the development of complex social structures and the rise of powerful city-states.",
+     "이 거대한 노력은 이전에 없던 규모의 협력과 조직을 필요로 했고, 복잡한 사회 구조의 발달과 강력한 도시 국가의 부상으로 이어졌다.",
+     true
+    ],
+    [
+     "Early irrigation was relatively small-scale, involving the digging of simple channels to divert water to nearby fields.",
+     "초기 관개는 비교적 소규모였으며, 근처 밭으로 물을 돌리기 위해 단순한 수로를 파는 일이었다."
+    ],
+    [
+     "Over time, these systems became more elaborate, with complex networks of canals spanning vast distances.",
+     "시간이 지나면서 이 체계는 더 정교해져, 먼 거리에 걸친 복잡한 운하망을 갖추게 되었다."
+    ],
+    [
+     "The construction and maintenance of these systems required a significant labor force, which was often organized and directed by temple priests or powerful leaders.",
+     "이 체계를 건설하고 유지하는 데는 상당한 노동력이 필요했는데, 그것은 흔히 신전 사제나 강력한 지도자들이 조직하고 지휘했다.",
+     true
+    ],
+    [
+     "This centralized control over water resources provided {B}.",
+     "물 자원에 대한 이러한 중앙 집중식 통제는 ______을 제공했다."
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "The key to unlocking"
+     ],
+     "전치사 to + 동명사",
+     "the key to -ing (~의 열쇠). to부정사로 착각 금지"
+    ],
+    [
+     [
+      "diverting water",
+      "protecting their settlements"
+     ],
+     "분사구문 병렬",
+     "diverting … and protecting …: 주절의 결과·부연 (and로 병렬)"
+    ],
+    [
+     [
+      "leading to the development"
+     ],
+     "결과의 분사구문",
+     ", leading to ~ = and it led to ~ (lead to + 명사)"
+    ],
+    [
+     [
+      ", which was often organized and directed"
+     ],
+     "계속적 용법 which + 수동",
+     "선행사 a significant labor force(단수) → was, 조직'되는' 것이라 수동태"
+    ]
+   ]
+  },
+  {
+   "n": 9,
+   "type": "빈칸",
+   "title": "문명은 문화의 적?",
+   "blank": "This is how ________.",
+   "blankKo": "이것이 바로 ______하는 방식이다.",
+   "find": "앞 내용(옛 방식을 버림)을 한 문장으로 요약",
+   "flow": [
+    [
+     "대비",
+     "문화(culture) = 농업(뿌리) / 문명(civilization) = 교환"
+    ],
+    [
+     "과정",
+     "교환 → 비교 → 더 나은 선택 → 시야 확장"
+    ],
+    [
+     "핵심",
+     "Exchange is the enemy of culture (교환은 문화의 적)"
+    ],
+    [
+     "결과",
+     "대안이 생기면 옛 방식을 버리고, 예전의 우리가 아니게 됨"
+    ]
+   ],
+   "clue": "Or, differently put, exchange is the enemy of culture. When presented with alternatives, we give up our old ways.",
+   "clueKo": "다시 말해, 교환은 문화의 적이다. 대안이 주어지면 우리는 옛 방식을 버린다",
+   "ans": 2,
+   "opts": [
+    [
+     "strong cultural boundaries emerge globally",
+     "강한 문화적 경계 → 경계가 무너지는 글",
+     "반대"
+    ],
+    [
+     "civilization undermines and destroys culture",
+     "문명이 문화를 약화·파괴 = enemy of culture",
+     "정답"
+    ],
+    [
+     "cultural exchange encourages local uniqueness",
+     "지역 고유성 장려 → 반대",
+     "반대"
+    ],
+    [
+     "civilization spreads culture without altering its core values",
+     "핵심 가치 변화 없음 → '예전의 우리가 아님'과 반대",
+     "반대"
+    ],
+    [
+     "cultural identity strengthens through interaction with others",
+     "정체성 강화 → 반대",
+     "반대"
+    ]
+   ],
+   "notes": "【도입】 \"외국 음식·유튜브를 접하고 나서 바뀐 내 습관 있어?\" → 교환이 '예전의 나'를 바꾼다.\n【풀이 핵심】 Or, differently put(다시 말하면) = 재진술 신호어! 바로 뒤 exchange is the enemy of culture가 정답의 원본. 문명(=교환)이 문화의 적 → civilization undermines and destroys culture.\n【주의】 글 중간의 '해방적(liberating)'이라는 긍정 어조에 속아 ⑤를 고르는 학생이 많음.\n【교재 오류】 각주 endowment, exacerbate는 이 지문에 나오지 않는 단어입니다(다른 지문 각주가 잘못 들어간 것으로 보임). 학생에게 무시하라고 안내하세요.\n【어휘】 unencumbered 방해받지 않는, unsettling 불안하게 하는, confined to ~에 갇힌.",
+   "topic": "문명과 문화",
+   "key": "교환(문명)은 문화의 적",
+   "foot": "※ 교재 각주(endowment, exacerbate)는 이 지문에 나오지 않는 단어 → 무시",
+   "sentences": [
+    [
+     "If culture finds its metaphorical basis in agriculture, civilization finds it in exchange.",
+     "문화가 그 은유적 기반을 농업에서 찾는다면, 문명은 그것을 교환에서 찾는다.",
+     true
+    ],
+    [
+     "When our society is connected to other societies, we are connected to other people, and we can suddenly compare things and judge them in relation to each other.",
+     "우리 사회가 다른 사회와 연결되면 우리는 다른 사람들과 연결되고, 갑자기 사물을 비교하고 서로와의 관계 속에서 판단할 수 있게 된다."
+    ],
+    [
+     "As a result, we have a choice between better and cheaper options; we can pick the new and the never-before-tried.",
+     "그 결과, 우리는 더 좋고 더 싼 선택지 중에서 고를 수 있게 되고, 새로운 것과 한 번도 시도해 보지 않은 것을 고를 수 있다."
+    ],
+    [
+     "Such choices broaden our horizons and improve our lives.",
+     "그러한 선택은 우리의 시야를 넓히고 삶을 향상시킨다."
+    ],
+    [
+     "This is why civilization depends on the unencumbered circulation of goods, people, ideas, faiths, and ways of life.",
+     "이것이 문명이 상품, 사람, 사상, 신앙, 생활 방식의 방해받지 않는 순환에 의존하는 이유이다."
+    ],
+    [
+     "The consequences of such interaction may be unsettling, but they can also be liberating.",
+     "그러한 상호 작용의 결과는 불안하게 할 수도 있지만, 해방감을 줄 수도 있다."
+    ],
+    [
+     "We no longer have to be confined to, and carry the burden of, our culture, and we no longer have to be who we are.",
+     "우리는 더 이상 우리 문화에 갇혀 그 짐을 질 필요가 없고, 더 이상 지금의 우리일 필요도 없다."
+    ],
+    [
+     "Civilization provides us with a means of escape.",
+     "문명은 우리에게 탈출 수단을 제공한다."
+    ],
+    [
+     "Or, differently put, exchange is the enemy of culture.",
+     "또는 달리 말하면, 교환은 문화의 적이다.",
+     true
+    ],
+    [
+     "When presented with alternatives, we give up our old ways.",
+     "대안이 주어지면 우리는 옛 방식을 버린다.",
+     true
+    ],
+    [
+     "We no longer do the things we used to do and we are no longer quite the same people as before.",
+     "우리는 더 이상 예전에 하던 일을 하지 않고, 더 이상 예전과 꼭 같은 사람이 아니다."
+    ],
+    [
+     "This is how {B}.",
+     "이것이 ______하는 방식이다."
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "finds it in exchange"
+     ],
+     "대명사 it",
+     "it = its metaphorical basis (앞 절과 대구 구조)"
+    ],
+    [
+     [
+      "This is why"
+     ],
+     "This is why + 결과",
+     "앞 내용이 원인, 뒤가 결과 (This is because와 구별)"
+    ],
+    [
+     [
+      "be confined to, and carry the burden of, our culture"
+     ],
+     "공통관계",
+     "to와 of가 our culture를 공통 목적어로 공유"
+    ],
+    [
+     [
+      "When presented with alternatives"
+     ],
+     "접속사 + 분사구문",
+     "When (we are) presented with ~: 수동 분사구문"
+    ],
+    [
+     [
+      "the things we used to do"
+     ],
+     "used to V",
+     "~하곤 했다 (be used to -ing: ~에 익숙하다와 구별)"
+    ]
+   ]
+  },
+  {
+   "n": 10,
+   "type": "빈칸",
+   "title": "과학과 민주주의의 '대표성'",
+   "blank": "Representation is, however, ________.",
+   "blankKo": "그러나 대표(표현)는 ______하다.",
+   "find": "However 뒤 → 앞(정당성)과 반대되는 '한계'",
+   "flow": [
+    [
+     "공통점",
+     "과학과 민주주의는 '대표(representation)'로 권위를 정당화"
+    ],
+    [
+     "반전",
+     "However → 대표에는 한계가 있다 (빈칸)"
+    ],
+    [
+     "근거",
+     "대표한다 = 단순화한다 → 다른 단순화(대안)가 항상 존재"
+    ],
+    [
+     "결론",
+     "그래서 둘 다 비판을 통한 개선 장치를 내장하고 있다"
+    ]
+   ],
+   "clue": "To represent means to simplify, which implies the existence of alternatives…",
+   "clueKo": "대표한다는 것은 단순화를 의미하며, 이는 대안의 존재를 암시한다",
+   "ans": 2,
+   "opts": [
+    [
+     "free from controversy",
+     "논쟁이 없다 → continuous struggles와 반대",
+     "반대"
+    ],
+    [
+     "never perfect or complete",
+     "결코 완벽·완전하지 않다 = 단순화, 대안, 개선 필요",
+     "정답"
+    ],
+    [
+     "valid only in scientific contexts",
+     "과학에서만 유효 → 민주주의도 해당",
+     "범위 오류"
+    ],
+    [
+     "fixed and then resistant to change",
+     "고정·변화 저항 → 개선 메커니즘과 반대",
+     "반대"
+    ],
+    [
+     "not subjective nor universally rejected",
+     "주관적이지도 거부되지도 않음 → 무관",
+     "언급 없음"
+    ]
+   ],
+   "notes": "【풀이 핵심】 빈칸 문장 속 however 가 결정적! \"앞에서 대표성이 권위를 준다고 칭찬했지? 그런데(however) → 이제 단점이 나온다.\"\n【단서 정리】 alternative representations / continuous struggles / to represent means to simplify / mechanisms for improvement → 전부 '완벽하지 않다'를 가리킴.\n【팁】 However, But, Yet 이 빈칸 근처에 있으면 '앞 내용의 반대'를 고르라는 신호.\n【어휘】 legitimate 정당한, governance 통치, foresee 예견하다, inbuilt 내장된.",
+   "topic": "대표성",
+   "key": "대표 = 단순화 → 결코 완벽하지 않다",
+   "foot": "* governance: 통치, 관리",
+   "sentences": [
+    [
+     "Science and democracy share important principles and ideals that oppose illegitimate claims for knowledge and power.",
+     "과학과 민주주의는 지식과 권력에 대한 부당한 주장에 반대하는 중요한 원칙과 이상을 공유한다."
+    ],
+    [
+     "The authority of both scientific knowledge and democratic governance is legitimated by representation.",
+     "과학적 지식과 민주적 통치의 권위는 모두 대표(representation)에 의해 정당화된다."
+    ],
+    [
+     "It is only when this representation is accepted as legitimate that it can support the authority of the knowledge claims made, or the authority of particular forms of governance.",
+     "이 대표가 정당하다고 받아들여질 때에만 그것은 제기된 지식 주장의 권위나 특정 형태의 통치의 권위를 뒷받침할 수 있다."
+    ],
+    [
+     "Representation is, however, {B}.",
+     "그러나 대표는 ______하다."
+    ],
+    [
+     "Since both scientific practices and democratic governance, in principle, admit potential alternative representations, continuous struggles over what is represented and what is not can be foreseen.",
+     "과학적 실천과 민주적 통치는 모두 원칙적으로 잠재적인 대안적 대표를 인정하므로, 무엇이 대표되고 무엇이 대표되지 않는지를 두고 지속적인 다툼이 예견될 수 있다.",
+     true
+    ],
+    [
+     "To represent means to simplify, which implies the existence of alternatives ─ alternative ways of simplifying complicated issues.",
+     "대표한다는 것은 단순화한다는 뜻이며, 이는 대안, 즉 복잡한 문제를 단순화하는 다른 방식들이 존재함을 암시한다.",
+     true
+    ],
+    [
+     "This further means that both science and democracy have inbuilt mechanisms for improvement, which are based on critical assessments of existing representations.",
+     "이것은 나아가 과학과 민주주의 모두 개선을 위한 내장된 장치를 가지고 있다는 뜻이며, 그 장치는 기존 대표에 대한 비판적 평가에 기반한다.",
+     true
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "that oppose illegitimate claims"
+     ],
+     "주격 관계대명사 수일치",
+     "선행사 principles and ideals(복수) → oppose"
+    ],
+    [
+     [
+      "It is only when this representation is accepted as legitimate that"
+     ],
+     "It is ~ that 강조구문",
+     "only when ~ 부사절을 강조. that 뒤는 완전한 절"
+    ],
+    [
+     [
+      "Since both scientific practices and democratic governance, in principle, admit"
+     ],
+     "since(이유) · both A and B",
+     "both A and B는 복수 → admit. 삽입구 in principle 건너뛰기"
+    ],
+    [
+     [
+      "which implies the existence of alternatives"
+     ],
+     "계속적 용법 which",
+     "앞 절 전체(To represent means to simplify)를 받음 → 단수 implies"
+    ]
+   ]
+  },
+  {
+   "n": 11,
+   "type": "빈칸",
+   "title": "열대 토양과 영양분 순환",
+   "blank": "Nutrient-poor tropical soils illustrate the general rule that ________.",
+   "blankKo": "영양분이 부족한 열대 토양은 ______라는 일반 법칙을 보여 준다.",
+   "find": "열대 토양 사례 → '일반 법칙'으로 바꾸기",
+   "flow": [
+    [
+     "원인",
+     "열대: 많은 비 + 빠른 풍화 → 영양분이 땅에서 씻겨 나감"
+    ],
+    [
+     "현상",
+     "울창한 숲이 스스로를 먹고 삶 (옛 영양분을 재활용)"
+    ],
+    [
+     "핵심",
+     "영양분은 흙이 아니라 '식물 자체'에 있음"
+    ],
+    [
+     "결과",
+     "숲이 사라지면 → 땅의 생산력도 사라짐 (수십 년 내)"
+    ]
+   ],
+   "clue": "…the lush vegetation essentially feeds on itself, retaining and recycling nutrients inherited from rocks weathered long ago.",
+   "clueKo": "울창한 식생은 본질적으로 스스로를 먹고 살며, 오래전 풍화된 암석에서 물려받은 영양분을 보유·재활용한다",
+   "ans": 2,
+   "opts": [
+    [
+     "not all growth leads to change",
+     "모든 성장이 변화로 이어지진 않음 → 무관",
+     "언급 없음"
+    ],
+    [
+     "life depends on recycling past life",
+     "생명은 과거 생명의 재활용에 의존 = recycling",
+     "정답"
+    ],
+    [
+     "farming flourishes where roots run deep",
+     "뿌리 깊은 곳에서 농업 번성 → 글에 없음",
+     "소재 함정"
+    ],
+    [
+     "rich vegetation always indicates fertile soil",
+     "울창한 숲 = 비옥한 땅? → 열대는 정반대!",
+     "반대"
+    ],
+    [
+     "soil always holds enough nutrients for farming",
+     "토양은 항상 충분 → 반대",
+     "반대"
+    ]
+   ],
+   "notes": "【도입】 \"정글처럼 나무가 빽빽한 곳은 땅이 비옥할까?\" → 대부분 '네' → 이 글은 '아니다'라고 말함. 이게 바로 ④번 함정!\n【풀이 핵심】 feeds on itself, recycling nutrients 가 키워드. 숲이 자기 몸(낙엽, 죽은 식물)의 영양분을 계속 돌려 씀 → '생명은 과거 생명을 재활용한다'.\n【팁】 the general rule that ~ 은 구체적 사례를 '일반화'하라는 뜻 → 선택지도 추상적인 문장이 정답인 경우가 많음.\n【어휘】 weathering 풍화, seep 스며들다, leach out 씻겨 나가다, lush 울창한, deforestation 삼림 벌채.",
+   "topic": "열대 토양",
+   "key": "숲은 과거 생명을 재활용해 산다",
+   "foot": "* seep: 스며들다   ** leach out: ~을 스며나오게 하다   *** lush: 울창한",
+   "sentences": [
+    [
+     "Differences in geology and climate make soils in different regions more or less capable of sustained agriculture.",
+     "지질과 기후의 차이 때문에 지역마다 토양이 지속적인 농업을 감당할 수 있는 정도가 다르다."
+    ],
+    [
+     "In particular, the abundant rainfall and high weathering rates on the gentle slopes of many tropical landscapes mean that after enough time, rainfall seeping into the ground leaches out almost all of the nutrients from both the soil and the weathered rocks beneath the soil.",
+     "특히, 많은 열대 지형의 완만한 경사지에 내리는 풍부한 비와 높은 풍화율은, 충분한 시간이 지나면 땅속으로 스며든 빗물이 토양과 그 아래 풍화된 암석 모두에서 거의 모든 영양분을 씻어 낸다는 것을 의미한다."
+    ],
+    [
+     "Once this happens, the lush vegetation essentially feeds on itself, retaining and recycling nutrients inherited from rocks weathered long ago.",
+     "일단 이렇게 되면, 울창한 식생은 본질적으로 스스로를 먹고 살며, 오래전 풍화된 암석에서 물려받은 영양분을 보유하고 재활용한다.",
+     true
+    ],
+    [
+     "As most of the nutrients in these areas reside not in the soil but in the plants themselves, once the native vegetation disappears, so does the productive capacity of the soil.",
+     "이 지역의 영양분 대부분은 토양이 아니라 식물 자체에 있기 때문에, 토착 식생이 사라지면 토양의 생산 능력도 사라진다.",
+     true
+    ],
+    [
+     "Often too few nutrients remain to support either crops or livestock within decades of deforestation.",
+     "흔히 삼림 벌채 후 수십 년 안에, 농작물이나 가축을 부양하기에는 너무 적은 영양분만 남게 된다."
+    ],
+    [
+     "Nutrient-poor tropical soils illustrate the general rule that {B}.",
+     "영양분이 부족한 열대 토양은 ______라는 일반 법칙을 보여 준다."
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "make soils in different regions more or less capable of"
+     ],
+     "5형식 make O C",
+     "목적격 보어 자리에 형용사 capable (부사 X)"
+    ],
+    [
+     [
+      "rainfall seeping into the ground leaches out"
+     ],
+     "현재분사 수식 · 수일치",
+     "rainfall (which is) seeping ~ → 주어 rainfall(단수) → leaches"
+    ],
+    [
+     [
+      "retaining and recycling nutrients inherited from"
+     ],
+     "분사구문 · 과거분사 수식",
+     "retaining and recycling: 분사구문 병렬 / nutrients (which were) inherited"
+    ],
+    [
+     [
+      "reside not in the soil but in the plants"
+     ],
+     "not A but B",
+     "A가 아니라 B: in the soil / in the plants 병렬"
+    ],
+    [
+     [
+      "so does the productive capacity of the soil"
+     ],
+     "so + V + S 도치",
+     "~도 그렇다: so does + 주어 (앞 동사 disappears를 대신)"
+    ]
+   ]
+  },
+  {
+   "n": 12,
+   "type": "함의",
+   "title": "\"This stays here\"의 의미",
+   "blank": "…any time someone says, \"This stays here,\" the atmosphere changes.",
+   "blankKo": "누군가 \"이건 여기서만 하는 얘기야\"라고 말할 때마다 분위기가 바뀐다.",
+   "find": "이 말을 하는 사람의 '속뜻'은?",
+   "flow": [
+    [
+     "주제",
+     "정보를 얼마나 공유하는가 = 팀 신뢰의 척도"
+    ],
+    [
+     "근거",
+     "리더가 특별한 정보를 공유 = 팀을 믿는다는 신호"
+    ],
+    [
+     "밑줄",
+     "\"This stays here\" → 이후 말은 '신뢰 속에서' 하는 말"
+    ],
+    [
+     "결과",
+     "사람들은 신뢰받는다고 느끼고 신뢰할 만한 행동으로 응답"
+    ]
+   ],
+   "clue": "People know whatever follows is spoken in trust, and they respond to that feeling of being trusted with trustworthy behavior.",
+   "clueKo": "사람들은 뒤따르는 말이 신뢰 속에서 하는 말임을 알고, 신뢰할 만한 행동으로 응답한다",
+   "ans": 5,
+   "opts": [
+    [
+     "I am setting boundaries out of caution, not out of trust.",
+     "신뢰가 아닌 경계심 → 정반대",
+     "반대"
+    ],
+    [
+     "I think this is way too sensitive to discuss openly right now.",
+     "너무 민감해서 말 못 함 → 실제로는 공개함",
+     "반대"
+    ],
+    [
+     "I feel uncomfortable with what I am about to say, so forget it.",
+     "불편하니 잊어라 → 글에 없음",
+     "언급 없음"
+    ],
+    [
+     "I am unsure if I should speak freely, so I will keep this vague.",
+     "모호하게 말하겠다 → 오히려 솔직히 공유",
+     "반대"
+    ],
+    [
+     "I will disclose sensitive information on the basis of mutual trust.",
+     "상호 신뢰를 바탕으로 민감한 정보를 공개하겠다",
+     "정답"
+    ]
+   ],
+   "notes": "【도입】 \"친구가 '이건 너한테만 말하는 건데…'라고 하면 기분이 어때?\" → 믿어 준다는 느낌!\n【풀이 핵심】 밑줄 바로 뒤 문장 spoken in trust 가 의미를 직접 설명해 줌. 함의 문제는 밑줄 '앞뒤 한 문장'에 답이 있는 경우가 많다.\n【오답 설명】 ①②④는 '숨기다/경계하다'라는 반대 방향. 글은 '공개 + 신뢰'.\n【어휘】 privileged information 특권 정보(일부만 아는 정보), handed down 하달된, inner circle 핵심층.",
+   "topic": "신뢰(함의)",
+   "key": "\"여기서만\" = 신뢰 기반 정보 공개",
+   "foot": "",
+   "sentences": [
+    [
+     "Knowledge is power.",
+     "아는 것이 힘이다."
+    ],
+    [
+     "And one way to measure the amount of trust on a team is by looking at how much information people keep to themselves (low trust) or share openly (high trust).",
+     "그리고 팀 내 신뢰의 양을 측정하는 한 가지 방법은 사람들이 얼마나 많은 정보를 혼자 간직하는지(낮은 신뢰), 혹은 공개적으로 공유하는지(높은 신뢰)를 살펴보는 것이다.",
+     true
+    ],
+    [
+     "Team leaders signal that they trust their team when they share privileged information with them.",
+     "팀 리더는 특권 정보(일부만 아는 정보)를 팀원과 공유할 때 팀을 신뢰한다는 신호를 보낸다.",
+     true
+    ],
+    [
+     "This could be sharing the team's finances, or the budget handed down from higher-ups, so that the whole team knows what they're working with and where the priorities are.",
+     "이것은 팀의 재정이나 윗선에서 내려온 예산을 공유하여, 팀 전체가 무엇을 가지고 일하는지, 우선순위가 어디에 있는지 알게 하는 것일 수 있다."
+    ],
+    [
+     "It could also be competitive data or customer trends that are widely available but rarely shared.",
+     "또한 널리 구할 수 있지만 거의 공유되지 않는 경쟁 데이터나 고객 동향일 수도 있다."
+    ],
+    [
+     "It could even be passing on information shared by another team.",
+     "심지어 다른 팀이 공유한 정보를 전달하는 것일 수도 있다."
+    ],
+    [
+     "In a meeting, any time someone says, \"__This stays here__,\" the atmosphere changes.",
+     "회의에서 누군가 \"이건 여기서만 하는 얘기예요\"라고 말할 때마다 분위기가 바뀐다."
+    ],
+    [
+     "People know whatever follows is spoken in trust, and they respond to that feeling of being trusted with trustworthy behavior.",
+     "사람들은 뒤이어 나오는 말이 무엇이든 신뢰 속에서 하는 말임을 알고, 신뢰받는다는 그 느낌에 신뢰할 만한 행동으로 응답한다.",
+     true
+    ],
+    [
+     "People begin to feel like they're in the inner circle when they receive more information about their work or the environment than they usually do.",
+     "사람들은 자기 업무나 환경에 대해 평소보다 많은 정보를 받을 때 자신이 핵심층에 속해 있다고 느끼기 시작한다."
+    ],
+    [
+     "They start to see how their work fits into the larger organizational whole.",
+     "그들은 자신의 일이 더 큰 조직 전체에 어떻게 들어맞는지 보기 시작한다."
+    ]
+   ],
+   "grammar": [
+    [
+     [
+      "how much information people keep to themselves"
+     ],
+     "간접의문문",
+     "how much + 명사 + 주어 + 동사 어순"
+    ],
+    [
+     [
+      "so that the whole team knows"
+     ],
+     "so that (목적)",
+     "so that + S + V: ~하도록. 주어 the whole team(단수) → knows"
+    ],
+    [
+     [
+      "that are widely available but rarely shared"
+     ],
+     "주격 관계대명사 수일치",
+     "선행사 competitive data or customer trends → are (가까운 trends에 일치)"
+    ],
+    [
+     [
+      "whatever follows is spoken in trust"
+     ],
+     "복합관계대명사 whatever",
+     "whatever = anything that, 명사절 주어 → 단수 is"
+    ],
+    [
+     [
+      "than they usually do"
+     ],
+     "비교급 · 대동사 do",
+     "do = receive information (반복을 피하는 대동사)"
+    ]
+   ]
+  }
+ ]
+}
