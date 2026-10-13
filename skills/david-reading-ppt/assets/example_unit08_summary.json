@@ -2174,5 +2174,89 @@
    "step1Label": "STEP 1 · 의심 문장",
    "hideOptsOnProblem": true
   }
- ]
+ ],
+ "review": {
+  "vocab": [
+   [
+    "preserve",
+    "보존하다"
+   ],
+   [
+    "heritage",
+    "유산"
+   ],
+   [
+    "identical",
+    "동일한"
+   ],
+   [
+    "inclined",
+    "~하고 싶은"
+   ],
+   [
+    "consistently",
+    "꾸준히"
+   ],
+   [
+    "sophisticated",
+    "정교한"
+   ],
+   [
+    "predator",
+    "포식자"
+   ],
+   [
+    "phenomenon",
+    "현상"
+   ],
+   [
+    "respondent",
+    "응답자"
+   ],
+   [
+    "persistence",
+    "끈기"
+   ],
+   [
+    "incapacity",
+    "무능"
+   ],
+   [
+    "indifferent",
+    "무관심한"
+   ]
+  ],
+  "grammar": [
+   {
+    "q": "Many cases of such social contagion [happen / happens] in subtle ways. (Ex 94)",
+    "a": "happen",
+    "why": "주어 cases(복수)"
+   },
+   {
+    "q": "…a sophisticated sense of smell, which [consists of / is consisted of] two systems. (Ex 96)",
+    "a": "consists of",
+    "why": "consist는 수동태 불가"
+   },
+   {
+    "q": "This reflection process enables you [to clearly see / clearly see] potential problems. (Ex 95)",
+    "a": "to clearly see",
+    "why": "enable O to V"
+   },
+   {
+    "q": "At the root of trained incapacity [is / are] a job with little variety. (Ex 100)",
+    "a": "is",
+    "why": "부사구 도치 → 주어 a job(단수)"
+   },
+   {
+    "q": "Robert Ferber had respondents [rate / to rate] a list of occupations. (Ex 98)",
+    "a": "rate",
+    "why": "사역동사 have + O + 동사원형"
+   },
+   {
+    "q": "The more complicated the plan was, [the sooner / sooner] they dropped it. (Ex 99)",
+    "a": "the sooner",
+    "why": "the 비교급, the 비교급"
+   }
+  ]
+ }
 }

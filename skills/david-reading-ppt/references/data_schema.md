@@ -39,6 +39,12 @@
       "conclusion": "위신을 얻으면 영향력이 원래 분야를 넘어 확장된다"
     }
   },
+  "review": {                      // 복습 미니테스트 (마지막). 없으면 어휘 퀴즈는 문제별 vocab 첫 단어로 자동, 어법 골든벨은 생략
+    "vocab": [["preserve", "보존하다"]],          // 최대 12개 — 오늘 지문의 핵심 어휘
+    "grammar": [                                  // 최대 6개 — 오늘 문법 포인트에서 출제, 반드시 [정답 / 오답] 형식
+      { "q": "Many cases of such social contagion [happen / happens] in subtle ways. (Ex 94)", "a": "happen", "why": "주어 cases(복수)" }
+    ]
+  },
   "exercises": [
     {
       "n": 1,                        // 문제 번호
@@ -86,6 +92,8 @@
       "given": "This reflection process enables …",          // 문장 삽입: 지문 위 [주어진 문장] 표시
       "hideOptsOnProblem": true,     // 삽입·어휘처럼 선택지가 지문 속 ①~⑤인 문제는 보기 목록 숨김
       "step1Label": "STEP 1 · 요약문 먼저",  // 흐름 슬라이드 첫 카드 이름
+      "hook": "몽골에 아직도 말 타는 유목민이 있을까?",  // 미션 슬라이드 하단 질문 (생략 시 notes의 【도입 질문】에서 자동 추출)
+      "mission": "…",                // 미션 문구 (생략 시 유형별 기본 문구)
       "vocab": [["urban", "도시의"], ["preserve", "보존하다"]]  // 사용자가 '단어 포함'을 원할 때: 근거 슬라이드 하단 어휘 박스 (지문당 6~8개, 각주 단어 제외)
     }
   ]
