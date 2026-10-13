@@ -1,0 +1,1419 @@
+[
+ {
+  "no": 1,
+  "en": "in the future",
+  "ko": "미래에, 장래에",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 2,
+  "en": "reporter",
+  "ko": "기자, 리포터",
+  "pos": "n. 기자, 리포터",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who writes or speaks news stories",
+     "뉴스 이야기를 쓰거나 말하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "기자, 리포터"
+  },
+  "ex": [
+   "The reporter asked many questions after the game.",
+   "기자는 경기 후에 많은 질문을 했다."
+  ]
+ },
+ {
+  "no": 3,
+  "en": "a lot of",
+  "ko": "많은",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "There are a lot of books on the desk.",
+   "책상 위에 많은 책들이 있다."
+  ]
+ },
+ {
+  "no": 4,
+  "en": "be interested in",
+  "ko": "~에 관심이 있다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She is interested in learning new languages.",
+   "그녀는 새로운 언어를 배우는 것에 관심이 있다."
+  ]
+ },
+ {
+  "no": 5,
+  "en": "kind",
+  "ko": "종류, 유형",
+  "pos": "n. 종류, 유형",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a category of things of the same type or with the same function",
+     "같은 종류이거나 같은 기능을 가진 사물들의 범주"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "종류, 유형"
+  },
+  "ex": [
+   "There are many kinds of fruit in the market.",
+   "시장에는 많은 종류의 과일이 있다."
+  ]
+ },
+ {
+  "no": 6,
+  "en": "delicious",
+  "ko": "맛있는",
+  "pos": "a. 맛있는",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having a taste that is very good",
+     "맛이 아주 좋은"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "맛있는"
+  },
+  "ex": [
+   "The cake is delicious, and everyone enjoys the taste.",
+   "그 케이크는 맛있어서 모두가 그 맛을 즐긴다."
+  ]
+ },
+ {
+  "no": 7,
+  "en": "famous",
+  "ko": "유명한",
+  "pos": "a. 유명한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "known by many people",
+     "많은 사람들에게 알려진"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "유명한"
+  },
+  "ex": [
+   "The city is famous for its beautiful beaches.",
+   "그 도시는 아름다운 해변으로 유명하다."
+  ]
+ },
+ {
+  "no": 8,
+  "en": "chef",
+  "ko": "요리사, 셰프",
+  "pos": "n. 요리사, 셰프",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who cooks food in a restaurant",
+     "식당에서 음식을 만드는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "요리사, 셰프"
+  },
+  "ex": [
+   "The chef cooked a special meal for the guests.",
+   "요리사가 손님들을 위해 특별한 음식을 만들었다."
+  ]
+ },
+ {
+  "no": 9,
+  "en": "awesome",
+  "ko": "엄청난, 굉장한",
+  "pos": "a. 엄청난, 굉장한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "very great or very good",
+     "매우 크거나 매우 좋은"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "엄청난, 굉장한"
+  },
+  "ex": [
+   "The view from the mountain was awesome.",
+   "산에서 본 경치는 굉장했다."
+  ]
+ },
+ {
+  "no": 10,
+  "en": "songwriter",
+  "ko": "작곡가, 작사가",
+  "pos": "n. 작곡가, 작사가",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who writes words or music for songs",
+     "노래의 가사나 음악을 쓰는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "작곡가, 작사가"
+  },
+  "ex": [
+   "The songwriter wrote many hit songs.",
+   "그 작곡가는 많은 히트곡을 썼다."
+  ]
+ },
+ {
+  "no": 11,
+  "en": "clothes",
+  "ko": "옷, 의복",
+  "pos": "n. 옷, 의복",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "things that people wear on their body",
+     "사람들이 몸에 입는 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "옷, 의복"
+  },
+  "ex": [
+   "I bought new clothes for the party.",
+   "나는 파티를 위해 새 옷을 샀다."
+  ]
+ },
+ {
+  "no": 12,
+  "en": "cool",
+  "ko": "멋진",
+  "pos": "a. 멋진",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He looks cool in his new jacket.",
+   "그는 새 재킷을 입으니 멋져 보인다."
+  ]
+ },
+ {
+  "no": 13,
+  "en": "fashion designer",
+  "ko": "패션 디자이너",
+  "pos": "n. 패션 디자이너",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who makes new styles of clothes",
+     "새로운 옷의 스타일을 만드는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "패션 디자이너"
+  },
+  "ex": [
+   "The fashion designer showed her work at the show.",
+   "패션 디자이너가 패션쇼에서 자신의 작품을 선보였다."
+  ]
+ },
+ {
+  "no": 14,
+  "en": "someday",
+  "ko": "언젠가",
+  "pos": "adv. 언젠가",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Someday I want to travel around the world.",
+   "언젠가 나는 세계를 여행하고 싶다."
+  ]
+ },
+ {
+  "no": 15,
+  "en": "try",
+  "ko": "해보다, 시도해보다",
+  "pos": "v. 해보다, 시도해보다",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I will try the same problem again.",
+   "나는 같은 문제를 다시 시도해 볼 것이다."
+  ]
+ },
+ {
+  "no": 16,
+  "en": "fly",
+  "ko": "조종하다",
+  "pos": "v. 조종하다",
+  "extra": "(fly – flew – flown)",
+  "ee": {
+   "defs": [
+    [
+     "to control an airplane in the air",
+     "비행기를 하늘에서 다루다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "조종하다"
+  },
+  "ex": [
+   "He can fly an airplane with great skill.",
+   "그는 뛰어난 기술로 비행기를 조종할 수 있다."
+  ]
+ },
+ {
+  "no": 17,
+  "en": "airplane",
+  "ko": "비행기",
+  "pos": "n. 비행기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a machine that people use to travel in the sky",
+     "사람들이 하늘을 여행하기 위해 사용하는 기계"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "비행기"
+  },
+  "ex": [
+   "The airplane landed safely at the airport.",
+   "비행기가 공항에 안전하게 착륙했다."
+  ]
+ },
+ {
+  "no": 18,
+  "en": "pilot",
+  "ko": "조종사, 파일럿",
+  "pos": "n. 조종사, 파일럿",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who flies an airplane",
+     "비행기를 조종하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "조종사, 파일럿"
+  },
+  "ex": [
+   "The pilot is inside the airplane and checks the windows.",
+   "조종사는 비행기 에서 창문을 살펴본다."
+  ]
+ },
+ {
+  "no": 19,
+  "en": "engineer",
+  "ko": "기술자, 엔지니어",
+  "pos": "n. 기술자, 엔지니어",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who designs or builds machines",
+     "기계를 설계하거나 만드는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "기술자, 엔지니어"
+  },
+  "ex": [
+   "The engineer fixed the broken machine.",
+   "엔지니어가 고장 난 기계를 고쳤다."
+  ]
+ },
+ {
+  "no": 20,
+  "en": "sound",
+  "ko": "~처럼[~하게] 들리다, 소리",
+  "pos": "v. ~처럼[~하게] 들리다 n. 소리",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "That idea sounds interesting to me.",
+   "그 생각은 내게 흥미롭게 들린다."
+  ]
+ },
+ {
+  "no": 21,
+  "en": "then",
+  "ko": "그다음에, 그리고",
+  "pos": "adv. 그다음에, 그리고",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 22,
+  "en": "director",
+  "ko": "감독, 책임자",
+  "pos": "n. 감독, 책임자",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who controls a movie or a play",
+     "영화나 연극을 총괄하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "감독, 책임자"
+  },
+  "ex": [
+   "The director worked with the actors on the stage.",
+   "그 감독은 배우들과 무대에서 함께 일했다."
+  ]
+ },
+ {
+  "no": 23,
+  "en": "friendship",
+  "ko": "우정",
+  "pos": "n. 우정",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a feeling between friends that shows trust",
+     "친구들 사이에서 신뢰를 보여 주는 감정"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "우정"
+  },
+  "ex": [
+   "Their friendship started in school and became very strong.",
+   "그들의 우정은 학교에서 시작되어 아주 강해졌다."
+  ]
+ },
+ {
+  "no": 24,
+  "en": "between",
+  "ko": "사이에",
+  "pos": "prep. 사이에",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The small shop is between the bakery and the bank.",
+   "그 작은 가게는 빵집과 은행 사이에 있다."
+  ]
+ },
+ {
+  "no": 25,
+  "en": "hard",
+  "ko": "열심히",
+  "pos": "adv. 열심히",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "with a lot of effort",
+     "많은 노력을 기울여"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "열심히"
+  },
+  "ex": [
+   "She worked hard in class and got better.",
+   "그녀는 수업에서 열심히 공부하여 실력이 나아졌다."
+  ]
+ },
+ {
+  "no": 26,
+  "en": "create",
+  "ko": "만들다, 창조하다",
+  "pos": "v. 만들다, 창조하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to make something new",
+     "새로운 것을 만들다"
+    ]
+   ],
+   "syn": "make",
+   "opp": "",
+   "ko_head": "만들다, 창조하다"
+  },
+  "ex": [
+   "They create new songs for the school festival.",
+   "그들은 학교 축제를 위해 새로운 노래들을 만든다."
+  ]
+ },
+ {
+  "no": 27,
+  "en": "meet",
+  "ko": "만나다",
+  "pos": "v. 만나다",
+  "extra": "(meet – met – met)",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 28,
+  "en": "some",
+  "ko": "일부, 몇몇",
+  "pos": "pron. 일부, 몇몇",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 29,
+  "en": "find",
+  "ko": "찾다, 발견하다",
+  "pos": "v. 찾다, 발견하다",
+  "extra": "(find – found – found)",
+  "ee": {
+   "defs": [
+    [
+     "to discover or get something that was lost or hidden",
+     "잃어버리거나 숨겨진 것을 발견하거나 얻다"
+    ]
+   ],
+   "syn": "discover",
+   "opp": "",
+   "ko_head": "찾다, 발견하다"
+  },
+  "ex": [
+   "He found a lost dog in front of the supermarket.",
+   "그는 슈퍼마켓 앞에서 길 잃은 개를 발견했다."
+  ]
+ },
+ {
+  "no": 30,
+  "en": "beautiful",
+  "ko": "아름다운, 멋진",
+  "pos": "a. 아름다운, 멋진",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The garden looks beautiful with many colorful flowers.",
+   "그 정원은 많은 색색의 꽃들로 아름답게 보인다."
+  ]
+ },
+ {
+  "no": 31,
+  "en": "beach",
+  "ko": "해변, 바닷가",
+  "pos": "n. 해변, 바닷가",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the land near the sea covered with sand or stones",
+     "바닷가 근처 모래나 돌로 덮인 땅"
+    ]
+   ],
+   "syn": "seaside, seashore",
+   "opp": "",
+   "ko_head": "해변, 바닷가"
+  },
+  "ex": [
+   "Many children played on the beach in the hot summer afternoon.",
+   "많은 아이들이 더운 여름 오후에 해변에서 놀았다."
+  ]
+ },
+ {
+  "no": 32,
+  "en": "location",
+  "ko": "야외 촬영지",
+  "pos": "n. 야외 촬영지",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a place where a movie is filmed",
+     "영화가 촬영되는 장소"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "야외 촬영지"
+  },
+  "ex": [
+   "The movie team visited the location early in the morning.",
+   "영화 팀은 아침 일찍 야외 촬영지를 방문했다."
+  ]
+ },
+ {
+  "no": 33,
+  "en": "manager",
+  "ko": "관리자",
+  "pos": "n. 관리자",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who controls the work of other people",
+     "다른 사람들의 일을 관리하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "관리자"
+  },
+  "ex": [
+   "The manager checked the staff’s work every day.",
+   "관리자는 매일 직원들의 일을 점검했다."
+  ]
+ },
+ {
+  "no": 34,
+  "en": "job",
+  "ko": "일, 직업",
+  "pos": "n. 일, 직업",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 35,
+  "en": "perfect",
+  "ko": "완벽한",
+  "pos": "a. 완벽한",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She made a perfect drawing for the art contest.",
+   "그녀는 미술 대회를 위해 완벽한 그림을 그렸다."
+  ]
+ },
+ {
+  "no": 36,
+  "en": "place",
+  "ko": "장소",
+  "pos": "n. 장소",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 37,
+  "en": "shoot",
+  "ko": "촬영하다, 찍다",
+  "pos": "v. 촬영하다, 찍다",
+  "extra": "(shoot – shot – shot)",
+  "ee": {
+   "defs": [
+    [
+     "to take a picture or a video with a camera",
+     "카메라로 사진이나 영상을 찍다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "촬영하다, 찍다"
+  },
+  "ex": [
+   "The students used a camera to shoot a short video.",
+   "학생들은 짧은 영상을 찍기 위해 카메라를 사용했다."
+  ]
+ },
+ {
+  "no": 38,
+  "en": "easy",
+  "ko": "쉬운, 수월한",
+  "pos": "a. 쉬운, 수월한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not hard to do",
+     "하기에 어렵지 않은"
+    ]
+   ],
+   "syn": "",
+   "opp": "difficult",
+   "ko_head": "쉬운, 수월한"
+  },
+  "ex": [
+   "The question was easy for the young students.",
+   "그 문제는 그 어린 학생들에게 쉬웠다."
+  ]
+ },
+ {
+  "no": 39,
+  "en": "travel",
+  "ko": "여행하다",
+  "pos": "v. 여행하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to go from one place to another, often far",
+     "한 장소에서 다른 장소, 떨어진 곳으로 가다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "여행하다"
+  },
+  "ex": [
+   "Our family will travel to another city during vacation.",
+   "우리 가족은 방학 동안 다른 도시로 여행할 것이다."
+  ]
+ },
+ {
+  "no": 40,
+  "en": "enjoy",
+  "ko": "즐기다",
+  "pos": "v. 즐기다",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 41,
+  "en": "challenge",
+  "ko": "도전",
+  "pos": "n. 도전",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "something that is hard to do and needs effort",
+     "하기 어렵고 노력이 필요한 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "도전"
+  },
+  "ex": [
+   "He took on a big challenge during the game.",
+   "그는 경기 도중 큰 도전에 나섰다."
+  ]
+ },
+ {
+  "no": 42,
+  "en": "photography",
+  "ko": "사진술, 촬영술",
+  "pos": "n. 사진술, 촬영술",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the skill of taking pictures with a camera",
+     "카메라로 사진을 찍는 기술"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "사진술, 촬영술"
+  },
+  "ex": [
+   "She studied photography at school to learn about cameras.",
+   "그녀는 카메라를 배우기 위해 학교에서 사진술을 공부했다."
+  ]
+ },
+ {
+  "no": 43,
+  "en": "be in charge of",
+  "ko": "~을 담당하다",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to be responsible for something",
+     "무언가를 책임지다"
+    ]
+   ],
+   "syn": "be responsible for",
+   "opp": "",
+   "ko_head": "~을 담당하다"
+  },
+  "ex": [
+   "He is in charge of the lights on the stage.",
+   "그는 무대 조명을 담당한다."
+  ]
+ },
+ {
+  "no": 44,
+  "en": "together",
+  "ko": "함께, 같이",
+  "pos": "adv. 함께, 같이",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 45,
+  "en": "capture",
+  "ko": "포착하다, 담아내다",
+  "pos": "v. 포착하다, 담아내다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to catch or record something with a camera",
+     "카메라로 무언가를 포착하거나 기록하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "포착하다, 담아내다"
+  },
+  "ex": [
+   "The camera can capture a clear picture of the stars.",
+   "그 카메라는 별들의 선명한 모습을 담아낼 수 있다."
+  ]
+ },
+ {
+  "no": 46,
+  "en": "moment",
+  "ko": "순간",
+  "pos": "n. 순간",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a very short time",
+     "아주 짧은 시간"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "순간"
+  },
+  "ex": [
+   "It was a happy moment for the family at dinner.",
+   "그것은 가족의 저녁 식사에서 행복한 순간이었다."
+  ]
+ },
+ {
+  "no": 47,
+  "en": "drone",
+  "ko": "드론, 무인 항공기",
+  "pos": "n. 드론, 무인 항공기",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 48,
+  "en": "train",
+  "ko": "훈련하다, 교육하다",
+  "pos": "v. 훈련하다, 교육하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to teach a person or an animal skills",
+     "사람이나 동물에게 기술을 가르치다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "훈련하다, 교육하다"
+  },
+  "ex": [
+   "The coach will train the players after school.",
+   "그 코치는 방과 후에 선수들을 훈련시킬 것이다."
+  ]
+ },
+ {
+  "no": 49,
+  "en": "take care of",
+  "ko": "~을 돌보다",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to look after someone or something",
+     "누군가 또는 무언가를 돌보다"
+    ]
+   ],
+   "syn": "look after",
+   "opp": "",
+   "ko_head": "~을 돌보다"
+  },
+  "ex": [
+   "She will take care of her little brother tonight.",
+   "그녀는 오늘 밤 남동생을 돌볼 것이다."
+  ]
+ },
+ {
+  "no": 50,
+  "en": "for a long time",
+  "ko": "오랫동안",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "through a long period of time",
+     "긴 시간 동안에"
+    ]
+   ],
+   "syn": "",
+   "opp": "for a moment",
+   "ko_head": "오랫동안"
+  },
+  "ex": [
+   "They talked in the park for a long time.",
+   "그들은 공원에서 오랫동안 이야기를 나누었다."
+  ]
+ },
+ {
+  "no": 51,
+  "en": "great",
+  "ko": "훌륭한",
+  "pos": "a. 훌륭한",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 52,
+  "en": "actor",
+  "ko": "배우",
+  "pos": "n. 배우",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who plays a role in a movie or play",
+     "영화나 연극에서 역할을 연기하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "배우"
+  },
+  "ex": [
+   "The actor spoke to the fans after the show.",
+   "그 배우는 공연이 끝난 뒤 팬들에게 말했다."
+  ]
+ },
+ {
+  "no": 53,
+  "en": "sometimes",
+  "ko": "때때로, 가끔",
+  "pos": "adv. 때때로, 가끔",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He sometimes reads a book in the library.",
+   "그는 때때로 도서관에서 책을 읽는다."
+  ]
+ },
+ {
+  "no": 54,
+  "en": "too",
+  "ko": "너무",
+  "pos": "adv. 너무",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 55,
+  "en": "excited",
+  "ko": "흥분한, 신난",
+  "pos": "a. 흥분한, 신난",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The children were excited before the trip.",
+   "아이들은 여행을 앞두고 신이 났다."
+  ]
+ },
+ {
+  "no": 56,
+  "en": "around",
+  "ko": "주변에",
+  "pos": "adv. 주변에",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 57,
+  "en": "signal",
+  "ko": "신호",
+  "pos": "n. 신호",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a sound, light, or action that gives a message",
+     "메시지를 전달하는 소리, 빛 또는 행동"
+    ]
+   ],
+   "syn": "sign",
+   "opp": "",
+   "ko_head": "신호"
+  },
+  "ex": [
+   "The red light is a signal to stop.",
+   "빨간 불은 멈추라는 신호이다."
+  ]
+ },
+ {
+  "no": 58,
+  "en": "calm",
+  "ko": "진정시키다",
+  "pos": "v. 진정시키다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to make someone quiet and relaxed",
+     "누군가를 조용하게 하고 편안하게 만들다"
+    ]
+   ],
+   "syn": "",
+   "opp": "excite",
+   "ko_head": "진정시키다"
+  },
+  "ex": [
+   "The teacher tried to calm the noisy class.",
+   "선생님은 시끄러운 학급을 진정시키려 했다."
+  ]
+ },
+ {
+  "no": 59,
+  "en": "wrangler",
+  "ko": "조련사, 랭글러",
+  "pos": "n. 조련사, 랭글러",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who takes care of animals",
+     "동물을 돌보는 사람"
+    ]
+   ],
+   "syn": "trainer",
+   "opp": "",
+   "ko_head": "조련사, 랭글러"
+  },
+  "ex": [
+   "The wrangler took care of the horses on the farm.",
+   "조련사는 농장에서 말을 돌보았다."
+  ]
+ },
+ {
+  "no": 60,
+  "en": "film",
+  "ko": "영화",
+  "pos": "n. 영화",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a story shown in a movie theater",
+     "영화관에서 상영되는 이야기"
+    ]
+   ],
+   "syn": "movie",
+   "opp": "",
+   "ko_head": "영화"
+  },
+  "ex": [
+   "We watched a film together at the theater.",
+   "우리는 극장에서 함께 영화를 보았다."
+  ]
+ },
+ {
+  "no": 61,
+  "en": "editor",
+  "ko": "편집자",
+  "pos": "n. 편집자",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who prepares text or video for publishing",
+     "글이나 영상을 출판할 수 있게 준비하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "편집자"
+  },
+  "ex": [
+   "The editor worked on the magazine every week.",
+   "그 편집자는 매주 잡지를 편집했다."
+  ]
+ },
+ {
+  "no": 62,
+  "en": "begin",
+  "ko": "시작하다",
+  "pos": "v. 시작하다",
+  "extra": "(begin – began – begun)",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 63,
+  "en": "shooting",
+  "ko": "촬영",
+  "pos": "n. 촬영",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the act of recording a movie or picture",
+     "영화나 사진을 찍는 행위"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "촬영"
+  },
+  "ex": [
+   "The shooting took place in a small village.",
+   "촬영은 한 작은 마을에서 이루어졌다."
+  ]
+ },
+ {
+  "no": 64,
+  "en": "be over",
+  "ko": "끝나다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The game will be over in ten minutes.",
+   "경기는 십 분 안에 끝날 것이다."
+  ]
+ },
+ {
+  "no": 65,
+  "en": "change",
+  "ko": "바꾸다, 변화시키다",
+  "pos": "v. 바꾸다, 변화시키다",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 66,
+  "en": "order",
+  "ko": "순서",
+  "pos": "n. 순서",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the way things are arranged or happen",
+     "일이 배열되거나 발생하는 방식"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "순서"
+  },
+  "ex": [
+   "The teacher wrote the order of the names on the board.",
+   "선생님은 칠판에 이름들의 순서를 적었다."
+  ]
+ },
+ {
+  "no": 67,
+  "en": "scene",
+  "ko": "장면",
+  "pos": "n. 장면",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a part of a movie or play",
+     "영화나 연극의 한 부분"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "장면"
+  },
+  "ex": [
+   "The last scene of the movie was very moving.",
+   "영화의 마지막 장면은 매우 감동적이었다."
+  ]
+ },
+ {
+  "no": 68,
+  "en": "delete",
+  "ko": "삭제하다, 지우다",
+  "pos": "v. 삭제하다, 지우다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to remove writing, pictures, or data",
+     "글, 사진 또는 데이터를 지우다"
+    ]
+   ],
+   "syn": "erase",
+   "opp": "",
+   "ko_head": "삭제하다, 지우다"
+  },
+  "ex": [
+   "He deleted the old file from the computer.",
+   "그는 오래된 파일을 컴퓨터에서 삭제했다."
+  ]
+ },
+ {
+  "no": 69,
+  "en": "storytelling",
+  "ko": "이야기하기",
+  "pos": "n. 이야기하기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the act of telling a story",
+     "이야기를 하는 행위"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "이야기하기"
+  },
+  "ex": [
+   "Storytelling is important in books for children.",
+   "이야기하기는 아이들을 위한 책에서 중요하다."
+  ]
+ },
+ {
+  "no": 70,
+  "en": "skill",
+  "ko": "기술, 기량",
+  "pos": "n. 기술, 기량",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the ability to do something well",
+     "무언가를 잘하는 능력"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "기술, 기량"
+  },
+  "ex": [
+   "She showed her skill in drawing animals.",
+   "그녀는 동물을 그리는 기술을 보여주었다."
+  ]
+ },
+ {
+  "no": 71,
+  "en": "important",
+  "ko": "중요한",
+  "pos": "a. 중요한",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Water is important for all living things.",
+   "물은 모든 생명체들에게 중요하다."
+  ]
+ },
+ {
+  "no": 72,
+  "en": "a lot",
+  "ko": "많이",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 73,
+  "en": "Foley artist",
+  "ko": "폴리 아티스트",
+  "pos": "n. 폴리 아티스트",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 74,
+  "en": "effect",
+  "ko": "효과",
+  "pos": "n. 효과",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a special change in sound or picture made for movies or plays",
+     "영화나 연극을 위해 소리나 영상에 만든 특별한 변화"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "효과"
+  },
+  "ex": [
+   "The music had a strong effect on the students.",
+   "음악은 학생들에게 강한 효과를 주었다."
+  ]
+ },
+ {
+  "no": 75,
+  "en": "studio",
+  "ko": "작업실, 스튜디오",
+  "pos": "n. 작업실, 스튜디오",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 76,
+  "en": "record",
+  "ko": "녹음하다, 녹화하다",
+  "pos": "v. 녹음하다, 녹화하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to keep sounds or pictures by using a machine",
+     "기계로 소리나 영상을 기록하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "녹음하다, 녹화하다"
+  },
+  "ex": [
+   "He will record his voice with the microphone.",
+   "그는 마이크로 자신의 목소리를 녹음할 것이다."
+  ]
+ },
+ {
+  "no": 77,
+  "en": "carefully",
+  "ko": "주의 깊게, 신중하게",
+  "pos": "adv. 주의 깊게, 신중하게",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She carefully opened the box in her room.",
+   "그녀는 방에서 상자를 조심스럽게 열었다."
+  ]
+ },
+ {
+  "no": 78,
+  "en": "wave",
+  "ko": "파도",
+  "pos": "n. 파도",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a moving line of water on the surface of the sea",
+     "바다 표면 위에서 움직이는 물결"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "파도"
+  },
+  "ex": [
+   "A big wave came to the shore in the evening.",
+   "큰 파도가 저녁에 해변으로 밀려왔다."
+  ]
+ },
+ {
+  "no": 79,
+  "en": "rice",
+  "ko": "쌀",
+  "pos": "n. 쌀",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the small white seeds that people eat as food",
+     "사람들이 음식으로 먹는 작은 흰 낟알"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "쌀"
+  },
+  "ex": [
+   "She bought rice at the market for dinner.",
+   "그녀는 저녁을 위해 시장에서 쌀을 샀다."
+  ]
+ },
+ {
+  "no": 80,
+  "en": "plastic",
+  "ko": "플라스틱으로 된",
+  "pos": "a. 플라스틱으로 된",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 81,
+  "en": "container",
+  "ko": "그릇, 용기",
+  "pos": "n. 그릇, 용기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "an object that can hold things inside",
+     "안에 물건을 담을 수 있는 물체"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "그릇, 용기"
+  },
+  "ex": [
+   "The container was full of water after the rain.",
+   "비가 내린 뒤 그 용기는 물로 가득 차 있었다."
+  ]
+ },
+ {
+  "no": 82,
+  "en": "real",
+  "ko": "진짜의",
+  "pos": "a. 진짜의",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ }
+]

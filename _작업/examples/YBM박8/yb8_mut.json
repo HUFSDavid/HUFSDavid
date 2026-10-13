@@ -1,0 +1,343 @@
+{
+ "O": "cone",
+ "musician": [
+  "instrument",
+  "instruments",
+  "문법"
+ ],
+ "pop": [
+  "modern",
+  "ancient",
+  "핵심반대"
+ ],
+ "fascinated": [
+  "interested",
+  "uninterested",
+  "핵심반대"
+ ],
+ "rhythm": [
+  "regular",
+  "irregular",
+  "핵심반대"
+ ],
+ "art": [
+  "subjects",
+  "subject",
+  "문법"
+ ],
+ "draw": [
+  "lines",
+  "lions",
+  "유사철자"
+ ],
+ "role model": [
+  "admire",
+  "despise",
+  "핵심반대"
+ ],
+ "advice": [
+  "opinion",
+  "opinions",
+  "문법"
+ ],
+ "surf": [
+  "waves",
+  "caves",
+  "유사철자"
+ ],
+ "drawing": [
+  "drawn",
+  "drew",
+  "문법"
+ ],
+ "play": [
+  "performed",
+  "performing",
+  "문법"
+ ],
+ "performance": [
+  "act",
+  "art",
+  "유사철자"
+ ],
+ "fantastic": [
+  "extremely",
+  "extreme",
+  "문법"
+ ],
+ "painting": [
+  "paint",
+  "pain",
+  "유사철자"
+ ],
+ "skill": [
+  "learned",
+  "forgotten",
+  "핵심반대"
+ ],
+ "work": [
+  "produced",
+  "product",
+  "문법"
+ ],
+ "creative": [
+  "new",
+  "old",
+  "핵심반대"
+ ],
+ "exhibition": [
+  "see",
+  "sea",
+  "유사철자"
+ ],
+ "creativity": [
+  "ability",
+  "inability",
+  "핵심반대"
+ ],
+ "work of art[art work]": [
+  "high",
+  "low",
+  "핵심반대"
+ ],
+ "print": [
+  "machine",
+  "machines",
+  "문법"
+ ],
+ "probably": [
+  "almost",
+  "most",
+  "유사철자"
+ ],
+ "famous": [
+  "many",
+  "few",
+  "핵심반대"
+ ],
+ "popular": [
+  "ordinary",
+  "extraordinary",
+  "핵심반대"
+ ],
+ "mean": [
+  "meaning",
+  "meant",
+  "문법"
+ ],
+ "create": [
+  "talents",
+  "tablets",
+  "유사철자"
+ ],
+ "traditional": [
+  "changed",
+  "change",
+  "문법"
+ ],
+ "popular[pop] culture": [
+  "general",
+  "generous",
+  "유사철자"
+ ],
+ "image": [
+  "copy",
+  "cope",
+  "유사철자"
+ ],
+ "advertising": [
+  "buy",
+  "sell",
+  "핵심반대"
+ ],
+ "familiar": [
+  "easy",
+  "difficult",
+  "핵심반대"
+ ],
+ "find": [
+  "discover",
+  "discovering",
+  "문법"
+ ],
+ "refreshing": [
+  "pleasantly",
+  "unpleasantly",
+  "핵심반대"
+ ],
+ "daily": [
+  "every",
+  "very",
+  "유사철자"
+ ],
+ "bright": [
+  "strong",
+  "weak",
+  "핵심반대"
+ ],
+ "common": [
+  "often",
+  "rarely",
+  "핵심반대"
+ ],
+ "plain": [
+  "special",
+  "spacial",
+  "유사철자"
+ ],
+ "artistic": [
+  "natural",
+  "neutral",
+  "유사철자"
+ ],
+ "worth": [
+  "doing",
+  "do",
+  "문법"
+ ],
+ "attention": [
+  "carefully",
+  "careful",
+  "문법"
+ ],
+ "meaning": [
+  "express",
+  "expressed",
+  "문법"
+ ],
+ "ability": [
+  "power",
+  "tower",
+  "유사철자"
+ ],
+ "object": [
+  "touch",
+  "teach",
+  "유사철자"
+ ],
+ "subject": [
+  "shown",
+  "show",
+  "문법"
+ ],
+ "copy": [
+  "same",
+  "different",
+  "핵심반대"
+ ],
+ "sculpture": [
+  "carving",
+  "craving",
+  "유사철자"
+ ],
+ "soft": [
+  "easily",
+  "hardly",
+  "핵심반대"
+ ],
+ "material": [
+  "made",
+  "make",
+  "문법"
+ ],
+ "cloth": [
+  "used",
+  "using",
+  "문법"
+ ],
+ "toilet": [
+  "attached",
+  "attacked",
+  "유사철자"
+ ],
+ "huge": [
+  "large",
+  "small",
+  "핵심반대"
+ ],
+ "run": [
+  "charge",
+  "change",
+  "유사철자"
+ ],
+ "studio": [
+  "works",
+  "walks",
+  "유사철자"
+ ],
+ "goods": [
+  "sold",
+  "bought",
+  "핵심반대"
+ ],
+ "lively": [
+  "bright",
+  "dull",
+  "핵심반대"
+ ],
+ "include": [
+  "part",
+  "whole",
+  "핵심반대"
+ ],
+ "speech balloon": [
+  "words",
+  "worlds",
+  "유사철자"
+ ],
+ "regard": [
+  "particular",
+  "general",
+  "핵심반대"
+ ],
+ "form": [
+  "type",
+  "types",
+  "문법"
+ ],
+ "differently": [
+  "different",
+  "similar",
+  "핵심반대"
+ ],
+ "add": [
+  "put",
+  "putting",
+  "문법"
+ ],
+ "lesson": [
+  "experience",
+  "experiment",
+  "유사철자"
+ ],
+ "instead of": [
+  "place",
+  "palace",
+  "유사철자"
+ ],
+ "turn one’s eyes to": [
+  "give",
+  "giving",
+  "문법"
+ ],
+ "pay attention to": [
+  "carefully",
+  "carelessly",
+  "핵심반대"
+ ],
+ "be filled with": [
+  "full",
+  "empty",
+  "핵심반대"
+ ],
+ "set up": [
+  "build",
+  "built",
+  "문법"
+ ],
+ "break down": [
+  "fall",
+  "fail",
+  "유사철자"
+ ]
+}

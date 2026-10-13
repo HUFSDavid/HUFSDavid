@@ -1,0 +1,217 @@
+import json, os
+HERE = os.path.dirname(os.path.abspath(__file__))
+A = "’"
+def q(s): return s.replace("'", A)
+
+# 중1 동아(윤정미) 8과 Be Smart Online — COMMUNICATION: A. Watch and Check 1~4 + C. Watch, Answer, and Talk (교과서 대화 전부)
+# 제외: 의사소통 기능 e.g.(A: I think math is difficult ~ 두 줄 예시), [Talk] 예시 답안(대화 아님)
+# 해석·구문 해설 번호는 [01]내용정리 플러스 기준 (C는 Expressions 1~7 그대로), 해설 문장은 새로 씀
+dialogues = [
+ {"id": "D1", "label": "Communication · A. Watch and Check 1", "lines": [
+  ["G", "This movie {looks} really {fun}. {What do you think}?", "이 영화 정말 재미있어 보여. 너는 어떻게 생각해?"],
+  ["B", "{I don't agree}. I think it looks {a little boring}.", "나는 동의하지 않아. 내 생각에는 조금 지루해 보여."],
+  ["G", "But {look at} these {actors}. They are all {famous}.", "하지만 이 배우들을 봐. 그들은 다 유명하잖아."],
+  ["B", "All right. {Let's watch} it.", "알겠어. 그것을 보자."]],
+  "notes": [
+  "look + 형용사 : ‘~하게 보이다’ — looks really {fun} (looks like fun ✗ · 부사 ✗)",
+  "What do you think? : 상대방의 {의견}을 묻는 표현 (= What’s your opinion?)",
+  "I don't agree. : ‘나는 {동의하지 않아}.’ — 비동의하기 (= I don’t think so. / I disagree.)",
+  "a little boring : a little = ‘{조금, 약간}’ — 영화가 지루하게 만드는 것이므로 {boring}(bored ✗)",
+  "look at ~ : ‘~을 봐’(명령문) — They = {these actors}",
+  "Let's + 동사원형 : ‘~하자’ — it = {this movie} (Let’s watching ✗)"]},
+ {"id": "D2", "label": "Communication · A. Watch and Check 2", "lines": [
+  ["B", "{What do you think about} this pasta?", "너는 이 파스타에 대해 어떻게 생각하니?"],
+  ["G", "{I think} it's {pretty} good.", "나는 꽤 맛있다고 생각해."],
+  ["B", "{I don't think so}. I think it's too {salty}.", "나는 그렇게 생각하지 않아. 너무 짜다고 생각해."],
+  ["G", "Really? It's {OK for me}.", "정말? 나는 괜찮은데."]],
+  "notes": [
+  "What do you think about ~? : ‘~에 대해 어떻게 생각하니?’ — about은 전치사 → 뒤에 {명사(구)}·동명사",
+  "I think (that) ~ : 의견 말하기 — that은 {생략} 가능 / pretty = ‘{꽤}’(부사 · ‘예쁜’ ✗)",
+  "I don't think so. : ‘나는 그렇게 생각하지 않아.’ — 비동의 (= I {disagree}.) / too salty = 너무 짠",
+  "It's OK for me. : ‘나는 {괜찮아}.’ — 소녀는 생각을 바꾸지 않음"]},
+ {"id": "D3", "label": "Communication · A. Watch and Check 3", "lines": [
+  ["G", "My phone is not {working}. I {need to get} a new one.", "내 휴대폰이 작동하지 않아. 나는 새것을 사야 해."],
+  ["B", "Look! {Here are} the new {models}. {What do you think about} this one?", "봐! 여기 새로운 모델들이 있어. 이 모델에 대해 어떻게 생각하니?"],
+  ["G", "Wow, I like it. It's very {light}.", "와, 마음에 들어. 아주 가벼워."],
+  ["B", "{I agree}. It's {lighter than} mine.", "동의해. 이것은 내 것보다 더 가벼워."]],
+  "notes": [
+  "is not working : work = ‘{작동하다}’(현재진행) / a new one = a new {phone}",
+  "need + {to부정사} : ‘~할 필요가 있다, ~해야 한다’ (need getting ✗)",
+  "Here are + {복수명사} : ‘여기 ~들이 있다’ / this one = this {model}",
+  "I agree. : 동의하기 (= I think so, {too}. / You’re right.)",
+  "lighter than : 비교급 + than = ‘~보다 더 {가벼운}’ — mine = {my phone}"]},
+ {"id": "D4", "label": "Communication · A. Watch and Check 4", "lines": [
+  ["G", "{What do you think about} cleaning robots? {There's} one {over there}.", "너는 청소 로봇에 대해 어떻게 생각하니? 저쪽에 하나 있어."],
+  ["B", "I think they are very {helpful}. I really {need} one at home.", "도움이 많이 된다고 생각해. 집에 정말 하나 필요해."],
+  ["G", "{Me, too}. I don't {like to clean} my room.", "나도. 나는 방 청소하는 것을 좋아하지 않아."],
+  ["B", "{Who does}? Cleaning robots are {perfect for} people {like} us.", "누가 좋아하겠어? 청소 로봇은 우리 같은 사람들에게 딱이야."]],
+  "notes": [
+  "There's + 단수명사 : There is ~ = ‘~이 있다’ — one = {a cleaning robot} / over there = {저쪽에}",
+  "they = {cleaning robots} / need one : one = a cleaning robot (같은 종류의 하나 · it ✗)",
+  "Me, too. : ‘{나도 그래}.’ — 상대의 말에 동의 (= I think so, too.)",
+  "like + to부정사[동명사] : ‘~하는 것을 좋아하다’ = don’t like {cleaning} my room",
+  "Who does? : ‘누가 그렇겠어?’ = {아무도} 방 청소를 좋아하지 않는다 / like us = 우리 {같은}(전치사)"]},
+ {"id": "D5", "label": "Communication · C. Watch, Answer, and Talk", "lines": [
+  ["B", "{What do you think about} this book, Yuna?", "이 책에 대해 어떻게 생각하니, 유나야?"],
+  ["G", "A History of Black Holes? {I think} it'll be {difficult}.", "‘블랙홀의 역사’? 어려울 것 같아."],
+  ["B", "{I don't agree}. I think it'll be very {interesting}.", "나는 동의하지 않아. 매우 흥미로울 거 같아."],
+  ["G", "Hmm ... I didn't know you {were interested in} black holes. So, {are you going to} buy the book, Alex?", "음… 네가 블랙홀에 관심이 있는지 몰랐어. 그래서, 그 책을 살 거니, Alex?"],
+  ["B", "{I'd love to}, but it's too {thick} and {heavy}.", "사고 싶지만, 너무 두껍고 무거워."],
+  ["G", "{Why don't you} buy the e-book then? You can read it {on your phone}.", "그러면 전자책을 사는 건 어때? 너는 휴대폰으로 그 책을 읽을 수 있어."],
+  ["B", "That's a {good idea}!", "좋은 생각이야!"],
+  ["G", "And it's also {cheaper than} the paper book.", "그리고 전자책은 종이책보다 더 저렴하기도 해."],
+  ["B", "Really? Then, I'll buy the {e-book}.", "정말? 그러면 나는 전자책을 살 거야."]],
+  "notes": [
+  "What do you think about ~? : 의견 묻기 — about 뒤에 명사(구) this book (= What’s your {opinion} about ~?)",
+  "I think ~ : 의견 말하기 — think 뒤 접속사 {that} 생략 / it’ll = it {will}",
+  "I don't agree. : 비동의하기 — 유나의 ‘어려울 것 같다’에 {동의하지 않음}",
+  "Are you going to + {동사원형} ~? : 계획 묻기 ‘~할 거니?’ / be interested in = ~에 {흥미가 있다}",
+  "I'd love to : I {would} love to — 뒤에 {buy the book} 생략",
+  "Why don't you + 동사원형 ~? : ‘~하는 게 어때?’ (= How about {buying} ~?) / then = ‘그러면’",
+  "cheaper than : 비교급 + than ‘~보다 더 {저렴한}’ — it = {the e-book}"]},
+]
+expressions = [
+ ["의견 묻기", "{What} do you think (about ~)?", "너는 (~에 대해) 어떻게 생각하니?"],
+ ["의견 묻기", "How do you {feel} about ~?", "너는 ~에 대해 어떻게 생각하니[느끼니]?"],
+ ["의견 묻기", "What's your {opinion} about ~?", "~에 대한 너의 의견은 어떠니?"],
+ ["의견 말하기", "I {think} (that) ~.", "나는 ~라고 생각해."],
+ ["의견 말하기", "In my {opinion}, ~.", "내 생각에는, ~."],
+ ["의견 말하기", "It {seems} to me (that) ~.", "내가 보기에는 ~인 것 같아."],
+ ["동의하기", "I {agree} (with you). / Me, too.", "나는 (너에게) 동의해. / 나도 그래."],
+ ["동의하기", "I think so, {too}.", "나도 그렇게 생각해."],
+ ["동의하기", "You're {right}.", "네 말이 맞아."],
+ ["동의하기", "I feel the {same} way.", "나도 그렇게 느껴."],
+ ["동의하기", "I {couldn't} agree more.", "전적으로 동의해."],
+ ["비동의하기", "I {don't agree} (with you).", "나는 (너에게) 동의하지 않아."],
+ ["비동의하기", "I {don't think} so.", "나는 그렇게 생각하지 않아."],
+ ["비동의하기", "I {disagree} (with you).", "나는 (너와) 의견이 달라."],
+]
+stage3 = [
+ ["D1", "This movie looks really fun.", "이 영화 정말 재미있어 보여."],
+ ["D1", "I think it looks a little boring.", "내 생각에는 조금 지루해 보여."],
+ ["D2", "What do you think about this pasta?", "너는 이 파스타에 대해 어떻게 생각하니?"],
+ ["D2", "I think it's too salty.", "너무 짜다고 생각해."],
+ ["D3", "My phone is not working.", "내 휴대폰이 작동하지 않아."],
+ ["D3", "It's lighter than mine.", "이것은 내 것보다 더 가벼워."],
+ ["D4", "I don't like to clean my room.", "나는 방 청소하는 것을 좋아하지 않아."],
+ ["D4", "Cleaning robots are perfect for people like us.", "청소 로봇은 우리 같은 사람들에게 딱이야."],
+ ["D5", "I didn't know you were interested in black holes.", "네가 블랙홀에 관심이 있는지 몰랐어."],
+ ["D5", "So, are you going to buy the book, Alex?", "그래서, 그 책을 살 거니, Alex?"],
+ ["D5", "Why don't you buy the e-book then?", "그러면 전자책을 사는 건 어때?"],
+ ["D5", "And it's also cheaper than the paper book.", "그리고 전자책은 종이책보다 더 저렴하기도 해."],
+]
+stage4 = ["D5", "D3", "D1", "D4", "D2"]
+# [대화, 문장, T/F, 근거, 함정]
+stage5 = [
+ ["D1", "The girl thinks the movie looks fun.", "T", "G 1: This movie looks really fun.", ""],
+ ["D1", "The boy agrees with the girl at first.", "F", "B 1: I don't agree.", "동의 ↔ 비동의"],
+ ["D1", "The boy thinks the movie looks very boring.", "F", "B 1: it looks a little boring", "정도 바꾸기(a little ↔ very)"],
+ ["D1", "All the actors in the movie are famous.", "T", "G 2: They are all famous.", "바꿔 말하기"],
+ ["D1", "The boy says the actors are famous.", "F", "G 2 (배우들이 유명하다고 말한 사람은 소녀)", "인물 바꾸기"],
+ ["D1", "The boy decides not to watch the movie.", "F", "B 2: All right. Let's watch it.", "결정 뒤집기"],
+ ["D1", "After the girl talks about the actors, the boy agrees to watch the movie.", "T", "G 2 → B 2: All right. Let's watch it.", "순서·결과"],
+ ["D2", "The boy asks for the girl's opinion about the pasta.", "T", "B 1: What do you think about this pasta?", "바꿔 말하기"],
+ ["D2", "The girl says the pasta looks pretty.", "F", "G 1: it's pretty good — pretty = 꽤(부사)", "다의어(pretty = 예쁜 ✗)"],
+ ["D2", "The boy and the girl have the same opinion about the pasta.", "F", "B 2: I don't think so.", "동의 ↔ 비동의"],
+ ["D2", "The boy thinks the pasta is too salty.", "T", "B 2: I think it's too salty.", ""],
+ ["D2", "The girl also thinks the pasta is too salty.", "F", "G 2: It's OK for me.", "인물 바꾸기"],
+ ["D2", "The girl doesn't change her mind about the pasta.", "T", "G 2: Really? It's OK for me.", "추론"],
+ ["D3", "The girl's phone is not working now.", "T", "G 1: My phone is not working.", ""],
+ ["D3", "The girl wants to fix her old phone.", "F", "G 1: I need to get a new one.", "의도 바꾸기"],
+ ["D3", "The boy shows the girl some new models.", "T", "B 1: Look! Here are the new models.", "바꿔 말하기"],
+ ["D3", "The girl doesn't like the new model because it is heavy.", "F", "G 2: Wow, I like it. It's very light.", "반대(light ↔ heavy)"],
+ ["D3", "The boy agrees that the new model is light.", "T", "B 2: I agree. It's lighter than mine.", ""],
+ ["D3", "The boy's phone is lighter than the new model.", "F", "B 2: It's lighter than mine. (새 모델이 더 가벼움)", "비교 대상 뒤집기"],
+ ["D4", "The girl asks the boy's opinion about cleaning robots.", "T", "G 1: What do you think about cleaning robots?", ""],
+ ["D4", "There is a cleaning robot near them.", "T", "G 1: There's one over there.", "바꿔 말하기"],
+ ["D4", "The boy thinks cleaning robots are not very useful.", "F", "B 1: I think they are very helpful.", "반대"],
+ ["D4", "The boy already has a cleaning robot at home.", "F", "B 1: I really need one at home. (아직 없음)", "추론 함정"],
+ ["D4", "The girl likes to clean her room.", "F", "G 2: I don't like to clean my room.", "부정 빼기"],
+ ["D4", "Neither the boy nor the girl likes cleaning.", "T", "G 2: I don't like to clean ~ / B 2: Who does?", "표현 해석(Who does? = 아무도 안 좋아함)"],
+ ["D4", "The boy says cleaning robots are perfect only for him.", "F", "B 2: perfect for people like us", "범위 바꾸기(us → only him)"],
+ ["D5", "Yuna thinks A History of Black Holes will be difficult.", "T", "G 1: I think it'll be difficult.", ""],
+ ["D5", "Alex agrees with Yuna's opinion about the book.", "F", "B 2: I don't agree.", "동의 ↔ 비동의"],
+ ["D5", "Yuna already knew that Alex was interested in black holes.", "F", "G 2: I didn't know you were interested in black holes.", "부정 빼기"],
+ ["D5", "Alex doesn't want to buy the book at all.", "F", "B 3: I'd love to, but it's too thick and heavy.", "의도 바꾸기(I'd love to = 사고 싶다)"],
+ ["D5", "Yuna suggests buying the e-book.", "T", "G 3: Why don't you buy the e-book then?", "표현 해석(제안)"],
+ ["D5", "Alex can read the e-book on his phone.", "T", "G 3: You can read it on your phone.", "인칭 바꿔 말하기"],
+ ["D5", "The paper book is cheaper than the e-book.", "F", "G 4: it's also cheaper than the paper book. (전자책이 더 쌈)", "비교 대상 뒤집기"],
+ ["D5", "In the end, Alex decides to buy the paper book.", "F", "B 5: Then, I'll buy the e-book.", "결정 바꾸기"],
+]
+# ★고난도 (대화마다 1개) — kind: true / false / cannot / count
+stage5b = [
+ {"d": "D1", "kind": "cannot", "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.", "opts": [
+  ["What does the girl think about the movie?", True, "G 1: It looks really fun."],
+  ["What is the title of the movie?", False, "영화 제목 언급 없음"],
+  ["How does the boy feel about the movie at first?", True, "B 1: it looks a little boring"],
+  ["What time will they watch the movie?", False, "시간 언급 없음"],
+  ["Are the actors in the movie famous?", True, "G 2: They are all famous."]]},
+ {"d": "D2", "kind": "count", "q": "대화의 내용과 일치하는 것의 개수는?", "opts": [
+  ["The boy wants to know what the girl thinks about the pasta.", True, "B 1"],
+  ["The girl says the pasta is pretty good.", True, "G 1"],
+  ["The boy says, “I think so, too.”", False, "B 2: I don't think so."],
+  ["The girl thinks the pasta is too salty.", False, "too salty는 소년의 의견"],
+  ["The girl says the pasta is OK for her.", True, "G 2"]]},
+ {"d": "D3", "kind": "false", "q": "대화의 내용과 일치하지 않는 것을 모두 고르시오.", "opts": [
+  ["The girl's phone is working well.", False, "G 1: My phone is not working."],
+  ["The boy asks the girl's opinion about a new model.", True, "B 1: What do you think about this one?"],
+  ["The girl likes the new model.", True, "G 2: I like it."],
+  ["The new model is heavier than the boy's phone.", False, "B 2: It's lighter than mine."],
+  ["The boy agrees with the girl.", True, "B 2: I agree."]]},
+ {"d": "D4", "kind": "true", "q": "대화의 내용과 일치하는 것을 모두 고르시오.", "opts": [
+  ["The boy thinks cleaning robots are very helpful.", True, "B 1"],
+  ["The girl enjoys cleaning her room.", False, "G 2: I don't like to clean my room."],
+  ["The boy has a cleaning robot at home.", False, "B 1: I really need one at home."],
+  ["There is a cleaning robot over there.", True, "G 1"],
+  ["The boy thinks cleaning robots are perfect for people like them.", True, "B 2"]]},
+ {"d": "D5", "kind": "cannot", "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.", "opts": [
+  ["How much is the e-book?", False, "가격 언급 없음(종이책보다 싸다는 것만)"],
+  ["What does Alex think about the book?", True, "B 2: it'll be very interesting"],
+  ["Who wrote A History of Black Holes?", False, "저자 언급 없음"],
+  ["Why doesn't Alex want to buy the paper book?", True, "B 3: too thick and heavy"],
+  ["Where can Alex read the e-book?", True, "G 3: on your phone"]]},
+]
+stage6 = [
+ {"d": "D1", "ans": "Where are they going to watch the movie?", "trap": "장소 묻기(범위 넘기기)", "why": "영화를 보기로 한 것만 나오고 어디서 볼지는 언급되지 않음",
+  "ok": [["What does the girl think about the movie?", "It looks really fun.", 1], ["What does the boy think about the movie?", "It looks a little boring.", 2],
+         ["What does the girl say about the actors?", "They are all famous.", 3], ["What will they do?", "They will watch the movie.", 4]]},
+ {"d": "D2", "ans": "Where did the boy buy the pasta?", "trap": "구입 장소 묻기(범위 넘기기)", "why": "파스타를 어디서 샀는지는 언급되지 않음",
+  "ok": [["What are they talking about?", "The pasta.", 1], ["What does the girl think of the pasta?", "It's pretty good.", 2],
+         ["Why doesn't the boy like the pasta?", "Because it's too salty.", 3], ["Is the pasta OK for the girl?", "Yes, it is.", 4]]},
+ {"d": "D3", "ans": "How much is the new model?", "trap": "가격 묻기(숫자 넘기기)", "why": "새 모델의 가격은 언급되지 않음",
+  "ok": [["What's wrong with the girl's phone?", "It's not working.", 1], ["What does the girl need?", "A new phone.", 1],
+         ["What does the girl like about the new model?", "It's very light.", 3], ["Which is heavier, the boy's phone or the new model?", "The boy's phone.", 4]]},
+ {"d": "D4", "ans": "How much does a cleaning robot cost?", "trap": "가격 묻기(숫자 넘기기)", "why": "청소 로봇의 가격은 언급되지 않음",
+  "ok": [["Where is a cleaning robot?", "Over there.", 1], ["What does the boy think of cleaning robots?", "They are very helpful.", 2],
+         ["What doesn't the girl like to do?", "She doesn't like to clean her room.", 3], ["Who are cleaning robots perfect for?", "People like them(the boy and the girl).", 4]]},
+ {"d": "D5", "ans": "When will Alex read the book?", "trap": "시간 묻기(범위 넘기기)", "why": "책을 언제 읽을지는 언급되지 않음",
+  "ok": [["What is the title of the book?", "A History of Black Holes.", 2], ["What does Yuna think about the book?", "It'll be difficult.", 2],
+         ["What is Alex interested in?", "Black holes.", 4], ["Why doesn't Alex want to buy the paper book?", "It's too thick and heavy.", 5]]},
+ {"d": "D5", "ans": "How many pages does the paper book have?", "trap": "숫자 넘기기", "why": "too thick(두껍다)만 나오고 쪽수는 언급되지 않음",
+  "ok": [["What does Yuna suggest?", "Buying the e-book.", 6], ["Where can Alex read the e-book?", "On his phone.", 6],
+         ["Which is cheaper, the e-book or the paper book?", "The e-book.", 8], ["What will Alex buy?", "The e-book.", 9]]},
+ {"d": "D5", "ans": "Who told Alex about the book first?", "trap": "인물 묻기(범위 넘기기)", "why": "누가 그 책을 알려 줬는지는 언급되지 않음",
+  "ok": [["Who does Alex ask about the book?", "Yuna.", 1], ["Does Alex agree with Yuna about the book?", "No, he doesn't.", 3],
+         ["What does Alex think about the book?", "It'll be very interesting.", 3], ["What does Alex think of Yuna's idea?", "It's a good idea.", 7]]},
+]
+
+# 입력 순서 회전(시뮬레이션으로 고름): dialogue.js 5단계 섞기 결과가 TFF·TFF·TFF 같은 반복 패턴이 되지 않도록
+ROT = {"D1": 0, "D2": 5, "D3": 5, "D4": 1, "D5": 7}
+_g = {}
+for x in stage5: _g.setdefault(x[0], []).append(x)
+stage5 = [y for k, v in _g.items() for y in (v[ROT[k] % len(v):] + v[:ROT[k] % len(v)])]
+
+def deepq(v):
+    if isinstance(v, str): return q(v)
+    if isinstance(v, list): return [deepq(x) for x in v]
+    if isinstance(v, dict): return {k: deepq(x) for k, x in v.items()}
+    return v
+# 해설(notes)·해석(ko)은 이미 곡선 따옴표 — 영어 대사·문항만 ' → ’
+for d in dialogues:
+    d["lines"] = [[s, q(e), k] for s, e, k in d["lines"]]
+    d["notes"] = [q(n) for n in d["notes"]]
+out = {"dialogues": dialogues, "expressions": deepq(expressions), "stage3": deepq(stage3), "stage4": stage4,
+       "stage5": deepq(stage5), "stage5b": deepq(stage5b), "stage6": deepq(stage6)}
+json.dump(out, open(os.path.join(HERE, "dy8m1_dlg.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+from collections import Counter
+print("TF per dialogue", Counter(x[0] for x in stage5), "total", len(stage5), "T", sum(x[2] == "T" for x in stage5))

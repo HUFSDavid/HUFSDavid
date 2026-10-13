@@ -1,0 +1,1306 @@
+[
+ {
+  "no": 1,
+  "en": "wear",
+  "ko": "(옷, 신발 등을) 입다, 신다, 쓰다",
+  "pos": "v. (옷, 신발 등을) 입다, 신다, 쓰다",
+  "extra": "(wear – wore – worn)",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 2,
+  "en": "light",
+  "ko": "가벼운",
+  "pos": "a. 가벼운",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 3,
+  "en": "comfortable",
+  "ko": "편안한",
+  "pos": "a. 편안한",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 4,
+  "en": "field trip",
+  "ko": "현장 학습",
+  "pos": "n. 현장 학습",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 5,
+  "en": "warm",
+  "ko": "따뜻한",
+  "pos": "a. 따뜻한",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 6,
+  "en": "heavy",
+  "ko": "무거운",
+  "pos": "a. 무거운",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 7,
+  "en": "touching",
+  "ko": "감동적인",
+  "pos": "a. 감동적인",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 8,
+  "en": "save",
+  "ko": "절약하다, *구하다",
+  "pos": "v. 절약하다, *구하다",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 9,
+  "en": "boring",
+  "ko": "재미없는, 지루한",
+  "pos": "a. 재미없는, 지루한",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 10,
+  "en": "cool",
+  "ko": "*멋진, 굉장한; 시원한",
+  "pos": "a. *멋진, 굉장한; 시원한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "very attractive, fashionable, interesting etc. in a way that people admire",
+     "사람들이 우러러 볼 방식으로 매우 매력적이거나, 유행하거나, 흥미로운 등"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "멋진, 굉장한"
+  },
+  "ex": [
+   "Your brother is so cool.",
+   "너희 형 매우 멋있다."
+  ]
+ },
+ {
+  "no": 11,
+  "en": "funny",
+  "ko": "웃기는, 우스꽝스러운",
+  "pos": "a. 웃기는, 우스꽝스러운",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "causing laughter",
+     "웃음을 유발하는"
+    ]
+   ],
+   "syn": "humorous",
+   "opp": "",
+   "ko_head": "웃기는, 우스꽝스러운"
+  },
+  "ex": [
+   "A funny thing happened at the school this morning.",
+   "오늘 아침에 학교에서 웃기는 일이 일어났다."
+  ]
+ },
+ {
+  "no": 12,
+  "en": "climb",
+  "ko": "오르다, 올라가다",
+  "pos": "v. 오르다, 올라가다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to go up, or to go towards the top of something",
+     "올라가다 또는 어떤 것의 꼭대기를 향해 가다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "오르다, 올라가다"
+  },
+  "ex": [
+   "It took three hours to climb the mountain.",
+   "그 산을 오르는 데 3시간이 걸렸다."
+  ]
+ },
+ {
+  "no": 13,
+  "en": "agree",
+  "ko": "동의하다",
+  "pos": "v. 동의하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to have the same opinion",
+     "의견이 일치하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "disagree",
+   "ko_head": "동의하다"
+  },
+  "ex": [
+   "I agree with you.",
+   "나는 너에게 동의해."
+  ]
+ },
+ {
+  "no": 14,
+  "en": "story",
+  "ko": "이야기, 말",
+  "pos": "n. 이야기, 말",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 15,
+  "en": "scary",
+  "ko": "무서운",
+  "pos": "a. 무서운",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "causing fear",
+     "겁을 주는"
+    ]
+   ],
+   "syn": "fearful, frightening",
+   "opp": "",
+   "ko_head": "무서운"
+  },
+  "ex": [
+   "I hate scary movies.",
+   "난 무서운 영화가 싫다."
+  ]
+ },
+ {
+  "no": 16,
+  "en": "clown",
+  "ko": "광대",
+  "pos": "n. 광대",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "an entertainer who wears funny clothes and a large red nose and does silly things to make people laugh",
+     "사람들을 웃기기 위해 웃긴 옷과 큰 빨간 코를 착용하며 어리석은 짓을 하는 엔터테이너"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "광대"
+  },
+  "ex": [
+   "Those big shoes make you look like a clown!",
+   "그런 큰 신발이 너를 광대처럼 보이게 만들어!"
+  ]
+ },
+ {
+  "no": 17,
+  "en": "shake",
+  "ko": "*충격을 주다; 흔들다",
+  "pos": "v. *충격을 주다; 흔들다",
+  "extra": "(shake – shook – shaken)",
+  "ee": {
+   "defs": [
+    [
+     "to shock or upset somebody very much",
+     "누군가에게 매우 충격을 주거나 속상하게 하다"
+    ]
+   ],
+   "syn": "shock",
+   "opp": "",
+   "ko_head": "충격을 주다"
+  },
+  "ex": [
+   "The whole town was shaken by the news.",
+   "마을 전체가 그 소식에 의해 충격을 받았다."
+  ]
+ },
+ {
+  "no": 18,
+  "en": "across",
+  "ko": "… 전체에 걸쳐, 온 …에",
+  "pos": "prep. … 전체에 걸쳐, 온 …에",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 19,
+  "en": "area",
+  "ko": "지역, 구역",
+  "pos": "n. 지역, 구역",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a part or section within a larger place",
+     "더 넓은 영역 안의 한 부분이나 구획"
+    ]
+   ],
+   "syn": "region",
+   "opp": "",
+   "ko_head": "지역, 구역"
+  },
+  "ex": [
+   "The area is beautiful in the fall.",
+   "그 지역은 가을에 아름답다."
+  ]
+ },
+ {
+  "no": 20,
+  "en": "believe",
+  "ko": "믿다",
+  "pos": "v. 믿다",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 21,
+  "en": "scared",
+  "ko": "무서워하는",
+  "pos": "a. 무서워하는",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "afraid of something",
+     "뭔가를 두려워하는"
+    ]
+   ],
+   "syn": "frightened, afraid, terrified",
+   "opp": "",
+   "ko_head": "무서워하는"
+  },
+  "ex": [
+   "I am really scared about speaking in front of the class.",
+   "나는 반 앞에서 말하는 것을 정말 두려워한다."
+  ]
+ },
+ {
+  "no": 22,
+  "en": "social media",
+  "ko": "소셜 미디어",
+  "pos": "n. 소셜 미디어",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "ways of sharing information, opinions, images, videos etc using the Internet",
+     "인터넷을 사용해서 정보, 의견, 사진, 영상 등을 공유하는 방법"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "소셜 미디어"
+  },
+  "ex": [
+   "Social media are changing the way people communicate.",
+   "소셜 미디어가 사람들이 서로 소통하는 방식을 바꿔놓고 있다."
+  ]
+ },
+ {
+  "no": 23,
+  "en": "actually",
+  "ko": "실제로, 사실은",
+  "pos": "adv. 실제로, 사실은",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 24,
+  "en": "teenager",
+  "ko": "십대",
+  "pos": "n. 십대",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 25,
+  "en": "major",
+  "ko": "중요한, 중대한",
+  "pos": "a. 중요한, 중대한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "very large or important",
+     "매우 크거나 중요한"
+    ]
+   ],
+   "syn": "main",
+   "opp": "minor",
+   "ko_head": "중요한, 중대한"
+  },
+  "ex": [
+   "He's known as one of the major figures in 19th-century U.S. history.",
+   "그는 19세기 미국 역사의 중요한 인물 중 한명으로 알려져 있다."
+  ]
+ },
+ {
+  "no": 26,
+  "en": "newspapers",
+  "ko": "신문, *신문사",
+  "pos": "n. 신문, *신문사",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 27,
+  "en": "station",
+  "ko": "방송국",
+  "pos": "n. 방송국",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a company that makes radio or television broadcasts",
+     "라디오나 텔레비전 방송을 제작하는 회사"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "방송국"
+  },
+  "ex": null
+ },
+ {
+  "no": 28,
+  "en": "offer",
+  "ko": "*내놓다, 제공하다; 제안하다",
+  "pos": "v. *내놓다, 제공하다; 제안하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to provide or supply something",
+     "어떤 것을 마련하다 또는 공급해 주다"
+    ]
+   ],
+   "syn": "provide, present",
+   "opp": "",
+   "ko_head": "내놓다, 제공하다"
+  },
+  "ex": [
+   "They offer a wide range of products at reasonable prices.",
+   "그들은 합리적인 가격에 폭넓은 상품을 제공한다."
+  ]
+ },
+ {
+  "no": 29,
+  "en": "hard",
+  "ko": "*명백한, 엄연한; 어려운; 단단한; 열심히",
+  "pos": "a. *명백한, 엄연한; *어려운; 단단한 adv. 열심히",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not able to be questioned or doubted",
+     "의문을 품거나 의심할 수 없는"
+    ]
+   ],
+   "syn": "obvious, clear",
+   "opp": "",
+   "ko_head": "명백한, 엄연한"
+  },
+  "ex": [
+   "There is no hard evidence that supports the theory.",
+   "그 이론을 뒷받침할 명백한 증거가 없다."
+  ]
+ },
+ {
+  "no": 30,
+  "en": "evidence",
+  "ko": "증거",
+  "pos": "n. 증거",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "something which shows that something else exists or is true",
+     "어떤 것이 존재하거나 참이라는 사실을 보여 주는 것"
+    ]
+   ],
+   "syn": "proof",
+   "opp": "",
+   "ko_head": "증거"
+  },
+  "ex": [
+   "There is no evidence that these devices actually work.",
+   "이런 기기가 실제로 작동한다는 증거가 없다."
+  ]
+ },
+ {
+  "no": 31,
+  "en": "attack",
+  "ko": "공격하다",
+  "pos": "v. 공격하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to act violently against someone or something",
+     "누군가 또는 어떤 것에게 난폭하게 행동하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "defend",
+   "ko_head": "공격하다"
+  },
+  "ex": [
+   "He was attacked by a dog.",
+   "그는 개에게 공격받았다."
+  ]
+ },
+ {
+  "no": 32,
+  "en": "complete",
+  "ko": "완벽한, 완전한",
+  "pos": "a. 완벽한, 완전한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "perfect in every respect",
+     "모든 면에서 완벽한"
+    ]
+   ],
+   "syn": "total, perfect",
+   "opp": "",
+   "ko_head": "완벽한, 완전한"
+  },
+  "ex": [
+   "They sat in complete silence.",
+   "그들은 완전한 침묵 속에 앉아있었다."
+  ]
+ },
+ {
+  "no": 33,
+  "en": "lie",
+  "ko": "거짓말하다; 거짓말",
+  "pos": "v. 거짓말하다 n. 거짓말",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to say or write something that is not true in order to deceive someone",
+     "사람을 속이기 위해 사실이 아닌 것을 말하거나 쓰다"
+    ],
+    [
+     "something untrue that is said or written to deceive someone",
+     "사람을 속이기 위해 말하거나 쓰는, 사실이 아닌 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "거짓말하다; 거짓말"
+  },
+  "ex": [
+   "People don't trust her because she lies a lot.",
+   "그녀가 거짓말을 많이 하기 때문에 사람들이 그녀를 신뢰하지 않아. 예문 The boy told a lie to his mother. 그 소년은 그의 엄마에게 거짓말을 했다."
+  ]
+ },
+ {
+  "no": 34,
+  "en": "true",
+  "ko": "사실인, 진실인",
+  "pos": "a. 사실인, 진실인",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "His statement was true.",
+   "그의 진술은 사실이었다."
+  ]
+ },
+ {
+  "no": 35,
+  "en": "classmate",
+  "ko": "급우, 반 친구",
+  "pos": "n. 급우, 반 친구",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a member of the same class in a school, college, or university",
+     "학교, 단과 대학, 또는 대학교에서 같은 수업의 구성원"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "급우, 반 친구"
+  },
+  "ex": [
+   "We were classmates in high school.",
+   "우리는 고등학교 반 친구였다."
+  ]
+ },
+ {
+  "no": 36,
+  "en": "right",
+  "ko": "*올바른, 맞는, 정확한; 오른쪽의",
+  "pos": "a. *올바른, 맞는, 정확한; 오른쪽의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "speaking, acting, or judging in a way that agrees with the facts or truth",
+     "사실이나 진실과 일치하게 말, 행동, 또는 판단을 하는"
+    ]
+   ],
+   "syn": "true, correct, valid, proper",
+   "opp": "incorrect, wrong",
+   "ko_head": "올바른, 맞는, 정확한"
+  },
+  "ex": [
+   "You‘ve got the right answer!",
+   "정답이야!"
+  ]
+ },
+ {
+  "no": 37,
+  "en": "source",
+  "ko": "자료, 출처",
+  "pos": "n. 자료, 출처",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person, book, etc., that gives information",
+     "정보를 제공하는 사람, 책 따위"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "자료, 출처"
+  },
+  "ex": [
+   "We need the source of the information.",
+   "우리는 그 정보의 출처가 필요하다."
+  ]
+ },
+ {
+  "no": 38,
+  "en": "real",
+  "ko": "현실적인, 진짜의",
+  "pos": "a. 현실적인, 진짜의",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "This coat was made of real fur.",
+   "이 코트는 진짜 털로 만들어졌다."
+  ]
+ },
+ {
+  "no": 39,
+  "en": "fake",
+  "ko": "가짜의, 거짓의",
+  "pos": "a. 가짜의, 거짓의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not true or real",
+     "사실이 아닌, 진짜가 아닌"
+    ]
+   ],
+   "syn": "false",
+   "opp": "",
+   "ko_head": "가짜의, 거짓의"
+  },
+  "ex": [
+   "I gave a fake name.",
+   "나는 가짜 이름을 댔다."
+  ]
+ },
+ {
+  "no": 40,
+  "en": "critically",
+  "ko": "비판적으로",
+  "pos": "adv. 비판적으로",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "in a way that involves making fair, careful judgements about the good and bad qualities of somebody or something",
+     "누군가 혹은 무언가의 좋고 나쁜 자질에 대해 공정하고, 신중한 판단을 하는 것을 수반하는 방식으로"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "비판적으로"
+  },
+  "ex": [
+   "We teach students to think critically about the texts they are reading.",
+   "우리는 학생들이 읽고 있는 글에 대해 비판적으로 생각하도록 가르친다."
+  ]
+ },
+ {
+  "no": 41,
+  "en": "information",
+  "ko": "정보",
+  "pos": "n. 정보",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "facts or details about somebody or something",
+     "어떤 사람 또는 어떤 것에 대한 사실 또는 세부사항"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "정보"
+  },
+  "ex": [
+   "The Internet is useful for finding information quickly.",
+   "인터넷은 정보를 빨리 찾는데 유용하다."
+  ]
+ },
+ {
+  "no": 42,
+  "en": "skill",
+  "ko": "기술, 기능",
+  "pos": "n. 기술, 기능",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the ability to do something that comes from training, experience, or practice",
+     "훈련, 경험, 또는 연습에서 생기는 어떤 일을 할 수 있는 능력"
+    ]
+   ],
+   "syn": "ability, technique",
+   "opp": "",
+   "ko_head": "기술, 기능"
+  },
+  "ex": [
+   "The work is difficult and requires a lot of skills.",
+   "그 일은 어렵고 많은 기술을 필요로 한다."
+  ]
+ },
+ {
+  "no": 43,
+  "en": "spread",
+  "ko": "퍼지다",
+  "pos": "v. 퍼지다",
+  "extra": "(spread – spread – spread)",
+  "ee": {
+   "defs": [
+    [
+     "to become larger or to affect a larger area",
+     "더 커지거나 더 넓은 구역에 영향을 미치다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "퍼지다"
+  },
+  "ex": [
+   "The disease spread among the children.",
+   "그 질병은 아이들 사이에 퍼져나갔다."
+  ]
+ },
+ {
+  "no": 44,
+  "en": "false",
+  "ko": "틀린, 거짓의",
+  "pos": "a. 틀린, 거짓의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not true or accurate",
+     "진실 되지 않거나 정확하지 않은"
+    ]
+   ],
+   "syn": "incorrect, wrong, inaccurate",
+   "opp": "correct, true, accurate",
+   "ko_head": "틀린, 거짓의"
+  },
+  "ex": [
+   "He must be foolish to believe the false news.",
+   "그 거짓 뉴스를 믿다니 그는 어리석은 게 분명하다."
+  ]
+ },
+ {
+  "no": 45,
+  "en": "tell",
+  "ko": "말하다; 구별[식별]하다",
+  "pos": "v. 말하다; 구별[식별]하다",
+  "extra": "(tell – told – told)",
+  "ee": {
+   "defs": [
+    [
+     "to say or write something to someone",
+     "누군가에게 어떤 것을 말하거나 글로 쓰다"
+    ],
+    [
+     "to see or understand the differences between two people or things",
+     "두 사람 또는 사물의 차이를 알거나 이해하다"
+    ]
+   ],
+   "syn": "distinguish",
+   "opp": "",
+   "ko_head": "말하다; 구별[식별]하다"
+  },
+  "ex": [
+   "He is old enough to tell right from wrong.",
+   "그는 옳고 그른지를 구별할 만큼 충분히 나이 들었다."
+  ]
+ },
+ {
+  "no": 46,
+  "en": "step",
+  "ko": "단계",
+  "pos": "n. 단계",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a stage in a process",
+     "어떤 과정의 한 단계"
+    ]
+   ],
+   "syn": "stage",
+   "opp": "",
+   "ko_head": "단계"
+  },
+  "ex": [
+   "This is an important step toward peace.",
+   "이것은 평화를 향한 중요한 한 단계이다."
+  ]
+ },
+ {
+  "no": 47,
+  "en": "seem",
+  "ko": "~인 것 같다",
+  "pos": "v. ~인 것 같다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to appear to be or to do something",
+     "어떤 상태이거나 어떤 일을 하는 것처럼 보이다"
+    ]
+   ],
+   "syn": "look, appear",
+   "opp": "",
+   "ko_head": "~인 것 같다"
+  },
+  "ex": [
+   "She seemed happy.",
+   "그녀는 행복한 것 같았다."
+  ]
+ },
+ {
+  "no": 48,
+  "en": "support",
+  "ko": "지지하다, 뒷받침하다",
+  "pos": "v. 지지하다, 뒷받침하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to help show that something is true",
+     "어떤 것이 사실임을 증명하는 데 도움을 주다"
+    ]
+   ],
+   "syn": "assist",
+   "opp": "",
+   "ko_head": "지지하다, 뒷받침하다"
+  },
+  "ex": [
+   "His alibi is supported by his neighbors.",
+   "그의 알리바이는 그의 이웃들에 의해 뒷받침된다."
+  ]
+ },
+ {
+  "no": 49,
+  "en": "fact",
+  "ko": "사실",
+  "pos": "n. 사실",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "something that truly exists or happens",
+     "실제로 존재하는 것이나 발생하는 것"
+    ]
+   ],
+   "syn": "truth",
+   "opp": "",
+   "ko_head": "사실"
+  },
+  "ex": [
+   "The book is full of facts about the World Cup.",
+   "이 책은 월드컵에 대한 사실들로 가득 차 있다."
+  ]
+ },
+ {
+  "no": 50,
+  "en": "opinion",
+  "ko": "의견",
+  "pos": "n. 의견",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "ideas or beliefs about a particular subject",
+     "특정한 주제에 대한 생각 또는 신념"
+    ]
+   ],
+   "syn": "view, idea",
+   "opp": "",
+   "ko_head": "의견"
+  },
+  "ex": [
+   "I value your opinion.",
+   "나는 너의 의견을 존중해."
+  ]
+ },
+ {
+  "no": 51,
+  "en": "check",
+  "ko": "확인하다",
+  "pos": "v. 확인하다",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The police are checking up on his alibi.",
+   "경찰은 그의 알리바이를 확인하고 있다."
+  ]
+ },
+ {
+  "no": 52,
+  "en": "smart",
+  "ko": "현명한, 똑똑한",
+  "pos": "a. 현명한, 똑똑한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "showing intelligence or good judgment",
+     "지적 능력이나 좋은 판단력을 나타내는"
+    ]
+   ],
+   "syn": "wise, sensible, clever, bright",
+   "opp": "stupid, silly, foolish",
+   "ko_head": "현명한, 똑똑한"
+  },
+  "ex": [
+   "That was a smart investment.",
+   "그것은 현명한 투자였다."
+  ]
+ },
+ {
+  "no": 53,
+  "en": "test",
+  "ko": "*시험[테스트]하다, 시험, 테스트",
+  "pos": "v. *시험[테스트]하다 n. 시험, 테스트",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 54,
+  "en": "provide",
+  "ko": "제공하다",
+  "pos": "v. 제공하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to make something available",
+     "어떤 것을 이용할 수 있게 하다"
+    ]
+   ],
+   "syn": "supply, give",
+   "opp": "",
+   "ko_head": "제공하다"
+  },
+  "ex": [
+   "We provide lunches for free today.",
+   "저희는 오늘 점심을 무료로 제공합니다."
+  ]
+ },
+ {
+  "no": 55,
+  "en": "appear",
+  "ko": "~인 것 같다, ~처럼 보이다",
+  "pos": "v. ~인 것 같다, ~처럼 보이다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to seem to be something",
+     "어떤 것인 듯하다"
+    ]
+   ],
+   "syn": "look, seem",
+   "opp": "",
+   "ko_head": "~인 것 같다, ~처럼 보이다"
+  },
+  "ex": [
+   "She didn’t want to appear rude.",
+   "그녀는 무례한 것처럼 보이고 싶지 않았다."
+  ]
+ },
+ {
+  "no": 56,
+  "en": "octopus",
+  "ko": "문어",
+  "pos": "n. 문어",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a sea animal that has a soft body and eight long arms",
+     "바다에서 살며 여덟 개의 긴 다리를 가진 연체동물"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "문어"
+  },
+  "ex": [
+   "The arms of octopus have suckers.",
+   "문어의 다리에는 빨판이 있다."
+  ]
+ },
+ {
+  "no": 57,
+  "en": "site",
+  "ko": "(인터넷) 사이트",
+  "pos": "n. (인터넷) 사이트",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a place connected to the internet, where a company or an organization, or an individual person, puts information",
+     "인터넷과 연결된 공간으로 회사나 단체, 또는 개인이 정보를 올려놓는 곳"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(인터넷) 사이트"
+  },
+  "ex": [
+   "Can you look up the opening times on the site?",
+   "그 사이트에서 개장 시간을 찾아볼 수 있니?"
+  ]
+ },
+ {
+  "no": 58,
+  "en": "unclear",
+  "ko": "불확실한, 불분명한",
+  "pos": "a. 불확실한, 불분명한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "confused or uncertain about something",
+     "어떤 것에 대해 혼란스럽거나 불확실한"
+    ]
+   ],
+   "syn": "uncertain, unsure, ambiguous, obscure",
+   "opp": "clear, certain",
+   "ko_head": "불확실한, 불분명한"
+  },
+  "ex": [
+   "I'm a little unclear about what to do.",
+   "나는 무엇을 해야 할지에 대해서 약간 불확실하다."
+  ]
+ },
+ {
+  "no": 59,
+  "en": "totally",
+  "ko": "완전히",
+  "pos": "adv. 완전히",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "completely or entirely",
+     "완전히 또는 전적으로"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "완전히"
+  },
+  "ex": [
+   "I find her books totally boring.",
+   "나는 그녀의 책이 완전히 지루하다고 생각한다."
+  ]
+ },
+ {
+  "no": 60,
+  "en": "lesson",
+  "ko": "교훈",
+  "pos": "n. 교훈",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "something learned through experience",
+     "경험을 통해 배우는 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "교훈"
+  },
+  "ex": [
+   "I learned a lesson from the accident.",
+   "나는 그 사고로부터 교훈을 배웠다."
+  ]
+ },
+ {
+  "no": 61,
+  "en": "carefully",
+  "ko": "신중하게",
+  "pos": "adv. 신중하게",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "in a careful way",
+     "신중한 방식으로"
+    ]
+   ],
+   "syn": "",
+   "opp": "carelessly",
+   "ko_head": "신중하게"
+  },
+  "ex": [
+   "Read the directions carefully on labels.",
+   "라벨에 적힌 지시사항을 주의 깊게 읽으세요."
+  ]
+ },
+ {
+  "no": 62,
+  "en": "question",
+  "ko": "*의심하다, 의문을 갖다, 질문",
+  "pos": "v. *의심하다, 의문을 갖다 n. 질문",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to have or express doubt about something",
+     "어떤 것에 관해 의문을 갖거나 표현하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "의심하다, 의문을 갖다"
+  },
+  "ex": [
+   "She questioned my decision.",
+   "그녀는 나의 결정에 의문을 가졌다. Phrases in Use"
+  ]
+ },
+ {
+  "no": 63,
+  "en": "give up",
+  "ko": "포기하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 64,
+  "en": "laugh out loud",
+  "ko": "큰 소리로 웃다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 65,
+  "en": "make sense",
+  "ko": "타당하다, 말이 되다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 66,
+  "en": "take a photo",
+  "ko": "사진을 찍다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 67,
+  "en": "a bit",
+  "ko": "조금, 약간",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 68,
+  "en": "check up on",
+  "ko": "~을 확인하다",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to find or look for information about someone or something often in order to find out the truth",
+     "흔히 사실을 밝히기 위해 어떤 사람 또는 어떤 것에 관한 정보를 찾거나 구하다"
+    ]
+   ],
+   "syn": "verify",
+   "opp": "",
+   "ko_head": "~을 확인하다"
+  },
+  "ex": null
+ },
+ {
+  "no": 69,
+  "en": "turn out",
+  "ko": "~인 것으로 드러나다[밝혀지다]",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to prove to be ~",
+     "인 것으로 증명되다"
+    ]
+   ],
+   "syn": "prove",
+   "opp": "",
+   "ko_head": "~인 것으로 드러나다[밝혀지다]"
+  },
+  "ex": null
+ },
+ {
+  "no": 70,
+  "en": "a lot of",
+  "ko": "많은",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 71,
+  "en": "look at",
+  "ko": "~을 보다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 72,
+  "en": "pay attention to",
+  "ko": "~에 주목하다, ~에 유의하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 73,
+  "en": "full of",
+  "ko": "~으로 가득 찬",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 74,
+  "en": "tell A from B",
+  "ko": "A와 B를 구별하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 75,
+  "en": "slow down",
+  "ko": "(속도, 활동)을 늦추다",
+  "pos": "",
+  "extra": "(속도, 활동)을 늦추다",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 76,
+  "en": "come from",
+  "ko": "*~에서 생겨나다[나오다/비롯되다]; ~ 출신이다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 77,
+  "en": "be based on",
+  "ko": "~에 기초하다, ~에 근거하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 78,
+  "en": "along with",
+  "ko": "~와 함께",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 79,
+  "en": "be made up",
+  "ko": "꾸며지다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ }
+]

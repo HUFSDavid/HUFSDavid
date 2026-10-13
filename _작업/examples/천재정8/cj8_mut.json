@@ -1,0 +1,233 @@
+{
+"O": "pole",
+"forget": [
+"unable",
+"able",
+"핵심반대"
+],
+"rest": [
+"remains",
+"reminds",
+"유사철자"
+],
+"warrior": [
+"fights",
+"fought",
+"문법"
+],
+"brave": [
+"no",
+"much",
+"핵심반대"
+],
+"general": [
+"high",
+"low",
+"핵심반대"
+],
+"army": [
+"organized",
+"organizing",
+"문법"
+],
+"order": [
+"must",
+"mist",
+"유사철자"
+],
+"military": [
+"soldiers",
+"solders",
+"유사철자"
+],
+"training": [
+"learning",
+"learned",
+"문법"
+],
+"gate": [
+"door",
+"floor",
+"유사철자"
+],
+"reason": [
+"explanation",
+"explain",
+"문법"
+],
+"weapon": [
+"fighting",
+"fight",
+"문법"
+],
+"patience": [
+"calm",
+"angry",
+"핵심반대"
+],
+"war": [
+"fighting",
+"fitting",
+"유사철자"
+],
+"stand": [
+"feet",
+"hands",
+"핵심반대"
+],
+"tie": [
+"attach",
+"detach",
+"핵심반대"
+],
+"above": [
+"higher",
+"lower",
+"핵심반대"
+],
+"sign": [
+"gives",
+"given",
+"문법"
+],
+"read": [
+"show",
+"shown",
+"문법"
+],
+"look": [
+"expression",
+"impression",
+"유사철자"
+],
+"shout": [
+"loudly",
+"quietly",
+"핵심반대"
+],
+"yell": [
+"loudly",
+"loud",
+"문법"
+],
+"situation": [
+"happening",
+"happened",
+"문법"
+],
+"control": [
+"want",
+"went",
+"유사철자"
+],
+"soft": [
+"gentle",
+"rough",
+"핵심반대"
+],
+"sharp": [
+"fine",
+"dull",
+"핵심반대"
+],
+"sword": [
+"blade",
+"blame",
+"유사철자"
+],
+"pass": [
+"successfully",
+"unsuccessfully",
+"핵심반대"
+],
+"winner": [
+"wins",
+"loses",
+"핵심반대"
+],
+"push": [
+"forward",
+"backward",
+"핵심반대"
+],
+"pull": [
+"hold",
+"held",
+"문법"
+],
+"tired": [
+"rest",
+"test",
+"유사철자"
+],
+"injured": [
+"hurt",
+"hurting",
+"문법"
+],
+"follow": [
+"obey",
+"disobey",
+"핵심반대"
+],
+"except": [
+"including",
+"included",
+"문법"
+],
+"realize": [
+"aware",
+"award",
+"유사철자"
+],
+"peace": [
+"state",
+"statue",
+"유사철자"
+],
+"favorite": [
+"liked",
+"licked",
+"유사철자"
+],
+"return": [
+"again",
+"against",
+"유사철자"
+],
+"palace": [
+"official",
+"office",
+"문법"
+],
+"approach": [
+"near",
+"far",
+"핵심반대"
+],
+"wise": [
+"properly",
+"property",
+"유사철자"
+],
+"knowing": [
+"secret",
+"public",
+"핵심반대"
+],
+"take care of": [
+"care",
+"core",
+"유사철자"
+],
+"give up": [
+"admit",
+"admitted",
+"문법"
+],
+"sooner or later": [
+"future",
+"feature",
+"유사철자"
+]
+}

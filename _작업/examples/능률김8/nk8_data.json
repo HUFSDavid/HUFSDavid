@@ -1,0 +1,1127 @@
+[
+ {
+  "no": 1,
+  "en": "wise",
+  "ko": "지혜로운, 현명한",
+  "pos": "a. 지혜로운, 현명한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "able to make sensible decisions and give good advice because of the experience and knowledge that you have",
+     "당신이 가지고 있는 경험과 지식 때문에 분별력 있는 결정을 내리고 좋은 조언을 할 수 있는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "지혜로운, 현명한"
+  },
+  "ex": [
+   "It is wise to think twice before doing something dangerous.",
+   "위험한 일을 하기 전에 두 번 생각하는 것은 현명하다."
+  ]
+ },
+ {
+  "no": 2,
+  "en": "agree",
+  "ko": "동의하다, 찬성하다",
+  "pos": "v. 동의하다, 찬성하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to have the same opinion",
+     "같은 의견을 가지다"
+    ]
+   ],
+   "syn": "",
+   "opp": "disagree",
+   "ko_head": "동의하다, 찬성하다"
+  },
+  "ex": [
+   "If we all agree, let’s finish the discussion.",
+   "우리 모두가 동의한다면, 토론을 끝내자."
+  ]
+ },
+ {
+  "no": 3,
+  "en": "travel",
+  "ko": "여행하다, 이동하다",
+  "pos": "v. 여행하다, 이동하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to make a journey, usually over a long distance",
+     "보통 긴 거리를 여행하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "여행하다, 이동하다"
+  },
+  "ex": null
+ },
+ {
+  "no": 4,
+  "en": "lost",
+  "ko": "*길을 잃은, 분실된",
+  "pos": "a. *길을 잃은, 분실된",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not knowing where you are and how to get to a place",
+     "당신이 어디에 있는지 그리고 어떤 장소에 어떻게 가야하는지 모르는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "길을 잃은"
+  },
+  "ex": [
+   "He gave me a map so that I wouldn’t get lost.",
+   "그가 내가 길을 잃지 않도록 지도를 주었다."
+  ]
+ },
+ {
+  "no": 5,
+  "en": "thick",
+  "ko": "두꺼운, *(나무가) 울창한, 빽빽한",
+  "pos": "a. 두꺼운, *(나무가) 울창한, 빽빽한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having a lot of something in a small space; dense",
+     "좁은 공간에 많은 것을 가지고 있는 것; 빽빽한"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(나무가) 울창한, 빽빽한"
+  },
+  "ex": [
+   "She has thick dark hair.",
+   "그녀는 숱이 많은 검은 머리를 가지고 있다."
+  ]
+ },
+ {
+  "no": 6,
+  "en": "further",
+  "ko": "더 멀리",
+  "pos": "adv. 더 멀리",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "This new car allows you to drive further with less fuel.",
+   "이 새로운 차는 여러분이 더 적은 연료로 더 멀리 운전할 수 있게 해 준다."
+  ]
+ },
+ {
+  "no": 7,
+  "en": "decide",
+  "ko": "결정하다",
+  "pos": "v. 결정하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to choose something, especially after thinking carefully about several possibilities",
+     "특히 몇 가지 가능성에 대해 신중히 생각한 후에 무언가를 선택하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "결정하다"
+  },
+  "ex": [
+   "In the end, we decided to go to the theater.",
+   "결국 우리는 극장에 가기로 결정했다."
+  ]
+ },
+ {
+  "no": 8,
+  "en": "way out",
+  "ko": "출구, 탈출구",
+  "pos": "n. 출구, 탈출구",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He looked around for a way out.",
+   "그는 출구를 찾아 주위를 둘러보았다."
+  ]
+ },
+ {
+  "no": 9,
+  "en": "strongly",
+  "ko": "강하게, 강경히",
+  "pos": "adv. 강하게, 강경히",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "They are strongly opposing the new policy.",
+   "그들은 새 정책에 강하게 반대하고 있다."
+  ]
+ },
+ {
+  "no": 10,
+  "en": "right",
+  "ko": "*오른쪽, 권리, *(상황∙목적 등에) 맞는, 적절한; 오른쪽의",
+  "pos": "n. *오른쪽, 권리 a. *(상황∙목적 등에) 맞는, 적절한; 오른쪽의",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Put chopsticks on the right of a spoon.",
+   "젓가락은 숟가락의 오른쪽에 놓아라."
+  ]
+ },
+ {
+  "no": 11,
+  "en": "mean",
+  "ko": "~라는 의미이다",
+  "pos": "v. ~라는 의미이다",
+  "extra": "(mean - meant - meant)",
+  "ee": {
+   "defs": [
+    [
+     "to express or represent something such as an idea, thought, or fact",
+     "발상, 생각 또는 사실과 같은 것을 나타내거나 표현하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~라는 의미이다"
+  },
+  "ex": [
+   "What does this sentence mean?",
+   "이 문장은 무슨 의미인가요?"
+  ]
+ },
+ {
+  "no": 12,
+  "en": "correct",
+  "ko": "*옳은, 고치다, 바로잡다",
+  "pos": "a. *옳은 v. 고치다, 바로잡다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "accurate or true",
+     "정확한 또는 사실인"
+    ]
+   ],
+   "syn": "",
+   "opp": "wrong",
+   "ko_head": "옳은"
+  },
+  "ex": [
+   "Nobody knows the correct answer to this question.",
+   "아무도 이 문제의 정확한 답을 모른다."
+  ]
+ },
+ {
+  "no": 13,
+  "en": "back",
+  "ko": "되돌아가서",
+  "pos": "adv. 되돌아가서",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 14,
+  "en": "around",
+  "ko": "~을 돌아서, ~을 우회하여",
+  "pos": "prep. ~을 돌아서, ~을 우회하여",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 15,
+  "en": "disagree",
+  "ko": "동의하지 않다, 의견이 맞지 않다",
+  "pos": "v. 동의하지 않다, 의견이 맞지 않다",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Scientists disagree about how the universe was created.",
+   "과학자들은 우주가 어떻게 창조되었는지에 대해 의견이 일치하지 않는다."
+  ]
+ },
+ {
+  "no": 16,
+  "en": "straight",
+  "ko": "*곧장, 일직선으로, 곧은, 일직선의",
+  "pos": "adv. *곧장, 일직선으로 a. 곧은, 일직선의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "in a straight or direct way",
+     "똑바로, 곧장"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "곧장, 일직선으로"
+  },
+  "ex": [
+   "He was too drunk to walk straight.",
+   "그는 너무 취해서 똑바로 걸을 수 없었다."
+  ]
+ },
+ {
+  "no": 17,
+  "en": "forever",
+  "ko": "영원히, 계속",
+  "pos": "adv. 영원히, 계속",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "for an endless time",
+     "끝없는 시간 동안"
+    ]
+   ],
+   "syn": "eternally",
+   "opp": "",
+   "ko_head": "영원히, 계속"
+  },
+  "ex": null
+ },
+ {
+  "no": 18,
+  "en": "path",
+  "ko": "길",
+  "pos": "n. 길",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a track that is made by people or animals walking over the ground",
+     "사람이나 동물이 땅을 걸어 다녀서 만든 길"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "길"
+  },
+  "ex": [
+   "They followed the path through the woods.",
+   "그들은 숲속에 나 있는 길을 따라갔다."
+  ]
+ },
+ {
+  "no": 19,
+  "en": "solve",
+  "ko": "(문제 등을) 풀다, 해결하다",
+  "pos": "v. (문제 등을) 풀다, 해결하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to find a way to deal with and end a problem",
+     "문제를 처리해서 결말짓기 위한 방법을 찾다"
+    ]
+   ],
+   "syn": "resolve, settle",
+   "opp": "",
+   "ko_head": "(문제 등을) 풀다, 해결하다"
+  },
+  "ex": [
+   "Your idea doesn't really solve this problem.",
+   "너의 방안은 이 문제를 정말로 해결하지 못해."
+  ]
+ },
+ {
+  "no": 20,
+  "en": "climb",
+  "ko": "오르다, 올라가다",
+  "pos": "v. 오르다, 올라가다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to go up, or to go towards the top of something",
+     "올라가다 또는 어떤 것의 꼭대기를 향해 가다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "오르다, 올라가다"
+  },
+  "ex": [
+   "It is dangerous to climb up a steep slope.",
+   "가파른 경사면을 오르는 것은 위험하다."
+  ]
+ },
+ {
+  "no": 21,
+  "en": "separate",
+  "ko": "분리된, *서로 다른, 분리하다",
+  "pos": "a. 분리된, *서로 다른 v. 분리하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "different from something else",
+     "서로 다른"
+    ]
+   ],
+   "syn": "different, individual",
+   "opp": "",
+   "ko_head": "서로 다른"
+  },
+  "ex": [
+   "They have begun to sleep in separate rooms.",
+   "그들은 서로 다른 방에서 자기 시작했다."
+  ]
+ },
+ {
+  "no": 22,
+  "en": "reach",
+  "ko": "~에 도착하다[이르다]",
+  "pos": "v. ~에 도착하다[이르다]",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to arrive at a place, especially after spending a long time or a lot of effort travelling",
+     "이동하는데 많은 시간 또는 노력을 들인 후에 어떤 장소에 도착하다"
+    ]
+   ],
+   "syn": "get to",
+   "opp": "",
+   "ko_head": "~에 도착하다[이르다]"
+  },
+  "ex": [
+   "We reached California after driving for two days.",
+   "우리는 이틀간 운전을 한 후 캘리포니아에 도착했다."
+  ]
+ },
+ {
+  "no": 23,
+  "en": "top",
+  "ko": "맨 위, 꼭대기",
+  "pos": "n. 맨 위, 꼭대기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the highest place or part",
+     "가장 높은 곳 또는 부분"
+    ]
+   ],
+   "syn": "",
+   "opp": "bottom",
+   "ko_head": "맨 위, 꼭대기"
+  },
+  "ex": [
+   "There were flags on the tops of many of the buildings.",
+   "많은 건물들의 꼭대기에는 깃발들이 있었다."
+  ]
+ },
+ {
+  "no": 24,
+  "en": "whole",
+  "ko": "전체의, 모든",
+  "pos": "a. 전체의, 모든",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "complete or full",
+     "온전한 또는 전부의"
+    ]
+   ],
+   "syn": "entire",
+   "opp": "",
+   "ko_head": "전체의, 모든"
+  },
+  "ex": [
+   "The whole city was destroyed by the earthquake.",
+   "도시 전체가 지진으로 파괴되었다."
+  ]
+ },
+ {
+  "no": 25,
+  "en": "hurry",
+  "ko": "서두르다",
+  "pos": "v. 서두르다",
+  "extra": "(hurry - hurried - hurried)",
+  "ee": {
+   "defs": [
+    [
+     "to move or do things more quickly than normal",
+     "평소보다 더 빠르게 움직이다 또는 평소보다 더 빠르게 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "서두르다"
+  },
+  "ex": [
+   "You'll be in time if you hurry.",
+   "서두른다면, 너는 제 시간에 갈 수 있을 거야."
+  ]
+ },
+ {
+  "no": 26,
+  "en": "bottom",
+  "ko": "밑, 바닥",
+  "pos": "n. 밑, 바닥",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He was waiting for me at the bottom of the stairs.",
+   "그는 계단 맨 아래에서 나를 기다리고 있었다."
+  ]
+ },
+ {
+  "no": 27,
+  "en": "gone",
+  "ko": "(사람이) 떠난, 가 버린",
+  "pos": "a. (사람이) 떠난, 가 버린",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She was gone before I arrived.",
+   "그녀는 내가 도착하기 전에 가버렸다."
+  ]
+ },
+ {
+  "no": 28,
+  "en": "wrong",
+  "ko": "틀린, 잘못된",
+  "pos": "a. 틀린, 잘못된",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "We have to remember that being different doesn't mean it is wrong.",
+   "우리는 다르다는 것이 틀리다는 것이 아니라는 것을 기억해야 한다."
+  ]
+ },
+ {
+  "no": 29,
+  "en": "choose",
+  "ko": "고르다, 선택하다",
+  "pos": "v. 고르다, 선택하다",
+  "extra": "(choose - chose - chosen)",
+  "ee": {
+   "defs": [
+    [
+     "to decide what you want from two or more things or possibilities",
+     "두 개 혹은 그 이상의 것들 혹은 가능성들 중에 원하는 것을 결정하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "고르다, 선택하다"
+  },
+  "ex": [
+   "Whom did you choose for our team leader?",
+   "너는 우리 팀의 리더로 누구를 선택했니?"
+  ]
+ },
+ {
+  "no": 30,
+  "en": "deep",
+  "ko": "깊이, 깊은 곳으로",
+  "pos": "adv. 깊이, 깊은 곳으로",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The miners were trapped deep underground.",
+   "광부들은 땅 속 깊이 갇혀 있었다."
+  ]
+ },
+ {
+  "no": 31,
+  "en": "attack",
+  "ko": "공격하다",
+  "pos": "v. 공격하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to try to hurt or defeat using violence",
+     "폭력을 사용하여 다치게 하거나 패배시키려 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "protect, defend",
+   "ko_head": "공격하다"
+  },
+  "ex": [
+   "He was repeatedly attacked outside of his house.",
+   "그는 자신의 집 밖에서 여러 번 공격을 받았다."
+  ]
+ },
+ {
+  "no": 32,
+  "en": "wild animal",
+  "ko": "들짐승, 야생동물",
+  "pos": "n. 들짐승, 야생동물",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 33,
+  "en": "hunger",
+  "ko": "굶주림, 배고픔",
+  "pos": "n. 굶주림, 배고픔",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the feeling you have when you need to eat",
+     "먹을 필요가 있을 때 당신이 느끼는 감정"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "굶주림, 배고픔"
+  },
+  "ex": [
+   "Thousands of people are dying from hunger every day.",
+   "수천 명의 사람들이 매일 굶주림으로 죽어가고 있다."
+  ]
+ },
+ {
+  "no": 34,
+  "en": "protect",
+  "ko": "보호하다",
+  "pos": "v. 보호하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to keep someone or something from being harmed",
+     "어떤 것 또는 누군가가 해를 입지 않게 하다"
+    ]
+   ],
+   "syn": "guard",
+   "opp": "attack",
+   "ko_head": "보호하다"
+  },
+  "ex": [
+   "It is everyone's duty to love and protect the environment.",
+   "환경을 사랑하고 보호하는 것은 모두의 의무이다."
+  ]
+ },
+ {
+  "no": 35,
+  "en": "survival",
+  "ko": "생존",
+  "pos": "n. 생존",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the state or fact of continuing to live or exist especially in spite of difficult conditions",
+     "특히 어려운 조건에도 불구하고 계속 살거나 존재하고 있는 상태 또는 사실"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "생존"
+  },
+  "ex": [
+   "We need food and water for survival.",
+   "우리는 생존을 위해 물과 음식이 필요하다."
+  ]
+ },
+ {
+  "no": 36,
+  "en": "skill",
+  "ko": "기술",
+  "pos": "n. 기술",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "an ability to do an activity or job well, especially because you have practised it",
+     "어떤 활동이나 일을 특히 그것을 연습해왔기 때문에 잘하는 능력"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "기술"
+  },
+  "ex": [
+   "He didn't have the necessary skills for the job.",
+   "그는 그 일에 필요한 기술들을 가지고 있지 않았다."
+  ]
+ },
+ {
+  "no": 37,
+  "en": "thief",
+  "ko": "도둑",
+  "pos": "n. 도둑",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who steals something",
+     "무언가를 훔치는 사람"
+    ]
+   ],
+   "syn": "robber, stealer",
+   "opp": "",
+   "ko_head": "도둑"
+  },
+  "ex": null
+ },
+ {
+  "no": 38,
+  "en": "take",
+  "ko": "빼앗다, 가져가다; (시간이) 걸리다",
+  "pos": "v. 빼앗다, 가져가다; (시간이) 걸리다",
+  "extra": "(take - took - taken)",
+  "ee": {
+   "defs": [
+    [
+     "to remove something, especially without permission",
+     "특히 허락 없이 어떤 것을 없애다"
+    ],
+    [
+     "to need or require a particular amount of time",
+     "특정한 양의 시간을 필요로 하다 또는 요구하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "빼앗다, 가져가다; (시간이) 걸리다"
+  },
+  "ex": [
+   "Did the thief take anything valuable?",
+   "그 도둑이 무언가 귀중한 것을 가져갔나요?"
+  ]
+ },
+ {
+  "no": 39,
+  "en": "kindness",
+  "ko": "친절",
+  "pos": "n. 친절",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the quality of behaving in a thoughtful, helpful, or friendly way",
+     "사려 깊고 도움이 되거나 친근한 방식으로 행동하는 자질"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "친절"
+  },
+  "ex": [
+   "I can't thank you enough for your kindness.",
+   "당신의 친절에 정말 감사드립니다."
+  ]
+ },
+ {
+  "no": 40,
+  "en": "move",
+  "ko": "*감동시키다, 움직이다",
+  "pos": "v. *감동시키다, 움직이다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to cause someone to have strong feelings, such as sadness, sympathy, happiness, or admiration",
+     "어떤 사람이 슬픔, 연민, 행복 또는 감탄과 같은 강한 감정을 갖게 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "감동시키다"
+  },
+  "ex": [
+   "Everyone was deeply moved by his speech.",
+   "모두가 그의 연설에 크게 감동받았다."
+  ]
+ },
+ {
+  "no": 41,
+  "en": "wisdom",
+  "ko": "지혜",
+  "pos": "n. 지혜",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the ability to use your knowledge and experience to make good decisions and judgments",
+     "좋은 결정과 판단을 내리기 위해 지식과 경험을 활용하는 능력"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "지혜"
+  },
+  "ex": [
+   "The dragon became a symbol of power and wisdom.",
+   "용은 힘과 지혜의 상징이 되었다."
+  ]
+ },
+ {
+  "no": 42,
+  "en": "pioneer",
+  "ko": "선구자, 개척자",
+  "pos": "n. 선구자, 개척자",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "someone who is one of the first people to move to and live in a new area",
+     "새로운 지역으로 이주하여 사는 최초의 사람들 중 한 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "선구자, 개척자"
+  },
+  "ex": [
+   "He was a pioneer in the field of Korean medicine.",
+   "그는 한국 의학의 선구자였다."
+  ]
+ },
+ {
+  "no": 43,
+  "en": "discover",
+  "ko": "발견하다",
+  "pos": "v. 발견하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to find information, a place, or an object, especially for the first time",
+     "특히 처음으로 어떤 정보, 장소 또는 물건을 찾다"
+    ]
+   ],
+   "syn": "find, detect",
+   "opp": "",
+   "ko_head": "발견하다"
+  },
+  "ex": [
+   "They were amazed to discover the ancient emperor's tomb.",
+   "그들은 고대 황제의 무덤을 발견하게 되어 매우 놀랐다."
+  ]
+ },
+ {
+  "no": 44,
+  "en": "land",
+  "ko": "땅, 토지",
+  "pos": "n. 땅, 토지",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 45,
+  "en": "guide",
+  "ko": "안내인, 가이드",
+  "pos": "n. 안내인, 가이드",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person whose job is showing a place or a particular route to visitors",
+     "어떤 장소나 특정한 경로를 방문객들에게 보여주는 일을 하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "안내인, 가이드"
+  },
+  "ex": [
+   "A guide explained to us about the main buildings of the palace.",
+   "가이드는 우리에게 궁의 주요 건물들에 대해 설명해 주었다."
+  ]
+ },
+ {
+  "no": 46,
+  "en": "like",
+  "ko": "~처럼",
+  "pos": "prep. ~처럼",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 47,
+  "en": "each",
+  "ko": "각자, 각각, 각자의",
+  "pos": "pron. 각자, 각각 a. 각자의",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "They each borrowed books from a different library.",
+   "그들은 각각 다른 도서관에서 책을 빌렸다."
+  ]
+ },
+ {
+  "no": 48,
+  "en": "destination",
+  "ko": "목적지, 도착지",
+  "pos": "n. 목적지, 도착지",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the place where someone is going or where something is being sent or taken",
+     "어떤 사람이 가려는 곳이거나 어떤 것을 보내거나 가져가려는 곳"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "목적지, 도착지"
+  },
+  "ex": [
+   "Life is like a journey with an unknown destination.",
+   "삶이란 목적지를 모르는 여행과 같다."
+  ]
+ },
+ {
+  "no": 49,
+  "en": "compare",
+  "ko": "비교하다",
+  "pos": "v. 비교하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to examine or look for the difference between two or more things",
+     "두 개 혹은 그 이상의 것들 간의 차이를 살펴보다 또는 찾다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "비교하다"
+  },
+  "ex": [
+   "I compared several bicycles before buying one.",
+   "나는 자전거를 하나 사기 전에 여러 대의 자전거를 비교했다."
+  ]
+ },
+ {
+  "no": 50,
+  "en": "someday",
+  "ko": "언젠가",
+  "pos": "adv. 언젠가",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He hopes to have his own business someday.",
+   "그는 언젠가 자신의 사업체를 가지기를 바란다."
+  ]
+ },
+ {
+  "no": 51,
+  "en": "realize",
+  "ko": "깨닫다",
+  "pos": "v. 깨닫다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to understand or become aware of something",
+     "어떤 것을 이해하다 또는 알게 되다"
+    ]
+   ],
+   "syn": "discover, find out",
+   "opp": "",
+   "ko_head": "깨닫다"
+  },
+  "ex": [
+   "They didn't realize the danger they were in.",
+   "그들은 자신들이 처해 있는 위험을 깨닫지 못했다."
+  ]
+ },
+ {
+  "no": 52,
+  "en": "life",
+  "ko": "*인생, 삶, 생명",
+  "pos": "n. *인생, 삶, 생명",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 53,
+  "en": "on the way",
+  "ko": "도중에",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 54,
+  "en": "for a while",
+  "ko": "잠시 동안",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 55,
+  "en": "go on",
+  "ko": "(어떤 상황이) 계속 되다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 56,
+  "en": "shake one's head",
+  "ko": "고개를 가로 젓다[흔들다]",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to move your head from side to side, in order to express disagreement, sadness, or that you do not want or believe something",
+     "의견 차이, 슬픔, 또는 어떤 것을 원하지 않거나 믿지 않음을 나타내기 위해 고개를 좌우로 움직이다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "고개를 가로 젓다[흔들다]"
+  },
+  "ex": null
+ },
+ {
+  "no": 57,
+  "en": "get to",
+  "ko": "~에 도착하다, 닿다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 58,
+  "en": "think to oneself",
+  "ko": "마음속으로 생각하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 59,
+  "en": "die of",
+  "ko": "~로 죽다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 60,
+  "en": "in the end",
+  "ko": "마침내, 결국",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 61,
+  "en": "make one's way",
+  "ko": "나아가다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 62,
+  "en": "thanks to",
+  "ko": "~덕분에",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "because of ~",
+     "때문에"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~덕분에"
+  },
+  "ex": null
+ },
+ {
+  "no": 63,
+  "en": "be able to (동사원형)",
+  "ko": "~을 할 수 있다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 64,
+  "en": "on one's journey",
+  "ko": "여행 중에",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 65,
+  "en": "compare A to B",
+  "ko": "A를 B와 비교하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 66,
+  "en": "listen to",
+  "ko": "~에 귀를 기울이다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 67,
+  "en": "make a decision",
+  "ko": "결정하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 68,
+  "en": "act on",
+  "ko": "~에 따라 행동하다",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to do something because you have been advised or told to do it",
+     "조언을 들었거나 그것을 하라는 말을 들었기 때문에 어떤 것을 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~에 따라 행동하다"
+  },
+  "ex": null
+ }
+]

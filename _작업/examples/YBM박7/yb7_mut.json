@@ -1,0 +1,278 @@
+{
+ "O": "recently",
+ "mind": [
+  "annoyed",
+  "pleased",
+  "핵심반대"
+ ],
+ "accidentally": [
+  "planned",
+  "planed",
+  "유사철자"
+ ],
+ "break": [
+  "applying",
+  "applied",
+  "문법"
+ ],
+ "apologize": [
+  "wrong",
+  "right",
+  "핵심반대"
+ ],
+ "sincerely": [
+  "honestly",
+  "dishonestly",
+  "핵심반대"
+ ],
+ "early": [
+  "before",
+  "after",
+  "핵심반대"
+ ],
+ "borrow": [
+  "belongs",
+  "belong",
+  "문법"
+ ],
+ "appreciate": [
+  "grateful",
+  "graceful",
+  "유사철자"
+ ],
+ "prepare": [
+  "future",
+  "past",
+  "핵심반대"
+ ],
+ "contest": [
+  "better",
+  "bitter",
+  "유사철자"
+ ],
+ "relaxed": [
+  "anxious",
+  "anxiously",
+  "문법"
+ ],
+ "advice": [
+  "opinion",
+  "option",
+  "유사철자"
+ ],
+ "pleasure": [
+  "satisfaction",
+  "dissatisfaction",
+  "핵심반대"
+ ],
+ "advise": [
+  "give",
+  "given",
+  "문법"
+ ],
+ "case": [
+  "storing",
+  "stored",
+  "문법"
+ ],
+ "proper": [
+  "acceptable",
+  "unacceptable",
+  "핵심반대"
+ ],
+ "apology": [
+  "saying",
+  "said",
+  "문법"
+ ],
+ "hurt": [
+  "sad",
+  "glad",
+  "유사철자"
+ ],
+ "intend": [
+  "plan",
+  "plane",
+  "유사철자"
+ ],
+ "regret": [
+  "sorry",
+  "happy",
+  "핵심반대"
+ ],
+ "case study": [
+  "example",
+  "examples",
+  "문법"
+ ],
+ "trip": [
+  "fall",
+  "fail",
+  "유사철자"
+ ],
+ "find": [
+  "particular",
+  "general",
+  "핵심반대"
+ ],
+ "upload": [
+  "send",
+  "receive",
+  "핵심반대"
+ ],
+ "delete": [
+  "remove",
+  "add",
+  "핵심반대"
+ ],
+ "casual": [
+  "serious",
+  "series",
+  "유사철자"
+ ],
+ "act": [
+  "behave",
+  "behaved",
+  "문법"
+ ],
+ "serious": [
+  "important",
+  "unimportant",
+  "핵심반대"
+ ],
+ "guess": [
+  "knowing",
+  "know",
+  "문법"
+ ],
+ "sincere": [
+  "honest",
+  "dishonest",
+  "핵심반대"
+ ],
+ "necessary": [
+  "needed",
+  "need",
+  "문법"
+ ],
+ "friendship": [
+  "friends",
+  "fiends",
+  "유사철자"
+ ],
+ "respect": [
+  "important",
+  "importance",
+  "문법"
+ ],
+ "receive": [
+  "accept",
+  "except",
+  "유사철자"
+ ],
+ "thoughtful": [
+  "careful",
+  "careless",
+  "핵심반대"
+ ],
+ "responsibility": [
+  "duty",
+  "dirty",
+  "유사철자"
+ ],
+ "action": [
+  "does",
+  "dose",
+  "유사철자"
+ ],
+ "finally": [
+  "last",
+  "first",
+  "핵심반대"
+ ],
+ "treat": [
+  "behave",
+  "behavior",
+  "문법"
+ ],
+ "ignore": [
+  "attention",
+  "intention",
+  "유사철자"
+ ],
+ "include": [
+  "part",
+  "parts",
+  "문법"
+ ],
+ "emotional": [
+  "feelings",
+  "fillings",
+  "유사철자"
+ ],
+ "saying": [
+  "well-known",
+  "unknown",
+  "핵심반대"
+ ],
+ "chance": [
+  "suitable",
+  "unsuitable",
+  "핵심반대"
+ ],
+ "relationship": [
+  "behave",
+  "behaving",
+  "문법"
+ ],
+ "turn down": [
+  "reduce",
+  "increase",
+  "핵심반대"
+ ],
+ "pick out": [
+  "carefully",
+  "carelessly",
+  "핵심반대"
+ ],
+ "get along with": [
+  "friendly",
+  "unfriendly",
+  "핵심반대"
+ ],
+ "care about": [
+  "worth",
+  "worse",
+  "유사철자"
+ ],
+ "bump into": [
+  "moving",
+  "moved",
+  "문법"
+ ],
+ "at once": [
+  "without",
+  "with",
+  "핵심반대"
+ ],
+ "think nothing of": [
+  "important",
+  "importantly",
+  "문법"
+ ],
+ "laugh off": [
+  "laughing",
+  "laughed",
+  "문법"
+ ],
+ "let … go": [
+  "angry",
+  "hungry",
+  "유사철자"
+ ],
+ "add up to": [
+  "lead",
+  "led",
+  "문법"
+ ]
+}

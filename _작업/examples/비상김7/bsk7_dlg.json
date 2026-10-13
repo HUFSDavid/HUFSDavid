@@ -1,0 +1,1877 @@
+{
+ "dialogues": [
+  {
+   "id": "D1",
+   "label": "Listen & Talk 1 · Get Ready",
+   "lines": [
+    [
+     "A",
+     "{How do you like} your pants?",
+     "네 새 바지 어때?"
+    ],
+    [
+     "B",
+     "I {love them}. They are {very comfortable}.",
+     "아주 마음에 들어. 정말 편해."
+    ]
+   ],
+   "notes": [
+    "How do you like ~? : 어떤 물건이 마음에 드는지, 즉 {만족} 여부를 묻는 말 ‘~은 어때?’",
+    "them : 앞 문장의 {your pants}를 받는 대명사 — pants는 늘 복수 취급이라 it이 아니라 them"
+   ]
+  },
+  {
+   "id": "D2",
+   "label": "Listen & Talk 1 · A. Listen and Choose 1",
+   "lines": [
+    [
+     "M",
+     "Hi, {can I help you with anything}?",
+     "안녕하세요, 무엇을 도와 드릴까요?"
+    ],
+    [
+     "W",
+     "Yes, can I {try on} that cap {with stars} over there?",
+     "네, 저쪽에 있는 별들이 그려진 모자를 써 봐도 되나요?"
+    ],
+    [
+     "M",
+     "Sure. {How do you like it}?",
+     "물론이죠. 어떠세요?"
+    ],
+    [
+     "W",
+     "The design is nice, but I don’t think the color {suits me}. Do you have it {in black}?",
+     "디자인은 좋은데 색깔이 저한테 안 어울리는 것 같아요. 이거 검은색으로 있나요?"
+    ],
+    [
+     "M",
+     "Yes. I’ll get one {from the back}. (pause) {Here it is}.",
+     "네, 뒤에서 가져다 드릴게요. (잠시 후) 여기 있습니다."
+    ],
+    [
+     "W",
+     "Great. {I’ll take it}.",
+     "아주 좋네요. 그걸로 살게요."
+    ]
+   ],
+   "notes": [
+    "Can I help you with anything? : 점원이 손님에게 {도움}을 주겠다고 먼저 말을 거는 표현 = Do you need any help?",
+    "try on : 모자·옷 등을 {써[입어] 보다} — 사기 전에 직접 착용해 보는 것",
+    "How do you like it? : 써 본 모자가 마음에 드는지 묻기 — it = {the cap with stars}",
+    "suit : ‘~에게 {어울리다}’ (타동사라 전치사 없이 suits me) / I don’t think ~ : 부정어는 think 쪽에",
+    "Here it is. : 찾던 물건을 {건네주며} 하는 말 ‘여기 있습니다’ = Here you are."
+   ]
+  },
+  {
+   "id": "D3",
+   "label": "Listen & Talk 1 · A. Listen and Choose 2",
+   "lines": [
+    [
+     "M",
+     "Good morning. Welcome to {Kelly’s Sporting Goods Store}.",
+     "안녕하세요. Kelly의 운동용품점에 오신 것을 환영합니다."
+    ],
+    [
+     "W",
+     "Hi, I’m {looking for} a backpack {for hiking}.",
+     "안녕하세요, 전 하이킹용 배낭을 찾고 있어요."
+    ],
+    [
+     "M",
+     "These two are {popular among} hikers. {How do you like them}?",
+     "이 두 개가 하이킹하는 분들 사이에서 인기 있어요. 어떠세요?"
+    ],
+    [
+     "W",
+     "The green one is {lighter than} the blue one. I’ll {take the lighter one}.",
+     "초록색 배낭이 파란색 배낭보다 더 가볍네요. 더 가벼운 것으로 할게요."
+    ],
+    [
+     "M",
+     "{Great choice}.",
+     "탁월한 선택입니다."
+    ]
+   ],
+   "notes": [
+    "be looking for ~ : 사려는 물건을 {찾고 있다} — 매장에서 원하는 물건을 말할 때",
+    "be popular among ~ : ~ {사이에서} 인기 있다",
+    "How do you like them? : 두 배낭이 마음에 드는지 묻기 — 복수라서 them = {these two (backpacks)}",
+    "부정대명사 one : 앞에 나온 명사 {backpack}의 반복을 피하는 말 (the green one / the blue one)",
+    "비교급 + than : ‘~보다 더 {가벼운}’ / the lighter one = 둘 중 더 가벼운 것 = the green one"
+   ]
+  },
+  {
+   "id": "D4",
+   "label": "Listen & Talk 1 · B. Listen and Write",
+   "lines": [
+    [
+     "W",
+     "Hi, Luke. Is that a {new speaker}?",
+     "안녕, Luke. 저거 새 스피커니?"
+    ],
+    [
+     "M",
+     "Yes, I bought it {a few weeks ago}.",
+     "응, 몇 주 전에 샀어."
+    ],
+    [
+     "W",
+     "It {looks cool}. {How do you like it}?",
+     "멋있어 보여. 그거 어때?"
+    ],
+    [
+     "M",
+     "It’s {convenient}. I can {take it anywhere} and listen to music. The {sound quality} is good, too.",
+     "편리해. 나는 그걸 어디든지 가져가서 음악을 들을 수 있어. 음질도 좋아."
+    ],
+    [
+     "W",
+     "Great. {How long does the battery last}?",
+     "멋진데. 배터리는 얼마나 오래가니?"
+    ],
+    [
+     "M",
+     "{About 2 hours}. The battery {doesn’t last long}.",
+     "2시간 정도야. 배터리는 오래가지 않아."
+    ],
+    [
+     "W",
+     "{That’s too bad}.",
+     "그거 안됐다."
+    ],
+    [
+     "M",
+     "Yeah, but I’m {pretty happy with} it, anyway.",
+     "응, 하지만 어쨌든 나는 꽤 만족해."
+    ]
+   ],
+   "notes": [
+    "look + 형용사 : ‘~해 {보이다}’ — 부사(coolly)가 아니라 형용사 cool",
+    "How do you like it? : 새로 산 물건의 만족 여부 묻기 — it = {a new speaker}",
+    "병렬 구조 : 조동사 can 뒤에 동사원형 take와 {listen}이 and로 나란히 연결",
+    "last : 동사 ‘{지속되다}, 오래가다’ — How long does ~ last? 지속 시간 묻기",
+    "That’s too bad. : 상대의 아쉬운 사정에 {유감}을 나타내는 말 ‘그거 안됐다’",
+    "be happy with ~ : ~에 {만족하다} — 단점(배터리)이 있어도 전체적으로는 만족 / anyway ‘어쨌든’"
+   ]
+  },
+  {
+   "id": "D5",
+   "label": "Listen & Talk 1 · C. Match and Talk (Sample)",
+   "lines": [
+    [
+     "A",
+     "{How do you like} this dress?",
+     "너 이 원피스 어때?"
+    ],
+    [
+     "B",
+     "The {design} is {cool and interesting}.",
+     "디자인이 멋있고 흥미로워."
+    ]
+   ],
+   "notes": [
+    "How do you like this ~? : 물건에 대한 의견·{만족} 여부 묻기 = What do you think of ~?",
+    "대답 : 디자인·색깔 등 구체적인 부분에 대한 {의견}으로 답함 — 형용사 cool과 interesting을 and로 연결"
+   ]
+  },
+  {
+   "id": "D6",
+   "label": "Listen & Talk 2 · Get Ready",
+   "lines": [
+    [
+     "A",
+     "Clara, {are you okay}?",
+     "Clara, 너 괜찮니?"
+    ],
+    [
+     "B",
+     "Yeah, I {missed the school bus} again. I {should have gotten up} earlier.",
+     "응, 또 학교 버스를 놓쳤어. 내가 더 일찍 일어났어야 했어."
+    ]
+   ],
+   "notes": [
+    "again : 버스를 놓친 것이 처음이 아니라 ‘{또}’ 놓쳤다는 뜻",
+    "I should have + p.p. : 과거에 하지 않은 일을 {후회}하는 말 ‘~했어야 했는데’ (get – got – gotten)",
+    "earlier : early의 비교급 ‘{더 일찍}’ — 실제로는 늦게 일어났다는 뜻이 담김"
+   ]
+  },
+  {
+   "id": "D7",
+   "label": "Listen & Talk 2 · A. Listen and Choose 1",
+   "lines": [
+    [
+     "M",
+     "Oh, this coat is {too uncomfortable}.",
+     "아, 이 코트 너무 불편해."
+    ],
+    [
+     "W",
+     "Why? {What’s wrong with} it?",
+     "왜? 코트에 무슨 문제가 있니?"
+    ],
+    [
+     "M",
+     "It’s {too tight}.",
+     "너무 꽉 껴."
+    ],
+    [
+     "W",
+     "Didn’t you {try it on} {before buying} it?",
+     "사기 전에 입어 보지 않았어?"
+    ],
+    [
+     "M",
+     "No. It was {my size}, so I just bought it. I {should have tried it on}.",
+     "아니. 내 사이즈라서 그냥 샀어. 나는 그걸 입어 봤어야 했어."
+    ]
+   ],
+   "notes": [
+    "What’s wrong with ~? : 상대가 불만스러워할 때 무엇이 {문제}인지 묻는 말 — it = this coat",
+    "try on (구동사) : 목적어가 대명사이면 동사와 부사 {사이}에 (try it on ○ / try on it ✗)",
+    "before + 동명사 : 전치사 before 뒤에는 동명사 {buying}",
+    "부정의문문의 대답 : Didn’t you ~? → No = ‘응, {입어 보지 않았어}’ (우리말 대답과 반대)",
+    "I should have tried it on. : 입어 보지 않고 산 일에 대한 {후회}"
+   ]
+  },
+  {
+   "id": "D8",
+   "label": "Listen & Talk 2 · A. Listen and Choose 2",
+   "lines": [
+    [
+     "W",
+     "Hey, Eric. Camilla and I are going to {watch a movie}. {Do you want to join us}?",
+     "얘, Eric. Camilla랑 난 영화 보러 갈 거야. 우리랑 같이 갈래?"
+    ],
+    [
+     "M",
+     "{I’d love to, but I can’t}. I’ve {spent all of} my {allowance} for this week.",
+     "그러고 싶지만 그럴 수 없어. 이번 주 용돈을 다 써 버렸거든."
+    ],
+    [
+     "W",
+     "Didn’t you just get it {a few days ago}? {How did you spend it all}?",
+     "너 고작 며칠 전에 용돈을 받지 않았어? 어떻게 다 써 버린 거야?"
+    ],
+    [
+     "M",
+     "{I’m not sure}. I {should have kept track of} my spending.",
+     "잘 모르겠어. 나는 내 지출을 기록했어야 했어."
+    ]
+   ],
+   "notes": [
+    "Do you want to join us? : 함께 하자고 {제안[초대]}하는 말",
+    "I’d love to, but I can’t. : 마음은 있지만 제안을 공손하게 {거절}하는 말",
+    "현재완료 I’ve spent : 용돈을 이미 다 써서 지금 {남은 돈이 없음}을 나타냄 — get it의 it = my allowance",
+    "I’m not sure. : 확신이 없을 때 ‘잘 {모르겠어}’ = I have no idea.",
+    "I should have kept track of ~ : 지출을 {기록하지} 않은 것에 대한 후회 — keep track of ‘~을 기록하다, 파악하다’"
+   ]
+  },
+  {
+   "id": "D9",
+   "label": "Listen & Talk 2 · B. Listen and Write",
+   "lines": [
+    [
+     "M",
+     "Did you {get a new phone}, Jamie? It’s {just like mine}.",
+     "새 전화기 샀니, Jamie? 그거 내 것이랑 똑같아."
+    ],
+    [
+     "W",
+     "Yeah, I got it {last weekend} {on sale}.",
+     "응, 지난 주말에 할인하는 것을 샀어."
+    ],
+    [
+     "M",
+     "It was on sale? But it {has just been released}, {hasn’t it}?",
+     "그게 할인 중이었다고? 하지만 그거 막 출시됐잖아, 그렇지 않니?"
+    ],
+    [
+     "W",
+     "Right, but the store on {Green Street} is having a {year-end sale}.",
+     "맞아, 하지만 Green가에 있는 상점에서 연말 할인 판매를 하고 있어."
+    ],
+    [
+     "M",
+     "Oh, I bought mine {at full price}!",
+     "아, 나는 정가에 샀는데!"
+    ],
+    [
+     "W",
+     "Really? {That’s too bad}. They’re selling them at a {40 percent discount}.",
+     "정말? 안됐다. 거기서 40퍼센트 할인해서 팔고 있어."
+    ],
+    [
+     "M",
+     "I {should have checked the sales} {before buying mine}.",
+     "나는 내 것을 사기 전에 할인 판매를 확인했어야 했어."
+    ]
+   ],
+   "notes": [
+    "전치사 like : ‘~와 {같은}’ — just like mine = 내 것과 똑같은 (mine = my phone)",
+    "on sale : ‘{할인} 중인’ ↔ at full price ‘정가에’",
+    "현재완료 수동태 has been p.p. : 전화기가 ‘막 {출시되었다}’ (release ‘출시하다’)",
+    "부가의문문 : 앞 문장이 현재완료 긍정(has) → 부정 부가의문문 {hasn’t it}?로 사실 확인",
+    "I should have checked ~ : 할인 판매를 미리 {확인하지} 않고 정가에 산 것을 후회",
+    "before + 동명사 : 전치사 before 뒤 {buying} / mine = 남자의 전화기"
+   ]
+  },
+  {
+   "id": "D10",
+   "label": "Listen & Talk 2 · C. Talk and Play (Sample)",
+   "lines": [
+    [
+     "A",
+     "{What’s the problem}?",
+     "문제가 뭐야?"
+    ],
+    [
+     "B",
+     "Mike {should have brought} a camera.",
+     "Mike가 카메라를 가져왔어야 했어."
+    ]
+   ],
+   "notes": [
+    "What’s the problem? : 무엇이 {문제}인지 묻는 말 = What’s wrong?",
+    "주어 + should have + p.p. : 그 사람이 과거에 하지 않은 일에 대한 {아쉬움} — Mike는 카메라를 안 가져옴 (bring – brought – brought)"
+   ]
+  },
+  {
+   "id": "D11",
+   "label": "Communication · Tell Me What You Regret",
+   "lines": [
+    [
+     "M",
+     "Hi, Riley. {I heard that} you {bought a laptop online}. {How do you like it}?",
+     "안녕, Riley. 네가 온라인으로 노트북을 샀다고 들었어. 그거 어때?"
+    ],
+    [
+     "W",
+     "Oh, {I’m not happy with it}.",
+     "아, 별로 마음에 들지 않아."
+    ],
+    [
+     "M",
+     "Why? {What’s wrong}?",
+     "왜? 뭐가 문제야?"
+    ],
+    [
+     "W",
+     "It {makes too much noise} and {gets overheated}. I {should have read more reviews}.",
+     "소음이 너무 심하고 과열이 돼. 나는 후기를 더 많이 읽었어야 했어."
+    ],
+    [
+     "M",
+     "Oh, then you should {ask for your money back}.",
+     "오, 그러면 환불을 요청해 봐."
+    ],
+    [
+     "W",
+     "The online store {won’t give me back my money} because I’ve {used it for a week}.",
+     "내가 그걸 일주일 동안 사용했기 때문에 온라인 상점에서는 환불을 해 주지 않을 거야."
+    ],
+    [
+     "M",
+     "{How about calling} the online shop and {explaining your problem}?",
+     "온라인 상점에 전화해서 네 문제를 설명하는 게 어때?"
+    ],
+    [
+     "W",
+     "Yeah, {I think I should do that}.",
+     "응, 그래야 할 것 같아."
+    ]
+   ],
+   "notes": [
+    "I heard that ~ : 들어서 {알게 된} 소식을 꺼내는 말 (= I’ve heard that ~ · that 생략 가능)",
+    "How do you like it? : it = {a laptop} — 불만족이면 I’m not happy with it.으로 답함",
+    "병렬 구조 : 주어 It에 이어지는 단수 동사 makes와 {gets}가 and로 연결 / get overheated ‘과열되다’",
+    "I should have read ~ : 후기를 더 많이 {읽지 않은} 것에 대한 후회 (read – read – read)",
+    "접속사 because + 주어 + 동사 : 환불을 못 받는 {이유}를 이끎",
+    "현재완료(계속) I’ve used it for a week : 일주일 {동안} 써 왔음",
+    "How about + 동명사 ~? : ‘~하는 게 어때?’ {제안}하기 — calling과 explaining이 and로 병렬"
+   ]
+  },
+  {
+   "id": "D12",
+   "label": "Communication · STEP B. Role-Play (e.g.)",
+   "lines": [
+    [
+     "A",
+     "{I heard that} you {bought a bag online}. {How do you like it}?",
+     "네가 온라인으로 가방을 샀다고 들었어. 그거 어때?"
+    ],
+    [
+     "B",
+     "Oh, {I’m not happy with it}.",
+     "아, 별로 마음에 들지 않아."
+    ],
+    [
+     "A",
+     "Why? {What’s wrong}?",
+     "왜? 뭐가 문제야?"
+    ],
+    [
+     "B",
+     "It’s {too big for me}. I {should have checked the size} before buying it.",
+     "그게 나한테는 너무 커. 나는 그걸 사기 전에 크기를 확인했어야 했어."
+    ]
+   ],
+   "notes": [
+    "I heard that ~ : 들은 소식으로 대화를 {시작}하는 말",
+    "I’m not happy with ~ : ~이 마음에 {들지 않다} (불만족 표현)",
+    "too + 형용사 + for me : 나에게 {너무} 큰 — 불만의 이유 설명",
+    "I should have checked ~ before buying it : 사기 {전에} 크기를 확인하지 않은 것을 후회"
+   ]
+  }
+ ],
+ "expressions": [
+  [
+   "만족·불만족 묻기",
+   "How do you {like} ~?",
+   "~은 어때? (마음에 드니?)"
+  ],
+  [
+   "만족·불만족 묻기",
+   "Are you {satisfied} / {happy} with ~?",
+   "너는 ~에 만족하니?"
+  ],
+  [
+   "만족·불만족 묻기",
+   "Is this what you {wanted} / needed / had in mind?",
+   "이게 네가 원했던 거야?"
+  ],
+  [
+   "만족·불만족 묻기",
+   "What do you {think of} ~?",
+   "~에 대해 어떻게 생각하니?"
+  ],
+  [
+   "만족·불만족 답하기",
+   "I’m {happy with} it. / I’m {not happy with} it.",
+   "마음에 들어. / 마음에 들지 않아."
+  ],
+  [
+   "후회하는 일 말하기",
+   "I {should have} + 과거분사 ~.",
+   "나는 ~했어야 했는데 (하지 못했다)."
+  ],
+  [
+   "후회하는 일 말하기",
+   "I {ought to} have + 과거분사 ~.",
+   "나는 ~했어야만 했다."
+  ],
+  [
+   "후회하는 일 말하기",
+   "I (really) {regret} (that) ~. / I’m {sorry} (that) ~.",
+   "나는 ~을 (정말) 후회한다. / ~해서 유감이다."
+  ],
+  [
+   "후회하는 일 말하기",
+   "I had to ~, {but I didn’t}.",
+   "나는 ~했어야 했으나, 하지 않았다."
+  ],
+  [
+   "문제 묻기",
+   "What’s {wrong with} ~? / What’s the {problem}?",
+   "~에 무슨 문제가 있니? / 문제가 뭐야?"
+  ],
+  [
+   "유감 표현하기",
+   "That’s {too bad}.",
+   "그거 안됐다."
+  ],
+  [
+   "거절하기",
+   "I’d love to, {but I can’t}.",
+   "그러고 싶지만 그럴 수 없어."
+  ],
+  [
+   "도움 제안하기",
+   "Can I {help you} with anything? / Do you need any help?",
+   "무엇을 도와 드릴까요?"
+  ],
+  [
+   "제안하기",
+   "{How about} + 동명사 ~?",
+   "~하는 게 어때?"
+  ],
+  [
+   "물건 건네기",
+   "Here {it is}. / Here you are.",
+   "여기 있어요."
+  ]
+ ],
+ "stage3": [
+  [
+   "D2",
+   "The design is nice, but I don’t think the color suits me.",
+   "디자인은 좋은데 색깔이 저한테 안 어울리는 것 같아요."
+  ],
+  [
+   "D3",
+   "The green one is lighter than the blue one.",
+   "초록색 배낭이 파란색 배낭보다 더 가볍네요."
+  ],
+  [
+   "D4",
+   "I can take it anywhere and listen to music.",
+   "나는 그걸 어디든지 가져가서 음악을 들을 수 있어."
+  ],
+  [
+   "D7",
+   "Didn’t you try it on before buying it?",
+   "사기 전에 입어 보지 않았어?"
+  ],
+  [
+   "D8",
+   "I should have kept track of my spending.",
+   "나는 내 지출을 기록했어야 했어."
+  ],
+  [
+   "D9",
+   "But it has just been released, hasn’t it?",
+   "하지만 그거 막 출시됐잖아, 그렇지 않니?"
+  ],
+  [
+   "D9",
+   "I should have checked the sales before buying mine.",
+   "나는 내 것을 사기 전에 할인 판매를 확인했어야 했어."
+  ],
+  [
+   "D11",
+   "It makes too much noise and gets overheated.",
+   "소음이 너무 심하고 과열이 돼."
+  ],
+  [
+   "D11",
+   "The online store won’t give me back my money because I’ve used it for a week.",
+   "내가 그걸 일주일 동안 사용했기 때문에 온라인 상점에서는 환불을 해 주지 않을 거야."
+  ],
+  [
+   "D11",
+   "How about calling the online shop and explaining your problem?",
+   "온라인 상점에 전화해서 네 문제를 설명하는 게 어때?"
+  ]
+ ],
+ "stage4": [
+  "D2",
+  "D4",
+  "D7",
+  "D9",
+  "D11"
+ ],
+ "stage5": [
+  [
+   "D1",
+   "A asks for B’s opinion about B’s pants.",
+   "T",
+   "A 1: How do you like your pants?",
+   "표현 의도"
+  ],
+  [
+   "D1",
+   "B is not satisfied with the pants.",
+   "F",
+   "B 1: I love them.",
+   "반대 의미"
+  ],
+  [
+   "D1",
+   "B finds the pants comfortable to wear.",
+   "T",
+   "B 1: They are very comfortable.",
+   "바꿔 말하기"
+  ],
+  [
+   "D1",
+   "It is A who is wearing the pants.",
+   "F",
+   "A 1: your pants (바지는 B의 것)",
+   "화자 바꾸기"
+  ],
+  [
+   "D1",
+   "B likes the pants because they were cheap.",
+   "F",
+   "B 1: 좋아하는 이유는 편안함 (가격 언급 없음)",
+   "이유 바꾸기·범위 넘기기"
+  ],
+  [
+   "D1",
+   "In B’s answer, ’them’ refers to B’s pants.",
+   "T",
+   "A 1 your pants → B 1 I love them",
+   "지칭"
+  ],
+  [
+   "D2",
+   "The woman wants to try on a cap with stripes.",
+   "F",
+   "W 1: that cap with stars",
+   "세부 바꾸기(stars ↔ stripes)"
+  ],
+  [
+   "D2",
+   "The man works at the shop and offers to help the woman.",
+   "T",
+   "M 1: Hi, can I help you with anything?",
+   "추론(관계)"
+  ],
+  [
+   "D2",
+   "The woman likes both the design and the color of the cap.",
+   "F",
+   "W 2: The design is nice, but I don’t think the color suits me.",
+   "부분 일치"
+  ],
+  [
+   "D2",
+   "The woman asks if the cap comes in another color.",
+   "T",
+   "W 2: Do you have it in black?",
+   "바꿔 말하기"
+  ],
+  [
+   "D2",
+   "The black cap is displayed right next to the cap with stars.",
+   "F",
+   "M 3: I’ll get one from the back.",
+   "장소 바꾸기·범위 넘기기"
+  ],
+  [
+   "D2",
+   "In the end, the woman decides to buy the black cap.",
+   "T",
+   "W 2 in black → M 3 Here it is. → W 3 I’ll take it.",
+   "두 대사 종합 + 지칭(it)"
+  ],
+  [
+   "D2",
+   "The man thinks the color of the cap doesn’t suit the woman.",
+   "F",
+   "W 2: I don’t think the color suits me. (여자의 생각)",
+   "화자 바꾸기"
+  ],
+  [
+   "D3",
+   "The woman is looking for a backpack to use at school.",
+   "F",
+   "W 1: a backpack for hiking",
+   "세부 바꾸기"
+  ],
+  [
+   "D3",
+   "The man shows the woman two backpacks that many hikers like.",
+   "T",
+   "M 2: These two are popular among hikers.",
+   "바꿔 말하기"
+  ],
+  [
+   "D3",
+   "The blue backpack is heavier than the green one.",
+   "T",
+   "W 2: The green one is lighter than the blue one.",
+   "비교 뒤집어 말하기"
+  ],
+  [
+   "D3",
+   "The woman chooses the green backpack because of its color.",
+   "F",
+   "W 2: I’ll take the lighter one. (이유는 무게)",
+   "이유 바꾸기"
+  ],
+  [
+   "D3",
+   "The woman decides to buy both backpacks.",
+   "F",
+   "W 2: I’ll take the lighter one. (하나만)",
+   "수량 바꾸기"
+  ],
+  [
+   "D3",
+   "The man thinks the woman made a good decision.",
+   "T",
+   "M 3: Great choice.",
+   "표현 의도"
+  ],
+  [
+   "D3",
+   "The woman asks the man how he likes the backpacks.",
+   "F",
+   "M 2: How do you like them? (묻는 사람은 남자)",
+   "화자 바꾸기"
+  ],
+  [
+   "D4",
+   "Luke bought his speaker a few days ago.",
+   "F",
+   "M 1: a few weeks ago",
+   "시간 바꾸기"
+  ],
+  [
+   "D4",
+   "The woman thinks Luke’s speaker looks nice.",
+   "T",
+   "W 2: It looks cool.",
+   "바꿔 말하기"
+  ],
+  [
+   "D4",
+   "Luke can carry his speaker anywhere to listen to music.",
+   "T",
+   "M 2: I can take it anywhere and listen to music.",
+   "바꿔 말하기"
+  ],
+  [
+   "D4",
+   "Luke is disappointed with the sound quality of the speaker.",
+   "F",
+   "M 2: The sound quality is good, too.",
+   "반대 의미"
+  ],
+  [
+   "D4",
+   "The speaker’s battery runs for only about two hours.",
+   "T",
+   "M 3: About 2 hours. The battery doesn’t last long.",
+   "숫자 + 바꿔 말하기"
+  ],
+  [
+   "D4",
+   "Luke says the battery is the best thing about his speaker.",
+   "F",
+   "M 3: The battery doesn’t last long.",
+   "반대 의미"
+  ],
+  [
+   "D4",
+   "The woman feels sorry when she hears about the short battery life.",
+   "T",
+   "M 3 doesn’t last long → W 4 That’s too bad.",
+   "두 대사 종합 + 표현 의도"
+  ],
+  [
+   "D4",
+   "Because of the battery, Luke is not satisfied with the speaker at all.",
+   "F",
+   "M 4: but I’m pretty happy with it, anyway.",
+   "부분 일치 + 단정어(at all)"
+  ],
+  [
+   "D5",
+   "A wants to know what B thinks of the dress.",
+   "T",
+   "A 1: How do you like this dress?",
+   "표현 의도"
+  ],
+  [
+   "D5",
+   "B says the dress is boring.",
+   "F",
+   "B 1: cool and interesting",
+   "반대 의미"
+  ],
+  [
+   "D5",
+   "B talks about the color of the dress.",
+   "F",
+   "B 1: The design is ~ (색깔 언급 없음)",
+   "세부 바꾸기(design ↔ color)"
+  ],
+  [
+   "D5",
+   "B seems to like the design of the dress.",
+   "T",
+   "B 1: The design is cool and interesting.",
+   "추론"
+  ],
+  [
+   "D5",
+   "It is B who asks about the dress.",
+   "F",
+   "A 1 (묻는 사람은 A)",
+   "화자 바꾸기"
+  ],
+  [
+   "D5",
+   "B uses two adjectives to describe the design.",
+   "T",
+   "B 1: cool and interesting",
+   "바꿔 말하기"
+  ],
+  [
+   "D6",
+   "Clara asks A whether A is okay.",
+   "F",
+   "A 1: Clara, are you okay? (묻는 사람은 A)",
+   "화자 바꾸기"
+  ],
+  [
+   "D6",
+   "This is the first time Clara has missed the school bus.",
+   "F",
+   "B 1: I missed the school bus again.",
+   "반대 의미"
+  ],
+  [
+   "D6",
+   "Clara has missed the school bus before.",
+   "T",
+   "B 1: again",
+   "바꿔 말하기"
+  ],
+  [
+   "D6",
+   "Clara regrets getting up late.",
+   "T",
+   "B 1: I should have gotten up earlier.",
+   "표현 의도(후회)"
+  ],
+  [
+   "D6",
+   "Clara got up early, but she still missed the bus.",
+   "F",
+   "B 1: should have gotten up earlier → 실제로는 늦게 일어남",
+   "반대 의미(should have p.p.)"
+  ],
+  [
+   "D6",
+   "A seems worried about Clara.",
+   "T",
+   "A 1: Clara, are you okay?",
+   "추론(감정)"
+  ],
+  [
+   "D6",
+   "Clara missed the bus because it left earlier than usual.",
+   "F",
+   "B 1: 원인은 늦게 일어난 것 (버스 출발 시각 언급 없음)",
+   "이유 바꾸기"
+  ],
+  [
+   "D7",
+   "The man thinks his new coat is very comfortable.",
+   "F",
+   "M 1: this coat is too uncomfortable",
+   "반대 의미"
+  ],
+  [
+   "D7",
+   "The problem with the coat is that it is too big.",
+   "F",
+   "M 2: It’s too tight.",
+   "세부 바꾸기"
+  ],
+  [
+   "D7",
+   "The man didn’t try on the coat before he bought it.",
+   "T",
+   "W 2 Didn’t you try it on ~? → M 3 No.",
+   "두 대사 종합(부정의문문 대답)"
+  ],
+  [
+   "D7",
+   "The man bought the coat without trying it on because it was his size.",
+   "T",
+   "M 3: It was my size, so I just bought it.",
+   "원인·결과 바꿔 말하기"
+  ],
+  [
+   "D7",
+   "The woman regrets not trying on the coat.",
+   "F",
+   "M 3: I should have tried it on. (후회하는 사람은 남자)",
+   "화자 바꾸기"
+  ],
+  [
+   "D7",
+   "The man wishes he had put the coat on before buying it.",
+   "T",
+   "M 3: I should have tried it on.",
+   "바꿔 말하기"
+  ],
+  [
+   "D7",
+   "The woman wants to know what is wrong with the man’s coat.",
+   "T",
+   "W 1: What’s wrong with it?",
+   "표현 의도"
+  ],
+  [
+   "D7",
+   "The man decides to return the coat to the store.",
+   "F",
+   "반품 언급 없음",
+   "범위 넘기기"
+  ],
+  [
+   "D8",
+   "The woman is going to see a movie with Camilla.",
+   "T",
+   "W 1: Camilla and I are going to watch a movie.",
+   "바꿔 말하기"
+  ],
+  [
+   "D8",
+   "Eric accepts the woman’s invitation.",
+   "F",
+   "M 1: I’d love to, but I can’t.",
+   "표현 의도(거절)"
+  ],
+  [
+   "D8",
+   "Eric can’t go because he has already used up his allowance for this week.",
+   "T",
+   "M 1: I can’t. I’ve spent all of my allowance for this week.",
+   "두 문장 종합"
+  ],
+  [
+   "D8",
+   "Eric got his allowance a few weeks ago.",
+   "F",
+   "W 2: Didn’t you just get it a few days ago?",
+   "시간 바꾸기"
+  ],
+  [
+   "D8",
+   "Eric knows exactly how he spent all his money.",
+   "F",
+   "M 2: I’m not sure.",
+   "반대 의미"
+  ],
+  [
+   "D8",
+   "Eric regrets not recording what he spent his money on.",
+   "T",
+   "M 2: I should have kept track of my spending.",
+   "바꿔 말하기"
+  ],
+  [
+   "D8",
+   "The woman says she should have kept track of her spending.",
+   "F",
+   "M 2 (후회하는 사람은 Eric)",
+   "화자 바꾸기"
+  ],
+  [
+   "D9",
+   "Jamie’s new phone is a different model from the man’s.",
+   "F",
+   "M 1: It’s just like mine.",
+   "반대 의미"
+  ],
+  [
+   "D9",
+   "Jamie bought her phone at a discount last weekend.",
+   "T",
+   "W 1: I got it last weekend on sale.",
+   "바꿔 말하기"
+  ],
+  [
+   "D9",
+   "The phone came out a long time ago.",
+   "F",
+   "M 2: it has just been released",
+   "반대 의미"
+  ],
+  [
+   "D9",
+   "The store on Green Street is holding a sale at the end of the year.",
+   "T",
+   "W 2: the store on Green Street is having a year-end sale",
+   "바꿔 말하기"
+  ],
+  [
+   "D9",
+   "The man paid less for his phone than Jamie did.",
+   "F",
+   "M 3: I bought mine at full price!",
+   "비교 뒤집기"
+  ],
+  [
+   "D9",
+   "The store is selling the phones at 14 percent off.",
+   "F",
+   "W 3: at a 40 percent discount",
+   "숫자 바꾸기"
+  ],
+  [
+   "D9",
+   "Jamie feels sorry that the man paid the full price.",
+   "T",
+   "M 3 full price → W 3 Really? That’s too bad.",
+   "두 대사 종합 + 표현 의도"
+  ],
+  [
+   "D9",
+   "The man regrets not checking the sales before buying his phone.",
+   "T",
+   "M 4: I should have checked the sales before buying mine.",
+   "바꿔 말하기(후회)"
+  ],
+  [
+   "D10",
+   "A asks B what the problem is.",
+   "T",
+   "A 1: What’s the problem?",
+   "표현 의도"
+  ],
+  [
+   "D10",
+   "Mike brought a camera with him.",
+   "F",
+   "B 1: Mike should have brought a camera. (가져오지 않음)",
+   "반대 의미(should have p.p.)"
+  ],
+  [
+   "D10",
+   "B thinks Mike needed a camera.",
+   "T",
+   "B 1: should have brought a camera",
+   "추론"
+  ],
+  [
+   "D10",
+   "B regrets that B didn’t bring a camera.",
+   "F",
+   "B 1: Mike should have ~ (가져왔어야 할 사람은 Mike)",
+   "행위자 바꾸기"
+  ],
+  [
+   "D10",
+   "Mike should have bought a new camera.",
+   "F",
+   "B 1: brought (가져오다) ≠ bought (사다)",
+   "세부 바꾸기(철자 함정)"
+  ],
+  [
+   "D10",
+   "The problem B mentions is that Mike didn’t bring a camera.",
+   "T",
+   "A 1 What’s the problem? → B 1",
+   "두 대사 종합"
+  ],
+  [
+   "D11",
+   "Riley bought her laptop at a store near her house.",
+   "F",
+   "M 1: you bought a laptop online",
+   "세부 바꾸기"
+  ],
+  [
+   "D11",
+   "Riley’s laptop is too noisy and gets too hot.",
+   "T",
+   "W 2: It makes too much noise and gets overheated.",
+   "바꿔 말하기"
+  ],
+  [
+   "D11",
+   "Riley regrets that she didn’t read more reviews before buying it.",
+   "T",
+   "W 2: I should have read more reviews.",
+   "바꿔 말하기(후회)"
+  ],
+  [
+   "D11",
+   "The man advises Riley to ask for a refund.",
+   "T",
+   "M 3: you should ask for your money back",
+   "바꿔 말하기"
+  ],
+  [
+   "D11",
+   "The online store will give Riley her money back.",
+   "F",
+   "W 3: The online store won’t give me back my money",
+   "반대 의미"
+  ],
+  [
+   "D11",
+   "Riley has used the laptop for a month.",
+   "F",
+   "W 3: I’ve used it for a week.",
+   "시간 바꾸기"
+  ],
+  [
+   "D11",
+   "It is Riley who suggests calling the online shop.",
+   "F",
+   "M 4: How about calling ~? (제안한 사람은 남자)",
+   "화자 바꾸기"
+  ],
+  [
+   "D11",
+   "Riley agrees to call the shop and explain her problem.",
+   "T",
+   "M 4 How about calling ~? → W 4 I think I should do that.",
+   "두 대사 종합 + 지칭(that)"
+  ],
+  [
+   "D12",
+   "A has heard that B bought a bag online.",
+   "T",
+   "A 1: I heard that you bought a bag online.",
+   "바꿔 말하기"
+  ],
+  [
+   "D12",
+   "B is pleased with the bag.",
+   "F",
+   "B 1: I’m not happy with it.",
+   "반대 의미"
+  ],
+  [
+   "D12",
+   "The bag is too small for B.",
+   "F",
+   "B 2: It’s too big for me.",
+   "반대 의미"
+  ],
+  [
+   "D12",
+   "B didn’t check the size before buying the bag.",
+   "T",
+   "B 2: I should have checked the size before buying it.",
+   "추론(should have p.p.)"
+  ],
+  [
+   "D12",
+   "A is the one who bought the bag online.",
+   "F",
+   "A 1: you bought a bag online (산 사람은 B)",
+   "화자 바꾸기"
+  ],
+  [
+   "D12",
+   "A asks what’s wrong after B says B is not happy with the bag.",
+   "T",
+   "B 1 → A 2 Why? What’s wrong?",
+   "순서·두 대사 종합"
+  ]
+ ],
+ "stage5b": [
+  {
+   "d": "D1",
+   "kind": "true",
+   "q": "대화의 내용과 일치하는 것을 모두 고르시오.",
+   "opts": [
+    [
+     "A gave the pants to B as a present.",
+     false,
+     "누가 사 줬는지 언급 없음"
+    ],
+    [
+     "B likes the pants very much.",
+     true,
+     "B 1: I love them."
+    ],
+    [
+     "B thinks the pants are uncomfortable.",
+     false,
+     "B 1: very comfortable"
+    ],
+    [
+     "A asks for B’s opinion about the pants.",
+     true,
+     "A 1"
+    ],
+    [
+     "The pants are too expensive for B.",
+     false,
+     "가격 언급 없음"
+    ]
+   ]
+  },
+  {
+   "d": "D2",
+   "kind": "cannot",
+   "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.",
+   "opts": [
+    [
+     "How much is the cap with stars?",
+     false,
+     "가격 언급 없음"
+    ],
+    [
+     "What does the woman think of the cap’s design?",
+     true,
+     "W 2: The design is nice"
+    ],
+    [
+     "What color does the woman want?",
+     true,
+     "W 2: black"
+    ],
+    [
+     "Where will the man get the black cap from?",
+     true,
+     "M 3: from the back"
+    ],
+    [
+     "What color is the cap with stars?",
+     false,
+     "별 모자의 색깔은 언급 없음"
+    ]
+   ]
+  },
+  {
+   "d": "D3",
+   "kind": "count",
+   "q": "대화의 내용과 일치하는 것의 개수는?",
+   "opts": [
+    [
+     "The man works at Kelly’s Sporting Goods Store.",
+     true,
+     "M 1: Welcome to ~"
+    ],
+    [
+     "The woman needs a backpack for hiking.",
+     true,
+     "W 1"
+    ],
+    [
+     "The man shows the woman three backpacks.",
+     false,
+     "M 2: These two"
+    ],
+    [
+     "The green backpack is lighter than the blue one.",
+     true,
+     "W 2"
+    ],
+    [
+     "The woman takes the blue backpack.",
+     false,
+     "W 2: the lighter one = green"
+    ]
+   ]
+  },
+  {
+   "d": "D4",
+   "kind": "false",
+   "q": "대화의 내용과 일치하지 않는 것을 모두 고르시오.",
+   "opts": [
+    [
+     "Luke bought the speaker a few weeks ago.",
+     true,
+     "M 1"
+    ],
+    [
+     "Luke can’t take the speaker outside.",
+     false,
+     "M 2: I can take it anywhere"
+    ],
+    [
+     "The sound quality of the speaker is poor.",
+     false,
+     "M 2: The sound quality is good"
+    ],
+    [
+     "The battery lasts about 2 hours.",
+     true,
+     "M 3"
+    ],
+    [
+     "Luke is going to return the speaker.",
+     false,
+     "M 4: I’m pretty happy with it (반품 언급 없음)"
+    ]
+   ]
+  },
+  {
+   "d": "D5",
+   "kind": "can",
+   "q": "대화를 읽고 대답할 수 있는 질문을 모두 고르시오.",
+   "opts": [
+    [
+     "What does A ask B about?",
+     true,
+     "A 1: this dress"
+    ],
+    [
+     "How much is the dress?",
+     false,
+     "가격 언급 없음"
+    ],
+    [
+     "What does B think of the design?",
+     true,
+     "B 1: cool and interesting"
+    ],
+    [
+     "Where did A buy the dress?",
+     false,
+     "구입 장소 언급 없음"
+    ],
+    [
+     "What color is the dress?",
+     false,
+     "색깔 언급 없음"
+    ]
+   ]
+  },
+  {
+   "d": "D6",
+   "kind": "cannot",
+   "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.",
+   "opts": [
+    [
+     "What time did Clara get up?",
+     false,
+     "시각 언급 없음"
+    ],
+    [
+     "What did Clara miss?",
+     true,
+     "B 1: the school bus"
+    ],
+    [
+     "Has Clara missed the school bus before?",
+     true,
+     "B 1: again"
+    ],
+    [
+     "How will Clara get to school today?",
+     false,
+     "등교 방법 언급 없음"
+    ],
+    [
+     "What does Clara regret?",
+     true,
+     "B 1: not getting up earlier"
+    ]
+   ]
+  },
+  {
+   "d": "D7",
+   "kind": "true",
+   "q": "대화의 내용과 일치하는 것을 모두 고르시오.",
+   "opts": [
+    [
+     "The coat is too tight for the man.",
+     true,
+     "M 2"
+    ],
+    [
+     "The man tried on the coat at the store.",
+     false,
+     "W 2 → M 3: No."
+    ],
+    [
+     "The woman bought the coat for the man.",
+     false,
+     "M 3: I just bought it. (남자가 삼)"
+    ],
+    [
+     "The man bought the coat because it was his size.",
+     true,
+     "M 3"
+    ],
+    [
+     "The man regrets buying the coat without trying it on.",
+     true,
+     "M 3: I should have tried it on."
+    ]
+   ]
+  },
+  {
+   "d": "D8",
+   "kind": "count",
+   "q": "대화의 내용과 일치하는 것의 개수는?",
+   "opts": [
+    [
+     "Camilla invites Eric to the movie.",
+     false,
+     "W 1 (초대한 사람은 여자)"
+    ],
+    [
+     "Eric has some money left for this week.",
+     false,
+     "M 1: I’ve spent all of my allowance"
+    ],
+    [
+     "Eric got his allowance a few days ago.",
+     true,
+     "W 2"
+    ],
+    [
+     "Eric knows how he spent all his allowance.",
+     false,
+     "M 2: I’m not sure."
+    ],
+    [
+     "Eric thinks he should have kept track of his spending.",
+     true,
+     "M 2"
+    ]
+   ]
+  },
+  {
+   "d": "D9",
+   "kind": "false",
+   "q": "대화의 내용과 일치하지 않는 것을 모두 고르시오.",
+   "opts": [
+    [
+     "Jamie’s phone looks just like the man’s.",
+     true,
+     "M 1: It’s just like mine."
+    ],
+    [
+     "Jamie bought her phone at full price.",
+     false,
+     "W 1: on sale"
+    ],
+    [
+     "The store on Green Street is having a year-end sale.",
+     true,
+     "W 2"
+    ],
+    [
+     "The phone was released a long time ago.",
+     false,
+     "M 2: has just been released"
+    ],
+    [
+     "The man bought his phone at a 40 percent discount.",
+     false,
+     "M 3: at full price"
+    ]
+   ]
+  },
+  {
+   "d": "D10",
+   "kind": "can",
+   "q": "대화를 읽고 대답할 수 있는 질문을 모두 고르시오.",
+   "opts": [
+    [
+     "What does A ask B?",
+     true,
+     "A 1: What the problem is"
+    ],
+    [
+     "What should Mike have brought?",
+     true,
+     "B 1: a camera"
+    ],
+    [
+     "Where is Mike now?",
+     false,
+     "장소 언급 없음"
+    ],
+    [
+     "Why does Mike need a camera?",
+     false,
+     "이유 언급 없음"
+    ],
+    [
+     "Who forgot to bring something?",
+     true,
+     "B 1: Mike"
+    ]
+   ]
+  },
+  {
+   "d": "D11",
+   "kind": "cannot",
+   "q": "대화를 읽고 대답할 수 없는 질문을 모두 고르시오.",
+   "opts": [
+    [
+     "Where did Riley buy her laptop?",
+     true,
+     "M 1: online"
+    ],
+    [
+     "How much did Riley pay for her laptop?",
+     false,
+     "가격 언급 없음"
+    ],
+    [
+     "What problems does the laptop have?",
+     true,
+     "W 2: too much noise, overheated"
+    ],
+    [
+     "What should Riley have done?",
+     true,
+     "W 2: read more reviews"
+    ],
+    [
+     "How long has Riley used the laptop?",
+     true,
+     "W 3: for a week"
+    ]
+   ]
+  },
+  {
+   "d": "D12",
+   "kind": "count",
+   "q": "대화의 내용과 일치하는 것의 개수는?",
+   "opts": [
+    [
+     "B bought the bag online.",
+     true,
+     "A 1"
+    ],
+    [
+     "B is happy with the bag.",
+     false,
+     "B 1: I’m not happy with it."
+    ],
+    [
+     "The bag is too big for B.",
+     true,
+     "B 2"
+    ],
+    [
+     "B regrets not checking the size.",
+     true,
+     "B 2: I should have checked the size"
+    ],
+    [
+     "A asks what’s wrong with the bag.",
+     true,
+     "A 2: What’s wrong?"
+    ]
+   ]
+  }
+ ],
+ "stage6": [
+  {
+   "d": "D1",
+   "ans": "Where did B buy the pants?",
+   "trap": "범위 넘기기(구입 장소)",
+   "why": "바지가 마음에 든다는 것은 나오지만 어디서 샀는지는 언급되지 않음",
+   "ok": [
+    [
+     "What does A want to know about B’s pants?",
+     "How B likes them.",
+     "A 1"
+    ],
+    [
+     "How does B feel about the pants?",
+     "B loves them.",
+     "B 1"
+    ],
+    [
+     "Why does B like the pants?",
+     "Because they are very comfortable.",
+     "B 1"
+    ],
+    [
+     "What does ’them’ refer to in B’s answer?",
+     "B’s pants.",
+     "A 1 + B 1"
+    ]
+   ]
+  },
+  {
+   "d": "D2",
+   "ans": "How much does the black cap cost?",
+   "trap": "속성 바꾸기(색깔 → 가격)",
+   "why": "검은색 모자를 산다는 것은 나오지만 가격은 언급되지 않음",
+   "ok": [
+    [
+     "What does the woman want to do with the cap with stars?",
+     "She wants to try it on.",
+     "W 1"
+    ],
+    [
+     "Why doesn’t the woman take the cap with stars?",
+     "She doesn’t think its color suits her.",
+     "W 2"
+    ],
+    [
+     "Where does the man get the black cap from?",
+     "From the back.",
+     "M 3"
+    ],
+    [
+     "Which cap does the woman finally buy?",
+     "The black one.",
+     "W 2 + M 3 + W 3"
+    ]
+   ]
+  },
+  {
+   "d": "D3",
+   "ans": "Why are the two backpacks popular among hikers?",
+   "trap": "이유↔결과 바꾸기",
+   "why": "두 배낭이 인기 있다는 것은 나오지만 왜 인기 있는지는 언급되지 않음",
+   "ok": [
+    [
+     "Where does this conversation take place?",
+     "At Kelly’s Sporting Goods Store.",
+     "M 1"
+    ],
+    [
+     "What is the woman going to use the backpack for?",
+     "For hiking.",
+     "W 1"
+    ],
+    [
+     "Which backpack is heavier?",
+     "The blue one.",
+     "W 2"
+    ],
+    [
+     "Which backpack does the woman buy?",
+     "The green one.",
+     "W 2"
+    ]
+   ]
+  },
+  {
+   "d": "D4",
+   "ans": "Where did Luke buy his new speaker?",
+   "trap": "범위 넘기기(구입 장소)",
+   "why": "몇 주 전에 샀다는 것은 나오지만 어디서 샀는지는 언급되지 않음",
+   "ok": [
+    [
+     "When did Luke buy the speaker?",
+     "A few weeks ago.",
+     "M 1"
+    ],
+    [
+     "What does Luke like about the speaker?",
+     "It’s convenient to carry, and the sound quality is good.",
+     "M 2"
+    ],
+    [
+     "What is the weak point of the speaker?",
+     "Its battery doesn’t last long.",
+     "M 3"
+    ],
+    [
+     "Why does the woman say ’That’s too bad’?",
+     "Because the battery lasts only about 2 hours.",
+     "M 3 + W 4"
+    ]
+   ]
+  },
+  {
+   "d": "D5",
+   "ans": "What does B think of the color of the dress?",
+   "trap": "속성 바꾸기(디자인 → 색깔)",
+   "why": "디자인에 대한 의견은 나오지만 색깔에 대한 의견은 언급되지 않음",
+   "ok": [
+    [
+     "What is A asking about?",
+     "This dress.",
+     "A 1"
+    ],
+    [
+     "Which part of the dress does B talk about?",
+     "The design.",
+     "B 1"
+    ],
+    [
+     "How does B describe the design?",
+     "Cool and interesting.",
+     "B 1"
+    ],
+    [
+     "Does B seem to like the dress?",
+     "Yes. B thinks its design is cool and interesting.",
+     "A 1 + B 1"
+    ]
+   ]
+  },
+  {
+   "d": "D6",
+   "ans": "What will Clara do tomorrow to catch the bus?",
+   "trap": "시제 바꾸기(과거 후회 → 미래 계획)",
+   "why": "더 일찍 일어났어야 했다는 후회는 나오지만 앞으로 어떻게 할지는 언급되지 않음",
+   "ok": [
+    [
+     "What happened to Clara?",
+     "She missed the school bus.",
+     "B 1"
+    ],
+    [
+     "Is this the first time Clara missed the bus?",
+     "No, she missed it again.",
+     "B 1"
+    ],
+    [
+     "What does Clara regret?",
+     "Not getting up earlier.",
+     "B 1"
+    ],
+    [
+     "Who seems worried about Clara?",
+     "A.",
+     "A 1"
+    ]
+   ]
+  },
+  {
+   "d": "D7",
+   "ans": "How much did the man pay for the coat?",
+   "trap": "속성 바꾸기(사이즈 → 가격)",
+   "why": "자기 사이즈라서 샀다는 것은 나오지만 가격은 언급되지 않음",
+   "ok": [
+    [
+     "What’s wrong with the man’s coat?",
+     "It’s too tight.",
+     "M 2"
+    ],
+    [
+     "Did the man try the coat on before buying it?",
+     "No, he didn’t.",
+     "W 2 + M 3"
+    ],
+    [
+     "Why did the man buy the coat without trying it on?",
+     "Because it was his size.",
+     "M 3"
+    ],
+    [
+     "What does the man regret?",
+     "Not trying the coat on.",
+     "M 3"
+    ]
+   ]
+  },
+  {
+   "d": "D8",
+   "ans": "What movie are Camilla and the woman going to watch?",
+   "trap": "범위 넘기기(영화 제목·종류)",
+   "why": "영화를 보러 간다는 것은 나오지만 어떤 영화인지는 언급되지 않음",
+   "ok": [
+    [
+     "What does the woman ask Eric to do?",
+     "To watch a movie with her and Camilla.",
+     "W 1"
+    ],
+    [
+     "Why can’t Eric join them?",
+     "He has spent all of his allowance for this week.",
+     "M 1"
+    ],
+    [
+     "When did Eric get his allowance?",
+     "A few days ago.",
+     "W 2"
+    ],
+    [
+     "What should Eric have done?",
+     "He should have kept track of his spending.",
+     "M 2"
+    ]
+   ]
+  },
+  {
+   "d": "D9",
+   "ans": "When did the man buy his phone?",
+   "trap": "화자 바꾸기(Jamie → 남자)",
+   "why": "Jamie가 지난 주말에 산 것은 나오지만 남자가 언제 샀는지는 언급되지 않음",
+   "ok": [
+    [
+     "When did Jamie get her new phone?",
+     "Last weekend.",
+     "W 1"
+    ],
+    [
+     "Why was Jamie able to buy the phone on sale?",
+     "The store on Green Street is having a year-end sale.",
+     "W 2"
+    ],
+    [
+     "How big is the discount at the store?",
+     "40 percent.",
+     "W 3"
+    ],
+    [
+     "Why does the man regret buying his phone?",
+     "He paid full price instead of getting the 40 percent discount.",
+     "M 3 + W 3 + M 4"
+    ]
+   ]
+  },
+  {
+   "d": "D10",
+   "ans": "Why didn’t Mike bring a camera?",
+   "trap": "이유↔결과 바꾸기",
+   "why": "Mike가 카메라를 가져오지 않았다는 것은 나오지만 그 이유는 언급되지 않음",
+   "ok": [
+    [
+     "What does A ask about?",
+     "What the problem is.",
+     "A 1"
+    ],
+    [
+     "Who should have brought something?",
+     "Mike.",
+     "B 1"
+    ],
+    [
+     "What did Mike fail to bring?",
+     "A camera.",
+     "B 1"
+    ],
+    [
+     "What is the problem B mentions?",
+     "Mike didn’t bring a camera.",
+     "A 1 + B 1"
+    ]
+   ]
+  },
+  {
+   "d": "D11",
+   "ans": "How many reviews did Riley read before buying the laptop?",
+   "trap": "속성 바꾸기(후회 내용 → 수량)",
+   "why": "후기를 더 읽었어야 했다는 것은 나오지만 몇 개를 읽었는지는 언급되지 않음",
+   "ok": [
+    [
+     "How did Riley buy her laptop?",
+     "Online.",
+     "M 1"
+    ],
+    [
+     "What is wrong with Riley’s laptop?",
+     "It makes too much noise and gets overheated.",
+     "W 2"
+    ],
+    [
+     "Why won’t the online store give Riley her money back?",
+     "Because she has used it for a week.",
+     "W 3"
+    ],
+    [
+     "What does the man suggest after hearing the store won’t give a refund?",
+     "Calling the online shop and explaining her problem.",
+     "W 3 + M 4"
+    ]
+   ]
+  },
+  {
+   "d": "D12",
+   "ans": "What does A think of the bag?",
+   "trap": "화자 바꾸기(B → A)",
+   "why": "B의 불만은 나오지만 A가 그 가방을 어떻게 생각하는지는 언급되지 않음",
+   "ok": [
+    [
+     "Where did B buy the bag?",
+     "Online.",
+     "A 1"
+    ],
+    [
+     "Is B satisfied with the bag?",
+     "No, B isn’t.",
+     "B 1"
+    ],
+    [
+     "What is the problem with the bag?",
+     "It’s too big for B.",
+     "B 2"
+    ],
+    [
+     "What should B have done before buying the bag?",
+     "B should have checked the size.",
+     "B 2"
+    ]
+   ]
+  }
+ ]
+}

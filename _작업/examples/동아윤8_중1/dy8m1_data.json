@@ -1,0 +1,1438 @@
+[
+ {
+  "no": 1,
+  "en": "agree",
+  "ko": "동의하다",
+  "pos": "v. 동의하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to have the same opinion as someone or to say that something is right",
+     "누군가와 같은 의견을 가지거나 어떤 것이 옳다고 말하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "동의하다"
+  },
+  "ex": [
+   "She agreed with her friend after thinking for a moment.",
+   "그녀는 잠시 생각한 후 친구의 말에 동의했다."
+  ]
+ },
+ {
+  "no": 2,
+  "en": "boring",
+  "ko": "지루한",
+  "pos": "a. 지루한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not fun or interesting, and making you feel tired of it or not interested",
+     "재미있거나 흥미롭지 않고, 그것에 지치게 만들거나 흥미를 잃게 하는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "지루한"
+  },
+  "ex": [
+   "The class was boring, so many students looked out the window.",
+   "수업이 지루해서 많은 학생들이 창밖을 바라보았다."
+  ]
+ },
+ {
+  "no": 3,
+  "en": "actor",
+  "ko": "배우",
+  "pos": "n. 배우",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "But look at these actors. They are all famous.",
+   "하지만 이 배우들을 봐. 그들은 다 유명하잖아."
+  ]
+ },
+ {
+  "no": 4,
+  "en": "famous",
+  "ko": "유명한",
+  "pos": "a. 유명한",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Jeonju is famous for its delicious bibimbap.",
+   "전주는 맛있는 비빔밥으로 유명하다."
+  ]
+ },
+ {
+  "no": 5,
+  "en": "pretty",
+  "ko": "꽤, 매우",
+  "pos": "adv. 꽤, 매우",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The garden looks pretty beautiful with all the flowers.",
+   "정원은 모든 꽃들로 꽤 아름다워 보인다."
+  ]
+ },
+ {
+  "no": 6,
+  "en": "salty",
+  "ko": "(음식이) 짠",
+  "pos": "a. (음식이) 짠",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having too much salt in flavor",
+     "맛에 소금이 너무 많이 들어 있는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(음식이) 짠"
+  },
+  "ex": [
+   "This kimchi stew is a little salty for me.",
+   "이 김치찌개는 나에게 조금 짜다."
+  ]
+ },
+ {
+  "no": 7,
+  "en": "work",
+  "ko": "작동하다; 일하다",
+  "pos": "v. 작동하다; 일하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to function or operate correctly",
+     "제대로 기능하거나 작동하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "작동하다"
+  },
+  "ex": [
+   "My phone didn’t work well after it got wet in the rain.",
+   "내 휴대폰은 비에 젖은 뒤 잘 작동하지 않았다."
+  ]
+ },
+ {
+  "no": 8,
+  "en": "light",
+  "ko": "가벼운",
+  "pos": "a. 가벼운",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Her bag is light, but it still holds many books.",
+   "그녀의 가방은 가볍지만 책이 많이 들어간다."
+  ]
+ },
+ {
+  "no": 9,
+  "en": "over there",
+  "ko": "저쪽에",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The bakery over there sells really good bread.",
+   "저쪽에 있는 빵집은 정말 맛있는 빵을 판다."
+  ]
+ },
+ {
+  "no": 10,
+  "en": "helpful",
+  "ko": "도움이 되는",
+  "pos": "a. 도움이 되는",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "giving support or making it easier for someone to do something",
+     "누군가가 어떤 일을 하도록 지원을 해 주거나 그것을 더 쉽게 만들어 주는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "도움이 되는"
+  },
+  "ex": [
+   "His advice was very helpful when I felt confused.",
+   "내가 혼란스러웠을 때 그의 조언은 매우 도움이 되었다."
+  ]
+ },
+ {
+  "no": 11,
+  "en": "perfect",
+  "ko": "완벽한",
+  "pos": "a. 완벽한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having no mistakes or problems; completely right in every way",
+     "실수나 문제가 전혀 없는; 모든 면에서 완전히 옳은"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "완벽한"
+  },
+  "ex": [
+   "The weather is perfect for a walk in the park today.",
+   "오늘은 공원 산책하기에 날씨가 완벽하다."
+  ]
+ },
+ {
+  "no": 12,
+  "en": "like",
+  "ko": "~같은, ~처럼",
+  "pos": "prep. ~같은, ~처럼",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He swims like a fish in the water.",
+   "그는 물속에서 물고기처럼 수영한다."
+  ]
+ },
+ {
+  "no": 13,
+  "en": "black hole",
+  "ko": "블랙홀",
+  "pos": "n. 블랙홀",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "A black hole can pull everything in with its strong gravity.",
+   "블랙홀은 강한 중력으로 모든 것을 끌어당길 수 있다."
+  ]
+ },
+ {
+  "no": 14,
+  "en": "difficult",
+  "ko": "어려운",
+  "pos": "a. 어려운",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "A History of Black Holes? I think it’ll be difficult.",
+   "‘블랙홀의 역사’? 어려울 것 같아."
+  ]
+ },
+ {
+  "no": 15,
+  "en": "interesting",
+  "ko": "흥미로운, 재미있는",
+  "pos": "a. 흥미로운, 재미있는",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "making you want to know more about something because it catches your attention",
+     "어떤 것이 당신의 관심을 끌어서 그것에 대해 더 알고 싶게 만드는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "흥미로운, 재미있는"
+  },
+  "ex": [
+   "The science class was interesting, and everyone listened carefully.",
+   "과학 수업이 흥미로워서 모두가 집중해서 들었다."
+  ]
+ },
+ {
+  "no": 16,
+  "en": "be interested in ~",
+  "ko": "~에 흥미가 있다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I’m really interested in space and the stars.",
+   "나는 우주와 별들에 정말 흥미가 있다."
+  ]
+ },
+ {
+  "no": 17,
+  "en": "thick",
+  "ko": "두꺼운",
+  "pos": "a. 두꺼운",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having a large distance between two sides or surfaces",
+     "두 면이나 표면 사이의 거리가 큰"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "두꺼운"
+  },
+  "ex": [
+   "The blanket on my bed is thick and very warm.",
+   "내 침대 위의 담요는 두껍고 아주 따뜻하다."
+  ]
+ },
+ {
+  "no": 18,
+  "en": "heavy",
+  "ko": "무거운",
+  "pos": "a. 무거운",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The old wooden table was heavy, but we moved it together.",
+   "그 오래된 나무 탁자는 무거웠지만, 우리는 함께 그것을 옮겼다."
+  ]
+ },
+ {
+  "no": 19,
+  "en": "cheap",
+  "ko": "싼, 저렴한",
+  "pos": "a. 싼, 저렴한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "costing little money or not expensive",
+     "돈이 거의 들지 않거나 비싸지 않은"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "싼, 저렴한"
+  },
+  "ex": [
+   "We found a cheap hotel near the train station.",
+   "우리는 기차역 근처에서 저렴한 호텔을 찾았다."
+  ]
+ },
+ {
+  "no": 20,
+  "en": "lesson",
+  "ko": "교훈",
+  "pos": "n. 교훈",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "something that you learn from an experience or a class",
+     "경험이나 수업에서 배우는 어떤 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "교훈"
+  },
+  "ex": [
+   "I learned an important lesson from my mistake today.",
+   "오늘 나는 실수에서 중요한 교훈을 배웠다."
+  ]
+ },
+ {
+  "no": 21,
+  "en": "little",
+  "ko": "어린",
+  "pos": "a. 어린",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "There was a little girl with golden hair in a small town.",
+   "작은 마을에 금발의 어린 소녀가 있었다."
+  ]
+ },
+ {
+  "no": 22,
+  "en": "golden",
+  "ko": "황금빛의",
+  "pos": "a. 황금빛의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having the color of gold",
+     "금빛의 색을 띠는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "황금빛의"
+  },
+  "ex": [
+   "The sky turned golden in the evening.",
+   "저녁이 되자 하늘이 황금빛으로 변했다."
+  ]
+ },
+ {
+  "no": 23,
+  "en": "town",
+  "ko": "소도시, 마을",
+  "pos": "n. 소도시, 마을",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a place that is smaller than a city but larger than a village",
+     "도시보다 작지만 마을보다 큰 장소"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "소도시, 마을"
+  },
+  "ex": [
+   "My uncle lives in a small town near the sea.",
+   "우리 삼촌은 바다 근처의 작은 마을에 산다."
+  ]
+ },
+ {
+  "no": 24,
+  "en": "share",
+  "ko": "공유하다, 함께 쓰다",
+  "pos": "v. 공유하다, 함께 쓰다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to give a part of something to other people or to use something together",
+     "어떤 것의 한 부분을 다른 사람들에게 주거나 어떤 것을 함께 사용하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "공유하다, 함께 쓰다"
+  },
+  "ex": [
+   "We share a desk at school.",
+   "우리는 학교에서 책상을 함께 쓴다."
+  ]
+ },
+ {
+  "no": 25,
+  "en": "social media",
+  "ko": "소셜 미디어",
+  "pos": "n. 소셜 미디어",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "websites or apps where people share information, pictures, and messages",
+     "사람들이 정보, 사진, 그리고 메시지를 공유하는 웹사이트나 앱"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "소셜 미디어"
+  },
+  "ex": [
+   "I posted my travel photos on social media.",
+   "나는 여행 사진을 소셜 미디어에 올렸다."
+  ]
+ },
+ {
+  "no": 26,
+  "en": "at first",
+  "ko": "처음에는",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "At first, I didn’t like the movie, but later it became fun.",
+   "처음에, 나는 그 영화를 좋아하지 않았지만, 나중에는 재미있어졌다."
+  ]
+ },
+ {
+  "no": 27,
+  "en": "post",
+  "ko": "~을 게시하다; 게시물, 게시글",
+  "pos": "v. ~을 게시하다; n. 게시물, 게시글",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She posted a funny video last night.",
+   "그녀는 지난 밤에 재미있는 영상을 올렸다."
+  ]
+ },
+ {
+  "no": 28,
+  "en": "everyday",
+  "ko": "일상적인, 매일의",
+  "pos": "a. 일상적인, 매일의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "used or seen every day; common or normal",
+     "매일 사용되거나 보이는; 흔하거나 보통인"
+    ]
+   ],
+   "syn": "daily",
+   "opp": "",
+   "ko_head": "일상적인, 매일의"
+  },
+  "ex": [
+   "These are my everyday shoes for school.",
+   "이것은 내가 학교에 갈 때 신는 일상용 신발이다."
+  ]
+ },
+ {
+  "no": 29,
+  "en": "should",
+  "ko": "~해야 한다",
+  "pos": "aux. ~해야 한다",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "You should bring a jacket because it may get cold.",
+   "추워질 수 있으니 재킷을 가져와야 한다."
+  ]
+ },
+ {
+  "no": 30,
+  "en": "funny",
+  "ko": "웃긴, 재미있는",
+  "pos": "a. 웃긴, 재미있는",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I know! I should post funny pictures.",
+   "알았다! 웃긴 사진들을 올려야겠어."
+  ]
+ },
+ {
+  "no": 31,
+  "en": "picture",
+  "ko": "사진",
+  "pos": "n. 사진",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He took a picture of the dog in the park.",
+   "그는 공원에서 강아지의 사진을 찍었다."
+  ]
+ },
+ {
+  "no": 32,
+  "en": "a lot of",
+  "ko": "많은",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Now, her posts were getting a lot of likes.",
+   "이제, 그녀의 게시물은 많은 ‘좋아요’를 받고 있었다."
+  ]
+ },
+ {
+  "no": 33,
+  "en": "follower",
+  "ko": "추종자, 팬",
+  "pos": "n. 추종자, 팬",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who likes or supports another person, group, or page online",
+     "다른 사람이나 그룹, 또는 온라인 페이지를 좋아하거나 지지하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "leader",
+   "ko_head": "추종자, 팬"
+  },
+  "ex": [
+   "The singer has many followers on her channel.",
+   "그 가수는 그녀의 채널에 팔로워가 많다."
+  ]
+ },
+ {
+  "no": 34,
+  "en": "however",
+  "ko": "하지만, 그러나",
+  "pos": "adv. 하지만, 그러나",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I wanted to go out. However, it started to rain.",
+   "나는 밖에 나가고 싶었다. 그러나 비가 오기 시작했다."
+  ]
+ },
+ {
+  "no": 35,
+  "en": "soon",
+  "ko": "곧, 머지않아",
+  "pos": "adv. 곧, 머지않아",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Dinner will be ready soon, so wash your hands.",
+   "저녁이 곧 준비될 테니 손을 씻어라."
+  ]
+ },
+ {
+  "no": 36,
+  "en": "bored",
+  "ko": "지루해하는",
+  "pos": "a. 지루해하는",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The students looked bored during the long speech.",
+   "학생들은 긴 연설 동안 지루해 보였다."
+  ]
+ },
+ {
+  "no": 37,
+  "en": "shocking",
+  "ko": "충격적인",
+  "pos": "a. 충격적인",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "making you feel very surprised or upset",
+     "당신을 아주 놀라게 하거나 속상하게 만드는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "충격적인"
+  },
+  "ex": [
+   "The news was shocking, and everyone became quiet.",
+   "그 소식은 충격적이어서 모두가 조용해졌다."
+  ]
+ },
+ {
+  "no": 38,
+  "en": "one day",
+  "ko": "(미래나 과거의) 언젠가, 어느 날",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "One day, I will travel alone to another country.",
+   "언젠가 나는 혼자 다른 나라로 여행할 것이다."
+  ]
+ },
+ {
+  "no": 39,
+  "en": "take a walk",
+  "ko": "산책하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Let’s take a walk by the river after dinner.",
+   "저녁 먹고 강가를 산책하자."
+  ]
+ },
+ {
+  "no": 40,
+  "en": "forest",
+  "ko": "숲",
+  "pos": "n. 숲",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a large area with many trees and plants",
+     "많은 나무와 식물이 있는 넓은 지역"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "숲"
+  },
+  "ex": [
+   "We found a small stream in the forest.",
+   "우리는 숲 속에서 작은 시냇물을 발견했다."
+  ]
+ },
+ {
+  "no": 41,
+  "en": "find",
+  "ko": "발견하다, 찾다",
+  "pos": "v. 발견하다, 찾다",
+  "extra": "(find-found-found)",
+  "ee": null,
+  "ex": [
+   "She was taking a walk in the forest and found a cottage.",
+   "그녀는 숲에서 산책을 하다가 한 오두막집을 발견했다."
+  ]
+ },
+ {
+  "no": 42,
+  "en": "cottage",
+  "ko": "오두막집",
+  "pos": "n. 오두막집",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a small simple house, usually in the countryside",
+     "보통 시골에 있는 작고 단순한 집"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "오두막집"
+  },
+  "ex": [
+   "They stayed in a warm cottage during the weekend.",
+   "그들은 주말 동안 따뜻한 오두막집에 머물렀다."
+  ]
+ },
+ {
+  "no": 43,
+  "en": "knock",
+  "ko": "(문 등을) 두드리다, 노크하다",
+  "pos": "v. (문 등을) 두드리다, 노크하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to hit a door with your hand to get someone’s attention",
+     "누군가의 주의를 끌기 위해 손으로 문을 두드리다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(문 등을) 두드리다, 노크하다"
+  },
+  "ex": [
+   "Please knock on the door before you come in.",
+   "들어오기 전에 문을 두드려 주세요."
+  ]
+ },
+ {
+  "no": 44,
+  "en": "answer",
+  "ko": "답, 대답",
+  "pos": "n. 답, 대답",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She knocked on the door, but there was no answer.",
+   "그녀는 문을 두드렸지만, 아무 대답이 없었다."
+  ]
+ },
+ {
+  "no": 45,
+  "en": "dark",
+  "ko": "어두운",
+  "pos": "a. 어두운",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "It was getting dark, and it started to rain.",
+   "날이 어두워지고 있었고, 비가 내리기 시작했다."
+  ]
+ },
+ {
+  "no": 46,
+  "en": "inside",
+  "ko": "안으로, 안에",
+  "pos": "adv. 안으로, 안에",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Everyone stayed inside during the heavy rain.",
+   "폭우가 내리는 동안 모두가 안에 머물렀다."
+  ]
+ },
+ {
+  "no": 47,
+  "en": "bowl",
+  "ko": "그릇",
+  "pos": "n. 그릇",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a round, deep dish used for holding food or liquid",
+     "음식이나 액체를 담는 데 사용되는 둥글고 깊은 그릇"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "그릇"
+  },
+  "ex": [
+   "I put some apples in the big bowl.",
+   "나는 큰 그릇에 사과를 몇 개 넣었다."
+  ]
+ },
+ {
+  "no": 48,
+  "en": "selfie",
+  "ko": "셀피(스마트폰 등으로 찍은 자신의 사진)",
+  "pos": "n. 셀피(스마트폰 등으로 찍은 자신의 사진)",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a photograph that you take of yourself with a phone or camera",
+     "휴대전화나 카메라로 스스로를 찍는 사진"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "셀피(스마트폰 등으로 찍은 자신의 사진)"
+  },
+  "ex": [
+   "She took a selfie with her new phone.",
+   "그녀는 새 휴대전화로 셀피를 찍었다."
+  ]
+ },
+ {
+  "no": 49,
+  "en": "with a smile",
+  "ko": "미소를 띠고, 미소를 지으며",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She ate the smallest one and took selfies with a smile.",
+   "그녀는 가장 작은 그릇의 수프를 먹었고 미소를 지으며 셀피를 찍었다."
+  ]
+ },
+ {
+  "no": 50,
+  "en": "again and again",
+  "ko": "몇 번이고, 되풀이해서",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He watched the same movie again and again.",
+   "그는 같은 영화를 여러 번 다시 보았다."
+  ]
+ },
+ {
+  "no": 51,
+  "en": "break",
+  "ko": "고장나다, 부서지다; ~을 부수다, 깨다",
+  "pos": "v. 고장나다, 부서지다; ~을 부수다, 깨다",
+  "extra": "(break-broke-broken)",
+  "ee": null,
+  "ex": [
+   "The cup broke when it fell off the table.",
+   "컵이 탁자에서 떨어졌을 때 깨졌다."
+  ]
+ },
+ {
+  "no": 52,
+  "en": "care",
+  "ko": "신경 쓰다, 마음 쓰다",
+  "pos": "v. 신경 쓰다, 마음 쓰다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to think something is important or to feel interested or worried about it",
+     "어떤 것이 중요하다고 생각하거나 그것에 흥미를 가지거나 걱정하다"
+    ]
+   ],
+   "syn": "mind",
+   "opp": "",
+   "ko_head": "신경 쓰다, 마음 쓰다"
+  },
+  "ex": [
+   "He doesn’t care about his old shoes.",
+   "그는 자기의 낡은 신발에 신경 쓰지 않는다."
+  ]
+ },
+ {
+  "no": 53,
+  "en": "shout",
+  "ko": "소리 지르다, 외치다",
+  "pos": "v. 소리 지르다, 외치다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to say something very loudly",
+     "무언가를 아주 크게 말하다"
+    ]
+   ],
+   "syn": "yell",
+   "opp": "",
+   "ko_head": "소리 지르다, 외치다"
+  },
+  "ex": [
+   "The boy shouted for help near the river.",
+   "그 소년은 강가에서 도와달라고 소리를 질렀다."
+  ]
+ },
+ {
+  "no": 54,
+  "en": "upstairs",
+  "ko": "2층에, 위층으로",
+  "pos": "adv. 2층에, 위층으로",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "on or going toward a higher floor of a building",
+     "건물의 더 높은 층에 있거나 그쪽으로 올라가는"
+    ]
+   ],
+   "syn": "",
+   "opp": "downstairs",
+   "ko_head": "2층에, 위층으로"
+  },
+  "ex": [
+   "My room is upstairs, next to my sister’s room.",
+   "내 방은 2층에 있고, 언니 방 옆에 있다."
+  ]
+ },
+ {
+  "no": 55,
+  "en": "tired",
+  "ko": "피곤한",
+  "pos": "a. 피곤한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "feeling that you need to rest or sleep",
+     "쉬거나 자야 한다고 느끼는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "피곤한"
+  },
+  "ex": [
+   "He felt tired after playing soccer all afternoon.",
+   "그는 오후 내내 축구를 한 후 피곤함을 느꼈다."
+  ]
+ },
+ {
+  "no": 56,
+  "en": "fall asleep",
+  "ko": "잠들다",
+  "pos": "",
+  "extra": "(fall-fell-fallen)",
+  "ee": null,
+  "ex": [
+   "Don’t fall asleep during the movie again!",
+   "영화 보는 동안 또 잠들지 마!"
+  ]
+ },
+ {
+  "no": 57,
+  "en": "asleep",
+  "ko": "잠이 든, 자고 있는",
+  "pos": "a. 잠이 든, 자고 있는",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "sleeping or in the state of sleep",
+     "자고 있거나 수면 상태에 있는"
+    ]
+   ],
+   "syn": "",
+   "opp": "awake",
+   "ko_head": "잠이 든, 자고 있는"
+  },
+  "ex": [
+   "The baby was asleep in her mother’s arms.",
+   "아기는 엄마 품에서 잠이 들어 있다."
+  ]
+ },
+ {
+  "no": 58,
+  "en": "about",
+  "ko": "약, 대략; ~에 대하여",
+  "pos": "adv. 약, 대략; prep. ~에 대하여",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I read a book about animals in the sea.",
+   "나는 바다에 사는 동물들에 관한 책을 읽었다."
+  ]
+ },
+ {
+  "no": 59,
+  "en": "later",
+  "ko": "후에, 나중에",
+  "pos": "adv. 후에, 나중에",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I’ll call you later when I get home.",
+   "내가 집에 도착하면 나중에 전화할게."
+  ]
+ },
+ {
+  "no": 60,
+  "en": "home",
+  "ko": "집으로; 집",
+  "pos": "adv. 집으로; n. 집",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She went home after the long trip.",
+   "그녀는 긴 여행 후 집으로 갔다."
+  ]
+ },
+ {
+  "no": 61,
+  "en": "someone",
+  "ko": "누군가",
+  "pos": "pron. 누군가",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "“Someone ate my soup and broke my chair!” cried Baby Bear.",
+   "“누군가 내 수프를 먹고 내 의자를 부서뜨렸어요!”라고 아기곰이 외쳤다."
+  ]
+ },
+ {
+  "no": 62,
+  "en": "cry",
+  "ko": "외치다",
+  "pos": "v. 외치다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to shout or say something loudly",
+     "소리치거나 크게 무언가를 말하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "외치다"
+  },
+  "ex": [
+   "“Why not?” she cried in despair.",
+   "“왜 안 돼?” 그녀는 절망에 빠져 외쳤다."
+  ]
+ },
+ {
+  "no": 63,
+  "en": "next to ~",
+  "ko": "~ 옆에",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "There is a park next to the school.",
+   "학교 옆에 공원이 있다."
+  ]
+ },
+ {
+  "no": 64,
+  "en": "terrible",
+  "ko": "끔찍한",
+  "pos": "a. 끔찍한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "very bad or unpleasant",
+     "매우 나쁘거나 불쾌한"
+    ]
+   ],
+   "syn": "horrible",
+   "opp": "",
+   "ko_head": "끔찍한"
+  },
+  "ex": [
+   "The weather was terrible on our picnic day.",
+   "우리의 소풍 날에 날씨는 끔찍했다."
+  ]
+ },
+ {
+  "no": 65,
+  "en": "angrily",
+  "ko": "화가 나서",
+  "pos": "adv. 화가 나서",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He shouted angrily when he saw the broken window.",
+   "그는 깨진 창문을 보고 화가 나서 소리쳤다."
+  ]
+ },
+ {
+  "no": 66,
+  "en": "jump up",
+  "ko": "벌떡 일어나다, 뛰어오르다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She jumped up when she heard the loud noise.",
+   "그녀는 큰 소리를 듣자 벌떡 일어났다."
+  ]
+ },
+ {
+  "no": 67,
+  "en": "in surprise",
+  "ko": "놀라서",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He looked at the gift in surprise.",
+   "그는 놀라서 선물을 바라보았다."
+  ]
+ },
+ {
+  "no": 68,
+  "en": "break into ~",
+  "ko": "~에 침입하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "A thief tried to break into the house at night.",
+   "도둑이 밤에 그 집에 몰래 들어가려고 했다."
+  ]
+ },
+ {
+  "no": 69,
+  "en": "permission",
+  "ko": "허락",
+  "pos": "n. 허락",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the act of allowing someone to do something",
+     "누군가가 어떤 일을 하도록 허락하는 행동"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "허락"
+  },
+  "ex": [
+   "You must get permission before you post photos.",
+   "사진을 올리기 전에 허락을 받아야 한다."
+  ]
+ },
+ {
+  "no": 70,
+  "en": "wrong",
+  "ko": "잘못된",
+  "pos": "a. 잘못된",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "not correct or true",
+     "옳지 않거나 사실이 아닌"
+    ]
+   ],
+   "syn": "",
+   "opp": "right",
+   "ko_head": "잘못된"
+  },
+  "ex": [
+   "Your answer is wrong, please try again.",
+   "네 대답이 틀렸으니 다시 해 보렴."
+  ]
+ },
+ {
+  "no": 71,
+  "en": "forgive",
+  "ko": "용서하다",
+  "pos": "v. 용서하다",
+  "extra": "(forgive-forgave-forgiven)",
+  "ee": {
+   "defs": [
+    [
+     "to stop feeling angry with someone who has done something bad",
+     "나쁜 일을 한 누군가에게 화가 나는 것을 멈추다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "용서하다"
+  },
+  "ex": [
+   "She forgave her friend after the big fight.",
+   "그녀는 큰 싸움 후에 친구를 용서했다."
+  ]
+ },
+ {
+  "no": 72,
+  "en": "every day",
+  "ko": "매일",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "He goes to the library every day after school.",
+   "그는 방과 후에 매일 도서관에 간다."
+  ]
+ },
+ {
+  "no": 73,
+  "en": "end",
+  "ko": "끝, 마지막",
+  "pos": "n. 끝, 마지막",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I’ll clean your house every day until the end of the summer.",
+   "여름이 끝날 때까지 매일 여러분 집을 청소할게요."
+  ]
+ },
+ {
+  "no": 74,
+  "en": "until",
+  "ko": "~까지",
+  "pos": "prep. ~까지",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "We stayed at the park until sunset.",
+   "우리는 해 질 때까지 공원에 머물렀다."
+  ]
+ },
+ {
+  "no": 75,
+  "en": "hard",
+  "ko": "열심히",
+  "pos": "adv. 열심히",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "with a lot of effort or energy",
+     "많은 노력이나 에너지를 가지고"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "열심히"
+  },
+  "ex": [
+   "She studied hard for the English test.",
+   "그녀는 영어 시험을 위해 열심히 공부했다."
+  ]
+ },
+ {
+  "no": 76,
+  "en": "last",
+  "ko": "마지막의",
+  "pos": "a. 마지막의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "being the final one in a series or coming after all the others",
+     "여러 개 중에서 마지막이거나 다른 모든 것들 다음에 오는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "마지막의"
+  },
+  "ex": [
+   "It was our last class before the vacation.",
+   "그것은 방학 전 마지막 수업이었다."
+  ]
+ },
+ {
+  "no": 77,
+  "en": "delete",
+  "ko": "삭제하다",
+  "pos": "v. 삭제하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to remove something, especially from a computer or phone",
+     "어떤 것을 특히 컴퓨터나 휴대전화에서 지우다"
+    ]
+   ],
+   "syn": "erase",
+   "opp": "",
+   "ko_head": "삭제하다"
+  },
+  "ex": [
+   "He deleted all the old photos on his phone.",
+   "그는 휴대전화 속 오래된 사진들을 모두 삭제했다."
+  ]
+ },
+ {
+  "no": 78,
+  "en": "worry",
+  "ko": "걱정하다",
+  "pos": "v. 걱정하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to feel afraid or nervous because you think something bad might happen",
+     "나쁜 일이 일어날지도 모른다고 생각해서 불안하거나 초조하게 느끼다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "걱정하다"
+  },
+  "ex": [
+   "Don’t worry about me, I’m fine.",
+   "나 걱정하지 마, 난 괜찮아."
+  ]
+ },
+ {
+  "no": 79,
+  "en": "still",
+  "ko": "아직, 여전히",
+  "pos": "adv. 아직, 여전히",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "She still likes to read before she goes to bed.",
+   "그녀는 자기 전에 여전히 책 읽는 것을 좋아한다."
+  ]
+ },
+ {
+  "no": 80,
+  "en": "understand",
+  "ko": "이해하다",
+  "pos": "v. 이해하다",
+  "extra": "(understand-understood-understood)",
+  "ee": null,
+  "ex": [
+   "I didn’t understand the story at first.",
+   "나는 처음에는 그 이야기를 이해하지 못했다."
+  ]
+ },
+ {
+  "no": 81,
+  "en": "other",
+  "ko": "다른",
+  "pos": "a. 다른",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Other women have a different opinion.",
+   "다른 여성들은 의견이 다르다."
+  ]
+ },
+ {
+  "no": 82,
+  "en": "already",
+  "ko": "이미, 벌써",
+  "pos": "adv. 이미, 벌써",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "You already told me that story.",
+   "너 전에 그 얘기 벌써 했어."
+  ]
+ },
+ {
+  "no": 83,
+  "en": "live on",
+  "ko": "계속 살다, 오래 남다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The old stories still live on in this village.",
+   "그 오래된 이야기들은 여전히 이 마을에 남아 있다."
+  ]
+ },
+ {
+  "no": 84,
+  "en": "forever",
+  "ko": "영원히",
+  "pos": "adv. 영원히",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "for all time; for always",
+     "모든 시간 동안; 언제나"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "영원히"
+  },
+  "ex": [
+   "They promised to be friends forever.",
+   "그들은 영원히 친구로 지내기로 약속했다."
+  ]
+ },
+ {
+  "no": 85,
+  "en": "from now on",
+  "ko": "이제부터",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "From now on, I’ll try to wake up early.",
+   "이제부터 나는 일찍 일어나려고 노력할 것이다."
+  ]
+ },
+ {
+  "no": 86,
+  "en": "think twice",
+  "ko": "다시 생각하다, 재고하다",
+  "pos": "",
+  "extra": "(think-thought-thought)",
+  "ee": null,
+  "ex": [
+   "You should think twice before you act.",
+   "너는 행동하기 전에 한 번 더 생각해야 한다."
+  ]
+ },
+ {
+  "no": 87,
+  "en": "before",
+  "ko": "~하기 전에",
+  "pos": "conj. ~하기 전에",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "From now on, I’ll think twice before I press POST.",
+   "이제부터 ‘게시’를 누르기 전에 다시 생각할게요."
+  ]
+ },
+ {
+  "no": 88,
+  "en": "press",
+  "ko": "누르다",
+  "pos": "v. 누르다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to push something with your finger or hand",
+     "손가락이나 손으로 어떤 것을 누르다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "누르다"
+  },
+  "ex": [
+   "Press this button to start the machine.",
+   "이 버튼을 눌러서 기계를 작동시켜라."
+  ]
+ }
+]

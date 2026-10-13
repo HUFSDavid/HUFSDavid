@@ -1,0 +1,253 @@
+{
+"O": "various",
+"add": [
+"put",
+"puts",
+"문법"
+],
+"transportation": [
+"way",
+"wave",
+"유사철자"
+],
+"amount": [
+"quantity",
+"quality",
+"유사철자"
+],
+"insert": [
+"something",
+"nothing",
+"핵심반대"
+],
+"rent": [
+"use",
+"sell",
+"핵심반대"
+],
+"unlock": [
+"open",
+"close",
+"핵심반대"
+],
+"appreciate": [
+"grateful",
+"graceful",
+"유사철자"
+],
+"place": [
+"put",
+"remove",
+"핵심반대"
+],
+"press": [
+"push",
+"pull",
+"핵심반대"
+],
+"recommend": [
+"chosen",
+"ignored",
+"핵심반대"
+],
+"possible": [
+"able",
+"unable",
+"핵심반대"
+],
+"complex": [
+"difficult",
+"easy",
+"핵심반대"
+],
+"communication": [
+"sending",
+"hiding",
+"핵심반대"
+],
+"develop": [
+"cause",
+"causes",
+"문법"
+],
+"leave": [
+"remain",
+"disappear",
+"핵심반대"
+],
+"trace": [
+"shows",
+"show",
+"문법"
+],
+"record": [
+"kept",
+"keep",
+"문법"
+],
+"purchase": [
+"buying",
+"burying",
+"유사철자"
+],
+"simply": [
+"not",
+"very",
+"핵심반대"
+],
+"collect": [
+"get",
+"getting",
+"문법"
+],
+"analyze": [
+"carefully",
+"carelessly",
+"핵심반대"
+],
+"expert": [
+"has",
+"lacks",
+"핵심반대"
+],
+"method": [
+"way",
+"day",
+"유사철자"
+],
+"draw": [
+"get",
+"give",
+"핵심반대"
+],
+"meaningful": [
+"clear",
+"clean",
+"유사철자"
+],
+"result": [
+"before",
+"after",
+"핵심반대"
+],
+"decision": [
+"make",
+"makes",
+"문법"
+],
+"predict": [
+"future",
+"past",
+"핵심반대"
+],
+"influence": [
+"affect",
+"ignore",
+"핵심반대"
+],
+"customer": [
+"buys",
+"buy",
+"문법"
+],
+"product": [
+"sold",
+"sole",
+"유사철자"
+],
+"avoid": [
+"away",
+"near",
+"핵심반대"
+],
+"endless": [
+"no",
+"an",
+"핵심반대"
+],
+"disease": [
+"affects",
+"protects",
+"핵심반대"
+],
+"forecast": [
+"will",
+"won't",
+"핵심반대"
+],
+"professional": [
+"special",
+"no",
+"핵심반대"
+],
+"symptom": [
+"illness",
+"idea",
+"핵심반대"
+],
+"spread": [
+"something",
+"nothing",
+"핵심반대"
+],
+"improve": [
+"better",
+"worse",
+"핵심반대"
+],
+"performance": [
+"well",
+"old",
+"핵심반대"
+],
+"national": [
+"entire",
+"entry",
+"유사철자"
+],
+"database": [
+"collection",
+"correction",
+"유사철자"
+],
+"huge": [
+"great",
+"small",
+"핵심반대"
+],
+"include": [
+"contain",
+"contact",
+"유사철자"
+],
+"crime": [
+"breaking",
+"making",
+"유사철자"
+],
+"analysis": [
+"more",
+"less",
+"핵심반대"
+],
+"prevention": [
+"stopping",
+"stop",
+"문법"
+],
+"identify": [
+"find",
+"found",
+"문법"
+],
+"prevent": [
+"stop",
+"shop",
+"유사철자"
+],
+"industry": [
+"businesses",
+"buses",
+"유사철자"
+]
+}

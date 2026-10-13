@@ -1,0 +1,18 @@
+{
+ "checks": [],
+ "oPos": 34,
+ "types": {
+  "핵심반대": 21,
+  "유사철자": 9,
+  "문법": 7
+ },
+ "counts": {
+  "all": 88,
+  "ee": 38,
+  "s1": true,
+  "s2": true,
+  "s3": true,
+  "s4": true,
+  "s5": true
+ }
+}

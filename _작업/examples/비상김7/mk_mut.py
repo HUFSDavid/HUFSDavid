@@ -1,0 +1,102 @@
+import json
+p='/tmp/david_w/bsk7/bsk7_data.json'
+d=json.load(open(p))
+for x in d:
+    if x['ee']:
+        x['ee']['defs']=[[a.replace('​','').strip(),b.replace('​','').strip()] for a,b in x['ee']['defs']]
+json.dump(d,open(p,'w'),ensure_ascii=False,indent=1)
+M={"O":"item",
+"spend":["use","lose","유사철자"],
+"wisely":["good","bad","핵심반대"],
+"design":["arranged","arranging","문법"],
+"suit":["more","less","핵심반대"],
+"back":["furthest","nearest","핵심반대"],
+"goods":["sold","sell","문법"],
+"choice":["choose","chose","문법"],
+"speaker":["comes","combs","유사철자"],
+"convenient":["easy","hard","핵심반대"],
+"quality":["good","goods","문법"],
+"battery":["supplies","supplied","문법"],
+"last":["long","short","핵심반대"],
+"pretty":["more","mere","유사철자"],
+"uncomfortable":["physically","physical","문법"],
+"tight":["closely","loosely","핵심반대"],
+"join":["involved","evolved","유사철자"],
+"allowance":["small","large","핵심반대"],
+"spending":["giving","given","문법"],
+"like":["same","different","핵심반대"],
+"release":["available","unavailable","핵심반대"],
+"sale":["lower","higher","핵심반대"],
+"price":["pay","play","유사철자"],
+"discount":["taken","token","유사철자"],
+"laptop":["carried","married","유사철자"],
+"overheated":["hot","cold","핵심반대"],
+"review":["gives","given","문법"],
+"wonder":["curiosity","curious","문법"],
+"consider":["carefully","carelessly","핵심반대"],
+"affect":["change","charge","유사철자"],
+"recognize":["seen","seeing","문법"],
+"glance":["quick","slow","핵심반대"],
+"bandwagon":["suddenly","sudden","문법"],
+"effect":["result","resort","유사철자"],
+"behavior":["way","weigh","유사철자"],
+"wagon":["heavy","light","핵심반대"],
+"parade":["public","private","핵심반대"],
+"encourage":["likely","unlikely","핵심반대"],
+"aboard":["onto","into","유사철자"],
+"likely":["good","poor","핵심반대"],
+"follow":["after","before","핵심반대"],
+"immediately":["without","with","핵심반대"],
+"realize":["aware","award","유사철자"],
+"match":["pleasing","pleased","문법"],
+"complete":["whole","hole","유사철자"],
+"search":["carefully","careful","문법"],
+"French":["connected","collected","유사철자"],
+"receive":["given","giving","문법"],
+"notice":["aware","unaware","핵심반대"],
+"furniture":["living","leaving","유사철자"],
+"replace":["remove","removing","문법"],
+"concept":["idea","ideal","유사철자"],
+"purchase":["buying","selling","핵심반대"],
+"approach":["towards","away","핵심반대"],
+"situation":["happening","happened","문법"],
+"describe":["show","shown","문법"],
+"example":["supports","supported","문법"],
+"anchor":["heavy","heave","유사철자"],
+"mention":["quickly","slowly","핵심반대"],
+"opinion":["thought","taught","유사철자"],
+"afterwards":["later","earlier","핵심반대"],
+"comparison":["comparing","compared","문법"],
+"furthermore":["importantly","important","문법"],
+"difference":["not","now","유사철자"],
+"powerful":["great","small","핵심반대"],
+"act":["perform","performed","문법"],
+"fix":["move","moved","문법"],
+"thought":["produced","reduced","유사철자"],
+"seriously":["serious","curious","유사철자"],
+"influence":["happens","happened","문법"],
+"moment":["short","long","핵심반대"],
+"keep track of":["record","recorded","문법"],
+"on sale":["reduced","increased","핵심반대"],
+"at full price":["highest","lowest","핵심반대"],
+"on display":["look","lock","유사철자"],
+"at a glance":["quick","quiet","유사철자"],
+"end up -ing":["particular","particle","유사철자"],
+"tend to (동사원형)":["often","seldom","핵심반대"],
+"lead to":["cause","caused","문법"],
+"find out":["get","got","문법"],
+"in comparison":["compared","comparing","문법"],
+}
+json.dump(M,open('/tmp/david_w/bsk7/bsk7_mut.json','w'),ensure_ascii=False,indent=0)
+ee=[x for x in d if x['ee']]
+from collections import Counter
+print(len(ee),len(M)-1,Counter(v[2] for k,v in M.items() if k!='O'))
+for x in ee:
+    if x['en']==M['O']: continue
+    m=M.get(x['en']); 
+    if not m: print('MISSING',x['en']); continue
+    toks=x['ee']['defs'][0][0].split(' ')
+    hits=[t for t in toks if t.replace('.','').replace(',','')==m[0]]
+    if not hits: print('NOTOK',x['en'],m)
+    elif ',' in hits[0]: print('COMMA',x['en'],hits)
+    elif len(hits)>1: print('MULTI',x['en'],hits)

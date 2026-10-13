@@ -1,0 +1,1918 @@
+[
+ {
+  "no": 1,
+  "en": "classical",
+  "ko": "클래식(음악)의, 고전적인",
+  "pos": "a. 클래식(음악)의, 고전적인",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Orchestras usually play classical music.",
+   "오케스트라는 보통 고전 음악을 연주한다."
+  ]
+ },
+ {
+  "no": 2,
+  "en": "musician",
+  "ko": "음악가",
+  "pos": "n. 음악가",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person who plays a musical instrument or writes music, especially as a job",
+     "특히 직업으로 악기를 연주하거나 음악을 작곡하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "음악가"
+  },
+  "ex": [
+   "The pipes were played by Irish musician, John Burney.",
+   "파이프는 아일랜드 음악가인 John Burney가 연주했다."
+  ]
+ },
+ {
+  "no": 3,
+  "en": "pop",
+  "ko": "팝(음악), 대중적인",
+  "pos": "n. 팝(음악) a. 대중적인",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "made in a modern popular style",
+     "현대의 대중적인 방식으로 만들어진"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "대중적인"
+  },
+  "ex": [
+   "American cartoon characters like Mickey Mouse are symbols of Western pop culture.",
+   "미키 마우스 같은 미국의 만화 캐릭터는 서양 대중문화의 상징이다."
+  ]
+ },
+ {
+  "no": 4,
+  "en": "pop music",
+  "ko": "대중음악",
+  "pos": "n. 대중음악",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 5,
+  "en": "fascinated",
+  "ko": "매료된, 마음을 다 빼앗긴",
+  "pos": "a. 매료된, 마음을 다 빼앗긴",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "very interested in or attracted by someone or something",
+     "누군가 또는 어떤 것에 의해 매우 흥미가 있거나 끌리는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "매료된, 마음을 다 빼앗긴"
+  },
+  "ex": [
+   "Edward was fascinated to see gorillas in the wild.",
+   "Edward는 야생에서 고릴라를 보고 매료되었다."
+  ]
+ },
+ {
+  "no": 6,
+  "en": "rhythm",
+  "ko": "리듬, 박자",
+  "pos": "n. 리듬, 박자",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a regular repeated pattern of sounds or movements",
+     "소리나 동작의 규칙적인 반복 패턴"
+    ]
+   ],
+   "syn": "beat",
+   "opp": "",
+   "ko_head": "리듬, 박자"
+  },
+  "ex": [
+   "Jackson started moving to the rhythm of the music.",
+   "Jackson은 음악의 리듬에 맞추어 움직이기 시작했다."
+  ]
+ },
+ {
+  "no": 7,
+  "en": "art",
+  "ko": "미술, 예술",
+  "pos": "n. 미술, 예술",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "painting, drawing, and sculpture as subjects you study",
+     "공부하는 과목으로서의 소묘, 화법, 조각"
+    ],
+    [
+     "the making of objects, images, music, etc. to express ideas or feelings",
+     "생각이나 감정을 표현하기 위한 사물, 이미지, 음악 등의 제작"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "미술, 예술"
+  },
+  "ex": [
+   "Art and English were my favorite subjects at school.",
+   "미술과 영어는 학교에서 내가 가장 좋아하는 과목들이었다."
+  ]
+ },
+ {
+  "no": 8,
+  "en": "draw",
+  "ko": "(색칠은 하지 않고 연필이나 펜 등으로) 그리다",
+  "pos": "v. (색칠은 하지 않고 연필이나 펜 등으로) 그리다",
+  "extra": "(draw – drew – drawn)",
+  "ee": {
+   "defs": [
+    [
+     "to create a picture by making lines with a pen or pencil (but not paint)",
+     "펜이나 연필로 선을 만듦으로써 (색칠은 하지 않고) 그림을 만들다"
+    ]
+   ],
+   "syn": "sketch",
+   "opp": "",
+   "ko_head": "(색칠은 하지 않고 연필이나 펜 등으로) 그리다"
+  },
+  "ex": [
+   "Roy took a pencil and drew a bird.",
+   "Roy는 연필을 꺼내서 새 한 마리를 그렸다."
+  ]
+ },
+ {
+  "no": 9,
+  "en": "role model",
+  "ko": "역할 모델, 모범이 되는 사람",
+  "pos": "n. 역할 모델, 모범이 되는 사람",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a person that people admire and try to copy",
+     "사람들이 존경하고 모방하려고 하는 사람"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "역할 모델, 모범이 되는 사람"
+  },
+  "ex": [
+   "I want to be a positive role model for my little sister.",
+   "나는 내 여동생에게 긍정적인 역할 모델이 되고 싶다."
+  ]
+ },
+ {
+  "no": 10,
+  "en": "advice",
+  "ko": "조언, 충고",
+  "pos": "n. 조언, 충고",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "an opinion given to someone about what they should do",
+     "그들이 무엇을 해야 할지에 관해 누군가에게 주어지는 의견"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "조언, 충고"
+  },
+  "ex": [
+   "People often go to Gary for advice about their problems.",
+   "사람들은 종종 그들의 문제에 대해 Gary에게 조언을 구하러 간다."
+  ]
+ },
+ {
+  "no": 11,
+  "en": "surf",
+  "ko": "파도, *파도타기[서핑]를 하다, 인터넷을 검색하다",
+  "pos": "n. 파도 v. *파도타기[서핑]를 하다, 인터넷을 검색하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to ride on waves while standing on a special board",
+     "특별한 보드에 서서 파도를 타다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "파도"
+  },
+  "ex": [
+   "I will buy a surfboard and learn to surf.",
+   "나는 서핑 보드를 사서 파도타기[서핑]하는 법을 배울 것이다."
+  ]
+ },
+ {
+  "no": 12,
+  "en": "drawing",
+  "ko": "(색칠을 하지 않은) 그림, 그리기",
+  "pos": "n. (색칠을 하지 않은) 그림, 그리기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a picture that is drawn with a pencil, pen, etc. or the act of making drawings in this way",
+     "펜, 연필 등으로 그린 그림 또는 이러한 방식으로 그림을 그리는 행위"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(색칠을 하지 않은) 그림, 그리기"
+  },
+  "ex": [
+   "The drawing shows a castle surrounded by woods.",
+   "그 그림은 숲에 둘러싸인 성을 보여준다."
+  ]
+ },
+ {
+  "no": 13,
+  "en": "play",
+  "ko": "놀이, 경기, *연극",
+  "pos": "n. 놀이, 경기, *연극",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a story that is written to be performed by actors, especially in a theater",
+     "특히 극장에서 배우들이 공연하도록 쓰인 이야기"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "연극"
+  },
+  "ex": [
+   "We watched Shakespeare’s play called A Midsummer Night’s Dream.",
+   "우리는 Shakespeare의 「한여름 밤의 꿈」이라는 연극을 보았다."
+  ]
+ },
+ {
+  "no": 14,
+  "en": "main character",
+  "ko": "주인공",
+  "pos": "n. 주인공",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "DiCaprio played the main character in the movie Titanic.",
+   "DiCaprio는 영화 「타이타닉」에서 주인공을 연기했다."
+  ]
+ },
+ {
+  "no": 15,
+  "en": "actor",
+  "ko": "배우",
+  "pos": "n. 배우",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I think Johnny Depp is a great actor. He is very good at expressing his emotions.",
+   "Johnny Depp은 훌륭한 배우인 것 같아. 그는 감정을 정말 잘 표현해."
+  ]
+ },
+ {
+  "no": 16,
+  "en": "performance",
+  "ko": "공연, 연주회, *연기",
+  "pos": "n. 공연, 연주회, *연기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the act of performing a play, concert, etc.",
+     "연극, 콘서트 등을 공연하는 행위"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "연기"
+  },
+  "ex": [
+   "The whole audience was deeply impressed by Kim Yuna’s elegant performance.",
+   "전 관중이 김연아의 우아한 연기에 깊은 감명을 받았다."
+  ]
+ },
+ {
+  "no": 17,
+  "en": "fantastic",
+  "ko": "환상적인, 굉장한",
+  "pos": "a. 환상적인, 굉장한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "extremely good, attractive, or enjoyable",
+     "아주 좋거나, 매력적이거나, 즐거운"
+    ]
+   ],
+   "syn": "great, amazing",
+   "opp": "",
+   "ko_head": "환상적인, 굉장한"
+  },
+  "ex": [
+   "We had a really fantastic holiday at Palm Beach.",
+   "우리는 Palm Beach에서 정말 환상적인 휴가를 보냈어요."
+  ]
+ },
+ {
+  "no": 18,
+  "en": "pretty",
+  "ko": "*꽤, 매우, 예쁜, 귀여운",
+  "pos": "adv. *꽤, 매우 a. 예쁜, 귀여운",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Put on warm clothes. It's pretty cold today.",
+   "따뜻한 옷을 입어. 오늘 꽤 추워."
+  ]
+ },
+ {
+  "no": 19,
+  "en": "painting",
+  "ko": "*(물감으로 그린) 그림, 그리기, 페인트칠하기",
+  "pos": "n. *(물감으로 그린) 그림, 그리기, 페인트칠하기",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a picture made by putting paint on a canvas, board, etc. or the act of making a picture using paints",
+     "캔버스 천, 판 등에 물감을 칠하여 만든 그림 또는 물감을 이용해 그림을 그리는 행위"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "*(물감으로 그린) 그림, 그리기, 페인트칠하기"
+  },
+  "ex": [
+   "Is this an oil painting or a watercolor?",
+   "이 그림은 유화인가요 아니면, 수채화인가요?"
+  ]
+ },
+ {
+  "no": 20,
+  "en": "skill",
+  "ko": "기술, 기법",
+  "pos": "n. 기술, 기법",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "an ability to do something well, especially because you have learned and practiced it",
+     "어떤 것을 특히 배우고 연습했기 때문에 잘 할 수 있는 능력"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "기술, 기법"
+  },
+  "ex": [
+   "Many jobs today require language and computer skills.",
+   "오늘날 많은 직업들은 언어와 컴퓨터 기술을 요구한다."
+  ]
+ },
+ {
+  "no": 21,
+  "en": "work",
+  "ko": "일하다, 일, *작품",
+  "pos": "v. 일하다 n. 일, *작품",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a book, piece of music, painting, etc. that is produced as a result of work",
+     "어떤 일의 결과물로서 생산되는 책, 음악, 그림 등"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "작품"
+  },
+  "ex": [
+   "What a beautiful piece of work! You should be proud of it.",
+   "정말 아름다운 작품이군요! 자랑스러워하셔야 해요."
+  ]
+ },
+ {
+  "no": 22,
+  "en": "creative",
+  "ko": "창조적인, 창의적인",
+  "pos": "a. 창조적인, 창의적인",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having the skill and imagination to produce new things",
+     "새로운 것들을 창조하는 기술과 상상력을 가지고 있는"
+    ]
+   ],
+   "syn": "imaginative, inventive",
+   "opp": "",
+   "ko_head": "창조적인, 창의적인"
+  },
+  "ex": [
+   "You’re so creative! I’ll never be able to make a song like that.",
+   "너 정말 창의적이구나! 나는 결코 그런 노래를 만들지 못할 거야."
+  ]
+ },
+ {
+  "no": 23,
+  "en": "art museum",
+  "ko": "미술관",
+  "pos": "n. 미술관",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The Musee D’Orsay is an art museum in Paris, France.",
+   "오르세는 프랑스 파리에 위치한 미술관이다."
+  ]
+ },
+ {
+  "no": 24,
+  "en": "exhibition",
+  "ko": "전시, *전시회",
+  "pos": "n. 전시, *전시회",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a show of paintings, photographs, or other objects that people can go to see",
+     "사람들이 보러 가는 그림, 사진 또는 다른 물건들의 전시회"
+    ]
+   ],
+   "syn": "exhibit, exposition",
+   "opp": "",
+   "ko_head": "전시회"
+  },
+  "ex": [
+   "There's a new exhibition of sculptures at the city gallery.",
+   "시립 미술관에서 새로운 조각품 전시회가 열리고 있다."
+  ]
+ },
+ {
+  "no": 25,
+  "en": "creativity",
+  "ko": "창조성, 창의성, 독창성",
+  "pos": "n. 창조성, 창의성, 독창성",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the ability to make something new or imaginative",
+     "새롭거나 창의적인 것을 만드는 능력"
+    ]
+   ],
+   "syn": "imagination",
+   "opp": "",
+   "ko_head": "창조성, 창의성, 독창성"
+  },
+  "ex": [
+   "Being a good designer requires a lot of creativity.",
+   "훌륭한 디자이너가 되는 것은 많은 창조성을 필요로 한다."
+  ]
+ },
+ {
+  "no": 26,
+  "en": "painter",
+  "ko": "*화가, 페인트공",
+  "pos": "n. *화가, 페인트공",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The Dutch painter Rembrandt loved to paint and draw portraits.",
+   "네덜란드의 화가 Rembrandt는 초상화 그리기를 아주 좋아했다."
+  ]
+ },
+ {
+  "no": 27,
+  "en": "work of art[art work]",
+  "ko": "예술 작품",
+  "pos": "n. 예술 작품",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a painting, sculpture, etc. of high quality",
+     "고품질의 그림, 조각품 등"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "예술 작품"
+  },
+  "ex": [
+   "The Scream by Edvard Munch is one of the greatest works of art.",
+   "Edvard Munch의 「절규」는 가장 위대한 예술 작품 중 하나이다."
+  ]
+ },
+ {
+  "no": 28,
+  "en": "print",
+  "ko": "인쇄하다, (천이나 표면에 잉크나 염료로 무늬를) 찍다",
+  "pos": "v. 인쇄하다, (천이나 표면에 잉크나 염료로 무늬를) 찍다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to put letters or images on paper or another material using a machine",
+     "기계를 이용해 종이나 다른 재료 위에 글자나 이미지를 넣다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "인쇄하다, (천이나 표면에 잉크나 염료로 무늬를) 찍다"
+  },
+  "ex": [
+   "I bought a cushion which has a picture of a cute puppy printed on it.",
+   "나는 귀여운 강아지 그림이 인쇄된 쿠션을 샀다."
+  ]
+ },
+ {
+  "no": 29,
+  "en": "cartoon",
+  "ko": "만화",
+  "pos": "n. 만화",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Disney is famous for its cartoon characters such as Mickey Mouse and Donald Duck.",
+   "디즈니는 미키마우스와 도널드 덕과 같은 만화 캐릭터로 유명하다."
+  ]
+ },
+ {
+  "no": 30,
+  "en": "probably",
+  "ko": "아마, 아마도",
+  "pos": "adv. 아마, 아마도",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "very likely; almost certainly",
+     "가능성이 매우 높은; 거의 틀림없이"
+    ]
+   ],
+   "syn": "possibly",
+   "opp": "",
+   "ko_head": "아마, 아마도"
+  },
+  "ex": [
+   "You’ll probably feel better after some sleep.",
+   "좀 자고 나면 아마 괜찮아질 거야."
+  ]
+ },
+ {
+  "no": 31,
+  "en": "famous",
+  "ko": "유명한",
+  "pos": "a. 유명한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "known about by many people in many places",
+     "여러 곳에 있는 많은 사람들에게 알려져 있는"
+    ]
+   ],
+   "syn": "well-known",
+   "opp": "",
+   "ko_head": "유명한"
+  },
+  "ex": [
+   "The Mona Lisa is Da Vinci’s most famous painting.",
+   "「모나리자」는 다빈치의 가장 유명한 그림이다."
+  ]
+ },
+ {
+  "no": 32,
+  "en": "popular",
+  "ko": "인기 있는, *대중적인",
+  "pos": "a. 인기 있는, *대중적인",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "right or appropriate for the taste and knowledge of ordinary people rather than experts or very educated people",
+     "전문가나 많은 교육을 받은 사람들보다는 일반인들의 취향과 지식에 맞거나 적합한"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "대중적인"
+  },
+  "ex": [
+   "In the late 1800's and early 1900's, ice cream became less expensive and more popular.",
+   "1800년대 말과 1900년대 초에, 아이스크림은 덜 비싸졌고 더 대중적이 되었다."
+  ]
+ },
+ {
+  "no": 33,
+  "en": "mean",
+  "ko": "~를 뜻[의미]하다",
+  "pos": "v. ~를 뜻[의미]하다",
+  "extra": "(mean – meant – meant)",
+  "ee": {
+   "defs": [
+    [
+     "to have a particular meaning",
+     "특정한 의미를 가지고 있다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~를 뜻[의미]하다"
+  },
+  "ex": [
+   "The red light on the traffic signal means ‘Stop’.",
+   "신호등의 빨간 불은 ‘멈추세요’를 의미한다."
+  ]
+ },
+ {
+  "no": 34,
+  "en": "artist",
+  "ko": "예술가",
+  "pos": "n. 예술가",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "An artist created special works of art on sidewalks in Seattle, the United States.",
+   "한 예술가가 미국 시애틀 보도 위에 특별한 예술 작품을 만들었다."
+  ]
+ },
+ {
+  "no": 35,
+  "en": "create",
+  "ko": "창조[창작]하다, (새로운 것을) 만들어 내다",
+  "pos": "v. 창조[창작]하다, (새로운 것을) 만들어 내다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to produce something new, such as a work of art by using your talents and imagination",
+     "재능이나 상상력을 활용하여 예술 작품 같은 새로운 것을 만들다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "창조[창작]하다, (새로운 것을) 만들어 내다"
+  },
+  "ex": [
+   "King Sejong created Hangul for his people to learn letters easily.",
+   "세종대왕은 백성들이 쉽게 글자를 배우도록 한글을 창제했다."
+  ]
+ },
+ {
+  "no": 36,
+  "en": "traditional",
+  "ko": "전통적인",
+  "pos": "a. 전통적인",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "being part of the beliefs, customs, or way of life of a country or group of people, which have not changed for a long time",
+     "오랜 시간 동안 변하지 않은, 한 나라 또는 집단의 믿음, 관습, 또는 삶의 방식에 속하는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "전통적인"
+  },
+  "ex": [
+   "A sari is a traditional piece of clothing for women in India.",
+   "사리는 인도의 여성들을 위한 전통적인 의상이다."
+  ]
+ },
+ {
+  "no": 37,
+  "en": "popular[pop] culture",
+  "ko": "대중문화",
+  "pos": "n. 대중문화",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the general culture of a society, including ideas, music, books, and the mass media, as opposed to high culture",
+     "고급문화와는 대조적인 사상, 음악, 책, 대중매체를 포함하는 한 사회의 일반적인 문화"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "대중문화"
+  },
+  "ex": [
+   "South Korea has become a leader of Asian popular[pop] culture.",
+   "한국은 아시아 대중문화의 선두주자가 되었다."
+  ]
+ },
+ {
+  "no": 38,
+  "en": "image",
+  "ko": "이미지, 모습, 그림, 사진",
+  "pos": "n. 이미지, 모습, 그림, 사진",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a copy of someone or something in the form of a picture or statue",
+     "그림[사진]이나 동상의 형태로 된 사람 또는 사물의 사본"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "이미지, 모습, 그림, 사진"
+  },
+  "ex": [
+   "Mickey Mouse's image was on all types of products in the Disney store.",
+   "미키 마우스의 이미지는 디즈니 매장에 있는 모든 종류의 제품들에 있었다."
+  ]
+ },
+ {
+  "no": 39,
+  "en": "comic book",
+  "ko": "만화책",
+  "pos": "n. 만화책",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 40,
+  "en": "magazine",
+  "ko": "잡지",
+  "pos": "n. 잡지",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 41,
+  "en": "advertising",
+  "ko": "*광고, 광고 사업",
+  "pos": "n. *광고, 광고 사업",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "pictures, signs, pieces of film, etc. that are used to make products or services known about and persuade people to buy them",
+     "상품이나 서비스를 알리고, 사람들이 그것을 사도록 설득하는 데 사용되는 그림[사진], 간판, 영상 등"
+    ]
+   ],
+   "syn": "advertisement",
+   "opp": "",
+   "ko_head": "광고"
+  },
+  "ex": [
+   "The new advertising campaign helped increase the sales of our products.",
+   "새로운 광고 캠페인은 우리 제품의 판매를 늘리는 데 도움이 되었다."
+  ]
+ },
+ {
+  "no": 42,
+  "en": "familiar",
+  "ko": "친숙한, 익숙한",
+  "pos": "a. 친숙한, 익숙한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "well known to you; often seen or heard and therefore easy to recognize",
+     "잘 알려진; 자주 보거나 들어서 쉽게 알아볼 수 있는"
+    ]
+   ],
+   "syn": "",
+   "opp": "unfamiliar",
+   "ko_head": "친숙한, 익숙한"
+  },
+  "ex": [
+   "Packaging with cartoon characters can make food look fun and familiar.",
+   "만화 캐릭터로 포장을 하는 것은 식품을 재미있고 친근하게 보이게 할 수 있다."
+  ]
+ },
+ {
+  "no": 43,
+  "en": "find",
+  "ko": "알게 되다, ~라고 여기다[생각하다], 발견하다, 찾다",
+  "pos": "v. 알게 되다, ~라고 여기다[생각하다], 발견하다, 찾다",
+  "extra": "(find – found – found)",
+  "ee": {
+   "defs": [
+    [
+     "to discover or learn something; to have a particular feeling or opinion about someone or something",
+     "어떤 것을 발견하거나 배우다; 누군가 또는 어떤 것에 대해 특정한 느낌이나 의견을 가지다"
+    ],
+    [
+     "to discover something by chance or after searching for it",
+     "어떤 것을 우연히 또는 찾아다닌 끝에 발견하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "알게 되다, ~라고 여기다[생각하다], 발견하다, 찾다"
+  },
+  "ex": [
+   "Students will find this book useful to learn English grammar.",
+   "학생들은 이 책이 영어 문법을 배우는 데 유용하다는 것을 알게 될 것이다."
+  ]
+ },
+ {
+  "no": 44,
+  "en": "refreshing",
+  "ko": "상쾌한, *신선[참신]한",
+  "pos": "a. 상쾌한, *신선[참신]한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "pleasantly new, different, or interesting",
+     "기분 좋게 새롭거나, 다르거나, 흥미로운"
+    ]
+   ],
+   "syn": "novel",
+   "opp": "familiar",
+   "ko_head": "신선[참신]한"
+  },
+  "ex": [
+   "It will make a refreshing change to talk to someone new.",
+   "새로운 사람과 이야기를 하는 것은 신선한 변화를 만들 것이다."
+  ]
+ },
+ {
+  "no": 45,
+  "en": "truly",
+  "ko": "정말로, 진심으로",
+  "pos": "adv. 정말로, 진심으로",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "It's truly hot out today.",
+   "오늘은 바깥 날씨가 정말로 덥다."
+  ]
+ },
+ {
+  "no": 46,
+  "en": "understand",
+  "ko": "이해하다",
+  "pos": "v. 이해하다",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I don't understand what the writer of this poem is trying to say.",
+   "나는 이 시의 작가가 무엇을 말하려고 하는지 이해가 안 된다."
+  ]
+ },
+ {
+  "no": 47,
+  "en": "daily",
+  "ko": "일상의, 매일의",
+  "pos": "a. 일상의, 매일의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "happening on or relating to every day",
+     "매일 일어나거나 매일(하는 일)과 관련된"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "일상의, 매일의"
+  },
+  "ex": [
+   "Smartphones have become a part of our daily lives.",
+   "스마트폰은 우리 일상생활의 일부가 되었다."
+  ]
+ },
+ {
+  "no": 48,
+  "en": "bright",
+  "ko": "(빛이) 밝은, *(색깔이) 선명한",
+  "pos": "a. (빛이) 밝은, *(색깔이) 선명한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "having a very light and strong color",
+     "색깔이 매우 밝고 강렬한"
+    ]
+   ],
+   "syn": "vivid",
+   "opp": "dark",
+   "ko_head": "(빛이) 밝은, *(색깔이) 선명한"
+  },
+  "ex": [
+   "You will easily find my house. It’s got a bright yellow front door.",
+   "너는 우리 집을 쉽게 찾을 수 있을 거야. 현관문이 밝은 노란색이거든."
+  ]
+ },
+ {
+  "no": 49,
+  "en": "thought",
+  "ko": "생각",
+  "pos": "n. 생각",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "I don't like the thought of you walking home alone.",
+   "나는 집까지 혼자 걸어가겠다는 네 생각이 마음에 들지 않아."
+  ]
+ },
+ {
+  "no": 50,
+  "en": "common",
+  "ko": "*흔한, 평범한, 공통의",
+  "pos": "a. *흔한, 평범한, 공통의",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "done by many people; happening often",
+     "많은 사람이 하는; 자주 일어나는"
+    ]
+   ],
+   "syn": "",
+   "opp": "rare",
+   "ko_head": "흔한, 평범한"
+  },
+  "ex": [
+   "Jones is a very common name in Britain.",
+   "Jones는 영국에서 매우 흔한 이름이다."
+  ]
+ },
+ {
+  "no": 51,
+  "en": "plain",
+  "ko": "분명한, *보통의, 평범한, 수수한",
+  "pos": "a. 분명한, *보통의, 평범한, 수수한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "very ordinary, not special in any way",
+     "아주 평범하고, 어떤 면에서도 특별하지 않은"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "분명한, *보통의, 평범한, 수수한"
+  },
+  "ex": [
+   "I prefer to wear plain clothes rather than fancy, colorful ones.",
+   "나는 화려하고 다채로운 옷보다는 평범한 옷을 입는 것을 더 좋아한다."
+  ]
+ },
+ {
+  "no": 52,
+  "en": "artistic",
+  "ko": "예술적인, 예술적 감각이 있는",
+  "pos": "a. 예술적인, 예술적 감각이 있는",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "relating to art; showing a natural skill or pleasure in art",
+     "예술과 관련 있는; 예술에 천부적인 기술 또는 즐거움을 보이는"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "예술적인, 예술적 감각이 있는"
+  },
+  "ex": [
+   "Venus de Milo is a great artistic creation.",
+   "「밀로의 비너스」는 위대한 예술적 창작품이다."
+  ]
+ },
+ {
+  "no": 53,
+  "en": "still",
+  "ko": "그럼에도 불구하고, 여전히",
+  "pos": "adv. 그럼에도 불구하고, 여전히",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "My bike is old but it is still in good condition.",
+   "내 자전거는 낡았지만 여전히 상태가 좋다."
+  ]
+ },
+ {
+  "no": 54,
+  "en": "worth",
+  "ko": "~의 가치가 있는",
+  "pos": "a. ~의 가치가 있는",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "good, valuable, or important enough for doing something",
+     "어떤 일을 할 만큼 좋거나 가치가 있거나 중요한"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~의 가치가 있는"
+  },
+  "ex": [
+   "Louvre Museum is certainly worth a visit.",
+   "루브르 박물관은 확실히 방문할 가치가 있다."
+  ]
+ },
+ {
+  "no": 55,
+  "en": "attention",
+  "ko": "관심, 주의, 주목",
+  "pos": "n. 관심, 주의, 주목",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the act of listening to, looking at, or thinking about something or someone carefully",
+     "어떤 일이나 누군가를 주의 깊게 듣고 보거나 생각하는 행위"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "관심, 주의, 주목"
+  },
+  "ex": [
+   "An article in the newspaper caught my attention.",
+   "신문기사 하나가 내 주의를 끌었다."
+  ]
+ },
+ {
+  "no": 56,
+  "en": "although",
+  "ko": "(비록) ~일지라도",
+  "pos": "conj. (비록) ~일지라도",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "Although the sun was shining, it wasn't very warm.",
+   "비록 햇빛이 비치고 있었지만, 그다지 따뜻하지는 않았다."
+  ]
+ },
+ {
+  "no": 57,
+  "en": "meaning",
+  "ko": "뜻, 의미, 의도",
+  "pos": "n. 뜻, 의미, 의도",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the idea that a person wants to express by using words, signs, etc.",
+     "어떤 사람이 낱말, 몸짓 따위를 사용해서 표현하고 싶어 하는 생각"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "뜻, 의미, 의도"
+  },
+  "ex": [
+   "I read the poem more than twice to understand its meaning.",
+   "나는 그 시의 의미를 이해하기 위해 그것을 두 번 이상 읽었다."
+  ]
+ },
+ {
+  "no": 58,
+  "en": "ability",
+  "ko": "능력, 재능",
+  "pos": "n. 능력, 재능",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the power or skill to do something",
+     "어떤 일을 할 능력 또는 기량"
+    ]
+   ],
+   "syn": "capability, talent",
+   "opp": "",
+   "ko_head": "능력, 재능"
+  },
+  "ex": [
+   "Tim showed musical ability at an early age.",
+   "Tim은 어린 나이에 음악적 재능을 보였다."
+  ]
+ },
+ {
+  "no": 59,
+  "en": "object",
+  "ko": "*물건, 물체, 대상, 목적",
+  "pos": "n. *물건, 물체, 대상, 목적",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a thing that you can see and touch and that is not alive; something that your attention or interest is directed toward",
+     "보고 만질 수 있는 무생물체; 주의나 관심의 대상"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "물건, 물체, 대상"
+  },
+  "ex": [
+   "The boat bumped against a solid object.",
+   "그 배는 어떤 단단한 물체와 부딪쳤다."
+  ]
+ },
+ {
+  "no": 60,
+  "en": "subject",
+  "ko": "주제, 문제, 과목, *(그림·사진 등의) 소재, 대상",
+  "pos": "n. 주제, 문제, 과목, *(그림·사진 등의) 소재, 대상",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "someone or something that is shown in a photograph, painting, etc.",
+     "사진, 그림 등에 표현되는 사람 또는 사물"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "주제, 문제, 과목, *(그림·사진 등의) 소재, 대상"
+  },
+  "ex": [
+   "Monet loved to use gardens as his subjects.",
+   "Monet는 정원을 소재로 사용하는 것을 아주 좋아했다."
+  ]
+ },
+ {
+  "no": 61,
+  "en": "copy",
+  "ko": "복사하다, *복사본",
+  "pos": "v. 복사하다 n. *복사본",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a thing that is made to be the same as something else, especially a document or a work of art",
+     "다른 어떤 것과 동일하게 만들어진 것, 특히 문서나 예술 작품"
+    ]
+   ],
+   "syn": "",
+   "opp": "original",
+   "ko_head": "복사본"
+  },
+  "ex": [
+   "This painting is only a copy. The original hangs in the Louvre.",
+   "이 그림은 복사본일 뿐이다. 원본은 루브르 박물관에 걸려 있다."
+  ]
+ },
+ {
+  "no": 62,
+  "en": "sculpture",
+  "ko": "조각품",
+  "pos": "n. 조각품",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a piece of art that is made by carving or molding clay, stone, metal, etc.",
+     "진흙, 돌, 금속 등을 깎거나 빚거나 하여 제작하는 예술 작품"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "조각품"
+  },
+  "ex": [
+   "The museum has several life-sized sculptures of people and animals.",
+   "그 박물관에는 실물 크기의 사람과 동물 조각품들이 몇 개 있다."
+  ]
+ },
+ {
+  "no": 63,
+  "en": "item",
+  "ko": "항목, *물품, 물건",
+  "pos": "n. 항목, *물품, 물건",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "An umbrella is a must-have item for the rainy season.",
+   "우산은 장마철에 꼭 필요한 물품입니다."
+  ]
+ },
+ {
+  "no": 64,
+  "en": "soft",
+  "ko": "부드러운, 푹신한",
+  "pos": "a. 부드러운, 푹신한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "changing shape easily when pressed; not stiff or hard; smooth and pleasant to touch",
+     "눌렀을 때 모양이 쉽게 변하는; 딱딱하거나 단단하지 않은; 부드럽고 만지기 좋은"
+    ]
+   ],
+   "syn": "",
+   "opp": "hard, rough",
+   "ko_head": "부드러운, 푹신한"
+  },
+  "ex": [
+   "The ground was soft after the heavy rain.",
+   "폭우 후에 땅은 부드러웠다."
+  ]
+ },
+ {
+  "no": 65,
+  "en": "material",
+  "ko": "*재료, 자료",
+  "pos": "n. *재료, 자료",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a substance from which something is made",
+     "뭔가를 만드는 데 들어가는 물질"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "재료"
+  },
+  "ex": [
+   "I bought some chairs made of recycled material.",
+   "나는 재활용 재료로 만든 의자를 몇 개 샀다."
+  ]
+ },
+ {
+  "no": 66,
+  "en": "cloth",
+  "ko": "옷감, 직물, 천",
+  "pos": "n. 옷감, 직물, 천",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "material used for making clothes, curtains, etc.",
+     "옷, 커튼 등을 만드는 데 사용되는 재료"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "옷감, 직물, 천"
+  },
+  "ex": [
+   "The dress is made out of a beautiful silk cloth.",
+   "그 드레스는 아름다운 비단 천으로 만들어졌다."
+  ]
+ },
+ {
+  "no": 67,
+  "en": "toilet",
+  "ko": "*변기(통), 화장실",
+  "pos": "n. *변기(통), 화장실",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a bowl-shaped device attached to a pipe that is used for getting rid of bodily waste",
+     "배설물을 제거하는 데 쓰이는 배관에 부착된 그릇 모양의 장치"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "변기(통)"
+  },
+  "ex": [
+   "Don't forget to flush the toilet.",
+   "변기 물 내리는 것을 잊지 마세요."
+  ]
+ },
+ {
+  "no": 68,
+  "en": "huge",
+  "ko": "거대한",
+  "pos": "a. 거대한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "extremely large in size or amount",
+     "크기나 양이 매우 큰"
+    ]
+   ],
+   "syn": "giant",
+   "opp": "",
+   "ko_head": "거대한"
+  },
+  "ex": [
+   "The rich family lived in a huge mansion.",
+   "그 부유한 가족은 거대한 저택에서 살았습니다."
+  ]
+ },
+ {
+  "no": 69,
+  "en": "cone",
+  "ko": "원뿔, 아이스크림용 콘",
+  "pos": "n. 원뿔, 아이스크림용 콘",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "an object with a round flat base and sides that slope up to a pointed top",
+     "둥글고 평평한 바닥과 뾰족한 꼭대기까지 면이 경사져 있는 물체"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "원뿔, 아이스크림용 콘"
+  },
+  "ex": [
+   "Would you like your ice cream in a dish or a cone?",
+   "아이스크림을 접시에 담아 드릴까요? 아니면 콘에 드릴까요?"
+  ]
+ },
+ {
+  "no": 70,
+  "en": "outdoor",
+  "ko": "야외의",
+  "pos": "a. 야외의",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The hotel has an outdoor swimming pool.",
+   "그 호텔은 야외 수영장이 있습니다."
+  ]
+ },
+ {
+  "no": 71,
+  "en": "run",
+  "ko": "달리다, *(사업체 등을) 운영[경영/관리]하다",
+  "pos": "v. 달리다, *(사업체 등을) 운영[경영/관리]하다",
+  "extra": "(run – ran – run)",
+  "ee": {
+   "defs": [
+    [
+     "to direct or to be in charge of an activity, business or organization",
+     "어떤 활동, 사업 또는 단체를 지휘하거나 담당하다"
+    ]
+   ],
+   "syn": "manage, control",
+   "opp": "",
+   "ko_head": "달리다, *(사업체 등을) 운영[경영/관리]하다"
+  },
+  "ex": [
+   "Bob runs a restaurant in Boston.",
+   "Bob은 보스턴에서 식당을 운영한다."
+  ]
+ },
+ {
+  "no": 72,
+  "en": "inside",
+  "ko": "*~안에, 안에",
+  "pos": "prep. *~안에 adv. 안에",
+  "extra": "",
+  "ee": null,
+  "ex": [
+   "The lion was sleeping inside the cage.",
+   "그 사자는 우리 안에서 잠을 자고 있었다."
+  ]
+ },
+ {
+  "no": 73,
+  "en": "studio",
+  "ko": "(촬영) 스튜디오, *(예술가들의) 작업실, 연습실",
+  "pos": "n. (촬영) 스튜디오, *(예술가들의) 작업실, 연습실",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "the building or room where an artist works",
+     "예술가가 작업을 하는 건물 또는 방"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "(촬영) 스튜디오, *(예술가들의) 작업실, 연습실"
+  },
+  "ex": [
+   "Niki was in her studio working on the sculpture.",
+   "Niki는 그녀의 작업실에서 조각 작업을 하고 있었다."
+  ]
+ },
+ {
+  "no": 74,
+  "en": "goods",
+  "ko": "상품, 제품",
+  "pos": "n. 상품, 제품",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "things that are produced to be sold",
+     "팔기 위해 생산된 물건들"
+    ]
+   ],
+   "syn": "product",
+   "opp": "",
+   "ko_head": "상품, 제품"
+  },
+  "ex": [
+   "The new store down the street sells leather goods such as wallets and handbags.",
+   "길 아래 새로 생긴 가게는 지갑이나 핸드백 같은 가죽 제품을 판다."
+  ]
+ },
+ {
+  "no": 75,
+  "en": "lively",
+  "ko": "활기 넘치는, 생생한, (색깔이) 선명한",
+  "pos": "a. 활기 넘치는, 생생한, (색깔이) 선명한",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "very bright and strong",
+     "매우 밝고 강렬한"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "활기 넘치는, 생생한, (색깔이) 선명한"
+  },
+  "ex": [
+   "The room was painted a lively blue.",
+   "그 방은 선명한 파란색으로 칠해져 있었다."
+  ]
+ },
+ {
+  "no": 76,
+  "en": "include",
+  "ko": "포함하다, 포함시키다",
+  "pos": "v. 포함하다, 포함시키다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to make someone or something a part of another",
+     "누군가나 어떤 것을 다른 것의 일부로 만들다"
+    ]
+   ],
+   "syn": "",
+   "opp": "exclude",
+   "ko_head": "포함하다, 포함시키다"
+  },
+  "ex": [
+   "Why don’t you include a few examples in your essay?",
+   "너의 글에 몇 가지 예를 포함시키는 게 어때?"
+  ]
+ },
+ {
+  "no": 77,
+  "en": "speech balloon",
+  "ko": "(만화의) 말풍선",
+  "pos": "n. (만화의) 말풍선",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a circle around the words that someone says in a cartoon",
+     "만화에서 누군가가 말하는 말들 주위에 있는 원"
+    ]
+   ],
+   "syn": "speech bubble",
+   "opp": "",
+   "ko_head": "(만화의) 말풍선"
+  },
+  "ex": [
+   "Speech balloons in a cartoon are usually placed above the characters’ heads.",
+   "만화 속의 말풍선들은 주로 등장인물들의 머리 위에 위치한다."
+  ]
+ },
+ {
+  "no": 78,
+  "en": "regard",
+  "ko": "간주하다, 여기다",
+  "pos": "v. 간주하다, 여기다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to think of someone or something in a particular way",
+     "누군가나 어떤 것을 특정한 방식으로 생각하다"
+    ]
+   ],
+   "syn": "consider, see",
+   "opp": "",
+   "ko_head": "간주하다, 여기다"
+  },
+  "ex": [
+   "Jan’s parents always regard her as the smartest of their children.",
+   "Jan의 부모님은 그녀를 그들의 자녀 중에서 가장 똑똑하다고 여긴다."
+  ]
+ },
+ {
+  "no": 79,
+  "en": "form",
+  "ko": "*유형, 형태, 형식, 형성되다, 만들다",
+  "pos": "n. *유형, 형태, 형식 v. 형성되다, 만들다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "a type or kind of something",
+     "어떤 것의 유형이나 종류"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "유형, 형태, 형식"
+  },
+  "ex": [
+   "Her articles were published in book form.",
+   "그녀가 쓴 기사들이 책 형태로 출간되었다."
+  ]
+ },
+ {
+  "no": 80,
+  "en": "differently",
+  "ko": "다르게",
+  "pos": "adv. 다르게",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "in a different way from someone or something",
+     "누군가나 어떤 것과는 다른 방식으로"
+    ]
+   ],
+   "syn": "",
+   "opp": "similarly",
+   "ko_head": "다르게"
+  },
+  "ex": [
+   "Every student learns differently.",
+   "학생마다 다르게 배운다."
+  ]
+ },
+ {
+  "no": 81,
+  "en": "high art",
+  "ko": "순수 예술",
+  "pos": "n. 순수 예술",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 82,
+  "en": "add",
+  "ko": "더하다, 첨가하다",
+  "pos": "v. 더하다, 첨가하다",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to put something with another thing or group of other things",
+     "어떤 것을 다른 것 또는 다른 것들의 집합과 함께 놓다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "더하다, 첨가하다"
+  },
+  "ex": [
+   "Beat together the egg and sugar, then add the flour.",
+   "달걀과 설탕을 저어 섞고 나서 밀가루를 추가하세요."
+  ]
+ },
+ {
+  "no": 83,
+  "en": "lesson",
+  "ko": "수업, 단원, *교훈",
+  "pos": "n. 수업, 단원, *교훈",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "something learned through experience",
+     "경험을 통해 배우는 것"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "교훈"
+  },
+  "ex": [
+   "I’ve learned a lesson from the failure. I will never make the same mistake again.",
+   "나는 그 실패로부터 교훈을 얻었다. 나는 절대로 같은 실수를 다시 하지 않을 것이다."
+  ]
+ },
+ {
+  "no": 84,
+  "en": "be fascinated by",
+  "ko": "~에 매료되다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 85,
+  "en": "the other day",
+  "ko": "일전[요전]에, 최근 어느 날",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 86,
+  "en": "as well",
+  "ko": "또한, 역시",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 87,
+  "en": "only if",
+  "ko": "~해야만, ~할 경우에 한해",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 88,
+  "en": "(It’s) no wonder (that …)",
+  "ko": "(…인 것은) 놀랄 일도 아니다, 당연하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 89,
+  "en": "short for",
+  "ko": "~의 줄임말[단축형]인",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 90,
+  "en": "instead of",
+  "ko": "~대신에",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "in place of someone or something",
+     "누군가나 어떤 것을 대신해서"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~대신에"
+  },
+  "ex": null
+ },
+ {
+  "no": 91,
+  "en": "turn one’s eyes to",
+  "ko": "~로 눈길[관심]을 돌리다",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to give attention to somewhere else",
+     "다른 곳에 주의를 기울이다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~로 눈길[관심]을 돌리다"
+  },
+  "ex": null
+ },
+ {
+  "no": 92,
+  "en": "in other words",
+  "ko": "다시 말해서",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 93,
+  "en": "be worth –ing",
+  "ko": "~할 가치가 있다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 94,
+  "en": "pay attention to",
+  "ko": "~에 주목하다",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to watch, listen to, or think about someone or something carefully",
+     "누군가나 어떤 것을 주의 깊게 보거나, 듣거나, 생각하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~에 주목하다"
+  },
+  "ex": null
+ },
+ {
+  "no": 95,
+  "en": "be filled with",
+  "ko": "~로 가득 차 있다",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "be completely full of something",
+     "어떤 것으로 완전히 가득 차다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~로 가득 차 있다"
+  },
+  "ex": null
+ },
+ {
+  "no": 96,
+  "en": "famous for",
+  "ko": "~로[때문에] 유명한",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 97,
+  "en": "be able to (동사원형)",
+  "ko": "~을 할 수 있다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 98,
+  "en": "change A into B",
+  "ko": "A를 B로 바꾸다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 99,
+  "en": "be made up of",
+  "ko": "~로 구성되다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 100,
+  "en": "such as",
+  "ko": "예를 들어, ~와 같은",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 101,
+  "en": "in the beginning",
+  "ko": "맨 처음에",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 102,
+  "en": "be made of",
+  "ko": "~로 만들어지다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 103,
+  "en": "set up",
+  "ko": "~을 설치하다",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to place or build something somewhere",
+     "어떤 것을 어떤 장소에 놓거나 짓다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~을 설치하다"
+  },
+  "ex": null
+ },
+ {
+  "no": 104,
+  "en": "back then",
+  "ko": "그 당시에는",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 105,
+  "en": "be regarded as",
+  "ko": "~로 여겨지다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 106,
+  "en": "ask oneself",
+  "ko": "스스로에게 물어보다, 자문하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 107,
+  "en": "break down",
+  "ko": "~을 부수다, 무너뜨리다",
+  "pos": "",
+  "extra": "",
+  "ee": {
+   "defs": [
+    [
+     "to make something fall down by hitting it hard; to destroy something or make it disappear",
+     "어떤 것을 세게 쳐서 넘어뜨리다; 어떤 것을 부수거나 사라지게 하다"
+    ]
+   ],
+   "syn": "",
+   "opp": "",
+   "ko_head": "~을 부수다, 무너뜨리다"
+  },
+  "ex": null
+ },
+ {
+  "no": 108,
+  "en": "add A to B",
+  "ko": "A를 B에 추가하다",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ },
+ {
+  "no": 109,
+  "en": "by –ing",
+  "ko": "~함으로써",
+  "pos": "",
+  "extra": "",
+  "ee": null,
+  "ex": null
+ }
+]
