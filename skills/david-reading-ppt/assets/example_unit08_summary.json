@@ -10,7 +10,7 @@
   "author": "David"
  },
  "intro": {
-  "planFormula": "요약문 3단계 · 신호어 · 오답 함정",
+  "planFormula": "요약문 3단계 · 신호어",
   "steps": {
    "title": "요약문 완성, 딱 3단계만 기억하자",
    "items": [
@@ -24,10 +24,10 @@
     ],
     [
      "짝으로 검증하기",
-     "(A)만 맞고 (B)는 틀린 '반쪽 정답' 지우기\n→ 두 칸 모두 근거 있는 짝 고르기"
+     "(A)와 (B)를 따로 확인\n→ 두 칸 모두 근거가 있는 짝 고르기"
     ]
    ],
-   "notes": "【설명 스크립트】 \"요약문 문제는 본문을 다 읽고 요약문을 보면 늦어요. 순서를 바꿔 볼게요.\n1단계, 요약문을 먼저 읽고 (A)와 (B)에 무엇이 들어갈지 질문을 만들어요. 예: '몽골인들은 유목 생활을 어떻게 하지?'\n2단계, 본문의 주제문과 결론에서 근거를 찾아요. 본문의 maximum or minimum이 요약문에선 extreme처럼 '다른 말'로 바뀌어요.\n3단계, (A)와 (B)를 짝으로 확인해요. 한 칸만 맞는 반쪽 정답이 꼭 두세 개 있어요.\"\n【강조】 오늘 문제 대부분에서 '반쪽 정답'이 함정이라고 예고하세요."
+   "notes": "【설명 스크립트】 \"요약문 문제는 본문을 다 읽고 요약문을 보면 늦어요. 순서를 바꿔 볼게요.\n1단계, 요약문을 먼저 읽고 (A)와 (B)에 무엇이 들어갈지 질문을 만들어요. 예: '몽골인들은 유목 생활을 어떻게 하지?'\n2단계, 본문의 주제문과 결론에서 근거를 찾아요. 본문의 maximum or minimum이 요약문에선 extreme처럼 '다른 말'로 바뀌어요.\n3단계, (A)와 (B)를 각각 근거로 확인해요. 두 칸 모두 맞아야 정답이에요.\""
   },
   "signals": [
    [
@@ -231,6 +231,28 @@
    "clue": "…regard horse riding … as irreplaceable heritage that makes them who they are.",
    "clueKo": "승마를 자신들을 자신들답게 만드는 대체할 수 없는 유산으로 여긴다 → (B) identity",
    "notes": "【도입 질문】 \"요즘 세상에 아직도 말 타고 유목 생활하는 나라가 있을까?\"\n【풀이 핵심】 요약문부터 읽기 → (A)는 '생활 방식을 어떻게 하나', (B)는 '전통이 무엇에 필수적인가'. 본문의 preserve, continue, still이 반복 → (A) maintain. 마지막 문장 makes them who they are → (B) identity.\n【오답 설명】 ②④처럼 한 칸만 맞는 '반쪽 정답'이 요약문 단골 함정. 두 칸 모두 근거를 확인!\n【Plus Q】 (a) a way of life = 평야에서 유목 생활 + 승마 숙달 / (b) motorbike ↔ horse riding.",
+   "keyWhy": {
+    "1": "continue to preserve a way of life → (A) maintain(유지하다)",
+    "4": "continue the tradition(전통을 이어 감) → (A) maintain",
+    "5": "makes them who they are(그들을 그들답게) → (B) identity(정체성)"
+   },
+   "gq": [
+    {
+     "q": "…a way of life that [go / goes] back at least a thousand years.",
+     "a": "goes",
+     "why": "선행사 a way of life(단수) → goes"
+    },
+    {
+     "q": "…horse riding, [which / that] is an essential skill to guard and manage their herds.",
+     "a": "which",
+     "why": "콤마 뒤 계속적 용법 → that 불가"
+    },
+    {
+     "q": "…most Mongolians still regard horse riding [as / to] irreplaceable heritage.",
+     "a": "as",
+     "why": "regard A as B (A를 B로 여기다)"
+    }
+   ],
    "summary": "Many Mongolians (A) their nomadic lifestyle because they believe their old traditions are essential to their cultural (B).",
    "blank": "Many Mongolians (A) their nomadic lifestyle because they believe their old traditions are essential to their cultural (B).",
    "blankKo": "많은 몽골인들은 자신들의 오랜 전통이 문화적 (B)에 필수적이라고 믿기 때문에 유목 생활 방식을 (A)한다.",
@@ -396,6 +418,28 @@
    "clue": "…because the choices were framed using two different terms, ‘lose’ versus ‘keep’, the participants came to different decisions.",
    "clueKo": "선택지가 '잃다'와 '간직하다'로 다르게 표현되어 다른 결정을 내렸다",
    "notes": "【도입 질문】 \"'30달러를 잃는다' vs '20달러를 간직한다', 둘 중 뭐가 더 기분 나빠?\" → 같은 결과인데 '잃는다'가 더 싫다!\n【풀이 핵심】 A 그룹은 '잃는다'는 선택지를 피하려고 도박을 더 많이 택함 → 사람들은 손실(loss)을 예상하게 하는 선택을 피한다. 상황 = 결정을 내려야 하는(decision-making) 상황.\n【오답 설명】 ③ loss만, ④ decision-making만 맞는 반쪽 정답. profit은 정반대.\n【Plus Q】 (a) options = choices / (b) This = 선택지가 다른 말로 표현되어 다른 결정을 내린 것.",
+   "keyWhy": {
+    "5": "'잃는다'를 들은 A 그룹이 도박을 더 많이 선택 → 손실(loss)을 피하려 함",
+    "7": "'lose' vs 'keep' 표현 차이로 다른 결정 → (A) decision-making 상황",
+    "9": "부정적 결과를 떠올리게 하는 말 → (B) loss를 예상하는 선택은 피함"
+   },
+   "gq": [
+    {
+     "q": "[Having heard / Heard] these options, 61.9% of participants in group A chose to gamble.",
+     "a": "Having heard",
+     "why": "참가자가 '들은' 것(능동) + 주절보다 먼저 → 완료 분사구문"
+    },
+    {
+     "q": "…options that actually [led / leading] to an identical outcome.",
+     "a": "led",
+     "why": "관계절의 동사 자리 → led"
+    },
+    {
+     "q": "Using words that make people [think / to think] of a negative outcome…",
+     "a": "think",
+     "why": "사역동사 make + O + 동사원형"
+    }
+   ],
    "summary": "When people face a (A) situation, they are not likely to choose an option that makes them expect a possible (B).",
    "blank": "When people face a (A) situation, they are not likely to choose an option that makes them expect a possible (B).",
    "blankKo": "사람들은 (A) 상황에 직면하면, 가능한 (B)를 예상하게 만드는 선택지를 고르지 않을 가능성이 크다.",
@@ -564,6 +608,28 @@
    "clue": "This happens because we tend to copy the behavior of those around us.",
    "clueKo": "이것은 우리가 주변 사람들의 행동을 따라 하는 경향이 있기 때문이다",
    "notes": "【도입 질문】 \"친구가 다이어트 시작하면 나도 하고 싶어진 적 있어?\"\n【풀이 핵심】 We tend to copy the behavior of those around us → 한 사람의 행동이 다른 사람의 욕구를 '유발(trigger)'한다. 통로 = friends, social networks → contacts.\n【오답 설명】 ⑤ pressure: '사회적 압력'이라는 말이 익숙해서 고르기 쉬운 소재 함정. 글은 압력이 아니라 '따라 하기'.\n【어법】 Many cases of such social contagion happen — 주어는 cases(복수)!",
+   "keyWhy": {
+    "3": "주변 사람의 행동을 따라 함 → 한 사람의 행동이 욕구를 (A) triggers",
+    "6": "행동의 전이 = social contagion (사회적 전염)",
+    "7": "through social networks(관계망을 통해) → (B) contacts"
+   },
+   "gq": [
+    {
+     "q": "Many cases of such social contagion [happen / happens] in subtle ways.",
+     "a": "happen",
+     "why": "주어 cases(복수) → happen"
+    },
+    {
+     "q": "…you will become more inclined [to eat / eating] fatty food.",
+     "a": "to eat",
+     "why": "be(become) inclined to V"
+    },
+    {
+     "q": "We [barely notice / don't barely notice] this interesting hidden principle.",
+     "a": "barely notice",
+     "why": "barely 자체가 부정어 → not과 함께 쓰지 않음"
+    }
+   ],
    "summary": "The social contagion theory illustrates how one person’s action (A) another’s desire to perform the same action through social (B).",
    "blank": "The social contagion theory illustrates how one person’s action (A) another’s desire to perform the same action through social (B).",
    "blankKo": "사회적 전염 이론은 한 사람의 행동이 사회적 (B)을 통해 다른 사람의 같은 행동을 하려는 욕구를 어떻게 (A)하는지 보여 준다.",
@@ -733,6 +799,29 @@
    "clue": "It is not only essential in personal development but also critical to corporate success.",
    "clueKo": "그것은 개인 발전에 필수적일 뿐 아니라 기업의 성공에도 매우 중요하다 → (B) collective",
    "notes": "【도입 질문】 \"시험 끝나고 '내가 왜 틀렸지?' 스스로 물어본 적 있어? 그게 바로 자기 성찰!\"\n【풀이 핵심】 (A) 스스로 질문을 던지는 의도적인 노력 = conscious. (B) not only personal development but also corporate success → 개인 말고 '집단적' 성취 = collective.\n【오답 설명】 inventive(창의적인)는 innovative를 떠올리게 하지만 '노력'의 성격과 맞지 않음. ⑤ modest는 B칸이 틀린 반쪽 정답.\n【연결】 이 지문은 Ex 103(문장 삽입)에서 다시 나옵니다.",
+   "keyWhy": {
+    "2": "강점·약점을 더 분명히 봄 → 자기 성찰의 목적",
+    "4": "스스로 질문하는 의도적인 성찰 과정 → (A) conscious",
+    "5": "개인 발전 + 기업의 성공(corporate success) → (B) collective",
+    "6": "회사 전체가 자기 탐구 문화를 장려 → 집단적 성취"
+   },
+   "gq": [
+    {
+     "q": "…what you are good at and not so good at [during / while] internal conversations with yourself?",
+     "a": "during",
+     "why": "뒤에 명사구 → 전치사 during"
+    },
+    {
+     "q": "This reflection process enables you to [clear / clearly] see potential problems.",
+     "a": "clearly",
+     "why": "동사 see를 꾸미는 부사"
+    },
+    {
+     "q": "It is this self-awareness [that / what] allows the company to excel.",
+     "a": "that",
+     "why": "It is ~ that 강조구문"
+    }
+   ],
    "summary": "Our (A) efforts to understand the strong points and weak points of a subject through the process of self-reflection can lead to (B) achievement as well as individual progress.",
    "blank": "Our (A) efforts to understand the strong points and weak points of a subject through the process of self-reflection can lead to (B) achievement as well as individual progress.",
    "blankKo": "자기 성찰 과정을 통해 대상의 강점과 약점을 이해하려는 우리의 (A) 노력은 개인의 발전뿐 아니라 (B) 성취로 이어질 수 있다.",
@@ -901,6 +990,28 @@
    "clue": "The latter system plays a crucial role in interpreting the hidden messages contained in different odors.",
    "clueKo": "후자의 체계는 다양한 냄새 속 숨은 메시지를 해석하는 데 중대한 역할을 한다",
    "notes": "【도입 질문】 \"물고기가 '위험해!'라고 말할 수 있을까? 냄새로 말한다!\"\n【풀이 핵심】 두 번째 체계의 역할 interpreting the hidden messages → (A) interpreting. 냄새를 방출하는 목적 to warn others of the presence of danger → (B) signal(알리다).\n【오답 설명】 ⑤ escape: 위험하면 도망간다는 상식 연상 → 소재 함정. 글은 '알리기'.\n【어법】 which consists of (O) / is consisted of (X) — consist는 수동태 불가!",
+   "keyWhy": {
+    "4": "숨은 메시지를 해석(interpreting) → (A) interpreting",
+    "5": "위험을 경고(warn)하려고 냄새 방출 → (B) signal",
+    "7": "냄새의 의미를 알아보는 능력 = 생존에 필수"
+   },
+   "gq": [
+    {
+     "q": "…a sophisticated sense of smell, which [consists of / is consisted of] two distinct sensory systems.",
+     "a": "consists of",
+     "why": "consist는 자동사 → 수동태 불가"
+    },
+    {
+     "q": "Many marine animals, [including / included] fish and lobsters, release a specific chemical odor.",
+     "a": "including",
+     "why": "전치사 including (~을 포함하여)"
+    },
+    {
+     "q": "Failure to detect this odor would make the subject [easy / easily] prey for a predator.",
+     "a": "easy",
+     "why": "명사 prey를 꾸미는 형용사"
+    }
+   ],
    "summary": "Survival of some animals can depend on two sensory systems, the functions of which involve (A) odors that other subjects release to (B) approaching danger to other members of the species.",
    "blank": "Survival of some animals can depend on two sensory systems, the functions of which involve (A) odors that other subjects release to (B) approaching danger to other members of the species.",
    "blankKo": "일부 동물의 생존은 두 감각 체계에 달려 있을 수 있는데, 그 기능은 다른 개체들이 종의 다른 구성원에게 다가오는 위험을 (B)하기 위해 방출하는 냄새를 (A)하는 것을 포함한다.",
@@ -1070,6 +1181,29 @@
    "clue": "This diversity in thinking styles can be an invaluable source of team strength…",
    "clueKo": "사고방식의 이러한 다양성은 팀 역량의 매우 귀중한 원천이 될 수 있다 → (B) enhance",
    "notes": "【도입 질문】 \"어항 사진 보고 처음 눈에 들어오는 게 물고기야, 물풀이야?\"\n【풀이 핵심】 문화마다 '더 잘 쓰는' 사고방식이 있다 → preferred. 마지막 문장 invaluable source of team strength → enhance.\n【오답 설명】 ③ distinct(뚜렷한)는 A칸만 놓고 보면 그럴듯하지만 allocate(할당하다)가 틀린 반쪽 정답. ⑤ undermine은 정반대.\n【연결】 수능특강 03강 Ex 3과 같은 실험 소재예요 (분석적 vs 총체적).",
+   "keyWhy": {
+    "2": "문화 차이가 사고방식 차이를 만든다",
+    "6": "아시아인은 전체 맥락을 더 고려 → 문화별 (A) preferred 방식",
+    "7": "서양인은 독립적·분석적 → 각자 선호하는 방식",
+    "8": "다양성 = 팀 역량의 귀중한 원천 → (B) enhance"
+   },
+   "gq": [
+    {
+     "q": "If Asians and Westerners are shown the same thing, they will likely look at different parts of [it / them].",
+     "a": "it",
+     "why": "the same thing(단수)을 가리킴"
+    },
+    {
+     "q": "When [asked / asking] what they had observed afterwards, the Americans said…",
+     "a": "asked",
+     "why": "그들이 '질문받은' 것 → 수동 분사구문"
+    },
+    {
+     "q": "Westerners are more independent and analytical, often [noticing / noticed] specifics.",
+     "a": "noticing",
+     "why": "서양인이 '알아차리는' 것 → 능동 현재분사"
+    }
+   ],
    "summary": "People tend to have a (A) way of thinking based on their cultural backgrounds, so having cultural diversity on a team can (B) teamwork.",
    "blank": "People tend to have a (A) way of thinking based on their cultural backgrounds, so having cultural diversity on a team can (B) teamwork.",
    "blankKo": "사람들은 문화적 배경에 따라 (A) 사고방식을 갖는 경향이 있으므로, 팀 안의 문화적 다양성은 팀워크를 (B)할 수 있다.",
@@ -1230,6 +1364,28 @@
    "clue": "…the maximum or minimum ratings occurred on the one presented first, regardless of the ordering…",
    "clueKo": "순서와 상관없이 최고 또는 최저 평가가 처음 제시된 것에서 나왔다 → initial / extreme",
    "notes": "【도입 질문】 \"노래 경연에서 첫 번째 순서는 유리할까, 불리할까?\"\n【풀이 핵심】 연구 결과 두 개의 공통점: '처음' 제시된 것 → (A) initial. 최고 또는 최저 = 양 끝 → (B) extreme. maximum or minimum을 한 단어로 바꾸는 것이 포인트!\n【오답 설명】 ③ last: 본문 2번 문장에 있는 단어라 눈에 띄는 소재 함정. ② moderate, ⑤ average는 극단의 반대.\n【기출】 2013년 3월 고2 학평.\n【출처】 [2013년 3월 고2 학평]",
+   "keyWhy": {
+    "1": "순서 효과 = 제시 순서가 평가에 주는 편향된 영향",
+    "4": "처음 것이 최고 또는 최저 → (A) initial / (B) extreme",
+    "6": "처음 맛본 음료가 훨씬 높은 평가 → (A) initial"
+   },
+   "gq": [
+    {
+     "q": "Whether the item is located in the first, last, or middle position sometimes [affect / affects] the selection.",
+     "a": "affects",
+     "why": "whether 명사절 주어 → 단수 동사"
+    },
+    {
+     "q": "Robert Ferber had respondents [rate / to rate] a list of occupations.",
+     "a": "rate",
+     "why": "사역동사 have + O + 동사원형"
+    },
+    {
+     "q": "The first beverage [tasted / tasting] was rated significantly higher.",
+     "a": "tasted",
+     "why": "음료가 '맛보아진' 것 → 과거분사"
+    }
+   ],
    "summary": "The items presented in the (A) position tend to get (B) ratings by people.",
    "blank": "The items presented in the (A) position tend to get (B) ratings by people.",
    "blankKo": "(A) 위치에 제시된 항목은 사람들에게 (B) 평가를 받는 경향이 있다.",
@@ -1379,6 +1535,28 @@
    "clue": "…the more complicated people thought their diet plan was, the sooner they were likely to drop it.",
    "clueKo": "다이어트 계획이 더 복잡하다고 생각할수록 더 빨리 포기했다 → (A) simplicity",
    "notes": "【도입 질문】 \"다이어트 실패하는 이유, 의지가 약해서일까?\"\n【풀이 핵심】 While this mental power matters → 반전 신호! 정신력(willpower)보다 '복잡하지 않은 계획'(simplicity)이 중요. (B) willpower = determination, persistence, self-discipline을 묶은 말.\n【오답 설명】 ④ consistency는 persistence(끈기)와 비슷해 보여 고르기 쉬움 → 반쪽 정답.\n【교재 표기】 'a new research'는 원래 research가 불가산이라 어색하지만 교재 원문대로 두었어요.\n【기출】 2013년 6월 고2 학평.\n【출처】 [2013년 6월 고2 학평]",
+   "keyWhy": {
+    "2": "While: 정신력(=willpower)보다 다이어트 자체의 측면도 중요 → (B) willpower",
+    "4": "복잡하다고 생각할수록 빨리 포기 → (A) simplicity",
+    "5": "복잡하다는 주관적 인상이 포기를 부름 → 단순함이 핵심"
+   },
+   "gq": [
+    {
+     "q": "Many people think the success of dieting [depends / depend] mostly on determination.",
+     "a": "depends",
+     "why": "주어 the success(단수)"
+    },
+    {
+     "q": "The more complicated people thought their diet plan was, [the sooner / sooner] they were likely to drop it.",
+     "a": "the sooner",
+     "why": "the 비교급, the 비교급"
+    },
+    {
+     "q": "…a more complex diet that involves [keeping / to keep] track of quantities.",
+     "a": "keeping",
+     "why": "involve + 동명사"
+    }
+   ],
    "summary": "To succeed in diet, (A) of process for carrying it out is more important than (B).",
    "blank": "To succeed in diet, (A) of process for carrying it out is more important than (B).",
    "blankKo": "다이어트에 성공하려면, 그것을 실행하는 과정의 (A)이 (B)보다 더 중요하다.",
@@ -1534,6 +1712,27 @@
    "clue": "At the root of trained incapacity is a job with little variety and repetitive tasks.",
    "clueKo": "훈련된 무능의 근원에는 다양성이 거의 없고 반복적인 업무가 있다 → (A) monotonous",
    "notes": "【도입 질문】 \"매뉴얼대로만 일하던 알바생이 처음 보는 상황을 만나면?\"\n【풀이 핵심】 little variety and repetitive tasks = monotonous(단조로운). trained incapacity = 새 상황에 대응할 수 '없게' 됨 → unable.\n【오답 설명】 ② repetitive는 본문 단어 그대로라 A칸은 맞지만 eager가 틀린 반쪽 정답.\n【연결】 이 지문은 Ex 104(어휘)에서 다시 나옵니다.\n【기출】 2014년 6월 고2 학평.\n【출처】 [2014년 6월 고2 학평]",
+   "keyWhy": {
+    "2": "새로운 상황에 대응하지 못하는 '훈련된 무능' → (B) unable",
+    "4": "다양성이 거의 없고 반복적인 업무 → (A) monotonous"
+   },
+   "gq": [
+    {
+     "q": "…they risk [developing / to develop] trained incapacity.",
+     "a": "developing",
+     "why": "risk + 동명사"
+    },
+    {
+     "q": "At the root of trained incapacity [is / are] a job with little variety and repetitive tasks.",
+     "a": "is",
+     "why": "부사구 도치 → 주어 a job(단수)"
+    },
+    {
+     "q": "…to meet organizational goals while [ignoring / ignored] other important matters.",
+     "a": "ignoring",
+     "why": "직원들이 '무시하는' 것 → 능동"
+    }
+   ],
    "summary": "When the workers of organizations are trained to do (A) jobs, they possibly end up being (B) to deal with new or changing situations.",
    "blank": "When the workers of organizations are trained to do (A) jobs, they possibly end up being (B) to deal with new or changing situations.",
    "blankKo": "조직의 직원들이 (A) 일을 하도록 훈련받으면, 결국 새롭거나 변화하는 상황에 대처할 수 (B) 될 수 있다.",
@@ -1706,6 +1905,28 @@
    "clue": "…adding the statistical realities of the larger hunger problem to Rokia’s story significantly reduced the contributions to Rokia.",
    "clueKo": "Rokia 이야기에 더 큰 기아 문제의 통계를 더하자 기부가 크게 줄었다 → (B) larger",
    "notes": "【도입 질문】 \"광고에서 '굶주리는 아이 1억 명' vs '7살 Rokia의 사진', 어느 쪽에 더 기부하고 싶어?\"\n【풀이 핵심】 개인(individual) Rokia에게는 기부가 많고, 더 큰(larger) 기아 문제의 통계를 보여 주면 줄어든다.\n【오답 설명】 ③ the masses는 정반대(대중에겐 무관심). broader는 larger와 비슷해 보여도 A칸이 틀린 반쪽 정답.\n【기출】 2015년 9월 고2 학평.\n【출처】 [2015년 9월 고2 학평]",
+   "keyWhy": {
+    "1": "개인은 돕지만 대중의 고통에는 무관심 → (A) an individual",
+    "7": "개인 Rokia에 대한 기부가 통계 묘사보다 훨씬 큼",
+    "9": "더 큰 기아 문제의 통계를 더하자 기부 감소 → (B) larger"
+   },
+   "gq": [
+    {
+     "q": "People who are otherwise caring and would go out of their way to help another individual [become / becomes] indifferent.",
+     "a": "become",
+     "why": "주어 People(복수) — who절 건너뛰기"
+    },
+    {
+     "q": "Donations to the individual, Rokia, were [far / very] greater than donations to the second choice.",
+     "a": "far",
+     "why": "비교급 강조: far/much/even/still (very 불가)"
+    },
+    {
+     "q": "What is surprising is [that / what] adding the statistical realities significantly reduced the contributions.",
+     "a": "that",
+     "why": "뒤가 완전한 절 → 보어절 접속사 that"
+    }
+   ],
    "summary": "An experiment shows that while people are more willing to help (A) in need, they become indifferent when given the (B) perspective of hunger.",
    "blank": "An experiment shows that while people are more willing to help (A) in need, they become indifferent when given the (B) perspective of hunger.",
    "blankKo": "한 실험은 사람들이 어려움에 처한 (A)을 돕는 데는 더 적극적이지만, 기아에 대한 (B) 관점이 주어지면 무관심해진다는 것을 보여 준다.",
@@ -1867,6 +2088,28 @@
    "clue": "However, because the choices were framed using two different terms, ‘lose’ versus ‘keep’, the participants came to different decisions.",
    "clueKo": "그러나 '잃다'와 '간직하다'로 다르게 표현되어 다른 결정을 내렸다 → 결과는 같았다는 뜻",
    "notes": "【변형 패턴】 Ex 93 지문 그대로, 요약문 → 빈칸 추론으로 바꾼 문제예요. \"아까 푼 지문 기억나지?\"로 시작하세요.\n【풀이 핵심】 칠판에 계산: 50 − 30 = 20 / 20 남김 → 결과는 똑같다! 빈칸 바로 다음 문장이 However로 시작 → '결과는 같지만, 표현이 달라 다른 결정'이라는 흐름.\n【오답 설명】 ① serious financial loss는 lose를 보고 고르는 소재 함정.",
+   "keyWhy": {
+    "3": "50달러 중 30달러를 잃음 → 20달러가 남음",
+    "4": "20달러를 간직함 → 20달러가 남음 → 결과는 같다",
+    "7": "However: 결과는 같은데 표현만 달라 다른 결정 → an identical outcome"
+   },
+   "gq": [
+    {
+     "q": "The participants were each [given / giving] $50 and separated into two groups.",
+     "a": "given",
+     "why": "참가자가 '받은' 것 → 수동태"
+    },
+    {
+     "q": "…because the choices were [framed / framing] using two different terms.",
+     "a": "framed",
+     "why": "선택지가 '표현된' 것 → 수동태"
+    },
+    {
+     "q": "This is [called / calling] the “framing effect”.",
+     "a": "called",
+     "why": "call O C의 수동태"
+    }
+   ],
    "blank": "…the two groups were given options that actually led to ________.",
    "blankKo": "두 그룹은 사실 ______로 이어지는 선택지를 받았다."
   },
@@ -2028,6 +2271,27 @@
    "clue": "During the process, you may ask yourself a series of questions to identify blind spots…",
    "clueKo": "맹점(blind spots)을 찾는 질문 → 주어진 문장의 potential problems로 연결",
    "notes": "【변형 패턴】 Ex 95 지문을 문장 삽입으로 바꾼 문제예요.\n【풀이 핵심】 주어진 문장의 지시어 This reflection process → 앞에 성찰의 구체적 내용(질문으로 맹점 찾기)이 와야 함. 그리고 ②자리 뒤 It is not only essential …의 It이 '이 성찰 과정'을 받아야 자연스럽다.\n【팁】 문장 삽입은 '지시어(this, it)·연결어'를 따라가면 된다. ②를 빼고 읽어 보면 '맹점 질문 → It은 중요하다'에서 It이 무엇인지 애매해지는 '논리의 틈'이 보여요.",
+   "keyWhy": {
+    "3": "맹점을 찾는 질문 = 성찰의 구체적 내용 → 주어진 문장 바로 앞",
+    "4": "It = this reflection process → 주어진 문장 바로 뒤 (②)"
+   },
+   "gq": [
+    {
+     "q": "…blind spots that may be blocking you from [reaching / reach] your goals.",
+     "a": "reaching",
+     "why": "block O from -ing"
+    },
+    {
+     "q": "It is not only essential in personal development but also [critical / critically] to corporate success.",
+     "a": "critical",
+     "why": "be동사 보어 형용사 병렬 (essential / critical)"
+    },
+    {
+     "q": "…promote a culture which [include / includes] this self-inquiry.",
+     "a": "includes",
+     "why": "선행사 a culture(단수)"
+    }
+   ],
    "given": "This reflection process enables you to clearly see potential problems and ways to fix them.",
    "blank": "This reflection process enables you to clearly see potential problems and ways to fix them.",
    "blankKo": "이러한 성찰 과정은 잠재적인 문제들과 그것을 고칠 방법을 분명하게 보게 해 준다.",
@@ -2169,6 +2433,27 @@
    "clue": "At the root of trained incapacity is a job with little variety and repetitive tasks.",
    "clueKo": "근원은 다양성이 거의 없는 업무 → 다양성이 '줄어드는' 상황",
    "notes": "【변형 패턴】 Ex 100 지문을 어휘 문제로 바꾼 문제예요. Ex 100 원문에는 ⑤가 decreases로 되어 있어요.\n【풀이 핵심】 ⑤ 문장은 '다양성 ↓ → 생각·시간 ↓'라는 같은 방향의 비례. 앞 문장 little variety(다양성이 거의 없는)와도 맞아야 하므로 increases가 아니라 decreases.\n【팁】 어휘 문제는 '글 전체의 방향(+/−)'과 맞지 않는 단어를 찾는 것. 반의어(increase ↔ decrease)로 바꿔 넣어 보면 정답이 보인다.",
+   "keyWhy": {
+    "4": "little variety = 다양성이 '줄어드는' 상황",
+    "5": "생각·시간 감소와 같은 방향이어야 함 → increases(✘) → decreases"
+   },
+   "gq": [
+    {
+     "q": "Formal organizations train workers [to perform / perform] their jobs in a certain way.",
+     "a": "to perform",
+     "why": "train O to V"
+    },
+    {
+     "q": "…trained incapacity—the inability [to respond / responding] to new or unusual circumstances.",
+     "a": "to respond",
+     "why": "inability to V (~할 수 없음)"
+    },
+    {
+     "q": "…the amount of thought and time needed to perform a job also [decrease / decreases].",
+     "a": "decreases",
+     "why": "주어 the amount(단수)"
+    }
+   ],
    "blank": "…as variety in work ⑤increases, the amount of thought and time needed to perform a job also decreases.",
    "blankKo": "업무의 다양성이 ⑤증가할수록, 일에 필요한 생각과 시간도 감소한다 (?)",
    "step1Label": "STEP 1 · 의심 문장",

@@ -92,6 +92,8 @@
       "given": "This reflection process enables …",          // 문장 삽입: 지문 위 [주어진 문장] 표시
       "hideOptsOnProblem": true,     // 삽입·어휘처럼 선택지가 지문 속 ①~⑤인 문제는 보기 목록 숨김
       "step1Label": "STEP 1 · 요약문 먼저",  // 흐름 슬라이드 첫 카드 이름
+      "keyWhy": { "4": "continue the tradition → (A) maintain" },  // 정답 근거(true) 문장 번호 → 근거 이유 한 줄 (근거 슬라이드 노란 박스)
+      "gq": [ { "q": "…a way of life that [go / goes] back…", "a": "goes", "why": "선행사 단수" } ],  // 내신 어법 체크 3문항 (지문 문장 기반, 문법 포인트와 연계)
       "hook": "몽골에 아직도 말 타는 유목민이 있을까?",  // 미션 슬라이드 하단 질문 (생략 시 notes의 【도입 질문】에서 자동 추출)
       "mission": "…",                // 미션 문구 (생략 시 유형별 기본 문구)
       "vocab": [["urban", "도시의"], ["preserve", "보존하다"]]  // 사용자가 '단어 포함'을 원할 때: 근거 슬라이드 하단 어휘 박스 (지문당 6~8개, 각주 단어 제외)

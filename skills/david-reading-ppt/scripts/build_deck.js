@@ -89,7 +89,7 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
 
 (async () => {
   const I = {
-    search: await icon(fa.FaSearch, HEX.lt1), searchDark: await icon(fa.FaSearch, HEX.accent2), link: await icon(fa.FaLink, HEX.lt1), check: await icon(fa.FaCheck, HEX.lt1),
+    bulbLight: await icon(fa.FaLightbulb, HEX.lt1), search: await icon(fa.FaSearch, HEX.lt1), searchDark: await icon(fa.FaSearch, HEX.accent2), link: await icon(fa.FaLink, HEX.lt1), check: await icon(fa.FaCheck, HEX.lt1),
     key: await icon(fa.FaKey, HEX.accent2), bulb: await icon(fa.FaLightbulb, HEX.dk2), flag: await icon(fa.FaFlag, HEX.lt1),
     exch: await icon(fa.FaExchangeAlt, HEX.lt1), arrowR: await icon(fa.FaArrowRight, HEX.accent2), quote: await icon(fa.FaQuoteLeft, HEX.lt1),
     chalk: await icon(fa.FaChalkboardTeacher, HEX.accent3), golf: await icon(fa.FaGolfBall, HEX.dk2), clock: await icon(fa.FaClock, HEX.dk2),
@@ -126,8 +126,8 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
   s.addText("오늘 수업은 이렇게 진행해요", { placeholder: "title" });
   const plan = [
     ["1", "채점하기", "정답 한눈에 보기로 채점 → 틀린 문제 표시", "약 5분"],
-    ["2", "풀이 공식 익히기", IN.planFormula || "풀이 3단계 · 신호어 · 오답 함정", "약 10분"],
-    ...PARTS.slice(0, 2).map((p, i) => [String(i + 3), `Exercise ${p[0].n}–${p[p.length - 1].n}`, i === 0 ? "지문+보기 → 근거 미션 → 문법 → 흐름 → 함정 맞히기" : "같은 순서 + 마지막에 복습 미니테스트", `${i + 1}차시`]),
+    ["2", "풀이 공식 익히기", IN.planFormula || "풀이 3단계 · 신호어", "약 10분"],
+    ...PARTS.slice(0, 2).map((p, i) => [String(i + 3), `Exercise ${p[0].n}–${p[p.length - 1].n}`, i === 0 ? "Hook → 지문+보기 → 근거·이유 → 흐름 → 정답 → 어법 체크" : "같은 순서 + 마지막에 복습 미니테스트", `${i + 1}차시`]),
   ];
   plan.forEach((p, i) => {
     const x = 0.6 + i * 3.1;
@@ -171,19 +171,6 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
     s.addText(g[3], { x: x + 1.3, y: y + 1.3, w: 4.4, h: 0.95, fontSize: 15, color: C.text1, margin: 0, valign: "top", isTextBox: true });
   });
   s.addNotes("【설명 스크립트】 \"글을 읽다가 이 네 종류 단어가 나오면 꼭 동그라미 치세요. 답이 바로 근처에 있어요.\"\n【오른쪽 위 칩】 오늘 문제 중 그 신호어가 결정적이었던 Exercise 번호예요. 해당 문제를 풀 때 \"아까 배운 반전 신호어 기억나?\" 하고 다시 연결해 주세요.");
-
-  // ---------- 5. 오답 함정 ----------
-  s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
-  s.addText("오답은 4가지 얼굴로 나타난다", { placeholder: "title" });
-  const traps = IN.traps;
-  traps.forEach((t, i) => {
-    const y = 1.55 + i * 1.33;
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y, w: 12.1, h: 1.15, rectRadius: 0.12, fill: { color: i % 2 ? C.background1 : C.background2 }, line: { color: C.background2, width: 1 } });
-    s.addText(t[0], { shape: pres.shapes.ROUNDED_RECTANGLE, rectRadius: 0.15, x: 0.9, y: y + 0.3, w: 1.9, h: 0.55, fill: { color: TAG[t[0]].fill }, color: TAG[t[0]].color, fontSize: 18, bold: true, align: "center", valign: "middle", margin: 0 });
-    s.addText(t[1], { x: 3.1, y: y + 0.2, w: 4.4, h: 0.75, fontSize: 18, bold: true, color: C.text2, valign: "middle", margin: 0, isTextBox: true });
-    s.addText("예) " + t[2], { x: 7.6, y: y + 0.2, w: 4.9, h: 0.75, fontSize: 15, color: C.text1, valign: "middle", margin: 0, isTextBox: true });
-  });
-  s.addNotes("【설명 스크립트】 \"오답에도 패턴이 있어요. 이 4가지만 알면 5개 중 2~3개는 바로 지울 수 있어요.\"\n【활용 팁】 뒤에 나오는 '정답 & 오답 체크' 슬라이드에서 각 선택지 오른쪽에 이 4가지 라벨이 붙어 있어요. 학생에게 \"이 선택지는 어떤 함정일까?\"를 먼저 물어보고 라벨을 확인시키면 참여형 수업이 됩니다.\n【색 기억법】 빨강 = 정답, 남색 = 반대, 연두 = 언급 없음, 노랑 = 소재 함정, 파랑 = 범위 오류.");
 
   // ---------- 6. 함의 추론 ----------
   const IMP = IN.implication;
@@ -245,6 +232,21 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
     // (A)/(B) blanks in summary sentences: color them
     const abRuns = (txt, base) => txt.split(/(\(A\)|\(B\))/).filter(Boolean).map((t) => ({ text: t, options: { ...base, ...(/^\([AB]\)$/.test(t) ? { bold: true, color: HEX.accent2 } : {}) } }));
 
+    // --- Hook: 지문 들어가기 전 생각 질문
+    const hook = hookOf(e);
+    if (hook) {
+      s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
+      s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: e.title }], { placeholder: "title" });
+      chip(s, `${kind} · Hook`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 1.4, y: 1.9, w: 10.5, h: 3.6, rectRadius: 0.25, fill: { color: HEX.lt2 }, line: { color: HEX.lt2 } });
+      s.addShape(pres.shapes.OVAL, { x: 1.9, y: 2.35, w: 1.1, h: 1.1, fill: { color: C.accent1 }, line: { color: C.accent1 } });
+      s.addImage({ data: I.bulbLight, x: 2.17, y: 2.62, w: 0.56, h: 0.56 });
+      s.addText("생각해 볼까?", { x: 3.3, y: 2.4, w: 6, h: 0.5, fontSize: 18, bold: true, color: C.accent1, margin: 0, isTextBox: true });
+      s.addText(hook.replace(/^"|"$/g, "").replace(/" → .*$/, "").replace(/"/g, ""), { x: 3.3, y: 2.95, w: 8.2, h: 2.2, fontSize: 28, bold: true, color: C.text2, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
+      chip(s, "짝과 30초 이야기 → 2~3명 발표", 4.65, 5.85, 4.0, C.accent2, C.background1, 14);
+      s.addNotes(`【Hook 진행】 지문을 펴기 전에 이 질문으로 30초 동안 짝과 이야기 → 2~3명 발표. 정답을 고르지 말고 '오늘 글의 소재'에 관심을 갖게 하는 단계예요.\n【참고】 ${hook}`);
+    }
+
     // --- Problem slide: 지문 + 보기 (시험지처럼)
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
     const prompt = e.prompt || (isImp(e) ? "밑줄 친 부분의 의미로 가장 적절한 것은?" : "다음 빈칸에 들어갈 말로 가장 적절한 것은?");
@@ -278,36 +280,18 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
     s.addText(qr, { x: 0.85, y: 1.5, w: 11.6, h: 5.3, margin: 0, valign: "top", lineSpacingMultiple: 1.15, isTextBox: true });
     s.addNotes(`【이 슬라이드 사용법】 숙제로 풀어 온 문제를 그대로 띄운 화면입니다. \"몇 번 골랐어?\" 손가락으로 표시하게 해서 답 분포를 확인하고, 정답은 아직 말하지 마세요. 많이 고른 오답이 있으면 정답·오답 슬라이드에서 그 선택지를 더 오래 설명하세요.\n【한 줄 요약】 ${e.find}`);
 
-    // --- 근거 찾기 미션 (번호만, 표시 없음) — 학생이 먼저 찾고 다음 장에서 공개
-    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
-    s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "근거 찾기 미션" }], { placeholder: "title" });
-    chip(s, `${kind} · 미션`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.32, w: 12.1, h: 0.62, rectRadius: 0.12, fill: { color: "FFF1C7" }, line: { color: HEX.accent3, width: 1.5 } });
-    s.addImage({ data: I.searchDark, x: 0.85, y: 1.45, w: 0.36, h: 0.36 });
-    s.addText([{ text: "MISSION  ", options: { bold: true, color: HEX.accent2 } }, { text: e.mission || MISSION[e.type] || "정답의 근거가 되는 문장 번호를 찾아라!", options: { bold: true, color: HEX.dk2 } }], { x: 1.35, y: 1.32, w: 9.3, h: 0.62, fontSize: 18, valign: "middle", margin: 0, isTextBox: true });
-    chip(s, "⏱ 1분", 11.2, 1.45, 1.3, C.accent2, C.background1, 14);
-    const mSize = Math.min(21, Math.floor(24 * Math.sqrt(2.85 * 1000 / (5.9 * totalChars))));
-    const mr = [];
-    P.s.forEach((x, i) => {
-      mr.push({ text: `(${i + 1}) `, options: { fontSize: mSize - 2, bold: true, color: HEX.accent2 } });
-      mr.push(...runs(x[0], { fontSize: mSize, color: HEX.dk1 }, false));
-      if (i < P.s.length - 1) mr.push({ text: " ", options: { fontSize: mSize } });
-    });
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 2.08, w: 12.1, h: 3.95, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
-    s.addText(mr, { x: 0.85, y: 2.2, w: 11.6, h: 3.72, margin: 0, valign: "top", lineSpacingMultiple: 1.18, fit: "shrink", isTextBox: true });
-    const hook = hookOf(e);
-    if (hook) {
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 6.15, w: 12.1, h: 0.62, rectRadius: 0.12, fill: { color: HEX.lt2 }, line: { color: HEX.lt2 } });
-      s.addText([{ text: "생각해 볼까?  ", options: { bold: true, color: HEX.accent1 } }, { text: hook.replace(/^"|"$/g, ""), options: { color: HEX.dk2 } }], { x: 0.85, y: 6.15, w: 11.6, h: 0.62, fontSize: 15, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
-    }
-    const keyNumsM = P.s.map((x, i) => (x[2] ? i + 1 : 0)).filter(Boolean).join(", ");
-    s.addNotes(`【미션 진행】 ① 아래 '생각해 볼까?' 질문으로 가볍게 시작 → ② \"1분 동안 근거 문장 번호를 찾아서 손가락으로 표시!\" → ③ 짝과 번호 비교 → ④ 몇 명에게 번호와 이유를 말하게 한 뒤 다음 슬라이드에서 형광으로 공개.\n【정답 근거 문장】 ${keyNumsM}번\n【칭찬 포인트】 정확한 번호가 아니어도 근처 문장을 찾았으면 \"방향이 맞아!\"라고 인정해 주세요.`);
-
     // --- 정답 근거 찾기 (형광)
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
     s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "정답 근거 & 문법 포인트" }], { placeholder: "title" });
     chip(s, `${kind} · 근거`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-    const pSize = Math.min(e.vocab && e.vocab.length ? 21 : 22, Math.floor(24 * Math.sqrt((e.vocab && e.vocab.length ? 3.05 : 3.7) * 1000 / (5.9 * totalChars))));
+    // layout zones: passage / 근거 이유 / 어휘
+    const hasV = !!(e.vocab && e.vocab.length);
+    const KW = e.keyWhy || {};
+    const whyList = P.s.map((x, i) => (x[2] && KW[i + 1] ? [i + 1, KW[i + 1]] : null)).filter(Boolean);
+    const whyH = whyList.length ? Math.min(1.45, 0.29 * whyList.length + 0.2) : 0;
+    const whyY = (hasV ? 5.8 : 6.6) - (whyList.length ? 0.1 + whyH : 0);
+    const passBoxH = whyY - 0.1 - 1.35;
+    const pSize = Math.min(21, Math.floor(24 * Math.sqrt((3.7 * (passBoxH - 0.25) / 4.95) * 1000 / (5.9 * totalChars))));
     const pr = [];
     const G = GR[e.n] || [];
     const seenG = new Set();
@@ -350,9 +334,19 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       }
     });
     pr.forEach((r) => delete r.vw);
-    const boxH = VO.length ? 4.35 : 5.2;
+    const boxH = passBoxH;
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.35, w: 12.1, h: boxH, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
     s.addText(pr, { x: 0.85, y: 1.5, w: 11.6, h: boxH - 0.25, margin: 0, valign: "top", lineSpacingMultiple: 1.2, fit: "shrink", isTextBox: true });
+    if (whyList.length) {
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: whyY, w: 12.1, h: whyH, rectRadius: 0.1, fill: { color: "FFF6D6" }, line: { color: HEX.accent3, width: 1.25 } });
+      const wr = [];
+      whyList.forEach(([n, why], wi) => {
+        wr.push({ text: `(${n}) `, options: { bold: true, color: HEX.accent2 } });
+        wr.push({ text: why, options: { color: HEX.dk2, breakLine: wi < whyList.length - 1 } });
+      });
+      s.addText(" 근거 이유 ", { x: 0.8, y: whyY + 0.08, w: 1.15, h: 0.3, fontSize: 12, bold: true, color: HEX.lt1, fill: { color: HEX.accent2 }, align: "center", valign: "middle", margin: 0, isTextBox: true });
+      s.addText(wr, { x: 2.1, y: whyY + 0.05, w: 10.45, h: whyH - 0.1, fontSize: 14, valign: "middle", margin: 0, lineSpacingMultiple: 1.05, fit: "shrink", isTextBox: true });
+    }
     if (VO.length) {
       const vr = [{ text: " 어휘 ", options: { bold: true, color: HEX.lt1, highlight: HEX.accent1 } }, { text: "   ", options: {} }];
       VO.forEach(([w, ko], vi) => {
@@ -363,30 +357,14 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       s.addText(vr, { x: 0.8, y: 5.85, w: 11.7, h: 0.7, fontSize: 14, valign: "middle", margin: 0, lineSpacingMultiple: 1.1, fit: "shrink", isTextBox: true });
     }
     s.addText([
-      { text: "■ ", options: { color: HEX.accent3 } }, { text: "형광 = 정답 근거 문장     ", options: {} },
+      { text: "■ ", options: { color: HEX.accent3 } }, { text: "형광 = 정답 근거 (이유는 노란 박스)     ", options: {} },
       { text: "■ ", options: { color: GH } }, { text: "파란 형광 = 문법·내신 포인트     ", options: {} },
       ...(e.vocab && e.vocab.length ? [{ text: "초록 점선 단어 ", options: { color: HEX.accent1, bold: true } }, { text: "= 하단 어휘     ", options: {} }] : []),
       { text: "(1) (2) (3) ", options: { color: HEX.accent1, bold: true } }, { text: "= 문장 번호", options: {} },
     ], { x: 0.6, y: 6.65, w: 12.1, h: 0.3, fontSize: 11, color: C.accent4, margin: 0, isTextBox: true });
     const keyNums = P.s.map((x, i) => (x[2] ? i + 1 : 0)).filter(Boolean).join(", ");
     const trans = P.s.map((x, i) => `(${i + 1})${x[2] ? " ★" : ""} ${x[1]}`).join("\n");
-    s.addNotes(`【이 슬라이드 사용법】 문장 번호 순서대로 읽으며 해설하고, 형광 문장(${keyNums}번)에서 멈춰 \"여기가 정답 근거!\"라고 강조하세요. 파란 형광은 문법·내신 포인트로, 다음 슬라이드에서 정리합니다.\n\n${e.notes}\n\n【문장별 해석 · 선생님 참고용 (★ = 정답 근거)】\n${trans}`);
-
-    // --- 문법·내신 포인트 정리
-    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
-    s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "문법·내신 포인트" }], { placeholder: "title" });
-    chip(s, `${kind} · 문법`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-    const gh = Math.min(1.15, (5.5 - 0.12 * (G.length - 1)) / G.length);
-    G.forEach((g, gi) => {
-      const y = 1.4 + gi * (gh + 0.12);
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y, w: 12.1, h: gh, rectRadius: 0.1, fill: { color: gi % 2 ? HEX.lt1 : "F2F8FB" }, line: { color: "D3E5EE", width: 1 } });
-      s.addText([{ text: g[0].join("  …  "), options: { highlight: GH } }], { x: 0.9, y: y + 0.1, w: 5.8, h: gh - 0.2, fontSize: 15, bold: true, italic: true, color: C.text2, valign: "middle", margin: 0, isTextBox: true });
-      s.addText([
-        { text: g[1], options: { bold: true, color: HEX.dk2, fontSize: 17, breakLine: true } },
-        { text: g[2], options: { color: HEX.dk1, fontSize: 14 } },
-      ], { x: 7.0, y: y + 0.08, w: 5.5, h: gh - 0.16, valign: "middle", margin: 0, paraSpaceAfter: 2, isTextBox: true });
-    });
-    s.addNotes(`【이 슬라이드 사용법】 앞 슬라이드의 파란 형광을 위에서부터 하나씩 짚으며 설명하세요. 내신 어법 문제는 주로 '수일치 · 병렬 · 관계사 · 분사 · 도치'에서 나옵니다. \"이 자리에 다른 형태가 오면 왜 틀릴까?\"를 물어보면 좋아요.\n\n${G.map((g) => `• ${g[1]}: ${g[2]}`).join("\n")}`);
+    s.addNotes(`【이 슬라이드 사용법】 문장 번호 순서대로 읽으며 해설하고, 형광 문장(${keyNums}번)에서 멈춰 \"여기가 정답 근거!\"라고 강조하세요. 파란 형광은 문법·내신 포인트예요. 아래 설명을 보고 짚어 주세요.\n\n【문법·내신 포인트 (파란 형광)】\n${G.map((g) => `• ${g[0].join(" … ")}\n   → ${g[1]}: ${g[2]}`).join("\n")}\n\n${e.notes}\n\n【문장별 해석 · 선생님 참고용 (★ = 정답 근거)】\n${trans}`);
 
     // --- Slide A: 흐름 잡기
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
@@ -417,46 +395,42 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
     });
     s.addNotes(`【이 슬라이드 사용법】 근거 찾기를 마친 뒤 \"그래서 이 글은 한마디로 뭐야?\" 하고 정리할 때 띄우세요. 왼쪽 위(빈칸 문장) → 오른쪽(글의 흐름 1~4) → 왼쪽 아래(결정적 단서) 순서로 설명하면 됩니다. 정답은 다음 슬라이드에서 공개!\n\n${e.notes}`);
 
-    // --- Slide B: 함정 맞히기(정답 가림) → 정답 & 오답 공개
-    const drawAnswer = (reveal) => {
+    // --- Slide B: 정답 & 해설
+    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
+    s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "정답 & 해설" }], { placeholder: "title" });
+    chip(s, `${kind} · 정답`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.45, w: 4.1, h: 5.45, rectRadius: 0.15, fill: { color: C.text2 }, line: { color: C.text2 } });
+    s.addText("정답", { x: 0.95, y: 1.7, w: 3.4, h: 0.4, fontSize: 16, bold: true, color: C.accent3, margin: 0, isTextBox: true });
+    s.addText(NUM[e.ans - 1], { x: 0.95, y: 2.1, w: 3.4, h: 1.3, fontSize: 72, bold: true, color: C.background1, margin: 0, isTextBox: true });
+    const a = e.opts[e.ans - 1];
+    s.addText(a[0], { x: 0.95, y: 3.65, w: 3.45, h: 1.4, fontSize: 17, bold: true, italic: true, color: C.background1, margin: 0, valign: "top", isTextBox: true });
+    s.addText(a[1], { x: 0.95, y: 5.1, w: 3.45, h: 1.6, fontSize: 14, color: C.background2, margin: 0, valign: "top", isTextBox: true });
+    e.opts.forEach((o, i) => {
+      const y = 1.45 + i * 1.11, ok = i === e.ans - 1;
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 5.0, y, w: 7.7, h: 0.99, rectRadius: 0.1, fill: { color: ok ? C.accent6 : C.background1 }, line: { color: ok ? C.accent2 : C.background2, width: ok ? 2 : 1 } });
+      s.addText(NUM[i], { x: 5.2, y: y + 0.12, w: 0.45, h: 0.45, fontSize: 20, bold: true, color: ok ? C.accent2 : C.accent4, margin: 0, isTextBox: true });
+      s.addText(o[0], { x: 5.75, y: y + 0.08, w: 6.75, h: 0.45, fontSize: 15, bold: ok, color: C.text2, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
+      s.addText((ok ? "✔ " : o[2] === "적절" ? "○ " : "✘ ") + o[1], { x: 5.75, y: y + 0.52, w: 6.75, h: 0.4, fontSize: 13, color: ok ? C.accent2 : C.accent4, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
+    });
+    const wrong = e.opts.map((o, i) => `${NUM[i]} ${o[1]}`).join("\n");
+    s.addNotes(`【이 슬라이드 사용법】 \"몇 번 골랐어?\" 다시 확인 → 오답을 하나씩 \"이건 왜 아닐까?\" 물어보고 → 정답 확인.\n\n【선택지별 설명】\n${wrong}\n\n【마무리 멘트】 \"정답 ${NUM[e.ans - 1]}은 지문의 근거 문장을 다른 말로 바꾼 거예요. 답은 늘 지문 안에 있다!\"`);
+
+    // --- 내신 어법 체크 (문법 포인트 연계 문제, 답은 노트)
+    const GQe = (e.gq || []).slice(0, 4);
+    if (GQe.length) {
       s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
-      s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: reveal ? "정답 & 오답 체크" : "함정 맞히기" }], { placeholder: "title" });
-      chip(s, `${kind} · ${reveal ? "정답" : "퀴즈"}`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.45, w: 4.1, h: 5.45, rectRadius: 0.15, fill: { color: C.text2 }, line: { color: C.text2 } });
-      if (reveal) {
-        s.addText("정답", { x: 0.95, y: 1.7, w: 3.4, h: 0.4, fontSize: 16, bold: true, color: C.accent3, margin: 0, isTextBox: true });
-        s.addText(NUM[e.ans - 1], { x: 0.95, y: 2.1, w: 3.4, h: 1.3, fontSize: 72, bold: true, color: C.background1, margin: 0, isTextBox: true });
-        const a = e.opts[e.ans - 1];
-        s.addText(a[0], { x: 0.95, y: 3.65, w: 3.45, h: 1.4, fontSize: 17, bold: true, italic: true, color: C.background1, margin: 0, valign: "top", isTextBox: true });
-        s.addText(a[1], { x: 0.95, y: 5.1, w: 3.45, h: 1.6, fontSize: 14, color: C.background2, margin: 0, valign: "top", isTextBox: true });
-      } else {
-        s.addText("QUIZ", { x: 0.95, y: 1.7, w: 3.4, h: 0.4, fontSize: 16, bold: true, color: C.accent3, margin: 0, isTextBox: true });
-        s.addText("?", { x: 0.95, y: 2.05, w: 3.4, h: 1.5, fontSize: 96, bold: true, color: C.background1, margin: 0, isTextBox: true });
-        s.addText("각 선택지는 어떤 함정일까?", { x: 0.95, y: 3.75, w: 3.45, h: 0.5, fontSize: 18, bold: true, color: C.background1, margin: 0, isTextBox: true });
-        const tagsUsed = [...new Set(e.opts.map((o) => o[2]).filter((t) => t !== "정답"))];
-        s.addText(tagsUsed.map((t, i) => ({ text: t, options: { bullet: true, breakLine: i < tagsUsed.length - 1 } })), { x: 0.95, y: 4.35, w: 3.45, h: 1.6, fontSize: 15, color: C.background2, margin: 0, valign: "top", paraSpaceAfter: 4, isTextBox: true });
-        s.addText("짝과 1분 토론 → 손 들고 말하기", { x: 0.95, y: 6.15, w: 3.45, h: 0.5, fontSize: 13, color: C.accent3, margin: 0, isTextBox: true });
-      }
-      e.opts.forEach((o, i) => {
-        const y = 1.45 + i * 1.11, ok = reveal && i === e.ans - 1;
-        s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 5.0, y, w: 7.7, h: 0.99, rectRadius: 0.1, fill: { color: ok ? C.accent6 : C.background1 }, line: { color: ok ? C.accent2 : C.background2, width: ok ? 2 : 1 } });
-        s.addText(NUM[i], { x: 5.2, y: y + (reveal ? 0.12 : 0.27), w: 0.45, h: 0.45, fontSize: 20, bold: true, color: ok ? C.accent2 : C.accent4, margin: 0, isTextBox: true });
-        if (reveal) {
-          s.addText(o[0], { x: 5.75, y: y + 0.08, w: 5.4, h: 0.45, fontSize: 14, bold: ok, color: C.text2, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
-          s.addText((ok ? "✔ " : o[2] === "적절" ? "○ " : "✘ ") + o[1], { x: 5.75, y: y + 0.52, w: 5.4, h: 0.4, fontSize: 12, color: ok ? C.accent2 : C.accent4, margin: 0, valign: "middle", isTextBox: true });
-          const t = TAG[o[2]] || { fill: C.background2, color: C.text2 };
-          s.addText(o[2], { shape: pres.shapes.ROUNDED_RECTANGLE, rectRadius: 0.15, x: 11.3, y: y + 0.3, w: 1.2, h: 0.4, fill: { color: t.fill }, color: t.color, fontSize: 12, bold: true, align: "center", valign: "middle", margin: 0 });
-        } else {
-          s.addText(o[0], { x: 5.75, y: y + 0.12, w: 5.4, h: 0.75, fontSize: 16, color: C.text2, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
-          s.addText("?", { shape: pres.shapes.ROUNDED_RECTANGLE, rectRadius: 0.15, x: 11.3, y: y + 0.3, w: 1.2, h: 0.4, fill: { color: C.background2 }, color: C.text2, fontSize: 14, bold: true, align: "center", valign: "middle", margin: 0 });
-        }
+      s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "내신 어법 체크: 알맞은 것은?" }], { placeholder: "title" });
+      chip(s, `${kind} · 어법`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
+      const rh = Math.min(1.25, 5.3 / GQe.length - 0.15);
+      GQe.forEach((g, i) => {
+        const y = 1.45 + i * (rh + 0.15);
+        s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y, w: 12.1, h: rh, rectRadius: 0.1, fill: { color: i % 2 ? HEX.lt1 : "F2F8FB" }, line: { color: "D3E5EE", width: 1 } });
+        s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: 0.85, y: y + rh / 2 - 0.3, w: 0.6, h: 0.6, fill: { color: C.accent1 }, color: C.background1, fontSize: 16, bold: true, align: "center", valign: "middle", margin: 0 });
+        const qr = g.q.split(/(\[[^\]]+\])/).filter(Boolean).map((t) => (t.startsWith("[") ? { text: t, options: { bold: true, color: HEX.accent2 } } : { text: t, options: { color: HEX.dk1 } }));
+        s.addText(qr, { x: 1.7, y, w: 10.8, h: rh, fontSize: 19, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
       });
-    };
-    const wrong = e.opts.map((o, i) => `${NUM[i]} ${o[2]}: ${o[1]}`).join("\n");
-    drawAnswer(false);
-    s.addNotes(`【함정 맞히기 진행】 정답은 아직 가려져 있어요. ① \"이 중 정답은 몇 번?\" 다시 손 들기 → ② 왼쪽 함정 종류를 보여 주고 \"②번은 어떤 함정일까?\" 하고 한두 개씩 짚기 → ③ 짝과 1분 토론 → ④ 다음 슬라이드에서 공개.\n\n【선생님용 답】\n${wrong}`);
-    drawAnswer(true);
-    s.addNotes(`【이 슬라이드 사용법】 학생들이 말한 함정 이름과 비교하며 하나씩 확인하세요. 맞힌 학생은 꼭 칭찬!\n\n【선택지별 설명】\n${wrong}\n\n【마무리 멘트】 \"정답 ${NUM[e.ans - 1]}은 지문의 결정적 단서를 다른 말로 바꾼 거예요. 답은 늘 지문 안에 있다!\"`);
+      s.addNotes(`【진행】 1분 동안 혼자 고르기 → 손가락(1 또는 2)으로 동시에 답 들기 → 정답과 이유 확인. 틀린 학생이 많으면 근거 슬라이드의 파란 형광으로 돌아가 다시 짚어 주세요.\n\n【정답 · 해설】\n${GQe.map((g, i) => `${i + 1}. ${g.a} — ${g.why || ""}`).join("\n")}`);
+    }
   }
 
   pres.addSection({ title: "정리" });
