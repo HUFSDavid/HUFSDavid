@@ -218,27 +218,32 @@ function extraSlides(sec, head, sections, chipText) {
 
   // ---------- 4. Signal (글의 구조 signal 종합) ----------
   if (IN.signalMap) {
-    // 한 장에 10 UNIT 타일: 흐름 단계 + 대표 signal 1개씩. 상세 signal·전략은 노트로.
+    // Signal 한눈에 보기: 표 1장 (UNIT | 글의 구조 | 핵심 signal | 오늘 지문). 지문마다 구조는 하나(e.unit).
     const SM = IN.signalMap;
+    const todayOf = (u) => {
+      const xs = EX.filter((e) => e.unit === u.unit).map((e) => e.n);
+      const pre = (D.pre || []).filter((q) => q.unit === u.unit).map((q) => q.label);
+      if (!xs.length && !pre.length) return (u.ex || "").replace(/^오늘:\s*/, "");
+      return [...(xs.length ? ["Ex " + xs.join(" · ")] : []), ...pre].join(", ");
+    };
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
-    s.addText([{ text: "Signal 한눈에 보기  " }, { text: "글의 구조 10가지", options: { color: C.accent4, fontSize: 20 } }], { placeholder: "title" });
-    const cols = 5, tw = 2.42, tg = 0.09, th = 2.78;
+    s.addText("Signal 한눈에 보기: 글의 구조 10가지", { placeholder: "title" });
+    const hd = (t) => ({ text: t, options: { bold: true, color: HEX.lt1, fill: { color: HEX.dk2 }, fontSize: 13, align: "center" } });
+    const rows = [[hd("UNIT"), hd("글의 구조"), hd("핵심 Signal"), hd("오늘 지문")]];
     SM.forEach((u, i) => {
-      const x = 0.45 + (i % cols) * (tw + tg), y = 1.28 + Math.floor(i / cols) * (th + 0.1);
-      const today = !!u.ex;
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: tw, h: th, rectRadius: 0.08, fill: { color: today ? HEX.lt1 : "F6F7F7" }, line: { color: today ? HEX.accent1 : HEX.lt2, width: 1.5 } });
-      s.addText(u.unit.replace("UNIT ", "U"), { x: x + 0.1, y: y + 0.1, w: 0.5, h: 0.28, fontSize: 10, bold: true, color: HEX.lt1, fill: { color: today ? HEX.accent1 : HEX.accent4 }, align: "center", valign: "middle", margin: 0, isTextBox: true });
-      const steps = u.flow.replace(/\s*\(.*?\)/g, "").split("–").map((t) => t.trim()), keys = u.key || [];
-      s.addText(u.name || steps.join(" → "), { x: x + 0.66, y: y + 0.06, w: tw - 0.74, h: 0.4, fontSize: 14, bold: true, color: HEX.dk2, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
-      const rr = [];
-      steps.forEach((st, k) => {
-        rr.push({ text: (k ? "↓ " : "") + st, options: { bold: true, fontSize: 15, color: today ? HEX.accent2 : HEX.dk2, breakLine: true } });
-        if (keys[k]) rr.push({ text: keys[k].replace(/-/g, "\u2011"), options: { fontSize: 12.5, italic: true, color: HEX.dk1, breakLine: k < steps.length - 1 } });
-      });
-      s.addText(rr, { x: x + 0.12, y: y + 0.52, w: tw - 0.24, h: th - 0.95, margin: 0, valign: "top", paraSpaceAfter: 2, fit: "shrink", isTextBox: true });
-      s.addText(today ? u.ex.replace(/^오늘:\s*/, "") : "오늘 없음", { x: x + 0.1, y: y + th - 0.36, w: tw - 0.2, h: 0.26, fontSize: 10, bold: true, color: today ? HEX.accent2 : HEX.accent4, align: "right", margin: 0, isTextBox: true });
+      const td = todayOf(u), on = !!td;
+      const fill = { color: i % 2 ? HEX.lt1 : "F4F8F6" };
+      const col = on ? HEX.dk1 : "A3ADAB";
+      const steps = u.flow.replace(/\s*\(.*?\)/g, "").split("–").map((t) => t.trim());
+      rows.push([
+        { text: u.unit.replace("UNIT ", ""), options: { bold: true, color: on ? HEX.accent1 : "A3ADAB", fill, align: "center", fontSize: 14 } },
+        { text: steps.join(" → "), options: { bold: true, color: on ? HEX.dk2 : "A3ADAB", fill, fontSize: 15 } },
+        { text: (u.key || []).join("  /  ").replace(/\n/g, "  /  ").replace(/-/g, "‑"), options: { color: col, fill, fontSize: 12.5 } },
+        { text: td || "–", options: { bold: on, color: on ? HEX.accent2 : "A3ADAB", fill, align: "center", fontSize: 13 } },
+      ]);
     });
-    s.addNotes(`【설명 스크립트】 "글은 정해진 구조로 흘러가요. 카드 아래 번호가 오늘 그 구조가 나온 지문이에요. 지문마다 흐름 정리에서 어느 구조인지 다시 짚어 줄게요."\n※ 이 슬라이드는 1~2분만. 각 지문의 흐름 정리 슬라이드 상단에 해당 UNIT이 다시 나옵니다.\n\n${SM.map((u) => `■ ${u.unit} ${u.flow}  (${u.ex || "오늘 없음"})\n${u.roles.map((r) => `  - ${r[0]}: ${r[1]}`).join("\n")}\n  ▶ 전략: ${u.strategy.join(" / ")}`).join("\n\n")}`);
+    s.addTable(rows, { x: 0.45, y: 1.3, w: 12.45, colW: [0.75, 3.35, 6.2, 2.15], rowH: 0.5, valign: "middle", margin: [0, 0.1, 0, 0.1], border: { type: "solid", pt: 0.75, color: "DDE6E2" }, fontFace: "맑은 고딕" });
+    s.addNotes(`【설명 스크립트】 "글은 정해진 구조로 흘러가요. 오른쪽이 오늘 그 구조로 쓰인 지문이에요. 지문마다 흐름 정리에서 다시 짚어 줄게요."\n※ 1~2분만. 각 지문 흐름 정리 슬라이드 위에 해당 구조가 다시 나옵니다.\n\n${SM.map((u) => `■ ${u.unit} ${u.flow}  (${todayOf(u) || "오늘 없음"})\n${u.roles.map((r) => `  - ${r[0]}: ${r[1]}`).join("\n")}\n  ▶ 전략: ${u.strategy.join(" / ")}`).join("\n\n")}`);
   } else
   (IN.signalPages || [{ title: "Signal: 이 단어가 보이면 멈춰!", items: IN.signals || [] }]).forEach((pg) => {
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
@@ -294,8 +299,8 @@ function extraSlides(sec, head, sections, chipText) {
     if (q.foot) r.push({ text: q.foot, options: { fontSize: 11, italic: true, color: HEX.accent4, align: "right", breakLine: true } });
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: 0.68, w: 12.45, h: 6.29, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
     s.addText(r, { x: 0.65, y: 0.78, w: 12.05, h: 4.45, fontSize: q.font || 21, margin: 0, valign: "top", lineSpacingMultiple: 1.12, fit: "shrink", isTextBox: true });
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 5.32, w: 12.15, h: 0.8, rectRadius: 0.08, fill: { color: "FFF8EC" }, line: { color: HEX.accent2, width: 2.25 } });
-    s.addText([{ text: "요약문  ", options: { bold: true, color: HEX.accent2, fontSize: 13 } }, ...q.summary.split(/(\(A\)|\(B\))/).filter(Boolean).map((t) => ({ text: t, options: { bold: true, color: /^\([AB]\)$/.test(t) ? HEX.accent2 : HEX.dk2 } }))],
+    s.addShape(pres.shapes.RECTANGLE, { x: 0.6, y: 5.32, w: 12.15, h: 0.8, fill: { color: HEX.lt1 }, line: { color: "333333", width: 1 } });
+    s.addText([{ text: "요약문  ", options: { bold: true, color: HEX.dk1, fontSize: 13 } }, ...q.summary.split(/(\(A\)|\(B\))/).filter(Boolean).map((t) => ({ text: t, options: /^\([AB]\)$/.test(t) ? { bold: true, color: HEX.accent2 } : { color: HEX.dk1 } }))],
       { x: 0.75, y: 5.36, w: 11.9, h: 0.72, fontSize: 17, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
     s.addText(q.options.map((o) => o.replace(/\s*-{3,}\s*/g, "\u00A0–\u00A0").replace(/ /g, "\u00A0")).join("     "), { x: 0.65, y: 6.2, w: 7.6, h: 0.65, fontSize: 14, color: HEX.accent4, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
     s.addText([{ text: "정답 " + q.answer, options: { bold: true, color: HEX.dk2 } }], { x: 8.4, y: 6.3, w: 4.3, h: 0.5, fontSize: 17, fill: { color: GH }, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "ANIM_pre" });
@@ -383,8 +388,8 @@ function extraSlides(sec, head, sections, chipText) {
       for (let j = 1; j <= txt.length; j++) {
         if (j === txt.length || mk[j] !== mk[st]) {
           const m = mk[st], o = { ...base };
-          if (m & 1) { o.highlight = HEX.accent3; o.bold = true; }
-          if (m === 2) { o.highlight = GH; o.bold = true; o.color = HEX.dk2; }
+          if (m & 1) { o.highlight = HEX.accent3; }
+          if (m === 2) { o.highlight = GH; }
           if (m === 3) { o.underline = { style: "sng", color: HEX.accent5 }; }
           out.push({ text: txt.slice(st, j), options: o }); st = j;
         }
@@ -395,13 +400,13 @@ function extraSlides(sec, head, sections, chipText) {
     const cpl = (sz) => 12.05 * 72 / (sz * 0.45);
     const linesAt = (sz) => Math.ceil((totalChars + P.s.length * 4) / cpl(sz)) + Math.ceil(fixedTxt.length / cpl(sz)) + (e.given ? 1 : 0) + (e.summary ? 1 : 0) + (showOpts ? 1 : 0);
     const VO = e.vocab || [];
-    const vRows = VO.length ? Math.ceil(VO.length / 4) : 0, vRowH = 0.46, vH = vRows ? vRows * vRowH + 0.12 : 0;
+    const vRows = VO.length ? Math.ceil(VO.length / 4) : 0, vRowH = 0.34, vH = vRows ? vRows * vRowH + 0.08 : 0;
     const passH = 6.29 - (vH ? vH + 0.1 : 0);
     // 단어 단위 줄바꿈 시뮬레이션 (맑은 고딕 라틴 평균 폭 ≈ 0.5em, 한글 1em)
     const cw = (ch) => (/[\u3131-\uD79D]/.test(ch) ? 1.0 : /[A-Z0-9%$@]/.test(ch) ? 0.62 : /[il.,;:'’!|() ]/.test(ch) ? 0.3 : 0.52);
     const wrapLines = (txt, sz, wIn) => { const W = wIn * 72; let lines = 1, cur = 0; for (const w of txt.split(/\s+/)) { const ww = [...w].reduce((a, c) => a + cw(c), 0) * sz * 1.06, sp = 0.28 * sz; if (cur && cur + sp + ww > W) { lines++; cur = ww; } else cur += (cur ? sp : 0) + ww; } return lines; };
     const bodyTxt = (e.given ? "[주어진 문장] " + e.given + " \n" : "") + P.s.map((x, i) => `(${i + 1}) ${x[0].replace(/\{B\}/g, "______________").replace(/__/g, "")}`).join(" ");
-    const lhq = (sz) => sz * 1.18 * 1.2 / 72;
+    const lhq = (sz) => sz * 1.1 * 1.2 / 72;
     const needH = (sz) => { const os = Math.max(13, sz - 3); return (e.given ? wrapLines("[주어진 문장] " + e.given, sz * 1.04, 12.05) : 0) * lhq(sz) + wrapLines(bodyTxt.replace(/^.*\n/, ""), sz, 12.05) * lhq(sz) + 0.2 + (e.summary ? wrapLines("요약문 " + e.summary, sz * 1.05, 11.9) * lhq(sz) + 0.34 : 0) + (showOpts ? wrapLines(optLine.replace(/\u00A0/g, "~"), os, 12.05) * lhq(os) + 0.1 : 0); };
     let qs = e.qFont || 28;
     while (!e.qFont && qs > 13 && needH(qs) > passH - 0.15) qs -= 0.5;
@@ -421,7 +426,7 @@ function extraSlides(sec, head, sections, chipText) {
       if (i < P.s.length - 1) pr.push({ text: " ", options: { fontSize: qs } });
     });
     // layout: passage / 요약문 테두리 박스 / 선택지 한 줄 (정답 작게 표시)
-    const lh = (sz) => sz * 1.18 * 1.2 / 72;
+    const lh = (sz) => sz * 1.1 * 1.2 / 72;
     const sumLines = e.summary ? wrapLines("요약문 " + e.summary, qs * 1.05, 11.9) : 0;
     const sumH = e.summary ? sumLines * lh(qs) + 0.22 : 0;
     const oSize = Math.max(13, qs - 3);
@@ -430,18 +435,18 @@ function extraSlides(sec, head, sections, chipText) {
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: PY, w: 12.45, h: passH, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
     if (VO.length) {
       const vy = PY + passH + 0.1, cw = 12.45 / 4;
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: vy, w: 12.45, h: vH, rectRadius: 0.1, fill: { color: "EAF5EF" }, line: { color: "CFE6D9", width: 1 } });
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: vy, w: 12.45, h: vH, rectRadius: 0.1, fill: { color: "F6F6F6" }, line: { color: "E2E2E2", width: 0.75 } });
       VO.forEach(([w, ko], i) => {
-        const x = 0.45 + (i % 4) * cw, y = vy + 0.06 + Math.floor(i / 4) * vRowH;
-        s.addText(w, { x: x + 0.15, y, w: cw * 0.5 - 0.1, h: vRowH, fontSize: 15, bold: true, color: HEX.accent1, valign: "middle", align: "right", margin: 0, fit: "shrink", isTextBox: true });
-        s.addText(ko, { x: x + cw * 0.5 + 0.1, y: y + 0.05, w: cw * 0.5 - 0.25, h: vRowH - 0.1, fontSize: 14, bold: true, color: HEX.accent2, fill: { color: HEX.lt1 }, valign: "middle", align: "center", margin: 0, fit: "shrink", isTextBox: true, objectName: `ANIM_v${i}` });
+        const x = 0.45 + (i % 4) * cw, y = vy + 0.04 + Math.floor(i / 4) * vRowH;
+        s.addText(w, { x: x + 0.15, y, w: cw * 0.5 - 0.1, h: vRowH, fontSize: 13, color: HEX.dk1, valign: "middle", align: "right", margin: 0, fit: "shrink", isTextBox: true });
+        s.addText(ko, { x: x + cw * 0.5 + 0.1, y: y + 0.03, w: cw * 0.5 - 0.25, h: vRowH - 0.06, fontSize: 12, color: HEX.dk1, fill: { color: HEX.lt1 }, valign: "middle", align: "center", margin: 0, fit: "shrink", isTextBox: true, objectName: `ANIM_v${i}` });
       });
     }
-    s.addText(pr, { x: 0.65, y: PY + 0.08, w: 12.05, h: bodyH, margin: 0, valign: "top", lineSpacingMultiple: 1.18, fit: "shrink", isTextBox: true });
+    s.addText(pr, { x: 0.65, y: PY + 0.08, w: 12.05, h: bodyH, margin: 0, valign: "top", lineSpacingMultiple: 1.1, fit: "shrink", isTextBox: true });
     let yy = PY + 0.08 + bodyH + 0.06;
     if (e.summary) {
-      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: yy, w: 12.15, h: sumH, rectRadius: 0.08, fill: { color: "FFF8EC" }, line: { color: HEX.accent2, width: 2.25 } });
-      s.addText([{ text: "요약문  ", options: { bold: true, color: HEX.accent2, fontSize: Math.max(12, qs - 6) } }, ...abRuns(e.summary, { fontSize: qs, color: HEX.dk2, bold: true })],
+      s.addShape(pres.shapes.RECTANGLE, { x: 0.6, y: yy, w: 12.15, h: sumH, fill: { color: HEX.lt1 }, line: { color: "333333", width: 1 } });
+      s.addText([{ text: "요약문  ", options: { bold: true, color: HEX.dk1, fontSize: Math.max(12, qs - 6) } }, ...abRuns(e.summary, { fontSize: qs, color: HEX.dk1 })],
         { x: 0.75, y: yy + 0.04, w: 11.9, h: sumH - 0.08, margin: 0, valign: "middle", lineSpacingMultiple: 1.15, fit: "shrink", isTextBox: true });
       yy += sumH + 0.08;
     }
@@ -450,7 +455,6 @@ function extraSlides(sec, head, sections, chipText) {
       e.opts.forEach((o, i) => {
         const ok = i === e.ans - 1, txt = `${NUM[i]}\u00A0${o[0].replace(/\s*-{3,}\s*/g, "\u00A0–\u00A0").replace(/-/g, "\u2011").replace(/ /g, "\u00A0")}`;
         orr.push({ text: txt, options: ok ? { bold: true, color: HEX.accent2 } : { color: HEX.accent4 } });
-        if (ok) orr.push({ text: "\u00A0✔", options: { bold: true, color: HEX.accent2, fontSize: oSize - 2 } });
         if (i < e.opts.length - 1) orr.push({ text: "     ", options: {} });
       });
       s.addText(orr, { x: 0.65, y: yy, w: 12.05, h: optH, fontSize: oSize, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
@@ -477,7 +481,7 @@ function extraSlides(sec, head, sections, chipText) {
     s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: e.title }], { placeholder: "title" });
     chip(s, `${kind} · 흐름 정리`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
     s.addText("글의 흐름", { x: 0.6, y: 1.35, w: 3, h: 0.4, fontSize: 15, bold: true, color: C.accent1, margin: 0, isTextBox: true });
-    const UN = (IN.signalMap || []).filter((u) => (u.ex || "").split(/[^0-9]+/).includes(String(e.n)));
+    const UN = (IN.signalMap || []).filter((u) => e.unit ? u.unit === e.unit : (u.ex || "").split(/[^0-9]+/).includes(String(e.n)));
     if (UN.length) s.addText([{ text: "구조 Signal  ", options: { bold: true, color: HEX.accent2 } }, ...UN.map((u, i) => ({ text: `${u.unit} ${u.flow}${i < UN.length - 1 ? "   ·   " : ""}`, options: { bold: true, color: HEX.dk2 } }))],
       { x: 2.0, y: 1.35, w: 10.7, h: 0.4, fontSize: 13, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
     const fy0 = 1.85, fh = 1.1, fg = 0.15;

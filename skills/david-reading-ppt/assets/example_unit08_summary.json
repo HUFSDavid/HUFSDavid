@@ -53,7 +53,6 @@
      "Likewise · Similarly"
     ],
     "flow": "주제문 – 예시1 – 예시2",
-    "ex": "오늘: Ex 94, 96",
     "roles": [
      [
       "주제문",
@@ -85,7 +84,6 @@
      "Therefore · In short"
     ],
     "flow": "도입 – 주제문 – 예시 – 결론",
-    "ex": "오늘: Ex 96, 기출 해체",
     "roles": [
      [
       "도입",
@@ -119,7 +117,6 @@
      "However · But · Yet"
     ],
     "flow": "통념 – 반박",
-    "ex": "오늘: Ex 99, 기출 해체",
     "roles": [
      [
       "통념",
@@ -146,7 +143,6 @@
      "In short · In other words"
     ],
     "flow": "설명1 – 설명2 – 요약",
-    "ex": "오늘: Ex 92, 100",
     "roles": [
      [
       "설명",
@@ -173,7 +169,6 @@
      "The best way · should"
     ],
     "flow": "현상 – 문제 제기 – 해결책",
-    "ex": "오늘: Ex 99, 100",
     "roles": [
      [
       "현상",
@@ -203,7 +198,6 @@
      "As a result · lead to"
     ],
     "flow": "원인 – 결과",
-    "ex": "오늘: Ex 94, 100",
     "roles": [
      [
       "원인",
@@ -230,7 +224,6 @@
      "Therefore · In other words"
     ],
     "flow": "연구 내용 – 연구 결과 – 결론",
-    "ex": "오늘: Ex 93, 97, 98, 99, 101",
     "roles": [
      [
       "연구 내용",
@@ -259,7 +252,6 @@
      "공통 Similarly · Likewise\n차이 In contrast · While · -er than"
     ],
     "flow": "비교 / 대조",
-    "ex": "오늘: Ex 97, 101",
     "roles": [
      [
       "주제문",
@@ -285,7 +277,6 @@
      "The answer is · should"
     ],
     "flow": "질문 – 답변",
-    "ex": "오늘: Ex 95, 101",
     "roles": [
      [
       "질문",
@@ -312,7 +303,6 @@
      "Finally · Eventually"
     ],
     "flow": "도입 – 전개 – 결말 (시간순)",
-    "ex": "",
     "roles": [
      [
       "도입",
@@ -614,7 +604,8 @@
    "summary": "Many Mongolians (A) their nomadic lifestyle because they believe their old traditions are essential to their cultural (B).",
    "blank": "Many Mongolians (A) their nomadic lifestyle because they believe their old traditions are essential to their cultural (B).",
    "blankKo": "많은 몽골인들은 자신들의 오랜 전통이 문화적 (B)에 필수적이라고 믿기 때문에 유목 생활 방식을 (A)한다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 04"
   },
   {
    "n": 93,
@@ -877,7 +868,8 @@
    "summary": "When people face a (A) situation, they are not likely to choose an option that makes them expect a possible (B).",
    "blank": "When people face a (A) situation, they are not likely to choose an option that makes them expect a possible (B).",
    "blankKo": "사람들은 (A) 상황에 직면하면, 가능한 (B)를 예상하게 만드는 선택지를 고르지 않을 가능성이 크다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 07"
   },
   {
    "n": 94,
@@ -1171,7 +1163,8 @@
    "summary": "The social contagion theory illustrates how one person’s action (A) another’s desire to perform the same action through social (B).",
    "blank": "The social contagion theory illustrates how one person’s action (A) another’s desire to perform the same action through social (B).",
    "blankKo": "사회적 전염 이론은 한 사람의 행동이 사회적 (B)을 통해 다른 사람의 같은 행동을 하려는 욕구를 어떻게 (A)하는지 보여 준다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 06"
   },
   {
    "n": 95,
@@ -1467,7 +1460,8 @@
    "summary": "Our (A) efforts to understand the strong points and weak points of a subject through the process of self-reflection can lead to (B) achievement as well as individual progress.",
    "blank": "Our (A) efforts to understand the strong points and weak points of a subject through the process of self-reflection can lead to (B) achievement as well as individual progress.",
    "blankKo": "자기 성찰 과정을 통해 대상의 강점과 약점을 이해하려는 우리의 (A) 노력은 개인의 발전뿐 아니라 (B) 성취로 이어질 수 있다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 09"
   },
   {
    "n": 96,
@@ -1761,7 +1755,8 @@
    "summary": "Survival of some animals can depend on two sensory systems, the functions of which involve (A) odors that other subjects release to (B) approaching danger to other members of the species.",
    "blank": "Survival of some animals can depend on two sensory systems, the functions of which involve (A) odors that other subjects release to (B) approaching danger to other members of the species.",
    "blankKo": "일부 동물의 생존은 두 감각 체계에 달려 있을 수 있는데, 그 기능은 다른 개체들이 종의 다른 구성원에게 다가오는 위험을 (B)하기 위해 방출하는 냄새를 (A)하는 것을 포함한다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 01"
   },
   {
    "n": 97,
@@ -2053,7 +2048,8 @@
    "summary": "People tend to have a (A) way of thinking based on their cultural backgrounds, so having cultural diversity on a team can (B) teamwork.",
    "blank": "People tend to have a (A) way of thinking based on their cultural backgrounds, so having cultural diversity on a team can (B) teamwork.",
    "blankKo": "사람들은 문화적 배경에 따라 (A) 사고방식을 갖는 경향이 있으므로, 팀 안의 문화적 다양성은 팀워크를 (B)할 수 있다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 08"
   },
   {
    "n": 98,
@@ -2288,7 +2284,8 @@
    "summary": "The items presented in the (A) position tend to get (B) ratings by people.",
    "blank": "The items presented in the (A) position tend to get (B) ratings by people.",
    "blankKo": "(A) 위치에 제시된 항목은 사람들에게 (B) 평가를 받는 경향이 있다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 07"
   },
   {
    "n": 99,
@@ -2507,7 +2504,8 @@
    "summary": "To succeed in diet, (A) of process for carrying it out is more important than (B).",
    "blank": "To succeed in diet, (A) of process for carrying it out is more important than (B).",
    "blankKo": "다이어트에 성공하려면, 그것을 실행하는 과정의 (A)이 (B)보다 더 중요하다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 03"
   },
   {
    "n": 100,
@@ -2737,7 +2735,8 @@
    "summary": "When the workers of organizations are trained to do (A) jobs, they possibly end up being (B) to deal with new or changing situations.",
    "blank": "When the workers of organizations are trained to do (A) jobs, they possibly end up being (B) to deal with new or changing situations.",
    "blankKo": "조직의 직원들이 (A) 일을 하도록 훈련받으면, 결국 새롭거나 변화하는 상황에 대처할 수 (B) 될 수 있다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 05"
   },
   {
    "n": 101,
@@ -2987,7 +2986,8 @@
    "summary": "An experiment shows that while people are more willing to help (A) in need, they become indifferent when given the (B) perspective of hunger.",
    "blank": "An experiment shows that while people are more willing to help (A) in need, they become indifferent when given the (B) perspective of hunger.",
    "blankKo": "한 실험은 사람들이 어려움에 처한 (A)을 돕는 데는 더 적극적이지만, 기아에 대한 (B) 관점이 주어지면 무관심해진다는 것을 보여 준다.",
-   "step1Label": "STEP 1 · 요약문 먼저"
+   "step1Label": "STEP 1 · 요약문 먼저",
+   "unit": "UNIT 07"
   },
   {
    "n": 102,
@@ -3209,7 +3209,8 @@
     "be called + 명사 (call O C 수동태)"
    ],
    "blank": "…the two groups were given options that actually led to ________.",
-   "blankKo": "두 그룹은 사실 ______로 이어지는 선택지를 받았다."
+   "blankKo": "두 그룹은 사실 ______로 이어지는 선택지를 받았다.",
+   "unit": "UNIT 07"
   },
   {
    "n": 103,
@@ -3438,7 +3439,8 @@
    "blank": "This reflection process enables you to clearly see potential problems and ways to fix them.",
    "blankKo": "이러한 성찰 과정은 잠재적인 문제들과 그것을 고칠 방법을 분명하게 보게 해 준다.",
    "step1Label": "STEP 1 · 주어진 문장",
-   "hideOptsOnProblem": true
+   "hideOptsOnProblem": true,
+   "unit": "UNIT 09"
   },
   {
    "n": 104,
@@ -3639,7 +3641,8 @@
    "blank": "…as variety in work ⑤increases, the amount of thought and time needed to perform a job also decreases.",
    "blankKo": "업무의 다양성이 ⑤증가할수록, 일에 필요한 생각과 시간도 감소한다 (?)",
    "step1Label": "STEP 1 · 의심 문장",
-   "hideOptsOnProblem": true
+   "hideOptsOnProblem": true,
+   "unit": "UNIT 05"
   }
  ],
  "pre": [
@@ -3668,7 +3671,8 @@
     "⑤ accidentally ----- prejudice"
    ],
    "answer": "① dependently – stupidity",
-   "notes": "【풀이 플로우】\n1) 요약문 먼저: 사람들이 (A)하게 함께 일하면 군중의 지혜가 집단의 (B)로 바뀐다.\n2) Unfortunately, that’s not always the case. → 반박 signal: '집단이 늘 더 낫지는 않다'.\n3) 지혜는 판단이 independent할 때 → 함께 이야기하면(=의존적으로) 답이 부정확해짐 → (A) dependently.\n4) 개인의 bias가 집단에서 multiplied(극단화) → 어리석음 (B) stupidity.\n【어휘】 collective wisdom 집단 지성, polarization 극단화, bias 편견, multiply 증폭되다"
+   "notes": "【풀이 플로우】\n1) 요약문 먼저: 사람들이 (A)하게 함께 일하면 군중의 지혜가 집단의 (B)로 바뀐다.\n2) Unfortunately, that’s not always the case. → 반박 signal: '집단이 늘 더 낫지는 않다'.\n3) 지혜는 판단이 independent할 때 → 함께 이야기하면(=의존적으로) 답이 부정확해짐 → (A) dependently.\n4) 개인의 bias가 집단에서 multiplied(극단화) → 어리석음 (B) stupidity.\n【어휘】 collective wisdom 집단 지성, polarization 극단화, bias 편견, multiply 증폭되다",
+   "unit": "UNIT 03"
   }
  ],
  "reviewTest": {
