@@ -249,7 +249,7 @@
     "unit": "UNIT 08",
     "name": "비교·대조",
     "key": [
-     "공통 Similarly · Likewise\n차이 In contrast · While · -er than"
+     "공통  Similarly · Likewise\n차이  In contrast · Unlike"
     ],
     "flow": "비교 / 대조",
     "roles": [
@@ -273,7 +273,7 @@
     "unit": "UNIT 09",
     "name": "질문–답변",
     "key": [
-     "What …? · Have you ever …?",
+     "What …? · Have you …?",
      "The answer is · should"
     ],
     "flow": "질문 – 답변",
@@ -605,7 +605,29 @@
    "blank": "Many Mongolians (A) their nomadic lifestyle because they believe their old traditions are essential to their cultural (B).",
    "blankKo": "많은 몽골인들은 자신들의 오랜 전통이 문화적 (B)에 필수적이라고 믿기 때문에 유목 생활 방식을 (A)한다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 04"
+   "unit": "UNIT 04",
+   "structure": [
+    [
+     "설명 ①",
+     "continue to preserve",
+     "도시화된 세상에서도 몽골인은 천 년 된 생활 방식을 보존한다"
+    ],
+    [
+     "설명 ②",
+     "Just as their ancestors did",
+     "조상처럼 기르는 동물에서 유제품·고기를 얻는다"
+    ],
+    [
+     "설명 ③",
+     "also continue the tradition",
+     "가축 관리에 필수인 승마 전통을 계속 이어 간다"
+    ],
+    [
+     "요약",
+     "still regard A as B",
+     "승마·평야의 삶 = 자신들을 자신들답게 만드는 유산 (정체성)"
+    ]
+   ]
   },
   {
    "n": 93,
@@ -869,7 +891,29 @@
    "blank": "When people face a (A) situation, they are not likely to choose an option that makes them expect a possible (B).",
    "blankKo": "사람들은 (A) 상황에 직면하면, 가능한 (B)를 예상하게 만드는 선택지를 고르지 않을 가능성이 크다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 07"
+   "unit": "UNIT 07",
+   "structure": [
+    [
+     "연구 내용",
+     "conducted a … experiment",
+     "50달러를 받은 두 그룹: A 'lose $30' / B 'keep $20' (실제 결과는 같음)"
+    ],
+    [
+     "연구 결과",
+     "61.9% … while only 42.9%",
+     "'잃는다'를 들은 A 그룹이 도박을 훨씬 많이 선택"
+    ],
+    [
+     "해석",
+     "However, because … framed",
+     "결과가 같아도 표현(틀)이 다르면 결정이 달라진다"
+    ],
+    [
+     "결론",
+     "This is called …",
+     "틀 효과: 부정적 결과(loss)를 떠올리게 하는 말은 다른 행동을 낳는다"
+    ]
+   ]
   },
   {
    "n": 94,
@@ -1164,7 +1208,29 @@
    "blank": "The social contagion theory illustrates how one person’s action (A) another’s desire to perform the same action through social (B).",
    "blankKo": "사회적 전염 이론은 한 사람의 행동이 사회적 (B)을 통해 다른 사람의 같은 행동을 하려는 욕구를 어떻게 (A)하는지 보여 준다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 06"
+   "unit": "UNIT 06",
+   "structure": [
+    [
+     "결과 (현상)",
+     "made an important discovery",
+     "비만인 친구 → 나도 비만 / 건강한 친구 → 나도 건강"
+    ],
+    [
+     "원인",
+     "This happens because",
+     "우리는 주변 사람들의 행동을 따라 한다"
+    ],
+    [
+     "예시",
+     "For example / On the other hand",
+     "친구 따라 기름진 음식 / 친구 따라 조깅 시작"
+    ],
+    [
+     "결론",
+     "Nicholas calls this …",
+     "사회적 전염: 행동이 사회적 관계망을 통해 퍼지고 삶의 선택을 좌우한다"
+    ]
+   ]
   },
   {
    "n": 95,
@@ -1461,7 +1527,29 @@
    "blank": "Our (A) efforts to understand the strong points and weak points of a subject through the process of self-reflection can lead to (B) achievement as well as individual progress.",
    "blankKo": "자기 성찰 과정을 통해 대상의 강점과 약점을 이해하려는 우리의 (A) 노력은 개인의 발전뿐 아니라 (B) 성취로 이어질 수 있다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 09"
+   "unit": "UNIT 09",
+   "structure": [
+    [
+     "질문",
+     "Have you ever thought about …?",
+     "내가 잘하는 것과 못하는 것은 무엇일까? (내적 대화)"
+    ],
+    [
+     "답변",
+     "help you get a clearer picture",
+     "자기 성찰 → 강점·약점과 맹점을 보고 고칠 방법을 찾는다"
+    ],
+    [
+     "주제 확장",
+     "not only … but also",
+     "개인 발전뿐 아니라 기업의 성공에도 중요하다"
+    ],
+    [
+     "예시",
+     "For instance",
+     "구글: 금요일 성찰 시간 → 혁신적인 제품 (It is ~ that 강조)"
+    ]
+   ]
   },
   {
    "n": 96,
@@ -1756,7 +1844,29 @@
    "blank": "Survival of some animals can depend on two sensory systems, the functions of which involve (A) odors that other subjects release to (B) approaching danger to other members of the species.",
    "blankKo": "일부 동물의 생존은 두 감각 체계에 달려 있을 수 있는데, 그 기능은 다른 개체들이 종의 다른 구성원에게 다가오는 위험을 (B)하기 위해 방출하는 냄새를 (A)하는 것을 포함한다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 01"
+   "unit": "UNIT 01",
+   "structure": [
+    [
+     "주제문",
+     "have evolved a sophisticated sense",
+     "생존을 위해 동물은 두 감각 체계로 된 정교한 후각을 가진다"
+    ],
+    [
+     "설명",
+     "The first … / The second …",
+     "① 냄새 감지 ② 냄새를 해석해 뇌로 전달 (후자가 핵심)"
+    ],
+    [
+     "예시",
+     "For example",
+     "해양 동물은 위험을 경고하려고 화학적 냄새를 방출한다"
+    ],
+    [
+     "결론",
+     "Consequently, … is vital",
+     "냄새의 의미를 알아보는(해석) 능력 = 생존에 필수"
+    ]
+   ]
   },
   {
    "n": 97,
@@ -2049,7 +2159,29 @@
    "blank": "People tend to have a (A) way of thinking based on their cultural backgrounds, so having cultural diversity on a team can (B) teamwork.",
    "blankKo": "사람들은 문화적 배경에 따라 (A) 사고방식을 갖는 경향이 있으므로, 팀 안의 문화적 다양성은 팀워크를 (B)할 수 있다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 08"
+   "unit": "UNIT 08",
+   "structure": [
+    [
+     "주제 (현상)",
+     "look at different parts of it",
+     "같은 것을 봐도 아시아인과 서양인은 다른 부분을 본다"
+    ],
+    [
+     "대상 ① vs ②",
+     "the Americans … / Meanwhile, the Japanese",
+     "미국인 = 앞쪽 열대어 / 일본인 = 배경의 산호"
+    ],
+    [
+     "대조 정리",
+     "more likely than / On the other hand",
+     "아시아인 = 전체 맥락, 서양인 = 독립적·분석적 (세부)"
+    ],
+    [
+     "결론",
+     "can be an invaluable source",
+     "사고방식의 다양성 = 팀 역량의 귀중한 원천"
+    ]
+   ]
   },
   {
    "n": 98,
@@ -2285,7 +2417,29 @@
    "blank": "The items presented in the (A) position tend to get (B) ratings by people.",
    "blankKo": "(A) 위치에 제시된 항목은 사람들에게 (B) 평가를 받는 경향이 있다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 07"
+   "unit": "UNIT 07",
+   "structure": [
+    [
+     "주제 (정의)",
+     "Order effect is …",
+     "순서 효과 = 제시 순서가 응답자에게 주는 편향된 영향"
+    ],
+    [
+     "연구 내용 ①",
+     "had respondents rate … found that",
+     "직업 평가: 처음 제시된 것이 최고 또는 최저(극단) 평가"
+    ],
+    [
+     "연구 내용 ②",
+     "In another study",
+     "음료 평가: 처음 맛본 음료가 훨씬 높은 평가"
+    ],
+    [
+     "결론 (원리)",
+     "acts as a frame of reference",
+     "처음 자극이 이후 자극의 기준틀이 된다 → 처음 것에 극단 평가"
+    ]
+   ]
   },
   {
    "n": 99,
@@ -2505,7 +2659,29 @@
    "blank": "To succeed in diet, (A) of process for carrying it out is more important than (B).",
    "blankKo": "다이어트에 성공하려면, 그것을 실행하는 과정의 (A)이 (B)보다 더 중요하다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 03"
+   "unit": "UNIT 03",
+   "structure": [
+    [
+     "통념",
+     "Many people think",
+     "다이어트 성공 = 결단력·끈기·자기 절제 (정신력)"
+    ],
+    [
+     "반박",
+     "While …, a new research has found",
+     "정신력도 중요하지만, 다이어트 자체의 미묘한 측면도 중요하다"
+    ],
+    [
+     "연구 결과",
+     "They found that the more …, the sooner",
+     "계획이 복잡하다고 느낄수록 더 빨리 포기한다"
+    ],
+    [
+     "결론",
+     "In other words",
+     "어렵다는 주관적 인상이 포기를 부른다 → 단순함이 핵심"
+    ]
+   ]
   },
   {
    "n": 100,
@@ -2736,7 +2912,29 @@
    "blank": "When the workers of organizations are trained to do (A) jobs, they possibly end up being (B) to deal with new or changing situations.",
    "blankKo": "조직의 직원들이 (A) 일을 하도록 훈련받으면, 결국 새롭거나 변화하는 상황에 대처할 수 (B) 될 수 있다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 05"
+   "unit": "UNIT 05",
+   "structure": [
+    [
+     "현상",
+     "train workers … and reward them",
+     "조직은 직원을 정해진 방식으로 훈련하고 보상한다"
+    ],
+    [
+     "문제 제기",
+     "however, they risk developing",
+     "생각 없이 반응하도록 훈련 → 훈련된 무능 (새 상황에 대응 못함)"
+    ],
+    [
+     "재진술",
+     "In other words",
+     "효율만 좇다가 건강·지역사회·환경 같은 다른 문제를 무시한다"
+    ],
+    [
+     "원인",
+     "At the root of … is",
+     "다양성 없는 반복 업무 = 훈련된 무능의 근원"
+    ]
+   ]
   },
   {
    "n": 101,
@@ -2987,7 +3185,29 @@
    "blank": "An experiment shows that while people are more willing to help (A) in need, they become indifferent when given the (B) perspective of hunger.",
    "blankKo": "한 실험은 사람들이 어려움에 처한 (A)을 돕는 데는 더 적극적이지만, 기아에 대한 (B) 관점이 주어지면 무관심해진다는 것을 보여 준다.",
    "step1Label": "STEP 1 · 요약문 먼저",
-   "unit": "UNIT 07"
+   "unit": "UNIT 07",
+   "structure": [
+    [
+     "연구 결과 (주제)",
+     "Research … shows that",
+     "개인은 열심히 돕는 사람도 대중의 고통에는 무관심해진다"
+    ],
+    [
+     "연구 내용",
+     "In one experiment",
+     "5달러 기부: ① Rokia 개인 ② 2,100만 아프리카인 ③ 희생자 중 하나인 Rokia"
+    ],
+    [
+     "결과 ①",
+     "Slovic reported that … far greater",
+     "개인 Rokia에 대한 기부 > 통계적 묘사에 대한 기부"
+    ],
+    [
+     "결과 ② (핵심)",
+     "But what is surprising … is that",
+     "Rokia 이야기에 통계를 더하자 Rokia 기부까지 크게 줄었다"
+    ]
+   ]
   },
   {
    "n": 102,
@@ -3210,7 +3430,29 @@
    ],
    "blank": "…the two groups were given options that actually led to ________.",
    "blankKo": "두 그룹은 사실 ______로 이어지는 선택지를 받았다.",
-   "unit": "UNIT 07"
+   "unit": "UNIT 07",
+   "structure": [
+    [
+     "연구 내용",
+     "conducted a … experiment",
+     "50달러를 받은 두 그룹: A 'lose $30' / B 'keep $20' (실제 결과는 같음)"
+    ],
+    [
+     "연구 결과",
+     "61.9% … while only 42.9%",
+     "'잃는다'를 들은 A 그룹이 도박을 훨씬 많이 선택"
+    ],
+    [
+     "해석",
+     "However, because … framed",
+     "결과가 같아도 표현(틀)이 다르면 결정이 달라진다"
+    ],
+    [
+     "결론",
+     "This is called …",
+     "틀 효과: 부정적 결과(loss)를 떠올리게 하는 말은 다른 행동을 낳는다"
+    ]
+   ]
   },
   {
    "n": 103,
@@ -3440,7 +3682,29 @@
    "blankKo": "이러한 성찰 과정은 잠재적인 문제들과 그것을 고칠 방법을 분명하게 보게 해 준다.",
    "step1Label": "STEP 1 · 주어진 문장",
    "hideOptsOnProblem": true,
-   "unit": "UNIT 09"
+   "unit": "UNIT 09",
+   "structure": [
+    [
+     "질문",
+     "Have you ever thought about …?",
+     "내가 잘하는 것과 못하는 것은 무엇일까? (내적 대화)"
+    ],
+    [
+     "답변",
+     "help you get a clearer picture",
+     "자기 성찰 → 강점·약점과 맹점을 보고 고칠 방법을 찾는다"
+    ],
+    [
+     "주제 확장",
+     "not only … but also",
+     "개인 발전뿐 아니라 기업의 성공에도 중요하다"
+    ],
+    [
+     "예시",
+     "For instance",
+     "구글: 금요일 성찰 시간 → 혁신적인 제품 (It is ~ that 강조)"
+    ]
+   ]
   },
   {
    "n": 104,
@@ -3642,7 +3906,29 @@
    "blankKo": "업무의 다양성이 ⑤증가할수록, 일에 필요한 생각과 시간도 감소한다 (?)",
    "step1Label": "STEP 1 · 의심 문장",
    "hideOptsOnProblem": true,
-   "unit": "UNIT 05"
+   "unit": "UNIT 05",
+   "structure": [
+    [
+     "현상",
+     "train workers … and reward them",
+     "조직은 직원을 정해진 방식으로 훈련하고 보상한다"
+    ],
+    [
+     "문제 제기",
+     "however, they risk developing",
+     "생각 없이 반응하도록 훈련 → 훈련된 무능 (새 상황에 대응 못함)"
+    ],
+    [
+     "재진술",
+     "In other words",
+     "효율만 좇다가 건강·지역사회·환경 같은 다른 문제를 무시한다"
+    ],
+    [
+     "원인",
+     "At the root of … is",
+     "다양성 없는 반복 업무 = 훈련된 무능의 근원"
+    ]
+   ]
   }
  ],
  "pre": [

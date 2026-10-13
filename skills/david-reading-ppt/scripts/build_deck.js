@@ -218,32 +218,33 @@ function extraSlides(sec, head, sections, chipText) {
 
   // ---------- 4. Signal (글의 구조 signal 종합) ----------
   if (IN.signalMap) {
-    // Signal 한눈에 보기: 표 1장 (UNIT | 글의 구조 | 핵심 signal | 오늘 지문). 지문마다 구조는 하나(e.unit).
+    // 한 장에 10 UNIT 타일: 흐름 단계 + 대표 signal 1개씩. 상세 signal·전략은 노트로.
     const SM = IN.signalMap;
     const todayOf = (u) => {
       const xs = EX.filter((e) => e.unit === u.unit).map((e) => e.n);
       const pre = (D.pre || []).filter((q) => q.unit === u.unit).map((q) => q.label);
       if (!xs.length && !pre.length) return (u.ex || "").replace(/^오늘:\s*/, "");
-      return [...(xs.length ? ["Ex " + xs.join(" · ")] : []), ...pre].join(", ");
+      return [...(xs.length ? ["Ex " + xs.join("·")] : []), ...pre].join(", ");
     };
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
-    s.addText("Signal 한눈에 보기: 글의 구조 10가지", { placeholder: "title" });
-    const hd = (t) => ({ text: t, options: { bold: true, color: HEX.lt1, fill: { color: HEX.dk2 }, fontSize: 13, align: "center" } });
-    const rows = [[hd("UNIT"), hd("글의 구조"), hd("핵심 Signal"), hd("오늘 지문")]];
+    s.addText([{ text: "Signal 한눈에 보기  " }, { text: "글의 구조 10가지", options: { color: C.accent4, fontSize: 20 } }], { placeholder: "title" });
+    const cols = 5, tw = 2.42, tg = 0.09, th = 2.78;
     SM.forEach((u, i) => {
-      const td = todayOf(u), on = !!td;
-      const fill = { color: i % 2 ? HEX.lt1 : "F4F8F6" };
-      const col = on ? HEX.dk1 : "A3ADAB";
-      const steps = u.flow.replace(/\s*\(.*?\)/g, "").split("–").map((t) => t.trim());
-      rows.push([
-        { text: u.unit.replace("UNIT ", ""), options: { bold: true, color: on ? HEX.accent1 : "A3ADAB", fill, align: "center", fontSize: 14 } },
-        { text: steps.join(" → "), options: { bold: true, color: on ? HEX.dk2 : "A3ADAB", fill, fontSize: 15 } },
-        { text: (u.key || []).join("  /  ").replace(/\n/g, "  /  ").replace(/-/g, "‑"), options: { color: col, fill, fontSize: 12.5 } },
-        { text: td || "–", options: { bold: on, color: on ? HEX.accent2 : "A3ADAB", fill, align: "center", fontSize: 13 } },
-      ]);
+      const x = 0.45 + (i % cols) * (tw + tg), y = 1.28 + Math.floor(i / cols) * (th + 0.1);
+      const td = todayOf(u), today = !!td;
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: tw, h: th, rectRadius: 0.08, fill: { color: today ? HEX.lt1 : "F6F7F7" }, line: { color: today ? HEX.accent1 : HEX.lt2, width: 1.5 } });
+      s.addText(u.unit.replace("UNIT ", "U"), { x: x + 0.1, y: y + 0.1, w: 0.5, h: 0.28, fontSize: 10, bold: true, color: HEX.lt1, fill: { color: today ? HEX.accent1 : HEX.accent4 }, align: "center", valign: "middle", margin: 0, isTextBox: true });
+      const steps = u.flow.replace(/\s*\(.*?\)/g, "").split("–").map((t) => t.trim()), keys = u.key || [];
+      s.addText(u.name || steps.join(" → "), { x: x + 0.66, y: y + 0.06, w: tw - 0.74, h: 0.4, fontSize: 14, bold: true, color: HEX.dk2, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+      const rr = [];
+      steps.forEach((st, k) => {
+        rr.push({ text: (k ? "↓ " : "") + st, options: { bold: true, fontSize: 15, color: today ? HEX.accent2 : HEX.dk2, breakLine: true } });
+        if (keys[k]) rr.push({ text: keys[k].replace(/-/g, "\u2011"), options: { fontSize: 12.5, color: HEX.dk1, breakLine: k < steps.length - 1 } });
+      });
+      s.addText(rr, { x: x + 0.12, y: y + 0.52, w: tw - 0.24, h: th - 0.95, margin: 0, valign: "top", paraSpaceAfter: 2, fit: "shrink", isTextBox: true });
+      s.addText(today ? td : "오늘 없음", { x: x + 0.1, y: y + th - 0.36, w: tw - 0.2, h: 0.26, fontSize: 11, bold: true, color: today ? HEX.accent2 : HEX.accent4, align: "right", margin: 0, isTextBox: true });
     });
-    s.addTable(rows, { x: 0.45, y: 1.3, w: 12.45, colW: [0.75, 3.35, 6.2, 2.15], rowH: 0.5, valign: "middle", margin: [0, 0.1, 0, 0.1], border: { type: "solid", pt: 0.75, color: "DDE6E2" }, fontFace: "맑은 고딕" });
-    s.addNotes(`【설명 스크립트】 "글은 정해진 구조로 흘러가요. 오른쪽이 오늘 그 구조로 쓰인 지문이에요. 지문마다 흐름 정리에서 다시 짚어 줄게요."\n※ 1~2분만. 각 지문 흐름 정리 슬라이드 위에 해당 구조가 다시 나옵니다.\n\n${SM.map((u) => `■ ${u.unit} ${u.flow}  (${todayOf(u) || "오늘 없음"})\n${u.roles.map((r) => `  - ${r[0]}: ${r[1]}`).join("\n")}\n  ▶ 전략: ${u.strategy.join(" / ")}`).join("\n\n")}`);
+    s.addNotes(`【설명 스크립트】 "글은 정해진 구조로 흘러가요. 카드 아래 번호가 오늘 그 구조가 나온 지문이에요. 지문마다 흐름 정리에서 어느 구조인지 다시 짚어 줄게요."\n※ 이 슬라이드는 1~2분만. 각 지문의 흐름 정리 슬라이드 상단에 해당 UNIT이 다시 나옵니다.\n\n${SM.map((u) => `■ ${u.unit} ${u.flow}  (${todayOf(u) || "오늘 없음"})\n${u.roles.map((r) => `  - ${r[0]}: ${r[1]}`).join("\n")}\n  ▶ 전략: ${u.strategy.join(" / ")}`).join("\n\n")}`);
   } else
   (IN.signalPages || [{ title: "Signal: 이 단어가 보이면 멈춰!", items: IN.signals || [] }]).forEach((pg) => {
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
@@ -479,18 +480,20 @@ function extraSlides(sec, head, sections, chipText) {
     // --- 5) 흐름 + 꼭 가져갈 것 (복습)
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
     s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: e.title }], { placeholder: "title" });
-    chip(s, `${kind} · 흐름 정리`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-    s.addText("글의 흐름", { x: 0.6, y: 1.35, w: 3, h: 0.4, fontSize: 15, bold: true, color: C.accent1, margin: 0, isTextBox: true });
+    chip(s, `${kind} · 구조 정리`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
+    // 글의 구조: 단계마다 [역할, 지문 속 signal, 내용]. structure가 없으면 flow로 대체
     const UN = (IN.signalMap || []).filter((u) => e.unit ? u.unit === e.unit : (u.ex || "").split(/[^0-9]+/).includes(String(e.n)));
-    if (UN.length) s.addText([{ text: "구조 Signal  ", options: { bold: true, color: HEX.accent2 } }, ...UN.map((u, i) => ({ text: `${u.unit} ${u.flow}${i < UN.length - 1 ? "   ·   " : ""}`, options: { bold: true, color: HEX.dk2 } }))],
-      { x: 2.0, y: 1.35, w: 10.7, h: 0.4, fontSize: 13, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
-    const fy0 = 1.85, fh = 1.1, fg = 0.15;
-    s.addShape(pres.shapes.LINE, { x: 0.95, y: fy0 + 0.35, w: 0, h: (fh + fg) * (e.flow.length - 1), line: { color: C.background2, width: 3 } });
-    e.flow.forEach((f, i) => {
+    const ST = e.structure || e.flow.map((f) => [f[0], "", f[1]]);
+    s.addText([{ text: "글의 구조  ", options: { bold: true, color: C.accent1, fontSize: 15 } }, ...UN.map((u) => ({ text: `${u.unit}  ${u.flow.replace(/\s*\(.*?\)/g, "")}`, options: { bold: true, color: HEX.accent2, fontSize: 13 } }))],
+      { x: 0.6, y: 1.35, w: 6.8, h: 0.4, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
+    const fy0 = 1.9, fg = 0.12, fh = Math.min(1.2, (6.9 - fy0 - fg * (ST.length - 1)) / ST.length);
+    s.addShape(pres.shapes.LINE, { x: 0.95, y: fy0 + 0.35, w: 0, h: (fh + fg) * (ST.length - 1), line: { color: C.background2, width: 3 } });
+    ST.forEach((f, i) => {
       const y = fy0 + i * (fh + fg);
-      s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: 0.65, y: y + 0.05, w: 0.6, h: 0.6, fill: { color: i === e.flow.length - 1 ? C.accent2 : C.accent1 }, color: C.background1, fontSize: 18, bold: true, align: "center", valign: "middle", margin: 0 });
-      s.addText(f[0], { x: 1.5, y: y + 0.03, w: 5.6, h: 0.38, fontSize: 16, bold: true, color: C.accent1, margin: 0, isTextBox: true });
-      s.addText(f[1], { x: 1.5, y: y + 0.42, w: 5.8, h: fh - 0.42, fontSize: 16, color: C.text1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
+      s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: 0.65, y: y + 0.03, w: 0.6, h: 0.6, fill: { color: i === ST.length - 1 ? C.accent2 : C.accent1 }, color: C.background1, fontSize: 18, bold: true, align: "center", valign: "middle", margin: 0 });
+      s.addText(f[0], { x: 1.5, y: y + 0.03, w: 1.75, h: 0.4, fontSize: 16, bold: true, color: C.accent1, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
+      if (f[1]) s.addText(f[1], { x: 3.3, y: y + 0.04, w: 4.1, h: 0.38, fontSize: 13, italic: true, color: HEX.dk2, fill: { color: "FFF3C9" }, margin: [6, 6, 0, 0], valign: "middle", isTextBox: true });
+      s.addText(f[2], { x: 1.5, y: y + 0.47, w: 5.9, h: fh - 0.47, fontSize: 15, color: C.text1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
     });
     const TK = e.takeaways || [], VP = e.vocabPlus || [];
     const tkH = VP.length ? 2.35 : 5.55;

@@ -39,7 +39,7 @@
       "conclusion": "위신을 얻으면 영향력이 원래 분야를 넘어 확장된다"
     }
   },
-  // intro.signalMap (속독맵 10 UNIT): [{ unit: "UNIT 07", name: "연구·실험", flow: "연구 내용 – 연구 결과 – 결론", key: ["study · experiment", "found · showed that", "Therefore · In other words"](흐름 단계별 대표 signal, 짧게), roles: [["연구 내용", "research, study, …"]], strategy: ["…"] }] → Signal 표 1장 (roles·strategy는 노트). 오늘 지문 열은 exercises[].unit / pre[].unit에서 자동 생성
+  // intro.signalMap (속독맵 10 UNIT): [{ unit: "UNIT 07", name: "연구·실험", flow: "연구 내용 – 연구 결과 – 결론", key: ["study · experiment", "found · showed that", "Therefore · In other words"](흐름 단계별 대표 signal, 짧게), roles: [["연구 내용", "research, study, …"]], strategy: ["…"] }] → Signal 타일 1장 (roles·strategy는 노트). 오늘 지문 열은 exercises[].unit / pre[].unit에서 자동 생성
   // meta.objectives: [[목표, 부연], …] 3개 / intro.signalPages: [{ title, items: [[구조, 표현, 왜 중요한지, "Ex .."]], notes }]
   // pre: [{ label: "기출 해체", unit: "UNIT 03", chip: 출처, prompt, passage, foot, summary, options, answer, notes }] / reviewTest: { head, sections: [{ title, instruction, items: [{ no, text, a, why }] }] }
   "review": {                      // 복습 미니테스트 (마지막). 없으면 어휘 퀴즈는 문제별 vocab 첫 단어로 자동, 어법 골든벨은 생략
@@ -83,6 +83,7 @@
       "blank": "There is evidence that low self-esteem people are ________.",  // 흐름 슬라이드의 빈칸(밑줄) 문장
       "blankKo": "자존감이 낮은 사람들은 ______하다는 증거가 있다.",
       "find": "자존감 낮은 사람들의 '특징'을 찾자",     // '찾을 것' 한 줄
+      "structure": [["통념", "Many people think", "다이어트 성공 = 정신력"], ["반박", "While …, a new research has found", "…"], ["결론", "In other words", "…"]],  // 글의 구조 정리: [역할, 지문 속 signal 원문, 내용 한 줄] 3~4개
       "flow": [["주장 (빈칸)", "…"], ["실험", "…"], ["결과", "…"], ["결론", "…"]],  // 정확히 4개, 줄바꿈 \n 가능
       "clue": "…differ not only in the average positivity …",   // 결정적 단서 (영문 발췌, 짧게)
       "clueKo": "…",
