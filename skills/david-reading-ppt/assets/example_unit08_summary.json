@@ -5,6 +5,20 @@
   "footer": "절대수능맵 독해 유형심화 Unit 08 · 요약문 완성의 함정",
   "summary": "요약문 완성 10문항 + 변형 3문항 (빈칸 · 문장 삽입 · 어휘)",
   "goal": "요약문은 본문의 '다른 말(paraphrase)' 찾기",
+  "objectives": [
+   [
+    "요약문을 먼저 읽고 (A)·(B)에 무엇이 들어갈지 예측할 수 있다",
+    "요약문 → 근거 → 선택지 소거 순서로 풀기"
+   ],
+   [
+    "글의 구조 Signal(통념·반박·연구 결과 등)로 정답 근거를 찾을 수 있다",
+    "본문 단어가 요약문에서 '다른 말'로 바뀌는 것을 찾기"
+   ],
+   [
+    "지문 속 내신 어법 포인트와 핵심 어휘(유의어·반의어·파생어)를 익힌다",
+    "수일치 · 분사구문 · 사역동사 · regard A as B 등"
+   ]
+  ],
   "closing": "요약문의 답은 본문 주제문의 '다른 말'이다",
   "homework": "틀린 문제의 요약문 (A)·(B)를 본문 속 단어로 다시 찾아 써 오기",
   "author": "David"
@@ -29,57 +43,98 @@
    ],
    "notes": "【설명 스크립트】 \"요약문 문제는 본문을 다 읽고 요약문을 보면 늦어요. 순서를 바꿔 볼게요.\n1단계, 요약문을 먼저 읽고 (A)와 (B)에 무엇이 들어갈지 질문을 만들어요. 예: '몽골인들은 유목 생활을 어떻게 하지?'\n2단계, 본문의 주제문과 결론에서 근거를 찾아요. 본문의 maximum or minimum이 요약문에선 extreme처럼 '다른 말'로 바뀌어요.\n3단계, (A)와 (B)를 각각 근거로 확인해요. 두 칸 모두 맞아야 정답이에요.\""
   },
-  "signals": [
-   [
-    "반전",
-    "However · But · Yet · Still · In contrast · On the other hand · Rather · While / Although(~이지만)",
-    "앞과 반대가 나온다 → 뒤가 진짜 주장",
-    "Ex 99, 102"
-   ],
-   [
-    "결론·요약",
-    "Therefore · Thus · Consequently · As a result · In short · In conclusion · This is why",
-    "지금까지를 정리 → 요약문의 원본",
-    "Ex 96"
-   ],
-   [
-    "예시",
-    "For example · For instance · Consider · In one experiment · such as · like",
-    "예시는 '공통점'만 잡는다",
-    "Ex 94, 101"
-   ],
-   [
-    "재진술",
-    "In other words · That is (to say) · Put differently · — (대시) · namely",
-    "같은 말 한 번 더 → 정답 단어 힌트",
-    "Ex 100"
-   ],
-   [
-    "추가·나열",
-    "Also · Moreover · Furthermore · In addition · Besides · Similarly · Likewise",
-    "같은 방향의 근거를 더한다",
-    "Ex 92, 94"
-   ],
-   [
-    "원인·결과",
-    "because · since · so · lead to · result in · cause · This happens because",
-    "원인 ↔ 결과 관계가 핵심",
-    "Ex 94"
-   ],
-   [
-    "강조·주제",
-    "It is ~ that · The key is · What matters is · must · should · not only A but also B",
-    "필자가 힘주어 말하는 곳 = 주제",
-    "Ex 95"
-   ],
-   [
-    "대조·비교",
-    "whereas · while · Meanwhile · unlike · compared to · more ~ than",
-    "두 대상의 차이가 글의 핵심",
-    "Ex 97, 101"
-   ]
+  "signalPages": [
+   {
+    "title": "Signal ① 주장하는 글의 구조",
+    "items": [
+     [
+      "주제",
+      "The key is · What matters is · It is ~ that · must · should · important · essential",
+      "필자가 하고 싶은 말 = 요약문·빈칸의 원본",
+      "Ex 95"
+     ],
+     [
+      "통념",
+      "Many people think · Most people believe · It is commonly said · We tend to think · You'd think",
+      "필자가 '뒤집으려고' 꺼내는 말 → 정답 아님!",
+      "Ex 99"
+     ],
+     [
+      "반박",
+      "However · But · Yet · Unfortunately · In fact · Actually · While(~이지만) · Rather",
+      "통념 뒤 진짜 주장이 시작되는 곳",
+      "Ex 99, 102"
+     ],
+     [
+      "예시",
+      "For example · For instance · Consider · such as · like · Take ~ for example",
+      "예시는 주장을 '보여 주는' 것 → 공통점만 잡기",
+      "Ex 94, 96"
+     ],
+     [
+      "결론",
+      "Therefore · Thus · Consequently · As a result · Hence · This is why",
+      "앞 내용을 정리 → 주제와 같은 말",
+      "Ex 96"
+     ],
+     [
+      "요약·재진술",
+      "In short · In brief · In other words · That is · Put differently · — (대시)",
+      "같은 말 한 번 더 → 정답 단어 힌트",
+      "Ex 100"
+     ]
+    ],
+    "notes": "【설명 스크립트】 \"주장하는 글은 '통념 → 반박 → 주제 → 예시 → 결론' 순서가 많아요. 통념(Many people think…)은 함정, 반박(However, While…) 뒤가 진짜 주장!\"\n【오늘 예】 Ex 99: Many people think(통념) → While this mental power matters(반박) → 단순함이 중요(주제)."
+   },
+   {
+    "title": "Signal ② 설명·연구하는 글의 구조",
+    "items": [
+     [
+      "현상",
+      "Have you ever noticed · It is often observed · Recently · Today · ~ is common",
+      "글이 다루는 '사실'을 소개 → 소재 파악",
+      "Ex 92, 97"
+     ],
+     [
+      "문제제기",
+      "The problem is · However, ~ risk · Unfortunately · ~ cannot · fail to",
+      "글이 해결하려는 '문제' → 요약문 (B) 자리 단골",
+      "Ex 100"
+     ],
+     [
+      "해결책",
+      "The solution is · To solve this · should · need to · One way to ~ is · The key to ~",
+      "필자가 제시하는 답 = 주제",
+      "Ex 99"
+     ],
+     [
+      "원인·결과",
+      "because · since · due to · This happens because · lead to · result in · cause · so",
+      "원인 ↔ 결과 관계가 요약문의 뼈대",
+      "Ex 94, 100"
+     ],
+     [
+      "연구 내용",
+      "In one experiment · Researchers compared · A study · ~ were asked to · participants",
+      "실험 '설계'는 빠르게 읽고 넘어가기",
+      "Ex 93, 98, 101"
+     ],
+     [
+      "연구 결과",
+      "found that · showed that · The result shows · Surprisingly · reported that",
+      "실험의 핵심 = 정답 근거가 가장 많이 나오는 곳",
+      "Ex 98, 101"
+     ],
+     [
+      "질문·답변",
+      "Have you ever ~? · Why ~? · Can you guess ~? → 바로 뒤 문장",
+      "필자가 묻고 스스로 답한다 → 답이 곧 주제",
+      "Ex 95, 101"
+     ]
+    ],
+    "notes": "【설명 스크립트】 \"실험 글은 '연구 내용'은 빠르게, '연구 결과(found that, showed that)'는 꼼꼼히! 결과 문장이 요약문으로 바뀌어요.\"\n【오늘 예】 Ex 98, 101: 결과 문장에 노란 형광이 몰려 있어요. Ex 95: 질문(Have you ever…?)으로 시작해 답(성찰 과정)을 설명."
+   }
   ],
-  "signalNotes": "【설명 스크립트】 \"글을 읽다가 이 signal이 보이면 꼭 동그라미! 답이 바로 근처에 있어요.\"\n【특히 오늘】 While(~이지만, Ex 99)과 However(Ex 102)는 반전 signal, 대시(—, Ex 100)는 재진술 signal이에요. 해당 문제에서 \"아까 본 signal 기억나?\"로 다시 연결해 주세요.\n【팁】 While은 '~하는 동안'(시간)과 '~이지만'(대조) 두 뜻이 있어요. 문장 앞에 오고 뒤에 반대 내용이 나오면 대조!",
   "traps": [
    [
     "반쪽 정답",
@@ -265,7 +320,12 @@
     {
      "q": "…a way of life that [go / goes] back at least a thousand years.",
      "a": "goes",
-     "why": "선행사 a way of life(단수) → goes"
+     "why": "선행사 a way of life(단수)"
+    },
+    {
+     "q": "Just as their ancestors [did / were], they obtain their staple foods.",
+     "a": "did",
+     "why": "대동사 did = obtained"
     },
     {
      "q": "…horse riding, [which / that] is an essential skill to guard and manage their herds.",
@@ -273,9 +333,63 @@
      "why": "콤마 뒤 계속적 용법 → that 불가"
     },
     {
-     "q": "…most Mongolians still regard horse riding [as / to] irreplaceable heritage.",
+     "q": "…most Mongolians still regard horse riding … [as / to] irreplaceable heritage.",
      "a": "as",
-     "why": "regard A as B (A를 B로 여기다)"
+     "why": "regard A as B"
+    },
+    {
+     "q": "…heritage that makes them [who / what] they are.",
+     "a": "who",
+     "why": "make O C: 그들을 그들답게"
+    }
+   ],
+   "vocabPlus": [
+    [
+     "regard A as B",
+     "≒ think of A as B, look upon A as B, see / view A as B, consider A (to be) B"
+    ],
+    [
+     "preserve",
+     "≒ conserve, maintain, keep ↔ destroy, abandon ⊕ preservation"
+    ],
+    [
+     "heritage",
+     "≒ legacy, tradition, inheritance"
+    ],
+    [
+     "vast",
+     "≒ huge, immense ↔ tiny"
+    ],
+    [
+     "essential",
+     "≒ vital, crucial, indispensable ↔ unnecessary ⊕ essence"
+    ],
+    [
+     "irreplaceable",
+     "↔ replaceable ⊕ replace, replacement"
+    ]
+   ],
+   "extras": [
+    {
+     "title": "Plus Q",
+     "items": [
+      {
+       "no": "01",
+       "q": "윗글의 밑줄 친 (a) a way of life가 뜻하는 바를 우리말로 쓰시오.",
+       "a": "광활한 평야에서 유목 생활을 하는 것, 승마를 숙달하는 것을 배우는 것"
+      },
+      {
+       "no": "02",
+       "q": "윗글의 내용을 바탕으로 밑줄 친 (b) motorbike와 반대되는 개념을 본문에서 찾아 쓰시오.",
+       "a": "horse riding"
+      },
+      {
+       "no": "03",
+       "q": "윗글의 소재를 다음과 같이 쓸 때, 빈칸에 들어갈 단어를 본문에서 찾아 쓰시오. (단, 필요시 형태를 바꾸어 쓸 것)",
+       "text": "the ________ life of the Mongolians",
+       "a": "traditional"
+      }
+     ]
     }
    ],
    "keyHL": [
@@ -469,19 +583,73 @@
    },
    "gq": [
     {
-     "q": "[Having heard / Heard] these options, 61.9% of participants in group A chose to gamble.",
+     "q": "The participants were each given $50 and [separated / separating] into two groups.",
+     "a": "separated",
+     "why": "were given … and (were) separated 병렬"
+    },
+    {
+     "q": "[Having heard / Having been heard] these options, 61.9% of participants chose to gamble.",
      "a": "Having heard",
-     "why": "참가자가 '들은' 것(능동) + 주절보다 먼저 → 완료 분사구문"
+     "why": "참가자가 '들은' 것(능동) + 먼저 일어난 일"
     },
     {
-     "q": "…options that actually [led / leading] to an identical outcome.",
+     "q": "…given options that actually [led / leading] to an identical outcome.",
      "a": "led",
-     "why": "관계절의 동사 자리 → led"
+     "why": "관계절의 동사 자리"
     },
     {
-     "q": "Using words that make people [think / to think] of a negative outcome…",
-     "a": "think",
-     "why": "사역동사 make + O + 동사원형"
+     "q": "Using words that make people [think / to think] of a negative outcome [will yield / yield] different results.",
+     "a": "think / will yield",
+     "why": "사역 make + 원형 / 동명사 주어 단수"
+    }
+   ],
+   "vocabPlus": [
+    [
+     "identical",
+     "≒ the same, equivalent ↔ different ⊕ identity, identify"
+    ],
+    [
+     "outcome",
+     "≒ result, consequence"
+    ],
+    [
+     "yield",
+     "≒ produce, bring about, result in"
+    ],
+    [
+     "conduct",
+     "≒ carry out, perform (an experiment)"
+    ],
+    [
+     "frame (v.)",
+     "≒ express, phrase ⊕ framing"
+    ],
+    [
+     "negative",
+     "↔ positive"
+    ]
+   ],
+   "extras": [
+    {
+     "title": "Plus Q",
+     "items": [
+      {
+       "no": "01",
+       "q": "윗글의 주제를 다음과 같이 쓸 때, 빈칸에 들어갈 말을 본문에서 찾아 쓰시오.",
+       "text": "how human brains are affected by ________ manipulation",
+       "a": "framing"
+      },
+      {
+       "no": "02",
+       "q": "윗글의 밑줄 친 (a) options와 같은 뜻을 가진 단어를 본문에서 찾아 쓰시오.",
+       "a": "choices"
+      },
+      {
+       "no": "03",
+       "q": "윗글의 밑줄 친 (b) This가 뜻하는 바를 우리말로 쓰시오.",
+       "a": "선택지들이 ‘잃다’와 ‘갖다’의 두 개의 다른 용어로 표현되어서, 참가자들이 서로 다른 행동상의 결정을 내리게 된 것"
+      }
+     ]
     }
    ],
    "keyHL": [
@@ -681,9 +849,14 @@
    },
    "gq": [
     {
-     "q": "Many cases of such social contagion [happen / happens] in subtle ways.",
-     "a": "happen",
-     "why": "주어 cases(복수) → happen"
+     "q": "[While studying / While studied] obesity in human networks, Christakis made a discovery.",
+     "a": "While studying",
+     "why": "While they were studying (능동)"
+    },
+    {
+     "q": "…there is a greater chance [that / which] you will become obese yourself.",
+     "a": "that",
+     "why": "동격의 that (chance = 뒤 절), 완전한 절"
     },
     {
      "q": "…you will become more inclined [to eat / eating] fatty food.",
@@ -691,9 +864,90 @@
      "why": "be(become) inclined to V"
     },
     {
+     "q": "Many cases of such social contagion [happen / happens] in subtle ways.",
+     "a": "happen",
+     "why": "주어 cases(복수)"
+    },
+    {
      "q": "We [barely notice / don't barely notice] this interesting hidden principle.",
      "a": "barely notice",
-     "why": "barely 자체가 부정어 → not과 함께 쓰지 않음"
+     "why": "barely 자체가 부정어"
+    }
+   ],
+   "vocabPlus": [
+    [
+     "subtle",
+     "≒ slight, delicate ↔ obvious, apparent"
+    ],
+    [
+     "barely",
+     "≒ hardly, scarcely (부정어)"
+    ],
+    [
+     "inclined to V",
+     "≒ tend to V, be likely to V, be apt to V"
+    ],
+    [
+     "determine",
+     "≒ decide, shape ⊕ determination"
+    ],
+    [
+     "transfer",
+     "≒ spread, transmission"
+    ],
+    [
+     "obese",
+     "↔ thin ⊕ obesity"
+    ]
+   ],
+   "extras": [
+    {
+     "title": "절대구문",
+     "instruction": "다음 주어진 문장을 밑줄 친 부분에 유의하여 우리말로 해석하시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "__While studying__ obesity in human networks, Nicholas Christakis and his colleagues at Harvard University made an important discovery. [부사절 - 시간]",
+       "a": "인간 관계에서의 비만을 연구하는 동안, Harvard University의 Nicholas Christakis와 그의 동료들은 중요한 발견을 해냈다."
+      },
+      {
+       "no": "2",
+       "text": "We __barely__ notice this interesting hidden principle, but it can actually determine many of our life choices. [부정부사]",
+       "a": "우리는 이 흥미로운 숨겨진 원리를 거의 알아차리지 못하지만, 그것은 실제로 우리의 삶의 선택들 중 많은 것들을 결정할 수 있다."
+      }
+     ]
+    },
+    {
+     "title": "절대어휘",
+     "instruction": "다음 빈칸에 들어갈 알맞은 말을 고르시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "The [colleague / supervisor] ordered all the team members to back up their files by Friday.",
+       "a": "supervisor"
+      },
+      {
+       "no": "2",
+       "text": "Though he kept smiling, she detected [subtle / obvious] changes in his mood.",
+       "a": "subtle"
+      }
+     ]
+    },
+    {
+     "title": "절대어법",
+     "instruction": "다음 괄호 안에서 어법상 올바른 것을 고르시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "For example, if your friends invite you to restaurants that serve fatty foods, you will become more inclined [eating / to eat] fatty food.",
+       "a": "to eat"
+      },
+      {
+       "no": "2",
+       "text": "Many cases of such social contagion [happen / happens] in subtle ways in our daily lives through social networks.",
+       "a": "happen"
+      }
+     ]
     }
    ],
    "keyHL": [
@@ -891,19 +1145,105 @@
    },
    "gq": [
     {
-     "q": "…what you are good at and not so good at [during / while] internal conversations with yourself?",
+     "q": "…what you are good at and not so good at [during / while] internal conversations?",
      "a": "during",
-     "why": "뒤에 명사구 → 전치사 during"
+     "why": "뒤에 명사구 → 전치사"
     },
     {
-     "q": "This reflection process enables you to [clear / clearly] see potential problems.",
-     "a": "clearly",
-     "why": "동사 see를 꾸미는 부사"
+     "q": "Inner thought processes like this help you [get / getting] a clearer picture.",
+     "a": "get",
+     "why": "help O (to) 원형"
+    },
+    {
+     "q": "This reflection process enables you [to clearly see / clearly see] potential problems.",
+     "a": "to clearly see",
+     "why": "enable O to V / 부사 clearly"
+    },
+    {
+     "q": "It is not only essential in personal development but also [critical / critically] to corporate success.",
+     "a": "critical",
+     "why": "not only A but also B 병렬 (형용사)"
     },
     {
      "q": "It is this self-awareness [that / what] allows the company to excel.",
      "a": "that",
      "why": "It is ~ that 강조구문"
+    }
+   ],
+   "vocabPlus": [
+    [
+     "internal",
+     "≒ inner ↔ external"
+    ],
+    [
+     "identify",
+     "≒ recognize, find ⊕ identity, identification"
+    ],
+    [
+     "innovative",
+     "≒ creative, inventive ⊕ innovate, innovation"
+    ],
+    [
+     "consistently",
+     "≒ constantly, steadily ↔ inconsistently ⊕ consistent, consistency"
+    ],
+    [
+     "excel at",
+     "≒ be good at ⊕ excellent, excellence"
+    ],
+    [
+     "critical",
+     "≒ crucial, essential, vital"
+    ]
+   ],
+   "extras": [
+    {
+     "title": "절대구문",
+     "instruction": "다음 주어진 문장을 밑줄 친 부분에 유의하여 우리말로 해석하시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "__Inner thought processes__ like this __help__ you get a clearer picture of your strengths and weaknesses. [주어 - 동사]",
+       "a": "이와 같은 내면의 사고 과정은 당신이 당신의 강점과 약점에 대해 더 분명한 그림을 얻도록 도와준다."
+      },
+      {
+       "no": "2",
+       "text": "The most __consistently__ innovative companies in the world promote a culture which includes this self-inquiry. [부사]",
+       "a": "세계에서 가장 한결같이 획기적인 회사들은 이런 자기 탐구를 포함하는 문화를 장려한다."
+      }
+     ]
+    },
+    {
+     "title": "절대어휘",
+     "instruction": "괄호 안에 주어진 단어의 어법상 올바른 형태를 넣어 빈칸을 완성하시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "The CEO put emphasis on everyone’s initiative to pursue ________. (innovate)",
+       "a": "innovation"
+      },
+      {
+       "no": "2",
+       "text": "Leaving the restaurant, we couldn’t stop talking about how ________ the food was. (excel)",
+       "a": "excellent"
+      }
+     ]
+    },
+    {
+     "title": "절대어법",
+     "instruction": "다음 괄호 안에서 어법상 올바른 것을 고르시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "Have you ever thought about what you are good at and not so good at [during / while] internal conversations with yourself?",
+       "a": "during"
+      },
+      {
+       "no": "2",
+       "text": "This reflection process enables you to [clear / clearly] see potential problems and ways to fix them.",
+       "a": "clearly"
+      }
+     ]
     }
    ],
    "keyHL": [
@@ -1099,19 +1439,105 @@
    },
    "gq": [
     {
-     "q": "…a sophisticated sense of smell, which [consists of / is consisted of] two distinct sensory systems.",
+     "q": "…a sophisticated sense of smell, which [consists of / is consisted of] two systems.",
      "a": "consists of",
-     "why": "consist는 자동사 → 수동태 불가"
+     "why": "consist는 수동태 불가"
     },
     {
-     "q": "Many marine animals, [including / included] fish and lobsters, release a specific chemical odor.",
+     "q": "…to your body’s organs, [causing / caused] them to respond accordingly.",
+     "a": "causing",
+     "why": "결과의 분사구문 (능동) + cause O to V"
+    },
+    {
+     "q": "Many marine animals, [including / included] fish and lobsters, release a chemical odor.",
      "a": "including",
-     "why": "전치사 including (~을 포함하여)"
+     "why": "전치사 including"
     },
     {
-     "q": "Failure to detect this odor would make the subject [easy / easily] prey for a predator.",
+     "q": "Failure to detect this odor would make the subject [easy / easily] prey.",
      "a": "easy",
-     "why": "명사 prey를 꾸미는 형용사"
+     "why": "make O C: 명사 prey 수식 형용사"
+    },
+    {
+     "q": "…to recognize [whether / that] the odor released is one of fear, danger, or hunger.",
+     "a": "whether",
+     "why": "~인지 아닌지 (명사절)"
+    }
+   ],
+   "vocabPlus": [
+    [
+     "sophisticated",
+     "≒ complex, elaborate ↔ simple, crude"
+    ],
+    [
+     "distinct",
+     "≒ separate, different ⊕ distinction, distinguish"
+    ],
+    [
+     "presence",
+     "↔ absence ⊕ present"
+    ],
+    [
+     "crucial",
+     "≒ vital, essential, critical"
+    ],
+    [
+     "interpret",
+     "≒ decode, understand ⊕ interpretation"
+    ],
+    [
+     "predator",
+     "↔ prey"
+    ]
+   ],
+   "extras": [
+    {
+     "title": "절대구문",
+     "instruction": "다음 주어진 문장을 밑줄 친 부분에 유의하여 우리말로 해석하시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "Failure to detect and decode this odor properly would __make the subject easy prey__ for a predator. [5형식 문장]",
+       "a": "이 냄새를 적절히 감지하고 판독하지 못하는 것은 그 대상을 포식자에게 쉬운 먹이로 만들 것이다."
+      },
+      {
+       "no": "2",
+       "text": "Consequently, the ability to recognize __whether the odor released is one of fear, danger, or hunger__ is vital to an animal’s survival. [명사절]",
+       "a": "결과적으로, 방출된 냄새가 두려움, 위험, 혹은 배고픔의 그것인지를 알아보는 능력은 동물의 생존에 필수적이다."
+      }
+     ]
+    },
+    {
+     "title": "절대어휘",
+     "instruction": "괄호 안에 주어진 단어의 반의어를 윗글에서 찾아 빈칸을 완성하시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "He was fascinated by the ________ artwork made with an eggshell. (simple)",
+       "a": "sophisticated"
+      },
+      {
+       "no": "2",
+       "text": "This telescope enabled us to confirm the ________ of other galaxies. (absence)",
+       "a": "presence"
+      }
+     ]
+    },
+    {
+     "title": "절대어법",
+     "instruction": "다음 괄호 안에서 어법상 올바른 것을 고르시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "To increase the probability of survival, many animals have evolved a sophisticated sense of smell, which [consist / consists] of two distinct sensory systems.",
+       "a": "consists"
+      },
+      {
+       "no": "2",
+       "text": "For example, many marine animals, [include / including] fish and lobsters, release a specific chemical odor to warn others of the presence of danger.",
+       "a": "including"
+      }
+     ]
     }
    ],
    "keyHL": [
@@ -1309,19 +1735,100 @@
    },
    "gq": [
     {
-     "q": "If Asians and Westerners are shown the same thing, they will likely look at different parts of [it / them].",
+     "q": "…they will likely look at different parts of [it / them].",
      "a": "it",
-     "why": "the same thing(단수)을 가리킴"
+     "why": "the same thing(단수)"
+    },
+    {
+     "q": "One study attributed this phenomenon [to / with] cultural differences.",
+     "a": "to",
+     "why": "attribute A to B"
     },
     {
      "q": "When [asked / asking] what they had observed afterwards, the Americans said…",
      "a": "asked",
-     "why": "그들이 '질문받은' 것 → 수동 분사구문"
+     "why": "When they were asked (수동)"
+    },
+    {
+     "q": "Asians are more likely than Westerners [to consider / considering] the entire context.",
+     "a": "to consider",
+     "why": "be likely to V"
     },
     {
      "q": "Westerners are more independent and analytical, often [noticing / noticed] specifics.",
      "a": "noticing",
-     "why": "서양인이 '알아차리는' 것 → 능동 현재분사"
+     "why": "능동 분사구문"
+    }
+   ],
+   "vocabPlus": [
+    [
+     "attribute A to B",
+     "≒ ascribe A to B, put A down to B (A를 B의 탓으로 돌리다)"
+    ],
+    [
+     "phenomenon",
+     "≒ occurrence (복수 phenomena)"
+    ],
+    [
+     "invaluable",
+     "≒ priceless, very valuable ↔ worthless (in- = 부정 아님!)"
+    ],
+    [
+     "analytical",
+     "⊕ analyze, analysis ↔ holistic"
+    ],
+    [
+     "perceive",
+     "≒ notice, recognize ⊕ perception"
+    ],
+    [
+     "specifics",
+     "≒ details ↔ the big picture"
+    ]
+   ],
+   "extras": [
+    {
+     "title": "절대구문",
+     "instruction": "다음 주어진 문장을 밑줄 친 부분에 유의하여 우리말로 해석하시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "__When asked__ what they had observed afterwards, the Americans said they had focused on objects in the front of the scenery, such as tropical fish. [분사구문]",
+       "a": "나중에 그들이 무엇을 봤는지 질문받았을 때, 그 미국인들은 (그들이) 열대어와 같이 보통 풍경의 앞쪽에 있는 사물들에 집중했었다고 말했다."
+      },
+      {
+       "no": "2",
+       "text": "Meanwhile, the Japanese __had focused__ on the objects in the background, such as colorful corals. [과거완료]",
+       "a": "한편, 일본인들은 형형색색의 산호와 같이 배경에 있는 사물들에 집중했(었)다."
+      }
+     ]
+    },
+    {
+     "title": "절대어휘",
+     "instruction": "다음 영영 풀이에 해당하는 단어를 윗글에서 찾아 쓰시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "a fact or situation that is difficult to explain or remarkable to attract people's interest",
+       "a": "phenomenon"
+      }
+     ]
+    },
+    {
+     "title": "절대어법",
+     "instruction": "다음 괄호 안에서 어법상 올바른 것을 고르시오.",
+     "items": [
+      {
+       "no": "1",
+       "text": "If Asians and Westerners are shown the same thing, they will likely look at different parts of [it / them].",
+       "a": "it"
+      },
+      {
+       "no": "2",
+       "text": "On the other hand, Westerners are more independent and analytical in their information processing, often [noticing / noticed] specifics.",
+       "a": "noticing"
+      }
+     ]
     }
    ],
    "keyHL": [
@@ -1510,20 +2017,56 @@
    },
    "gq": [
     {
+     "q": "Order effect is the prejudicial impact [that / what] the presentation order … has on a respondent.",
+     "a": "that",
+     "why": "선행사 impact + 목적격 관계대명사"
+    },
+    {
      "q": "Whether the item is located in the first, last, or middle position sometimes [affect / affects] the selection.",
      "a": "affects",
-     "why": "whether 명사절 주어 → 단수 동사"
+     "why": "whether절 주어 → 단수"
     },
     {
      "q": "Robert Ferber had respondents [rate / to rate] a list of occupations.",
      "a": "rate",
-     "why": "사역동사 have + O + 동사원형"
+     "why": "사역 have + O + 원형"
+    },
+    {
+     "q": "…the maximum or minimum ratings occurred on the one [presented / presenting] first.",
+     "a": "presented",
+     "why": "제시'된' 것 → 과거분사"
     },
     {
      "q": "The first beverage [tasted / tasting] was rated significantly higher.",
      "a": "tasted",
-     "why": "음료가 '맛보아진' 것 → 과거분사"
+     "why": "맛보아진 음료 → 과거분사"
     }
+   ],
+   "vocabPlus": [
+    [
+     "regardless of",
+     "≒ irrespective of, no matter"
+    ],
+    [
+     "prejudicial",
+     "≒ biased ⊕ prejudice"
+    ],
+    [
+     "respondent",
+     "⊕ respond, response"
+    ],
+    [
+     "significantly",
+     "≒ considerably, substantially ⊕ significant, significance"
+    ],
+    [
+     "initial",
+     "≒ first, earliest ↔ final"
+    ],
+    [
+     "extreme",
+     "≒ maximum or minimum ↔ moderate"
+    ]
    ],
    "keyHL": [
     "the maximum or minimum ratings occurred on the one presented first",
@@ -1698,9 +2241,9 @@
    },
    "gq": [
     {
-     "q": "Many people think the success of dieting [depends / depend] mostly on determination.",
-     "a": "depends",
-     "why": "주어 the success(단수)"
+     "q": "…the success of dieting depends mostly on determination, persistence and [self-discipline / self-disciplined].",
+     "a": "self-discipline",
+     "why": "명사 병렬 A, B and C"
     },
     {
      "q": "The more complicated people thought their diet plan was, [the sooner / sooner] they were likely to drop it.",
@@ -1711,7 +2254,38 @@
      "q": "…a more complex diet that involves [keeping / to keep] track of quantities.",
      "a": "keeping",
      "why": "involve + 동명사"
+    },
+    {
+     "q": "…their subjective impression can lead them [to give / giving] up on it.",
+     "a": "to give",
+     "why": "lead O to V"
     }
+   ],
+   "vocabPlus": [
+    [
+     "persistence",
+     "≒ perseverance, determination ⊕ persist, persistent"
+    ],
+    [
+     "complicated",
+     "≒ complex ↔ simple ⊕ complication"
+    ],
+    [
+     "subjective",
+     "↔ objective"
+    ],
+    [
+     "give up on",
+     "≒ drop, abandon, quit"
+    ],
+    [
+     "keep track of",
+     "≒ record, monitor"
+    ],
+    [
+     "willpower",
+     "≒ determination, self-discipline"
+    ]
    ],
    "keyHL": [
     "While this mental power matters",
@@ -1891,20 +2465,56 @@
    },
    "gq": [
     {
+     "q": "Formal organizations train workers [to perform / perform] their jobs in a certain way.",
+     "a": "to perform",
+     "why": "train O to V"
+    },
+    {
      "q": "…they risk [developing / to develop] trained incapacity.",
      "a": "developing",
      "why": "risk + 동명사"
     },
     {
-     "q": "At the root of trained incapacity [is / are] a job with little variety and repetitive tasks.",
-     "a": "is",
-     "why": "부사구 도치 → 주어 a job(단수)"
-    },
-    {
      "q": "…to meet organizational goals while [ignoring / ignored] other important matters.",
      "a": "ignoring",
-     "why": "직원들이 '무시하는' 것 → 능동"
+     "why": "while they are ignoring (능동)"
+    },
+    {
+     "q": "At the root of trained incapacity [is / are] a job with little variety.",
+     "a": "is",
+     "why": "부사구 도치, 주어 a job"
+    },
+    {
+     "q": "[As / Since] variety in work decreases, the amount of thought also decreases.",
+     "a": "As",
+     "why": "비례의 as: ~할수록"
     }
+   ],
+   "vocabPlus": [
+    [
+     "incapacity",
+     "≒ inability ↔ capacity, ability"
+    ],
+    [
+     "mindlessly",
+     "≒ thoughtlessly ↔ mindfully"
+    ],
+    [
+     "efficient",
+     "↔ inefficient ⊕ efficiency"
+    ],
+    [
+     "repetitive",
+     "≒ monotonous ⊕ repeat, repetition"
+    ],
+    [
+     "dictate (n.)",
+     "≒ order, command"
+    ],
+    [
+     "variety",
+     "≒ diversity ⊕ various, vary"
+    ]
    ],
    "keyHL": [
     "trained incapacity",
@@ -2105,18 +2715,54 @@
     {
      "q": "People who are otherwise caring and would go out of their way to help another individual [become / becomes] indifferent.",
      "a": "become",
-     "why": "주어 People(복수) — who절 건너뛰기"
+     "why": "주어 People(복수)"
     },
     {
-     "q": "Donations to the individual, Rokia, were [far / very] greater than donations to the second choice.",
+     "q": "People were given $5 [to donate / donating] to lessen hunger overseas.",
+     "a": "to donate",
+     "why": "$5를 꾸미는 to부정사"
+    },
+    {
+     "q": "Donations to Rokia were [far / very] greater than donations to the second choice.",
      "a": "far",
-     "why": "비교급 강조: far/much/even/still (very 불가)"
+     "why": "비교급 강조 far / much / even"
     },
     {
-     "q": "What is surprising is [that / what] adding the statistical realities significantly reduced the contributions.",
-     "a": "that",
-     "why": "뒤가 완전한 절 → 보어절 접속사 that"
+     "q": "[What / That] is surprising is that adding the statistics reduced the contributions.",
+     "a": "What",
+     "why": "What절 주어 (~한 것)"
+    },
+    {
+     "q": "[Adding / Added] the statistical realities to Rokia’s story significantly reduced the contributions.",
+     "a": "Adding",
+     "why": "동명사 주어 + add A to B"
     }
+   ],
+   "vocabPlus": [
+    [
+     "indifferent to",
+     "≒ unconcerned about ↔ concerned about ⊕ indifference"
+    ],
+    [
+     "go out of one's way to V",
+     "≒ make a special effort to V"
+    ],
+    [
+     "the masses",
+     "≒ the public ↔ an individual"
+    ],
+    [
+     "contribution",
+     "≒ donation ⊕ contribute"
+    ],
+    [
+     "discouraging",
+     "≒ disheartening ↔ encouraging"
+    ],
+    [
+     "portrayal",
+     "≒ depiction ⊕ portray"
+    ]
    ],
    "keyHL": [
     "help another individual",
@@ -2306,20 +2952,43 @@
    },
    "gq": [
     {
-     "q": "The participants were each [given / giving] $50 and separated into two groups.",
-     "a": "given",
-     "why": "참가자가 '받은' 것 → 수동태"
+     "q": "The participants were each given $50 and [separated / separating] into two groups.",
+     "a": "separated",
+     "why": "수동태 병렬"
+    },
+    {
+     "q": "[Having heard / Heard] these options, 61.9% of participants in group A chose to gamble.",
+     "a": "Having heard",
+     "why": "완료 분사구문 (능동)"
     },
     {
      "q": "…because the choices were [framed / framing] using two different terms.",
      "a": "framed",
-     "why": "선택지가 '표현된' 것 → 수동태"
+     "why": "표현'된' 것 → 수동태"
     },
     {
      "q": "This is [called / calling] the “framing effect”.",
      "a": "called",
      "why": "call O C의 수동태"
     }
+   ],
+   "vocabPlus": [
+    [
+     "identical",
+     "≒ the same ↔ different"
+    ],
+    [
+     "frame (v.)",
+     "≒ phrase, express"
+    ],
+    [
+     "yield",
+     "≒ produce, result in"
+    ],
+    [
+     "behavioral",
+     "⊕ behave, behavior"
+    ]
    ],
    "keyHL": [
     "lose $30",
@@ -2506,20 +3175,48 @@
    },
    "gq": [
     {
+     "q": "Have you ever thought about [what / that] you are good at?",
+     "a": "what",
+     "why": "간접의문문 (전치사 about의 목적어)"
+    },
+    {
+     "q": "Inner thought processes like this help you [get / got] a clearer picture.",
+     "a": "get",
+     "why": "help O (to) 원형"
+    },
+    {
      "q": "…blind spots that may be blocking you from [reaching / reach] your goals.",
      "a": "reaching",
      "why": "block O from -ing"
     },
     {
-     "q": "It is not only essential in personal development but also [critical / critically] to corporate success.",
+     "q": "It is not only essential … but also [critical / critically] to corporate success.",
      "a": "critical",
-     "why": "be동사 보어 형용사 병렬 (essential / critical)"
+     "why": "not only A but also B 병렬"
     },
     {
-     "q": "…promote a culture which [include / includes] this self-inquiry.",
-     "a": "includes",
-     "why": "선행사 a culture(단수)"
+     "q": "It is this self-awareness [that / which] allows the company to excel.",
+     "a": "that",
+     "why": "It is ~ that 강조구문"
     }
+   ],
+   "vocabPlus": [
+    [
+     "identify",
+     "≒ recognize, find"
+    ],
+    [
+     "internal",
+     "≒ inner ↔ external"
+    ],
+    [
+     "blind spot",
+     "≒ weakness, weak point"
+    ],
+    [
+     "excel at",
+     "≒ be good at ⊕ excellent"
+    ]
    ],
    "keyHL": [
     "ask yourself a series of questions to identify blind spots",
@@ -2684,20 +3381,43 @@
    },
    "gq": [
     {
-     "q": "Formal organizations train workers [to perform / perform] their jobs in a certain way.",
+     "q": "Formal organizations train workers [to perform / performing] their jobs.",
      "a": "to perform",
      "why": "train O to V"
     },
     {
-     "q": "…trained incapacity—the inability [to respond / responding] to new or unusual circumstances.",
-     "a": "to respond",
-     "why": "inability to V (~할 수 없음)"
+     "q": "…they risk [developing / to develop] trained incapacity.",
+     "a": "developing",
+     "why": "risk + 동명사"
     },
     {
-     "q": "…the amount of thought and time needed to perform a job also [decrease / decreases].",
-     "a": "decreases",
-     "why": "주어 the amount(단수)"
+     "q": "At the root of trained incapacity [is / are] a job with little variety.",
+     "a": "is",
+     "why": "부사구 도치"
+    },
+    {
+     "q": "…the amount of thought and time [needed / needing] to perform a job also [decrease / decreases].",
+     "a": "needed / decreases",
+     "why": "과거분사 후치 / 주어 the amount"
     }
+   ],
+   "vocabPlus": [
+    [
+     "incapacity",
+     "≒ inability ↔ capacity"
+    ],
+    [
+     "efficient",
+     "↔ inefficient ⊕ efficiency"
+    ],
+    [
+     "decrease",
+     "≒ decline, drop ↔ increase"
+    ],
+    [
+     "procedure",
+     "≒ process, method ⊕ proceed"
+    ]
    ],
    "keyHL": [
     "little variety",
@@ -2722,6 +3442,112 @@
    "hideOptsOnProblem": true
   }
  ],
+ "pre": [
+  {
+   "label": "기출 해체",
+   "chip": "[2016년 6월 고2 학평]",
+   "prompt": "(A)·(B)에 들어갈 말로 가장 적절한 것은?",
+   "passage": [
+    "You’d think that whenever more than one person makes a decision, they’d draw on collective wisdom.",
+    "Surely, a group of minds can do better than an individual.",
+    "Unfortunately, that’s not always the case.",
+    "The wisdom of a crowd partly relies on the fact that all judgments are independent.",
+    "If people guess the weight of a cow and put it on a slip of paper, or estimate the likelihood of a revolution in Pakistan and enter it into a website, the average of their views is highly accurate.",
+    "But, surprisingly, if those people talk about these questions in a group, the answers that they come to are increasingly incorrect.",
+    "More specifically, researchers have found an effect of group polarization.",
+    "Whatever bias people may have as individuals gets multiplied when they discuss things as a group.",
+    "If individuals lean slightly toward taking a risk, the group leaps toward it."
+   ],
+   "foot": "*polarization 극단화",
+   "summary": "When people (A) work with others, the wisdom of the crowd often turns into the (B) of the group.",
+   "options": [
+    "① dependently ----- stupidity",
+    "② dependently ----- superiority",
+    "③ independently ----- selfishness",
+    "④ independently ----- morality",
+    "⑤ accidentally ----- prejudice"
+   ],
+   "answer": "① dependently – stupidity",
+   "notes": "【풀이 플로우】\n1) 요약문 먼저: 사람들이 (A)하게 함께 일하면 군중의 지혜가 집단의 (B)로 바뀐다.\n2) Unfortunately, that’s not always the case. → 반박 signal: '집단이 늘 더 낫지는 않다'.\n3) 지혜는 판단이 independent할 때 → 함께 이야기하면(=의존적으로) 답이 부정확해짐 → (A) dependently.\n4) 개인의 bias가 집단에서 multiplied(극단화) → 어리석음 (B) stupidity.\n【어휘】 collective wisdom 집단 지성, polarization 극단화, bias 편견, multiply 증폭되다"
+  }
+ ],
+ "reviewTest": {
+  "head": "Unit 08  ",
+  "sections": [
+   {
+    "title": "Review Test · A. Vocabulary Check",
+    "instruction": "",
+    "items": [
+     {
+      "no": "1",
+      "text": "Instead, the child acquires the [advantage / heritage] of his culture by observing and imitating adults in such activities as rituals, hunts, festivals, cultivation, and harvesting.  (대수능)",
+      "a": "heritage",
+      "why": "문화 유산을 습득"
+     },
+     {
+      "no": "2",
+      "text": "A more efficient alternative is to target the hubs of the network, namely, those people at the [center / border] of the network or those with the most contacts.  (학평)",
+      "a": "center",
+      "why": "네트워크의 중심(hub)"
+     },
+     {
+      "no": "3",
+      "text": "Journeys are the midwives of thought. Few places are better for [internal / external] conversations than a moving plane, ship, or train.  (대수능)",
+      "a": "internal",
+      "why": "내적인 대화"
+     },
+     {
+      "no": "4",
+      "text": "In every history on the subject, the evidence suggests that early human populations preferred the fat and [organ / organism] meat of the animal over its muscle meat.  (학평)",
+      "a": "organ",
+      "why": "내장육(organ meat)"
+     },
+     {
+      "no": "5",
+      "text": "Though efficiency is a great virtue, it is not the only economic goal of interest to the society. Economic fairness is also [trivial / crucial].  (학평)",
+      "a": "crucial",
+      "why": "경제적 공정성도 중요"
+     }
+    ]
+   },
+   {
+    "title": "Review Test · B. Grammar Check",
+    "instruction": "",
+    "items": [
+     {
+      "no": "1",
+      "text": "Saffron is also found on the foreheads of Indian women [symbolized / symbolizing] their social class.  (학평)",
+      "a": "symbolizing",
+      "why": "여성들이 '상징하는' 능동 → 현재분사"
+     },
+     {
+      "no": "2",
+      "text": "Despite all your efforts to mask emotions, they will come out in some form and people have an innate ability to [pick / picking] up on this.  (학평)",
+      "a": "pick",
+      "why": "ability to + 동사원형"
+     },
+     {
+      "no": "3",
+      "text": "When people try to control situations that are essentially uncontrollable, they are inclined to [experience / experiencing] high levels of stress.  (모평)",
+      "a": "experience",
+      "why": "be inclined to + 동사원형"
+     },
+     {
+      "no": "4",
+      "text": "Webster’s New World Dictionary, for example, [including / includes] Audrey Hepburn but leaves out Spencer Tracy.  (학평)",
+      "a": "includes",
+      "why": "주어 Dictionary(단수)"
+     },
+     {
+      "no": "5",
+      "text": "In the end, the busy typist could well produce ten times as [many / more] lines of code as the thinker.  (학평)",
+      "a": "many",
+      "why": "배수사 + as many + 명사 + as"
+     }
+    ]
+   }
+  ]
+ },
  "review": {
   "vocab": [
    [

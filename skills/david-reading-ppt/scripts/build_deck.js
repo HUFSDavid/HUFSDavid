@@ -87,6 +87,66 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
   slide.addText(text, { shape: pres.shapes.ROUNDED_RECTANGLE, rectRadius: 0.15, x, y, w, h: 0.36, fill: { color: fill }, color, fontSize: size, bold: true, align: "center", valign: "middle", margin: 0 });
 }
 
+// Textbook extra problems: one slide per section, each item = original text + answer box (click to reveal)
+function extraSlides(sec, head, sections, chipText) {
+  // flow all sections' items onto as few slides as possible (section header + rows)
+  const rows = [];
+  (sections || []).forEach((secn) => {
+    rows.push({ hdr: secn.title, ins: secn.instruction });
+    (secn.items || []).forEach((it) => {
+      const long = (it.a || "").length > 22;
+      const tl = ((it.q || "") + (it.text || "")).length;
+      const h = Math.min(1.2, 0.36 + 0.22 * Math.ceil(tl / (long ? 105 : 78)) + (long ? 0.4 : 0));
+      rows.push({ it, h, long });
+    });
+  });
+  const LIM = 5.7, hOf = (r) => (r.hdr ? 0.45 : r.h + 0.1);
+  const pages = [[]]; let used = 0;
+  rows.forEach((r, i) => {
+    let need = hOf(r);
+    if (r.hdr) { // keep a whole section together when it fits on one page
+      let j = i + 1, secH = need; while (j < rows.length && !rows[j].hdr) secH += hOf(rows[j++]);
+      need = secH <= LIM ? secH : need + hOf(rows[i + 1] || { h: 0 });
+    }
+    if (used + need > LIM && pages[pages.length - 1].length) { pages.push([]); used = 0; }
+    pages[pages.length - 1].push(r); used += hOf(r);
+  });
+  pages.forEach((pg, pi) => {
+    // repeat section header at top of a continued page
+    if (!pg[0].hdr) { const prev = rows.slice(0, rows.indexOf(pg[0])).reverse().find((x) => x.hdr); if (prev) pg.unshift({ hdr: prev.hdr, ins: "" }); }
+    const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
+    const titles = [...new Set(pg.filter((x) => x.hdr).map((x) => x.hdr))].join(" · ");
+    s.addText([{ text: head, options: { color: C.accent2 } }, { text: titles }], { placeholder: "title" });
+    chip(s, chipText || "교재 문제", 10.6, 0.6, 2.1, C.accent2, C.background1, 12);
+    let y = 1.3, k = 0; const notes = [];
+    pg.forEach((r) => {
+      if (r.hdr) {
+        s.addText([{ text: r.hdr + "  ", options: { bold: true, color: HEX.accent2 } }, { text: r.ins || "", options: { color: HEX.dk2 } }], { x: 0.6, y, w: 12.1, h: 0.4, fontSize: 15, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
+        y += 0.45; return;
+      }
+      const it = r.it, rowH = r.h;
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y, w: 12.1, h: rowH, rectRadius: 0.08, fill: { color: k % 2 ? HEX.lt1 : "F7FAF9" }, line: { color: HEX.lt2, width: 1 } });
+      s.addText(String(it.no || k + 1), { shape: pres.shapes.OVAL, x: 0.72, y: y + 0.1, w: 0.42, h: 0.42, fill: { color: C.accent1 }, color: C.background1, fontSize: 11, bold: true, align: "center", valign: "middle", margin: 0 });
+      const tr = [];
+      if (it.q) tr.push({ text: it.q, options: { bold: true, color: HEX.dk2, fontSize: 15, breakLine: !!it.text } });
+      if (it.text) it.text.split(/(\[[^\]]+\]|__[^_]+__)/).filter(Boolean).forEach((t) => {
+        if (t.startsWith("[")) tr.push({ text: t, options: { bold: true, color: HEX.accent2 } });
+        else if (t.startsWith("__")) tr.push({ text: t.slice(2, -2), options: { underline: { style: "sng" }, bold: true, color: HEX.dk2 } });
+        else tr.push({ text: t, options: { color: HEX.dk1 } });
+      });
+      const ansH = r.long ? 0.42 : 0;
+      s.addText(tr, { x: 1.3, y: y + 0.04, w: r.long ? 11.25 : 8.45, h: rowH - 0.08 - ansH, fontSize: 17, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+      if (it.a) {
+        const box = r.long ? { x: 1.3, y: y + rowH - ansH - 0.04, w: 11.25, h: ansH - 0.02 } : { x: 9.9, y: y + 0.08, w: 2.65, h: rowH - 0.16 };
+        s.addText([{ text: it.a, options: { bold: true, color: HEX.dk2 } }], { ...box, fontSize: r.long ? 14 : 17, fill: { color: GH }, align: r.long ? "left" : "center", valign: "middle", margin: 0.05, fit: "shrink", isTextBox: true, objectName: `ANIM_x${k}` });
+      }
+      notes.push(`${it.no || k + 1}. ${it.a || ""}${it.why ? " — " + it.why : ""}`);
+      y += rowH + 0.1; k++;
+    });
+    s.addNotes(`【채점 진행】 숙제로 풀어 온 교재 문제예요. 한 문항씩 학생 답을 들은 뒤 클릭하면 정답이 나타나요.\n\n【정답 · 해설】\n${notes.join("\n")}`);
+  });
+}
+
 (async () => {
   const I = {
     bulbLight: await icon(fa.FaLightbulb, HEX.lt1), search: await icon(fa.FaSearch, HEX.lt1), searchDark: await icon(fa.FaSearch, HEX.accent2), link: await icon(fa.FaLink, HEX.lt1), check: await icon(fa.FaCheck, HEX.lt1),
@@ -121,23 +181,18 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
   s.addText("틀린 문제 번호에 동그라미 → 해설 때 집중해서 듣기!", { x: 0.6, y: 6.62, w: 12.1, h: 0.35, fontSize: 14, bold: true, color: C.accent1, margin: 0, isTextBox: true });
   s.addNotes(`【채점 진행】 \"숙제 꺼내세요. 정답 불러 줄게요.\" 학생들이 스스로 채점하게 한 뒤, 문제별로 틀린 사람 손 들기 → 많이 틀린 번호를 칠판에 적어 두고 해설 때 시간을 더 쓰세요.\n【정답】 ${EX.map((e) => `${e.n}-${NUM[e.ans - 1]}`).join(" ")}\n【한 줄 핵심】 ${EX.map((e) => `${e.n} ${e.key}`).join(" / ")}`);
 
-  // ---------- 2. 수업 순서 ----------
+  // ---------- 2. 수업 Objective ----------
   s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "도입" });
-  s.addText("오늘 수업은 이렇게 진행해요", { placeholder: "title" });
-  const plan = [
-    ["1", "채점하기", "정답 한눈에 보기로 채점 → 틀린 문제 표시", "약 5분"],
-    ["2", "풀이 공식 익히기", IN.planFormula || "풀이 3단계 · Signal", "약 10분"],
-    ...PARTS.slice(0, 2).map((p, i) => [String(i + 3), `Exercise ${p[0].n}–${p[p.length - 1].n}`, i === 0 ? "Hook → 단어 → 어법 워밍업 → 근거 지문 해설 → 흐름 정리" : "같은 순서 + 마지막에 복습 미니테스트", `${i + 1}차시`]),
-  ];
-  plan.forEach((p, i) => {
-    const x = 0.6 + i * 3.1;
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y: 1.7, w: 2.85, h: 4.6, rectRadius: 0.15, fill: { color: i % 2 ? C.background1 : C.background2 }, line: { color: C.background2, width: 1 }, shadow: shadow() });
-    s.addText(p[0], { shape: pres.shapes.OVAL, x: x + 0.3, y: 2.0, w: 0.9, h: 0.9, fill: { color: C.accent1 }, color: C.background1, fontSize: 32, bold: true, align: "center", valign: "middle", margin: 0 });
-    s.addText(p[1], { x: x + 0.3, y: 3.15, w: 2.3, h: 0.9, fontSize: 20, bold: true, color: C.text2, margin: 0, valign: "top", isTextBox: true });
-    s.addText(p[2], { x: x + 0.3, y: 4.1, w: 2.3, h: 1.3, fontSize: 15, color: C.text1, margin: 0, valign: "top", isTextBox: true });
-    chip(s, p[3], x + 0.3, 5.6, 1.4, C.accent2, C.background1, 13);
+  s.addText("오늘의 수업 Objective", { placeholder: "title" });
+  const OBJ = M.objectives || [];
+  OBJ.forEach((o, i) => {
+    const y = 1.5 + i * (5.2 / Math.max(OBJ.length, 3));
+    const hh = 5.2 / Math.max(OBJ.length, 3) - 0.2;
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y, w: 12.1, h: hh, rectRadius: 0.15, fill: { color: i % 2 ? HEX.lt1 : HEX.lt2 }, line: { color: HEX.lt2, width: 1.5 } });
+    s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: 0.9, y: y + hh / 2 - 0.38, w: 0.76, h: 0.76, fill: { color: C.accent1 }, color: C.background1, fontSize: 24, bold: true, align: "center", valign: "middle", margin: 0 });
+    s.addText([{ text: o[0], options: { bold: true, color: HEX.dk2, fontSize: 22, breakLine: !!o[1] } }, ...(o[1] ? [{ text: o[1], options: { color: HEX.accent4, fontSize: 15 } }] : [])], { x: 2.0, y, w: 10.5, h: hh, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
   });
-  s.addNotes("【진행 방식 안내】 \"숙제로 다 풀어 왔죠? 매 문제마다 ① 지문+보기 보면서 고른 답 확인 → ② 정답 근거 & 문법 포인트 → ③ 글의 흐름 정리 → ④ 정답과 오답 이유, 이 순서로 해설할게요.\"\n【팁】 지문+보기 슬라이드를 띄우자마자 \"몇 번 골랐어?\" 손가락으로 표시하게 하면 오답 분포를 바로 알 수 있어요. 많이 틀린 선택지는 정답·오답 슬라이드에서 더 오래 설명하세요.");
+  s.addNotes(`【Objective 안내】 수업 시작할 때 학생들과 함께 읽고, 수업 끝에 \"오늘 Objective 달성했나?\" 다시 확인하세요.\n${OBJ.map((o, i) => `${i + 1}. ${o[0]}${o[1] ? " — " + o[1] : ""}`).join("\n")}`);
 
   // ---------- 3. 빈칸 3단계 ----------
   pres.addSection({ title: "풀이 공식" });
@@ -156,20 +211,23 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
   });
   s.addNotes(IN.steps.notes || "");
 
-  // ---------- 4. Signal ----------
-  s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
-  s.addText("Signal: 이 단어가 보이면 멈춰!", { placeholder: "title" });
-  const SIG = IN.signals;
-  const sCols = 4, sRows = Math.ceil(SIG.length / sCols), sW = 2.9, sH = (5.5 - 0.2 * (sRows - 1)) / sRows;
-  SIG.forEach((g, i) => {
-    const x = 0.6 + (i % sCols) * (sW + 0.167), y = 1.4 + Math.floor(i / sCols) * (sH + 0.2);
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: sW, h: sH, rectRadius: 0.12, fill: { color: i % 2 ? C.background1 : C.background2 }, line: { color: C.background2, width: 1.5 } });
-    s.addText(g[0], { x: x + 0.2, y: y + 0.15, w: sW - 1.3, h: 0.45, fontSize: 20, bold: true, color: C.text2, margin: 0, isTextBox: true });
-    if (g[3]) s.addText(g[3], { x: x + sW - 1.15, y: y + 0.2, w: 1.0, h: 0.32, fontSize: 10, bold: true, color: C.text2, fill: { color: HEX.lt1 }, align: "center", valign: "middle", margin: 0, isTextBox: true });
-    s.addText(g[1], { x: x + 0.2, y: y + 0.65, w: sW - 0.4, h: 1.05, fontSize: 13, italic: true, bold: true, color: C.accent1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
-    s.addText(g[2], { x: x + 0.2, y: y + 1.72, w: sW - 0.4, h: sH - 1.82, fontSize: 13, color: C.text1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
+  // ---------- 4. Signal (글의 구조 signal 종합) ----------
+  (IN.signalPages || [{ title: "Signal: 이 단어가 보이면 멈춰!", items: IN.signals || [] }]).forEach((pg) => {
+    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
+    s.addText(pg.title, { placeholder: "title" });
+    const n = pg.items.length, rh = (5.6 - 0.1 * (n - 1)) / n;
+    s.addText("구조", { x: 0.6, y: 1.22, w: 1.6, h: 0.3, fontSize: 12, bold: true, color: C.accent4, margin: 0, isTextBox: true });
+    s.addText("Signal 표현", { x: 2.35, y: 1.22, w: 5.5, h: 0.3, fontSize: 12, bold: true, color: C.accent4, margin: 0, isTextBox: true });
+    s.addText("왜 중요할까?", { x: 8.05, y: 1.22, w: 4.6, h: 0.3, fontSize: 12, bold: true, color: C.accent4, margin: 0, isTextBox: true });
+    pg.items.forEach((g, i) => {
+      const y = 1.55 + i * (rh + 0.1);
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y, w: 12.1, h: rh, rectRadius: 0.08, fill: { color: i % 2 ? HEX.lt1 : HEX.lt2 }, line: { color: HEX.lt2, width: 1 } });
+      s.addText(g[0], { x: 0.75, y, w: 1.5, h: rh, fontSize: 17, bold: true, color: C.text2, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+      s.addText(g[1], { x: 2.35, y, w: 5.5, h: rh, fontSize: 13, italic: true, bold: true, color: C.accent1, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+      s.addText(g[2] + (g[3] ? `  (${g[3]})` : ""), { x: 8.05, y, w: 4.55, h: rh, fontSize: 13, color: C.text1, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
+    });
+    s.addNotes(pg.notes || "【설명 스크립트】 \"글은 정해진 구조로 흘러가요. signal을 보면 지금 글이 어느 단계에 있는지 알 수 있어요.\" 괄호 안은 오늘 그 signal이 나온 문제 번호예요.");
   });
-  s.addNotes(IN.signalNotes || "【설명 스크립트】 \"글을 읽다가 이 단어들이 나오면 꼭 동그라미! 답이 바로 근처에 있어요.\"\n【오른쪽 위 칩】 오늘 문제 중 그 signal이 결정적이었던 Exercise 번호예요. 해당 문제에서 \"아까 배운 signal 기억나?\" 하고 다시 연결해 주세요.");
 
   // ---------- 6. 함의 추론 ----------
   const IMP = IN.implication;
@@ -195,6 +253,27 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
   s.addText(`= ${IMP.conclusion}`, { x: 7.0, y: 5.6, w: 5.4, h: 0.7, fontSize: 16, bold: true, color: C.accent2, margin: 0, valign: "middle", isTextBox: true });
   s.addNotes(`【설명 스크립트】 \"밑줄 문제는 '암호 풀기'예요. 밑줄은 비유라서 단어 하나하나를 글의 핵심 개념으로 바꿔 줘야 해요.\"\n【칠판 활동】 오른쪽 예시처럼 '밑줄 단어 → 글의 개념'을 표로 만들어 보여 주세요. ${EX.filter(isImp).map((e) => "Ex " + e.n).join("과 ")}가 이 유형입니다.`);
   }
+
+  // ---------- 교재 앞 '기출 문제 해체' 등 단원 도입 문제 ----------
+  const PRE = D.pre || [];
+  if (PRE.length) pres.addSection({ title: "기출 해체" });
+  PRE.forEach((q) => {
+    s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "기출 해체" });
+    s.addText([{ text: q.label + "  ", options: { color: C.accent2 } }, { text: q.prompt, options: { fontSize: 22 } }], { placeholder: "title" });
+    chip(s, q.chip || "기출 문제", 10.6, 0.6, 2.1, C.accent2, C.background1, 12);
+    const r = [];
+    q.passage.forEach((t, i) => { r.push({ text: t + (i < q.passage.length - 1 ? " " : ""), options: { color: HEX.dk1 } }); });
+    r[r.length - 1].options.breakLine = true;
+    if (q.foot) r.push({ text: q.foot, options: { fontSize: 11, italic: true, color: HEX.accent4, align: "right", breakLine: true } });
+    r.push({ text: "↓  ", options: { bold: true, color: HEX.accent1 } });
+    q.summary.split(/(\(A\)|\(B\))/).filter(Boolean).forEach((t) => r.push({ text: t, options: { color: HEX.dk2, ...(/^\([AB]\)$/.test(t) ? { bold: true, color: HEX.accent2 } : {}) } }));
+    r[r.length - 1].options.breakLine = true;
+    r.push({ text: q.options.map((o) => o.replace(/\s*-{3,}\s*/g, "\u00A0–\u00A0").replace(/ /g, "\u00A0")).join("     "), options: { fontSize: 15, color: HEX.accent4 } });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: 1.3, w: 12.45, h: 5.65, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
+    s.addText(r, { x: 0.65, y: 1.4, w: 12.05, h: 5.1, fontSize: q.font || 19, margin: 0, valign: "top", lineSpacingMultiple: 1.15, fit: "shrink", isTextBox: true });
+    s.addText([{ text: "정답 " + q.answer, options: { bold: true, color: HEX.dk2 } }], { x: 8.4, y: 6.4, w: 4.3, h: 0.45, fontSize: 17, fill: { color: GH }, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "ANIM_pre" });
+    s.addNotes(`【채점】 학생 답을 들은 뒤 클릭하면 정답이 나타나요.\n【정답】 ${q.answer}\n${q.notes || ""}`);
+  });
 
   // ---------- Exercises ----------
   for (const e of EX) {
@@ -238,25 +317,8 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       s.addNotes(`【Hook 진행】 지문을 펴기 전에 이 질문으로 가볍게 이야기 나누기 (정답을 고르는 단계가 아니라 오늘 글의 소재에 관심 갖기).\n【참고】 ${hook}`);
     }
 
-    // --- 2) 어휘 (클릭하면 뜻이 나타남)
-    const VO = e.vocab || [];
-    if (VO.length) {
-      s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
-      s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "오늘의 단어: 뜻이 뭘까?" }], { placeholder: "title" });
-      chip(s, `${kind} · 어휘`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-      const vCols = VO.length > 8 ? 3 : 2, vRows = Math.ceil(VO.length / vCols), vW = (12.1 - 0.2 * (vCols - 1)) / vCols, vH = Math.min(1.15, (5.4 - 0.15 * (vRows - 1)) / vRows);
-      VO.forEach(([w, ko], i) => {
-        const x = 0.6 + (i % vCols) * (vW + 0.2), y = 1.45 + Math.floor(i / vCols) * (vH + 0.15);
-        s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: vW, h: vH, rectRadius: 0.12, fill: { color: HEX.lt1 }, line: { color: HEX.lt2, width: 1.5 } });
-        s.addText(String(i + 1), { shape: pres.shapes.OVAL, x: x + 0.2, y: y + vH / 2 - 0.25, w: 0.5, h: 0.5, fill: { color: C.accent1 }, color: C.background1, fontSize: 14, bold: true, align: "center", valign: "middle", margin: 0 });
-        s.addText(w, { x: x + 0.9, y, w: vW * 0.5, h: vH, fontSize: 22, bold: true, color: C.text2, valign: "middle", margin: 0, fit: "shrink", isTextBox: true });
-        s.addText(ko, { x: x + 0.9 + vW * 0.5, y: y + 0.12, w: vW * 0.5 - 1.05, h: vH - 0.24, fontSize: 20, bold: true, color: C.accent2, fill: { color: "FFF1EC" }, align: "center", valign: "middle", margin: 0, fit: "shrink", isTextBox: true, objectName: `ANIM_v${i}` });
-      });
-      s.addNotes(`【진행】 단어를 하나씩 읽고 \"뜻이 뭘까?\" 물어본 뒤 클릭 → 뜻이 나타나요 (클릭 한 번에 하나씩).\n${VO.map(([w, ko], i) => `${i + 1}. ${w} = ${ko}`).join(" / ")}`);
-    }
-
     // --- 3) 내신 어법 체크 (워밍업: 지문 속 문장 미리보기, 클릭하면 정답)
-    const GQe = (e.gq || []).slice(0, 4);
+    const GQe = (e.gq || []).slice(0, 5);
     if (GQe.length) {
       s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
       s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "어법 워밍업: 알맞은 것은?" }], { placeholder: "title" });
@@ -303,10 +365,13 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       return out;
     };
     const totalChars = P.s.reduce((a, x) => a + x[0].length, 0);
-    const cpl = (sz) => 12.05 * 72 / (sz * 0.47);
+    const cpl = (sz) => 12.05 * 72 / (sz * 0.45);
     const linesAt = (sz) => Math.ceil((totalChars + P.s.length * 4) / cpl(sz)) + Math.ceil(fixedTxt.length / cpl(sz)) + (e.given ? 1 : 0) + (e.summary ? 1 : 0) + (showOpts ? 1 : 0);
+    const VO = e.vocab || [];
+    const vRows = VO.length ? Math.ceil(VO.length / 4) : 0, vRowH = 0.46, vH = vRows ? vRows * vRowH + 0.12 : 0;
+    const passH = 5.65 - (vH ? vH + 0.1 : 0);
     let qs = e.qFont || 26;
-    while (!e.qFont && qs > 14 && linesAt(qs) * (qs * 1.18 * 1.17 / 72) + 0.25 > 5.45) qs -= 0.5;
+    while (!e.qFont && qs > 13 && linesAt(qs) * (qs * 1.18 * 1.17 / 72) + 0.25 > passH - 0.2) qs -= 0.5;
     const pr = [];
     if (e.given) {
       pr.push({ text: "[주어진 문장]  ", options: { fontSize: qs, bold: true, color: HEX.accent2 } });
@@ -328,8 +393,17 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       if (showOpts) pr[pr.length - 1].options.breakLine = true;
     }
     if (showOpts) pr.push({ text: optLine, options: { fontSize: Math.max(13, qs - 4), color: HEX.accent4, paraSpaceBefore: 6 } });
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: 1.3, w: 12.45, h: 5.65, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
-    s.addText(pr, { x: 0.65, y: 1.4, w: 12.05, h: 5.45, margin: 0, valign: "top", lineSpacingMultiple: 1.18, fit: "shrink", isTextBox: true });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: 1.3, w: 12.45, h: passH, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
+    if (VO.length) {
+      const vy = 1.3 + passH + 0.1, cw = 12.45 / 4;
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: vy, w: 12.45, h: vH, rectRadius: 0.1, fill: { color: "EAF5EF" }, line: { color: "CFE6D9", width: 1 } });
+      VO.forEach(([w, ko], i) => {
+        const x = 0.45 + (i % 4) * cw, y = vy + 0.06 + Math.floor(i / 4) * vRowH;
+        s.addText(w, { x: x + 0.15, y, w: cw * 0.5 - 0.1, h: vRowH, fontSize: 15, bold: true, color: HEX.accent1, valign: "middle", align: "right", margin: 0, fit: "shrink", isTextBox: true });
+        s.addText(ko, { x: x + cw * 0.5 + 0.1, y: y + 0.05, w: cw * 0.5 - 0.25, h: vRowH - 0.1, fontSize: 14, bold: true, color: HEX.accent2, fill: { color: HEX.lt1 }, valign: "middle", align: "center", margin: 0, fit: "shrink", isTextBox: true, objectName: `ANIM_v${i}` });
+      });
+    }
+    s.addText(pr, { x: 0.65, y: 1.4, w: 12.05, h: passH - 0.2, margin: 0, valign: "top", lineSpacingMultiple: 1.18, fit: "shrink", isTextBox: true });
     const KW = e.keyWhy || {};
     const trans = P.s.map((x, i) => `(${i + 1}) ${x[1]}`).join("\n");
     const optsNote = e.opts.map((o, i) => `${NUM[i]} ${o[0]} — ${o[1]}${i === e.ans - 1 ? "  ★정답" : ""}`).join("\n");
@@ -338,6 +412,8 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       e.solve ? `\n【풀이 플로우 — 정답을 모른다고 생각하고 이렇게 이끌어 가세요】\n${e.solve.map((t, i) => `${i + 1}) ${t}`).join("\n")}` : "",
       Object.keys(KW).length ? `\n【노란 형광 = 정답 근거, 이유】\n${Object.entries(KW).map(([k, v]) => `(${k}) ${v}`).join("\n")}` : "",
       `\n【선택지 해설】\n${optsNote}`,
+      VO.length ? `\n【하단 어휘 — 하나씩 물어보고 클릭】\n${VO.map(([w, ko], i) => `${i + 1}. ${w} = ${ko}`).join(" / ")}` : "",
+      (e.vocabPlus || []).length ? `\n【어휘·표현 확장 (유의어 ≒ / 반의어 ↔ / 파생어 ⊕)】\n${e.vocabPlus.map((v) => `• ${v[0]}: ${v[1]}`).join("\n")}` : "",
       G.length ? `\n【파란 형광 = 문법·내신 포인트】\n${G.map((g) => `• ${g[0].join(" … ")}\n   → ${g[1]}: ${g[2]}`).join("\n")}` : "",
       e.notes ? `\n【수업 팁】\n${e.notes}` : "",
       `\n【문장별 해석】\n${trans}`,
@@ -356,15 +432,26 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       s.addText(f[0], { x: 1.5, y: y + 0.03, w: 5.6, h: 0.38, fontSize: 16, bold: true, color: C.accent1, margin: 0, isTextBox: true });
       s.addText(f[1], { x: 1.5, y: y + 0.42, w: 5.8, h: fh - 0.42, fontSize: 16, color: C.text1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
     });
-    const TK = e.takeaways || [];
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 7.6, y: 1.35, w: 5.1, h: 5.55, rectRadius: 0.15, fill: { color: HEX.lt2 }, line: { color: HEX.lt2 } });
-    s.addImage({ data: I.key, x: 7.9, y: 1.62, w: 0.36, h: 0.36 });
-    s.addText("꼭 가져갈 것", { x: 8.4, y: 1.55, w: 4, h: 0.5, fontSize: 19, bold: true, color: C.text2, margin: 0, isTextBox: true });
-    s.addText(TK.map((t, i) => ({ text: t, options: { bullet: { code: "2714" }, breakLine: i < TK.length - 1 } })), { x: 7.9, y: 2.2, w: 4.6, h: 4.5, fontSize: 17, color: C.text1, margin: 0, valign: "top", paraSpaceAfter: 12, fit: "shrink", isTextBox: true });
-    s.addNotes(`【복습 정리】 해설이 끝난 뒤 이 화면으로 1분 정리. \"이 글은 한마디로?\" → 학생이 흐름 4단계를 말하게 하고, 오른쪽 '꼭 가져갈 것'을 함께 읽어요.\n【한 줄 핵심】 ${e.key || ""}`);
+    const TK = e.takeaways || [], VP = e.vocabPlus || [];
+    const tkH = VP.length ? 2.35 : 5.55;
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 7.6, y: 1.35, w: 5.1, h: tkH, rectRadius: 0.15, fill: { color: HEX.lt2 }, line: { color: HEX.lt2 } });
+    s.addImage({ data: I.key, x: 7.85, y: 1.52, w: 0.32, h: 0.32 });
+    s.addText("꼭 가져갈 것", { x: 8.3, y: 1.45, w: 4, h: 0.45, fontSize: 18, bold: true, color: C.text2, margin: 0, isTextBox: true });
+    s.addText(TK.map((t, i) => ({ text: t, options: { bullet: { code: "2714" }, breakLine: i < TK.length - 1 } })), { x: 7.85, y: 1.95, w: 4.7, h: tkH - 0.7, fontSize: 15, color: C.text1, margin: 0, valign: "top", paraSpaceAfter: 6, fit: "shrink", isTextBox: true });
+    if (VP.length) {
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 7.6, y: 3.85, w: 5.1, h: 3.05, rectRadius: 0.15, fill: { color: "EAF5EF" }, line: { color: "CFE6D9" } });
+      s.addText([{ text: "어휘·표현 확장  ", options: { bold: true, color: HEX.dk2, fontSize: 17 } }, { text: "≒ 유의어  ↔ 반의어  ⊕ 파생어", options: { color: HEX.accent4, fontSize: 11 } }], { x: 7.85, y: 3.93, w: 4.7, h: 0.42, margin: 0, valign: "middle", isTextBox: true });
+      const vr = [];
+      VP.forEach((v, i) => { vr.push({ text: v[0] + "  ", options: { bold: true, color: HEX.accent1 } }); vr.push({ text: v[1], options: { color: HEX.dk1, breakLine: i < VP.length - 1 } }); });
+      s.addText(vr, { x: 7.85, y: 4.4, w: 4.7, h: 2.4, fontSize: 13, margin: 0, valign: "top", paraSpaceAfter: 5, fit: "shrink", isTextBox: true });
+    }
+    const flowSlide = s;
+    if (e.extras && e.extras.length) extraSlides(sec, `Ex ${e.n}  `, e.extras, "교재 · 채점");
+    flowSlide.addNotes(`【복습 정리】 해설이 끝난 뒤 이 화면으로 1분 정리. \"이 글은 한마디로?\" → 학생이 흐름 4단계를 말하게 하고, 오른쪽 '꼭 가져갈 것'을 함께 읽어요.\n【한 줄 핵심】 ${e.key || ""}`);
   }
 
   pres.addSection({ title: "정리" });
+  if (D.reviewTest) extraSlides("정리", D.reviewTest.head || "Review Test  ", D.reviewTest.sections, "Review Test");
   // ---------- 복습 미니테스트 (클릭하면 정답) ----------
   const R = D.review || {};
   const VQ = (R.vocab || EX.filter((e) => e.vocab && e.vocab.length).map((e) => e.vocab[0])).slice(0, 12);
