@@ -1,0 +1,329 @@
+{
+ "colW": 4712,
+ "sets": {
+  "1": {
+   "key": "45415532545124224313",
+   "dist": [
+    3,
+    4,
+    3,
+    5,
+    5
+   ],
+   "seqMatch": 3,
+   "fixed": [
+    13,
+    14,
+    16
+   ],
+   "areas": {
+    "어휘": 2,
+    "대화": 5,
+    "문법": 5,
+    "본문": 8
+   },
+   "subAreas": [
+    "문법·조건 영작 · 비교급",
+    "문법·어법 고쳐 쓰기",
+    "문법·배열 · 감각동사",
+    "본문·본문 요약 빈칸",
+    "대화·대화 완성",
+    "본문·질문에 답하기"
+   ],
+   "files": [
+    "out/m1_cji7/04. 실전모의고사/7과/A_L7_실전모의고사_1회_문제지.docx",
+    "out/m1_cji7/04. 실전모의고사/7과/A_L7_실전모의고사_1회_정답해설.docx"
+   ],
+   "answers": [
+    {
+     "no": 1,
+     "a": 4,
+     "text": "beat"
+    },
+    {
+     "no": 2,
+     "a": 5,
+     "text": "dish"
+    },
+    {
+     "no": 3,
+     "a": 4,
+     "text": "what did you eat for lunch"
+    },
+    {
+     "no": 4,
+     "a": 1,
+     "text": "A: Do you want rice or noodles?  B: Yes, I do."
+    },
+    {
+     "no": 5,
+     "a": 5,
+     "text": "(C)-(A)-(D)-(B)"
+    },
+    {
+     "no": 6,
+     "a": 5,
+     "text": "음식 권하기"
+    },
+    {
+     "no": 7,
+     "a": 3,
+     "text": "The server says bulgogi is spicy."
+    },
+    {
+     "no": 8,
+     "a": 2,
+     "text": "This blanket feels softly."
+    },
+    {
+     "no": 9,
+     "a": 5,
+     "text": "thin – thiner"
+    },
+    {
+     "no": 10,
+     "a": 4,
+     "text": "more"
+    },
+    {
+     "no": 11,
+     "a": 5,
+     "text": "bigger"
+    },
+    {
+     "no": 12,
+     "a": 1,
+     "text": "This candy tastes ______ strawberry."
+    },
+    {
+     "no": 13,
+     "a": 2,
+     "text": "②"
+    },
+    {
+     "no": 14,
+     "a": 4,
+     "text": "ⓓ"
+    },
+    {
+     "no": 15,
+     "a": 2,
+     "text": "An egg has two colors, yellow and white."
+    },
+    {
+     "no": 16,
+     "a": 2,
+     "text": "(B)-(A)-(C)"
+    },
+    {
+     "no": 17,
+     "a": 4,
+     "text": "How many soldiers were in Napoleon’s army?"
+    },
+    {
+     "no": 18,
+     "a": 3,
+     "text": "own – trying"
+    },
+    {
+     "no": 19,
+     "a": 1,
+     "text": "Omelets from Different Countries"
+    },
+    {
+     "no": 20,
+     "a": 3,
+     "text": "말레이시아에서는 닭고기 볶음밥을 두꺼운 오믈렛으로 감싼다."
+    }
+   ],
+   "subAnswers": [
+    [
+     "This soup is hotter than that soup."
+    ],
+    [
+     "ⓑ deliciously → delicious",
+     "ⓓ more easy → easier"
+    ],
+    [
+     "The giant omelet looked very delicious."
+    ],
+    [
+     "enjoyed",
+     "giant",
+     "festival"
+    ],
+    [
+     "I’d like some beef curry.",
+     "No, thank you."
+    ],
+    [
+     "We need eggs and potatoes."
+    ]
+   ]
+  },
+  "2": {
+   "key": "51454112435421453223",
+   "dist": [
+    4,
+    4,
+    3,
+    5,
+    4
+   ],
+   "seqMatch": 2,
+   "fixed": [
+    5,
+    10,
+    13,
+    14,
+    17
+   ],
+   "areas": {
+    "어휘": 2,
+    "대화": 5,
+    "문법": 5,
+    "본문": 8
+   },
+   "subAreas": [
+    "문법·조건 영작 · 감각동사",
+    "문법·표 보고 비교급",
+    "본문·어법 고쳐 쓰기",
+    "본문·배열",
+    "본문·본문 요약 빈칸",
+    "대화·대화 완성"
+   ],
+   "files": [
+    "out/m1_cji7/04. 실전모의고사/7과/A_L7_실전모의고사_2회_문제지.docx",
+    "out/m1_cji7/04. 실전모의고사/7과/A_L7_실전모의고사_2회_정답해설.docx"
+   ],
+   "answers": [
+    {
+     "no": 1,
+     "a": 5,
+     "text": "This pizza is very __thin__. (두꺼운)"
+    },
+    {
+     "no": 2,
+     "a": 1,
+     "text": "army"
+    },
+    {
+     "no": 3,
+     "a": 4,
+     "text": "No, thank you."
+    },
+    {
+     "no": 4,
+     "a": 5,
+     "text": "Are you ready to order? – Do you want something to drink?"
+    },
+    {
+     "no": 5,
+     "a": 4,
+     "text": "ⓓ"
+    },
+    {
+     "no": 6,
+     "a": 1,
+     "text": "do you want"
+    },
+    {
+     "no": 7,
+     "a": 1,
+     "text": "불고기는 한국식 소고기 바비큐이다."
+    },
+    {
+     "no": 8,
+     "a": 2,
+     "text": "wonderful"
+    },
+    {
+     "no": 9,
+     "a": 4,
+     "text": "as tall as"
+    },
+    {
+     "no": 10,
+     "a": 3,
+     "text": "3개"
+    },
+    {
+     "no": 11,
+     "a": 5,
+     "text": "very"
+    },
+    {
+     "no": 12,
+     "a": 4,
+     "text": "The soup is hotter than the tea. = The tea is hotter than the soup."
+    },
+    {
+     "no": 13,
+     "a": 2,
+     "text": "②"
+    },
+    {
+     "no": 14,
+     "a": 1,
+     "text": "ⓐ"
+    },
+    {
+     "no": 15,
+     "a": 4,
+     "text": "How long do you fry the eggs?"
+    },
+    {
+     "no": 16,
+     "a": 5,
+     "text": "stayed – for – These days"
+    },
+    {
+     "no": 17,
+     "a": 3,
+     "text": "ⓒ"
+    },
+    {
+     "no": 18,
+     "a": 2,
+     "text": "The Giant Omelet of Bessières"
+    },
+    {
+     "no": 19,
+     "a": 2,
+     "text": "with – also"
+    },
+    {
+     "no": 20,
+     "a": 3,
+     "text": "유나: Nasi Goreng Pattaya는 볶음밥을 얇은 오믈렛으로 감싼 요리야."
+    }
+   ],
+   "subAnswers": [
+    [
+     "This soup smells strange."
+    ],
+    [
+     "more expensive",
+     "better"
+    ],
+    [
+     "has → have",
+     "try → trying"
+    ],
+    [
+     "Napoleon asked for a giant omelet for his army."
+    ],
+    [
+     "bigger",
+     "smaller",
+     "popular"
+    ],
+    [
+     "I’d like some curry.",
+     "Do you want chicken curry or beef curry?"
+    ]
+   ]
+  }
+ },
+ "dupAnswers": []
+}

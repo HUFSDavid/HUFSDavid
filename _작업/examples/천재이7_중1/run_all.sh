@@ -10,3 +10,4 @@ node lib/dialogue.js examples/천재이7_중1/cji7m1_dcfg.json && rm -f "out/m1_
 node lib/reading.js examples/천재이7_중1/cji7m1_rcfg.json
 examples/천재이7_중1/run_감각동사.sh "$(pwd)/out/m1_cji7/02. 문법/7과"
 examples/천재이7_중1/run_비교급.sh "$(pwd)/out/m1_cji7/02. 문법/7과"
+examples/천재이7_중1/run_mock.sh
