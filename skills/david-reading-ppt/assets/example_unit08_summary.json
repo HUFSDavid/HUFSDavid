@@ -4121,5 +4121,163 @@
     "why": "the 비교급, the 비교급"
    }
   ]
+ },
+ "reviewSheet": {
+  "fileBase": "절대수능맵_독해유형심화_Unit08_리뷰테스트",
+  "title": "Unit 08 Review Test",
+  "subtitle": "절대수능맵 독해 유형심화 · 요약문 완성의 함정 · Ex 92–104",
+  "headerText": "독해 유형심화 Unit 08 · Review Test",
+  "total": 15,
+  "cover": {
+   "term": "2026 · 10월",
+   "unitLabel": "UNIT",
+   "unitNo": "08",
+   "part": "HA2  ·  절대수능맵 독해 유형심화",
+   "title": "리뷰테스트",
+   "subtitle": "요약문 완성의 함정  ·  Ex 92–104",
+   "tag": "독해 수업",
+   "info": [
+    [
+     "교재",
+     "절대수능맵 독해 유형심화"
+    ],
+    [
+     "범위",
+     "Unit 08 · Ex 92–104"
+    ],
+    [
+     "구성",
+     "15문항 · 어휘 5 · 어법 5 · 글의 구조 2 · 요약문 3"
+    ]
+   ]
+  },
+  "sections": [
+   {
+    "title": "A. 어휘",
+    "instruction": "주어진 첫 글자로 시작하는 유의어(≒)·반의어(↔)를 쓰시오.",
+    "items": [
+     {
+      "q": "preserve  ≒  {c________}",
+      "a": "conserve",
+      "src": "Ex 92",
+      "why": "preserve ≒ conserve, maintain ↔ destroy, abandon ⊕ preservation"
+     },
+     {
+      "q": "irreplaceable  ↔  {r__________}",
+      "a": "replaceable",
+      "src": "Ex 92",
+      "why": "irreplaceable ≒ invaluable, unique ⊕ replace, replacement"
+     },
+     {
+      "q": "indifferent (to)  ↔  {c________} (about)",
+      "a": "concerned",
+      "src": "Ex 101",
+      "why": "indifferent ≒ unconcerned ⊕ indifference"
+     },
+     {
+      "q": "complicated  ↔  {s_____}",
+      "a": "simple",
+      "src": "Ex 99",
+      "why": "complicated ≒ complex ⊕ complication"
+     },
+     {
+      "q": "regard A as B  ≒  {c_______} A (to be) B",
+      "a": "consider",
+      "src": "Ex 92",
+      "why": "≒ think of / look upon / see / view A as B"
+     }
+    ]
+   },
+   {
+    "title": "B. 어법",
+    "instruction": "[ ] 안에서 어법상 알맞은 것을 고르시오.",
+    "items": [
+     {
+      "q": "…a way of life that [go / goes] back at least a thousand years.",
+      "a": "goes",
+      "src": "Ex 92",
+      "why": "주격 관계대명사 that의 선행사 a way of life(단수) → goes"
+     },
+     {
+      "q": "Many cases of such social contagion [happen / happens] in subtle ways in our daily lives.",
+      "a": "happen",
+      "src": "Ex 94",
+      "why": "주어 cases(복수), of ~ 수식어구에 속지 않기"
+     },
+     {
+      "q": "[Having heard / Having been heard] these options, 61.9% of participants in group A chose to gamble.",
+      "a": "Having heard",
+      "src": "Ex 93",
+      "why": "참가자들이 선택지를 '들은' 것 → 능동 완료 분사구문"
+     },
+     {
+      "q": "It is this self-awareness [that / what] allows the company to excel at developing innovative products.",
+      "a": "that",
+      "src": "Ex 95",
+      "why": "It is ~ that 강조구문 (주어 this self-awareness 강조)"
+     },
+     {
+      "q": "At the root of trained incapacity [is / are] a job with little variety and repetitive tasks.",
+      "a": "is",
+      "src": "Ex 100",
+      "why": "부사구 도치: 동사 뒤 주어 a job(단수) → is"
+     }
+    ]
+   },
+   {
+    "title": "C. 글의 구조",
+    "instruction": "signal을 보고 글의 구조를 <보기>에서 골라 쓰시오.",
+    "box": "통념–반박   /   질문–답변   /   원인–결과   /   비교·대조   /   연구 내용–연구 결과",
+    "items": [
+     {
+      "q": "Many people think the success of dieting depends mostly on determination. While this mental power matters, a new research has found …",
+      "a": "통념–반박",
+      "src": "Ex 99",
+      "why": "Many people think(통념) → While ~, a new research has found(반박): 반박 뒤가 주제",
+      "answerLine": true
+     },
+     {
+      "q": "… the Americans said they had focused on objects in the front. Meanwhile, the Japanese had focused on the objects in the background. … On the other hand, Westerners are more independent …",
+      "a": "비교·대조",
+      "src": "Ex 97",
+      "why": "Meanwhile · more likely than · On the other hand: 두 대상(아시아인 vs 서양인) 대조",
+      "answerLine": true
+     }
+    ]
+   },
+   {
+    "title": "D. 요약문 완성",
+    "instruction": "(A), (B)에 들어갈 말을 주어진 첫 글자로 시작하여 쓰시오.",
+    "items": [
+     {
+      "q": "When people face a (A) {d________}-making situation, they are not likely to choose an option that makes them expect a possible (B) {l___}.",
+      "a": [
+       "decision",
+       "loss"
+      ],
+      "src": "Ex 93",
+      "why": "'lose $30'(손실 틀)을 들은 그룹이 확정 선택지를 피함 = 틀 효과"
+     },
+     {
+      "q": "People tend to have a (A) {p________} way of thinking based on their cultural backgrounds, so having cultural diversity on a team can (B) {e______} teamwork.",
+      "a": [
+       "preferred",
+       "enhance"
+      ],
+      "src": "Ex 97",
+      "why": "문화마다 선호하는 사고방식 → 다양성은 팀의 invaluable source of strength"
+     },
+     {
+      "q": "An experiment shows that while people are more willing to help (A) an {i_________} in need, they become indifferent when given the (B) {l_____} perspective of hunger.",
+      "a": [
+       "individual",
+       "larger"
+      ],
+      "src": "Ex 101",
+      "why": "Rokia 개인 > 통계 / 더 큰 기아 문제를 더하자 기부 감소"
+     }
+    ]
+   }
+  ]
  }
 }

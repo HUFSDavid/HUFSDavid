@@ -1,7 +1,7 @@
 ---
 name: david-reading-ppt
 description: >-
-  독해수업PPT. '[독해수업PPT] 수능특강 N강 / 유형심화 Unit N 만들어줘', '독해 PPT', '해설강의 PPT', '수업용 PPT 만들어줘' 요청이나, 수능특강·수능완성·절대수능맵·모의고사 등 독해 Exercise 세트(교재 PPT·docx·PDF·HWP·사진·구글 드라이브 파일)를 주면서 "티칭해야 돼", "수업 준비", "해설 강의할 PPT"를 말할 때 반드시 사용한다. 학생이 숙제로 미리 푼 지문을 수업 시간에 하나씩 해설하는 David 독해 해설강의 PPT(.pptx)를 만든다. 채점 슬라이드, 수업 Objective, Signal(글의 구조) 타일, 지문마다 Hook → 어법 워밍업 → 정답 근거 지문(노란 형광 근거 + 파란 형광 문법, 클릭식 어휘 띠) → 흐름 정리, 교재 추가 문제 원문 + 클릭 정답, Review Test, 복습 미니테스트, 초보 선생님용 발표자 노트(풀이 플로우·해설·해석)까지 포함한다. Word 분석 자료(david-mock-analysis)나 내신 본문 자료(david-reading)가 아니라 "PPT·슬라이드·수업 화면"이 필요할 때 이 스킬을 쓴다.
+  독해수업PPT. '[독해수업PPT] 수능특강 N강 / 유형심화 Unit N 만들어줘', '독해 PPT', '해설강의 PPT', '수업용 PPT 만들어줘' 요청이나, 수능특강·수능완성·절대수능맵·모의고사 등 독해 Exercise 세트(교재 PPT·docx·PDF·HWP·사진·구글 드라이브 파일)를 주면서 "티칭해야 돼", "수업 준비", "해설 강의할 PPT"를 말할 때 반드시 사용한다. 학생이 숙제로 미리 푼 지문을 수업 시간에 하나씩 해설하는 David 독해 해설강의 PPT(.pptx)를 만든다. 채점 슬라이드, 수업 Objective, Signal(글의 구조) 타일, 지문마다 Hook → 어법 워밍업 → 정답 근거 지문(노란 형광 근거 + 파란 형광 문법, 클릭식 어휘 띠) → 흐름 정리, 교재 추가 문제 원문 + 클릭 정답, Review Test, 복습 미니테스트, 초보 선생님용 발표자 노트(풀이 플로우·해설·해석)까지 포함한다. 같은 단원의 **독해 리뷰테스트 시험지**(Word, 15문항 한 장, 학생용·교사용, David 표지)도 함께 만들며, '리뷰테스트 시험지 만들어줘', '독해 리뷰테스트' 요청에도 사용한다. Word 분석 자료(david-mock-analysis)나 내신 본문 자료(david-reading)가 아니라 "PPT·슬라이드·수업 화면"이 필요할 때 이 스킬을 쓴다.
 ---
 
 # 독해수업PPT (David 독해 해설강의 PPT)
@@ -47,6 +47,22 @@ description: >-
 9. **교재 Review Test** (`reviewTest`, 원문 그대로 + 클릭 정답)
 10. **복습 미니테스트**: 어휘 스피드 퀴즈 + 어법 골든벨, 클릭하면 정답 (`review`).
 11. 마무리: 핵심 공식과 복습 과제
+
+## 독해 리뷰테스트 시험지 (Word, 함께 만든다)
+수업 후 복습용 시험지. **15문항을 A4 한 장**에 담는다. 학생용 + 교사용(정답·해설) 2파일로 만든다.
+- **표지**: David 공통 표지 v2(`scripts/coverlib.js`, 로고는 `assets/`)를 맨 앞 1쪽에 넣는다. 내지 머리글에는 DAVID 로고를 넣는다(david-cover 규칙).
+- **구성 (기본 15문항)**
+  - **A. 어휘 5**: 첫 글자를 주고 유의어(≒)·반의어(↔)·표현 바꿔쓰기를 쓰게 한다. 출처는 `vocabPlus`.
+  - **B. 어법 5**: 지문 원문 문장에서 [A / B] 고르기. 출처는 파란 형광 문법 포인트(`grammar`).
+  - **C. 글의 구조 2**: 지문 속 signal 발췌를 보고 <보기>에서 구조를 골라 쓰게 한다. 출처는 `structure`, `unit`.
+  - **D. 요약문 5→3**: 요약문 (A)(B)를 첫 글자를 주고 쓰게 한다. 정답은 본문 정답 선택지의 단어.
+  - 유형이 요약문이 아니면 D를 그 유형(빈칸 핵심어 쓰기 등)으로 바꾼다.
+- 여러 지문에서 고르게 낸다. 문항마다 출처 (Ex N)를 단다.
+- 교사용은 정답을 빨간색으로 넣고, 각 문항 아래 한 줄 해설을 붙인다.
+- 데이터는 `reviewSheet`(data_schema.md)에 쓴다. 빌드 명령:
+  `NODE_PATH=$WORK/node_modules node <skill-dir>/scripts/build_review_sheet.js data.json <출력 폴더>`
+  → `<fileBase>_학생용.docx`, `<fileBase>_교사용.docx`
+- 검수: PDF로 바꿔 각 파일이 **표지 1쪽 + 시험지 1쪽 = 2쪽**인지 확인한다. 넘치면 문항 문장을 줄인다.
 
 ### 사용자가 이미 거절한 것 (다시 넣지 말 것)
 - **화면 구성**
@@ -99,7 +115,7 @@ description: >-
 ### 4. 빌드
 ```bash
 WORK=<scratchpad>/reading-ppt && mkdir -p $WORK && cd $WORK
-[ -d node_modules/pptxgenjs ] || (npm init -y >/dev/null && npm install pptxgenjs react react-dom react-icons sharp jszip >/dev/null)
+[ -d node_modules/pptxgenjs ] || (npm init -y >/dev/null && npm install pptxgenjs react react-dom react-icons sharp jszip docx >/dev/null)
 NODE_PATH=$WORK/node_modules node <skill-dir>/scripts/build_deck.js data.json "<출력 경로>/<교재>_<단원>_수업PPT.pptx"
 ```
 - `DEBUG_QS=1`을 붙이면 지문별 자동 글자 크기를 출력한다.

@@ -112,7 +112,27 @@
 }
 ```
 
+## reviewSheet (독해 리뷰테스트 시험지, Word)
+```jsonc
+"reviewSheet": {
+  "fileBase": "절대수능맵_독해유형심화_Unit08_리뷰테스트",   // 파일명 앞부분 (_학생용/_교사용 자동)
+  "title": "Unit 08 Review Test", "subtitle": "교재 · 단원명 · 범위", "headerText": "머리글 오른쪽 글", "total": 15,
+  "cover": { "term": "2026 · 10월", "unitLabel": "UNIT", "unitNo": "08", "part": "HA2  ·  교재명", "title": "리뷰테스트", "subtitle": "…", "tag": "독해 수업",
+             "info": [["교재", "…"], ["범위", "…"], ["구성", "15문항 · …"]] },   // david-cover 값 규칙 (모르는 정보는 지어내지 않기)
+  "sections": [
+    { "title": "A. 어휘", "instruction": "…", "items": [ { "q": "preserve  ≒  {c________}", "a": "conserve", "src": "Ex 92", "why": "교사용 한 줄 해설" } ] },
+    { "title": "B. 어법", "instruction": "…", "items": [ { "q": "…a way of life that [go / goes] back …", "a": "goes", "src": "Ex 92", "why": "…" } ] },
+    { "title": "C. 글의 구조", "instruction": "…", "box": "통념–반박 / 질문–답변 / …",   // <보기>
+      "items": [ { "q": "Many people think … While …", "a": "통념–반박", "answerLine": true, "src": "Ex 99", "why": "…" } ] },
+    { "title": "D. 요약문 완성", "instruction": "…", "items": [ { "q": "… (A) {d________}-making … (B) {l___}.", "a": ["decision", "loss"], "src": "Ex 93", "why": "…" } ] }
+  ]
+}
+// 표기: {c____} = 첫 글자 빈칸(교사용에선 정답으로 바뀜, 여러 개면 a를 배열로) / [A / B] = 고르기 / (A)(B) = 빨간 요약문 기호
+// answerLine: true = 문장 뒤 답 쓰는 줄
+```
+
 ## 체크리스트
+- reviewSheet 문항 수가 15이고, 학생용·교사용이 각각 표지 + 1쪽인가
 - `ans` 번호와 `opts`의 "정답" 라벨 위치가 같은가
 - 빈칸 문제는 `{B}`가 정확히 1개 있는가. 함의 문제는 `__…__` 밑줄이 있는가
 - 정답 근거(true) 문장이 2~4개인가
