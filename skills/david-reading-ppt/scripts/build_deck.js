@@ -14,10 +14,12 @@ const EX = D.exercises;
 const PS = Object.fromEntries(EX.map((e) => [e.n, { foot: e.foot || "", s: e.sentences }]));
 const GR = Object.fromEntries(EX.map((e) => [e.n, e.grammar || []]));
 const isImp = (e) => e.type === "함의";
-const kindOf = (e) => (isImp(e) ? "함의 추론" : `${e.type} 추론`);
+const kindOf = (e) => e.kind || (isImp(e) ? "함의 추론" : `${e.type} 추론`);
 // split exercises into parts of up to 6 (one class period each)
 const PARTS = [];
-for (let i = 0; i < EX.length; i += Math.ceil(EX.length / Math.ceil(EX.length / 6))) PARTS.push(EX.slice(i, i + Math.ceil(EX.length / Math.ceil(EX.length / 6))));
+// up to 7 problems per class period, split evenly
+const PER = Math.ceil(EX.length / Math.ceil(EX.length / 7));
+for (let i = 0; i < EX.length; i += PER) PARTS.push(EX.slice(i, i + PER));
 const partOf = (e) => PARTS.findIndex((p) => p.includes(e));
 const partName = (pi) => `Part ${pi + 1} · Ex ${PARTS[pi][0].n}–${PARTS[pi][PARTS[pi].length - 1].n}`;
 
@@ -74,6 +76,7 @@ const TAG = {
   "언급 없음": { fill: C.background2, color: C.text2 },
   "소재 함정": { fill: C.accent3, color: C.text1 },
   "범위 오류": { fill: C.accent5, color: C.background1 },
+  "반쪽 정답": { fill: "F4C7BC", color: C.text1 },
 };
 const NUM = ["①", "②", "③", "④", "⑤"];
 
@@ -103,13 +106,14 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
   // ---------- 채점: 정답 한눈에 보기 ----------
   s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "도입" });
   s.addText("채점부터! 정답 한눈에 보기", { placeholder: "title" });
-  const gCols = Math.min(6, Math.ceil(EX.length / Math.ceil(EX.length / 6)));
+  const gCols = EX.length <= 12 ? Math.min(6, Math.ceil(EX.length / Math.ceil(EX.length / 6))) : 7;
+  const gStep = 12.1 / Math.max(gCols, 6), gW = gStep - 0.18;
   EX.forEach((e, i) => {
-    const x = 0.6 + (i % gCols) * 2.04, y = 1.45 + Math.floor(i / gCols) * 2.6;
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: 1.86, h: 2.35, rectRadius: 0.12, fill: { color: isImp(e) ? HEX.accent6 : HEX.lt2 }, line: { color: isImp(e) ? HEX.accent2 : HEX.lt2, width: 1 } });
-    s.addText(`Ex ${e.n}`, { x, y: y + 0.15, w: 1.86, h: 0.45, fontSize: 18, bold: true, color: C.text2, align: "center", margin: 0, isTextBox: true });
-    s.addText(NUM[e.ans - 1], { x, y: y + 0.6, w: 1.86, h: 1.1, fontSize: 60, bold: true, color: C.accent2, align: "center", valign: "middle", margin: 0, isTextBox: true });
-    s.addText(isImp(e) ? "함의(밑줄)" : e.type, { x, y: y + 1.8, w: 1.86, h: 0.35, fontSize: 13, color: C.accent4, align: "center", margin: 0, isTextBox: true });
+    const x = 0.6 + (i % gCols) * gStep, y = 1.45 + Math.floor(i / gCols) * 2.6;
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: gW, h: 2.35, rectRadius: 0.12, fill: { color: isImp(e) ? HEX.accent6 : HEX.lt2 }, line: { color: isImp(e) ? HEX.accent2 : HEX.lt2, width: 1 } });
+    s.addText(`Ex ${e.n}`, { x, y: y + 0.15, w: gW, h: 0.45, fontSize: 18, bold: true, color: C.text2, align: "center", margin: 0, isTextBox: true });
+    s.addText(NUM[e.ans - 1], { x, y: y + 0.6, w: gW, h: 1.1, fontSize: 60, bold: true, color: C.accent2, align: "center", valign: "middle", margin: 0, isTextBox: true });
+    s.addText(isImp(e) ? "함의(밑줄)" : e.type, { x, y: y + 1.8, w: gW, h: 0.35, fontSize: 13, color: C.accent4, align: "center", margin: 0, isTextBox: true });
   });
   s.addText("틀린 문제 번호에 동그라미 → 해설 때 집중해서 듣기!", { x: 0.6, y: 6.62, w: 12.1, h: 0.35, fontSize: 14, bold: true, color: C.accent1, margin: 0, isTextBox: true });
   s.addNotes(`【채점 진행】 \"숙제 꺼내세요. 정답 불러 줄게요.\" 학생들이 스스로 채점하게 한 뒤, 문제별로 틀린 사람 손 들기 → 많이 틀린 번호를 칠판에 적어 두고 해설 때 시간을 더 쓰세요.\n【정답】 ${EX.map((e) => `${e.n}-${NUM[e.ans - 1]}`).join(" ")}\n【한 줄 핵심】 ${EX.map((e) => `${e.n} ${e.key}`).join(" / ")}`);
@@ -232,7 +236,11 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
     const totalChars = P.s.reduce((a, x) => a + x[0].length, 0);
     const passH = (sz) => 5.9 * (totalChars / 1000) * (sz / 24) ** 2;
     const lineH = (sz) => (sz * 1.2 * 1.15) / 72;
-    const optLines = (sz) => e.opts.reduce((a, o) => a + Math.ceil((o[0].length + 3) / (11.6 * 72 / (sz * 0.52))), 0);
+    const showOpts = !e.hideOptsOnProblem;
+    const extraTxt = (e.given || "") + (e.summary || "");
+    const optLines = (sz) => (showOpts ? e.opts.reduce((a, o) => a + Math.ceil((o[0].length + 3) / (11.6 * 72 / (sz * 0.52))), 0) : 0) + Math.ceil(extraTxt.length / (11.6 * 72 / (sz * 0.52))) + (extraTxt ? 1 : 0);
+    // (A)/(B) blanks in summary sentences: color them
+    const abRuns = (txt, base) => txt.split(/(\(A\)|\(B\))/).filter(Boolean).map((t) => ({ text: t, options: { ...base, ...(/^\([AB]\)$/.test(t) ? { bold: true, color: HEX.accent2 } : {}) } }));
 
     // --- Problem slide: 지문 + 보기 (시험지처럼)
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
@@ -241,17 +249,28 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
     chip(s, kind, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
     // e.qFont lets you force a size if a long passage overflows in PowerPoint
     let qs = e.qFont || 22;
-    while (!e.qFont && qs > 13 && passH(qs) + lineH(qs) * (optLines(qs) + 1) + 0.35 > 4.9) qs -= 0.5;
+    while (!e.qFont && qs > 13 && passH(qs) + lineH(qs) * (optLines(qs) + 1) + 0.35 > (extraTxt ? 5.15 : 4.9)) qs -= 0.5;
     const qr = [];
+    if (e.given) {
+      qr.push({ text: "[주어진 문장]  ", options: { fontSize: qs, bold: true, color: HEX.accent2 } });
+      qr.push({ text: e.given, options: { fontSize: qs, bold: true, color: HEX.dk2, breakLine: true } });
+      qr.push({ text: " ", options: { fontSize: 6, breakLine: true } });
+    }
     P.s.forEach((x, i) => {
       qr.push(...runs(x[0], { fontSize: qs, color: HEX.dk1 }, false));
       if (i < P.s.length - 1) qr.push({ text: " ", options: { fontSize: qs } });
     });
     qr[qr.length - 1].options.breakLine = true;
     if (P.foot) qr.push({ text: P.foot, options: { fontSize: 11, italic: true, color: HEX.accent4, align: "right", breakLine: true, paraSpaceBefore: 2 } });
-    e.opts.forEach((o, i) => {
+    if (e.summary) {
+      qr.push({ text: "↓  ", options: { fontSize: qs, bold: true, color: HEX.accent1, paraSpaceBefore: 8 } });
+      qr.push(...abRuns(e.summary, { fontSize: qs, color: HEX.dk2, bold: false }));
+      qr[qr.length - 1].options.breakLine = showOpts;
+    }
+    if (showOpts) e.opts.forEach((o, i) => {
       qr.push({ text: `${NUM[i]}  ${o[0]}`, options: { fontSize: qs, color: HEX.dk2, paraSpaceBefore: i === 0 ? 10 : 2, breakLine: i < 4 } });
     });
+    if (!showOpts) delete qr[qr.length - 1].options.breakLine;
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.35, w: 12.1, h: 5.55, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
     s.addText(qr, { x: 0.85, y: 1.5, w: 11.6, h: 5.3, margin: 0, valign: "top", lineSpacingMultiple: 1.15, isTextBox: true });
     s.addNotes(`【이 슬라이드 사용법】 숙제로 풀어 온 문제를 그대로 띄운 화면입니다. \"몇 번 골랐어?\" 손가락으로 표시하게 해서 답 분포를 확인하고, 정답은 아직 말하지 마세요. 많이 고른 오답이 있으면 정답·오답 슬라이드에서 그 선택지를 더 오래 설명하세요.\n【한 줄 요약】 ${e.find}`);
@@ -260,7 +279,7 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: sec });
     s.addText([{ text: `Ex ${e.n}  `, options: { color: C.accent2 } }, { text: "정답 근거 & 문법 포인트" }], { placeholder: "title" });
     chip(s, `${kind} · 근거`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
-    const pSize = Math.min(22, Math.floor(24 * Math.sqrt(3.7 * 1000 / (5.9 * totalChars))));
+    const pSize = Math.min(e.vocab && e.vocab.length ? 21 : 22, Math.floor(24 * Math.sqrt((e.vocab && e.vocab.length ? 3.05 : 3.7) * 1000 / (5.9 * totalChars))));
     const pr = [];
     const G = GR[e.n] || [];
     const seenG = new Set();
@@ -286,11 +305,39 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       });
       if (i < P.s.length - 1) pr.push({ text: " ", options: { fontSize: pSize } });
     });
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.35, w: 12.1, h: 5.2, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
-    s.addText(pr, { x: 0.85, y: 1.5, w: 11.6, h: 4.95, margin: 0, valign: "top", lineSpacingMultiple: 1.2, fit: "shrink", isTextBox: true });
+    const VO = e.vocab || [];
+    // vocab words: green dotted underline in passage, meanings in a bottom box
+    VO.forEach(([w]) => {
+      const re = new RegExp("\\b" + w.replace(/[-.*+?^${}()|[\]\\]/g, "\\$&") + "\\b");
+      for (let k = 0; k < pr.length; k++) {
+        const m = pr[k].text.match(re);
+        if (!m || pr[k].vw) continue;
+        const o = pr[k].options, t = pr[k].text, end = m.index + w.length;
+        const wordColor = o.color === HEX.accent5 ? HEX.accent5 : HEX.accent1;
+        pr.splice(k, 1,
+          ...(m.index ? [{ text: t.slice(0, m.index), options: { ...o } }] : []),
+          { text: t.slice(m.index, end), options: { ...o, color: wordColor, underline: { style: "dotted", color: HEX.accent1 } }, vw: true },
+          ...(t.slice(end) ? [{ text: t.slice(end), options: { ...o } }] : []));
+        break;
+      }
+    });
+    pr.forEach((r) => delete r.vw);
+    const boxH = VO.length ? 4.35 : 5.2;
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.35, w: 12.1, h: boxH, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
+    s.addText(pr, { x: 0.85, y: 1.5, w: 11.6, h: boxH - 0.25, margin: 0, valign: "top", lineSpacingMultiple: 1.2, fit: "shrink", isTextBox: true });
+    if (VO.length) {
+      const vr = [{ text: " 어휘 ", options: { bold: true, color: HEX.lt1, highlight: HEX.accent1 } }, { text: "   ", options: {} }];
+      VO.forEach(([w, ko], vi) => {
+        vr.push({ text: w + " ", options: { bold: true, color: HEX.accent1 } });
+        vr.push({ text: ko + (vi < VO.length - 1 ? "   ·   " : ""), options: { color: HEX.dk1 } });
+      });
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 5.8, w: 12.1, h: 0.8, rectRadius: 0.1, fill: { color: "EAF5EF" }, line: { color: "CFE6D9", width: 1 } });
+      s.addText(vr, { x: 0.8, y: 5.85, w: 11.7, h: 0.7, fontSize: 14, valign: "middle", margin: 0, lineSpacingMultiple: 1.1, fit: "shrink", isTextBox: true });
+    }
     s.addText([
       { text: "■ ", options: { color: HEX.accent3 } }, { text: "형광 = 정답 근거 문장     ", options: {} },
-      { text: "파란 굵은 글씨 ", options: { color: HEX.accent5, bold: true } }, { text: "= 문법·내신 포인트 (다음 슬라이드)     ", options: {} },
+      { text: "파란 굵은 글씨 ", options: { color: HEX.accent5, bold: true } }, { text: "= 문법·내신 포인트     ", options: {} },
+      ...(e.vocab && e.vocab.length ? [{ text: "초록 점선 단어 ", options: { color: HEX.accent1, bold: true } }, { text: "= 하단 어휘     ", options: {} }] : []),
       { text: "(1) (2) (3) ", options: { color: HEX.accent1, bold: true } }, { text: "= 문장 번호", options: {} },
     ], { x: 0.6, y: 6.65, w: 12.1, h: 0.3, fontSize: 11, color: C.accent4, margin: 0, isTextBox: true });
     const keyNums = P.s.map((x, i) => (x[2] ? i + 1 : 0)).filter(Boolean).join(", ");
@@ -319,9 +366,10 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
     chip(s, `${kind} · 흐름 잡기`, 10.6, 0.6, 2.1, C.background2, C.text2, 12);
     // left: blank sentence card
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 1.45, w: 5.7, h: 2.65, rectRadius: 0.12, fill: { color: C.background2 }, line: { color: C.background2 } });
-    s.addText(isImp(e) ? "STEP 1 · 밑줄 문장" : (e.type === "빈칸" ? "STEP 1 · 빈칸 문장 먼저" : "STEP 1 · 핵심 문장"), { x: 0.9, y: 1.6, w: 5.1, h: 0.35, fontSize: 13, bold: true, color: C.accent1, margin: 0, isTextBox: true });
-    s.addText(e.blank, { x: 0.9, y: 2.0, w: 5.1, h: 0.85, fontSize: 16, bold: true, italic: true, color: C.text2, margin: 0, valign: "top", isTextBox: true });
-    s.addText(e.blankKo, { x: 0.9, y: 2.85, w: 5.1, h: 0.55, fontSize: 14, color: C.text1, margin: 0, valign: "top", isTextBox: true });
+    s.addText(e.step1Label || (isImp(e) ? "STEP 1 · 밑줄 문장" : (e.type === "빈칸" ? "STEP 1 · 빈칸 문장 먼저" : "STEP 1 · 핵심 문장")), { x: 0.9, y: 1.6, w: 5.1, h: 0.35, fontSize: 13, bold: true, color: C.accent1, margin: 0, isTextBox: true });
+    const longB = e.blank.length > 110;
+    s.addText(e.blank, { x: 0.9, y: 2.0, w: 5.1, h: longB ? 0.95 : 0.85, fontSize: longB ? 13 : 16, bold: true, italic: true, color: C.text2, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
+    s.addText(e.blankKo, { x: 0.9, y: longB ? 2.97 : 2.85, w: 5.1, h: longB ? 0.5 : 0.55, fontSize: longB ? 11 : 14, color: C.text1, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
     s.addText([{ text: "찾을 것  ", options: { bold: true, color: C.accent2 } }, { text: e.find, options: { bold: true, color: C.text2 } }], { x: 0.9, y: 3.5, w: 5.1, h: 0.45, fontSize: 15, margin: 0, isTextBox: true });
     // left: key clue card
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 4.3, w: 5.7, h: 2.55, rectRadius: 0.12, fill: { color: C.background1 }, line: { color: C.accent2, width: 1.5 } });
@@ -356,8 +404,8 @@ function chip(slide, text, x, y, w, fill, color, size = 12) {
       s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 5.0, y, w: 7.7, h: 0.99, rectRadius: 0.1, fill: { color: ok ? C.accent6 : C.background1 }, line: { color: ok ? C.accent2 : C.background2, width: ok ? 2 : 1 } });
       s.addText(NUM[i], { x: 5.2, y: y + 0.12, w: 0.45, h: 0.45, fontSize: 20, bold: true, color: ok ? C.accent2 : C.accent4, margin: 0, isTextBox: true });
       s.addText(o[0], { x: 5.75, y: y + 0.08, w: 5.4, h: 0.45, fontSize: 14, bold: ok, color: C.text2, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
-      s.addText((ok ? "✔ " : "✘ ") + o[1], { x: 5.75, y: y + 0.52, w: 5.4, h: 0.4, fontSize: 12, color: ok ? C.accent2 : C.accent4, margin: 0, valign: "middle", isTextBox: true });
-      const t = TAG[o[2]];
+      s.addText((ok ? "✔ " : o[2] === "적절" ? "○ " : "✘ ") + o[1], { x: 5.75, y: y + 0.52, w: 5.4, h: 0.4, fontSize: 12, color: ok ? C.accent2 : C.accent4, margin: 0, valign: "middle", isTextBox: true });
+      const t = TAG[o[2]] || { fill: C.background2, color: C.text2 };
       s.addText(o[2], { shape: pres.shapes.ROUNDED_RECTANGLE, rectRadius: 0.15, x: 11.3, y: y + 0.3, w: 1.2, h: 0.4, fill: { color: t.fill }, color: t.color, fontSize: 12, bold: true, align: "center", valign: "middle", margin: 0 });
     });
     const wrong = e.opts.map((o, i) => `${NUM[i]} ${o[2]}: ${o[1]}`).join("\n");
