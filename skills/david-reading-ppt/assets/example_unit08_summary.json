@@ -43,96 +43,240 @@
    ],
    "notes": "【설명 스크립트】 \"요약문 문제는 본문을 다 읽고 요약문을 보면 늦어요. 순서를 바꿔 볼게요.\n1단계, 요약문을 먼저 읽고 (A)와 (B)에 무엇이 들어갈지 질문을 만들어요. 예: '몽골인들은 유목 생활을 어떻게 하지?'\n2단계, 본문의 주제문과 결론에서 근거를 찾아요. 본문의 maximum or minimum이 요약문에선 extreme처럼 '다른 말'로 바뀌어요.\n3단계, (A)와 (B)를 각각 근거로 확인해요. 두 칸 모두 맞아야 정답이에요.\""
   },
-  "signalPages": [
+  "signalMap": [
    {
-    "title": "Signal ① 주장하는 글의 구조",
-    "items": [
+    "unit": "UNIT 01",
+    "flow": "주제문 – 예시1 – 예시2",
+    "ex": "오늘: Ex 94, 96",
+    "roles": [
      [
-      "주제",
-      "The key is · What matters is · It is ~ that · must · should · important · essential",
-      "필자가 하고 싶은 말 = 요약문·빈칸의 원본",
-      "Ex 95"
+      "주제문",
+      "should, have to, must, need to, 명령문 (주장) / It is important · critical · crucial · required · necessary · vital (중요성) / suggest, propose, recommend (제안)"
      ],
      [
-      "통념",
-      "Many people think · Most people believe · It is commonly said · We tend to think · You'd think",
-      "필자가 '뒤집으려고' 꺼내는 말 → 정답 아님!",
-      "Ex 99"
+      "예시1",
+      "For example, For instance, As an example, Let's take an example., A great[classic] example is …, If …"
      ],
      [
-      "반박",
-      "However · But · Yet · Unfortunately · In fact · Actually · While(~이지만) · Rather",
-      "통념 뒤 진짜 주장이 시작되는 곳",
-      "Ex 99, 102"
+      "예시2",
+      "Likewise, Similarly"
+     ]
+    ],
+    "strategy": [
+     "주제문에는 단정적인 표현이 나온다",
+     "주제문 뒤에는 주로 예시가 나온다",
+     "주제문은 일반적, 예시는 구체적",
+     "주제문 위치는 고정되어 있지 않다"
+    ]
+   },
+   {
+    "unit": "UNIT 02",
+    "flow": "도입 – 주제문 – 예시 – 결론",
+    "ex": "오늘: Ex 96, 기출 해체",
+    "roles": [
+     [
+      "도입",
+      "According to … (인용), Many[Most] people … (일반적 사실), As we all know, We can do … (공감)"
+     ],
+     [
+      "주제문",
+      "should, have to, must, need to, 명령문 / It is important … / However, But, Yet (반전·반론), When it comes to, To do … (화제 제시)"
      ],
      [
       "예시",
-      "For example · For instance · Consider · such as · like · Take ~ for example",
-      "예시는 주장을 '보여 주는' 것 → 공통점만 잡기",
-      "Ex 94, 96"
+      "For example, For instance, As an example …"
      ],
      [
       "결론",
-      "Therefore · Thus · Consequently · As a result · Hence · This is why",
-      "앞 내용을 정리 → 주제와 같은 말",
-      "Ex 96"
-     ],
-     [
-      "요약·재진술",
-      "In short · In brief · In other words · That is · Put differently · — (대시)",
-      "같은 말 한 번 더 → 정답 단어 힌트",
-      "Ex 100"
+      "So, Thus, Hence, Therefore, To conclude, In conclusion / To summarize, To sum up, In summary, In short, Briefly (요약), A is B (주제 재진술)"
      ]
     ],
-    "notes": "【설명 스크립트】 \"주장하는 글은 '통념 → 반박 → 주제 → 예시 → 결론' 순서가 많아요. 통념(Many people think…)은 함정, 반박(However, While…) 뒤가 진짜 주장!\"\n【오늘 예】 Ex 99: Many people think(통념) → While this mental power matters(반박) → 단순함이 중요(주제)."
+    "strategy": [
+     "도입 문장이 보이면 주제문은 그 뒤에",
+     "반복해서 설명하는 내용이 주제",
+     "도입 뒤 예시가 나오면 주제문은 마지막",
+     "결론에서 주제를 한 번 더 확인"
+    ]
    },
    {
-    "title": "Signal ② 설명·연구하는 글의 구조",
-    "items": [
+    "unit": "UNIT 03",
+    "flow": "통념 – 반박",
+    "ex": "오늘: Ex 99, 기출 해체",
+    "roles": [
      [
-      "현상",
-      "Have you ever noticed · It is often observed · Recently · Today · ~ is common",
-      "글이 다루는 '사실'을 소개 → 소재 파악",
-      "Ex 92, 97"
+      "통념",
+      "Many[Some] people think · believe · say · assume · suppose that … / There is a belief · notion · conventional wisdom · misconception · prejudice that … / A is considered B, often, usually, generally"
      ],
      [
-      "문제제기",
-      "The problem is · However, ~ risk · Unfortunately · ~ cannot · fail to",
-      "글이 해결하려는 '문제' → 요약문 (B) 자리 단골",
-      "Ex 100"
+      "반박",
+      "However, But, Yet (반전, 반론) — While(~이지만), Unfortunately도 같은 역할"
+     ]
+    ],
+    "strategy": [
+     "통념 표현이 나오면 반박을 예측하라",
+     "반박 이후에 주제가 드러난다",
+     "반박 뒤 결론까지 확인해야 한다",
+     "역접 연결사가 없으면 문맥으로 반박을 파악"
+    ]
+   },
+   {
+    "unit": "UNIT 04",
+    "flow": "설명1 – 설명2 – 요약",
+    "ex": "오늘: Ex 92, 100",
+    "roles": [
+     [
+      "설명",
+      "① 하나의 소재 → 개념·응용·심화 설명 (소재별 나열) ② 특정 인물 → 외모·성격·취미 (병렬식 나열) ③ 특정 사건 → 1960년대, 1980년대 … (시간순 나열)"
+     ],
+     [
+      "요약",
+      "To summarize, To sum up, In summary, In short, Briefly (요약) / In other words, That is (to say), namely (주제 진술) / Not ~ but …, It ~ that … (주제 강조), 세미콜론(;) 콜론(:) 대시(—) (주제 반복·부연 설명)"
+     ]
+    ],
+    "strategy": [
+     "반복되는 주어가 설명문의 소재",
+     "명확한 주제문이 없는 나열식 구조가 많다",
+     "별표(*) 힌트 단어를 먼저 확인",
+     "설명이 복잡할수록 뒤에 요약 문장이 나올 확률이 높다"
+    ]
+   },
+   {
+    "unit": "UNIT 05",
+    "flow": "현상 – 문제 제기 – 해결책",
+    "ex": "오늘: Ex 99, 100",
+    "roles": [
+     [
+      "현상",
+      "We have a tendency to, tend to (경향), Some + 명사, Many + 명사 (일반적인 현상)"
+     ],
+     [
+      "문제 제기",
+      "It is difficult …, The problem is that …, 부정적인 의미의 어구, 의문문"
      ],
      [
       "해결책",
-      "The solution is · To solve this · should · need to · One way to ~ is · The key to ~",
-      "필자가 제시하는 답 = 주제",
-      "Ex 99"
+      "It's best …, The best way[solution] is …, To avoid[solve] the problem, should, have to, must, need to, 명령문 (주장), by V-ing"
+     ]
+    ],
+    "strategy": [
+     "'현상-문제 제기' 중 주제는 문제점",
+     "문제 제기에 해결책이 이어지면 해결책이 주제",
+     "부정적 어조가 나올 때 문제 제기임을 파악",
+     "문제점이나 해결책이 여러 개 언급될 수 있다"
+    ]
+   },
+   {
+    "unit": "UNIT 06",
+    "flow": "원인 – 결과",
+    "ex": "오늘: Ex 94, 100",
+    "roles": [
+     [
+      "원인",
+      "Because, Since, As, result from, arise from, be caused by"
      ],
      [
-      "원인·결과",
-      "because · since · due to · This happens because · lead to · result in · cause · so",
-      "원인 ↔ 결과 관계가 요약문의 뼈대",
-      "Ex 94, 100"
-     ],
+      "결과",
+      "Then, So, Thus, Hence, Therefore, That's why[how], For this reason, As a result, Consequently, In consequence, In this way / result in, end in, lead to, cause, bring about, give rise to, influence, affect, have an impact[effect, influence] on"
+     ]
+    ],
+    "strategy": [
+     "원인과 결과를 나타내는 명확한 표현이 있다",
+     "원인과 결과는 주제/제목 찾기 정답에 그대로 나온다",
+     "원인과 결과의 순서는 얼마든지 바뀔 수 있다",
+     "'원인-결과' 뒤에 필자의 주장이 나오면 그게 주제"
+    ]
+   },
+   {
+    "unit": "UNIT 07",
+    "flow": "연구 내용 – 연구 결과 – 결론",
+    "ex": "오늘: Ex 93, 97, 98, 99, 101",
+    "roles": [
      [
       "연구 내용",
-      "In one experiment · Researchers compared · A study · ~ were asked to · participants",
-      "실험 '설계'는 빠르게 읽고 넘어가기",
-      "Ex 93, 98, 101"
+      "research, study, experiment, survey, test (연구/실험) / researcher, psychologist, sociologist, scientist, biologist (전문가) / observe, investigate, measure, study / One group ~, while · whereas · but · however the other group ~ (대조)"
      ],
      [
       "연구 결과",
-      "found that · showed that · The result shows · Surprisingly · reported that",
-      "실험의 핵심 = 정답 근거가 가장 많이 나오는 곳",
-      "Ex 98, 101"
+      "The study found · showed · proved · suggested · discovered · demonstrated that … (결과)"
      ],
      [
-      "질문·답변",
-      "Have you ever ~? · Why ~? · Can you guess ~? → 바로 뒤 문장",
-      "필자가 묻고 스스로 답한다 → 답이 곧 주제",
-      "Ex 95, 101"
+      "결론",
+      "So, Thus, Hence, Therefore / In other words, That is (to say), namely (주제 재진술) / The explanation for ~ is … (연구 결과 설명)"
      ]
     ],
-    "notes": "【설명 스크립트】 \"실험 글은 '연구 내용'은 빠르게, '연구 결과(found that, showed that)'는 꼼꼼히! 결과 문장이 요약문으로 바뀌어요.\"\n【오늘 예】 Ex 98, 101: 결과 문장에 노란 형광이 몰려 있어요. Ex 95: 질문(Have you ever…?)으로 시작해 답(성찰 과정)을 설명."
+    "strategy": [
+     "연구 지문에 나올 수밖에 없는 키워드들이 있다",
+     "연구 결과를 필자의 말로 바꾼 것이 주제",
+     "주제 뒤에 나오는 연구 결과는 반드시 주제와 일치",
+     "실험 대상 간 차이를 파악하라"
+    ]
+   },
+   {
+    "unit": "UNIT 08",
+    "flow": "비교 / 대조",
+    "ex": "오늘: Ex 97, 101",
+    "roles": [
+     [
+      "주제문",
+      "should, have to, must, need to, 명령문 / It is important · critical · crucial …"
+     ],
+     [
+      "설명 (대상 1, 2)",
+      "Similarly, Likewise, In the same way (공통점) / In[By] contrast, On the other hand, On the contrary, Conversely, Unlike, Compared with (차이점) / While, Whereas (대조, 역접), However, But, Yet (소재 전환), more[-er] ~ than …, as ~ as … (비교급/동급)"
+     ]
+    ],
+    "strategy": [
+     "첫 문장에 두 대상이 언급되면 그 둘이 비교/대조 대상",
+     "첫 문장에 비교급 표현이 나오면 주제문일 가능성이 높다",
+     "공통점과 차이점이 함께 언급된 지문에 유의",
+     "비교/대조 지문에 주로 등장하는 어휘는 정해져 있다"
+    ]
+   },
+   {
+    "unit": "UNIT 09",
+    "flow": "질문 – 답변",
+    "ex": "오늘: Ex 95, 101",
+    "roles": [
+     [
+      "질문",
+      "What, Who, When, Where, Why, How 의문문, Have you ever -ed …?, Do you know ~?"
+     ],
+     [
+      "답변",
+      "The answer is …, A is B, If … / should, have to, must, need to, 명령문 (주장), by V-ing"
+     ]
+    ],
+    "strategy": [
+     "질문에 대한 답변이 곧 글의 주제",
+     "질문 의도 ① 해결책 모색",
+     "질문 의도 ② 원리/개념 설명",
+     "질문 의도 ③ 흥미 유발"
+    ]
+   },
+   {
+    "unit": "UNIT 10",
+    "flow": "도입 – 전개 – 결말 (시간순)",
+    "ex": "",
+    "roles": [
+     [
+      "도입",
+      "ago (시기), when, where, in (시간, 장소)"
+     ],
+     [
+      "전개",
+      "this evening, last week, next month (시간, 기간) / in the spring, in 1990, in the 1800s, in the 18th century (계절, 연도, 세기) / before, after, by, until, while, from ~ to, since (전후 관계)"
+     ],
+     [
+      "결말",
+      "So, As a result, Finally, Eventually (결과, 결말)"
+     ]
+    ],
+    "strategy": [
+     "도입부에서 이야기의 주인공이 등장한다",
+     "시간 정보를 활용하여 이야기의 흐름을 파악",
+     "시간순 지문은 마지막 문장에 답이 있다",
+     "이야기의 주제는 거의 다 교훈적인 내용"
+    ]
    }
   ],
   "traps": [

@@ -39,6 +39,7 @@
       "conclusion": "위신을 얻으면 영향력이 원래 분야를 넘어 확장된다"
     }
   },
+  // intro.signalMap (권장, 속독맵 기반): [{ unit: "UNIT 01", flow: "문제 – 원인 – 해결책", roles: [["문제제기", "However, the problem is …"], …], strategy: ["해결책 문장이 주제문", …], ex: "Ex 95" }] × 10 → 2개씩 5장
   // meta.objectives: [[목표, 부연], …] 3개 / intro.signalPages: [{ title, items: [[구조, 표현, 왜 중요한지, "Ex .."]], notes }]
   // pre: [{ label: "기출 해체", chip: 출처, prompt, passage, foot, summary, options, answer, notes }] / reviewTest: { head, sections: [{ title, instruction, items: [{ no, text, a, why }] }] }
   "review": {                      // 복습 미니테스트 (마지막). 없으면 어휘 퀴즈는 문제별 vocab 첫 단어로 자동, 어법 골든벨은 생략
@@ -90,7 +91,7 @@
 
       // ── 선택 필드 (유형·요청에 따라) ──
       "kind": "요약문 완성",          // 칩에 표시할 유형 이름 (기본: '○○ 추론'). 짧게: "빈칸 변형", "삽입 변형"
-      "summary": "Many Mongolians (A) their … cultural (B).",  // 요약문 문제: 지문 아래 요약문 표시, (A)(B) 빨간색
+      "summary": "Many Mongolians (A) their … cultural (B).",  // 요약문 문제: 지문 아래 테두리 박스로 요약문 표시, (A)(B) 빨간색
       "given": "This reflection process enables …",          // 문장 삽입: 지문 위 [주어진 문장] 표시
       "hideOptsOnProblem": true,     // 삽입·어휘처럼 선택지가 지문 속 ①~⑤인 문제는 보기 목록 숨김
       "step1Label": "STEP 1 · 요약문 먼저",  // 흐름 슬라이드 첫 카드 이름

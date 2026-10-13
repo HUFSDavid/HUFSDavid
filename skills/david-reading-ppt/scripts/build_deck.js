@@ -212,6 +212,28 @@ function extraSlides(sec, head, sections, chipText) {
   s.addNotes(IN.steps.notes || "");
 
   // ---------- 4. Signal (글의 구조 signal 종합) ----------
+  if (IN.signalMap) {
+    const SM = IN.signalMap;
+    for (let pi = 0; pi < SM.length; pi += 2) {
+      s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
+      s.addText([{ text: "지문 구조 Signal  ", options: {} }, { text: `${pi / 2 + 1} / ${Math.ceil(SM.length / 2)}`, options: { color: C.accent4, fontSize: 20 } }], { placeholder: "title" });
+      SM.slice(pi, pi + 2).forEach((u, k) => {
+        const y = 1.3 + k * 2.85, H = 2.7;
+        s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y, w: 12.45, h: H, rectRadius: 0.1, fill: { color: HEX.lt1 }, line: { color: HEX.lt2, width: 1.5 } });
+        s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y, w: 2.1, h: H, rectRadius: 0.1, fill: { color: HEX.lt2 }, line: { color: HEX.lt2 } });
+        s.addText(u.unit, { x: 0.55, y: y + 0.12, w: 1.9, h: 0.3, fontSize: 11, bold: true, color: HEX.lt1, fill: { color: HEX.accent1 }, align: "center", valign: "middle", margin: 0, isTextBox: true });
+        s.addText(u.flow.split("–").map((f, i, a) => ({ text: f.trim(), options: { breakLine: i < a.length - 1 } })), { x: 0.55, y: y + 0.5, w: 1.9, h: H - 0.95, fontSize: 17, bold: true, color: HEX.dk2, align: "center", valign: "middle", margin: 0, paraSpaceAfter: 4, fit: "shrink", isTextBox: true });
+        if (u.ex) s.addText(u.ex, { x: 0.55, y: y + H - 0.42, w: 1.9, h: 0.3, fontSize: 10, bold: true, color: HEX.accent2, align: "center", margin: 0, isTextBox: true });
+        const rr = [];
+        u.roles.forEach((r, i) => { rr.push({ text: r[0] + "  ", options: { bold: true, color: HEX.accent2, fontSize: 13 } }); rr.push({ text: r[1], options: { color: HEX.dk1, fontSize: 12, breakLine: i < u.roles.length - 1 } }); });
+        s.addText(rr, { x: 2.75, y: y + 0.1, w: 6.25, h: H - 0.2, margin: 0, valign: "middle", paraSpaceAfter: 4, fit: "shrink", isTextBox: true });
+        s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 9.15, y: y + 0.1, w: 3.6, h: H - 0.2, rectRadius: 0.08, fill: { color: "F2F8FB" }, line: { color: "F2F8FB" } });
+        s.addText([{ text: "전략", options: { bold: true, color: HEX.accent1, fontSize: 13, breakLine: true } }, ...u.strategy.map((t, i) => ({ text: t, options: { bullet: true, color: HEX.dk1, fontSize: 12, breakLine: i < u.strategy.length - 1 } }))],
+          { x: 9.25, y: y + 0.15, w: 3.4, h: H - 0.3, margin: 0, valign: "top", paraSpaceAfter: 3, fit: "shrink", isTextBox: true });
+      });
+      s.addNotes(`【설명 스크립트】 \"글은 정해진 구조로 흘러가요. signal을 보면 지금 글이 어느 단계에 있는지, 주제문이 어디 있는지 알 수 있어요.\"\n${SM.slice(pi, pi + 2).map((u) => `■ ${u.unit} ${u.flow}\n  전략: ${u.strategy.join(" / ")}\n  오늘: ${u.ex || "-"}`).join("\n")}`);
+    }
+  } else
   (IN.signalPages || [{ title: "Signal: 이 단어가 보이면 멈춰!", items: IN.signals || [] }]).forEach((pg) => {
     s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "풀이 공식" });
     s.addText(pg.title, { placeholder: "title" });
@@ -265,13 +287,13 @@ function extraSlides(sec, head, sections, chipText) {
     q.passage.forEach((t, i) => { r.push({ text: t + (i < q.passage.length - 1 ? " " : ""), options: { color: HEX.dk1 } }); });
     r[r.length - 1].options.breakLine = true;
     if (q.foot) r.push({ text: q.foot, options: { fontSize: 11, italic: true, color: HEX.accent4, align: "right", breakLine: true } });
-    r.push({ text: "↓  ", options: { bold: true, color: HEX.accent1 } });
-    q.summary.split(/(\(A\)|\(B\))/).filter(Boolean).forEach((t) => r.push({ text: t, options: { color: HEX.dk2, ...(/^\([AB]\)$/.test(t) ? { bold: true, color: HEX.accent2 } : {}) } }));
-    r[r.length - 1].options.breakLine = true;
-    r.push({ text: q.options.map((o) => o.replace(/\s*-{3,}\s*/g, "\u00A0–\u00A0").replace(/ /g, "\u00A0")).join("     "), options: { fontSize: 15, color: HEX.accent4 } });
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: 1.3, w: 12.45, h: 5.65, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
-    s.addText(r, { x: 0.65, y: 1.4, w: 12.05, h: 5.1, fontSize: q.font || 19, margin: 0, valign: "top", lineSpacingMultiple: 1.15, fit: "shrink", isTextBox: true });
-    s.addText([{ text: "정답 " + q.answer, options: { bold: true, color: HEX.dk2 } }], { x: 8.4, y: 6.4, w: 4.3, h: 0.45, fontSize: 17, fill: { color: GH }, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "ANIM_pre" });
+    s.addText(r, { x: 0.65, y: 1.4, w: 12.05, h: 3.85, fontSize: q.font || 18, margin: 0, valign: "top", lineSpacingMultiple: 1.12, fit: "shrink", isTextBox: true });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: 5.32, w: 12.15, h: 0.8, rectRadius: 0.08, fill: { color: "FFF8EC" }, line: { color: HEX.accent2, width: 2.25 } });
+    s.addText([{ text: "요약문  ", options: { bold: true, color: HEX.accent2, fontSize: 13 } }, ...q.summary.split(/(\(A\)|\(B\))/).filter(Boolean).map((t) => ({ text: t, options: { bold: true, color: /^\([AB]\)$/.test(t) ? HEX.accent2 : HEX.dk2 } }))],
+      { x: 0.75, y: 5.36, w: 11.9, h: 0.72, fontSize: 17, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
+    s.addText(q.options.map((o) => o.replace(/\s*-{3,}\s*/g, "\u00A0–\u00A0").replace(/ /g, "\u00A0")).join("     "), { x: 0.65, y: 6.2, w: 7.6, h: 0.65, fontSize: 14, color: HEX.accent4, margin: 0, valign: "middle", fit: "shrink", isTextBox: true });
+    s.addText([{ text: "정답 " + q.answer, options: { bold: true, color: HEX.dk2 } }], { x: 8.4, y: 6.3, w: 4.3, h: 0.5, fontSize: 17, fill: { color: GH }, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "ANIM_pre" });
     s.addNotes(`【채점】 학생 답을 들은 뒤 클릭하면 정답이 나타나요.\n【정답】 ${q.answer}\n${q.notes || ""}`);
   });
 
@@ -371,7 +393,7 @@ function extraSlides(sec, head, sections, chipText) {
     const vRows = VO.length ? Math.ceil(VO.length / 4) : 0, vRowH = 0.46, vH = vRows ? vRows * vRowH + 0.12 : 0;
     const passH = 5.65 - (vH ? vH + 0.1 : 0);
     let qs = e.qFont || 26;
-    while (!e.qFont && qs > 13 && linesAt(qs) * (qs * 1.18 * 1.17 / 72) + 0.25 > passH - 0.2) qs -= 0.5;
+    while (!e.qFont && qs > 13 && linesAt(qs) * (qs * 1.18 * 1.17 / 72) + 0.25 + (e.summary ? 0.12 : 0) > passH - 0.2) qs -= 0.5;
     const pr = [];
     if (e.given) {
       pr.push({ text: "[주어진 문장]  ", options: { fontSize: qs, bold: true, color: HEX.accent2 } });
@@ -386,13 +408,13 @@ function extraSlides(sec, head, sections, chipText) {
       });
       if (i < P.s.length - 1) pr.push({ text: " ", options: { fontSize: qs } });
     });
-    if (e.summary || showOpts) pr[pr.length - 1].options.breakLine = true;
-    if (e.summary) {
-      pr.push({ text: "↓  ", options: { fontSize: qs, bold: true, color: HEX.accent1, paraSpaceBefore: 6 } });
-      pr.push(...abRuns(e.summary, { fontSize: qs, color: HEX.dk2 }));
-      if (showOpts) pr[pr.length - 1].options.breakLine = true;
-    }
-    if (showOpts) pr.push({ text: optLine, options: { fontSize: Math.max(13, qs - 4), color: HEX.accent4, paraSpaceBefore: 6 } });
+    // layout: passage / 요약문 테두리 박스 / 선택지 한 줄 (정답 작게 표시)
+    const lh = (sz) => sz * 1.18 * 1.17 / 72;
+    const sumLines = e.summary ? Math.ceil(e.summary.length / (11.6 * 72 / (qs * 0.45))) : 0;
+    const sumH = e.summary ? sumLines * lh(qs) + 0.22 : 0;
+    const oSize = Math.max(13, qs - 3);
+    const optH = showOpts ? Math.ceil(optLine.length / (12.05 * 72 / (oSize * 0.45))) * lh(oSize) + 0.08 : 0;
+    const bodyH = passH - 0.15 - (sumH ? sumH + 0.12 : 0) - optH;
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.45, y: 1.3, w: 12.45, h: passH, rectRadius: 0.1, fill: { color: C.background1 }, line: { color: C.background2, width: 1.5 } });
     if (VO.length) {
       const vy = 1.3 + passH + 0.1, cw = 12.45 / 4;
@@ -403,7 +425,26 @@ function extraSlides(sec, head, sections, chipText) {
         s.addText(ko, { x: x + cw * 0.5 + 0.1, y: y + 0.05, w: cw * 0.5 - 0.25, h: vRowH - 0.1, fontSize: 14, bold: true, color: HEX.accent2, fill: { color: HEX.lt1 }, valign: "middle", align: "center", margin: 0, fit: "shrink", isTextBox: true, objectName: `ANIM_v${i}` });
       });
     }
-    s.addText(pr, { x: 0.65, y: 1.4, w: 12.05, h: passH - 0.2, margin: 0, valign: "top", lineSpacingMultiple: 1.18, fit: "shrink", isTextBox: true });
+    s.addText(pr, { x: 0.65, y: 1.38, w: 12.05, h: bodyH, margin: 0, valign: "top", lineSpacingMultiple: 1.18, fit: "shrink", isTextBox: true });
+    let yy = 1.38 + bodyH + 0.06;
+    if (e.summary) {
+      s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.6, y: yy, w: 12.15, h: sumH, rectRadius: 0.08, fill: { color: "FFF8EC" }, line: { color: HEX.accent2, width: 2.25 } });
+      s.addText([{ text: "요약문  ", options: { bold: true, color: HEX.accent2, fontSize: Math.max(12, qs - 6) } }, ...abRuns(e.summary, { fontSize: qs, color: HEX.dk2, bold: true })],
+        { x: 0.75, y: yy + 0.04, w: 11.9, h: sumH - 0.08, margin: 0, valign: "middle", lineSpacingMultiple: 1.15, fit: "shrink", isTextBox: true });
+      yy += sumH + 0.08;
+    }
+    if (showOpts) {
+      const orr = [];
+      e.opts.forEach((o, i) => {
+        const ok = i === e.ans - 1, txt = `${NUM[i]}\u00A0${o[0].replace(/\s*-{3,}\s*/g, "\u00A0–\u00A0").replace(/-/g, "\u2011").replace(/ /g, "\u00A0")}`;
+        orr.push({ text: txt, options: ok ? { bold: true, color: HEX.accent2 } : { color: HEX.accent4 } });
+        if (ok) orr.push({ text: "\u00A0✔", options: { bold: true, color: HEX.accent2, fontSize: oSize - 2 } });
+        if (i < e.opts.length - 1) orr.push({ text: "     ", options: {} });
+      });
+      s.addText(orr, { x: 0.65, y: yy, w: 12.05, h: optH, fontSize: oSize, margin: 0, valign: "top", fit: "shrink", isTextBox: true });
+    } else {
+      s.addText(`정답 ${NUM[e.ans - 1]}`, { x: 11.3, y: 1.3 + passH - 0.42, w: 1.5, h: 0.34, fontSize: 13, bold: true, color: HEX.lt1, fill: { color: HEX.accent2 }, align: "center", valign: "middle", margin: 0, isTextBox: true });
+    }
     const KW = e.keyWhy || {};
     const trans = P.s.map((x, i) => `(${i + 1}) ${x[1]}`).join("\n");
     const optsNote = e.opts.map((o, i) => `${NUM[i]} ${o[0]} — ${o[1]}${i === e.ans - 1 ? "  ★정답" : ""}`).join("\n");
