@@ -39,6 +39,8 @@
       "conclusion": "위신을 얻으면 영향력이 원래 분야를 넘어 확장된다"
     }
   },
+  // meta.objectives: [[목표, 부연], …] 3개 / intro.signalPages: [{ title, items: [[구조, 표현, 왜 중요한지, "Ex .."]], notes }]
+  // pre: [{ label: "기출 해체", chip: 출처, prompt, passage, foot, summary, options, answer, notes }] / reviewTest: { head, sections: [{ title, instruction, items: [{ no, text, a, why }] }] }
   "review": {                      // 복습 미니테스트 (마지막). 없으면 어휘 퀴즈는 문제별 vocab 첫 단어로 자동, 어법 골든벨은 생략
     "vocab": [["preserve", "보존하다"]],          // 최대 12개 — 오늘 지문의 핵심 어휘
     "grammar": [                                  // 최대 6개 — 오늘 문법 포인트에서 출제, 반드시 [정답 / 오답] 형식
@@ -92,6 +94,8 @@
       "given": "This reflection process enables …",          // 문장 삽입: 지문 위 [주어진 문장] 표시
       "hideOptsOnProblem": true,     // 삽입·어휘처럼 선택지가 지문 속 ①~⑤인 문제는 보기 목록 숨김
       "step1Label": "STEP 1 · 요약문 먼저",  // 흐름 슬라이드 첫 카드 이름
+      "vocabPlus": [["regard A as B", "≒ think of A as B, look upon A as B, consider A (to be) B"], ["preserve", "≒ conserve ↔ destroy ⊕ preservation"]],  // 흐름 슬라이드 어휘·표현 확장
+      "extras": [ { "title": "절대어법", "instruction": "다음 괄호 안에서 어법상 올바른 것을 고르시오.", "items": [ { "no": "1", "q": "(지시문, 선택)", "text": "… [eating / to eat] …", "a": "to eat", "why": "…" } ] } ],  // 교재 추가 문제 원문 그대로
       "keyHL": ["continue to preserve", "makes them who they are"],   // 노란 형광 = 정답 근거 (단어·구 단위, 지문에 있는 그대로). 없으면 true 문장 전체를 칠함
       "solve": ["요약문 먼저: …", "첫 문장 continue to preserve → (A) maintain, ①④⑤ 탈락", "…", "결론: ③"],  // 풀이 플로우 4~5단계 (노트)
       "takeaways": ["요약문은 본문 단어를 다른 말로", "regard A as B"],  // 흐름 슬라이드 '꼭 가져갈 것'
